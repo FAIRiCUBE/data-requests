@@ -1,5 +1,5 @@
 # data-requests
-Request data to be made available within FAIRiCUBE HUB
+Requests for data to be made available within FAIRiCUBE HUB should be requested via the FairiCube_DataIngestionRequest form is available on TEAMs under the WP5 folder.
 
 
 ## Existing Data Catalogs
