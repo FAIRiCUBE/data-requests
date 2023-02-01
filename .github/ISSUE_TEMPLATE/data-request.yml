@@ -45,7 +45,7 @@ body:
         - EOxHub
         - Rasdaman
         - Other
-- type: markdown
+  - type: markdown
     attributes:
       value: |-
         # Datacube structure
