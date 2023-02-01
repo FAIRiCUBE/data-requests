@@ -13,7 +13,7 @@ body:
   - type: input
     id: id
     attributes:
-      label: ID*
+      label: ID
       description: Datacube or collection identifier 
       placeholder: Ex. Windspeed
     validations:
@@ -21,16 +21,27 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: Description*
+      label: Description
       description: Brief, nontechnical explanation of the datacube
       placeholder: Ex. A timeseries of atmospheric wind speed over Europe
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: project-purpose
     attributes:
       label: Project purpose 
       description: Description of reason for collection/generation in relation to the project/WP/Task objectives
       placeholder: Ex. TBD
+    validations:
+      required: false
+  - type: textarea
+    id: axes
+    attributes:
+      label: Axes
+      description: Enumerate all axes of the datacube and their description 
+      placeholder:
+        Lat, Long: horizontal extent in WGS84; regular, resolution: XXX, uom: degree 
+        t: time in days; regular, resolution: 1 day, uom: day 
+        plev: pressure level, such as “FL100” expressed as 10000; irregular, uom: FL 
     validations:
       required: false
