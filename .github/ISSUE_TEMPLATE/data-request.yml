@@ -19,7 +19,8 @@ body:
     attributes:
       label: ID
       description: Datacube or collection identifier 
-      placeholder: Example: Windspeed
+      placeholder: |-
+        Example: Windspeed
     validations:
       required: true
   - type: textarea
