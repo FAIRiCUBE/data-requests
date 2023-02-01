@@ -39,7 +39,7 @@ body:
     attributes:
       label: Axes
       description: Enumerate all axes of the datacube and their description 
-      placeholder:
+      placeholder: >
         Lat, Long: horizontal extent in WGS84; regular, resolution: XXX, uom: degree 
         t: time in days; regular, resolution: 1 day, uom: day 
         plev: pressure level, such as “FL100” expressed as 10000; irregular, uom: FL 
