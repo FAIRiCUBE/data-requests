@@ -1,0 +1,36 @@
+name: Data Request
+description: Request a data collection to be made available to FAIRiCUBE use cases
+title: "[Data Request]: "
+labels: ["data-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please provide the information requested below. Mandatory elements are marked with `*`.
+        ### Why is the data collection mentioned in the title useful?
+        ### Where can the collection be found (e.g. links, organisation, etc.)
+        ### Additional Information
+  - type: input
+    id: id
+    attributes:
+      label: ID*
+      description: Datacube or collection identifier 
+      placeholder: Ex. Windspeed
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description*
+      description: Brief, nontechnical explanation of the datacube
+      placeholder: Ex. A timeseries of atmospheric wind speed over Europe
+    validations:
+      required: true
+  - type: input
+    id: project-purpose
+    attributes:
+      label: Project purpose 
+      description: Description of reason for collection/generation in relation to the project/WP/Task objectives
+      placeholder: Ex. TBD
+    validations:
+      required: false
