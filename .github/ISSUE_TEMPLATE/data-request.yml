@@ -195,6 +195,5 @@ body:
     attributes:
       label: Additional Information
       description: Any additional information that might be relevant
-      placeholder:
     validations:
       required: false
