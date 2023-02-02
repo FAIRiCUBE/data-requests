@@ -1,5 +1,5 @@
 name: Data Request
-description: Request a data collection to be made available to FAIRiCUBE use cases
+description: Request a data collection to be made available to FAIRiCUBE use cases. This includes requests to ingest new data, register exisiting data, or share already registered data.
 title: "[Data Request]: "
 labels: ["data-request"]
 body:
