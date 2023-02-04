@@ -34,7 +34,7 @@ body:
     id: project-purpose
     attributes:
       label: Project purpose 
-      description: Description of the reason for collection/generation in relation to the project/WP/Task objectives. Why and how is theis data collection useful?
+      description: Description of the reason for collection/generation in relation to the project/WP/Task objectives. Why and how is this data collection useful? For what use case was the data resource created?
       placeholder: TBD
     validations:
       required: false
