@@ -47,6 +47,14 @@ body:
         - EOxHub
         - Rasdaman
         - Other
+  - type: dropdown
+    id: preferred-method
+    attributes:
+      label: Preferred Method
+      multiple: true
+      options:
+        - Assisted by the platform provider
+        - Manual by the data requester themselves
   - type: markdown
     attributes:
       value: |-
