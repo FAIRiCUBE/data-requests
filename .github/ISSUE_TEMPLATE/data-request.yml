@@ -4,6 +4,7 @@ title: "[Data Request]: "
 labels: ["data-request"]
 assignees:
   - Mohinem
+  - Schpidi
 body:
   - type: markdown
     attributes:
@@ -41,7 +42,7 @@ body:
   - type: dropdown
     id: preferred-platform
     attributes:
-      label: Preferred Platform
+      label: Target Platform
       multiple: true
       options:
         - EOxHub
