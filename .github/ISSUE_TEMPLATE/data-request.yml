@@ -94,7 +94,7 @@ body:
     attributes:
       label: (Meta) data Standards
       description: Standards data complies with
-      placeholder: OGC CIS
+      placeholder: OGC, CIS
     validations:
       required: false
   - type: markdown
@@ -106,7 +106,7 @@ body:
     attributes:
       label: APIs
       description: Access interfaces through which datacube can be accessed
-      placeholder: OGC WMS, WMTS, WCS, WCPS, API Coverages, API Processes, etc.
+      placeholder: OGC, WMS, WMTS, WCS, WCPS, API Coverages, API Processes, etc.
     validations:
       required: false
   - type: input
