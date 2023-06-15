@@ -1,6 +1,6 @@
-
 import json
 from datetime import datetime
+import re
 import pystac
 from gql import gql, Client
 from gql.transport.requests import RequestsHTTPTransport
@@ -9,18 +9,53 @@ from gql.transport.requests import RequestsHTTPTransport
 GH_TOKEN = "<github-token>"
 
 
+def update_index(collection):
+    index_catalog = pystac.Catalog.from_file('../index.json')
+    collection_link = collection.links
+    for link in collection_link:
+        if link.rel == "self":
+            link.rel = "child"
+            index_catalog.links.append(link)
+            index_catalog.save(
+                catalog_type=pystac.CatalogType.ABSOLUTE_PUBLISHED)
+
+            break
+
+
 def create_axes(axes):
-    start_date = datetime.strptime("1990-01-01T00:00:00Z", "%Y-%m-%dT%H:%M:%SZ")
+    start_date = datetime.strptime(
+        "1990-01-01T00:00:00Z", "%Y-%m-%dT%H:%M:%SZ")
     end_date = datetime.strptime("2023-01-01T00:00:00Z", "%Y-%m-%dT%H:%M:%SZ")
-    spatial_extent = pystac.SpatialExtent(bboxes=[[-180.0, -90.0, 180.0, 90.0]])
+    spatial_extent = pystac.SpatialExtent(
+        bboxes=[[-180.0, -90.0, 180.0, 90.0]])
     temporal_extent = pystac.TemporalExtent(intervals=[[
                 start_date, end_date
                 ]])
     return pystac.Extent(spatial=spatial_extent, temporal=temporal_extent)
 
 
-def create_stac_collection(doc, title):
+def create_links(title):
+    self_href = f"https://fairicube.github.io/data-requests/{title}.json"
+    root_href = "https://fairicube.github.io/data-requests/index.json"
+    self_link = pystac.Link(
+        rel="self",
+        media_type="application/json",
+        target=self_href
+    )
+    root_link = pystac.Link(
+        rel=pystac.RelType("root"),
+        media_type=pystac.MediaType("application/json"),
+        target=root_href
+    )
+    parent_link = pystac.Link(
+        rel=pystac.RelType("parent"),
+        media_type=pystac.MediaType("application/json"),
+        target=root_href
+    )
+    return [self_link, root_link, parent_link]
 
+
+def create_stac_collection(doc, title):
 
     collection_extent = create_axes(doc["Axes"])
 
@@ -28,16 +63,18 @@ def create_stac_collection(doc, title):
         "https://stac-extensions.github.io/datacube/v1.0.0/schema.json",
         "https://stac-extensions.github.io/raster/v1.0.0/schema.json"
     ]
-
+    links = create_links(title)
     collection = pystac.Collection(
         id=doc["ID"],
         title=title,
         description=doc["Description"],
         stac_extensions=extensions,
         extent=collection_extent,
-        license=doc["License"]
+        license=doc["License"],
+
     )
 
+    collection.links = links
     return collection
 
 
@@ -52,7 +89,8 @@ def validate_document(document):
     ]
     document_keys = list(document.keys())
 
-    return keys == document_keys or set(document_keys) - set(keys) == {"Target Platform"}
+    return keys == document_keys or set(
+        document_keys) - set(keys) == {"Target Platform"}
 
 
 def insert_value(field, value_list, listed_fields, doc):
@@ -103,12 +141,16 @@ def stac_builder(input_txt, title):
     if validate_document(document):
 
         collection = create_stac_collection(document, title)
-        out_stac = f"../{title}.json"
-        with open(out_stac, 'w') as file:
-            json.dump(collection.to_dict(), file, indent=4)
-        file.close()
 
+        try:
+            out_stac = f"../{title}.json"
+            with open(out_stac, 'w') as file:
+                json.dump(collection.to_dict(), file, indent=4)
+            file.close()
 
+            update_index(collection)
+        except Exception:
+            raise Exception
 
 
 transport = RequestsHTTPTransport(
@@ -136,7 +178,12 @@ query_1 = gql(
         """
     )
 
-issues = client.execute(query_1)["organization"]["repository"]["issues"]["edges"]
+issues = client.execute(query_1)[
+    "organization"]["repository"]["issues"]["edges"]
+
 for index, issue in enumerate(issues):
-    title = issue["node"]["title"].split("]: ")[-1]
-    stac_builder(issue["node"]["body"], title)
+    title = issue["node"]["title"].split("]: ")[-1].replace(" ", "_")
+    issue_type = re.findall(r'\[(.*?)\]', issue["node"]["title"])
+
+    if next(iter(issue_type), None) == "Data Request":
+        stac_builder(issue["node"]["body"], title)
