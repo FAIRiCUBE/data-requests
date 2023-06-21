@@ -1,2 +1,3 @@
 pystac
 gql
+shapely

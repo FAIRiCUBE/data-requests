@@ -1,37 +1,37 @@
-import json
 from datetime import datetime
 import re
 import pystac
+from pystac.extensions import datacube
+from shapely.geometry import Polygon, mapping
 from gql import gql, Client
 from gql.transport.requests import RequestsHTTPTransport
 
 
 GH_TOKEN = "<github-token>"
 
+pystac.set_stac_version("2.2.0")
 
-def update_index(collection):
+
+def update_index(item):
     index_catalog = pystac.Catalog.from_file('../index.json')
-    collection_link = collection.links
-    for link in collection_link:
-        if link.rel == "self":
-            link.rel = "child"
-            index_catalog.links.append(link)
-            index_catalog.save(
+    index_catalog.add_item(item)
+    index_catalog.save(
                 catalog_type=pystac.CatalogType.ABSOLUTE_PUBLISHED)
-
-            break
 
 
 def create_axes(axes):
-    start_date = datetime.strptime(
-        "1990-01-01T00:00:00Z", "%Y-%m-%dT%H:%M:%SZ")
+    start_date = datetime.strptime("1990-01-01T00:00:00Z", "%Y-%m-%dT%H:%M:%SZ")
     end_date = datetime.strptime("2023-01-01T00:00:00Z", "%Y-%m-%dT%H:%M:%SZ")
-    spatial_extent = pystac.SpatialExtent(
-        bboxes=[[-180.0, -90.0, 180.0, 90.0]])
-    temporal_extent = pystac.TemporalExtent(intervals=[[
-                start_date, end_date
-                ]])
-    return pystac.Extent(spatial=spatial_extent, temporal=temporal_extent)
+    bbox = [[-180.0, -90.0, 180.0, 90.0]]
+    footprint = Polygon(
+            [
+                [-180.0, -90.0],
+                [-180.0, 90.0],
+                [180.0, 90.0],
+                [180.0, -90.0],
+            ]
+    )
+    return start_date, end_date, bbox, mapping(footprint)
 
 
 def create_links(title):
@@ -55,27 +55,34 @@ def create_links(title):
     return [self_link, root_link, parent_link]
 
 
-def create_stac_collection(doc, title):
+def create_stac_item(doc, title):
 
-    collection_extent = create_axes(doc["Axes"])
+    start_date, end_date, bbox, footprint = create_axes(doc)
+
+    properties = dict()
+    # properties["license"] = doc["License"]
 
     extensions = [
         "https://stac-extensions.github.io/datacube/v1.0.0/schema.json",
         "https://stac-extensions.github.io/raster/v1.0.0/schema.json"
     ]
     links = create_links(title)
-    collection = pystac.Collection(
-        id=doc["ID"],
-        title=title,
-        description=doc["Description"],
+    if "ID" in doc.keys():
+        id = doc["ID"]
+    else:
+        id = title
+    stac_item = pystac.Item(
+        id=id,
         stac_extensions=extensions,
-        extent=collection_extent,
-        license=doc["License"],
-
+        datetime=datetime.strptime("2000-01-01T00:00:00Z", "%Y-%m-%dT%H:%M:%SZ"),
+        bbox=bbox,
+        geometry=footprint,
+        properties=properties,
     )
 
-    collection.links = links
-    return collection
+    stac_item.links = links
+
+    return stac_item
 
 
 def validate_document(document):
@@ -104,55 +111,6 @@ def insert_value(field, value_list, listed_fields, doc):
         doc[field] = "\n".join(value_list)
 
 
-def stac_builder(input_txt, title):
-
-    values = []
-    document = dict()
-    temp_values = []
-    list_fields = ["APIs", "Null values", "(Meta) data Standards"]
-
-    response_lines = input_txt.splitlines()
-    fields = []
-    for index, i in enumerate(response_lines):
-
-        if i != "\n" and i != "":
-            st = i.strip("\n")
-            st = st.strip(" ")
-            st = st.replace("'", "")
-            values.append(st)
-    field = ""
-    for index, value in enumerate(values):
-        if type(value) == str and value.startswith("### "):
-
-            field = values[index][4:]
-            fields.append(field)
-
-            if len(temp_values) > 0:
-                temp_values = []
-                fields.pop(0)
-        else:
-            value = value.replace("_No response_", "")
-            temp_values.append(value)
-
-        if index == len(values) - 1:
-            document[field] = temp_values
-
-        insert_value(field, temp_values, list_fields, document)
-    if validate_document(document):
-
-        collection = create_stac_collection(document, title)
-
-        try:
-            out_stac = f"../{title}.json"
-            with open(out_stac, 'w') as file:
-                json.dump(collection.to_dict(), file, indent=4)
-            file.close()
-
-            update_index(collection)
-        except Exception:
-            raise Exception
-
-
 transport = RequestsHTTPTransport(
     url="https://api.github.com/graphql",
     headers={"Authorization": "token " + GH_TOKEN})
@@ -162,19 +120,46 @@ client = Client(transport=transport)
 query_1 = gql(
         """
         query  {
-            organization(login: \"FAIRiCUBE\") {
+            organization(login: "FAIRiCUBE") {
                 repository(name: "data-requests") {
                     issues(last:100, states:OPEN) {
                         edges {
                             node {
                             title
                             body
+                            projectItems(first:10) {
+                              edges {
+                                node {
+                                id
+                                fieldValues(first:30) {
+                                    nodes {
+                                        ... on ProjectV2ItemFieldTextValue {
+                                            text
+                                            field{
+                                                ... on ProjectV2Field {
+                                                    name
+                                                }
+                                            }
+                                        }
+                                        ... on ProjectV2ItemFieldNumberValue {
+                                            number
+                                            field{
+                                                ... on ProjectV2Field {
+                                                    name
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                              }
+                            }
                             }
                         }
                         }
                     }
                 }
             }
+        }
         """
     )
 
@@ -185,5 +170,55 @@ for index, issue in enumerate(issues):
     title = issue["node"]["title"].split("]: ")[-1].replace(" ", "_")
     issue_type = re.findall(r'\[(.*?)\]', issue["node"]["title"])
 
-    if next(iter(issue_type), None) == "Data Request":
-        stac_builder(issue["node"]["body"], title)
+    project_item = next(iter(issue['node']['projectItems']['edges']), None)
+
+    if project_item:
+        fields = project_item['node']['fieldValues']['nodes']
+        doc = dict()
+        for field in fields:
+            if "text" in field.keys():
+                doc[field["field"]["name"]] = field["text"]
+            elif "number" in field.keys():
+                doc[field["field"]["name"]] = field["number"]
+        stac_item = create_stac_item(doc, title)
+        update_index(stac_item)
+
+    elif next(iter(issue_type), None) == "Data Request":
+
+        input_txt = issue["node"]["body"]
+        values = []
+        document = dict()
+        temp_values = []
+        list_fields = ["APIs", "Null values", "(Meta) data Standards"]
+
+        response_lines = input_txt.splitlines()
+        fields = []
+        for index, i in enumerate(response_lines):
+
+            if i != "\n" and i != "":
+                st = i.strip("\n")
+                st = st.strip(" ")
+                st = st.replace("'", "")
+                values.append(st)
+        field = ""
+        for index, value in enumerate(values):
+            if type(value) == str and value.startswith("### "):
+
+                field = values[index][4:]
+                fields.append(field)
+
+                if len(temp_values) > 0:
+                    temp_values = []
+                    fields.pop(0)
+            else:
+                value = value.replace("_No response_", "")
+                temp_values.append(value)
+
+            if index == len(values) - 1:
+                document[field] = temp_values
+
+            insert_value(field, temp_values, list_fields, document)
+        if validate_document(document):
+
+            stac_item = create_stac_item(document, title)
+            update_index(stac_item)
