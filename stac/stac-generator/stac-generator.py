@@ -63,8 +63,8 @@ def create_stac_item(doc, title):
     # properties["license"] = doc["License"]
 
     extensions = [
-        "https://stac-extensions.github.io/datacube/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.0.0/schema.json"
+        "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v2.0.0/schema.json"
     ]
     links = create_links(title)
     if "ID" in doc.keys():
@@ -81,6 +81,35 @@ def create_stac_item(doc, title):
     )
 
     stac_item.links = links
+    dtc_ext = pystac.extensions.datacube
+    item_datacube = dtc_ext.DatacubeExtension.ext(stac_item)
+    dimensions = {}
+    x_dimension = dtc_ext.HorizontalSpatialDimension({
+        "axis": dtc_ext.HorizontalSpatialDimensionAxis("x"),
+        "extent": [-180, 180],
+        "reference_system": "ESPG:4326",
+
+
+        })
+    y_dimension = dtc_ext.HorizontalSpatialDimension({
+        "axis": dtc_ext.HorizontalSpatialDimensionAxis("y"),
+        "extent": [-90, 90],
+        "reference_system": "ESPG:4326",
+
+
+    })
+    temporal_deminsion = dtc_ext.TemporalDimension({
+        "values": [
+            datetime.strptime(
+                "2000-01-01T00:00:00Z", "%Y-%m-%dT%H:%M:%SZ").isoformat()
+            ]
+
+    })
+    dimensions["x"] = x_dimension
+    dimensions["y"] = y_dimension
+    dimensions["time"] = temporal_deminsion
+
+    item_datacube.dimensions = dimensions
 
     return stac_item
 
