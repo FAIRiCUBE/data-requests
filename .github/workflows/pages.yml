@@ -40,7 +40,7 @@ jobs:
           pip install -r ./stac/stac-generator/requirements.txt
       - name: generate stac items
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python3 ./stac/stac-generator/stac-generator.py
           stac copy -t ABSOLUTE_PUBLISHED --publish-location "https://fairicube.github.io/data-requests" stac_dist/catalog.json out
