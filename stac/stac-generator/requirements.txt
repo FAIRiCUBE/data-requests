@@ -1,3 +1,5 @@
 pystac
 gql
 shapely
+stactools
+requests-toolbelt

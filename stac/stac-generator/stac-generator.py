@@ -186,7 +186,12 @@ query_1 = gql(
 
 issues = client.execute(query_1)[
     "organization"]["repository"]["issues"]["edges"]
-index_catalog = pystac.Catalog.from_file(os.path.join('./stac', 'index.json'))
+index_catalog = pystac.Catalog(
+    id="index",
+    title="data-access catalog",
+    description="The stac catalog that contains all the generated datacube items."
+)
+
 for index, issue in enumerate(issues):
     title = issue["node"]["title"].split("]: ")[-1].replace(" ", "_")
     issue_type = re.findall(r'\[(.*?)\]', issue["node"]["title"])
@@ -245,5 +250,5 @@ for index, issue in enumerate(issues):
             index_catalog.add_item(stac_item)
 
         index_catalog.normalize_and_save(
-                root_href="https://fairicube.github.io/data-requests/stac/",
-                catalog_type=pystac.CatalogType.ABSOLUTE_PUBLISHED)
+                root_href="stac_dist/",
+                catalog_type=pystac.CatalogType.SELF_CONTAINED)
