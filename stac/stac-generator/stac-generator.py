@@ -12,13 +12,6 @@ GH_TOKEN = "<github-token>"
 pystac.set_stac_version("2.2.0")
 
 
-def update_index(item):
-    index_catalog = pystac.Catalog.from_file('../index.json')
-    index_catalog.add_item(item)
-    index_catalog.save(
-                catalog_type=pystac.CatalogType.ABSOLUTE_PUBLISHED)
-
-
 def create_axes(axes):
     start_date = datetime.strptime("1990-01-01T00:00:00Z", "%Y-%m-%dT%H:%M:%SZ")
     end_date = datetime.strptime("2023-01-01T00:00:00Z", "%Y-%m-%dT%H:%M:%SZ")
@@ -68,7 +61,7 @@ def create_stac_item(doc, title):
     ]
     links = create_links(title)
     if "ID" in doc.keys():
-        id = doc["ID"]
+        id = doc["ID"].replace(" ", "_")
     else:
         id = title
     stac_item = pystac.Item(
@@ -193,7 +186,7 @@ query_1 = gql(
 
 issues = client.execute(query_1)[
     "organization"]["repository"]["issues"]["edges"]
-
+index_catalog = pystac.Catalog.from_file('../index.json')
 for index, issue in enumerate(issues):
     title = issue["node"]["title"].split("]: ")[-1].replace(" ", "_")
     issue_type = re.findall(r'\[(.*?)\]', issue["node"]["title"])
@@ -209,7 +202,7 @@ for index, issue in enumerate(issues):
             elif "number" in field.keys():
                 doc[field["field"]["name"]] = field["number"]
         stac_item = create_stac_item(doc, title)
-        update_index(stac_item)
+        index_catalog.add_item(stac_item)
 
     elif next(iter(issue_type), None) == "Data Request":
 
@@ -249,4 +242,8 @@ for index, issue in enumerate(issues):
         if validate_document(document):
 
             stac_item = create_stac_item(document, title)
-            update_index(stac_item)
+            index_catalog.add_item(stac_item)
+
+        index_catalog.normalize_and_save(
+                root_href="https://fairicube.github.io/data-requests/stac/",
+                catalog_type=pystac.CatalogType.ABSOLUTE_PUBLISHED)
