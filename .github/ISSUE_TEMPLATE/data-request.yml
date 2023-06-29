@@ -18,7 +18,7 @@ body:
     id: id
     attributes:
       label: ID
-      description: Datacube or collection identifier 
+      description: Datacube or collection identifier
       placeholder: |-
         Example: Windspeed
     validations:
@@ -34,7 +34,7 @@ body:
   - type: textarea
     id: project-purpose
     attributes:
-      label: Project purpose 
+      label: Project purpose
       description: Description of the reason for collection/generation in relation to the project/WP/Task objectives. Why and how is this data collection useful? For what use case was the data resource created?
       placeholder: TBD
     validations:
@@ -61,14 +61,35 @@ body:
       value: |-
         # Datacube structure
   - type: textarea
-    id: axes
+    id: spatial-Axes
     attributes:
-      label: Axes
-      description: Enumerate all axes of the datacube and their description 
+      label: Spatial axis
+      description: Enumerate Spatial axis of the datacube with their description
       placeholder: |-
-        Lat, Long: horizontal extent in WGS84; regular, resolution: XXX, uom: degree 
-        t: time in days; regular, resolution: 1 day, uom: day 
-        plev: pressure level, such as “FL100” expressed as 10000; irregular, uom: FL 
+        extent: [-180.0, -90.0, 180.0, 90.0],
+        spatial reference: WGS84
+    validations:
+      required: false
+  - type: textarea
+    id: temporal-axis
+    attributes:
+      label: Time
+      description: Description of the time axes of the datacube
+      placeholder: |-
+        start date (ISO 8601): YYYY-MM-DD,
+        end data (ISO 8601): YYYY-MM-DD,
+        resolution (number year/month/day/...etc): 1 year,
+
+    validations:
+      required: false
+  - type: textarea
+    id: extra-axes
+    attributes:
+      label: Other Axes
+      description: Enumerate other axes of the datacube and their description
+      placeholder: |-
+        plev: pressure level, extent([upper-Value, lower-value]or[null]):[null], uom: FL
+
     validations:
       required: false
   - type: textarea
@@ -77,8 +98,8 @@ body:
       label: Cell type
       description: What does each pixel/voxel represent? Indicate meaning, data type, and unit of measure
       placeholder: |-
-        wind_u: East/West wind component, data type: uint16, uom: W/m^2 
-        wind_v: North/South wind component, data type: uint16, uom: W/m^2 
+        wind_u: East/West wind component, data type: uint16, uom: W/m^2
+        wind_v: North/South wind component, data type: uint16, uom: W/m^2
     validations:
       required: false
   - type: input
@@ -158,9 +179,9 @@ body:
     validations:
       required: false
   - type: input
-    id: documents-publications 
+    id: documents-publications
     attributes:
-      label: Documents & publications 
+      label: Documents & publications
       description: List related publications / public deliverables, state DOI and/or permanent location
       placeholder: TBD
     validations:
@@ -186,15 +207,15 @@ body:
     validations:
       required: false
   - type: input
-    id: personal-data 
+    id: personal-data
     attributes:
-      label: Personal Data 
+      label: Personal Data
       description: |-
-        Confirm either:  
-        No personal data is present in the dataset 
-        Personal data is present, managed in compliance with GDPR 
-        If (b), describe measures taken to secure, protect and/or pseudoanonymise / anonymise data. Notify the Project DPO if an issue arises. 
-      placeholder: No personal data are captured in this datacube 
+        Confirm either:
+        No personal data is present in the dataset
+        Personal data is present, managed in compliance with GDPR
+        If (b), describe measures taken to secure, protect and/or pseudoanonymise / anonymise data. Notify the Project DPO if an issue arises.
+      placeholder: No personal data are captured in this datacube
     validations:
       required: false
   - type: markdown
