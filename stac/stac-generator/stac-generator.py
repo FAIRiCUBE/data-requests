@@ -81,24 +81,23 @@ def create_stac_item(doc, title):
     )
 
     stac_item.links = links
-    dtc_ext = pystac.extensions.datacube
-    item_datacube = dtc_ext.DatacubeExtension.ext(stac_item)
-    dimensions = {}
-    x_dimension = dtc_ext.HorizontalSpatialDimension({
-        "axis": dtc_ext.HorizontalSpatialDimensionAxis("x"),
+    item_datacube = datacube.DatacubeExtension.ext(stac_item)
+    dimensions = dict()
+    x_dimension = datacube.HorizontalSpatialDimension({
+        "axis": datacube.HorizontalSpatialDimensionAxis("x"),
         "extent": [-180, 180],
         "reference_system": "ESPG:4326",
 
 
         })
-    y_dimension = dtc_ext.HorizontalSpatialDimension({
-        "axis": dtc_ext.HorizontalSpatialDimensionAxis("y"),
+    y_dimension = datacube.HorizontalSpatialDimension({
+        "axis": datacube.HorizontalSpatialDimensionAxis("y"),
         "extent": [-90, 90],
         "reference_system": "ESPG:4326",
 
 
     })
-    temporal_deminsion = dtc_ext.TemporalDimension({
+    temporal_deminsion = datacube.TemporalDimension({
         "values": [
             datetime.strptime(
                 "2000-01-01T00:00:00Z", "%Y-%m-%dT%H:%M:%SZ").isoformat()
