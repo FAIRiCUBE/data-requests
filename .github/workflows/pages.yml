@@ -4,7 +4,9 @@ name: Deploy static content to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches:
+      - main
+      - stac-generator
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -33,6 +35,14 @@ jobs:
         uses: actions/checkout@v3
       - name: Setup Pages
         uses: actions/configure-pages@v3
+      - name: install dependencies
+        run: |
+          pip install -r ./stac/stac-generator/requirements.txt
+      - name: generate stac items
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          python3 ./stac/stac-generator/stac-generator.py
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
