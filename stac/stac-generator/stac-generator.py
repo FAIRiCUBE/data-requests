@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 import re
 import pystac
@@ -6,8 +7,7 @@ from shapely.geometry import Polygon, mapping
 from gql import gql, Client
 from gql.transport.requests import RequestsHTTPTransport
 
-
-GH_TOKEN = "<github-token>"
+GH_TOKEN = os.environ["GH_TOKEN"]
 
 pystac.set_stac_version("2.2.0")
 
@@ -186,7 +186,7 @@ query_1 = gql(
 
 issues = client.execute(query_1)[
     "organization"]["repository"]["issues"]["edges"]
-index_catalog = pystac.Catalog.from_file('../index.json')
+index_catalog = pystac.Catalog.from_file(os.path.join('./stac', 'index.json'))
 for index, issue in enumerate(issues):
     title = issue["node"]["title"].split("]: ")[-1].replace(" ", "_")
     issue_type = re.findall(r'\[(.*?)\]', issue["node"]["title"])
