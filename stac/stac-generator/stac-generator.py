@@ -15,7 +15,7 @@ pystac.set_stac_version("2.2.0")
 def create_axes(axes):
     start_date = datetime.strptime("1990-01-01T00:00:00Z", "%Y-%m-%dT%H:%M:%SZ")
     end_date = datetime.strptime("2023-01-01T00:00:00Z", "%Y-%m-%dT%H:%M:%SZ")
-    bbox = [[-180.0, -90.0, 180.0, 90.0]]
+    bbox = [-180.0, -90.0, 180.0, 90.0]
     footprint = Polygon(
             [
                 [-180.0, -90.0],
@@ -56,8 +56,7 @@ def create_stac_item(doc, title):
     # properties["license"] = doc["License"]
 
     extensions = [
-        "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v2.0.0/schema.json"
+        "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
     ]
     links = create_links(title)
     if "ID" in doc.keys():
@@ -81,21 +80,22 @@ def create_stac_item(doc, title):
         "axis": datacube.HorizontalSpatialDimensionAxis("x"),
         "extent": [-180, 180],
         "reference_system": "ESPG:4326",
-
+        "type": "spatial"
 
         })
     y_dimension = datacube.HorizontalSpatialDimension({
         "axis": datacube.HorizontalSpatialDimensionAxis("y"),
         "extent": [-90, 90],
         "reference_system": "ESPG:4326",
-
+        "type": "spatial"
 
     })
     temporal_deminsion = datacube.TemporalDimension({
         "values": [
             datetime.strptime(
                 "2000-01-01T00:00:00Z", "%Y-%m-%dT%H:%M:%SZ").isoformat()
-            ]
+            ],
+        "type": "temporal"
 
     })
     dimensions["x"] = x_dimension
