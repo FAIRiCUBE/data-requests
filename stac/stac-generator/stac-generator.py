@@ -61,7 +61,8 @@ def create_stac_item(doc, title):
     ]
     links = create_links(title)
     if "ID" in doc.keys():
-        id = doc["ID"].replace(" ", "_")
+        spaceless_id = doc["ID"].replace(" ", "_")
+        id = spaceless_id.replace("–", "_")
     else:
         id = title
     stac_item = pystac.Item(
@@ -194,6 +195,7 @@ index_catalog = pystac.Catalog(
 
 for index, issue in enumerate(issues):
     title = issue["node"]["title"].split("]: ")[-1].replace(" ", "_")
+    title = title.replace("–", "_")
     issue_type = re.findall(r'\[(.*?)\]', issue["node"]["title"])
 
     project_item = next(iter(issue['node']['projectItems']['edges']), None)
