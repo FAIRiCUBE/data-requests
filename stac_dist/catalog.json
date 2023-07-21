@@ -1,0 +1,320 @@
+{
+  "type": "Catalog",
+  "id": "index",
+  "stac_version": "1.0.0",
+  "description": "The stac catalog that contains all the generated datacube items.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "./catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "item",
+      "href": "./SENTINEL2_L2A_MOSAIC_120/SENTINEL2_L2A_MOSAIC_120.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./COPERNICUS_30/COPERNICUS_30.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./MAPZEN_DEM/MAPZEN_DEM.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./SENTINEL1_GRD/SENTINEL1_GRD.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./CDS_2M_TEMP_2020/CDS_2M_TEMP_2020.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./ALOS_PALSAR2_RICE_PADDY_FIELD_MAP/ALOS_PALSAR2_RICE_PADDY_FIELD_MAP.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./ALOS_PALSAR2_AGRICULTURE/ALOS_PALSAR2_AGRICULTURE.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./ALOS_PALSAR2_L2_1_3M/ALOS_PALSAR2_L2_1_3M.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./ALOS_PALSAR2_L2_1_10M/ALOS_PALSAR2_L2_1_10M.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./CAMS_GLC/CAMS_GLC.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./CNR_CHL/CNR_CHL.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./CNES_LAND_COVER_MAP/CNES_LAND_COVER_MAP.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./SENTINEL_5P_CO_T3D_AVERAGE/SENTINEL_5P_CO_T3D_AVERAGE.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./CORINE_LAND_COVER/CORINE_LAND_COVER.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./CORINE_LAND_COVER_ACCOUNTING_LAYERS/CORINE_LAND_COVER_ACCOUNTING_LAYERS.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./E12C_MOTORWAY/E12C_MOTORWAY.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./E12D_PRIMARY/E12D_PRIMARY.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./ESA_WORLDCOVER_10M_2020_V1/ESA_WORLDCOVER_10M_2020_V1.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./GHS_BUILT_S2/GHS_BUILT_S2.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./GLOBAL_LAND_COVER/GLOBAL_LAND_COVER.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./GLOBAL_SURFACE_WATER/GLOBAL_SURFACE_WATER.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./NASA_HARMONIZED_LANDSAT_SENTINEL/NASA_HARMONIZED_LANDSAT_SENTINEL.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./ICEYE_GRD_E11/ICEYE_GRD_E11.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./ICEYE_GRD_E11A/ICEYE_GRD_E11A.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./ICEYE_GRD_E13B/ICEYE_GRD_E13B.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./ICEYE_GRD_E3/ICEYE_GRD_E3.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./JAXA_WQ_CHLA_ANOMALY/JAXA_WQ_CHLA_ANOMALY.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./JAXA_WQ_CHLA_AVERAGE/JAXA_WQ_CHLA_AVERAGE.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./JAXA_WQ_TSM_ANOMALY/JAXA_WQ_TSM_ANOMALY.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./JAXA_WQ_TSM_AVERAGE/JAXA_WQ_TSM_AVERAGE.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./LANDSAT1-5_MSS_L1/LANDSAT1-5_MSS_L1.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./LANDSAT4-5_TM_L1/LANDSAT4-5_TM_L1.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./LANDSAT4-5_TM_L2/LANDSAT4-5_TM_L2.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./LANDSAT7_ETM_L1/LANDSAT7_ETM_L1.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./LANDSAT7_ETM_L2/LANDSAT7_ETM_L2.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./LANDSAT8-9_L1/LANDSAT8-9_L1.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./LANDSAT8-9_L2/LANDSAT8-9_L2.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./MODIS/MODIS.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./LTK_NATIONAL_HIGH_RESOLUTION_LAYER/LTK_NATIONAL_HIGH_RESOLUTION_LAYER.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./POPULATION_DENSITY/POPULATION_DENSITY.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./SENTINEL_5P_CH4_T7D_AVERAGE/SENTINEL_5P_CH4_T7D_AVERAGE.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./SENTINEL_5P_NO2_T14D_AVERAGE/SENTINEL_5P_NO2_T14D_AVERAGE.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./SEA_ICE_INDEX/SEA_ICE_INDEX.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./SEASONAL_TRAJECTORIES/SEASONAL_TRAJECTORIES.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./SENTINEL1_CARD4L/SENTINEL1_CARD4L.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./SENTINEL2_L1C_SENTINELHUB/SENTINEL2_L1C_SENTINELHUB.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./SENTINEL2_L2A_SENTINELHUB/SENTINEL2_L2A_SENTINELHUB.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./SENTINEL3_OLCI_L1B/SENTINEL3_OLCI_L1B.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./SENTINEL3_SLSTR/SENTINEL3_SLSTR.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./SENTINEL_5P_L2/SENTINEL_5P_L2.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./CNR_TSM/CNR_TSM.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./VEGETATION_INDICES/VEGETATION_INDICES.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./VEGETATION_PHENOLOGY_AND_PRODUCTIVITY_PARAMETERS_SEASON_1/VEGETATION_PHENOLOGY_AND_PRODUCTIVITY_PARAMETERS_SEASON_1.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./VEGETATION_PHENOLOGY_AND_PRODUCTIVITY_PARAMETERS_SEASON_2/VEGETATION_PHENOLOGY_AND_PRODUCTIVITY_PARAMETERS_SEASON_2.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./EMODNET_VESSEL_DENSITY/EMODNET_VESSEL_DENSITY.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./EMODNET_VESSEL_DENSITY_CARGO/EMODNET_VESSEL_DENSITY_CARGO.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./EMODNET_VESSEL_DENSITY_OTHER/EMODNET_VESSEL_DENSITY_OTHER.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./EMODNET_VESSEL_DENSITY_TANKER/EMODNET_VESSEL_DENSITY_TANKER.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./WATER_BODIES/WATER_BODIES.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./ERA5_WIND_U/ERA5_WIND_U.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./ERA5_WIND_V/ERA5_WIND_V.json",
+      "type": "application/json"
+    }
+  ],
+  "title": "data-access catalog"
+}

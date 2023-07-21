@@ -1,0 +1,152 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "CNR_TSM",
+  "properties": {
+    "cube:dimensions": {
+      "x": {
+        "type": "spatial",
+        "axis": "x",
+        "extent": [
+          0.4982046708598385,
+          13.82206392288208
+        ]
+      },
+      "y": {
+        "type": "spatial",
+        "axis": "y",
+        "extent": [
+          40.498973093940286,
+          45.80052375793457
+        ]
+      },
+      "t": {
+        "type": "temporal",
+        "extent": [
+          "2020-01-04T00:00:00Z",
+          null
+        ]
+      },
+      "bands": {
+        "type": "bands",
+        "values": [
+          "tsmnn"
+        ]
+      }
+    },
+    "datetime": "2020-01-04T00:00:00Z"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          0.4982046708598385,
+          40.498973093940286
+        ],
+        [
+          0.4982046708598385,
+          45.80052375793457
+        ],
+        [
+          13.82206392288208,
+          45.80052375793457
+        ],
+        [
+          13.82206392288208,
+          40.498973093940286
+        ],
+        [
+          0.4982046708598385,
+          40.498973093940286
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "about",
+      "href": "https://collections.eurodatacube.com/tsmn_water_quality_saturday",
+      "type": "text/html",
+      "title": "Website describing the collection"
+    },
+    {
+      "rel": "about",
+      "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+      "type": "text/html",
+      "title": "Details about running Evalscripts"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://raw.githubusercontent.com/eurodatacube/public-collections/main/collections//tsmn_water_quality_saturday/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate Total Suspended Matter Map imagery",
+      "sentinelhub:layer_name": "Total Suspended Matter Map",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "license",
+      "href": "",
+      "type": "text/html",
+      "title": "License"
+    },
+    {
+      "rel": "root",
+      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "https://collections.eurodatacube.com/tsmn_water_quality_saturday/tsmn_water_quality_saturday.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    0.4982046708598385,
+    40.498973093940286,
+    13.82206392288208,
+    45.80052375793457
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "datasource_type": "byoc-358448a1-23c1-4d58-924d-22249ab09048",
+  "providers": [
+    {
+      "name": "Sentinel Hub",
+      "description": "",
+      "roles": [
+        "processor"
+      ],
+      "url": "https://services.sentinel-hub.com"
+    }
+  ],
+  "description": "Total suspended matter maps for 3 sites: Lagoon Venice, Marseille and Barcelona regions",
+  "keywords": [
+    "open data",
+    "sentinel hub",
+    "raster",
+    "race challenges"
+  ],
+  "title": "TSMN_water_quality_Saturday",
+  "license": ""
+}

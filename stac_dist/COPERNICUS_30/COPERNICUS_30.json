@@ -1,0 +1,227 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "COPERNICUS_30",
+  "properties": {
+    "cube:dimensions": {
+      "x": {
+        "type": "spatial",
+        "axis": "x",
+        "extent": [
+          -180,
+          180
+        ],
+        "reference_system": 4326
+      },
+      "y": {
+        "type": "spatial",
+        "axis": "y",
+        "extent": [
+          -90,
+          90
+        ],
+        "reference_system": 4326
+      },
+      "t": {
+        "type": "temporal",
+        "extent": [
+          null,
+          null
+        ]
+      },
+      "bands": {
+        "type": "bands",
+        "values": [
+          "DEM",
+          "dataMask"
+        ]
+      }
+    },
+    "datetime": "2000-01-01T00:00:00Z"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -90.0
+        ],
+        [
+          -180.0,
+          90.0
+        ],
+        [
+          180.0,
+          90.0
+        ],
+        [
+          180.0,
+          -90.0
+        ],
+        [
+          -180.0,
+          -90.0
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "about",
+      "href": "https://collections.eurodatacube.com/copernicus-dem",
+      "type": "text/html",
+      "title": "Website describing the collection"
+    },
+    {
+      "rel": "wmts",
+      "href": "https://services.sentinel-hub.com/ogc/wmts/6972d617-83a8-4e20-a3e3-85883e49cb8b",
+      "wmts:layer": "TOPOGRAPHIC",
+      "wmts:dimensions": {
+        "warnings": true
+      }
+    },
+    {
+      "rel": "about",
+      "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+      "type": "text/html",
+      "title": "Details about running Evalscripts"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://custom-scripts.sentinel-hub.com/dem/dem-color/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate Color imagery",
+      "sentinelhub:layer_name": "Color",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC",
+      "sentinelhub:dem_instance": "COPERNICUS_30"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://custom-scripts.sentinel-hub.com/dem/dem-grayscale/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate Grayscale imagery",
+      "sentinelhub:layer_name": "Grayscale",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC",
+      "sentinelhub:dem_instance": "COPERNICUS_30"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://custom-scripts.sentinel-hub.com/dem/dem-sepia/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate Sepia imagery",
+      "sentinelhub:layer_name": "Sepia",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC",
+      "sentinelhub:dem_instance": "COPERNICUS_30"
+    },
+    {
+      "rel": "license",
+      "href": "https://spacedata.copernicus.eu/en/web/guest/collections/copernicus-digital-elevation-model/#Licencing",
+      "type": "text/html",
+      "title": "License"
+    },
+    {
+      "rel": "root",
+      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "https://collections.eurodatacube.com/copernicus-dem/copernicus-dem.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    -180,
+    -90,
+    180,
+    90
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "datasource_type": "dem",
+  "raster:bands": [
+    {
+      "description": "Orthometric heights in meters",
+      "name": "DEM",
+      "openeo:gsd": {
+        "value": [
+          [
+            0.000277777777778,
+            0.000277777777778
+          ]
+        ],
+        "unit": "\u00b0"
+      },
+      "data_type": "float32",
+      "statistics": {
+        "minimum": [
+          -413
+        ],
+        "maximum": [
+          8848
+        ]
+      }
+    },
+    {
+      "description": "The mask of data/no data pixels.",
+      "name": "dataMask",
+      "data_type": "uint8",
+      "statistics": {
+        "minimum": [
+          0
+        ],
+        "maximum": [
+          1
+        ]
+      }
+    }
+  ],
+  "providers": [
+    {
+      "name": "Sentinel Hub",
+      "description": "Global",
+      "roles": [
+        "processor"
+      ],
+      "url": "https://services.sentinel-hub.com"
+    }
+  ],
+  "description": "[The Copernicus DEM](https://spacedata.copernicus.eu/web/cscda/dataset-details?articleId=394198) is a Digital Surface Model (DSM)\nwhich represents the bare-Earth surface and all above ground natural and built features.\nIt is based on [WorldDEM\u2122 ](https://www.intelligence-airbusds.com/imagery/reference-layers/worlddem/) DSM that is derived from [TanDEM-X](https://spacedata.copernicus.eu/web/cscda/data-offer/missions/tandem-x) \nand is infilled on a local basis with the following DEMs: ASTER, SRTM90, SRTM30, SRTM30plus, GMTED2010, TerraSAR-X Radargrammetric DEM, ALOS World 3D-30m.\nCopernicus Programme provides Copernicus DEM in 3 different instances: COP-DEM EEA-10, COP-DEM GLO-30 and COP-DEM GLO-90 where \n\"COP-DEM GLO-90\" tiles and most of the \"COP-DEM GLO-30 \" tiles are available worldwide with free license.\nSentinel Hub provides two instances named COPERNICUS_90 which uses \"COP-DEM GLO-90\" and COPERNICUS_30 which uses \"COP-DEM GLO-30 Public\"\nand \"COP-DEM GLO-90\" in areas where \"COP-DEM GLO-30 Public\" tiles are not yet released to the public by Copernicus Programme.\nCopernicus DEM provides elevation data and can also be used for the orthorectification of satellite imagery (e.g Sentinel 1).\n",
+  "keywords": [
+    "sentinel hub",
+    "xcube",
+    "DEM",
+    "terrain",
+    "3D",
+    "elevation",
+    "raster",
+    "open data",
+    "systematic"
+  ],
+  "title": "Copernicus DEM",
+  "license": "proprietary"
+}

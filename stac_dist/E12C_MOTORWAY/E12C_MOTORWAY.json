@@ -1,0 +1,152 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "E12C_MOTORWAY",
+  "properties": {
+    "cube:dimensions": {
+      "x": {
+        "type": "spatial",
+        "axis": "x",
+        "extent": [
+          -31.26818657,
+          34.06794939183746
+        ]
+      },
+      "y": {
+        "type": "spatial",
+        "axis": "y",
+        "extent": [
+          27.693670044054727,
+          70.09145355
+        ]
+      },
+      "t": {
+        "type": "temporal",
+        "extent": [
+          "2017-05-15T00:00:00Z",
+          "2020-05-15T00:00:00Z"
+        ]
+      },
+      "bands": {
+        "type": "bands",
+        "values": [
+          "MotorwayActivity"
+        ]
+      }
+    },
+    "datetime": "2017-05-15T00:00:00Z"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -31.26818657,
+          27.693670044054727
+        ],
+        [
+          -31.26818657,
+          70.09145355
+        ],
+        [
+          34.06794939183746,
+          70.09145355
+        ],
+        [
+          34.06794939183746,
+          27.693670044054727
+        ],
+        [
+          -31.26818657,
+          27.693670044054727
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "about",
+      "href": "https://collections.eurodatacube.com/e12c_motorway",
+      "type": "text/html",
+      "title": "Website describing the collection"
+    },
+    {
+      "rel": "about",
+      "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+      "type": "text/html",
+      "title": "Details about running Evalscripts"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://raw.githubusercontent.com/eurodatacube/public-collections/main/collections/e12c_motorway/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate Trucks E12C Motorway imagery",
+      "sentinelhub:layer_name": "Trucks E12C Motorway",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "license",
+      "href": "",
+      "type": "text/html",
+      "title": "License"
+    },
+    {
+      "rel": "root",
+      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "https://collections.eurodatacube.com/e12c_motorway/e12c_motorway.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    -31.26818657,
+    27.693670044054727,
+    34.06794939183746,
+    70.09145355
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "datasource_type": "byoc-efb2b070-39d6-4cfc-842f-57f8f54f22a0",
+  "providers": [
+    {
+      "name": "Sentinel Hub",
+      "description": "",
+      "roles": [
+        "processor"
+      ],
+      "url": "https://services.sentinel-hub.com"
+    }
+  ],
+  "description": "This indicator is based on the detection of moving trucks on motorways in the EU. The detection uses data from the Copernicus Sentinel-2 satellite.",
+  "keywords": [
+    "open data",
+    "sentinel hub",
+    "raster",
+    "race challenges"
+  ],
+  "title": "E12C_Motorway",
+  "license": ""
+}

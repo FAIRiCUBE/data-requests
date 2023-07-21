@@ -1,0 +1,156 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "JAXA_WQ_CHLA_AVERAGE",
+  "properties": {
+    "cube:dimensions": {
+      "x": {
+        "type": "spatial",
+        "axis": "x",
+        "extent": [
+          12,
+          140.25
+        ]
+      },
+      "y": {
+        "type": "spatial",
+        "axis": "y",
+        "extent": [
+          33.85,
+          45.8
+        ]
+      },
+      "t": {
+        "type": "temporal",
+        "extent": [
+          "2018-01-06T00:00:00Z",
+          "2021-05-22T00:00:00Z"
+        ]
+      },
+      "bands": {
+        "type": "bands",
+        "values": [
+          "chla",
+          "chla_ave"
+        ]
+      }
+    },
+    "datetime": "2018-01-06T00:00:00Z"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          12.0,
+          33.85
+        ],
+        [
+          12.0,
+          45.8
+        ],
+        [
+          140.25,
+          45.8
+        ],
+        [
+          140.25,
+          33.85
+        ],
+        [
+          12.0,
+          33.85
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "about",
+      "href": "https://collections.eurodatacube.com/jaxa_wq_chla_average",
+      "type": "text/html",
+      "title": "Website describing the collection"
+    },
+    {
+      "rel": "about",
+      "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+      "type": "text/html",
+      "title": "Details about running Evalscripts"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://raw.githubusercontent.com/eurodatacube/public-collections/main/collections/jaxa_wq_chla_average/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate Chlorophyll-a weekly average imagery",
+      "sentinelhub:layer_name": "Chlorophyll-a weekly average",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "license",
+      "href": "",
+      "type": "text/html",
+      "title": "License"
+    },
+    {
+      "rel": "root",
+      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "https://collections.eurodatacube.com/jaxa_wq_chla_average/jaxa_wq_chla_average.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    12,
+    33.85,
+    140.25,
+    45.8
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "datasource_type": "byoc-a81b1960-20f2-4f55-830e-b824094c4275",
+  "providers": [
+    {
+      "name": "Sentinel Hub",
+      "description": "",
+      "roles": [
+        "processor"
+      ],
+      "url": "https://services.sentinel-hub.com"
+    }
+  ],
+  "description": "Chlorophyll-a concentration weekly average (GCOM-C).\nWeekly average chlorophyll-a concentration for 4 sites: North Adriatic, Tokyo, Kobe and Nagoya. \nchl[mg/m^3]=10.^(DN/254*(log10(60)-log10(0.03))+log10(0.03))\n```\nFile naming convention: jx_chla-ave_tif_XXX_yyyy_mm_dd.tif\nXXX: Area name\n         nas -> NAdriatic\n         tok -> Tokyo \n         kob -> Kobe \n         nag -> Nagoya \nyyyy:Year\nmm:Month\ndd:Day\n```\n",
+  "keywords": [
+    "open data",
+    "sentinel hub",
+    "raster",
+    "water quality",
+    "dashboard hackathon",
+    "GCOM-C",
+    "JAXA"
+  ],
+  "title": "JAXA_wq_chla_average",
+  "license": ""
+}

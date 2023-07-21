@@ -1,0 +1,152 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "ICEYE_GRD_E13B",
+  "properties": {
+    "cube:dimensions": {
+      "x": {
+        "type": "spatial",
+        "axis": "x",
+        "extent": [
+          -1.245691996,
+          8.533407797
+        ]
+      },
+      "y": {
+        "type": "spatial",
+        "axis": "y",
+        "extent": [
+          40.394458816,
+          50.049107756
+        ]
+      },
+      "t": {
+        "type": "temporal",
+        "extent": [
+          "2020-02-04T03:38:35Z",
+          "2020-08-29T03:28:38Z"
+        ]
+      },
+      "bands": {
+        "type": "bands",
+        "values": [
+          "GRD"
+        ]
+      }
+    },
+    "datetime": "2020-02-04T03:38:35Z"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -1.245691996,
+          40.394458816
+        ],
+        [
+          -1.245691996,
+          50.049107756
+        ],
+        [
+          8.533407797,
+          50.049107756
+        ],
+        [
+          8.533407797,
+          40.394458816
+        ],
+        [
+          -1.245691996,
+          40.394458816
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "about",
+      "href": "https://collections.eurodatacube.com/iceye_e13b",
+      "type": "text/html",
+      "title": "Website describing the collection"
+    },
+    {
+      "rel": "about",
+      "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+      "type": "text/html",
+      "title": "Details about running Evalscripts"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://raw.githubusercontent.com/eurodatacube/public-collections/main/collections/iceye_e13b/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate GRD ICEYE_E13b imagery",
+      "sentinelhub:layer_name": "GRD ICEYE_E13b",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "license",
+      "href": "",
+      "type": "text/html",
+      "title": "License"
+    },
+    {
+      "rel": "root",
+      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "https://collections.eurodatacube.com/iceye_e13b/iceye_e13b.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    -1.245691996,
+    40.394458816,
+    8.533407797,
+    50.049107756
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "datasource_type": "byoc-4a537983-1c61-4c6e-9c85-7b3972b7b596",
+  "providers": [
+    {
+      "name": "Sentinel Hub",
+      "description": "",
+      "roles": [
+        "processor"
+      ],
+      "url": "https://services.sentinel-hub.com"
+    }
+  ],
+  "description": "ICEYE image and detection of parked airplanes",
+  "keywords": [
+    "open data",
+    "sentinel hub",
+    "raster",
+    "race challenges"
+  ],
+  "title": "ICEYE_E13b",
+  "license": ""
+}

@@ -1,0 +1,201 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "SEA_ICE_INDEX",
+  "properties": {
+    "cube:dimensions": {
+      "x": {
+        "type": "spatial",
+        "axis": "x",
+        "extent": [
+          -180,
+          180
+        ],
+        "reference_system": 4326
+      },
+      "y": {
+        "type": "spatial",
+        "axis": "y",
+        "extent": [
+          -90,
+          90
+        ],
+        "reference_system": 4326
+      },
+      "t": {
+        "type": "temporal",
+        "extent": [
+          "2017-01-01T00:00:00Z",
+          "2021-05-03T00:00:00Z"
+        ],
+        "step": "P1D"
+      },
+      "bands": {
+        "type": "bands",
+        "values": [
+          "concentration",
+          "extent",
+          "dataMask"
+        ]
+      }
+    },
+    "datetime": "2017-01-01T00:00:00Z"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -90.0
+        ],
+        [
+          -180.0,
+          90.0
+        ],
+        [
+          180.0,
+          90.0
+        ],
+        [
+          180.0,
+          -90.0
+        ],
+        [
+          -180.0,
+          -90.0
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "about",
+      "href": "https://collections.eurodatacube.com/sea-ice-index",
+      "type": "text/html",
+      "title": "Website describing the collection"
+    },
+    {
+      "rel": "wmts",
+      "href": "https://creodias.sentinel-hub.com/ogc/wmts/2a0231a2-5c91-4d3b-a911-ff55711aa983",
+      "wmts:layer": "SEA-ICE-CONCENTRATION",
+      "wmts:dimensions": {
+        "warnings": true
+      }
+    },
+    {
+      "rel": "about",
+      "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+      "type": "text/html",
+      "title": "Details about running Evalscripts"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://raw.githubusercontent.com/eurodatacube/public-collections/main/collections/sea-ice-index/concentration-script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to visualise sea ice concentration",
+      "sentinelhub:layer_name": "Sea Ice Concentration",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://raw.githubusercontent.com/eurodatacube/public-collections/main/collections/sea-ice-index/extent-script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to visualise sea ice extent",
+      "sentinelhub:layer_name": "Sea Ice Extent",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "license",
+      "href": "https://nsidc.org/about/use_copyright.html.",
+      "type": "text/html",
+      "title": "License"
+    },
+    {
+      "rel": "root",
+      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "https://collections.eurodatacube.com/sea-ice-index/sea-ice.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    -180,
+    -90,
+    180,
+    90
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "datasource_type": "byoc-10549890-13bb-4ec5-8ae0-df387bd0b785",
+  "raster:bands": [
+    {
+      "description": "percentage of ice cover for cells with more than 15 percent ice cover",
+      "name": "concentration",
+      "openeo:gsd": {
+        "value": [
+          0.231481481481666,
+          0.231481481481666
+        ],
+        "unit": "\u00b0"
+      }
+    },
+    {
+      "description": "extent of ocean covered by ice at any concentration greater than 15 percent for a given day",
+      "name": "extent",
+      "openeo:gsd": {
+        "value": [
+          0.231481481481666,
+          0.231481481481666
+        ],
+        "unit": "\u00b0"
+      }
+    },
+    {
+      "description": "The mask of data/no data pixels.",
+      "name": "dataMask"
+    }
+  ],
+  "providers": [
+    {
+      "name": "Sentinel Hub",
+      "description": "",
+      "roles": [
+        "processor"
+      ],
+      "url": "https://creodias.sentinel-hub.com"
+    }
+  ],
+  "description": "[Sea Ice Index](https://nsidc.org/data/G02135/versions/3) products offer information about ice cover and its trends in the Arctic and Antarctica.\n In this collection, sea ice extent and concentration maps are provided at a resolution of 25 km on a daily basis.\n The products are computed using images from the Special Sensor Microwave Imager (SSM/I) and \n Special Sensor Microwave Imager/Sounder (SSMIS) instruments on Defense Meteorological Satellite Program (DMSP)\n satellites. Sea ice concentrations are generated from \n [brightness temperature data](https://nsidc.org/data/nsidc-0051). Sea ice extent is computed as areas covered by ice\n  with a concentration greater than 15 percent. This dataset is for demonstration purposes only and is not maintained.\n",
+  "keywords": [
+    "climate change",
+    "open data"
+  ],
+  "title": "Sea Ice Index",
+  "license": "proprietary"
+}

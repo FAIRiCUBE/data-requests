@@ -1,0 +1,153 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "SENTINEL_5P_NO2_T14D_AVERAGE",
+  "properties": {
+    "cube:dimensions": {
+      "x": {
+        "type": "spatial",
+        "axis": "x",
+        "extent": [
+          -180,
+          180
+        ]
+      },
+      "y": {
+        "type": "spatial",
+        "axis": "y",
+        "extent": [
+          -90,
+          90
+        ]
+      },
+      "t": {
+        "type": "temporal",
+        "extent": [
+          "2018-04-30T00:00:00Z",
+          null
+        ],
+        "step": "P7D"
+      },
+      "bands": {
+        "type": "bands",
+        "values": [
+          "tropno2"
+        ]
+      }
+    },
+    "datetime": "2018-04-30T00:00:00Z"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -90.0
+        ],
+        [
+          -180.0,
+          90.0
+        ],
+        [
+          180.0,
+          90.0
+        ],
+        [
+          180.0,
+          -90.0
+        ],
+        [
+          -180.0,
+          -90.0
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "about",
+      "href": "https://collections.eurodatacube.com/s5p-no2-tropno-daily-check",
+      "type": "text/html",
+      "title": "Website describing the collection"
+    },
+    {
+      "rel": "about",
+      "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+      "type": "text/html",
+      "title": "Details about running Evalscripts"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://raw.githubusercontent.com/eurodatacube/public-collections/main/collections/s5p-no2-tropno-daily-check/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate NO2 imagery",
+      "sentinelhub:layer_name": "NO2",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "license",
+      "href": "",
+      "type": "text/html",
+      "title": "License"
+    },
+    {
+      "rel": "root",
+      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "https://collections.eurodatacube.com/s5p-no2-tropno-daily-check/s5p-no2-tropno-daily-check.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    -180,
+    -90,
+    180,
+    90
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "datasource_type": "byoc-972e67a7-2ca8-4bf6-964a-11fe772e3ac2",
+  "providers": [
+    {
+      "name": "Sentinel Hub",
+      "description": "",
+      "roles": [
+        "processor"
+      ],
+      "url": "https://services.sentinel-hub.com"
+    }
+  ],
+  "description": "The data comes from the Copernicus Sentinel-5P satellite and shows the averaged nitrogen dioxide concentrations across the globe \u2013 using a 14-day moving average. Concentrations of short-lived pollutants, such as nitrogen dioxide, are indicators of changes in economic slowdowns and are comparable to changes in emissions. Using a 14 day average eliminates some effects which are caused by short term weather changes and cloud cover. The average gives an overview over the whole time period and therefore reflects trends better than shorter time periods.",
+  "keywords": [
+    "open data",
+    "sentinel hub",
+    "raster",
+    "race challenges"
+  ],
+  "title": "S5P-NO2-tropno-daily-check",
+  "license": ""
+}

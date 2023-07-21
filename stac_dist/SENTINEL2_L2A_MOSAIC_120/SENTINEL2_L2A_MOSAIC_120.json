@@ -1,0 +1,460 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "SENTINEL2_L2A_MOSAIC_120",
+  "properties": {
+    "cube:dimensions": {
+      "x": {
+        "type": "spatial",
+        "axis": "x",
+        "extent": [
+          -180,
+          180
+        ],
+        "reference_system": {
+          "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+          "type": "GeodeticCRS",
+          "name": "AUTO 42001 (Universal Transverse Mercator)",
+          "datum": {
+            "type": "GeodeticReferenceFrame",
+            "name": "World Geodetic System 1984",
+            "ellipsoid": {
+              "name": "WGS 84",
+              "semi_major_axis": 6378137,
+              "inverse_flattening": 298.257223563
+            }
+          },
+          "coordinate_system": {
+            "subtype": "ellipsoidal",
+            "axis": [
+              {
+                "name": "Geodetic latitude",
+                "abbreviation": "Lat",
+                "direction": "north",
+                "unit": "degree"
+              },
+              {
+                "name": "Geodetic longitude",
+                "abbreviation": "Lon",
+                "direction": "east",
+                "unit": "degree"
+              }
+            ]
+          },
+          "area": "World",
+          "bbox": {
+            "south_latitude": -90,
+            "west_longitude": -180,
+            "north_latitude": 90,
+            "east_longitude": 180
+          },
+          "id": {
+            "authority": "OGC",
+            "version": "1.3",
+            "code": "Auto42001"
+          }
+        }
+      },
+      "y": {
+        "type": "spatial",
+        "axis": "y",
+        "extent": [
+          -58,
+          72
+        ],
+        "reference_system": {
+          "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+          "type": "GeodeticCRS",
+          "name": "AUTO 42001 (Universal Transverse Mercator)",
+          "datum": {
+            "type": "GeodeticReferenceFrame",
+            "name": "World Geodetic System 1984",
+            "ellipsoid": {
+              "name": "WGS 84",
+              "semi_major_axis": 6378137,
+              "inverse_flattening": 298.257223563
+            }
+          },
+          "coordinate_system": {
+            "subtype": "ellipsoidal",
+            "axis": [
+              {
+                "name": "Geodetic latitude",
+                "abbreviation": "Lat",
+                "direction": "north",
+                "unit": "degree"
+              },
+              {
+                "name": "Geodetic longitude",
+                "abbreviation": "Lon",
+                "direction": "east",
+                "unit": "degree"
+              }
+            ]
+          },
+          "area": "World",
+          "bbox": {
+            "south_latitude": -90,
+            "west_longitude": -180,
+            "north_latitude": 90,
+            "east_longitude": 180
+          },
+          "id": {
+            "authority": "OGC",
+            "version": "1.3",
+            "code": "Auto42001"
+          }
+        }
+      },
+      "t": {
+        "type": "temporal",
+        "extent": [
+          "2020-01-01T00:00:00Z",
+          "2020-12-22T00:00:00Z"
+        ]
+      },
+      "bands": {
+        "type": "bands",
+        "values": [
+          "B01",
+          "B02",
+          "B03",
+          "B04",
+          "B05",
+          "B06",
+          "B07",
+          "B08",
+          "B8A",
+          "B09",
+          "B11",
+          "B12",
+          "QM",
+          "dataMask"
+        ]
+      }
+    },
+    "datetime": "2020-01-01T00:00:00Z"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -58.0
+        ],
+        [
+          -180.0,
+          72.0
+        ],
+        [
+          180.0,
+          72.0
+        ],
+        [
+          180.0,
+          -58.0
+        ],
+        [
+          -180.0,
+          -58.0
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "about",
+      "href": "https://collections.eurodatacube.com/sentinel-s2-l2a-mosaic-120",
+      "type": "text/html",
+      "title": "Website describing the collection"
+    },
+    {
+      "rel": "wmts",
+      "href": "https://services.sentinel-hub.com/ogc/wmts/205fb2e0-0deb-464d-9103-82d33baf3b5d",
+      "wmts:layer": "TRUE-COLOR",
+      "wmts:dimensions": {
+        "warnings": true
+      }
+    },
+    {
+      "rel": "about",
+      "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+      "type": "text/html",
+      "title": "Details about running Evalscripts"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://custom-scripts.sentinel-hub.com/sentinel2-120m-mosaic/true-color/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate True Color imagery",
+      "sentinelhub:layer_name": "True Color",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://custom-scripts.sentinel-hub.com/sentinel2-120m-mosaic/false-color/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate False Color imagery",
+      "sentinelhub:layer_name": "False Color",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://custom-scripts.sentinel-hub.com/sentinel2-120m-mosaic/highlight-optimized/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate Highlight Optimized Natural Color imagery",
+      "sentinelhub:layer_name": "Highlight Optimized Natural Color",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://custom-scripts.sentinel-hub.com/sentinel2-120m-mosaic/ndvi/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate NDVI imagery",
+      "sentinelhub:layer_name": "NDVI",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "NEAREST"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://custom-scripts.sentinel-hub.com/sentinel2-120m-mosaic/ndmi/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate NDMI imagery",
+      "sentinelhub:layer_name": "NDMI",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "NEAREST"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://custom-scripts.sentinel-hub.com/sentinel2-120m-mosaic/ndwi/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate NDWI imagery",
+      "sentinelhub:layer_name": "NDWI",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "NEAREST"
+    },
+    {
+      "rel": "license",
+      "href": "https://www.sentinel-hub.com/tos/#collection",
+      "type": "text/html",
+      "title": "License"
+    },
+    {
+      "rel": "root",
+      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "https://collections.eurodatacube.com/sentinel-s2-l2a-mosaic-120/sentinel-s2-l2a-mosaic-120.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    -180,
+    -58,
+    180,
+    72
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "datasource_type": "byoc-484d8dbb-9e3e-41f2-b96b-35189d3ae37f",
+  "raster:bands": [
+    {
+      "description": "Coastal aerosol",
+      "name": "B01",
+      "openeo:gsd": {
+        "value": [
+          120,
+          120
+        ],
+        "unit": "m"
+      }
+    },
+    {
+      "description": "Blue",
+      "name": "B02",
+      "openeo:gsd": {
+        "value": [
+          120,
+          120
+        ],
+        "unit": "m"
+      }
+    },
+    {
+      "description": "Green",
+      "name": "B03",
+      "openeo:gsd": {
+        "value": [
+          120,
+          120
+        ],
+        "unit": "m"
+      }
+    },
+    {
+      "description": "Red",
+      "name": "B04",
+      "openeo:gsd": {
+        "value": [
+          120,
+          120
+        ],
+        "unit": "m"
+      }
+    },
+    {
+      "description": "Vegetation red edge",
+      "name": "B05",
+      "openeo:gsd": {
+        "value": [
+          120,
+          120
+        ],
+        "unit": "m"
+      }
+    },
+    {
+      "description": "Vegetation red edge",
+      "name": "B06",
+      "openeo:gsd": {
+        "value": [
+          120,
+          120
+        ],
+        "unit": "m"
+      }
+    },
+    {
+      "description": "Vegetation red edge",
+      "name": "B07",
+      "openeo:gsd": {
+        "value": [
+          120,
+          120
+        ],
+        "unit": "m"
+      }
+    },
+    {
+      "description": "NIR",
+      "name": "B08",
+      "openeo:gsd": {
+        "value": [
+          120,
+          120
+        ],
+        "unit": "m"
+      }
+    },
+    {
+      "description": "Narrow NIR",
+      "name": "B8A",
+      "openeo:gsd": {
+        "value": [
+          120,
+          120
+        ],
+        "unit": "m"
+      }
+    },
+    {
+      "description": "Water Vapour",
+      "name": "B09",
+      "openeo:gsd": {
+        "value": [
+          120,
+          120
+        ],
+        "unit": "m"
+      }
+    },
+    {
+      "description": "SWIR",
+      "name": "B11",
+      "openeo:gsd": {
+        "value": [
+          120,
+          120
+        ],
+        "unit": "m"
+      }
+    },
+    {
+      "description": "SWIR",
+      "name": "B12",
+      "openeo:gsd": {
+        "value": [
+          120,
+          120
+        ],
+        "unit": "m"
+      }
+    },
+    {
+      "description": "QualityMask",
+      "name": "QM",
+      "openeo:gsd": {
+        "value": [
+          120,
+          120
+        ],
+        "unit": "m"
+      }
+    },
+    {
+      "description": "The mask of data/no data pixels.",
+      "name": "dataMask"
+    }
+  ],
+  "providers": [
+    {
+      "name": "Sentinel Hub",
+      "description": "",
+      "roles": [
+        "processor"
+      ],
+      "url": "https://services.sentinel-hub.com"
+    }
+  ],
+  "description": "Sentinel-2 L2A 120m mosaic is a derived product, which contains best pixel values for 10-daily periods, \nmodelled by removing the cloudy pixels and then performing interpolation \namong remaining values. As clouds can be missed in the removal process and as there are some parts of the world, which have lengthy cloudy periods, \nclouds might be remaining in some parts. \nThe actual modelling script is available [here](https://sentinel-hub.github.io/custom-scripts/sentinel-2/interpolated_time_series/). \n",
+  "keywords": [
+    "sentinel hub",
+    "xcube",
+    "raster",
+    "systematic",
+    "satellite imagery",
+    "multi spectral imagery",
+    "machine learning",
+    "agriculture",
+    "open data",
+    "sentinel"
+  ],
+  "title": "Sentinel-2 L2A 120m Mosaic",
+  "license": "proprietary"
+}

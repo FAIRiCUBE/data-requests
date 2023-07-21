@@ -1,0 +1,154 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "CAMS_GLC",
+  "properties": {
+    "cube:dimensions": {
+      "x": {
+        "type": "spatial",
+        "axis": "x",
+        "extent": [
+          -33.56847525983416,
+          62.19564440228477
+        ]
+      },
+      "y": {
+        "type": "spatial",
+        "axis": "y",
+        "extent": [
+          31.857766985498905,
+          72.37088743023797
+        ]
+      },
+      "t": {
+        "type": "temporal",
+        "extent": [
+          "2017-01-01T00:00:00Z",
+          "2017-01-01T00:00:01Z"
+        ]
+      },
+      "bands": {
+        "type": "bands",
+        "values": [
+          "RED",
+          "BLUE",
+          "GREEN"
+        ]
+      }
+    },
+    "datetime": "2017-01-01T00:00:00Z"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -33.56847525983416,
+          31.857766985498905
+        ],
+        [
+          -33.56847525983416,
+          72.37088743023797
+        ],
+        [
+          62.19564440228477,
+          72.37088743023797
+        ],
+        [
+          62.19564440228477,
+          31.857766985498905
+        ],
+        [
+          -33.56847525983416,
+          31.857766985498905
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "about",
+      "href": "https://collections.eurodatacube.com/cams_glc_2017",
+      "type": "text/html",
+      "title": "Website describing the collection"
+    },
+    {
+      "rel": "about",
+      "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+      "type": "text/html",
+      "title": "Details about running Evalscripts"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://raw.githubusercontent.com/eurodatacube/public-collections/main/collections/cams_glc_2017/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate Land Cover Classification imagery",
+      "sentinelhub:layer_name": "Land Cover Classification",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "license",
+      "href": "",
+      "type": "text/html",
+      "title": "License"
+    },
+    {
+      "rel": "root",
+      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "https://collections.eurodatacube.com/cams_glc_2017/cams_glc_2017.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    -33.56847525983416,
+    31.857766985498905,
+    62.19564440228477,
+    72.37088743023797
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "datasource_type": "byoc-b73ffbaf-92ff-4fd9-abf0-960c5fab5eaa",
+  "providers": [
+    {
+      "name": "Sentinel Hub",
+      "description": "",
+      "roles": [
+        "processor"
+      ],
+      "url": "https://shservices.mundiwebservices.com"
+    }
+  ],
+  "description": "The S2GLC 2017 product represents land cover classification of a major portion of the European continent. The classification has been performed using multi-temporal Sentinel-2 data collected during the year 2017 with the methodology developed in the frame of the Sentinel-2 Global Land Cover (S2GLC) project. The S2GLC 2017 dataset is delivered with 10 m spatial resolution with thematic legend composed of 13 land cover classes",
+  "keywords": [
+    "open data",
+    "sentinel hub",
+    "raster",
+    "race challenges"
+  ],
+  "title": "CAMS_GLC_2017",
+  "license": ""
+}

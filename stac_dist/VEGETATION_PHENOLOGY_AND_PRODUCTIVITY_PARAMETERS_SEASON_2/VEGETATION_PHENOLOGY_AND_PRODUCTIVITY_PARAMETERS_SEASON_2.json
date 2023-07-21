@@ -1,0 +1,641 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "VEGETATION_PHENOLOGY_AND_PRODUCTIVITY_PARAMETERS_SEASON_2",
+  "properties": {
+    "cube:dimensions": {
+      "x": {
+        "type": "spatial",
+        "axis": "x",
+        "extent": [
+          -25,
+          45
+        ],
+        "reference_system": {
+          "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+          "type": "GeodeticCRS",
+          "name": "AUTO 42001 (Universal Transverse Mercator)",
+          "datum": {
+            "type": "GeodeticReferenceFrame",
+            "name": "World Geodetic System 1984",
+            "ellipsoid": {
+              "name": "WGS 84",
+              "semi_major_axis": 6378137,
+              "inverse_flattening": 298.257223563
+            }
+          },
+          "coordinate_system": {
+            "subtype": "ellipsoidal",
+            "axis": [
+              {
+                "name": "Geodetic latitude",
+                "abbreviation": "Lat",
+                "direction": "north",
+                "unit": "degree"
+              },
+              {
+                "name": "Geodetic longitude",
+                "abbreviation": "Lon",
+                "direction": "east",
+                "unit": "degree"
+              }
+            ]
+          },
+          "area": "World",
+          "bbox": {
+            "south_latitude": -90,
+            "west_longitude": -180,
+            "north_latitude": 90,
+            "east_longitude": 180
+          },
+          "id": {
+            "authority": "OGC",
+            "version": "1.3",
+            "code": "Auto42001"
+          }
+        }
+      },
+      "y": {
+        "type": "spatial",
+        "axis": "y",
+        "extent": [
+          26,
+          72
+        ],
+        "reference_system": {
+          "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+          "type": "GeodeticCRS",
+          "name": "AUTO 42001 (Universal Transverse Mercator)",
+          "datum": {
+            "type": "GeodeticReferenceFrame",
+            "name": "World Geodetic System 1984",
+            "ellipsoid": {
+              "name": "WGS 84",
+              "semi_major_axis": 6378137,
+              "inverse_flattening": 298.257223563
+            }
+          },
+          "coordinate_system": {
+            "subtype": "ellipsoidal",
+            "axis": [
+              {
+                "name": "Geodetic latitude",
+                "abbreviation": "Lat",
+                "direction": "north",
+                "unit": "degree"
+              },
+              {
+                "name": "Geodetic longitude",
+                "abbreviation": "Lon",
+                "direction": "east",
+                "unit": "degree"
+              }
+            ]
+          },
+          "area": "World",
+          "bbox": {
+            "south_latitude": -90,
+            "west_longitude": -180,
+            "north_latitude": 90,
+            "east_longitude": 180
+          },
+          "id": {
+            "authority": "OGC",
+            "version": "1.3",
+            "code": "Auto42001"
+          }
+        }
+      },
+      "t": {
+        "type": "temporal",
+        "extent": [
+          "2017-01-01T00:00:00Z",
+          "2021-01-01T00:00:00Z"
+        ],
+        "step": "P1Y"
+      },
+      "bands": {
+        "type": "bands",
+        "values": [
+          "AMPL",
+          "EOSD",
+          "EOSV",
+          "MAXD",
+          "MAXV",
+          "MINV",
+          "SOSD",
+          "SOSV",
+          "QFLAG",
+          "SPROD",
+          "TPROD",
+          "LENGTH",
+          "LSLOPE",
+          "RSLOPE",
+          "dataMask"
+        ]
+      }
+    },
+    "datetime": "2017-01-01T00:00:00Z"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -25.0,
+          26.0
+        ],
+        [
+          -25.0,
+          72.0
+        ],
+        [
+          45.0,
+          72.0
+        ],
+        [
+          45.0,
+          26.0
+        ],
+        [
+          -25.0,
+          26.0
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "about",
+      "href": "https://collections.eurodatacube.com/vegetation-phenology-and-productivity-parameters-season-2",
+      "type": "text/html",
+      "title": "Website describing the collection"
+    },
+    {
+      "rel": "wmts",
+      "href": "https://creodias.sentinel-hub.com/ogc/wmts/b61d2200-914a-40b9-a1c3-86b9c345a703",
+      "wmts:layer": "AMPL",
+      "wmts:dimensions": {
+        "warnings": true
+      }
+    },
+    {
+      "rel": "about",
+      "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+      "type": "text/html",
+      "title": "Details about running Evalscripts"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://custom-scripts.sentinel-hub.com/copernicus_services/hrvpp/vpp-amplitude-ampl/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate AMPL imagery",
+      "sentinelhub:layer_name": "AMPL",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://custom-scripts.sentinel-hub.com/copernicus_services/hrvpp/vpp-season-maximum-value-maxv/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate MAXV imagery",
+      "sentinelhub:layer_name": "MAXV",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://custom-scripts.sentinel-hub.com/copernicus_services/hrvpp/vpp-season-minimum-value-minv/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate MINV imagery",
+      "sentinelhub:layer_name": "MINV",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://custom-scripts.sentinel-hub.com/copernicus_services/hrvpp/vpp-start-of-season-value-sosv/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate SOSV imagery",
+      "sentinelhub:layer_name": "SOSV",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://custom-scripts.sentinel-hub.com/copernicus_services/hrvpp/vpp-end-of-season-value-eosv/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate EOSV imagery",
+      "sentinelhub:layer_name": "EOSV",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://custom-scripts.sentinel-hub.com/copernicus_services/hrvpp/vpp-slope-of-senescent-period-rslope/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate RSLOPE imagery",
+      "sentinelhub:layer_name": "RSLOPE",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://custom-scripts.sentinel-hub.com/copernicus_services/hrvpp/vpp-slope-of-greening-up-period-lslope/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate LSLOPE imagery",
+      "sentinelhub:layer_name": "LSLOPE",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://custom-scripts.sentinel-hub.com/copernicus_services/hrvpp/vpp-seasonal-productivity-sprod/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate SPROD imagery",
+      "sentinelhub:layer_name": "SPROD",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://custom-scripts.sentinel-hub.com/copernicus_services/hrvpp/vpp-total-productivity-tprod/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate TPROD imagery",
+      "sentinelhub:layer_name": "TPROD",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "license",
+      "href": "https://land.copernicus.eu/terms-of-use",
+      "type": "text/html",
+      "title": "License"
+    },
+    {
+      "rel": "root",
+      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "https://collections.eurodatacube.com/vegetation-phenology-and-productivity-parameters-season-2/thumbnail.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    -25,
+    26,
+    45,
+    72
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "datasource_type": "byoc-8c2bc96a-3c2c-482b-9394-031310171b33",
+  "crs": [
+    "http://www.opengis.net/def/crs/OGC/1.3/CRS84",
+    "http://www.opengis.net/def/crs/EPSG/0/2154",
+    "http://www.opengis.net/def/crs/EPSG/0/2180",
+    "http://www.opengis.net/def/crs/EPSG/0/2193",
+    "http://www.opengis.net/def/crs/EPSG/0/3003",
+    "http://www.opengis.net/def/crs/EPSG/0/3004",
+    "http://www.opengis.net/def/crs/EPSG/0/3031",
+    "http://www.opengis.net/def/crs/EPSG/0/3035",
+    "http://www.opengis.net/def/crs/EPSG/0/4326",
+    "http://www.opengis.net/def/crs/EPSG/0/4346",
+    "http://www.opengis.net/def/crs/EPSG/0/4416",
+    "http://www.opengis.net/def/crs/EPSG/0/4765",
+    "http://www.opengis.net/def/crs/EPSG/0/4794",
+    "http://www.opengis.net/def/crs/EPSG/0/4844",
+    "http://www.opengis.net/def/crs/EPSG/0/4857",
+    "http://www.opengis.net/def/crs/EPSG/0/3912",
+    "http://www.opengis.net/def/crs/EPSG/0/3995",
+    "http://www.opengis.net/def/crs/EPSG/0/4026",
+    "http://www.opengis.net/def/crs/EPSG/0/5514",
+    "http://www.opengis.net/def/crs/EPSG/0/28992",
+    "http://www.opengis.net/def/crs/EPSG/0/32601",
+    "http://www.opengis.net/def/crs/EPSG/0/32602",
+    "http://www.opengis.net/def/crs/EPSG/0/32603",
+    "http://www.opengis.net/def/crs/EPSG/0/32604",
+    "http://www.opengis.net/def/crs/EPSG/0/32605",
+    "http://www.opengis.net/def/crs/EPSG/0/32606",
+    "http://www.opengis.net/def/crs/EPSG/0/32607",
+    "http://www.opengis.net/def/crs/EPSG/0/32608",
+    "http://www.opengis.net/def/crs/EPSG/0/32609",
+    "http://www.opengis.net/def/crs/EPSG/0/32610",
+    "http://www.opengis.net/def/crs/EPSG/0/32611",
+    "http://www.opengis.net/def/crs/EPSG/0/32612",
+    "http://www.opengis.net/def/crs/EPSG/0/32613",
+    "http://www.opengis.net/def/crs/EPSG/0/32614",
+    "http://www.opengis.net/def/crs/EPSG/0/32615",
+    "http://www.opengis.net/def/crs/EPSG/0/32616",
+    "http://www.opengis.net/def/crs/EPSG/0/32617",
+    "http://www.opengis.net/def/crs/EPSG/0/32618",
+    "http://www.opengis.net/def/crs/EPSG/0/32619",
+    "http://www.opengis.net/def/crs/EPSG/0/32620",
+    "http://www.opengis.net/def/crs/EPSG/0/32621",
+    "http://www.opengis.net/def/crs/EPSG/0/32622",
+    "http://www.opengis.net/def/crs/EPSG/0/32623",
+    "http://www.opengis.net/def/crs/EPSG/0/32624",
+    "http://www.opengis.net/def/crs/EPSG/0/32625",
+    "http://www.opengis.net/def/crs/EPSG/0/32626",
+    "http://www.opengis.net/def/crs/EPSG/0/32627",
+    "http://www.opengis.net/def/crs/EPSG/0/32628",
+    "http://www.opengis.net/def/crs/EPSG/0/32629",
+    "http://www.opengis.net/def/crs/EPSG/0/32630",
+    "http://www.opengis.net/def/crs/EPSG/0/32631",
+    "http://www.opengis.net/def/crs/EPSG/0/32632",
+    "http://www.opengis.net/def/crs/EPSG/0/32633",
+    "http://www.opengis.net/def/crs/EPSG/0/32634",
+    "http://www.opengis.net/def/crs/EPSG/0/32635",
+    "http://www.opengis.net/def/crs/EPSG/0/32636",
+    "http://www.opengis.net/def/crs/EPSG/0/32637",
+    "http://www.opengis.net/def/crs/EPSG/0/32638",
+    "http://www.opengis.net/def/crs/EPSG/0/32639",
+    "http://www.opengis.net/def/crs/EPSG/0/32640",
+    "http://www.opengis.net/def/crs/EPSG/0/32641",
+    "http://www.opengis.net/def/crs/EPSG/0/32642",
+    "http://www.opengis.net/def/crs/EPSG/0/32643",
+    "http://www.opengis.net/def/crs/EPSG/0/32644",
+    "http://www.opengis.net/def/crs/EPSG/0/32645",
+    "http://www.opengis.net/def/crs/EPSG/0/32646",
+    "http://www.opengis.net/def/crs/EPSG/0/32647",
+    "http://www.opengis.net/def/crs/EPSG/0/32648",
+    "http://www.opengis.net/def/crs/EPSG/0/32649",
+    "http://www.opengis.net/def/crs/EPSG/0/32650",
+    "http://www.opengis.net/def/crs/EPSG/0/32651",
+    "http://www.opengis.net/def/crs/EPSG/0/32652",
+    "http://www.opengis.net/def/crs/EPSG/0/32653",
+    "http://www.opengis.net/def/crs/EPSG/0/32654",
+    "http://www.opengis.net/def/crs/EPSG/0/32655",
+    "http://www.opengis.net/def/crs/EPSG/0/32656",
+    "http://www.opengis.net/def/crs/EPSG/0/32657",
+    "http://www.opengis.net/def/crs/EPSG/0/32658",
+    "http://www.opengis.net/def/crs/EPSG/0/32659",
+    "http://www.opengis.net/def/crs/EPSG/0/32660",
+    "http://www.opengis.net/def/crs/EPSG/0/32701",
+    "http://www.opengis.net/def/crs/EPSG/0/32702",
+    "http://www.opengis.net/def/crs/EPSG/0/32703",
+    "http://www.opengis.net/def/crs/EPSG/0/32704",
+    "http://www.opengis.net/def/crs/EPSG/0/32705",
+    "http://www.opengis.net/def/crs/EPSG/0/32706",
+    "http://www.opengis.net/def/crs/EPSG/0/32707",
+    "http://www.opengis.net/def/crs/EPSG/0/32708",
+    "http://www.opengis.net/def/crs/EPSG/0/32709",
+    "http://www.opengis.net/def/crs/EPSG/0/32710",
+    "http://www.opengis.net/def/crs/EPSG/0/32711",
+    "http://www.opengis.net/def/crs/EPSG/0/32712",
+    "http://www.opengis.net/def/crs/EPSG/0/32713",
+    "http://www.opengis.net/def/crs/EPSG/0/32714",
+    "http://www.opengis.net/def/crs/EPSG/0/32715",
+    "http://www.opengis.net/def/crs/EPSG/0/32716",
+    "http://www.opengis.net/def/crs/EPSG/0/32717",
+    "http://www.opengis.net/def/crs/EPSG/0/32718",
+    "http://www.opengis.net/def/crs/EPSG/0/32719",
+    "http://www.opengis.net/def/crs/EPSG/0/32720",
+    "http://www.opengis.net/def/crs/EPSG/0/32721",
+    "http://www.opengis.net/def/crs/EPSG/0/32722",
+    "http://www.opengis.net/def/crs/EPSG/0/32723",
+    "http://www.opengis.net/def/crs/EPSG/0/32724",
+    "http://www.opengis.net/def/crs/EPSG/0/32725",
+    "http://www.opengis.net/def/crs/EPSG/0/32726",
+    "http://www.opengis.net/def/crs/EPSG/0/32727",
+    "http://www.opengis.net/def/crs/EPSG/0/32728",
+    "http://www.opengis.net/def/crs/EPSG/0/32729",
+    "http://www.opengis.net/def/crs/EPSG/0/32730",
+    "http://www.opengis.net/def/crs/EPSG/0/32731",
+    "http://www.opengis.net/def/crs/EPSG/0/32732",
+    "http://www.opengis.net/def/crs/EPSG/0/32733",
+    "http://www.opengis.net/def/crs/EPSG/0/32734",
+    "http://www.opengis.net/def/crs/EPSG/0/32735",
+    "http://www.opengis.net/def/crs/EPSG/0/32736",
+    "http://www.opengis.net/def/crs/EPSG/0/32737",
+    "http://www.opengis.net/def/crs/EPSG/0/32738",
+    "http://www.opengis.net/def/crs/EPSG/0/32739",
+    "http://www.opengis.net/def/crs/EPSG/0/32740",
+    "http://www.opengis.net/def/crs/EPSG/0/32741",
+    "http://www.opengis.net/def/crs/EPSG/0/32742",
+    "http://www.opengis.net/def/crs/EPSG/0/32743",
+    "http://www.opengis.net/def/crs/EPSG/0/32744",
+    "http://www.opengis.net/def/crs/EPSG/0/32745",
+    "http://www.opengis.net/def/crs/EPSG/0/32746",
+    "http://www.opengis.net/def/crs/EPSG/0/32746",
+    "http://www.opengis.net/def/crs/EPSG/0/32748",
+    "http://www.opengis.net/def/crs/EPSG/0/32749",
+    "http://www.opengis.net/def/crs/EPSG/0/32750",
+    "http://www.opengis.net/def/crs/EPSG/0/32751",
+    "http://www.opengis.net/def/crs/EPSG/0/32752",
+    "http://www.opengis.net/def/crs/EPSG/0/32753",
+    "http://www.opengis.net/def/crs/EPSG/0/32754",
+    "http://www.opengis.net/def/crs/EPSG/0/32755",
+    "http://www.opengis.net/def/crs/EPSG/0/32756",
+    "http://www.opengis.net/def/crs/EPSG/0/32757",
+    "http://www.opengis.net/def/crs/EPSG/0/32758",
+    "http://www.opengis.net/def/crs/EPSG/0/32759",
+    "http://www.opengis.net/def/crs/EPSG/0/32760",
+    "http://www.opengis.net/def/crs/SR-ORG/0/98739"
+  ],
+  "raster:bands": [
+    {
+      "description": "Season amplitude (MAXV \u2013 MINV)",
+      "name": "AMPL",
+      "openeo:gsd": {
+        "value": [
+          10,
+          10
+        ],
+        "unit": "m"
+      }
+    },
+    {
+      "description": "Day of end-of-season",
+      "name": "EOSD",
+      "openeo:gsd": {
+        "value": [
+          10,
+          10
+        ],
+        "unit": "m"
+      }
+    },
+    {
+      "description": "Vegetation index value at EOSD",
+      "name": "EOSV",
+      "openeo:gsd": {
+        "value": [
+          10,
+          10
+        ],
+        "unit": "m"
+      }
+    },
+    {
+      "description": "Day of maximum-of-season",
+      "name": "MAXD",
+      "openeo:gsd": {
+        "value": [
+          10,
+          10
+        ],
+        "unit": "m"
+      }
+    },
+    {
+      "description": "Vegetation index value at MAXD",
+      "name": "MAXV",
+      "openeo:gsd": {
+        "value": [
+          10,
+          10
+        ],
+        "unit": "m"
+      }
+    },
+    {
+      "description": "Average vegetation index value of minima on left and right sides of each season",
+      "name": "MINV",
+      "openeo:gsd": {
+        "value": [
+          10,
+          10
+        ],
+        "unit": "m"
+      }
+    },
+    {
+      "description": "Day of start-of-season",
+      "name": "SOSD",
+      "openeo:gsd": {
+        "value": [
+          10,
+          10
+        ],
+        "unit": "m"
+      }
+    },
+    {
+      "description": "Vegetation index value at SOSD",
+      "name": "SOSV",
+      "openeo:gsd": {
+        "value": [
+          10,
+          10
+        ],
+        "unit": "m"
+      }
+    },
+    {
+      "description": "Quality Flag",
+      "name": "QFLAG",
+      "openeo:gsd": {
+        "value": [
+          10,
+          10
+        ],
+        "unit": "m"
+      }
+    },
+    {
+      "description": "Seasonal productivity. The growing season integral computed as the sum of all daily values between SOSD and EOSD",
+      "name": "SPROD",
+      "openeo:gsd": {
+        "value": [
+          10,
+          10
+        ],
+        "unit": "m"
+      }
+    },
+    {
+      "description": "Total productivity. The growing season integral computed as sum of all daily values minus their base level value.",
+      "name": "TPROD",
+      "openeo:gsd": {
+        "value": [
+          10,
+          10
+        ],
+        "unit": "m"
+      }
+    },
+    {
+      "description": "Length of Season (number of days between start and end)",
+      "name": "LENGTH",
+      "openeo:gsd": {
+        "value": [
+          10,
+          10
+        ],
+        "unit": "m"
+      }
+    },
+    {
+      "description": "Slope of the greening up period",
+      "name": "LSLOPE",
+      "openeo:gsd": {
+        "value": [
+          10,
+          10
+        ],
+        "unit": "m"
+      }
+    },
+    {
+      "description": "Slope of the senescent period",
+      "name": "RSLOPE",
+      "openeo:gsd": {
+        "value": [
+          10,
+          10
+        ],
+        "unit": "m"
+      }
+    },
+    {
+      "description": "The mask of data/no data pixels.",
+      "name": "dataMask"
+    }
+  ],
+  "providers": [
+    {
+      "name": "Sentinel Hub",
+      "description": "Europe since January 2017",
+      "roles": [
+        "processor"
+      ],
+      "url": "https://creodias.sentinel-hub.com"
+    }
+  ],
+  "description": "Vegetation Phenology and Productivity Parameters (VPP) product is part of the Copernicus Land Monitoring Service (CLMS),\npan-European High Resolution Vegetation Phenology and Productivity [(HR-VPP)](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-vegetation-phenology-and-productivity) product suite.\nThe VPP product is comprised of 13 parameters that describe specific stages of the seasonal vegetation growth cycle.\nThese parameters are extracted from Seasonal Trajectories of the [Plant Phenology Index (PPI)](https://www.nateko.lu.se/research/remote-sensing-and-earth-observation/lund-earth-observation-research-group/vegetation-phenology)\nderived from Sentinel-2 satellite observations at 10m resolution. Since growing seasons can traverse years, VPP parameters are provided for a maximum of two growing seasons per year.\nThe parameters include (1) start of season (date, PPI value and slope), (2) end of season (date, PPI value and slope), (3)length of season, (4) minimum of season,\n(4) peak of the season (date and PPI value), (5) amplitude, (6) small integrated value and (7) large integrated value.\nVPP parameters are generated over the EEA39 region on a yearly frequency from January 1 2017 onwards.\nAmong other applications, the high-resolution phenology data provides a detailed assessment of the impacts of\nhuman or climate change on the ecosystem through monitoring of vegetation responses to disturbances, e.g. droughts, storms, insect infestations, and to human influence from global to local levels.\nMore information about VPP product is outlined in the [product user manual](https://land.copernicus.eu/user-corner/technical-library/product-user-manual-of-seasonal-trajectories/)\n",
+  "keywords": [
+    "copernicus services",
+    "vegetation",
+    "agriculture",
+    "Plant phenology index",
+    "CLMS",
+    "phenology",
+    "derived data",
+    "open data"
+  ],
+  "title": "Vegetation Phenology and Productivity Parameters Season 2, Yearly",
+  "license": "proprietary"
+}

@@ -1,0 +1,152 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "ICEYE_GRD_E11A",
+  "properties": {
+    "cube:dimensions": {
+      "x": {
+        "type": "spatial",
+        "axis": "x",
+        "extent": [
+          21.039070567,
+          21.052287012
+        ]
+      },
+      "y": {
+        "type": "spatial",
+        "axis": "y",
+        "extent": [
+          52.235855988,
+          52.248886356
+        ]
+      },
+      "t": {
+        "type": "temporal",
+        "extent": [
+          "2020-02-07T13:08:50Z",
+          "2020-04-13T13:10:17Z"
+        ]
+      },
+      "bands": {
+        "type": "bands",
+        "values": [
+          "GRD"
+        ]
+      }
+    },
+    "datetime": "2020-02-07T13:08:50Z"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          21.039070567,
+          52.235855988
+        ],
+        [
+          21.039070567,
+          52.248886356
+        ],
+        [
+          21.052287012,
+          52.248886356
+        ],
+        [
+          21.052287012,
+          52.235855988
+        ],
+        [
+          21.039070567,
+          52.235855988
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "about",
+      "href": "https://collections.eurodatacube.com/iceye_e11a",
+      "type": "text/html",
+      "title": "Website describing the collection"
+    },
+    {
+      "rel": "about",
+      "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+      "type": "text/html",
+      "title": "Details about running Evalscripts"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://raw.githubusercontent.com/eurodatacube/public-collections/main/collections/iceye_e11a/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate GRD ICEYE_E11a imagery",
+      "sentinelhub:layer_name": "GRD ICEYE_E11a",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "license",
+      "href": "",
+      "type": "text/html",
+      "title": "License"
+    },
+    {
+      "rel": "root",
+      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "https://collections.eurodatacube.com/iceye_e11a/iceye_e11a.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    21.039070567,
+    52.235855988,
+    21.052287012,
+    52.248886356
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "datasource_type": "byoc-a9ae7d6a-70c8-4575-854a-1a8f0cb33317",
+  "providers": [
+    {
+      "name": "Sentinel Hub",
+      "description": "",
+      "roles": [
+        "processor"
+      ],
+      "url": "https://services.sentinel-hub.com"
+    }
+  ],
+  "description": "Activity at leisure facility (Stadium) affected by COVID",
+  "keywords": [
+    "open data",
+    "sentinel hub",
+    "raster",
+    "race challenges"
+  ],
+  "title": "ICEYE_E11a",
+  "license": ""
+}

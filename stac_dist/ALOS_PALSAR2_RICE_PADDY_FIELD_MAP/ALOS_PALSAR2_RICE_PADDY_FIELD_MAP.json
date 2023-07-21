@@ -1,0 +1,155 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "ALOS_PALSAR2_RICE_PADDY_FIELD_MAP",
+  "properties": {
+    "cube:dimensions": {
+      "x": {
+        "type": "spatial",
+        "axis": "x",
+        "extent": [
+          123.518,
+          106.11
+        ]
+      },
+      "y": {
+        "type": "spatial",
+        "axis": "y",
+        "extent": [
+          8.85,
+          42.389
+        ]
+      },
+      "t": {
+        "type": "temporal",
+        "extent": [
+          "2019-03-01T00:00:00Z",
+          "2020-03-01T00:00:00Z"
+        ]
+      },
+      "bands": {
+        "type": "bands",
+        "values": [
+          "RF"
+        ]
+      }
+    },
+    "datetime": "2019-03-01T00:00:00Z"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -123.518,
+          8.85
+        ],
+        [
+          -123.518,
+          42.389
+        ],
+        [
+          106.11,
+          42.389
+        ],
+        [
+          106.11,
+          8.85
+        ],
+        [
+          -123.518,
+          8.85
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "about",
+      "href": "https://collections.eurodatacube.com/alos-2-palsar-2-scansar-rice-fields-map",
+      "type": "text/html",
+      "title": "Website describing the collection"
+    },
+    {
+      "rel": "about",
+      "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+      "type": "text/html",
+      "title": "Details about running Evalscripts"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://raw.githubusercontent.com/eurodatacube/public-collections/main/collections/alos-2-palsar-2-scansar-rice-fields-map/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate Reference Rice Paddy Map imagery",
+      "sentinelhub:layer_name": "Reference Rice Paddy Map",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "license",
+      "href": "",
+      "type": "text/html",
+      "title": "License"
+    },
+    {
+      "rel": "root",
+      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "https://collections.eurodatacube.com/alos-2-palsar-2-scansar-rice-fields-map/alos-2-palsar-2-scansar-rice-fields-map.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    -123.518,
+    8.85,
+    106.11,
+    42.389
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "datasource_type": "byoc-4e6463e6-a328-4618-832c-fa03ed6852f1",
+  "providers": [
+    {
+      "name": "Sentinel Hub",
+      "description": "",
+      "roles": [
+        "processor"
+      ],
+      "url": "https://services.sentinel-hub.com"
+    }
+  ],
+  "description": "This collection contains reference rice paddy field maps derived from [ALOS-2 ScanSAR](https://alos-pasco.com/en/alos-2/spec/)\ngeometrically corrected (orthorectified) data in selected AOIs between 2019 and 2020 for NASA/ESA/JAXA EODashboard Hackathon.\nThe reference map is described in the digital code as 255: rice paddy field, 0: others.\n",
+  "keywords": [
+    "open data",
+    "sentinel hub",
+    "raster",
+    "SAR",
+    "dashboard hackathon",
+    "rice paddy",
+    "JAXA"
+  ],
+  "title": "ALOS-2 PALSAR-2 ScanSAR Reference Rice Paddy Field Map",
+  "license": ""
+}

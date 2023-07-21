@@ -1,0 +1,154 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "CDS_2M_TEMP_2020",
+  "properties": {
+    "cube:dimensions": {
+      "x": {
+        "type": "spatial",
+        "axis": "x",
+        "extent": [
+          -179.999755859375,
+          179.99977453631897
+        ]
+      },
+      "y": {
+        "type": "spatial",
+        "axis": "y",
+        "extent": [
+          -90.12489004526765,
+          90.125
+        ]
+      },
+      "t": {
+        "type": "temporal",
+        "extent": [
+          "2019-01-01T00:00:00Z",
+          "2022-04-01T00:00:00Z"
+        ]
+      },
+      "bands": {
+        "type": "bands",
+        "values": [
+          "AIR2MT"
+        ]
+      }
+    },
+    "datetime": "2019-01-01T00:00:00Z"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -179.999755859375,
+          -90.12489004526765
+        ],
+        [
+          -179.999755859375,
+          90.125
+        ],
+        [
+          179.99977453631897,
+          90.125
+        ],
+        [
+          179.99977453631897,
+          -90.12489004526765
+        ],
+        [
+          -179.999755859375,
+          -90.12489004526765
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "about",
+      "href": "https://collections.eurodatacube.com/2mt_2020_monthly_average_from_cds",
+      "type": "text/html",
+      "title": "Website describing the collection"
+    },
+    {
+      "rel": "about",
+      "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+      "type": "text/html",
+      "title": "Details about running Evalscripts"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://raw.githubusercontent.com/eurodatacube/public-collections/main/collections/2mt_2020_monthly_average_from_cds/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate 2m Temperature Visualisation imagery",
+      "sentinelhub:layer_name": "2m Temperature Visualisation",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "license",
+      "href": "",
+      "type": "text/html",
+      "title": "License"
+    },
+    {
+      "rel": "root",
+      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "https://collections.eurodatacube.com/2mt_2020_monthly_average_from_cds/2mt_2020_monthly_average_from_cds.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    -179.999755859375,
+    -90.12489004526765,
+    179.99977453631897,
+    90.125
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "datasource_type": "byoc-0b3eebec-30de-4fa6-9cd3-4b252d45d847",
+  "providers": [
+    {
+      "name": "Sentinel Hub",
+      "description": "",
+      "roles": [
+        "processor"
+      ],
+      "url": "https://services.sentinel-hub.com"
+    }
+  ],
+  "description": "Gridded ERA5 is the fifth generation ECMWF reanalysis for the global climate and weather for the past 4 to 7 decades. This parameter is the 2m temperature monthly average",
+  "keywords": [
+    "copernicus services",
+    "C3S",
+    "open data",
+    "sentinel hub",
+    "raster",
+    "race challenges"
+  ],
+  "title": "2mT_2020_Monthly_Average_from_CDS",
+  "license": ""
+}

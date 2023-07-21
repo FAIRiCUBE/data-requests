@@ -1,0 +1,176 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "POPULATION_DENSITY",
+  "properties": {
+    "cube:dimensions": {
+      "x": {
+        "type": "spatial",
+        "axis": "x",
+        "extent": [
+          -180,
+          179.99999999999983
+        ],
+        "reference_system": 4326
+      },
+      "y": {
+        "type": "spatial",
+        "axis": "y",
+        "extent": [
+          -90,
+          89.99999999999991
+        ],
+        "reference_system": 4326
+      },
+      "t": {
+        "type": "temporal",
+        "extent": [
+          "2020-05-01T00:00:00Z",
+          "2020-05-01T00:00:01Z"
+        ]
+      },
+      "bands": {
+        "type": "bands",
+        "values": [
+          "populationDensity"
+        ]
+      }
+    },
+    "datetime": "2020-05-01T00:00:00Z"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -90.0
+        ],
+        [
+          -180.0,
+          89.99999999999991
+        ],
+        [
+          179.99999999999983,
+          89.99999999999991
+        ],
+        [
+          179.99999999999983,
+          -90.0
+        ],
+        [
+          -180.0,
+          -90.0
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "about",
+      "href": "https://collections.eurodatacube.com/population_density",
+      "type": "text/html",
+      "title": "Website describing the collection"
+    },
+    {
+      "rel": "wmts",
+      "href": "https://services.sentinel-hub.com/ogc/wmts/9b12a1a1-d4ca-45ae-a345-311accb663a5",
+      "wmts:layer": "POPULATION-DENSITY",
+      "wmts:dimensions": {
+        "warnings": true
+      }
+    },
+    {
+      "rel": "about",
+      "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+      "type": "text/html",
+      "title": "Details about running Evalscripts"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://raw.githubusercontent.com/eurodatacube/public-collections/main/collections/population_density/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate Population Density imagery",
+      "sentinelhub:layer_name": "Population Density",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "license",
+      "href": "",
+      "type": "text/html",
+      "title": "License"
+    },
+    {
+      "rel": "root",
+      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "https://collections.eurodatacube.com/population_density/population_density.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    -180,
+    -90,
+    179.99999999999983,
+    89.99999999999991
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "datasource_type": "byoc-b468089b-2627-4787-b984-89c10434f6c6",
+  "raster:bands": [
+    {
+      "description": "Population density",
+      "name": "populationDensity",
+      "openeo:gsd": {
+        "value": [
+          0.009920634920333,
+          0.009920634920333
+        ],
+        "unit": "\u00b0"
+      }
+    }
+  ],
+  "providers": [
+    {
+      "name": "Sentinel Hub",
+      "description": "",
+      "roles": [
+        "processor"
+      ],
+      "url": "https://services.sentinel-hub.com"
+    }
+  ],
+  "description": "Gridded Population of the World v4 for year 2020",
+  "keywords": [
+    "open data",
+    "sentinel hub",
+    "raster",
+    "race challenges"
+  ],
+  "title": "Population_density",
+  "license": ""
+}

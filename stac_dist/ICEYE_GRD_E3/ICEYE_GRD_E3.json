@@ -1,0 +1,152 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "ICEYE_GRD_E3",
+  "properties": {
+    "cube:dimensions": {
+      "x": {
+        "type": "spatial",
+        "axis": "x",
+        "extent": [
+          4.08589,
+          4.10156
+        ]
+      },
+      "y": {
+        "type": "spatial",
+        "axis": "y",
+        "extent": [
+          51.94683,
+          51.95753
+        ]
+      },
+      "t": {
+        "type": "temporal",
+        "extent": [
+          "2020-02-04T03:38:35Z",
+          "2020-07-17T03:44:28Z"
+        ]
+      },
+      "bands": {
+        "type": "bands",
+        "values": [
+          "GRD"
+        ]
+      }
+    },
+    "datetime": "2020-02-04T03:38:35Z"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          4.08589,
+          51.94683
+        ],
+        [
+          4.08589,
+          51.95753
+        ],
+        [
+          4.10156,
+          51.95753
+        ],
+        [
+          4.10156,
+          51.94683
+        ],
+        [
+          4.08589,
+          51.94683
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "about",
+      "href": "https://collections.eurodatacube.com/iceye_e3",
+      "type": "text/html",
+      "title": "Website describing the collection"
+    },
+    {
+      "rel": "about",
+      "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+      "type": "text/html",
+      "title": "Details about running Evalscripts"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://raw.githubusercontent.com/eurodatacube/public-collections/main/collections/iceye_e3/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate GRD ICEYE_E3 imagery",
+      "sentinelhub:layer_name": "GRD ICEYE_E3",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "license",
+      "href": "",
+      "type": "text/html",
+      "title": "License"
+    },
+    {
+      "rel": "root",
+      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "https://collections.eurodatacube.com/iceye_e3/iceye_e3.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    4.08589,
+    51.94683,
+    4.10156,
+    51.95753
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "datasource_type": "byoc-c47fa011-e9cd-4076-9b2f-68a93d757e58",
+  "providers": [
+    {
+      "name": "Sentinel Hub",
+      "description": "",
+      "roles": [
+        "processor"
+      ],
+      "url": "https://services.sentinel-hub.com"
+    }
+  ],
+  "description": "Oil storages filling up as demand for oil decreases when people are not travelling",
+  "keywords": [
+    "open data",
+    "sentinel hub",
+    "raster",
+    "race challenges"
+  ],
+  "title": "ICEYE_E3",
+  "license": ""
+}

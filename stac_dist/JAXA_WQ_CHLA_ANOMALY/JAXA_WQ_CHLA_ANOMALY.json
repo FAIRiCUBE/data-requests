@@ -1,0 +1,154 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "JAXA_WQ_CHLA_ANOMALY",
+  "properties": {
+    "cube:dimensions": {
+      "x": {
+        "type": "spatial",
+        "axis": "x",
+        "extent": [
+          12,
+          140.25
+        ]
+      },
+      "y": {
+        "type": "spatial",
+        "axis": "y",
+        "extent": [
+          33.85,
+          45.8
+        ]
+      },
+      "t": {
+        "type": "temporal",
+        "extent": [
+          "2018-01-06T00:00:00Z",
+          null
+        ]
+      },
+      "bands": {
+        "type": "bands",
+        "values": [
+          "chla"
+        ]
+      }
+    },
+    "datetime": "2018-01-06T00:00:00Z"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          12.0,
+          33.85
+        ],
+        [
+          12.0,
+          45.8
+        ],
+        [
+          140.25,
+          45.8
+        ],
+        [
+          140.25,
+          33.85
+        ],
+        [
+          12.0,
+          33.85
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "about",
+      "href": "https://collections.eurodatacube.com/jaxa_wq_chla",
+      "type": "text/html",
+      "title": "Website describing the collection"
+    },
+    {
+      "rel": "about",
+      "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+      "type": "text/html",
+      "title": "Details about running Evalscripts"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://raw.githubusercontent.com/eurodatacube/public-collections/main/collections/jaxa_wq_chla/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate Chlorophyll-a weekly anomaly imagery",
+      "sentinelhub:layer_name": "Chlorophyll-a weekly anomaly",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "license",
+      "href": "",
+      "type": "text/html",
+      "title": "License"
+    },
+    {
+      "rel": "root",
+      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "https://collections.eurodatacube.com/jaxa_wq_chla/jaxa_wq_chla.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    12,
+    33.85,
+    140.25,
+    45.8
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "datasource_type": "byoc-198aa13a-b0c0-4b78-8f69-e08fc58551a7",
+  "providers": [
+    {
+      "name": "Sentinel Hub",
+      "description": "",
+      "roles": [
+        "processor"
+      ],
+      "url": "https://services.sentinel-hub.com"
+    }
+  ],
+  "description": "Water quality Chlorophyll-a weekly anomaly.\nIt is the ratio (percentage) of weekly chlorophyll-a concentration divided by average concentration of other years for 4 sites: North Adriatic, Tokyo, Kobe and Nagoya.  \nAnomaly[%]=((DN-1)/254*(300-(-100))-100).\nThe base data is made by averaging within -1, 0, +1 weeks in 2018-2020.\n```\nFile naming convention:\njx_chla_tif_XXX_yyyy_mm_dd.tif\nXXX: Area name\n         nas -> NAdriatic\n         tok -> Tokyo\n         kob -> Kobe\n         nag -> Nagoya\nyyyy:Year\nmm:Month\ndd:Day\n```\n",
+  "keywords": [
+    "open data",
+    "sentinel hub",
+    "raster",
+    "water quality",
+    "dashboard hackathon",
+    "JAXA"
+  ],
+  "title": "JAXA_wq_chla_anomaly",
+  "license": ""
+}

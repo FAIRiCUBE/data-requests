@@ -29,7 +29,7 @@ def create_axes(axes):
 
 def create_links(title):
     self_href = f"https://fairicube.github.io/data-requests/{title}.json"
-    root_href = "https://fairicube.github.io/data-requests/index.json"
+    root_href = "https://fairicube.github.io/data-requests/catalog.json"
     self_link = pystac.Link(
         rel="self",
         media_type="application/json",
@@ -187,12 +187,12 @@ query_1 = gql(
 
 issues = client.execute(query_1)[
     "organization"]["repository"]["issues"]["edges"]
-index_catalog = pystac.Catalog(
-    id="index",
-    title="data-access catalog",
-    description="The stac catalog that contains all the generated datacube items."
-)
-
+# index_catalog = pystac.Catalog(
+#     id="index",
+#     title="data-access catalog",
+#     description="The stac catalog that contains all the generated datacube items."
+# )
+index_catalog = pystac.Catalog.from_file('./stac_dist/catalog.json')
 for index, issue in enumerate(issues):
     title = issue["node"]["title"].split("]: ")[-1].replace(" ", "_")
     title = title.replace("–", "_")

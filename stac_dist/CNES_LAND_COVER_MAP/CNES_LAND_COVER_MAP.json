@@ -1,0 +1,182 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "CNES_LAND_COVER_MAP",
+  "properties": {
+    "cube:dimensions": {
+      "x": {
+        "type": "spatial",
+        "axis": "x",
+        "extent": [
+          -6.26,
+          11.85
+        ]
+      },
+      "y": {
+        "type": "spatial",
+        "axis": "y",
+        "extent": [
+          40.46,
+          51.45
+        ]
+      },
+      "t": {
+        "type": "temporal",
+        "extent": [
+          "2016-01-01T00:00:00Z",
+          "2021-01-01T00:00:00Z"
+        ],
+        "step": "P1Y"
+      },
+      "bands": {
+        "type": "bands",
+        "values": [
+          "OCS",
+          "OCS_Confidence",
+          "OCS_Validity"
+        ]
+      }
+    },
+    "datetime": "2016-01-01T00:00:00Z"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -6.26,
+          40.46
+        ],
+        [
+          -6.26,
+          51.45
+        ],
+        [
+          11.85,
+          51.45
+        ],
+        [
+          11.85,
+          40.46
+        ],
+        [
+          -6.26,
+          40.46
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "about",
+      "href": "https://collections.eurodatacube.com/cnes-land-cover-map",
+      "type": "text/html",
+      "title": "Website describing the collection"
+    },
+    {
+      "rel": "about",
+      "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+      "type": "text/html",
+      "title": "Details about running Evalscripts"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://custom-scripts.sentinel-hub.com/other_collections/cnes/cnes_land_cover_classification/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to visualise CNES Land Cover Map imagery",
+      "sentinelhub:layer_name": "CNES Land Cover Map",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://custom-scripts.sentinel-hub.com/other_collections/cnes/cnes_land_cover_confidence/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to visualise the classifier confidence",
+      "sentinelhub:layer_name": "CNES Land Cover Classifier Confidence",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://custom-scripts.sentinel-hub.com/other_collections/cnes/cnes_land_cover_validity/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to visualise the CNES Land Cover Validity",
+      "sentinelhub:layer_name": "CNES Land Cover Validity",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "about",
+      "href": "https://collections.eurodatacube.com/cnes-land-cover-map/readme.html#band-information",
+      "type": "text/html",
+      "title": "Nomenclature mapping - band values CNES Land Cover Map labels - Legend used for 2021, 2020, 2019 and 2018 data"
+    },
+    {
+      "rel": "license",
+      "href": "https://theia.cnes.fr/atdistrib/documents/Licence-Theia-CNES-Sentinel-ETALAB-v2.0-en.pdf",
+      "type": "text/html",
+      "title": "License"
+    },
+    {
+      "rel": "root",
+      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "https://collections.eurodatacube.com/cnes-land-cover-map/cnes-land-cover-map-france-overview.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    -6.26,
+    40.46,
+    11.85,
+    51.45
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "datasource_type": "byoc-9baa2732-6597-49d2-ae3b-68ba0a5386b2",
+  "providers": [
+    {
+      "name": "Sentinel Hub",
+      "description": "",
+      "roles": [
+        "processor"
+      ],
+      "url": "https://services.sentinel-hub.com"
+    }
+  ],
+  "description": "The CNES Land Cover Map (Occupation des Sols, OSO) produces land classification for Metropolitan France at 10 m spatial resolution based on Sentinel-2 L2A data within the Theia Land Cover CES framework.\nMaps for 2021, 2020, 2019, and 2018 use a 23-categories nomenclature. For earlier maps in 2017 and 2016, a fully compatible 17-classes nomenclature is employed.\n",
+  "keywords": [
+    "derived data",
+    "land cover",
+    "machine learning",
+    "open data",
+    "raster",
+    "sentinel hub",
+    "systematic"
+  ],
+  "title": "CNES Land Cover Map",
+  "license": "proprietary"
+}
