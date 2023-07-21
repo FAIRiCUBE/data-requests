@@ -101,7 +101,7 @@ for item in index_collection:
     feature.extra_fields = extra_fields
     collection_links = collection.links
     for link in collection_links:
-        if link.rel == "self":
+        if link.rel == "self" or (link.rel == "license" and link.href == ''):
             collection_links.remove(link)
     additional_links = create_links(feature.id)
     collection_links.extend(additional_links)
@@ -112,4 +112,5 @@ for item in index_collection:
 
 index_catalog.normalize_and_save(
         root_href="stac_dist/",
-        catalog_type=pystac.CatalogType.SELF_CONTAINED)
+        catalog_type=pystac.CatalogType.SELF_CONTAINED,
+        skip_unresolved=True)
