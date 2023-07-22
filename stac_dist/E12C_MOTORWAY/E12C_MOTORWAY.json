@@ -3,6 +3,8 @@
   "stac_version": "1.0.0",
   "id": "E12C_MOTORWAY",
   "properties": {
+    "start_datetime": "2017-05-15T00:00:00Z",
+    "end_datetime": "2020-05-15T00:00:00Z",
     "cube:dimensions": {
       "x": {
         "type": "spatial",
@@ -34,7 +36,7 @@
         ]
       }
     },
-    "datetime": "2017-05-15T00:00:00Z"
+    "datetime": null
   },
   "geometry": {
     "type": "Polygon",

@@ -3,6 +3,8 @@
   "stac_version": "1.0.0",
   "id": "ICEYE_GRD_E11",
   "properties": {
+    "start_datetime": "2020-03-20T14:27:20Z",
+    "end_datetime": "2020-03-20T14:27:21Z",
     "cube:dimensions": {
       "x": {
         "type": "spatial",
@@ -34,7 +36,7 @@
         ]
       }
     },
-    "datetime": "2020-03-20T14:27:20Z"
+    "datetime": null
   },
   "geometry": {
     "type": "Polygon",

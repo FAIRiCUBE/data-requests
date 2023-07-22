@@ -3,6 +3,8 @@
   "stac_version": "1.0.0",
   "id": "EMODNET_VESSEL_DENSITY_CARGO",
   "properties": {
+    "start_datetime": "2017-01-01T00:00:00Z",
+    "end_datetime": "2020-12-01T00:00:00Z",
     "cube:dimensions": {
       "x": {
         "type": "spatial",
@@ -34,7 +36,7 @@
         ]
       }
     },
-    "datetime": "2017-01-01T00:00:00Z"
+    "datetime": null
   },
   "geometry": {
     "type": "Polygon",

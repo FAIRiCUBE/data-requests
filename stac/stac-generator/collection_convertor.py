@@ -52,9 +52,16 @@ for item in index_collection:
             ]
     )
 
-    date = extent["temporal"]["interval"][0][0]
-    if date is None:
-        date = '2000-01-01T00:00:00Z'
+    start_date = extent["temporal"]["interval"][0][0]
+    end_date = extent["temporal"]["interval"][0][1]
+    date = None
+    if start_date is None or end_date is None:
+        start_date = None
+        end_date = None
+        date = datetime.strptime('2000-01-01T00:00:00Z', "%Y-%m-%dT%H:%M:%SZ")
+    else:
+        start_date = datetime.strptime(start_date, "%Y-%m-%dT%H:%M:%SZ")
+        end_date = datetime.strptime(end_date, "%Y-%m-%dT%H:%M:%SZ")
     extra_fields = dict()
     for field in collection.extra_fields:
         if field not in ["type", "cube:dimensions"]:
@@ -81,7 +88,9 @@ for item in index_collection:
     feature = pystac.Item(
         id=collection.id,
         stac_extensions=versioned_ext,
-        datetime=datetime.strptime(date, "%Y-%m-%dT%H:%M:%SZ"),
+        start_datetime=start_date,
+        end_datetime=end_date,
+        datetime=date,
         bbox=bbox,
         geometry=mapping(footprint),
         properties=dict(),
