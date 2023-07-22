@@ -3,6 +3,7 @@
   "stac_version": "1.0.0",
   "id": "VEGETATION_INDICES",
   "properties": {
+    "start_datetime": "2016-10-01T09:20:22Z",
     "cube:dimensions": {
       "x": {
         "type": "spatial",
@@ -126,7 +127,7 @@
         ]
       }
     },
-    "datetime": "2000-01-01T00:00:00Z"
+    "datetime": "2016-10-01T09:20:22Z"
   },
   "geometry": {
     "type": "Polygon",
