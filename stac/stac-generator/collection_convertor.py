@@ -54,18 +54,14 @@ for item in index_collection:
 
     start_date = extent["temporal"]["interval"][0][0]
     end_date = extent["temporal"]["interval"][0][1]
-    date = None
-    if start_date is None or end_date is None:
-        date = datetime.strptime('2000-01-01T00:00:00Z', "%Y-%m-%dT%H:%M:%SZ")
-        if start_date:
-            start_date = datetime.strptime(start_date, "%Y-%m-%dT%H:%M:%SZ")
-            date = start_date
-        elif start_date:
-            date = datetime.strptime(end_date, "%Y-%m-%dT%H:%M:%SZ")
-            end_date = end_date
-    else:
+    date = datetime.strptime('2000-01-01T00:00:00Z', "%Y-%m-%dT%H:%M:%SZ")
+    if start_date:
         start_date = datetime.strptime(start_date, "%Y-%m-%dT%H:%M:%SZ")
+        date = start_date
+    if end_date:
         end_date = datetime.strptime(end_date, "%Y-%m-%dT%H:%M:%SZ")
+        date = end_date
+
     extra_fields = dict()
     for field in collection.extra_fields:
         if field not in ["type", "cube:dimensions"]:

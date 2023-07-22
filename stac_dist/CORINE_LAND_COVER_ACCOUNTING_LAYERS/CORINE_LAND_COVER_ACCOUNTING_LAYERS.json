@@ -39,7 +39,7 @@
         ]
       }
     },
-    "datetime": null
+    "datetime": "2018-01-01T00:00:00Z"
   },
   "geometry": {
     "type": "Polygon",
