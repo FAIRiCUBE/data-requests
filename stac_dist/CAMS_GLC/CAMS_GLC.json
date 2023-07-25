@@ -37,7 +37,8 @@
           "GREEN"
         ]
       }
-    }
+    },
+    "datetime": null
   },
   "geometry": {
     "type": "Polygon",
