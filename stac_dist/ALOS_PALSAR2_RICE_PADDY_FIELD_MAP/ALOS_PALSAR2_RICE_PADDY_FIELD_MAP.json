@@ -24,8 +24,9 @@
       },
       "t": {
         "type": "temporal",
-        "values": [
-          "2019-03-01T00:00:00Z"
+        "extent": [
+          "2019-03-01T00:00:00Z",
+          null
         ]
       },
       "bands": {
