@@ -3,8 +3,6 @@
   "stac_version": "1.0.0",
   "id": "ALOS_PALSAR2_RICE_PADDY_FIELD_MAP",
   "properties": {
-    "start_datetime": "2019-03-01T00:00:00Z",
-    "end_datetime": "2020-03-01T00:00:00Z",
     "cube:dimensions": {
       "x": {
         "type": "spatial",
@@ -24,8 +22,9 @@
       },
       "t": {
         "type": "temporal",
-        "values": [
-          "2000-01-01T00:00:00"
+        "extent": [
+          "2019-03-01T00:00:00Z",
+          "2020-03-01T00:00:00Z"
         ]
       },
       "bands": {
@@ -35,7 +34,7 @@
         ]
       }
     },
-    "datetime": "2000-01-01T00:00:00Z"
+    "datetime": "2019-03-01T00:00:00Z"
   },
   "geometry": {
     "type": "Polygon",
