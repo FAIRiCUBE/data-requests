@@ -4,6 +4,7 @@
   "id": "SENTINEL2_L2A_SENTINELHUB",
   "properties": {
     "start_datetime": "2016-11-01T00:00:00Z",
+    "end_datetime": "2999-01-01T00:00:00Z",
     "cube:dimensions": {
       "x": {
         "type": "spatial",
@@ -144,7 +145,7 @@
         ]
       }
     },
-    "datetime": "2000-01-01T00:00:00Z"
+    "datetime": null
   },
   "geometry": {
     "type": "Polygon",

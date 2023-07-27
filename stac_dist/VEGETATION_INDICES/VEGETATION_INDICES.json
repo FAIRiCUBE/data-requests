@@ -4,6 +4,7 @@
   "id": "VEGETATION_INDICES",
   "properties": {
     "start_datetime": "2016-10-01T09:20:22Z",
+    "end_datetime": "2999-01-01T00:00:00Z",
     "cube:dimensions": {
       "x": {
         "type": "spatial",
@@ -127,7 +128,7 @@
         ]
       }
     },
-    "datetime": "2000-01-01T00:00:00Z"
+    "datetime": null
   },
   "geometry": {
     "type": "Polygon",

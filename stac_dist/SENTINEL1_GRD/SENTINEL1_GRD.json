@@ -4,6 +4,7 @@
   "id": "SENTINEL1_GRD",
   "properties": {
     "start_datetime": "2014-10-03T04:14:15Z",
+    "end_datetime": "2999-01-01T00:00:00Z",
     "cube:dimensions": {
       "x": {
         "type": "spatial",
@@ -42,7 +43,7 @@
         ]
       }
     },
-    "datetime": "2000-01-01T00:00:00Z"
+    "datetime": null
   },
   "geometry": {
     "type": "Polygon",
