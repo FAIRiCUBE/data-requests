@@ -1,4 +1,5 @@
 import requests
+import json
 from datetime import datetime
 from shapely.geometry import Polygon, mapping
 import pystac
@@ -25,6 +26,16 @@ def create_links(title):
         target=root_href
     )
     return [self_link, root_link, parent_link]
+
+
+def cleanup_datetime(path):
+    with open(path, 'r+') as f:
+        data = json.load(f)
+        if "start_datetime" in data["properties"] and "end_datetime" in data["properties"]:
+            data["properties"]["datetime"] = None
+        f.seek(0)
+        json.dump(data, f, indent=2)
+        f.truncate()
 
 
 catalog_url = "https://collections.eurodatacube.com/stac/index.json"
@@ -54,15 +65,14 @@ for item in index_collection:
 
     start_date = extent["temporal"]["interval"][0][0]
     end_date = extent["temporal"]["interval"][0][1]
-    date = datetime.strptime('2000-01-01T00:00:00Z', "%Y-%m-%dT%H:%M:%SZ")
-
-    if end_date:
-        end_date = datetime.strptime(end_date, "%Y-%m-%dT%H:%M:%SZ")
-        date = end_date
-
+    date = datetime.strptime('1900-01-01T00:00:00Z', "%Y-%m-%dT%H:%M:%SZ")
     if start_date:
         start_date = datetime.strptime(start_date, "%Y-%m-%dT%H:%M:%SZ")
-        date = start_date
+        if end_date:
+            end_date = datetime.strptime(end_date, "%Y-%m-%dT%H:%M:%SZ")
+        else:
+            end_date = datetime.strptime('2999-01-01T00:00:00Z', "%Y-%m-%dT%H:%M:%SZ")
+
     extra_fields = dict()
     for field in collection.extra_fields:
         if field not in ["type", "cube:dimensions"]:
@@ -124,3 +134,10 @@ index_catalog.normalize_and_save(
         root_href="stac_dist/",
         catalog_type=pystac.CatalogType.SELF_CONTAINED,
         skip_unresolved=True)
+
+
+result = open('stac_dist/catalog.json')
+result_data = json.load(result)
+for link in result_data["links"]:
+    if link["rel"] == "item":
+        cleanup_datetime(f'stac_dist/{link["href"]}')
