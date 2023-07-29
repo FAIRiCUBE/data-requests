@@ -12,3 +12,10 @@ for link in index_catalog["links"]:
             url=post_url, json=json_body,
             auth=HTTPBasicAuth(
                 'user', 'password'))
+        if response.status_code == 409:
+            put_url = f'{post_url}/{json_body["id"]}'
+            response = requests.put(
+                url=put_url, json=json_body,
+                auth=HTTPBasicAuth(
+                    'user', 'password'))
+        print(response, json_body["id"])
