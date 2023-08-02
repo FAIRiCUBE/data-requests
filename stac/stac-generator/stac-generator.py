@@ -251,6 +251,6 @@ for index, issue in enumerate(issues):
             stac_item = create_stac_item(document, title)
             index_catalog.add_item(stac_item)
 
-        index_catalog.normalize_and_save(
-                root_href="stac_dist/",
-                catalog_type=pystac.CatalogType.SELF_CONTAINED)
+    index_catalog.normalize_and_save(
+            root_href="stac_dist/",
+            catalog_type=pystac.CatalogType.SELF_CONTAINED)

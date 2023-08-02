@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "1.0.0",
+  "stac_version": "2.2.0",
   "id": "ESA_WORLDCOVER_10M_2020_V1",
   "properties": {
     "start_datetime": "2020-01-01T00:00:00Z",
@@ -109,7 +109,8 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json"
+      "type": "application/json",
+      "title": "data-access catalog"
     },
     {
       "rel": "parent",

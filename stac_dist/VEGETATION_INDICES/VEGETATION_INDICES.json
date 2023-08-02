@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "1.0.0",
+  "stac_version": "2.2.0",
   "id": "VEGETATION_INDICES",
   "properties": {
     "start_datetime": "2016-10-01T09:20:22Z",
@@ -229,7 +229,8 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json"
+      "type": "application/json",
+      "title": "data-access catalog"
     },
     {
       "rel": "parent",

@@ -1,0 +1,85 @@
+{
+  "type": "Feature",
+  "stac_version": "2.2.0",
+  "id": "NUTS3_2021",
+  "properties": {
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -180,
+          180
+        ],
+        "reference_system": "ESPG:4326",
+        "type": "spatial"
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          -90,
+          90
+        ],
+        "reference_system": "ESPG:4326",
+        "type": "spatial"
+      },
+      "time": {
+        "values": [
+          "2000-01-01T00:00:00"
+        ],
+        "type": "temporal"
+      }
+    },
+    "datetime": "2000-01-01T00:00:00Z"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -90.0
+        ],
+        [
+          -180.0,
+          90.0
+        ],
+        [
+          180.0,
+          90.0
+        ],
+        [
+          180.0,
+          -90.0
+        ],
+        [
+          -180.0,
+          -90.0
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "1.0.0",
+  "stac_version": "2.2.0",
   "id": "VEGETATION_PHENOLOGY_AND_PRODUCTIVITY_PARAMETERS_SEASON_2",
   "properties": {
     "start_datetime": "2017-01-01T00:00:00Z",
@@ -283,7 +283,8 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json"
+      "type": "application/json",
+      "title": "data-access catalog"
     },
     {
       "rel": "parent",

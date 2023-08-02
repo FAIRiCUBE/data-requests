@@ -1,7 +1,7 @@
 {
   "type": "Catalog",
   "id": "index",
-  "stac_version": "1.0.0",
+  "stac_version": "2.2.0",
   "description": "The stac catalog that contains all the generated datacube items.",
   "links": [
     {
@@ -313,6 +313,161 @@
     {
       "rel": "item",
       "href": "./ERA5_WIND_V/ERA5_WIND_V.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./tree_cover_density/tree_cover_density.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Administrative_boundaries_of_EEA38_and_the_United_Kingdom/Administrative_boundaries_of_EEA38_and_the_United_Kingdom.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./water_and_wetness/water_and_wetness.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./FUA___Urban_Audit_2021_10m_raster/FUA___Urban_Audit_2021_10m_raster.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Urban_Atlas_2018_10m_raster/Urban_Atlas_2018_10m_raster.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./City___Urban_Audit_2021_10m_raster/City___Urban_Audit_2021_10m_raster.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./NUTS3_2021/NUTS3_2021.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Crop_Parcel_Registration_(BRP)/Crop_Parcel_Registration_(BRP).json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./dominant_leaf_type/dominant_leaf_type.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Grassland_change/Grassland_change.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./corine_land_cover/corine_land_cover.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./High_Resolution_Layer_-_Grassland/High_Resolution_Layer_-_Grassland.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Urban_Audit_city_delineations_(FUA,_city,_commuting_zone)/Urban_Audit_city_delineations_(FUA,_city,_commuting_zone).json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./High_Resolution_Layer_-_Forest_-tree_cover_/High_Resolution_Layer_-_Forest_-tree_cover_.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./High_Resolution_Layer_-_Forest_-Dominant_Leaf_Type__/High_Resolution_Layer_-_Forest_-Dominant_Leaf_Type__.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Corine_Land_Cover_/Corine_Land_Cover_.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Climate_data_-_Precipitation/Climate_data_-_Precipitation.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Climate_data_-_Temperature/Climate_data_-_Temperature.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./European_Settlement_Map_/European_Settlement_Map_.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./High_Resolution_Layer_-_Imperviousness/High_Resolution_Layer_-_Imperviousness.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./High_Resolution_Layer_-_Forest_type__/High_Resolution_Layer_-_Forest_type__.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./High_Resolution_Layer_-_Small_Woody_Features_/High_Resolution_Layer_-_Small_Woody_Features_.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./High_Resolution_Layer_-_Water_&_Wetness_/High_Resolution_Layer_-_Water_&_Wetness_.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Climate_Data_-_Near-surface_specific_humidity/Climate_Data_-_Near-surface_specific_humidity.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Climate_Data_-_Near-surface_wind_speed/Climate_Data_-_Near-surface_wind_speed.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Climate_Data_-_Rainfall_flux/Climate_Data_-_Rainfall_flux.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Climate_Data_-_Snowfall_flux/Climate_Data_-_Snowfall_flux.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Climate_Data_-_Surface_air_pressure/Climate_Data_-_Surface_air_pressure.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Climate_Data_-_Surface_downwelling_longwave_radiation/Climate_Data_-_Surface_downwelling_longwave_radiation.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Climate_Data_-_Surface_downwelling_shortwave_Radiation/Climate_Data_-_Surface_downwelling_shortwave_Radiation.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Climate_Data_-_Near_surface_air_temperatore/Climate_Data_-_Near_surface_air_temperatore.json",
       "type": "application/json"
     }
   ],
