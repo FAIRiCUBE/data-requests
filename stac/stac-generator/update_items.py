@@ -4,6 +4,7 @@ from requests.auth import HTTPBasicAuth
 
 catalog_url = "https://fairicube.github.io/data-requests/catalog.json"
 post_url = "https://stacapi-write.eoxhub.fairicube.eu/collections/index/items"
+# post_url = "http://0.0.0.0:8082/collections/index/items"
 index_catalog = requests.get(catalog_url).json()
 for link in index_catalog["links"]:
     if link["rel"] == "item":
