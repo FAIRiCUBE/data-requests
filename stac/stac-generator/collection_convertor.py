@@ -73,22 +73,22 @@ for item in index_collection:
         else:
             end_date = datetime.strptime('2999-01-01T00:00:00Z', "%Y-%m-%dT%H:%M:%SZ")
 
-    extra_fields = dict()
+    properties = dict()
     for field in collection.extra_fields:
         if field not in ["type", "cube:dimensions"]:
-            extra_fields[field] = collection.extra_fields[field]
+            properties[field] = collection.extra_fields[field]
 
-    extra_fields.update(collection.summaries.to_dict())
+    properties.update(collection.summaries.to_dict())
     providers_list = []
     providers = collection.providers
     for provider in providers:
         providers_list.append(provider.to_dict())
 
-    extra_fields["providers"] = providers_list
-    extra_fields["description"] = collection.description
-    extra_fields["keywords"] = collection.keywords
-    extra_fields["title"] = collection.title
-    extra_fields["license"] = collection.license
+    properties["providers"] = providers_list
+    properties["description"] = collection.description
+    properties["keywords"] = collection.keywords
+    properties["title"] = collection.title
+    properties["license"] = collection.license
 
     versioned_ext = collection.stac_extensions
     v1_schema = 'https://stac-extensions.github.io/datacube/v1.0.0/schema.json'
@@ -104,7 +104,7 @@ for item in index_collection:
         datetime=date,
         bbox=bbox,
         geometry=mapping(footprint),
-        properties=dict(),
+        properties=properties,
         assets=collection.assets
     )
     dimension_object = collection.extra_fields["cube:dimensions"]
@@ -118,7 +118,6 @@ for item in index_collection:
     item_datacube = datacube.DatacubeExtension.ext(feature)
 
     item_datacube.dimensions = dims
-    feature.extra_fields = extra_fields
     collection_links = collection.links
     for link in collection_links:
         if link.rel == "self" or (link.rel == "license" and link.href == ''):
