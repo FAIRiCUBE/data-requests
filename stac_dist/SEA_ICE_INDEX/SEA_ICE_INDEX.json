@@ -1,8 +1,54 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "SEA_ICE_INDEX",
   "properties": {
+    "datasource_type": "byoc-10549890-13bb-4ec5-8ae0-df387bd0b785",
+    "raster:bands": [
+      {
+        "description": "percentage of ice cover for cells with more than 15 percent ice cover",
+        "name": "concentration",
+        "openeo:gsd": {
+          "value": [
+            0.231481481481666,
+            0.231481481481666
+          ],
+          "unit": "\u00b0"
+        }
+      },
+      {
+        "description": "extent of ocean covered by ice at any concentration greater than 15 percent for a given day",
+        "name": "extent",
+        "openeo:gsd": {
+          "value": [
+            0.231481481481666,
+            0.231481481481666
+          ],
+          "unit": "\u00b0"
+        }
+      },
+      {
+        "description": "The mask of data/no data pixels.",
+        "name": "dataMask"
+      }
+    ],
+    "providers": [
+      {
+        "name": "Sentinel Hub",
+        "description": "",
+        "roles": [
+          "processor"
+        ],
+        "url": "https://creodias.sentinel-hub.com"
+      }
+    ],
+    "description": "[Sea Ice Index](https://nsidc.org/data/G02135/versions/3) products offer information about ice cover and its trends in the Arctic and Antarctica.\n In this collection, sea ice extent and concentration maps are provided at a resolution of 25 km on a daily basis.\n The products are computed using images from the Special Sensor Microwave Imager (SSM/I) and \n Special Sensor Microwave Imager/Sounder (SSMIS) instruments on Defense Meteorological Satellite Program (DMSP)\n satellites. Sea ice concentrations are generated from \n [brightness temperature data](https://nsidc.org/data/nsidc-0051). Sea ice extent is computed as areas covered by ice\n  with a concentration greater than 15 percent. This dataset is for demonstration purposes only and is not maintained.\n",
+    "keywords": [
+      "climate change",
+      "open data"
+    ],
+    "title": "Sea Ice Index",
+    "license": "proprietary",
     "start_datetime": "2017-01-01T00:00:00Z",
     "end_datetime": "2021-05-03T00:00:00Z",
     "cube:dimensions": {
@@ -124,8 +170,7 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json",
-      "title": "data-access catalog"
+      "type": "application/json"
     },
     {
       "rel": "parent",
@@ -153,51 +198,5 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ],
-  "datasource_type": "byoc-10549890-13bb-4ec5-8ae0-df387bd0b785",
-  "raster:bands": [
-    {
-      "description": "percentage of ice cover for cells with more than 15 percent ice cover",
-      "name": "concentration",
-      "openeo:gsd": {
-        "value": [
-          0.231481481481666,
-          0.231481481481666
-        ],
-        "unit": "\u00b0"
-      }
-    },
-    {
-      "description": "extent of ocean covered by ice at any concentration greater than 15 percent for a given day",
-      "name": "extent",
-      "openeo:gsd": {
-        "value": [
-          0.231481481481666,
-          0.231481481481666
-        ],
-        "unit": "\u00b0"
-      }
-    },
-    {
-      "description": "The mask of data/no data pixels.",
-      "name": "dataMask"
-    }
-  ],
-  "providers": [
-    {
-      "name": "Sentinel Hub",
-      "description": "",
-      "roles": [
-        "processor"
-      ],
-      "url": "https://creodias.sentinel-hub.com"
-    }
-  ],
-  "description": "[Sea Ice Index](https://nsidc.org/data/G02135/versions/3) products offer information about ice cover and its trends in the Arctic and Antarctica.\n In this collection, sea ice extent and concentration maps are provided at a resolution of 25 km on a daily basis.\n The products are computed using images from the Special Sensor Microwave Imager (SSM/I) and \n Special Sensor Microwave Imager/Sounder (SSMIS) instruments on Defense Meteorological Satellite Program (DMSP)\n satellites. Sea ice concentrations are generated from \n [brightness temperature data](https://nsidc.org/data/nsidc-0051). Sea ice extent is computed as areas covered by ice\n  with a concentration greater than 15 percent. This dataset is for demonstration purposes only and is not maintained.\n",
-  "keywords": [
-    "climate change",
-    "open data"
-  ],
-  "title": "Sea Ice Index",
-  "license": "proprietary"
+  ]
 }

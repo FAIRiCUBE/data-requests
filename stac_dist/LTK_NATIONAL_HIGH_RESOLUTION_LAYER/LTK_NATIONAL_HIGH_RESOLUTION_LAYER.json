@@ -1,8 +1,33 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "LTK_NATIONAL_HIGH_RESOLUTION_LAYER",
   "properties": {
+    "datasource_type": "byoc-86c76a3d-29f3-4eff-99fe-3eb84e422c66",
+    "providers": [
+      {
+        "name": "Sentinel Hub",
+        "description": "Hungary, 2016 - 2021",
+        "roles": [
+          "processor"
+        ],
+        "url": "https://services.sentinel-hub.com"
+      }
+    ],
+    "description": "The concept of the NHRL was to create a dataset that provides wall-to-wall information on land cover, especially on land cover categories that can be more reliably identified by remote sensing methods. Its classification mixes land use and land cover elements according to human interest, providing map information from the built environment to agricultural cultivated areas and natural vegetation cover.\nIn addition to the machine-learning process (Random Forest), its production includes data integration (roads - railways - buildings) and other data filtering steps to reduce data noise.\nIn the future, this yearly dataset could provide the basis for the production of visually verified change data with a reduced nomenclature. The data published here is not suitable for change detection in its present form.\n",
+    "keywords": [
+      "DanubeDataCube",
+      "xcube",
+      "sentinel hub",
+      "raster",
+      "systematic",
+      "derived data",
+      "land cover",
+      "machine learning",
+      "open data"
+    ],
+    "title": "National High Resolution Layer, Hungary",
+    "license": "",
     "start_datetime": "2016-01-01T00:00:00Z",
     "end_datetime": "2021-01-01T00:00:00Z",
     "cube:dimensions": {
@@ -97,8 +122,7 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json",
-      "title": "data-access catalog"
+      "type": "application/json"
     },
     {
       "rel": "parent",
@@ -125,30 +149,5 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ],
-  "datasource_type": "byoc-86c76a3d-29f3-4eff-99fe-3eb84e422c66",
-  "providers": [
-    {
-      "name": "Sentinel Hub",
-      "description": "Hungary, 2016 - 2021",
-      "roles": [
-        "processor"
-      ],
-      "url": "https://services.sentinel-hub.com"
-    }
-  ],
-  "description": "The concept of the NHRL was to create a dataset that provides wall-to-wall information on land cover, especially on land cover categories that can be more reliably identified by remote sensing methods. Its classification mixes land use and land cover elements according to human interest, providing map information from the built environment to agricultural cultivated areas and natural vegetation cover.\nIn addition to the machine-learning process (Random Forest), its production includes data integration (roads - railways - buildings) and other data filtering steps to reduce data noise.\nIn the future, this yearly dataset could provide the basis for the production of visually verified change data with a reduced nomenclature. The data published here is not suitable for change detection in its present form.\n",
-  "keywords": [
-    "DanubeDataCube",
-    "xcube",
-    "sentinel hub",
-    "raster",
-    "systematic",
-    "derived data",
-    "land cover",
-    "machine learning",
-    "open data"
-  ],
-  "title": "National High Resolution Layer, Hungary",
-  "license": ""
+  ]
 }

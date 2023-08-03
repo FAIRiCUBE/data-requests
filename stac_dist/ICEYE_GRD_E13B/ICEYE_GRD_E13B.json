@@ -1,8 +1,28 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "ICEYE_GRD_E13B",
   "properties": {
+    "datasource_type": "byoc-4a537983-1c61-4c6e-9c85-7b3972b7b596",
+    "providers": [
+      {
+        "name": "Sentinel Hub",
+        "description": "",
+        "roles": [
+          "processor"
+        ],
+        "url": "https://services.sentinel-hub.com"
+      }
+    ],
+    "description": "ICEYE image and detection of parked airplanes",
+    "keywords": [
+      "open data",
+      "sentinel hub",
+      "raster",
+      "race challenges"
+    ],
+    "title": "ICEYE_E13b",
+    "license": "",
     "start_datetime": "2020-02-04T03:38:35Z",
     "end_datetime": "2020-08-29T03:28:38Z",
     "cube:dimensions": {
@@ -96,8 +116,7 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json",
-      "title": "data-access catalog"
+      "type": "application/json"
     },
     {
       "rel": "parent",
@@ -124,25 +143,5 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ],
-  "datasource_type": "byoc-4a537983-1c61-4c6e-9c85-7b3972b7b596",
-  "providers": [
-    {
-      "name": "Sentinel Hub",
-      "description": "",
-      "roles": [
-        "processor"
-      ],
-      "url": "https://services.sentinel-hub.com"
-    }
-  ],
-  "description": "ICEYE image and detection of parked airplanes",
-  "keywords": [
-    "open data",
-    "sentinel hub",
-    "raster",
-    "race challenges"
-  ],
-  "title": "ICEYE_E13b",
-  "license": ""
+  ]
 }

@@ -1,8 +1,106 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "GLOBAL_SURFACE_WATER",
   "properties": {
+    "datasource_type": "byoc-9a525f12-33b6-424e-a0f2-d567eec0f277",
+    "raster:bands": [
+      {
+        "description": "Changes in water occurrence between two epochs, the first ranging from 1984 to 1999 and the second covering 2000 to 2021.",
+        "name": "change",
+        "openeo:gsd": {
+          "value": [
+            0.000277777777778,
+            0.000277777777778
+          ],
+          "unit": "\u00b0"
+        }
+      },
+      {
+        "description": "Maximum extent of surface water bodies in the 38-year time range.",
+        "name": "extent",
+        "openeo:gsd": {
+          "value": [
+            0.000277777777778,
+            0.000277777777778
+          ],
+          "unit": "\u00b0"
+        }
+      },
+      {
+        "description": "Intra- and inter-annual frequency of surface water presence in the time range between 1984 and 2021.",
+        "name": "occurrence",
+        "openeo:gsd": {
+          "value": [
+            0.000277777777778,
+            0.000277777777778
+          ],
+          "unit": "\u00b0"
+        }
+      },
+      {
+        "description": "Inter-annual variability of surface water presence in a defined water period within the entire time range from 1984 to 2021.",
+        "name": "recurrence",
+        "openeo:gsd": {
+          "value": [
+            0.000277777777778,
+            0.000277777777778
+          ],
+          "unit": "\u00b0"
+        }
+      },
+      {
+        "description": "Intra-annual distribution of surface water in the particular review year.",
+        "name": "seasonality",
+        "openeo:gsd": {
+          "value": [
+            0.000277777777778,
+            0.000277777777778
+          ],
+          "unit": "\u00b0"
+        }
+      },
+      {
+        "description": "Visualises changes in the three surface water classes (1) not water, (2) seasonal water, and (3) permanent water between the first and last year in the 38-year time period.",
+        "name": "transitions",
+        "openeo:gsd": {
+          "value": [
+            0.000277777777778,
+            0.000277777777778
+          ],
+          "unit": "\u00b0"
+        }
+      },
+      {
+        "description": "The mask of data/no data pixels.",
+        "name": "dataMask"
+      }
+    ],
+    "providers": [
+      {
+        "name": "Sentinel Hub",
+        "description": "",
+        "roles": [
+          "processor"
+        ],
+        "url": "https://creodias.sentinel-hub.com"
+      }
+    ],
+    "description": "The Global Surface Water dataset was developed by the European Commission's Joint Research Centre within the framework of the Copernicus Programme. It is derived from Landsat imagery and and shows different aspects of the spatio-temporal distribution of surface water between 1984 and 2021 at the global scale.",
+    "keywords": [
+      "sentinel hub",
+      "xcube",
+      "raster",
+      "systematic",
+      "water bodies",
+      "surface water",
+      "inland water",
+      "derived data",
+      "climate change",
+      "open data"
+    ],
+    "title": "Global Surface Water",
+    "license": "proprietary",
     "start_datetime": "2019-01-01T00:00:00Z",
     "end_datetime": "2020-01-01T00:00:00Z",
     "cube:dimensions": {
@@ -170,8 +268,7 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json",
-      "title": "data-access catalog"
+      "type": "application/json"
     },
     {
       "rel": "parent",
@@ -199,103 +296,5 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ],
-  "datasource_type": "byoc-9a525f12-33b6-424e-a0f2-d567eec0f277",
-  "raster:bands": [
-    {
-      "description": "Changes in water occurrence between two epochs, the first ranging from 1984 to 1999 and the second covering 2000 to 2021.",
-      "name": "change",
-      "openeo:gsd": {
-        "value": [
-          0.000277777777778,
-          0.000277777777778
-        ],
-        "unit": "\u00b0"
-      }
-    },
-    {
-      "description": "Maximum extent of surface water bodies in the 38-year time range.",
-      "name": "extent",
-      "openeo:gsd": {
-        "value": [
-          0.000277777777778,
-          0.000277777777778
-        ],
-        "unit": "\u00b0"
-      }
-    },
-    {
-      "description": "Intra- and inter-annual frequency of surface water presence in the time range between 1984 and 2021.",
-      "name": "occurrence",
-      "openeo:gsd": {
-        "value": [
-          0.000277777777778,
-          0.000277777777778
-        ],
-        "unit": "\u00b0"
-      }
-    },
-    {
-      "description": "Inter-annual variability of surface water presence in a defined water period within the entire time range from 1984 to 2021.",
-      "name": "recurrence",
-      "openeo:gsd": {
-        "value": [
-          0.000277777777778,
-          0.000277777777778
-        ],
-        "unit": "\u00b0"
-      }
-    },
-    {
-      "description": "Intra-annual distribution of surface water in the particular review year.",
-      "name": "seasonality",
-      "openeo:gsd": {
-        "value": [
-          0.000277777777778,
-          0.000277777777778
-        ],
-        "unit": "\u00b0"
-      }
-    },
-    {
-      "description": "Visualises changes in the three surface water classes (1) not water, (2) seasonal water, and (3) permanent water between the first and last year in the 38-year time period.",
-      "name": "transitions",
-      "openeo:gsd": {
-        "value": [
-          0.000277777777778,
-          0.000277777777778
-        ],
-        "unit": "\u00b0"
-      }
-    },
-    {
-      "description": "The mask of data/no data pixels.",
-      "name": "dataMask"
-    }
-  ],
-  "providers": [
-    {
-      "name": "Sentinel Hub",
-      "description": "",
-      "roles": [
-        "processor"
-      ],
-      "url": "https://creodias.sentinel-hub.com"
-    }
-  ],
-  "description": "The Global Surface Water dataset was developed by the European Commission's Joint Research Centre within the framework of the Copernicus Programme. It is derived from Landsat imagery and and shows different aspects of the spatio-temporal distribution of surface water between 1984 and 2021 at the global scale.",
-  "keywords": [
-    "sentinel hub",
-    "xcube",
-    "raster",
-    "systematic",
-    "water bodies",
-    "surface water",
-    "inland water",
-    "derived data",
-    "climate change",
-    "open data"
-  ],
-  "title": "Global Surface Water",
-  "license": "proprietary"
+  ]
 }

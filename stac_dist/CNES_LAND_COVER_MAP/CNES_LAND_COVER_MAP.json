@@ -1,8 +1,31 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "CNES_LAND_COVER_MAP",
   "properties": {
+    "datasource_type": "byoc-9baa2732-6597-49d2-ae3b-68ba0a5386b2",
+    "providers": [
+      {
+        "name": "Sentinel Hub",
+        "description": "",
+        "roles": [
+          "processor"
+        ],
+        "url": "https://services.sentinel-hub.com"
+      }
+    ],
+    "description": "The CNES Land Cover Map (Occupation des Sols, OSO) produces land classification for Metropolitan France at 10 m spatial resolution based on Sentinel-2 L2A data within the Theia Land Cover CES framework.\nMaps for 2021, 2020, 2019, and 2018 use a 23-categories nomenclature. For earlier maps in 2017 and 2016, a fully compatible 17-classes nomenclature is employed.\n",
+    "keywords": [
+      "derived data",
+      "land cover",
+      "machine learning",
+      "open data",
+      "raster",
+      "sentinel hub",
+      "systematic"
+    ],
+    "title": "CNES Land Cover Map",
+    "license": "proprietary",
     "start_datetime": "2016-01-01T00:00:00Z",
     "end_datetime": "2021-01-01T00:00:00Z",
     "cube:dimensions": {
@@ -129,8 +152,7 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json",
-      "title": "data-access catalog"
+      "type": "application/json"
     },
     {
       "rel": "parent",
@@ -157,28 +179,5 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ],
-  "datasource_type": "byoc-9baa2732-6597-49d2-ae3b-68ba0a5386b2",
-  "providers": [
-    {
-      "name": "Sentinel Hub",
-      "description": "",
-      "roles": [
-        "processor"
-      ],
-      "url": "https://services.sentinel-hub.com"
-    }
-  ],
-  "description": "The CNES Land Cover Map (Occupation des Sols, OSO) produces land classification for Metropolitan France at 10 m spatial resolution based on Sentinel-2 L2A data within the Theia Land Cover CES framework.\nMaps for 2021, 2020, 2019, and 2018 use a 23-categories nomenclature. For earlier maps in 2017 and 2016, a fully compatible 17-classes nomenclature is employed.\n",
-  "keywords": [
-    "derived data",
-    "land cover",
-    "machine learning",
-    "open data",
-    "raster",
-    "sentinel hub",
-    "systematic"
-  ],
-  "title": "CNES Land Cover Map",
-  "license": "proprietary"
+  ]
 }

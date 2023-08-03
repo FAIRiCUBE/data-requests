@@ -1,8 +1,28 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "ICEYE_GRD_E11A",
   "properties": {
+    "datasource_type": "byoc-a9ae7d6a-70c8-4575-854a-1a8f0cb33317",
+    "providers": [
+      {
+        "name": "Sentinel Hub",
+        "description": "",
+        "roles": [
+          "processor"
+        ],
+        "url": "https://services.sentinel-hub.com"
+      }
+    ],
+    "description": "Activity at leisure facility (Stadium) affected by COVID",
+    "keywords": [
+      "open data",
+      "sentinel hub",
+      "raster",
+      "race challenges"
+    ],
+    "title": "ICEYE_E11a",
+    "license": "",
     "start_datetime": "2020-02-07T13:08:50Z",
     "end_datetime": "2020-04-13T13:10:17Z",
     "cube:dimensions": {
@@ -96,8 +116,7 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json",
-      "title": "data-access catalog"
+      "type": "application/json"
     },
     {
       "rel": "parent",
@@ -124,25 +143,5 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ],
-  "datasource_type": "byoc-a9ae7d6a-70c8-4575-854a-1a8f0cb33317",
-  "providers": [
-    {
-      "name": "Sentinel Hub",
-      "description": "",
-      "roles": [
-        "processor"
-      ],
-      "url": "https://services.sentinel-hub.com"
-    }
-  ],
-  "description": "Activity at leisure facility (Stadium) affected by COVID",
-  "keywords": [
-    "open data",
-    "sentinel hub",
-    "raster",
-    "race challenges"
-  ],
-  "title": "ICEYE_E11a",
-  "license": ""
+  ]
 }

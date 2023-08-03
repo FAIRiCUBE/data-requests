@@ -1,8 +1,365 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "MODIS",
   "properties": {
+    "datasource_type": "modis",
+    "crs": [
+      "http://www.opengis.net/def/crs/OGC/1.3/CRS84",
+      "http://www.opengis.net/def/crs/EPSG/0/2154",
+      "http://www.opengis.net/def/crs/EPSG/0/2180",
+      "http://www.opengis.net/def/crs/EPSG/0/2193",
+      "http://www.opengis.net/def/crs/EPSG/0/3003",
+      "http://www.opengis.net/def/crs/EPSG/0/3004",
+      "http://www.opengis.net/def/crs/EPSG/0/3031",
+      "http://www.opengis.net/def/crs/EPSG/0/3035",
+      "http://www.opengis.net/def/crs/EPSG/0/4326",
+      "http://www.opengis.net/def/crs/EPSG/0/4346",
+      "http://www.opengis.net/def/crs/EPSG/0/4416",
+      "http://www.opengis.net/def/crs/EPSG/0/4765",
+      "http://www.opengis.net/def/crs/EPSG/0/4794",
+      "http://www.opengis.net/def/crs/EPSG/0/4844",
+      "http://www.opengis.net/def/crs/EPSG/0/4857",
+      "http://www.opengis.net/def/crs/EPSG/0/3912",
+      "http://www.opengis.net/def/crs/EPSG/0/3995",
+      "http://www.opengis.net/def/crs/EPSG/0/4026",
+      "http://www.opengis.net/def/crs/EPSG/0/5514",
+      "http://www.opengis.net/def/crs/EPSG/0/28992",
+      "http://www.opengis.net/def/crs/EPSG/0/32601",
+      "http://www.opengis.net/def/crs/EPSG/0/32602",
+      "http://www.opengis.net/def/crs/EPSG/0/32603",
+      "http://www.opengis.net/def/crs/EPSG/0/32604",
+      "http://www.opengis.net/def/crs/EPSG/0/32605",
+      "http://www.opengis.net/def/crs/EPSG/0/32606",
+      "http://www.opengis.net/def/crs/EPSG/0/32607",
+      "http://www.opengis.net/def/crs/EPSG/0/32608",
+      "http://www.opengis.net/def/crs/EPSG/0/32609",
+      "http://www.opengis.net/def/crs/EPSG/0/32610",
+      "http://www.opengis.net/def/crs/EPSG/0/32611",
+      "http://www.opengis.net/def/crs/EPSG/0/32612",
+      "http://www.opengis.net/def/crs/EPSG/0/32613",
+      "http://www.opengis.net/def/crs/EPSG/0/32614",
+      "http://www.opengis.net/def/crs/EPSG/0/32615",
+      "http://www.opengis.net/def/crs/EPSG/0/32616",
+      "http://www.opengis.net/def/crs/EPSG/0/32617",
+      "http://www.opengis.net/def/crs/EPSG/0/32618",
+      "http://www.opengis.net/def/crs/EPSG/0/32619",
+      "http://www.opengis.net/def/crs/EPSG/0/32620",
+      "http://www.opengis.net/def/crs/EPSG/0/32621",
+      "http://www.opengis.net/def/crs/EPSG/0/32622",
+      "http://www.opengis.net/def/crs/EPSG/0/32623",
+      "http://www.opengis.net/def/crs/EPSG/0/32624",
+      "http://www.opengis.net/def/crs/EPSG/0/32625",
+      "http://www.opengis.net/def/crs/EPSG/0/32626",
+      "http://www.opengis.net/def/crs/EPSG/0/32627",
+      "http://www.opengis.net/def/crs/EPSG/0/32628",
+      "http://www.opengis.net/def/crs/EPSG/0/32629",
+      "http://www.opengis.net/def/crs/EPSG/0/32630",
+      "http://www.opengis.net/def/crs/EPSG/0/32631",
+      "http://www.opengis.net/def/crs/EPSG/0/32632",
+      "http://www.opengis.net/def/crs/EPSG/0/32633",
+      "http://www.opengis.net/def/crs/EPSG/0/32634",
+      "http://www.opengis.net/def/crs/EPSG/0/32635",
+      "http://www.opengis.net/def/crs/EPSG/0/32636",
+      "http://www.opengis.net/def/crs/EPSG/0/32637",
+      "http://www.opengis.net/def/crs/EPSG/0/32638",
+      "http://www.opengis.net/def/crs/EPSG/0/32639",
+      "http://www.opengis.net/def/crs/EPSG/0/32640",
+      "http://www.opengis.net/def/crs/EPSG/0/32641",
+      "http://www.opengis.net/def/crs/EPSG/0/32642",
+      "http://www.opengis.net/def/crs/EPSG/0/32643",
+      "http://www.opengis.net/def/crs/EPSG/0/32644",
+      "http://www.opengis.net/def/crs/EPSG/0/32645",
+      "http://www.opengis.net/def/crs/EPSG/0/32646",
+      "http://www.opengis.net/def/crs/EPSG/0/32647",
+      "http://www.opengis.net/def/crs/EPSG/0/32648",
+      "http://www.opengis.net/def/crs/EPSG/0/32649",
+      "http://www.opengis.net/def/crs/EPSG/0/32650",
+      "http://www.opengis.net/def/crs/EPSG/0/32651",
+      "http://www.opengis.net/def/crs/EPSG/0/32652",
+      "http://www.opengis.net/def/crs/EPSG/0/32653",
+      "http://www.opengis.net/def/crs/EPSG/0/32654",
+      "http://www.opengis.net/def/crs/EPSG/0/32655",
+      "http://www.opengis.net/def/crs/EPSG/0/32656",
+      "http://www.opengis.net/def/crs/EPSG/0/32657",
+      "http://www.opengis.net/def/crs/EPSG/0/32658",
+      "http://www.opengis.net/def/crs/EPSG/0/32659",
+      "http://www.opengis.net/def/crs/EPSG/0/32660",
+      "http://www.opengis.net/def/crs/EPSG/0/32701",
+      "http://www.opengis.net/def/crs/EPSG/0/32702",
+      "http://www.opengis.net/def/crs/EPSG/0/32703",
+      "http://www.opengis.net/def/crs/EPSG/0/32704",
+      "http://www.opengis.net/def/crs/EPSG/0/32705",
+      "http://www.opengis.net/def/crs/EPSG/0/32706",
+      "http://www.opengis.net/def/crs/EPSG/0/32707",
+      "http://www.opengis.net/def/crs/EPSG/0/32708",
+      "http://www.opengis.net/def/crs/EPSG/0/32709",
+      "http://www.opengis.net/def/crs/EPSG/0/32710",
+      "http://www.opengis.net/def/crs/EPSG/0/32711",
+      "http://www.opengis.net/def/crs/EPSG/0/32712",
+      "http://www.opengis.net/def/crs/EPSG/0/32713",
+      "http://www.opengis.net/def/crs/EPSG/0/32714",
+      "http://www.opengis.net/def/crs/EPSG/0/32715",
+      "http://www.opengis.net/def/crs/EPSG/0/32716",
+      "http://www.opengis.net/def/crs/EPSG/0/32717",
+      "http://www.opengis.net/def/crs/EPSG/0/32718",
+      "http://www.opengis.net/def/crs/EPSG/0/32719",
+      "http://www.opengis.net/def/crs/EPSG/0/32720",
+      "http://www.opengis.net/def/crs/EPSG/0/32721",
+      "http://www.opengis.net/def/crs/EPSG/0/32722",
+      "http://www.opengis.net/def/crs/EPSG/0/32723",
+      "http://www.opengis.net/def/crs/EPSG/0/32724",
+      "http://www.opengis.net/def/crs/EPSG/0/32725",
+      "http://www.opengis.net/def/crs/EPSG/0/32726",
+      "http://www.opengis.net/def/crs/EPSG/0/32727",
+      "http://www.opengis.net/def/crs/EPSG/0/32728",
+      "http://www.opengis.net/def/crs/EPSG/0/32729",
+      "http://www.opengis.net/def/crs/EPSG/0/32730",
+      "http://www.opengis.net/def/crs/EPSG/0/32731",
+      "http://www.opengis.net/def/crs/EPSG/0/32732",
+      "http://www.opengis.net/def/crs/EPSG/0/32733",
+      "http://www.opengis.net/def/crs/EPSG/0/32734",
+      "http://www.opengis.net/def/crs/EPSG/0/32735",
+      "http://www.opengis.net/def/crs/EPSG/0/32736",
+      "http://www.opengis.net/def/crs/EPSG/0/32737",
+      "http://www.opengis.net/def/crs/EPSG/0/32738",
+      "http://www.opengis.net/def/crs/EPSG/0/32739",
+      "http://www.opengis.net/def/crs/EPSG/0/32740",
+      "http://www.opengis.net/def/crs/EPSG/0/32741",
+      "http://www.opengis.net/def/crs/EPSG/0/32742",
+      "http://www.opengis.net/def/crs/EPSG/0/32743",
+      "http://www.opengis.net/def/crs/EPSG/0/32744",
+      "http://www.opengis.net/def/crs/EPSG/0/32745",
+      "http://www.opengis.net/def/crs/EPSG/0/32746",
+      "http://www.opengis.net/def/crs/EPSG/0/32746",
+      "http://www.opengis.net/def/crs/EPSG/0/32748",
+      "http://www.opengis.net/def/crs/EPSG/0/32749",
+      "http://www.opengis.net/def/crs/EPSG/0/32750",
+      "http://www.opengis.net/def/crs/EPSG/0/32751",
+      "http://www.opengis.net/def/crs/EPSG/0/32752",
+      "http://www.opengis.net/def/crs/EPSG/0/32753",
+      "http://www.opengis.net/def/crs/EPSG/0/32754",
+      "http://www.opengis.net/def/crs/EPSG/0/32755",
+      "http://www.opengis.net/def/crs/EPSG/0/32756",
+      "http://www.opengis.net/def/crs/EPSG/0/32757",
+      "http://www.opengis.net/def/crs/EPSG/0/32758",
+      "http://www.opengis.net/def/crs/EPSG/0/32759",
+      "http://www.opengis.net/def/crs/EPSG/0/32760",
+      "http://www.opengis.net/def/crs/SR-ORG/0/98739"
+    ],
+    "instruments": [
+      "modis"
+    ],
+    "eo:bands": [
+      {
+        "description": "Red (620 - 670 nm)",
+        "name": "B01",
+        "common_name": "red",
+        "center_wavelength": 0.645,
+        "full_width_half_max": 0.05,
+        "openeo:gsd": {
+          "value": [
+            0.004960317460317,
+            0.004960317460317
+          ],
+          "unit": "\u00b0"
+        },
+        "data_type": "float32",
+        "statistics": {
+          "minimum": [
+            0
+          ],
+          "maximum": [
+            0.4
+          ]
+        }
+      },
+      {
+        "description": "NIR (841 - 876 nm)",
+        "name": "B02",
+        "common_name": "nir",
+        "center_wavelength": 0.8585,
+        "full_width_half_max": 0.035,
+        "openeo:gsd": {
+          "value": [
+            0.004960317460317,
+            0.004960317460317
+          ],
+          "unit": "\u00b0"
+        },
+        "data_type": "float32",
+        "statistics": {
+          "minimum": [
+            0
+          ],
+          "maximum": [
+            0.4
+          ]
+        }
+      },
+      {
+        "description": "Blue (459 - 479 nm)",
+        "name": "B03",
+        "common_name": "blue",
+        "center_wavelength": 0.469,
+        "full_width_half_max": 0.02,
+        "openeo:gsd": {
+          "value": [
+            0.004960317460317,
+            0.004960317460317
+          ],
+          "unit": "\u00b0"
+        },
+        "data_type": "float32",
+        "statistics": {
+          "minimum": [
+            0
+          ],
+          "maximum": [
+            0.4
+          ]
+        }
+      },
+      {
+        "description": "Green (545 - 565 nm)",
+        "name": "B04",
+        "common_name": "green",
+        "center_wavelength": 0.555,
+        "full_width_half_max": 0.02,
+        "openeo:gsd": {
+          "value": [
+            0.004960317460317,
+            0.004960317460317
+          ],
+          "unit": "\u00b0"
+        },
+        "data_type": "float32",
+        "statistics": {
+          "minimum": [
+            0
+          ],
+          "maximum": [
+            0.4
+          ]
+        }
+      },
+      {
+        "description": "N/A (1230 - 1250 nm)",
+        "name": "B05",
+        "center_wavelength": 1.24,
+        "full_width_half_max": 0.02,
+        "openeo:gsd": {
+          "value": [
+            0.004960317460317,
+            0.004960317460317
+          ],
+          "unit": "\u00b0"
+        },
+        "data_type": "float32",
+        "statistics": {
+          "minimum": [
+            0
+          ],
+          "maximum": [
+            0.4
+          ]
+        }
+      },
+      {
+        "description": "SWIR16 (1628 - 1652 nm)",
+        "name": "B06",
+        "common_name": "swir16",
+        "center_wavelength": 1.64,
+        "full_width_half_max": 0.024,
+        "openeo:gsd": {
+          "value": [
+            0.004960317460317,
+            0.004960317460317
+          ],
+          "unit": "\u00b0"
+        },
+        "data_type": "float32",
+        "statistics": {
+          "minimum": [
+            0
+          ],
+          "maximum": [
+            0.4
+          ]
+        }
+      },
+      {
+        "description": "SWIR22 (2105 - 2155 nm)",
+        "name": "B07",
+        "common_name": "swir22",
+        "center_wavelength": 2.13,
+        "full_width_half_max": 0.05,
+        "openeo:gsd": {
+          "value": [
+            0.004960317460317,
+            0.004960317460317
+          ],
+          "unit": "\u00b0"
+        },
+        "data_type": "float32",
+        "statistics": {
+          "minimum": [
+            0
+          ],
+          "maximum": [
+            0.4
+          ]
+        }
+      },
+      {
+        "description": "The mask of data/no data pixels.",
+        "name": "dataMask",
+        "data_type": "uint8",
+        "statistics": {
+          "minimum": [
+            0
+          ],
+          "maximum": [
+            1
+          ]
+        }
+      }
+    ],
+    "gsd": [
+      500
+    ],
+    "platform": [
+      "Terra",
+      "Aqua"
+    ],
+    "providers": [
+      {
+        "name": "Sentinel Hub",
+        "description": "Global since Feb 2000",
+        "roles": [
+          "processor"
+        ],
+        "url": "https://services-uswest2.sentinel-hub.com"
+      }
+    ],
+    "description": "[MODIS](https://modis.gsfc.nasa.gov/about/) (Moderate Resolution Imaging Spectroradiometer) is the main\ninstrument operating on both NASA's [Terra](https://terra.nasa.gov/) and [Aqua](https://aqua.nasa.gov/) satellites.\nIt acquires images of the earth in 36 bands within the visible and the infrared regions of the spectrum at low to medium spatial resolutions. \nMODIS is designed to provide at least daily observations of land, oceans and lower atmosphere that contribute to\nlocal or global scale land or water applications. There are several products derived from MODIS which include land, atmosphere, cryospehere and ocean products.\nMCD43A4 Nadir BRDF-Adjusted Reflectance (NBAR) product Version 6 is a MODIS land product available in Sentinel Hub. \nIt is computed daily for each of MODIS bands 1 - 7 and it contains the most representative pixels from 16 day period temporarily weighted to the ninth day.\nMCD43A4.006 is available since February 2000 on a daily basis but with a 8 days delay.\n",
+    "keywords": [
+      "sentinel hub",
+      "xcube",
+      "raster",
+      "systematic",
+      "satellite imagery",
+      "agriculture",
+      "natural resource",
+      "disaster response",
+      "open data",
+      "NASA",
+      "modis",
+      "terra",
+      "aqua"
+    ],
+    "title": "MODIS MCD43A4.006",
+    "license": "proprietary",
     "start_datetime": "2000-02-24T00:00:00Z",
     "end_datetime": "2999-01-01T00:00:00Z",
     "cube:dimensions": {
@@ -165,8 +522,7 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json",
-      "title": "data-access catalog"
+      "type": "application/json"
     },
     {
       "rel": "parent",
@@ -194,362 +550,5 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ],
-  "datasource_type": "modis",
-  "crs": [
-    "http://www.opengis.net/def/crs/OGC/1.3/CRS84",
-    "http://www.opengis.net/def/crs/EPSG/0/2154",
-    "http://www.opengis.net/def/crs/EPSG/0/2180",
-    "http://www.opengis.net/def/crs/EPSG/0/2193",
-    "http://www.opengis.net/def/crs/EPSG/0/3003",
-    "http://www.opengis.net/def/crs/EPSG/0/3004",
-    "http://www.opengis.net/def/crs/EPSG/0/3031",
-    "http://www.opengis.net/def/crs/EPSG/0/3035",
-    "http://www.opengis.net/def/crs/EPSG/0/4326",
-    "http://www.opengis.net/def/crs/EPSG/0/4346",
-    "http://www.opengis.net/def/crs/EPSG/0/4416",
-    "http://www.opengis.net/def/crs/EPSG/0/4765",
-    "http://www.opengis.net/def/crs/EPSG/0/4794",
-    "http://www.opengis.net/def/crs/EPSG/0/4844",
-    "http://www.opengis.net/def/crs/EPSG/0/4857",
-    "http://www.opengis.net/def/crs/EPSG/0/3912",
-    "http://www.opengis.net/def/crs/EPSG/0/3995",
-    "http://www.opengis.net/def/crs/EPSG/0/4026",
-    "http://www.opengis.net/def/crs/EPSG/0/5514",
-    "http://www.opengis.net/def/crs/EPSG/0/28992",
-    "http://www.opengis.net/def/crs/EPSG/0/32601",
-    "http://www.opengis.net/def/crs/EPSG/0/32602",
-    "http://www.opengis.net/def/crs/EPSG/0/32603",
-    "http://www.opengis.net/def/crs/EPSG/0/32604",
-    "http://www.opengis.net/def/crs/EPSG/0/32605",
-    "http://www.opengis.net/def/crs/EPSG/0/32606",
-    "http://www.opengis.net/def/crs/EPSG/0/32607",
-    "http://www.opengis.net/def/crs/EPSG/0/32608",
-    "http://www.opengis.net/def/crs/EPSG/0/32609",
-    "http://www.opengis.net/def/crs/EPSG/0/32610",
-    "http://www.opengis.net/def/crs/EPSG/0/32611",
-    "http://www.opengis.net/def/crs/EPSG/0/32612",
-    "http://www.opengis.net/def/crs/EPSG/0/32613",
-    "http://www.opengis.net/def/crs/EPSG/0/32614",
-    "http://www.opengis.net/def/crs/EPSG/0/32615",
-    "http://www.opengis.net/def/crs/EPSG/0/32616",
-    "http://www.opengis.net/def/crs/EPSG/0/32617",
-    "http://www.opengis.net/def/crs/EPSG/0/32618",
-    "http://www.opengis.net/def/crs/EPSG/0/32619",
-    "http://www.opengis.net/def/crs/EPSG/0/32620",
-    "http://www.opengis.net/def/crs/EPSG/0/32621",
-    "http://www.opengis.net/def/crs/EPSG/0/32622",
-    "http://www.opengis.net/def/crs/EPSG/0/32623",
-    "http://www.opengis.net/def/crs/EPSG/0/32624",
-    "http://www.opengis.net/def/crs/EPSG/0/32625",
-    "http://www.opengis.net/def/crs/EPSG/0/32626",
-    "http://www.opengis.net/def/crs/EPSG/0/32627",
-    "http://www.opengis.net/def/crs/EPSG/0/32628",
-    "http://www.opengis.net/def/crs/EPSG/0/32629",
-    "http://www.opengis.net/def/crs/EPSG/0/32630",
-    "http://www.opengis.net/def/crs/EPSG/0/32631",
-    "http://www.opengis.net/def/crs/EPSG/0/32632",
-    "http://www.opengis.net/def/crs/EPSG/0/32633",
-    "http://www.opengis.net/def/crs/EPSG/0/32634",
-    "http://www.opengis.net/def/crs/EPSG/0/32635",
-    "http://www.opengis.net/def/crs/EPSG/0/32636",
-    "http://www.opengis.net/def/crs/EPSG/0/32637",
-    "http://www.opengis.net/def/crs/EPSG/0/32638",
-    "http://www.opengis.net/def/crs/EPSG/0/32639",
-    "http://www.opengis.net/def/crs/EPSG/0/32640",
-    "http://www.opengis.net/def/crs/EPSG/0/32641",
-    "http://www.opengis.net/def/crs/EPSG/0/32642",
-    "http://www.opengis.net/def/crs/EPSG/0/32643",
-    "http://www.opengis.net/def/crs/EPSG/0/32644",
-    "http://www.opengis.net/def/crs/EPSG/0/32645",
-    "http://www.opengis.net/def/crs/EPSG/0/32646",
-    "http://www.opengis.net/def/crs/EPSG/0/32647",
-    "http://www.opengis.net/def/crs/EPSG/0/32648",
-    "http://www.opengis.net/def/crs/EPSG/0/32649",
-    "http://www.opengis.net/def/crs/EPSG/0/32650",
-    "http://www.opengis.net/def/crs/EPSG/0/32651",
-    "http://www.opengis.net/def/crs/EPSG/0/32652",
-    "http://www.opengis.net/def/crs/EPSG/0/32653",
-    "http://www.opengis.net/def/crs/EPSG/0/32654",
-    "http://www.opengis.net/def/crs/EPSG/0/32655",
-    "http://www.opengis.net/def/crs/EPSG/0/32656",
-    "http://www.opengis.net/def/crs/EPSG/0/32657",
-    "http://www.opengis.net/def/crs/EPSG/0/32658",
-    "http://www.opengis.net/def/crs/EPSG/0/32659",
-    "http://www.opengis.net/def/crs/EPSG/0/32660",
-    "http://www.opengis.net/def/crs/EPSG/0/32701",
-    "http://www.opengis.net/def/crs/EPSG/0/32702",
-    "http://www.opengis.net/def/crs/EPSG/0/32703",
-    "http://www.opengis.net/def/crs/EPSG/0/32704",
-    "http://www.opengis.net/def/crs/EPSG/0/32705",
-    "http://www.opengis.net/def/crs/EPSG/0/32706",
-    "http://www.opengis.net/def/crs/EPSG/0/32707",
-    "http://www.opengis.net/def/crs/EPSG/0/32708",
-    "http://www.opengis.net/def/crs/EPSG/0/32709",
-    "http://www.opengis.net/def/crs/EPSG/0/32710",
-    "http://www.opengis.net/def/crs/EPSG/0/32711",
-    "http://www.opengis.net/def/crs/EPSG/0/32712",
-    "http://www.opengis.net/def/crs/EPSG/0/32713",
-    "http://www.opengis.net/def/crs/EPSG/0/32714",
-    "http://www.opengis.net/def/crs/EPSG/0/32715",
-    "http://www.opengis.net/def/crs/EPSG/0/32716",
-    "http://www.opengis.net/def/crs/EPSG/0/32717",
-    "http://www.opengis.net/def/crs/EPSG/0/32718",
-    "http://www.opengis.net/def/crs/EPSG/0/32719",
-    "http://www.opengis.net/def/crs/EPSG/0/32720",
-    "http://www.opengis.net/def/crs/EPSG/0/32721",
-    "http://www.opengis.net/def/crs/EPSG/0/32722",
-    "http://www.opengis.net/def/crs/EPSG/0/32723",
-    "http://www.opengis.net/def/crs/EPSG/0/32724",
-    "http://www.opengis.net/def/crs/EPSG/0/32725",
-    "http://www.opengis.net/def/crs/EPSG/0/32726",
-    "http://www.opengis.net/def/crs/EPSG/0/32727",
-    "http://www.opengis.net/def/crs/EPSG/0/32728",
-    "http://www.opengis.net/def/crs/EPSG/0/32729",
-    "http://www.opengis.net/def/crs/EPSG/0/32730",
-    "http://www.opengis.net/def/crs/EPSG/0/32731",
-    "http://www.opengis.net/def/crs/EPSG/0/32732",
-    "http://www.opengis.net/def/crs/EPSG/0/32733",
-    "http://www.opengis.net/def/crs/EPSG/0/32734",
-    "http://www.opengis.net/def/crs/EPSG/0/32735",
-    "http://www.opengis.net/def/crs/EPSG/0/32736",
-    "http://www.opengis.net/def/crs/EPSG/0/32737",
-    "http://www.opengis.net/def/crs/EPSG/0/32738",
-    "http://www.opengis.net/def/crs/EPSG/0/32739",
-    "http://www.opengis.net/def/crs/EPSG/0/32740",
-    "http://www.opengis.net/def/crs/EPSG/0/32741",
-    "http://www.opengis.net/def/crs/EPSG/0/32742",
-    "http://www.opengis.net/def/crs/EPSG/0/32743",
-    "http://www.opengis.net/def/crs/EPSG/0/32744",
-    "http://www.opengis.net/def/crs/EPSG/0/32745",
-    "http://www.opengis.net/def/crs/EPSG/0/32746",
-    "http://www.opengis.net/def/crs/EPSG/0/32746",
-    "http://www.opengis.net/def/crs/EPSG/0/32748",
-    "http://www.opengis.net/def/crs/EPSG/0/32749",
-    "http://www.opengis.net/def/crs/EPSG/0/32750",
-    "http://www.opengis.net/def/crs/EPSG/0/32751",
-    "http://www.opengis.net/def/crs/EPSG/0/32752",
-    "http://www.opengis.net/def/crs/EPSG/0/32753",
-    "http://www.opengis.net/def/crs/EPSG/0/32754",
-    "http://www.opengis.net/def/crs/EPSG/0/32755",
-    "http://www.opengis.net/def/crs/EPSG/0/32756",
-    "http://www.opengis.net/def/crs/EPSG/0/32757",
-    "http://www.opengis.net/def/crs/EPSG/0/32758",
-    "http://www.opengis.net/def/crs/EPSG/0/32759",
-    "http://www.opengis.net/def/crs/EPSG/0/32760",
-    "http://www.opengis.net/def/crs/SR-ORG/0/98739"
-  ],
-  "instruments": [
-    "modis"
-  ],
-  "eo:bands": [
-    {
-      "description": "Red (620 - 670 nm)",
-      "name": "B01",
-      "common_name": "red",
-      "center_wavelength": 0.645,
-      "full_width_half_max": 0.05,
-      "openeo:gsd": {
-        "value": [
-          0.004960317460317,
-          0.004960317460317
-        ],
-        "unit": "\u00b0"
-      },
-      "data_type": "float32",
-      "statistics": {
-        "minimum": [
-          0
-        ],
-        "maximum": [
-          0.4
-        ]
-      }
-    },
-    {
-      "description": "NIR (841 - 876 nm)",
-      "name": "B02",
-      "common_name": "nir",
-      "center_wavelength": 0.8585,
-      "full_width_half_max": 0.035,
-      "openeo:gsd": {
-        "value": [
-          0.004960317460317,
-          0.004960317460317
-        ],
-        "unit": "\u00b0"
-      },
-      "data_type": "float32",
-      "statistics": {
-        "minimum": [
-          0
-        ],
-        "maximum": [
-          0.4
-        ]
-      }
-    },
-    {
-      "description": "Blue (459 - 479 nm)",
-      "name": "B03",
-      "common_name": "blue",
-      "center_wavelength": 0.469,
-      "full_width_half_max": 0.02,
-      "openeo:gsd": {
-        "value": [
-          0.004960317460317,
-          0.004960317460317
-        ],
-        "unit": "\u00b0"
-      },
-      "data_type": "float32",
-      "statistics": {
-        "minimum": [
-          0
-        ],
-        "maximum": [
-          0.4
-        ]
-      }
-    },
-    {
-      "description": "Green (545 - 565 nm)",
-      "name": "B04",
-      "common_name": "green",
-      "center_wavelength": 0.555,
-      "full_width_half_max": 0.02,
-      "openeo:gsd": {
-        "value": [
-          0.004960317460317,
-          0.004960317460317
-        ],
-        "unit": "\u00b0"
-      },
-      "data_type": "float32",
-      "statistics": {
-        "minimum": [
-          0
-        ],
-        "maximum": [
-          0.4
-        ]
-      }
-    },
-    {
-      "description": "N/A (1230 - 1250 nm)",
-      "name": "B05",
-      "center_wavelength": 1.24,
-      "full_width_half_max": 0.02,
-      "openeo:gsd": {
-        "value": [
-          0.004960317460317,
-          0.004960317460317
-        ],
-        "unit": "\u00b0"
-      },
-      "data_type": "float32",
-      "statistics": {
-        "minimum": [
-          0
-        ],
-        "maximum": [
-          0.4
-        ]
-      }
-    },
-    {
-      "description": "SWIR16 (1628 - 1652 nm)",
-      "name": "B06",
-      "common_name": "swir16",
-      "center_wavelength": 1.64,
-      "full_width_half_max": 0.024,
-      "openeo:gsd": {
-        "value": [
-          0.004960317460317,
-          0.004960317460317
-        ],
-        "unit": "\u00b0"
-      },
-      "data_type": "float32",
-      "statistics": {
-        "minimum": [
-          0
-        ],
-        "maximum": [
-          0.4
-        ]
-      }
-    },
-    {
-      "description": "SWIR22 (2105 - 2155 nm)",
-      "name": "B07",
-      "common_name": "swir22",
-      "center_wavelength": 2.13,
-      "full_width_half_max": 0.05,
-      "openeo:gsd": {
-        "value": [
-          0.004960317460317,
-          0.004960317460317
-        ],
-        "unit": "\u00b0"
-      },
-      "data_type": "float32",
-      "statistics": {
-        "minimum": [
-          0
-        ],
-        "maximum": [
-          0.4
-        ]
-      }
-    },
-    {
-      "description": "The mask of data/no data pixels.",
-      "name": "dataMask",
-      "data_type": "uint8",
-      "statistics": {
-        "minimum": [
-          0
-        ],
-        "maximum": [
-          1
-        ]
-      }
-    }
-  ],
-  "gsd": [
-    500
-  ],
-  "platform": [
-    "Terra",
-    "Aqua"
-  ],
-  "providers": [
-    {
-      "name": "Sentinel Hub",
-      "description": "Global since Feb 2000",
-      "roles": [
-        "processor"
-      ],
-      "url": "https://services-uswest2.sentinel-hub.com"
-    }
-  ],
-  "description": "[MODIS](https://modis.gsfc.nasa.gov/about/) (Moderate Resolution Imaging Spectroradiometer) is the main\ninstrument operating on both NASA's [Terra](https://terra.nasa.gov/) and [Aqua](https://aqua.nasa.gov/) satellites.\nIt acquires images of the earth in 36 bands within the visible and the infrared regions of the spectrum at low to medium spatial resolutions. \nMODIS is designed to provide at least daily observations of land, oceans and lower atmosphere that contribute to\nlocal or global scale land or water applications. There are several products derived from MODIS which include land, atmosphere, cryospehere and ocean products.\nMCD43A4 Nadir BRDF-Adjusted Reflectance (NBAR) product Version 6 is a MODIS land product available in Sentinel Hub. \nIt is computed daily for each of MODIS bands 1 - 7 and it contains the most representative pixels from 16 day period temporarily weighted to the ninth day.\nMCD43A4.006 is available since February 2000 on a daily basis but with a 8 days delay.\n",
-  "keywords": [
-    "sentinel hub",
-    "xcube",
-    "raster",
-    "systematic",
-    "satellite imagery",
-    "agriculture",
-    "natural resource",
-    "disaster response",
-    "open data",
-    "NASA",
-    "modis",
-    "terra",
-    "aqua"
-  ],
-  "title": "MODIS MCD43A4.006",
-  "license": "proprietary"
+  ]
 }

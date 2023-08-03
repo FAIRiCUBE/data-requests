@@ -1,8 +1,30 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "EMODNET_VESSEL_DENSITY_OTHER",
   "properties": {
+    "datasource_type": "byoc-cc0a4c72-870d-4e9f-84d0-ba4e3d785693",
+    "providers": [
+      {
+        "name": "Sentinel Hub",
+        "description": "",
+        "roles": [
+          "processor"
+        ],
+        "url": "https://services.sentinel-hub.com"
+      }
+    ],
+    "description": "The Vessel Density maps in the EU are created since the 2019 by Cogea for the European Marine Observation and Data Network (EMODnet). The dataset is updated every year and is available for viewing and download on EMODnet Human Activities web portal (www.emodnet-humanactivities.eu). The maps are based on AIS data yearly purchased from Collecte Localisation Satellites (CLS) and ORBCOMM. The maps, GeoTIFF format, show shipping density in 1x1km cells of a grid covering all EU waters and some neighbouring areas. Density is expressed as hours per square kilometre per month. The following ship types are available: 0 Other, 1 Fishing, 2 Service, 3 Dredging or underwater ops, 4 Sailing, 5 Pleasure Craft, 6 High speed craft, 7 Tug and towing, 8 Passenger, 9 Cargo, 10 Tanker, 11 Military and Law Enforcement, 12 Unknown and All ship types.\nThis particular layer refers to EMODnet ship type \"0 other\" that includes a variety of AIS ship Type codes.\n",
+    "keywords": [
+      "copernicus services",
+      "C3S",
+      "open data",
+      "sentinel hub",
+      "raster",
+      "race challenges"
+    ],
+    "title": "Vessel_Density_other",
+    "license": "",
     "start_datetime": "2017-01-01T00:00:00Z",
     "end_datetime": "2020-12-01T00:00:00Z",
     "cube:dimensions": {
@@ -96,8 +118,7 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json",
-      "title": "data-access catalog"
+      "type": "application/json"
     },
     {
       "rel": "parent",
@@ -124,27 +145,5 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ],
-  "datasource_type": "byoc-cc0a4c72-870d-4e9f-84d0-ba4e3d785693",
-  "providers": [
-    {
-      "name": "Sentinel Hub",
-      "description": "",
-      "roles": [
-        "processor"
-      ],
-      "url": "https://services.sentinel-hub.com"
-    }
-  ],
-  "description": "The Vessel Density maps in the EU are created since the 2019 by Cogea for the European Marine Observation and Data Network (EMODnet). The dataset is updated every year and is available for viewing and download on EMODnet Human Activities web portal (www.emodnet-humanactivities.eu). The maps are based on AIS data yearly purchased from Collecte Localisation Satellites (CLS) and ORBCOMM. The maps, GeoTIFF format, show shipping density in 1x1km cells of a grid covering all EU waters and some neighbouring areas. Density is expressed as hours per square kilometre per month. The following ship types are available: 0 Other, 1 Fishing, 2 Service, 3 Dredging or underwater ops, 4 Sailing, 5 Pleasure Craft, 6 High speed craft, 7 Tug and towing, 8 Passenger, 9 Cargo, 10 Tanker, 11 Military and Law Enforcement, 12 Unknown and All ship types.\nThis particular layer refers to EMODnet ship type \"0 other\" that includes a variety of AIS ship Type codes.\n",
-  "keywords": [
-    "copernicus services",
-    "C3S",
-    "open data",
-    "sentinel hub",
-    "raster",
-    "race challenges"
-  ],
-  "title": "Vessel_Density_other",
-  "license": ""
+  ]
 }

@@ -1,0 +1,167 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "EEA_RIVER_AND_LAKE_ICE_EXTENT_SENTINEL1",
+  "properties": {
+    "datasource_type": "byoc-fe2c0caf-fbe8-49a1-91ae-e730ea65116a",
+    "providers": [
+      {
+        "name": "Sentinel Hub",
+        "description": "",
+        "roles": [
+          "processor"
+        ],
+        "url": "https://creodias.sentinel-hub.com"
+      }
+    ],
+    "description": "The River and Lake Ice Extent - Sentinel 1 (RLIE S1) product is part of the Copernicus Land Monitoring Service (CLMS), \npan-European High Resolution Snow and Ice Monitoring [(HR-S&I)](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring) Ice product suite.The River and Lake Ice Extent (RLIE) products measure the presence of ice in rivers and lakes described by the EU-HYDRO network database, in particular the area of snow-free or snow-covered ice. \nThe RLIE S1 product is released in near real time for the entire EEA39 zone based on the revisit time of the Sentinel 1 syntetic aperture radar constellation, and it is generated at a spatial resolution of 20 m x 20 m.  Because it is time critical for several applications, every effort is made to provide near real time ice products between 6 and 12 hours after the data sensing time. \nMore information about the RLIE S1 product methodology and workflow is outlined in the [product user manual](https://land.copernicus.eu/user-corner/technical-library/hrsi-ice-pum)\n",
+    "keywords": [
+      "hrsi",
+      "water",
+      "river",
+      "lake",
+      "ice",
+      "CLMS",
+      "derived data",
+      "open data"
+    ],
+    "title": "High-Resolution Snow & Ice Monitoring; River and Lake Ice Extent - Sentinel 1",
+    "license": "proprietary",
+    "start_datetime": "2016-09-01T00:00:00Z",
+    "end_datetime": "2999-01-01T00:00:00Z",
+    "cube:dimensions": {
+      "x": {
+        "type": "spatial",
+        "axis": "x",
+        "extent": [
+          -25,
+          45
+        ]
+      },
+      "y": {
+        "type": "spatial",
+        "axis": "y",
+        "extent": [
+          26,
+          72
+        ]
+      },
+      "t": {
+        "type": "temporal",
+        "extent": [
+          "2016-09-01T00:00:00Z",
+          null
+        ]
+      },
+      "bands": {
+        "type": "bands",
+        "values": [
+          "RLIE",
+          "QC"
+        ]
+      }
+    },
+    "datetime": null
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -25.0,
+          26.0
+        ],
+        [
+          -25.0,
+          72.0
+        ],
+        [
+          45.0,
+          72.0
+        ],
+        [
+          45.0,
+          26.0
+        ],
+        [
+          -25.0,
+          26.0
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "about",
+      "href": "https://collections.eurodatacube.com/hrsi-rlie-s1",
+      "type": "text/html",
+      "title": "Website describing the collection"
+    },
+    {
+      "rel": "about",
+      "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+      "type": "text/html",
+      "title": "Details about running Evalscripts"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://custom-scripts.sentinel-hub.com/copernicus_services/hrsi/hrsi-rlie-s1/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to generate RLIE S1 imagery",
+      "sentinelhub:layer_name": "RLIE",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "processing-expression",
+      "href": "https://custom-scripts.sentinel-hub.com/copernicus_services/hrsi/hrsi-rlie-s1-quality/script.js",
+      "type": "application/javascript",
+      "title": "Evalscript to visualize the RLIE S1 quality imagery",
+      "sentinelhub:layer_name": "QC",
+      "sentinelhub:mosaicking_order": "mostRecent",
+      "sentinelhub:upsampling": "BICUBIC"
+    },
+    {
+      "rel": "license",
+      "href": "https://land.copernicus.eu/terms-of-use",
+      "type": "text/html",
+      "title": "License"
+    },
+    {
+      "rel": "root",
+      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "https://collections.eurodatacube.com/hrsi-rlie-s1/thumbnail.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    -25,
+    26,
+    45,
+    72
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}

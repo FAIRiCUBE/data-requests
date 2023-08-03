@@ -1,8 +1,28 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "CAMS_GLC",
   "properties": {
+    "datasource_type": "byoc-b73ffbaf-92ff-4fd9-abf0-960c5fab5eaa",
+    "providers": [
+      {
+        "name": "Sentinel Hub",
+        "description": "",
+        "roles": [
+          "processor"
+        ],
+        "url": "https://shservices.mundiwebservices.com"
+      }
+    ],
+    "description": "The S2GLC 2017 product represents land cover classification of a major portion of the European continent. The classification has been performed using multi-temporal Sentinel-2 data collected during the year 2017 with the methodology developed in the frame of the Sentinel-2 Global Land Cover (S2GLC) project. The S2GLC 2017 dataset is delivered with 10 m spatial resolution with thematic legend composed of 13 land cover classes",
+    "keywords": [
+      "open data",
+      "sentinel hub",
+      "raster",
+      "race challenges"
+    ],
+    "title": "CAMS_GLC_2017",
+    "license": "",
     "start_datetime": "2017-01-01T00:00:00Z",
     "end_datetime": "2017-01-01T00:00:01Z",
     "cube:dimensions": {
@@ -98,8 +118,7 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json",
-      "title": "data-access catalog"
+      "type": "application/json"
     },
     {
       "rel": "parent",
@@ -126,25 +145,5 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ],
-  "datasource_type": "byoc-b73ffbaf-92ff-4fd9-abf0-960c5fab5eaa",
-  "providers": [
-    {
-      "name": "Sentinel Hub",
-      "description": "",
-      "roles": [
-        "processor"
-      ],
-      "url": "https://shservices.mundiwebservices.com"
-    }
-  ],
-  "description": "The S2GLC 2017 product represents land cover classification of a major portion of the European continent. The classification has been performed using multi-temporal Sentinel-2 data collected during the year 2017 with the methodology developed in the frame of the Sentinel-2 Global Land Cover (S2GLC) project. The S2GLC 2017 dataset is delivered with 10 m spatial resolution with thematic legend composed of 13 land cover classes",
-  "keywords": [
-    "open data",
-    "sentinel hub",
-    "raster",
-    "race challenges"
-  ],
-  "title": "CAMS_GLC_2017",
-  "license": ""
+  ]
 }

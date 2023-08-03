@@ -1,8 +1,28 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "CNR_TSM",
   "properties": {
+    "datasource_type": "byoc-358448a1-23c1-4d58-924d-22249ab09048",
+    "providers": [
+      {
+        "name": "Sentinel Hub",
+        "description": "",
+        "roles": [
+          "processor"
+        ],
+        "url": "https://services.sentinel-hub.com"
+      }
+    ],
+    "description": "Total suspended matter maps for 3 sites: Lagoon Venice, Marseille and Barcelona regions",
+    "keywords": [
+      "open data",
+      "sentinel hub",
+      "raster",
+      "race challenges"
+    ],
+    "title": "TSMN_water_quality_Saturday",
+    "license": "",
     "start_datetime": "2020-01-04T00:00:00Z",
     "end_datetime": "2999-01-01T00:00:00Z",
     "cube:dimensions": {
@@ -96,8 +116,7 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json",
-      "title": "data-access catalog"
+      "type": "application/json"
     },
     {
       "rel": "parent",
@@ -124,25 +143,5 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ],
-  "datasource_type": "byoc-358448a1-23c1-4d58-924d-22249ab09048",
-  "providers": [
-    {
-      "name": "Sentinel Hub",
-      "description": "",
-      "roles": [
-        "processor"
-      ],
-      "url": "https://services.sentinel-hub.com"
-    }
-  ],
-  "description": "Total suspended matter maps for 3 sites: Lagoon Venice, Marseille and Barcelona regions",
-  "keywords": [
-    "open data",
-    "sentinel hub",
-    "raster",
-    "race challenges"
-  ],
-  "title": "TSMN_water_quality_Saturday",
-  "license": ""
+  ]
 }

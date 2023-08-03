@@ -1,8 +1,28 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "ICEYE_GRD_E11",
   "properties": {
+    "datasource_type": "byoc-0771d000-92ca-4f7d-9788-b56ca0411cf7",
+    "providers": [
+      {
+        "name": "Sentinel Hub",
+        "description": "",
+        "roles": [
+          "processor"
+        ],
+        "url": "https://services.sentinel-hub.com"
+      }
+    ],
+    "description": "Activity for Leisure industry reduced. Images from ICEYE",
+    "keywords": [
+      "open data",
+      "sentinel hub",
+      "raster",
+      "race challenges"
+    ],
+    "title": "ICEYE_E11",
+    "license": "",
     "start_datetime": "2020-03-20T14:27:20Z",
     "end_datetime": "2020-03-20T14:27:21Z",
     "cube:dimensions": {
@@ -96,8 +116,7 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json",
-      "title": "data-access catalog"
+      "type": "application/json"
     },
     {
       "rel": "parent",
@@ -124,25 +143,5 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ],
-  "datasource_type": "byoc-0771d000-92ca-4f7d-9788-b56ca0411cf7",
-  "providers": [
-    {
-      "name": "Sentinel Hub",
-      "description": "",
-      "roles": [
-        "processor"
-      ],
-      "url": "https://services.sentinel-hub.com"
-    }
-  ],
-  "description": "Activity for Leisure industry reduced. Images from ICEYE",
-  "keywords": [
-    "open data",
-    "sentinel hub",
-    "raster",
-    "race challenges"
-  ],
-  "title": "ICEYE_E11",
-  "license": ""
+  ]
 }

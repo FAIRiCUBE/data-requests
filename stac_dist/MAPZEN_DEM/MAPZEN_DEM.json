@@ -1,8 +1,76 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "MAPZEN_DEM",
   "properties": {
+    "datasource_type": "dem",
+    "raster:bands": [
+      {
+        "description": "Heights in meters",
+        "name": "DEM",
+        "openeo:gsd": {
+          "value": [
+            0.000277777777778,
+            0.000277777777778
+          ],
+          "unit": "\u00b0"
+        },
+        "data_type": "float32",
+        "statistics": {
+          "minimum": [
+            -11000
+          ],
+          "maximum": [
+            9000
+          ]
+        }
+      },
+      {
+        "description": "The mask of data/no data pixels.",
+        "name": "dataMask",
+        "data_type": "uint8",
+        "statistics": {
+          "minimum": [
+            0
+          ],
+          "maximum": [
+            1
+          ]
+        }
+      }
+    ],
+    "providers": [
+      {
+        "name": "Sentinel Hub",
+        "description": "Global",
+        "roles": [
+          "processor"
+        ],
+        "url": "https://services-uswest2.sentinel-hub.com"
+      },
+      {
+        "name": "Sentinel Hub",
+        "description": "Global coverage up to resolution level 13 (level 14 is missing).",
+        "roles": [
+          "processor"
+        ],
+        "url": "https://services.sentinel-hub.com"
+      }
+    ],
+    "description": "Mapzen DEM is based on [Mapzen's terrain tiles](https://github.com/tilezen/joerd/tree/master/docs) that provide global DEM and bathymetry data.\nMapzen terrain tiles is a composite of elevation data of varying resolutions from [multiple open data sources](https://github.com/tilezen/joerd/blob/master/docs/data-sources.md)\nincluding [SRTM](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-shuttle-radar-topography-mission-srtm-1-arc?qt-science_center_objects=0#qt-science_center_objects),\n[ETOPO1](https://www.ngdc.noaa.gov/mgg/global/global.html),\nand other higher resolution sources for some parts of the world.\nMapzen DEM provides bare-earth terrain heights and can also be used for the orthorectification of satellite imagery (e.g Sentinel 1).\n",
+    "keywords": [
+      "sentinel hub",
+      "xcube",
+      "raster",
+      "systematic",
+      "DEM",
+      "terrain",
+      "3D",
+      "elevation",
+      "open data"
+    ],
+    "title": "Mapzen DEM",
+    "license": "proprietary",
     "cube:dimensions": {
       "x": {
         "type": "spatial",
@@ -132,8 +200,7 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json",
-      "title": "data-access catalog"
+      "type": "application/json"
     },
     {
       "rel": "parent",
@@ -161,73 +228,5 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ],
-  "datasource_type": "dem",
-  "raster:bands": [
-    {
-      "description": "Heights in meters",
-      "name": "DEM",
-      "openeo:gsd": {
-        "value": [
-          0.000277777777778,
-          0.000277777777778
-        ],
-        "unit": "\u00b0"
-      },
-      "data_type": "float32",
-      "statistics": {
-        "minimum": [
-          -11000
-        ],
-        "maximum": [
-          9000
-        ]
-      }
-    },
-    {
-      "description": "The mask of data/no data pixels.",
-      "name": "dataMask",
-      "data_type": "uint8",
-      "statistics": {
-        "minimum": [
-          0
-        ],
-        "maximum": [
-          1
-        ]
-      }
-    }
-  ],
-  "providers": [
-    {
-      "name": "Sentinel Hub",
-      "description": "Global",
-      "roles": [
-        "processor"
-      ],
-      "url": "https://services-uswest2.sentinel-hub.com"
-    },
-    {
-      "name": "Sentinel Hub",
-      "description": "Global coverage up to resolution level 13 (level 14 is missing).",
-      "roles": [
-        "processor"
-      ],
-      "url": "https://services.sentinel-hub.com"
-    }
-  ],
-  "description": "Mapzen DEM is based on [Mapzen's terrain tiles](https://github.com/tilezen/joerd/tree/master/docs) that provide global DEM and bathymetry data.\nMapzen terrain tiles is a composite of elevation data of varying resolutions from [multiple open data sources](https://github.com/tilezen/joerd/blob/master/docs/data-sources.md)\nincluding [SRTM](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-shuttle-radar-topography-mission-srtm-1-arc?qt-science_center_objects=0#qt-science_center_objects),\n[ETOPO1](https://www.ngdc.noaa.gov/mgg/global/global.html),\nand other higher resolution sources for some parts of the world.\nMapzen DEM provides bare-earth terrain heights and can also be used for the orthorectification of satellite imagery (e.g Sentinel 1).\n",
-  "keywords": [
-    "sentinel hub",
-    "xcube",
-    "raster",
-    "systematic",
-    "DEM",
-    "terrain",
-    "3D",
-    "elevation",
-    "open data"
-  ],
-  "title": "Mapzen DEM",
-  "license": "proprietary"
+  ]
 }

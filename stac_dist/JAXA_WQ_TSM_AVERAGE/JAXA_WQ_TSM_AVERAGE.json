@@ -1,8 +1,31 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "JAXA_WQ_TSM_AVERAGE",
   "properties": {
+    "datasource_type": "byoc-d8419142-814d-48aa-ba97-bf87950f29d3",
+    "providers": [
+      {
+        "name": "Sentinel Hub",
+        "description": "",
+        "roles": [
+          "processor"
+        ],
+        "url": "https://services.sentinel-hub.com"
+      }
+    ],
+    "description": "Total suspended matter cocentration weekly average (GCOM-C).\nWeekly total suspended matter concentration for 4 sites: North Adriatic, Tokyo, Kobe and Nagoya.\nTSM[g/m^3]=10.^(DN/254*(log10(50)-log10(0.01))+log10(0.01))\n```\nFile naming convention: jx_tsm-ave_tif_XXX_yyyy_mm_dd.tif\nXXX: Area name\n         nas -> NAdriatic\n         tok -> Tokyo\n         kob -> Kobe\n         nag -> Nagoya\nyyyy:Year\nmm:Month\ndd:Day\n```\n",
+    "keywords": [
+      "open data",
+      "sentinel hub",
+      "raster",
+      "water quality",
+      "dashboard hackathon",
+      "GCOM-C",
+      "JAXA"
+    ],
+    "title": "JAXA_wq_tsm_average",
+    "license": "",
     "start_datetime": "2018-01-06T00:00:00Z",
     "end_datetime": "2021-05-22T00:00:00Z",
     "cube:dimensions": {
@@ -97,8 +120,7 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json",
-      "title": "data-access catalog"
+      "type": "application/json"
     },
     {
       "rel": "parent",
@@ -125,28 +147,5 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ],
-  "datasource_type": "byoc-d8419142-814d-48aa-ba97-bf87950f29d3",
-  "providers": [
-    {
-      "name": "Sentinel Hub",
-      "description": "",
-      "roles": [
-        "processor"
-      ],
-      "url": "https://services.sentinel-hub.com"
-    }
-  ],
-  "description": "Total suspended matter cocentration weekly average (GCOM-C).\nWeekly total suspended matter concentration for 4 sites: North Adriatic, Tokyo, Kobe and Nagoya.\nTSM[g/m^3]=10.^(DN/254*(log10(50)-log10(0.01))+log10(0.01))\n```\nFile naming convention: jx_tsm-ave_tif_XXX_yyyy_mm_dd.tif\nXXX: Area name\n         nas -> NAdriatic\n         tok -> Tokyo\n         kob -> Kobe\n         nag -> Nagoya\nyyyy:Year\nmm:Month\ndd:Day\n```\n",
-  "keywords": [
-    "open data",
-    "sentinel hub",
-    "raster",
-    "water quality",
-    "dashboard hackathon",
-    "GCOM-C",
-    "JAXA"
-  ],
-  "title": "JAXA_wq_tsm_average",
-  "license": ""
+  ]
 }

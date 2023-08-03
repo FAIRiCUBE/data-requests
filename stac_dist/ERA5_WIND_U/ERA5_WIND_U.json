@@ -1,8 +1,30 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "ERA5_WIND_U",
   "properties": {
+    "datasource_type": "byoc-067fbb53-b1c3-4a57-9c81-adf2488a47ee",
+    "providers": [
+      {
+        "name": "Sentinel Hub",
+        "description": "",
+        "roles": [
+          "processor"
+        ],
+        "url": "https://services.sentinel-hub.com"
+      }
+    ],
+    "description": "Gridded ERA5 is the fifth generation ECMWF reanalysis for the global climate and weather for the past 4 to 7 decades. This parameter is the wind U field",
+    "keywords": [
+      "copernicus services",
+      "C3S",
+      "open data",
+      "sentinel hub",
+      "raster",
+      "race challenges"
+    ],
+    "title": "Wind_10m_u",
+    "license": "",
     "start_datetime": "2019-01-01T00:00:00Z",
     "end_datetime": "2022-04-01T00:00:00Z",
     "cube:dimensions": {
@@ -96,8 +118,7 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json",
-      "title": "data-access catalog"
+      "type": "application/json"
     },
     {
       "rel": "parent",
@@ -124,27 +145,5 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ],
-  "datasource_type": "byoc-067fbb53-b1c3-4a57-9c81-adf2488a47ee",
-  "providers": [
-    {
-      "name": "Sentinel Hub",
-      "description": "",
-      "roles": [
-        "processor"
-      ],
-      "url": "https://services.sentinel-hub.com"
-    }
-  ],
-  "description": "Gridded ERA5 is the fifth generation ECMWF reanalysis for the global climate and weather for the past 4 to 7 decades. This parameter is the wind U field",
-  "keywords": [
-    "copernicus services",
-    "C3S",
-    "open data",
-    "sentinel hub",
-    "raster",
-    "race challenges"
-  ],
-  "title": "Wind_10m_u",
-  "license": ""
+  ]
 }

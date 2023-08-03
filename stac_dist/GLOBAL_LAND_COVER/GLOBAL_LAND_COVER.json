@@ -1,8 +1,205 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "GLOBAL_LAND_COVER",
   "properties": {
+    "datasource_type": "byoc-f0a97620-0e88-4c1f-a1ac-bb388fabdf2c",
+    "raster:bands": [
+      {
+        "description": "main discrete land cover classification according to FAO LCCS scheme",
+        "name": "Discrete_Classification_map",
+        "openeo:gsd": {
+          "value": [
+            0.000925925925926,
+            0.000925925925926
+          ],
+          "unit": "\u00b0"
+        }
+      },
+      {
+        "description": "Classification probability, a quality indicator for the discrete classification",
+        "name": "Discrete_Classification_proba",
+        "openeo:gsd": {
+          "value": [
+            0.000925925925926,
+            0.000925925925926
+          ],
+          "unit": "\u00b0"
+        }
+      },
+      {
+        "description": "Forest type for all pixels where tree cover fraction is bigger than 1 %",
+        "name": "Forest_Type_layer",
+        "openeo:gsd": {
+          "value": [
+            0.000925925925926,
+            0.000925925925926
+          ],
+          "unit": "\u00b0"
+        }
+      },
+      {
+        "description": "Fractional cover (%) for the bare and sparse vegetation class",
+        "name": "Bare_CoverFraction_layer",
+        "openeo:gsd": {
+          "value": [
+            0.000925925925926,
+            0.000925925925926
+          ],
+          "unit": "\u00b0"
+        }
+      },
+      {
+        "description": "Fractional cover (%) for the cropland class",
+        "name": "Crops_CoverFraction_layer",
+        "openeo:gsd": {
+          "value": [
+            0.000925925925926,
+            0.000925925925926
+          ],
+          "unit": "\u00b0"
+        }
+      },
+      {
+        "description": "Fractional cover (%) for the herbaceous vegetation class",
+        "name": "Grass_CoverFraction_layer",
+        "openeo:gsd": {
+          "value": [
+            0.000925925925926,
+            0.000925925925926
+          ],
+          "unit": "\u00b0"
+        }
+      },
+      {
+        "description": "Fractional cover (%) for the moss & lichen class",
+        "name": "MossLichen_CoverFraction_layer",
+        "openeo:gsd": {
+          "value": [
+            0.000925925925926,
+            0.000925925925926
+          ],
+          "unit": "\u00b0"
+        }
+      },
+      {
+        "description": "Fractional cover (%) for the shrubland class",
+        "name": "Shrub_CoverFraction_layer",
+        "openeo:gsd": {
+          "value": [
+            0.000925925925926,
+            0.000925925925926
+          ],
+          "unit": "\u00b0"
+        }
+      },
+      {
+        "description": "Fractional cover (%) for the snow & ice class",
+        "name": "Snow_CoverFraction_layer",
+        "openeo:gsd": {
+          "value": [
+            0.000925925925926,
+            0.000925925925926
+          ],
+          "unit": "\u00b0"
+        }
+      },
+      {
+        "description": "Fractional cover (%) for the forest class",
+        "name": "Tree_CoverFraction_layer",
+        "openeo:gsd": {
+          "value": [
+            0.000925925925926,
+            0.000925925925926
+          ],
+          "unit": "\u00b0"
+        }
+      },
+      {
+        "description": "Fractional cover (%) for the built-up class",
+        "name": "BuiltUp_CoverFraction_layer",
+        "openeo:gsd": {
+          "value": [
+            0.000925925925926,
+            0.000925925925926
+          ],
+          "unit": "\u00b0"
+        }
+      },
+      {
+        "description": "Fractional cover (%) for the permanent inland water bodies class",
+        "name": "PermanentWater_CoverFraction_layer",
+        "openeo:gsd": {
+          "value": [
+            0.000925925925926,
+            0.000925925925926
+          ],
+          "unit": "\u00b0"
+        }
+      },
+      {
+        "description": "Fractional cover (%) for the seasonal inland water bodies class",
+        "name": "SeasonalWater_CoverFraction_layer",
+        "openeo:gsd": {
+          "value": [
+            0.000925925925926,
+            0.000925925925926
+          ],
+          "unit": "\u00b0"
+        }
+      },
+      {
+        "description": "Data density indicator showing quality of the EO input data (0 = bad, 100 = perfect data)",
+        "name": "DataDensityIndicator",
+        "openeo:gsd": {
+          "value": [
+            0.000925925925926,
+            0.000925925925926
+          ],
+          "unit": "\u00b0"
+        }
+      },
+      {
+        "description": "Quality layer regarding the change detection of the current mapped year to the previous mapped year.",
+        "name": "Change_Confidence_layer",
+        "openeo:gsd": {
+          "value": [
+            0.000925925925926,
+            0.000925925925926
+          ],
+          "unit": "\u00b0"
+        }
+      },
+      {
+        "description": "The mask of data/no data pixels.",
+        "name": "dataMask"
+      }
+    ],
+    "providers": [
+      {
+        "name": "Sentinel Hub",
+        "description": "",
+        "roles": [
+          "processor"
+        ],
+        "url": "https://creodias.sentinel-hub.com"
+      }
+    ],
+    "description": "Global Land Cover products at 100 m resolution are delivered annually by the \n[global component of the Copernicus Land Service](https://land.copernicus.eu/global/products/lc). \nThe most recent collection 3 (version 3.0.1) of 100 m Land Cover products for the years 2015 - 2019 were generated from \nthe PROBA-V 100 m and 300 m satellite observations and several other ancillary datasets with global coverage. \nThese Land Cover products provide a main discrete land cover classification map according to UN-FAO Land Cover Classification System [LCCS](https://land.copernicus.eu/global/products/lc). \nAdditional continuous fractional layers for all basic land cover classes which give the percentage of\na 100 m pixel that is filled with a specific land cover class, are also included in the Land Cover products to\nprovide more detailed information on each land cover class.\n",
+    "keywords": [
+      "copernicus services",
+      "sentinel hub",
+      "xcube",
+      "raster",
+      "systematic",
+      "machine learning",
+      "land cover",
+      "CLMS",
+      "derived data",
+      "open data"
+    ],
+    "title": "Global Land Cover",
+    "license": "proprietary",
     "start_datetime": "2015-01-01T00:00:00Z",
     "end_datetime": "2019-01-01T00:00:00Z",
     "cube:dimensions": {
@@ -134,8 +331,7 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json",
-      "title": "data-access catalog"
+      "type": "application/json"
     },
     {
       "rel": "parent",
@@ -163,202 +359,5 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ],
-  "datasource_type": "byoc-f0a97620-0e88-4c1f-a1ac-bb388fabdf2c",
-  "raster:bands": [
-    {
-      "description": "main discrete land cover classification according to FAO LCCS scheme",
-      "name": "Discrete_Classification_map",
-      "openeo:gsd": {
-        "value": [
-          0.000925925925926,
-          0.000925925925926
-        ],
-        "unit": "\u00b0"
-      }
-    },
-    {
-      "description": "Classification probability, a quality indicator for the discrete classification",
-      "name": "Discrete_Classification_proba",
-      "openeo:gsd": {
-        "value": [
-          0.000925925925926,
-          0.000925925925926
-        ],
-        "unit": "\u00b0"
-      }
-    },
-    {
-      "description": "Forest type for all pixels where tree cover fraction is bigger than 1 %",
-      "name": "Forest_Type_layer",
-      "openeo:gsd": {
-        "value": [
-          0.000925925925926,
-          0.000925925925926
-        ],
-        "unit": "\u00b0"
-      }
-    },
-    {
-      "description": "Fractional cover (%) for the bare and sparse vegetation class",
-      "name": "Bare_CoverFraction_layer",
-      "openeo:gsd": {
-        "value": [
-          0.000925925925926,
-          0.000925925925926
-        ],
-        "unit": "\u00b0"
-      }
-    },
-    {
-      "description": "Fractional cover (%) for the cropland class",
-      "name": "Crops_CoverFraction_layer",
-      "openeo:gsd": {
-        "value": [
-          0.000925925925926,
-          0.000925925925926
-        ],
-        "unit": "\u00b0"
-      }
-    },
-    {
-      "description": "Fractional cover (%) for the herbaceous vegetation class",
-      "name": "Grass_CoverFraction_layer",
-      "openeo:gsd": {
-        "value": [
-          0.000925925925926,
-          0.000925925925926
-        ],
-        "unit": "\u00b0"
-      }
-    },
-    {
-      "description": "Fractional cover (%) for the moss & lichen class",
-      "name": "MossLichen_CoverFraction_layer",
-      "openeo:gsd": {
-        "value": [
-          0.000925925925926,
-          0.000925925925926
-        ],
-        "unit": "\u00b0"
-      }
-    },
-    {
-      "description": "Fractional cover (%) for the shrubland class",
-      "name": "Shrub_CoverFraction_layer",
-      "openeo:gsd": {
-        "value": [
-          0.000925925925926,
-          0.000925925925926
-        ],
-        "unit": "\u00b0"
-      }
-    },
-    {
-      "description": "Fractional cover (%) for the snow & ice class",
-      "name": "Snow_CoverFraction_layer",
-      "openeo:gsd": {
-        "value": [
-          0.000925925925926,
-          0.000925925925926
-        ],
-        "unit": "\u00b0"
-      }
-    },
-    {
-      "description": "Fractional cover (%) for the forest class",
-      "name": "Tree_CoverFraction_layer",
-      "openeo:gsd": {
-        "value": [
-          0.000925925925926,
-          0.000925925925926
-        ],
-        "unit": "\u00b0"
-      }
-    },
-    {
-      "description": "Fractional cover (%) for the built-up class",
-      "name": "BuiltUp_CoverFraction_layer",
-      "openeo:gsd": {
-        "value": [
-          0.000925925925926,
-          0.000925925925926
-        ],
-        "unit": "\u00b0"
-      }
-    },
-    {
-      "description": "Fractional cover (%) for the permanent inland water bodies class",
-      "name": "PermanentWater_CoverFraction_layer",
-      "openeo:gsd": {
-        "value": [
-          0.000925925925926,
-          0.000925925925926
-        ],
-        "unit": "\u00b0"
-      }
-    },
-    {
-      "description": "Fractional cover (%) for the seasonal inland water bodies class",
-      "name": "SeasonalWater_CoverFraction_layer",
-      "openeo:gsd": {
-        "value": [
-          0.000925925925926,
-          0.000925925925926
-        ],
-        "unit": "\u00b0"
-      }
-    },
-    {
-      "description": "Data density indicator showing quality of the EO input data (0 = bad, 100 = perfect data)",
-      "name": "DataDensityIndicator",
-      "openeo:gsd": {
-        "value": [
-          0.000925925925926,
-          0.000925925925926
-        ],
-        "unit": "\u00b0"
-      }
-    },
-    {
-      "description": "Quality layer regarding the change detection of the current mapped year to the previous mapped year.",
-      "name": "Change_Confidence_layer",
-      "openeo:gsd": {
-        "value": [
-          0.000925925925926,
-          0.000925925925926
-        ],
-        "unit": "\u00b0"
-      }
-    },
-    {
-      "description": "The mask of data/no data pixels.",
-      "name": "dataMask"
-    }
-  ],
-  "providers": [
-    {
-      "name": "Sentinel Hub",
-      "description": "",
-      "roles": [
-        "processor"
-      ],
-      "url": "https://creodias.sentinel-hub.com"
-    }
-  ],
-  "description": "Global Land Cover products at 100 m resolution are delivered annually by the \n[global component of the Copernicus Land Service](https://land.copernicus.eu/global/products/lc). \nThe most recent collection 3 (version 3.0.1) of 100 m Land Cover products for the years 2015 - 2019 were generated from \nthe PROBA-V 100 m and 300 m satellite observations and several other ancillary datasets with global coverage. \nThese Land Cover products provide a main discrete land cover classification map according to UN-FAO Land Cover Classification System [LCCS](https://land.copernicus.eu/global/products/lc). \nAdditional continuous fractional layers for all basic land cover classes which give the percentage of\na 100 m pixel that is filled with a specific land cover class, are also included in the Land Cover products to\nprovide more detailed information on each land cover class.\n",
-  "keywords": [
-    "copernicus services",
-    "sentinel hub",
-    "xcube",
-    "raster",
-    "systematic",
-    "machine learning",
-    "land cover",
-    "CLMS",
-    "derived data",
-    "open data"
-  ],
-  "title": "Global Land Cover",
-  "license": "proprietary"
+  ]
 }

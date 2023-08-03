@@ -1,8 +1,30 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "JAXA_WQ_TSM_ANOMALY",
   "properties": {
+    "datasource_type": "byoc-925b4bf6-ca1b-45df-a523-88f30823ab07",
+    "providers": [
+      {
+        "name": "Sentinel Hub",
+        "description": "",
+        "roles": [
+          "processor"
+        ],
+        "url": "https://services.sentinel-hub.com"
+      }
+    ],
+    "description": "Ratio (percentage) of weekly total suspended matter concentration divided by average concentration of other years for 4 sites: North Adriatic, Tokyo, Kobe and Nagoya.  \nAnomaly[%]=((DN-1)/254*(300-(-100))-100).\nThe base data is made by averaging within -1, 0, +1 weeks in 2018-2020.\n```\nFile naming convention: jx_tsm_tif_XXX_yyyy_mm_dd.tif\nXXX: Area name\n         nas -> NAdriatic\n         tok -> Tokyo\n         kob -> Kobe\n         nag -> Nagoya\nyyyy:Year\nmm:Month\ndd:Day\n```\n",
+    "keywords": [
+      "open data",
+      "sentinel hub",
+      "raster",
+      "water quality",
+      "dashboard hackathon",
+      "JAXA"
+    ],
+    "title": "JAXA_wq_tsm_anomaly",
+    "license": "",
     "start_datetime": "2018-01-06T00:00:00Z",
     "end_datetime": "2999-01-01T00:00:00Z",
     "cube:dimensions": {
@@ -96,8 +118,7 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json",
-      "title": "data-access catalog"
+      "type": "application/json"
     },
     {
       "rel": "parent",
@@ -124,27 +145,5 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ],
-  "datasource_type": "byoc-925b4bf6-ca1b-45df-a523-88f30823ab07",
-  "providers": [
-    {
-      "name": "Sentinel Hub",
-      "description": "",
-      "roles": [
-        "processor"
-      ],
-      "url": "https://services.sentinel-hub.com"
-    }
-  ],
-  "description": "Ratio (percentage) of weekly total suspended matter concentration divided by average concentration of other years for 4 sites: North Adriatic, Tokyo, Kobe and Nagoya.  \nAnomaly[%]=((DN-1)/254*(300-(-100))-100).\nThe base data is made by averaging within -1, 0, +1 weeks in 2018-2020.\n```\nFile naming convention: jx_tsm_tif_XXX_yyyy_mm_dd.tif\nXXX: Area name\n         nas -> NAdriatic\n         tok -> Tokyo\n         kob -> Kobe\n         nag -> Nagoya\nyyyy:Year\nmm:Month\ndd:Day\n```\n",
-  "keywords": [
-    "open data",
-    "sentinel hub",
-    "raster",
-    "water quality",
-    "dashboard hackathon",
-    "JAXA"
-  ],
-  "title": "JAXA_wq_tsm_anomaly",
-  "license": ""
+  ]
 }

@@ -122,6 +122,21 @@
     },
     {
       "rel": "item",
+      "href": "./EEA_RIVER_AND_LAKE_ICE_EXTENT_SENTINEL1/EEA_RIVER_AND_LAKE_ICE_EXTENT_SENTINEL1.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./RIVER_AND_LAKE_ICE_EXTENT_SENTINEL2/RIVER_AND_LAKE_ICE_EXTENT_SENTINEL2.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./RIVER_AND_LAKE_ICE_EXTENT_SENTINEL1_SENTINEL2/RIVER_AND_LAKE_ICE_EXTENT_SENTINEL1_SENTINEL2.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
       "href": "./ICEYE_GRD_E11/ICEYE_GRD_E11.json",
       "type": "application/json"
     },

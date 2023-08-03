@@ -1,8 +1,28 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "E12D_PRIMARY",
   "properties": {
+    "datasource_type": "byoc-06e51c55-a10c-43ba-ad93-ddd6258d5e9a",
+    "providers": [
+      {
+        "name": "Sentinel Hub",
+        "description": "",
+        "roles": [
+          "processor"
+        ],
+        "url": "https://services.sentinel-hub.com"
+      }
+    ],
+    "description": "This indicator is based on the detection of moving trucks on motorways in the EU. The detection uses data from the Copernicus Sentinel-2 satellite.",
+    "keywords": [
+      "open data",
+      "sentinel hub",
+      "raster",
+      "race challenges"
+    ],
+    "title": "E12D_Primary_corrected",
+    "license": "",
     "start_datetime": "2017-05-15T00:00:00Z",
     "end_datetime": "2020-05-15T00:00:00Z",
     "cube:dimensions": {
@@ -96,8 +116,7 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json",
-      "title": "data-access catalog"
+      "type": "application/json"
     },
     {
       "rel": "parent",
@@ -124,25 +143,5 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ],
-  "datasource_type": "byoc-06e51c55-a10c-43ba-ad93-ddd6258d5e9a",
-  "providers": [
-    {
-      "name": "Sentinel Hub",
-      "description": "",
-      "roles": [
-        "processor"
-      ],
-      "url": "https://services.sentinel-hub.com"
-    }
-  ],
-  "description": "This indicator is based on the detection of moving trucks on motorways in the EU. The detection uses data from the Copernicus Sentinel-2 satellite.",
-  "keywords": [
-    "open data",
-    "sentinel hub",
-    "raster",
-    "race challenges"
-  ],
-  "title": "E12D_Primary_corrected",
-  "license": ""
+  ]
 }
