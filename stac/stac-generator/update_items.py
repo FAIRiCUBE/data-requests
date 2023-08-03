@@ -1,6 +1,9 @@
 import requests
+import os
 from requests.auth import HTTPBasicAuth
 
+username = os.environ["USERNAME"]
+password = os.environ["PASSWORD"]
 
 catalog_url = "https://fairicube.github.io/data-requests/catalog.json"
 post_url = "https://stacapi-write.eoxhub.fairicube.eu/collections/index/items"
@@ -12,11 +15,11 @@ for link in index_catalog["links"]:
         response = requests.post(
             url=post_url, json=json_body,
             auth=HTTPBasicAuth(
-                'user', 'password'))
+                username, password))
         if response.status_code == 409:
             put_url = f'{post_url}/{json_body["id"]}'
             response = requests.put(
                 url=put_url, json=json_body,
                 auth=HTTPBasicAuth(
-                    'user', 'password'))
+                    username, password))
         print(response, json_body["id"])
