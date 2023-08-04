@@ -1,6 +1,9 @@
 # data-requests
 
+Data needed by the Use Cases will be imported into the FAIRiCUBE HUB to form datacubes. These make data accesseasier as they are homogenized in structure and access (if you ever had to go through different data repositories and harvest data, followed by own homogenization work, you will see that pushing that work "behind the curtain" by automating access is a big advantage). Of course, in order to provide data in such a "beautified" manner the homogenization work still needs to be done by somebody. In FC, that is: us. Tools like the data request form and the rasdaman ETL suite assist greatly, but for the final homogenized datacubes human caring hands are still necessary; improving here is a key mission of the project, actually.
+
 Please hand in your requests for data to be made available within FAIRiCUBE HUB by simply adding an issue in this repository.
+Make sure the description is correct and complete, otherwise iterations and misinterpretations can occur which lead to delays and extra effort.
 
 ## Existing Data Catalogs
 
