@@ -3,6 +3,13 @@
   "stac_version": "2.2.0",
   "id": "water_and_wetness",
   "properties": {
+    "license": "License Link - https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1159",
+    "Description": "A time series data of type of water bodies in the EEA39 area.",
+    "providers": [
+      "EEA"
+    ],
+    "Data Source": "Origin of data \u2013 EEA, URL -- https://land.copernicus.eu/pan-european/high-resolution-layers/water-wetness/status-maps/water-wetness-2018?tab=download",
+    "assets": {},
     "cube:dimensions": {
       "x": {
         "axis": "x",

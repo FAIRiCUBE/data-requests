@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "1.0.0",
+  "stac_version": "2.2.0",
   "id": "EMODNET_VESSEL_DENSITY_CARGO",
   "properties": {
     "datasource_type": "byoc-093a3988-6ed6-4bb0-ae37-e356f14d7daf",
@@ -118,7 +118,8 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json"
+      "type": "application/json",
+      "title": "data-access catalog"
     },
     {
       "rel": "parent",

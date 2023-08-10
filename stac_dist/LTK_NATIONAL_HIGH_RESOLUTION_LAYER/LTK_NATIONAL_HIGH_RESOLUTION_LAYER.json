@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "1.0.0",
+  "stac_version": "2.2.0",
   "id": "LTK_NATIONAL_HIGH_RESOLUTION_LAYER",
   "properties": {
     "datasource_type": "byoc-86c76a3d-29f3-4eff-99fe-3eb84e422c66",
@@ -122,7 +122,8 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json"
+      "type": "application/json",
+      "title": "data-access catalog"
     },
     {
       "rel": "parent",

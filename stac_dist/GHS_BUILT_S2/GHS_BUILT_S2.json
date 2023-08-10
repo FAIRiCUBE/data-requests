@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "1.0.0",
+  "stac_version": "2.2.0",
   "id": "GHS_BUILT_S2",
   "properties": {
     "datasource_type": "byoc-3dbeea2c-3207-4c65-8a73-c29ce2675f89",
@@ -374,7 +374,8 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json"
+      "type": "application/json",
+      "title": "data-access catalog"
     },
     {
       "rel": "parent",

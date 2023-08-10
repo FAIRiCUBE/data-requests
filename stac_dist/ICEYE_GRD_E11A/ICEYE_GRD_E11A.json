@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "1.0.0",
+  "stac_version": "2.2.0",
   "id": "ICEYE_GRD_E11A",
   "properties": {
     "datasource_type": "byoc-a9ae7d6a-70c8-4575-854a-1a8f0cb33317",
@@ -116,7 +116,8 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json"
+      "type": "application/json",
+      "title": "data-access catalog"
     },
     {
       "rel": "parent",

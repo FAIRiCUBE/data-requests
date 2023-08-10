@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "1.0.0",
+  "stac_version": "2.2.0",
   "id": "SENTINEL_5P_CH4_T7D_AVERAGE",
   "properties": {
     "datasource_type": "byoc-0ecb4a55-5ce2-4525-bdcb-a333d37d46ef",
@@ -117,7 +117,8 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json"
+      "type": "application/json",
+      "title": "data-access catalog"
     },
     {
       "rel": "parent",

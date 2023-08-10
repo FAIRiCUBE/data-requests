@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "1.0.0",
+  "stac_version": "2.2.0",
   "id": "EEA_RIVER_AND_LAKE_ICE_EXTENT_SENTINEL1",
   "properties": {
     "datasource_type": "byoc-fe2c0caf-fbe8-49a1-91ae-e730ea65116a",
@@ -136,7 +136,8 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json"
+      "type": "application/json",
+      "title": "data-access catalog"
     },
     {
       "rel": "parent",

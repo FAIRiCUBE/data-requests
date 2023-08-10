@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "1.0.0",
+  "stac_version": "2.2.0",
   "id": "JAXA_WQ_CHLA_AVERAGE",
   "properties": {
     "datasource_type": "byoc-a81b1960-20f2-4f55-830e-b824094c4275",
@@ -120,7 +120,8 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json"
+      "type": "application/json",
+      "title": "data-access catalog"
     },
     {
       "rel": "parent",

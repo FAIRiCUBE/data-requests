@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "1.0.0",
+  "stac_version": "2.2.0",
   "id": "ALOS_PALSAR2_RICE_PADDY_FIELD_MAP",
   "properties": {
     "datasource_type": "byoc-4e6463e6-a328-4618-832c-fa03ed6852f1",
@@ -119,7 +119,8 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json"
+      "type": "application/json",
+      "title": "data-access catalog"
     },
     {
       "rel": "parent",

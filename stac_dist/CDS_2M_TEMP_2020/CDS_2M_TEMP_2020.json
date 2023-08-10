@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "1.0.0",
+  "stac_version": "2.2.0",
   "id": "CDS_2M_TEMP_2020",
   "properties": {
     "datasource_type": "byoc-0b3eebec-30de-4fa6-9cd3-4b252d45d847",
@@ -118,7 +118,8 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json"
+      "type": "application/json",
+      "title": "data-access catalog"
     },
     {
       "rel": "parent",

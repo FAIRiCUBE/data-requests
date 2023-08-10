@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "1.0.0",
+  "stac_version": "2.2.0",
   "id": "ALOS_PALSAR2_AGRICULTURE",
   "properties": {
     "datasource_type": "byoc-7c90e9bb-0842-4f37-bb34-37b467eb5c95",
@@ -128,7 +128,8 @@
     {
       "rel": "root",
       "href": "https://fairicube.github.io/data-requests/catalog.json",
-      "type": "application/json"
+      "type": "application/json",
+      "title": "data-access catalog"
     },
     {
       "rel": "parent",
