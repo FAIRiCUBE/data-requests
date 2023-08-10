@@ -53,7 +53,7 @@ def create_stac_item(doc, title):
     start_date, end_date, bbox, footprint = create_axes(doc)
 
     properties = dict()
-
+    providers = []
     extensions = [
         "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
     ]
@@ -63,7 +63,11 @@ def create_stac_item(doc, title):
         id = spaceless_id.replace("–", "_")
         properties["license"] = doc["License"]
         properties["Description"] = doc["Description"]
-        properties["providers"] = doc["Ownership"].split(',')
+        providers_list = doc["Ownership"].split(',')
+        for provider in providers_list:
+            new_provider = pystac.Provider(name=provider)
+            providers.append(new_provider.to_dict())
+        properties["providers"] = providers
         properties["Data Source"] = doc["Data Source"]
         assets = dict()
         if "Thumbnails" in doc.keys():
