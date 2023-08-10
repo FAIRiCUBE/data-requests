@@ -6,7 +6,9 @@
     "license": "License link - https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1159",
     "Description": "Time series data depicting tree cover density across the EEA-39 region",
     "providers": [
-      "EEA"
+      {
+        "name": "EEA"
+      }
     ],
     "Data Source": "Origin of data \u2013 EEA, URL -- https://land.copernicus.eu/pan-european/high-resolution-layers/forests/tree-cover-density/status-maps/tree-cover-density-2018?tab=download",
     "assets": {},

@@ -6,14 +6,30 @@
     "license": "No limitations to public access EEA standard re-use policy: unless otherwise indicated, re-use of content on the EEA website for commercial or non-commercial purposes is permitted free of charge, provided that the source is acknowledged (http://www.eea.europa.eu/legal/copyright). Terms and condition for the use of the input data collected and used for delineating a city: DG REGIO: - https://ec.europa.eu/info/legal-notice_en#copyright-notice LandScan 2010 \u00a9 UT BATTELLE: - https://landscan.ornl.gov/license GEOSTAT 2011: https://ec.europa.eu/info/legal-notice_en#copyright-notice CORDA platform: - https://www.copernicus.eu/en/access-data/copyright-and-licences",
     "Description": "A City is a local administrative unit (LAU) where the majority of the population lives in an urban centre of at least 50 000 inhabitants. (https://ec.europa.eu/eurostat/web/cities/spatial-units)",
     "providers": [
-      "Copyright holders: \u00a9 European Environment Agency (EEA)",
-      " \u00a9 European Union",
-      " \u00a9 EuroGeographics",
-      " \u00a9 FAO (UN)",
-      " \u00a9 TurkStat",
-      " \u00a9 UT BATTELLE",
-      " \u00a9 Republic Administration for Geodetic and Property Affairs (Bosnia Herzegovina)",
-      " \u00a9 Statistical Office of Montenegro"
+      {
+        "name": "Copyright holders: \u00a9 European Environment Agency (EEA)"
+      },
+      {
+        "name": " \u00a9 European Union"
+      },
+      {
+        "name": " \u00a9 EuroGeographics"
+      },
+      {
+        "name": " \u00a9 FAO (UN)"
+      },
+      {
+        "name": " \u00a9 TurkStat"
+      },
+      {
+        "name": " \u00a9 UT BATTELLE"
+      },
+      {
+        "name": " \u00a9 Republic Administration for Geodetic and Property Affairs (Bosnia Herzegovina)"
+      },
+      {
+        "name": " \u00a9 Statistical Office of Montenegro"
+      }
     ],
     "Data Source": "GISCO, https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/urban-audit",
     "assets": {},

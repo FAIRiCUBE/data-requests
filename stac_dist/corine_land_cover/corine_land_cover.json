@@ -6,7 +6,9 @@
     "license": "http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1159",
     "Description": "Timeseries about types of land area in the EEA-39 regions and overseas French territories.",
     "providers": [
-      "EEA"
+      {
+        "name": "EEA"
+      }
     ],
     "Data Source": "Origin of data \u2013 EEA, URL -- https://land.copernicus.eu/pan-european/corine-land-cover",
     "assets": {},

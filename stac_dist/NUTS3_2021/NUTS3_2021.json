@@ -6,9 +6,15 @@
     "license": "The European Commission, its Executive Agencies and European Environmental Agency may use the dataset under the following usage restrictions: https://webgate.ec.europa.eu/fpfis/wikis/display/GISCO/License+conditions+for+EuroGeographics+Administrative+and+Topographic+spatial+datasets. Contractors of the European Commission, its Executive Agencies and EEA can access the data after signing an agreement form. The agreement form can be requested by the responsible service from European Commission \u2013 Eurostat/GISCO ESTAT-GISCO@ec.europa.eu. Once the form has been signed, access will be provided by European Commission - Eurostat/GISCO.",
     "Description": "This metadata refers to the dataset representing the administrative boundaries of the EEA38 member countries and the United Kingdom at various aggregation levels using the NUTS 2021 classification (Nomenclature of territorial units for statistics): country (NUTS0), NUTS1, NUTS2, and NUTS3 regions, plus some extra territories as Andorra, Monaco, San Marino, Vatican City.\nMore information at [https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search#/metadata/08c0e074-4a98-4545-bd85-f58fe3f74d82] (https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search#/metadata/08c0e074-4a98-4545-bd85-f58fe3f74d82)",
     "providers": [
-      "Administrative boundaries: \u00a9 EuroGeographics",
-      " \u00a9 FAO (UN)",
-      " \u00a9 TurkStat Source: European Commission \u2013 Eurostat/GISCO"
+      {
+        "name": "Administrative boundaries: \u00a9 EuroGeographics"
+      },
+      {
+        "name": " \u00a9 FAO (UN)"
+      },
+      {
+        "name": " \u00a9 TurkStat Source: European Commission \u2013 Eurostat/GISCO"
+      }
     ],
     "Data Source": "This dataset is based on the Eurostat GISCO database (extracted in May 2021), in particular on the layer NUTS 2021 at 100:000 scale for the main countries complemented by part of additional layers as EEZ (Exclusive Economic Zone) 2021, and EuroGeographics EuroBoundaryMap 2022 dataset. Direct download url: https://sdi.eea.europa.eu/data/08c0e074-4a98-4545-bd85-f58fe3f74d82",
     "assets": {},
