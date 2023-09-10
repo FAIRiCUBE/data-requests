@@ -1,0 +1,13 @@
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:fic-md="http://schemas.fairicube.eu/coveragemetadata" targetNamespace="http://schemas.fairicube.eu/coveragemetadata" elementFormDefault="qualified" version="1.1.0">
+	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+	<annotation>
+		<documentation>Schema of FAIRiCUBE coverage metadata extension
+        </documentation>
+	</annotation>
+	<element name="fairicubeMetadata" type="gml:ReferenceType">
+		<annotation>
+			<documentation>-- Definition --
+Monitored environmental medium.</documentation>
+		</annotation>
+	</element>
+</schema>
