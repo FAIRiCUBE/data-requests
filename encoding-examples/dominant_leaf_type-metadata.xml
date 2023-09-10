@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<wcs:CoverageDescriptions xsi:schemaLocation="http://www.opengis.net/wcs/2.0 http://schemas.opengis.net/wcs/2.0/wcsDescribeCoverage.xsd" xmlns:wcs="http://www.opengis.net/wcs/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:swe="http://www.opengis.net/swe/2.0" xmlns:ows="http://www.opengis.net/ows/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rasdaman="http://www.rasdaman.org" xmlns:gmlcov="http://www.opengis.net/gmlcov/1.0">
+<wcs:CoverageDescriptions xsi:schemaLocation="http://www.opengis.net/wcs/2.0 http://schemas.opengis.net/wcs/2.0/wcsDescribeCoverage.xsd" xmlns:wcs="http://www.opengis.net/wcs/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:swe="http://www.opengis.net/swe/2.0" xmlns:ows="http://www.opengis.net/ows/2.0" xmlns:fic="http://schemas.fairicube.eu/fic" xmlns:fic-md="http://schemas.fairicube.eu/coveragemetadata" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rasdaman="http://www.rasdaman.org" xmlns:gmlcov="http://www.opengis.net/gmlcov/1.0">
 	<wcs:CoverageDescription gml:id="dominant_leaf_type">
 		<gml:boundedBy>
 			<gml:Envelope srsName="http://localhost:8080/rasdaman/def/crs-compound?1=http://localhost:8080/rasdaman/def/crs/OGC/0/AnsiDate&amp;2=http://localhost:8080/rasdaman/def/crs/EPSG/0/3035" axisLabels="ansi Y X" uomLabels="d metre metre" srsDimension="3">
@@ -19,12 +19,15 @@
 			<gmlcov:Extension>
 				<rasdaman:covMetadata>
 					<AREA_OR_POINT>Area</AREA_OR_POINT>
-					<DataType>Thematic</DataType>
+					<fic-md:fairicubeMetadata 
+    xlink:role="https://codelists.fairicube.eu/metadata/MetadataCatalogLink" 
+    xlink:title="Dominant Leave Type metadata on the FAIRiCUBE Catalog" 
+    xlink:href="https://catalog.fairicube.eu/stac/dominant_leaf_type.json"/>
+					<Link xlink:role="https://codelists.fairicube.eu/metadata/MetadataCatalogLink" xlink:title="Dominant Leaf Type metadata on the FAIRiCUBE Catalog" xlink:href="https://catalog.fairicube.eu/stac/dominant_leaf_type.json"/>
 					<colorPaletteTable>{'colorTable': [[240, 240, 240, 255], [70, 158, 74, 255], [28, 92, 36, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 0], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [153, 153, 153, 255], [0, 0, 0, 255]]}</colorPaletteTable>
 				</rasdaman:covMetadata>
 			</gmlcov:Extension>
 		</gmlcov:metadata>
-		<gmlcov:metadata xlink:href="https://catalog.fairicube.eu/stac/dominant_leaf_type.json"/>
 		<gml:domainSet>
 			<gml:RectifiedGrid dimension="3" gml:id="dominant_leaf_type-grid">
 				<gml:limits>
@@ -48,18 +51,40 @@
 		</gml:domainSet>
 		<gmlcov:rangeType>
 			<swe:DataRecord>
-				<swe:field name="Palette">
-					<swe:Quantity definition="http://www.opengis.net/def/dataType/OGC/0/unsignedByte">
-						<swe:label>Palette</swe:label>
-						<swe:description/>
+				<swe:field name="DominantLeafType">
+					<swe:Category definition="https://qudt.org/vocab/unit/UNITLESS">
+						<swe:extension>
+							<fic:Classification>
+								<fic:classificationValues>
+									<fic:ClassificationValue>
+										<fic:value>0</fic:value>
+										<fic:label>all non-tree covered areas</fic:label>
+										<fic:paletteColor>240,240,240,255</fic:paletteColor>
+									</fic:ClassificationValue>
+									<fic:ClassificationValue>
+										<fic:value>1</fic:value>
+										<fic:label>broadleaved trees</fic:label>
+										<fic:paletteColor>70,158,74,255</fic:paletteColor>
+									</fic:ClassificationValue>
+									<fic:ClassificationValue>
+										<fic:value>2</fic:value>
+										<fic:label>coniferous trees</fic:label>
+										<fic:paletteColor>28,92,36,255</fic:paletteColor>
+									</fic:ClassificationValue>
+								</fic:classificationValues>
+								<fic:classificationSource xlink:href="https://land.copernicus.eu/pan-european/high-resolution-layers/forests/dominant-leaf-type/status-maps/dominant-leaf-type-2018"/>
+							</fic:Classification>
+						</swe:extension>
+						<swe:label>Dominant Leaf Type</swe:label>
+						<swe:description>The HRL Forest 2018 primary status layer Dominant Leaf Type (DLT) has been created in frame of the tender “EEA/IDM/R0/18/009 - High Resolution land cover characteristics for the 2018 reference year” as part of the EEA Copernicus Land Monitoring Service (CLMS, https://land.copernicus.eu). The DLT raster product provides a basic land cover classification with 3 thematic classes (all non-tree covered areas / broadleaved / coniferous) at 10m spatial resolution and covers the full of EEA39 area. More about the High Resolution Layers and CLMS datasets can be found at https://land.copernicus.eu/pan-european.</swe:description>
 						<swe:nilValues>
 							<swe:NilValues>
-								<swe:nilValue reason="">240</swe:nilValue>
+								<swe:nilValue reason="no data">240</swe:nilValue>
+								<swe:nilValue reason="outside area">255</swe:nilValue>
 							</swe:NilValues>
 						</swe:nilValues>
-						<swe:uom code="10^0"/>
-						<swe:constraint/>
-					</swe:Quantity>
+						<swe:codeSpace xlink:href="http://codelists.fairicube.eu/codespacePlaceholder/"/>
+					</swe:Category>
 				</swe:field>
 			</swe:DataRecord>
 		</gmlcov:rangeType>
