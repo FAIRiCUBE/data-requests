@@ -12,7 +12,9 @@ If questions remain open (and this has turned out to be the regular case) a requ
 
 ## Metadata
 
-In order to become visible to all, the new data set also needs to get its twin entry in the catalog (currently: one of  https://catalog.eoxhub.fairicube.eu and https://catalog.fairicube.eu). To this end, the catalog team needs to get contacted. Note that the catalog typically will require additional descriptive metadata.
+In order to become visible to all, the new data set also needs to get its twin entry in the catalog (currently: one of  https://catalog.eoxhub.fairicube.eu and https://catalog.fairicube.eu). To this end, the catalog team needs to get contacted (best via mentioning them in the corresponding data upload issue). Note that the catalog typically will require additional descriptive metadata.
+
+[Here](encoding-examples/dominant_leaf_type-metadata.xml) is an example of a metadata record compliant with the OGC coverage standard.
 
 ## Existing Data Catalogs
 
