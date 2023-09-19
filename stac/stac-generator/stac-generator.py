@@ -1,4 +1,5 @@
 import os
+import json
 from datetime import datetime
 import re
 import pystac
@@ -12,19 +13,54 @@ GH_TOKEN = os.environ["GH_TOKEN"]
 pystac.set_stac_version("2.2.0")
 
 
+def extract_value_from_string(pattern, string, default):
+    match = re.search(pattern, string)
+    if match is not None:
+        return match.group()
+    else:
+        return default
+
+
 def create_axes(axes):
-    start_date = datetime.strptime("1990-01-01T00:00:00Z", "%Y-%m-%dT%H:%M:%SZ")
-    end_date = datetime.strptime("2023-01-01T00:00:00Z", "%Y-%m-%dT%H:%M:%SZ")
-    bbox = [-180.0, -90.0, 180.0, 90.0]
+    start = None
+    end = None
+    edges = [-180.0, -90.0, 180.0, 90.0]
+    crs = "EPSG:4326"
+
+    if "Spatial axis" in axes.keys():
+
+        dims = axes["Spatial axis"].split('\n')
+        extent_match = re.search(r'\[(.*?)\]', dims[0])
+
+        if extent_match is not None:
+            edges = json.loads(extent_match.group(0))
+
+        crs_match = re.match(r"spatial reference\s*:\s*(.*)", dims[1])
+        if crs_match:
+            crs = crs_match.group(1)
+
+    if "Time" in axes.keys():
+        times = axes["Time"].split('\n')
+        start = extract_value_from_string(r'\d{4}-\d{2}-\d{2}', times[0], "1990-01-01")
+
+        end = extract_value_from_string(r'\d{4}-\d{2}-\d{2}', times[1], "2023-01-01")
+    if start and end:
+        start_date = datetime.strptime(start, "%Y-%m-%d").isoformat()
+
+        end_date = datetime.strptime(end, "%Y-%m-%d").isoformat()
+    else:
+        start_date = None
+        end_date = None
+    bbox = edges
     footprint = Polygon(
             [
-                [-180.0, -90.0],
-                [-180.0, 90.0],
-                [180.0, 90.0],
-                [180.0, -90.0],
+                [edges[0], edges[1]],
+                [edges[0], edges[3]],
+                [edges[2], edges[3]],
+                [edges[2], edges[1]],
             ]
     )
-    return start_date, end_date, bbox, mapping(footprint)
+    return start_date, end_date, bbox, mapping(footprint), crs
 
 
 def create_links(title):
@@ -48,9 +84,27 @@ def create_links(title):
     return [self_link, root_link, parent_link]
 
 
+def create_assets(doc):
+    assets = dict()
+    if "APIs" in doc.keys():
+        for index, api in enumerate(doc["APIs"]):
+            regex = r'^https?://[A-Za-z0-9./?&%=_%]+$'
+            match = re.search(regex, api)
+            if match is not None and match.span() == (0, len(api)):
+                asset = pystac.Asset(
+                    roles=["data"],
+                    href= match.group(0)
+
+                )
+                assets[f"data_{index + 1}"] = asset
+
+    return assets
+
+
 def create_stac_item(doc, title):
 
-    start_date, end_date, bbox, footprint = create_axes(doc)
+    start_date, end_date, bbox, footprint, crs = create_axes(doc)
+    assets = create_assets(doc)
 
     properties = dict()
     providers = []
@@ -69,16 +123,14 @@ def create_stac_item(doc, title):
             providers.append(new_provider.to_dict())
         properties["providers"] = providers
         properties["Data Source"] = doc["Data Source"]
-        assets = dict()
+
         if "Thumbnails" in doc.keys():
             for index, thumbnail in enumerate(doc["Thumbnails"]):
-                assets[f"thumbnail_{index}"] = {
-                    "roles": ["thumbnail"],
-                    "href": thumbnail
-
-                }
-
-        properties["assets"] = assets
+                asset = pystac.Asset(
+                    roles=["thumbnail"],
+                    href=thumbnail,
+                )
+                assets[f"thumbnail_{index}"] = asset
     else:
         id = title
     stac_item = pystac.Item(
@@ -88,6 +140,7 @@ def create_stac_item(doc, title):
         bbox=bbox,
         geometry=footprint,
         properties=properties,
+        assets=None if len(assets) == 0 else assets
     )
 
     stac_item.links = links
@@ -95,29 +148,38 @@ def create_stac_item(doc, title):
     dimensions = dict()
     x_dimension = datacube.HorizontalSpatialDimension({
         "axis": datacube.HorizontalSpatialDimensionAxis("x"),
-        "extent": [-180, 180],
+        "extent": [bbox[0], bbox[2]],
         "reference_system": "ESPG:4326",
         "type": "spatial"
 
         })
     y_dimension = datacube.HorizontalSpatialDimension({
         "axis": datacube.HorizontalSpatialDimensionAxis("y"),
-        "extent": [-90, 90],
+        "extent": [bbox[1], bbox[3]],
         "reference_system": "ESPG:4326",
         "type": "spatial"
 
     })
-    temporal_deminsion = datacube.TemporalDimension({
-        "values": [
-            datetime.strptime(
-                "2000-01-01T00:00:00Z", "%Y-%m-%dT%H:%M:%SZ").isoformat()
-            ],
-        "type": "temporal"
+    if start_date and end_date:
+        temporal_dimension = datacube.TemporalDimension({
+            "extent": [start_date, end_date],
+            "type": "temporal"
 
-    })
+        })
+
+    else:
+
+        temporal_dimension = datacube.TemporalDimension({
+            "values": [
+                datetime.strptime(
+                    "2000-01-01T00:00:00Z", "%Y-%m-%dT%H:%M:%SZ").isoformat()
+                ],
+            "type": "temporal"
+
+        })
     dimensions["x"] = x_dimension
     dimensions["y"] = y_dimension
-    dimensions["time"] = temporal_deminsion
+    dimensions["time"] = temporal_dimension
 
     item_datacube.dimensions = dimensions
 
@@ -166,6 +228,13 @@ query_1 = gql(
                             node {
                             title
                             body
+                            labels(first:10) {
+                            edges {
+                                node {
+                                name
+                                }
+                            }
+                            }
                             projectItems(first:10) {
                               edges {
                                 node {
@@ -211,59 +280,64 @@ issues = client.execute(query_1)[
 # )
 index_catalog = pystac.Catalog.from_file('./stac_dist/catalog.json')
 for index, issue in enumerate(issues):
-    title = issue["node"]["title"].split("]: ")[-1].replace(" ", "_")
-    title = title.replace("–", "_")
-    issue_type = re.findall(r'\[(.*?)\]', issue["node"]["title"])
+    labels = issue["node"]["labels"]["edges"]
+    requested = {'node': {'name': 'data-request'}}
+    if requested in labels:
 
-    project_item = next(iter(issue['node']['projectItems']['edges']), None)
+        title = issue["node"]["title"].split("]: ")[-1].replace(" ", "_")
+        title = title.replace("–", "_")
+        issue_type = re.findall(r'\[(.*?)\]', issue["node"]["title"])
 
-    if project_item:
-        fields = project_item['node']['fieldValues']['nodes']
-        doc = dict()
-        for field in fields:
-            if "text" in field.keys():
-                doc[field["field"]["name"]] = field["text"]
-            elif "number" in field.keys():
-                doc[field["field"]["name"]] = field["number"]
-        stac_item = create_stac_item(doc, title)
-        index_catalog.add_item(stac_item)
+        project_item = next(iter(issue['node']['projectItems']['edges']), None)
 
-    elif next(iter(issue_type), None) == "Data Request":
+        if project_item:
+            fields = project_item['node']['fieldValues']['nodes']
+            doc = dict()
+            for field in fields:
+                if "text" in field.keys():
+                    doc[field["field"]["name"]] = field["text"]
+                elif "number" in field.keys():
+                    doc[field["field"]["name"]] = field["number"]
+            stac_item = create_stac_item(doc, title)
+            index_catalog.add_item(stac_item)
 
-        input_txt = issue["node"]["body"]
-        values = []
-        document = dict()
-        temp_values = []
-        list_fields = ["APIs", "Null values", "(Meta) data Standards"]
+        elif next(iter(issue_type), None) == "Data Request":
 
-        response_lines = input_txt.splitlines()
-        fields = []
-        for index, i in enumerate(response_lines):
+            input_txt = issue["node"]["body"]
+            values = []
+            document = dict()
+            temp_values = []
+            list_fields = ["APIs", "Null values", "(Meta) data Standards"]
 
-            if i != "\n" and i != "":
-                st = i.strip("\n")
-                st = st.strip(" ")
-                st = st.replace("'", "")
-                values.append(st)
-        field = ""
-        for index, value in enumerate(values):
-            if type(value) == str and value.startswith("### "):
+            response_lines = input_txt.splitlines()
+            fields = []
+            for index, i in enumerate(response_lines):
 
-                field = values[index][4:]
-                fields.append(field)
+                if i != "\n" and i != "":
+                    st = i.strip("\n")
+                    st = st.strip(" ")
+                    st = st.replace("'", "")
+                    values.append(st)
+            field = ""
+            for index, value in enumerate(values):
+                if type(value) == str and value.startswith("### "):
 
-                if len(temp_values) > 0:
-                    temp_values = []
-                    fields.pop(0)
-            else:
-                value = value.replace("_No response_", "")
-                temp_values.append(value)
+                    field = values[index][4:]
+                    fields.append(field)
 
-            if index == len(values) - 1:
-                document[field] = temp_values
+                    if len(temp_values) > 0:
+                        temp_values = []
+                        fields.pop(0)
+                else:
+                    value = value.replace("_No response_", "")
+                    temp_values.append(value)
 
-            insert_value(field, temp_values, list_fields, document)
-        if validate_document(document):
+                if index == len(values) - 1:
+                    document[field] = temp_values
+
+                insert_value(field, temp_values, list_fields, document)
+
+            # if validate_document(document):
 
             stac_item = create_stac_item(document, title)
             index_catalog.add_item(stac_item)
