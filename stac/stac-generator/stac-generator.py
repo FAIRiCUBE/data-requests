@@ -34,10 +34,10 @@ def create_axes(axes):
 
         if extent_match is not None:
             edges = json.loads(extent_match.group(0))
-
-        crs_match = re.match(r"spatial reference\s*:\s*(.*)", dims[1])
-        if crs_match:
-            crs = crs_match.group(1)
+        if len(dims) >= 2:
+            crs_match = re.match(r"spatial reference\s*:\s*(.*)", dims[1])
+            if crs_match:
+                crs = crs_match.group(1)
 
     if "Time" in axes.keys():
         times = axes["Time"].split('\n')
