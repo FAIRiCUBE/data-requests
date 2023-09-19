@@ -42,8 +42,8 @@ def create_axes(axes):
     if "Time" in axes.keys():
         times = axes["Time"].split('\n')
         start = extract_value_from_string(r'\d{4}-\d{2}-\d{2}', times[0], "1990-01-01")
-
-        end = extract_value_from_string(r'\d{4}-\d{2}-\d{2}', times[1], "2023-01-01")
+        if len(times >= 2):
+            end = extract_value_from_string(r'\d{4}-\d{2}-\d{2}', times[1], "2023-01-01")
     if start and end:
         start_date = datetime.strptime(start, "%Y-%m-%d").isoformat()
 
