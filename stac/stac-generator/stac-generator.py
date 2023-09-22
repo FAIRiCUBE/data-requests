@@ -93,7 +93,7 @@ def create_assets(doc):
             if match is not None and match.span() == (0, len(api)):
                 asset = pystac.Asset(
                     roles=["data"],
-                    href= match.group(0)
+                    href=match.group(0)
 
                 )
                 assets[f"data_{index + 1}"] = asset
@@ -125,7 +125,10 @@ def create_stac_item(doc, title):
         properties["Data Source"] = doc["Data Source"]
 
         if "Thumbnails" in doc.keys():
-            for index, thumbnail in enumerate(doc["Thumbnails"]):
+            thumbnails = doc["Thumbnails"]
+            if type(doc["Thumbnails"]) != list:
+                thumbnails = [doc["Thumbnails"]]
+            for index, thumbnail in enumerate(thumbnails):
                 asset = pystac.Asset(
                     roles=["thumbnail"],
                     href=thumbnail,

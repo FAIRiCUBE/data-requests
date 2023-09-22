@@ -131,6 +131,14 @@ body:
     validations:
       required: false
   - type: input
+    id: thumbnails
+    attributes:
+      label: Thumbnails
+      description: Access thumbnails media of the dataset.
+      placeholder: OGC, WMS, WMTS, etc.
+    validations:
+      required: false
+  - type: input
     id: access-control
     attributes:
       label: Access control
