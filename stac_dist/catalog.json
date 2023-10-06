@@ -329,11 +329,6 @@
       "rel": "item",
       "href": "./ERA5_WIND_V/ERA5_WIND_V.json",
       "type": "application/json"
-    },
-    {
-      "rel": "item",
-      "href": "./test_FUA___Urban_Audit_2021_10m_raster/test_FUA___Urban_Audit_2021_10m_raster.json",
-      "type": "application/json"
     }
   ],
   "title": "data-access catalog"
