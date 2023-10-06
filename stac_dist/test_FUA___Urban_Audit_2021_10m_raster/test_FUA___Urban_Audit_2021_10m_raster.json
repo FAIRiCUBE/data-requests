@@ -87,6 +87,12 @@
       "roles": [
         "data"
       ]
+    },
+    "thumbnail_0": {
+      "href": "https://sdi.eea.europa.eu/public/catalogue-graphic-overview/b00ec941-c4dd-4673-91ea-2c8b5145892d.png",
+      "roles": [
+        "thumbnail"
+      ]
     }
   },
   "bbox": [

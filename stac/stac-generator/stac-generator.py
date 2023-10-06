@@ -284,7 +284,7 @@ issues = client.execute(query_1)[
 index_catalog = pystac.Catalog.from_file('./stac_dist/catalog.json')
 for index, issue in enumerate(issues):
     labels = issue["node"]["labels"]["edges"]
-    requested = {'node': {'name': 'data-request'}}
+    requested = {'node': {'name': 'test-approved'}}
     if requested in labels:
 
         title = issue["node"]["title"].split("]: ")[-1].replace(" ", "_")
