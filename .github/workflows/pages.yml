@@ -7,8 +7,7 @@ on:
     branches:
       - main
   issues:
-    types:
-      - opened
+    types: [opened, labeled, unlabeled]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
