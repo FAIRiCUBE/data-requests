@@ -24,7 +24,7 @@ In order to become visible to all, the new data set also needs to get its twin e
 
 Services support a direct listing, however not necessarily with the convenience of the planned catalog:
 
-- rasdaman datacubes: [get list of datacubes](http://fairicube.rasdaman.com:8080/rasdaman/ows?&SERVICE=WCS&ACCEPTVERSIONS=2.0.1&REQUEST=GetCapabilities) (aka coverages) - beware: OGC-compliant XML document, search for "CoverageSummary" 
+- rasdaman datacubes: [get list of datacubes](http://fairicube.rasdaman.com:8080/rasdaman/ows?&SERVICE=WCS&ACCEPTVERSIONS=2.0.1&REQUEST=GetCapabilities) (requires authentication) - beware: OGC-compliant XML document, search for "CoverageSummary" 
 - EOX: (tbd)
 
 ### Catalogs
