@@ -12,6 +12,26 @@ Please hand in your requests for data to be made available within FAIRiCUBE HUB 
 
 If questions remain open (and this has turned out to be the regular case) a request clearing meeting will be held subsequently. Commonly, details can be clarified this way, or the data requestor gets asked to provide more technical details on the data. After successful data import the requestor will be contacted for verification, after which the git issue gets closed.
 
+### Coverage Naming Conventions
+
+For now, a pragmatic convention has been adopted: the coverage name is a combination of campaign year, reference year, inventory year and release version:
+- [Mapping_Campaign]_[CLC_Reference_Year]_[Created_Inventory_Year]_[Version]
+
+
+Stable version example with name CLC2006_CLC2000_V2018_20 means:
+-	CLC2006_ 	That the file came from the 2006 mapping campaign (the file content was last modified in this campaign)
+-	_CLC2000_ 	That the file captures Land Cover mapping results for 2000 reference year
+-	_V2018_		That this file comes from a delivery created in 2018 inventory year
+-	_20		That this is the final stable version
+
+
+Beta-version example with name CLC2006_CLC2000_V2018_20b2 means:
+-	CLC2006_ 	That the file came from the 2006 mapping campaign (the file content was last modified in this campaign)
+-	_CLC2000_ 	That the file captures Land Cover mapping results for 2000 reference year
+-	_V2018_		That this file comes from a delivery created in 2018 inventory year
+-	_20b2		That this is the second beta-version
+
+
 ### Metadata
 
 In order to become visible to all, the new data set also needs to get its twin entry in the catalog (currently: one of  https://catalog.eoxhub.fairicube.eu and https://catalog.fairicube.eu). To this end, the catalog team needs to get contacted (best via mentioning them in the corresponding data upload issue). Note that the catalog typically will require additional descriptive metadata.
