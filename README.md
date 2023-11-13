@@ -6,7 +6,7 @@ Data needed by the Use Cases will be imported into the FAIRiCUBE HUB to form dat
 
 ### Modeling
 
-Typically, data have space and often, but not always, a time dimension. A special case is the Drosophila cube which has further dimensions which are neither spatial nor temporal.
+Typically, data have space and often, but not always, a time dimension. A special case is the [Drosophila cube](#Drosophila) which has further dimensions which are neither spatial nor temporal.
 
 ### Data
 
@@ -58,3 +58,10 @@ A [list of data catalogs](../../wiki/Data-Catalogs) can be found in the Wiki. Pl
 ## Limitations
 
 Time stamps have a peculiar mechanics on several datacubes which is not yet supported by rasdaman. Therefore, the time axis for now has ben modelled as an index (Cartesian) axis, meaning that temporal access (such as with the TIME parameter in WMS 1.3) is not yet possible. Full temporal support will become available still within 2023.
+
+## Drosophila
+
+[Corresponding data request issue](issues/86) 
+
+Description of Drosophila cube to be added here.
+
