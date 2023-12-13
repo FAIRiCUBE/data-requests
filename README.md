@@ -10,15 +10,15 @@ Typically, data have space and often, but not always, a time dimension. A specia
 
 ### Data
 
-Please hand in your requests for data to be made available within FAIRiCUBE HUB by simply adding an issue in this repository; this will add your request to the queue.
+Please hand in your requests for data to be made available within FAIRiCUBE HUB by simply [adding an issue](https://github.com/FAIRiCUBE/data-requests/issues/new/choose) in this repository; this will add your request to the queue. You need to provide the agreed slate of description elements so that data can be downloaded, understood, and the datacube can be created.
 
-**Make sure the description is correct and complete, otherwise iterations and misinterpretations can occur which lead to delays and extra effort.**
+**Make sure the description is correct and complete, otherwise iterations and misinterpretations can occur which lead to delays and extra effort on all sides.**
 
 If questions remain open (and this has turned out to be the regular case) a request clearing meeting will be held subsequently. Commonly, details can be clarified this way, or the data requestor gets asked to provide more technical details on the data. After successful data import the requestor will be contacted for verification, after which the git issue gets closed.
 
 ### Coverage Naming Conventions
 
-For now, a pragmatic convention has been adopted: the coverage name is a combination of campaign year, reference year, inventory year and release version:
+Ultimately, the catalog of the FAIRiCUBE hub will allow convenient search across data. For now, until this catalog becomes available, a pragmatic convention has been adopted: the coverage name is a combination of campaign year, reference year, inventory year and release version:
 - [Mapping_Campaign]_[CLC_Reference_Year]_[Created_Inventory_Year]_[Version]
 
 
