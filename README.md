@@ -61,10 +61,102 @@ An easy way to browse datasets available is the catalog  [catalog]((https://cata
 
 ## How-to
 
+In this section we give a brief introduction to datacube wrangling. First, terminology: In standardization world, datacubes are modeled by "coverages". Most relevant are the OGC Coverage Implementation Schema (CIS) as the data model and Web Coverage Service (WCS) as the processing model, containing the Web Coverage Processing Service (WCPS) datacube analytics language. So don't be surprised to see "coverages" mentioned below.
+
+We first present a general overview on standards-based datacube access, and then provide some use-case specific examples. If you want to see further examples added, [contact us](mailto:pbaumann@constructor.university)!
+
 ### General
 
-### Drosophila
+#### Coverages
 
-[Corresponding data request issue](issues/86) 
+Coverages are designed to be self-describing. While always more metadata can be added to some object, the coverage contains the essentials for understanding the pixels. The canonical structure of a coverage consists of
 
-Description of Drosophila cube with sample queries to be added here.
+-	domain set: where can I find values?
+-	range set: the values.
+-	range type: what do the values mean?
+-	metadata: what else should I know about these data?
+
+Coverages can be encoded in a variety of data formats. Text formats include XML, JSON, and RDF; binary formats include GeoTIFF, NetCDF, and Grib2.
+
+See [this tutorial](https://earthserver.eu/wcs/#cis) for more details on CIS.
+
+#### Coverage Access
+
+The Web Coverage Service (WCS), in its current version 2.1, defines access in a user-selected encoding, spatio-temporal subsetting, scaling, reprojection, as well as processing (see next section). Such Web requests are expressed as http GET or POST requests as this example (using fairicube rasdaman) shows (whitespace only for an easier read, not part of the request):
+
+'''
+https://fairicube.rasdaman.com/rasdaman/ows
+    ? SERVICE=WCS & VERSION=2.1.0 & REQUEST=GetCoverage
+ 		& SUBSET=date( "2018-05-22" ) 
+ 		& SUBSET=E( 332796 : 380817 )
+ 		& SUBSET=N( 6029000 : 6055000 )
+    & FORMAT=image/png
+'''
+
+As per OGC syntax, date/time strings need to be quoted.
+
+Note that http requires certain characters to be ["URL-encoded"](https://www.urlencoder.io/) before submission; browsers often do that automatically, but not programmatically generated requests.
+
+See [this tutorial](https://earthserver.eu/wcs/#wcs) for more details on WCS.
+
+#### Coverage Processing
+
+WCPS allows processing, aggregation, fusion, and more on datacubes with a high-level, easy-to-use language which does not require any programming skills like python. The following example inspects coverage A and returns a cutout with a range extent expressed in Easting and Northing (assuming this is the native coordinate reference system of the coverage) and a slice at a time point, returned in PNG format:
+
+'''
+for $c in ( A )
+return
+ 	encode( $c [	date( "2018-05-22" ), ( 332796 : 380817 ), N( 6029000 : 6055000 ) ], "png" )
+'''
+
+Such a query can be sent through the WCS Processing request:
+
+'''
+https://fairicube.rasdaman.com/rasdaman/ows
+    ? SERVICE=WCS & VERSION=2.1.0 & REQUEST=ProcessCoverages
+ 		& QUERY=for $c in ( A ) return encode( $c [	date( "2018-05-22" ), ( 332796 : 380817 ), N( 6029000 : 6055000 ) ], "png" )
+   '''
+
+Again, be reminded that ["http URL-encoding"](https://www.urlencoder.io/) needs to be applied before sending.
+
+So far, each coverage has been processed in isolation. Data fusion is possible through “nested loops”:
+
+'''
+for	$a in ( A ), $b in ( B )
+return encode( $a + $b, "png" )
+'''
+
+Aggregation plays an important role for reducing the amount of data transported to the client. With the common aggregation operators – in WCPS called “condensers” – queries like the following are possible (note that no format encoding is needed, numbers are returned in ASCII):
+
+'''
+for $a in ( A )
+return max( $a )
+'''
+
+As a final example, the following WCPS query com¬putes the Inverted Red-Edge Chlorophyll Index (IRECI) on a selected space / time region, performs contrast reduction for visualization, and delivers the result reprojected to EPSG:4326:
+
+'''
+for	$c in (S2_L2A_32633_B07_60m),
+  	$d in (S2_L2A_32633_B04_60m),
+  	$e in (S2_L2A_32633_B05_60m),
+  	$f in (S2_L2A_32633_B06_60m)
+let $sub := [ date("2018-05-22"), E(332796:380817), N(6029000:6055000) ]
+return
+ 	encode(
+ 		crsTransform(
+ 			( $c - $d ) / ( $e / $f ) [ $sub ],
+ 			{ E: " EPSG:4326", N: “EPSG:4326” }
+ 		) / 50,  
+ 		"png"
+ 	)
+'''
+
+See [this tutorial](https://earthserver.eu/wcs/#wcps) for more details on WCPS.
+
+### ML Use Case
+
+tbd
+
+### Drosophila Use Case
+
+tbd - [Corresponding data request issue](issues/86) 
