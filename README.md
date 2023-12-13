@@ -166,3 +166,5 @@ tbd
 ### Drosophila Use Case
 
 tbd - [Corresponding data request issue](issues/86) 
+
+### EOX-based use cases
