@@ -4,8 +4,9 @@ Data needed by the Use Cases will be imported into the FAIRiCUBE HUB to form dat
 
 Contents:
   [How to Get Data Added](#how-to-get-data-added)
-| 
-
+| [Finding data](#finding-data)
+| [Limitations](#limitations)
+| [How-to](#how-to)
 
 ## How to Get Data Added
 
