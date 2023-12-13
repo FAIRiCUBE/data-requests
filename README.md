@@ -21,13 +21,11 @@ If questions remain open (and this has turned out to be the regular case) a requ
 Ultimately, the catalog of the FAIRiCUBE hub will allow convenient search across data. For now, until this catalog becomes available, a pragmatic convention has been adopted: the coverage name is a combination of campaign year, reference year, inventory year and release version:
 - [Mapping_Campaign]_[CLC_Reference_Year]_[Created_Inventory_Year]_[Version]
 
-
 Stable version example with name CLC2006_CLC2000_V2018_20 means:
 -	CLC2006_ 	That the file came from the 2006 mapping campaign (the file content was last modified in this campaign)
 -	_CLC2000_ 	That the file captures Land Cover mapping results for 2000 reference year
 -	_V2018_		That this file comes from a delivery created in 2018 inventory year
 -	_20		That this is the final stable version
-
 
 Beta-version example with name CLC2006_CLC2000_V2018_20b2 means:
 -	CLC2006_ 	That the file came from the 2006 mapping campaign (the file content was last modified in this campaign)
@@ -51,17 +49,22 @@ Services support a direct listing, however not necessarily with the convenience 
 - rasdaman datacubes: [get list of datacubes](http://fairicube.rasdaman.com:8080/rasdaman/ows?&SERVICE=WCS&ACCEPTVERSIONS=2.0.1&REQUEST=GetCapabilities) (requires authentication) - beware: OGC-compliant XML document, search for "CoverageSummary" 
 - EOX: (tbd)
 
-### Catalogs
+### Catalog
 
-A [list of data catalogs](../../wiki/Data-Catalogs) can be found in the Wiki. Please add data catalogs that are not on the list yet if you feel they are relevant as sources. Note, however, that this does not constintute a data request: no import action is associated with that list per se.
+An easy way to browse datasets available is the catalog  [catalog]((https://catalog.fairicube.eu/). Note that it is still under development and catching up with the datasets available.
 
 ## Limitations
 
-Time stamps have a peculiar mechanics on several datacubes which is not yet supported by rasdaman. Therefore, the time axis for now has ben modelled as an index (Cartesian) axis, meaning that temporal access (such as with the TIME parameter in WMS 1.3) is not yet possible. Full temporal support will become available still within 2023.
+- Time stamps have a peculiar mechanics on several datacubes which is not yet supported by rasdaman. Therefore, the time axis for now has ben modelled as an index (Cartesian) axis, meaning that temporal access (such as with the TIME parameter in WMS 1.3) is not yet possible. Full temporal support will become available still within 2023.
+- Due to minor misalignments of the OGC standards some facets of the XML schemas do not validate. However, with most tools this is not an issue when using data.
 
-## Drosophila
+
+## How-to
+
+### General
+
+### Drosophila
 
 [Corresponding data request issue](issues/86) 
 
-Description of Drosophila cube to be added here.
-
+Description of Drosophila cube with sample queries to be added here.
