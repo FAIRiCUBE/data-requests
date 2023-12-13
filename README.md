@@ -84,14 +84,14 @@ See [this tutorial](https://earthserver.eu/wcs/#cis) for more details on CIS.
 
 The Web Coverage Service (WCS), in its current version 2.1, defines access in a user-selected encoding, spatio-temporal subsetting, scaling, reprojection, as well as processing (see next section). Such Web requests are expressed as http GET or POST requests as this example (using fairicube rasdaman) shows (whitespace only for an easier read, not part of the request):
 
-'''
+```
 https://fairicube.rasdaman.com/rasdaman/ows
     ? SERVICE=WCS & VERSION=2.1.0 & REQUEST=GetCoverage
  		& SUBSET=date( "2018-05-22" ) 
  		& SUBSET=E( 332796 : 380817 )
  		& SUBSET=N( 6029000 : 6055000 )
     & FORMAT=image/png
-'''
+```
 
 As per OGC syntax, date/time strings need to be quoted.
 
@@ -103,39 +103,39 @@ See [this tutorial](https://earthserver.eu/wcs/#wcs) for more details on WCS.
 
 WCPS allows processing, aggregation, fusion, and more on datacubes with a high-level, easy-to-use language which does not require any programming skills like python. The following example inspects coverage A and returns a cutout with a range extent expressed in Easting and Northing (assuming this is the native coordinate reference system of the coverage) and a slice at a time point, returned in PNG format:
 
-'''
+```
 for $c in ( A )
 return
  	encode( $c [	date( "2018-05-22" ), ( 332796 : 380817 ), N( 6029000 : 6055000 ) ], "png" )
-'''
+```
 
 Such a query can be sent through the WCS Processing request:
 
-'''
+```
 https://fairicube.rasdaman.com/rasdaman/ows
     ? SERVICE=WCS & VERSION=2.1.0 & REQUEST=ProcessCoverages
- 		& QUERY=for $c in ( A ) return encode( $c [	date( "2018-05-22" ), ( 332796 : 380817 ), N( 6029000 : 6055000 ) ], "png" )
-   '''
+	& QUERY=for $c in ( A ) return encode( $c [	date( "2018-05-22" ), ( 332796 : 380817 ), N( 6029000 : 6055000 ) ], "png" )
+```
 
 Again, be reminded that ["http URL-encoding"](https://www.urlencoder.io/) needs to be applied before sending.
 
 So far, each coverage has been processed in isolation. Data fusion is possible through “nested loops”:
 
-'''
+```
 for	$a in ( A ), $b in ( B )
 return encode( $a + $b, "png" )
-'''
+```
 
 Aggregation plays an important role for reducing the amount of data transported to the client. With the common aggregation operators – in WCPS called “condensers” – queries like the following are possible (note that no format encoding is needed, numbers are returned in ASCII):
 
-'''
+```
 for $a in ( A )
 return max( $a )
-'''
+```
 
 As a final example, the following WCPS query com¬putes the Inverted Red-Edge Chlorophyll Index (IRECI) on a selected space / time region, performs contrast reduction for visualization, and delivers the result reprojected to EPSG:4326:
 
-'''
+```
 for	$c in (S2_L2A_32633_B07_60m),
   	$d in (S2_L2A_32633_B04_60m),
   	$e in (S2_L2A_32633_B05_60m),
@@ -149,7 +149,7 @@ return
  		) / 50,  
  		"png"
  	)
-'''
+```
 
 See [this tutorial](https://earthserver.eu/wcs/#wcps) for more details on WCPS.
 
