@@ -106,7 +106,7 @@ WCPS allows processing, aggregation, fusion, and more on datacubes with a high-l
 ```
 for $c in ( A )
 return
- 	encode( $c [	date( "2018-05-22" ), ( 332796 : 380817 ), N( 6029000 : 6055000 ) ], "png" )
+    encode( $c [ date( "2018-05-22" ), ( 332796 : 380817 ), N( 6029000 : 6055000 ) ], "png" )
 ```
 
 Such a query can be sent through the WCS Processing request:
@@ -114,7 +114,7 @@ Such a query can be sent through the WCS Processing request:
 ```
 https://fairicube.rasdaman.com/rasdaman/ows
     ? SERVICE=WCS & VERSION=2.1.0 & REQUEST=ProcessCoverages
-	& QUERY=for $c in ( A ) return encode( $c [	date( "2018-05-22" ), ( 332796 : 380817 ), N( 6029000 : 6055000 ) ], "png" )
+    & QUERY=for $c in ( A ) return encode( $c [	date( "2018-05-22" ), ( 332796 : 380817 ), N( 6029000 : 6055000 ) ], "png" )
 ```
 
 Again, be reminded that ["http URL-encoding"](https://www.urlencoder.io/) needs to be applied before sending.
@@ -122,7 +122,7 @@ Again, be reminded that ["http URL-encoding"](https://www.urlencoder.io/) needs 
 So far, each coverage has been processed in isolation. Data fusion is possible through “nested loops”:
 
 ```
-for	$a in ( A ), $b in ( B )
+for $a in ( A ), $b in ( B )
 return encode( $a + $b, "png" )
 ```
 
