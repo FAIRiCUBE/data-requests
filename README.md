@@ -80,7 +80,7 @@ Coverages are designed to be self-describing. While always more metadata can be 
 
 Coverages can be encoded in a variety of data formats. Text formats include XML, JSON, and RDF; binary formats include GeoTIFF, NetCDF, and Grib2.
 
-See [this tutorial](https://earthserver.eu/wcs/#cis) for more details on CIS.
+See [this tutorial](https://earthserver.eu/wcs/#cis) for more details on CIS and these [Fairicube encoding examples](https://github.com/FAIRiCUBE/data-requests/tree/main/encoding-examples).
 
 #### Coverage Access
 
