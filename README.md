@@ -7,6 +7,8 @@ Contents:
 | [Finding data](#finding-data)
 | [Limitations](#limitations)
 | [How-to](#how-to)
+| [Use Cases](#use-cases)
+
 
 ## How to Get Data Added
 
