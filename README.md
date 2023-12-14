@@ -67,9 +67,7 @@ In this section we give a brief introduction to datacube wrangling. First, termi
 
 We first present a general overview on standards-based datacube access, and then provide some use-case specific examples. If you want to see further examples added, [contact us](mailto:pbaumann@constructor.university)!
 
-### General
-
-#### Coverages
+### Coverages
 
 Coverages are designed to be self-describing. While always more metadata can be added to some object, the coverage contains the essentials for understanding the pixels. The canonical structure of a coverage consists of
 
@@ -101,7 +99,7 @@ Note that http requires certain characters to be ["URL-encoded"](https://www.url
 
 See [this tutorial](https://earthserver.eu/wcs/#wcs) for more details on WCS.
 
-#### Coverage Processing
+### Coverage Processing
 
 WCPS allows processing, aggregation, fusion, and more on datacubes with a high-level, easy-to-use language which does not require any programming skills like python. The following example inspects coverage A and returns a cutout with a range extent expressed in Easting and Northing (assuming this is the native coordinate reference system of the coverage) and a slice at a time point, returned in PNG format:
 
