@@ -165,7 +165,7 @@ tbd
 
 ### Drosophila Use Case: Occurrence Cube
 
-Corresponding data request issues: [Genomic data of Drosophila](issues/86), [Distribution data of Drosophila](issues/87)
+Corresponding data request issues: [Genomic data of Drosophila](https://github.com/FAIRiCUBE/data-requests/issues/86), [Distribution data of Drosophila](https://github.com/FAIRiCUBE/data-requests/issues/87)
 
 [GBIF data](https://www.gbif.org/dataset/search?q=) are described in [this issue](issues/71). Our sister project B-Cubed, with GBIF as partner, will provide selected data. 
 
