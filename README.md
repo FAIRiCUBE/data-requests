@@ -172,19 +172,19 @@ Corresponding data request issues: [Genomic data of Drosophila](https://github.c
 #### Datacube Structure
 
 - Domain dimensions:
- -   Lat, Long:
-  -   Extent (RD - EPSG:28992): Xmin: 168280, Xmax: 223880, Ymin: 512055, Ymax: 535555
-  -   Extent (lat/lon): Xmin: 5.5831989141242966, Xmax: 6.4086515407429623, Ymin: 52.5917375949509562, Ymax: 52.8070852699905871
-  -   Resolution: 10m
- -   Time (year): 2018
- -   Taxon: 7-digit taxon id, categorial
+   -   Lat, Long:
+      -   Extent (RD - EPSG:28992): Xmin: 168280, Xmax: 223880, Ymin: 512055, Ymax: 535555
+      -   Extent (lat/lon): Xmin: 5.5831989141242966, Xmax: 6.4086515407429623, Ymin: 52.5917375949509562, Ymax: 52.8070852699905871
+      -   Resolution: 10m
+   -   Time (year): 2018
+   -   Taxon: 7-digit taxon id, categorial
 - Range type:
- -   Count: float, no-data: -1
- -   Maximum Uncertainty: float, no-data: -1
+   -   Count: float, no-data: -1
+   -   Maximum Uncertainty: float, no-data: -1
 - Metadata:
- - For the Taxon dimension, provide [Scientific Name table](https://github.com/FAIRiCUBE/data-requests/issues/71#issuecomment-1819084964)
+   - For the Taxon dimension, provide [Scientific Name table](https://github.com/FAIRiCUBE/data-requests/issues/71#issuecomment-1819084964)
 - input format: [CSV](https://github.com/FAIRiCUBE/data-requests/blob/main/encoding-examples/datacube_nl_farmland_birds_1.csv) with columns Year, EEA Grid Cell, TaxonID, Count, Uncertainty
- - EEA reference grid cell identifiers, e.g. 1kmE5432N4321 or 250mE1025N22000
- - In contrast to the datasets to date, GBIF provides Lat/Long through a grid cell id for the LAEA 10m grid
+   - EEA reference grid cell identifiers, e.g. 1kmE5432N4321 or 250mE1025N22000
+   - In contrast to the datasets to date, GBIF provides Lat/Long through a grid cell id for the LAEA 10m grid
 
 ### EOX-based use cases
