@@ -165,7 +165,9 @@ tbd
 
 ### Drosophila Use Case: Occurrence Cube
 
-[Corresponding data request issue](issues/86): [GBIF data](https://www.gbif.org/dataset/search?q=) are requested through [this data-request](issues/71). Our sister project B-Cubed, with GBIF as partner, will provide selected data. 
+Corresponding data request issue: missing.
+
+[GBIF data](https://www.gbif.org/dataset/search?q=) are described in [this issue](issues/71). Our sister project B-Cubed, with GBIF as partner, will provide selected data. 
 
 #### Datacube Structure
 
