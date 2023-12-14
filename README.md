@@ -12,12 +12,6 @@ Contents:
 
 ## How to Get Data Added
 
-### Modeling
-
-Typically, data have space and often, but not always, a time dimension. A special case is the [Drosophila cube](#Drosophila) which has further dimensions which are neither spatial nor temporal.
-
-### Data
-
 Please hand in your requests for data to be made available within FAIRiCUBE HUB by simply [adding an issue](https://github.com/FAIRiCUBE/data-requests/issues/new/choose) in this repository; this will add your request to the queue. You need to provide the agreed slate of description elements so that data can be downloaded, understood, and the datacube can be created.
 
 **Make sure the description is correct and complete, otherwise iterations and misinterpretations can occur which lead to delays and extra effort on all sides.**
