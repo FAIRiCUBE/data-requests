@@ -159,6 +159,8 @@ return
 
 See [this tutorial](https://earthserver.eu/wcs/#wcps) for more details on WCPS.
 
+## Use Cases
+
 ### ML Use Case
 
 tbd
