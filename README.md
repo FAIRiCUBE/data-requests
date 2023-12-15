@@ -159,13 +159,18 @@ See [this tutorial](https://earthserver.eu/wcs/#wcps) for more details on WCPS.
 
 tbd
 
-### Drosophila Use Case: Occurrence Cube
+### Drosophila Use Case
 
-Corresponding data request issues: [Genomic data of Drosophila](https://github.com/FAIRiCUBE/data-requests/issues/86), [Distribution data of Drosophila](https://github.com/FAIRiCUBE/data-requests/issues/87)
+#### Genome Data
 
+Corresponding data request issue: [Genomic data of Drosophila](https://github.com/FAIRiCUBE/data-requests/issues/86)
+
+#### Occurrence Cube
+
+Corresponding data request issue: [Distribution data of Drosophila](https://github.com/FAIRiCUBE/data-requests/issues/87). 
 [GBIF data](https://www.gbif.org/dataset/search?q=) are described in [this issue](issues/71). Our sister project B-Cubed, with GBIF as partner, will provide selected data. 
 
-#### Datacube Structure
+Datacube Structure:
 
 - Domain dimensions:
    -   Lat, Long:
