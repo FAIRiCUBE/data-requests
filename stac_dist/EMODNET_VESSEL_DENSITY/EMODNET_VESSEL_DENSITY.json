@@ -3,17 +3,56 @@
   "stac_version": "2.2.0",
   "id": "EMODNET_VESSEL_DENSITY",
   "properties": {
-    "datasource_type": "byoc-beee9b47-b1ab-4044-baa5-0958d3465f12",
+    "license": "",
+    "Description": "",
     "providers": [
       {
         "name": "Sentinel Hub",
         "description": "",
-        "roles": [
-          "processor"
-        ],
         "url": "https://services.sentinel-hub.com"
       }
     ],
+    "dataSource": "",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -66.949482215,
+          72.48195026
+        ],
+        "type": "spatial"
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          19.222315519,
+          74.653019863
+        ],
+        "type": "spatial"
+      },
+      "time": {
+        "extent": [
+          "2017-01-01T00:00:00Z",
+          "2020-12-01T00:00:00Z"
+        ],
+        "type": "temporal",
+        "step": ""
+      },
+      "bands": {
+        "name": "bands",
+        "extent": [
+          null,
+          null
+        ],
+        "values": [
+          "All"
+        ]
+      }
+    },
+    "datetime": null,
+    "raster:bands": [],
+    "title": "Vessel_Density_All",
+    "datasource_type": "byoc-beee9b47-b1ab-4044-baa5-0958d3465f12",
     "description": "The Vessel Density maps in the EU are created since the 2019 by Cogea for the European Marine Observation and Data Network (EMODnet). The dataset is updated every year and is available for viewing and download on EMODnet Human Activities web portal (www.emodnet-humanactivities.eu). The maps are based on AIS data yearly purchased from Collecte Localisation Satellites (CLS) and ORBCOMM. The maps, GeoTIFF format, show shipping density in 1x1km cells of a grid covering all EU waters and some neighbouring areas. Density is expressed as hours per square kilometre per month. The following ship types are available:0 Other, 1 Fishing, 2 Service, 3 Dredging or underwater ops, 4 Sailing, 5 Pleasure Craft, 6 High speed craft, 7 Tug and towing, 8 Passenger, 9 Cargo, 10 Tanker, 11 Military and Law Enforcement, 12 Unknown and All ship types.\nThis particular layer refers to EMODnet ship type \"All\" that includes all the AIS ship Type codes.\n",
     "keywords": [
       "copernicus services",
@@ -23,67 +62,32 @@
       "raster",
       "race challenges"
     ],
-    "title": "Vessel_Density_All",
-    "license": "",
-    "start_datetime": "2017-01-01T00:00:00Z",
-    "end_datetime": "2020-12-01T00:00:00Z",
-    "cube:dimensions": {
-      "x": {
-        "type": "spatial",
-        "axis": "x",
-        "extent": [
-          -66.949482215,
-          72.48195026
-        ]
-      },
-      "y": {
-        "type": "spatial",
-        "axis": "y",
-        "extent": [
-          19.222315519,
-          74.653019863
-        ]
-      },
-      "t": {
-        "type": "temporal",
-        "extent": [
-          "2017-01-01T00:00:00Z",
-          "2020-12-01T00:00:00Z"
-        ]
-      },
-      "bands": {
-        "type": "bands",
-        "values": [
-          "All"
-        ]
-      }
-    },
-    "datetime": null
+    "use_case_S4E": [],
+    "use_case_WER": [],
+    "use_case_NHM": [],
+    "use_case_NILU": [],
+    "platform": [
+      "other"
+    ]
   },
   "geometry": {
     "type": "Polygon",
     "coordinates": [
       [
-        [
-          -66.949482215,
-          19.222315519
-        ],
-        [
-          -66.949482215,
-          74.653019863
-        ],
-        [
-          72.48195026,
-          74.653019863
-        ],
-        [
-          72.48195026,
-          19.222315519
-        ],
-        [
-          -66.949482215,
-          19.222315519
-        ]
+        -66.949482215,
+        19.222315519
+      ],
+      [
+        -66.949482215,
+        74.653019863
+      ],
+      [
+        72.48195026,
+        74.653019863
+      ],
+      [
+        72.48195026,
+        19.222315519
       ]
     ]
   },
@@ -91,33 +95,6 @@
     {
       "rel": "root",
       "href": "../catalog.json",
-      "type": "application/json",
-      "title": "data-access catalog"
-    },
-    {
-      "rel": "about",
-      "href": "https://collections.eurodatacube.com/vessel_density_all",
-      "type": "text/html",
-      "title": "Website describing the collection"
-    },
-    {
-      "rel": "about",
-      "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
-      "type": "text/html",
-      "title": "Details about running Evalscripts"
-    },
-    {
-      "rel": "processing-expression",
-      "href": "https://raw.githubusercontent.com/eurodatacube/public-collections/main/collections/vessel_density_all/script.js",
-      "type": "application/javascript",
-      "title": "Evalscript to generate Vessel Density imagery",
-      "sentinelhub:layer_name": "vessel_density_all",
-      "sentinelhub:mosaicking_order": "mostRecent",
-      "sentinelhub:upsampling": "BICUBIC"
-    },
-    {
-      "rel": "root",
-      "href": "https://fairicube.github.io/data-requests/catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
     },
@@ -131,8 +108,6 @@
   "assets": {
     "thumbnail": {
       "href": "https://collections.eurodatacube.com/vessel_density_all/vessel_density_all.png",
-      "type": "image/png",
-      "title": "Thumbnail",
       "roles": [
         "thumbnail"
       ]
@@ -145,6 +120,7 @@
     74.653019863
   ],
   "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
   ]
 }
