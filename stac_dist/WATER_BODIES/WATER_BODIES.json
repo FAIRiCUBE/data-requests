@@ -3,45 +3,73 @@
   "stac_version": "2.2.0",
   "id": "WATER_BODIES",
   "properties": {
-    "datasource_type": "byoc-62bf6f6a-c584-48a8-a739-0bc60efee54a",
-    "raster:bands": [
-      {
-        "description": "Main Water Bodies detection layer showing water pixels and non-water pixels",
-        "name": "WB",
-        "openeo:gsd": {
-          "value": [
-            0.000925925925926,
-            0.000925925925926
-          ],
-          "unit": "\u00b0"
-        }
-      },
-      {
-        "description": "Quality layer which gives information on water bodies occurrence",
-        "name": "QUAL",
-        "openeo:gsd": {
-          "value": [
-            0.000925925925926,
-            0.000925925925926
-          ],
-          "unit": "\u00b0"
-        }
-      },
-      {
-        "description": "The mask of data/no data pixels.",
-        "name": "dataMask"
-      }
-    ],
+    "license": "proprietary",
+    "Description": "",
     "providers": [
       {
         "name": "Sentinel Hub",
         "description": "",
-        "roles": [
-          "processor"
-        ],
         "url": "https://creodias.sentinel-hub.com"
       }
     ],
+    "dataSource": "",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -180,
+          180
+        ],
+        "reference_system": 4326,
+        "type": "spatial"
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          -60,
+          80
+        ],
+        "reference_system": 4326,
+        "type": "spatial"
+      },
+      "time": {
+        "extent": [
+          "2020-10-01T00:00:00Z",
+          null
+        ],
+        "type": "temporal",
+        "step": "P0Y1M0DT0H0M0S"
+      },
+      "bands": {
+        "name": "bands",
+        "extent": [
+          null,
+          null
+        ],
+        "values": [
+          "WB",
+          "QUAL",
+          "dataMask"
+        ]
+      }
+    },
+    "datetime": null,
+    "raster:bands": [
+      {
+        "name": "WB",
+        "description": "Main Water Bodies detection layer showing water pixels and non-water pixels"
+      },
+      {
+        "name": "QUAL",
+        "description": "Quality layer which gives information on water bodies occurrence"
+      },
+      {
+        "name": "dataMask",
+        "description": "The mask of data/no data pixels."
+      }
+    ],
+    "title": "Water Bodies",
+    "datasource_type": "byoc-62bf6f6a-c584-48a8-a739-0bc60efee54a",
     "description": "The Global Water Bodies product shows the surface extent covered by inland water on permanent, seasonal or occasional basis. The product available here is the Water Bodies 100m Version 1 collection which is derived from Sentinel-2 level 1C data, starting from October 2020 after the end of the PROBA-V mission and is delivered as a monthly composite product at 100m resolution.The Water Bodies product contain one main Water Bodies detection layer (WB) and one Quality layer (QUAL) that provides information on the seasonal dynamics of the detected water bodies. Water Bodies detection layer (WB) shows water bodies detected using the Modified Normalized Difference Water Index (MNDWI) derived from Sentinel-2 Level 1C data. The Quality layer (QUAL) is generated from water body occurrence statistics computed from previous monthly Water Bodies products.The occurrence statistics is ranked from low occurrence to permanent occurrence.",
     "keywords": [
       "copernicus services",
@@ -57,72 +85,32 @@
       "climate change",
       "open data"
     ],
-    "title": "Water Bodies",
-    "license": "proprietary",
-    "start_datetime": "2020-10-01T00:00:00Z",
-    "end_datetime": "2999-01-01T00:00:00Z",
-    "cube:dimensions": {
-      "x": {
-        "type": "spatial",
-        "axis": "x",
-        "extent": [
-          -180,
-          180
-        ],
-        "reference_system": 4326
-      },
-      "y": {
-        "type": "spatial",
-        "axis": "y",
-        "extent": [
-          -60,
-          80
-        ],
-        "reference_system": 4326
-      },
-      "t": {
-        "type": "temporal",
-        "extent": [
-          "2020-10-01T00:00:00Z",
-          null
-        ],
-        "step": "P1M"
-      },
-      "bands": {
-        "type": "bands",
-        "values": [
-          "WB",
-          "QUAL",
-          "dataMask"
-        ]
-      }
-    },
-    "datetime": null
+    "use_case_S4E": [],
+    "use_case_WER": [],
+    "use_case_NHM": [],
+    "use_case_NILU": [],
+    "platform": [
+      "other"
+    ]
   },
   "geometry": {
     "type": "Polygon",
     "coordinates": [
       [
-        [
-          -180.0,
-          -60.0
-        ],
-        [
-          -180.0,
-          80.0
-        ],
-        [
-          180.0,
-          80.0
-        ],
-        [
-          180.0,
-          -60.0
-        ],
-        [
-          -180.0,
-          -60.0
-        ]
+        -180,
+        -60
+      ],
+      [
+        -180,
+        80
+      ],
+      [
+        180,
+        80
+      ],
+      [
+        180,
+        -60
       ]
     ]
   },
@@ -130,62 +118,6 @@
     {
       "rel": "root",
       "href": "../catalog.json",
-      "type": "application/json",
-      "title": "data-access catalog"
-    },
-    {
-      "rel": "about",
-      "href": "https://collections.eurodatacube.com/water-bodies",
-      "type": "text/html",
-      "title": "Website describing the collection"
-    },
-    {
-      "rel": "wmts",
-      "href": "https://creodias.sentinel-hub.com/ogc/wmts/1ab25604-1794-4a9d-a9e6-33763e2cc632",
-      "wmts:layer": "WATER-BODIES",
-      "wmts:dimensions": {
-        "warnings": true
-      }
-    },
-    {
-      "rel": "about",
-      "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
-      "type": "text/html",
-      "title": "Details about running Evalscripts"
-    },
-    {
-      "rel": "processing-expression",
-      "href": "https://custom-scripts.sentinel-hub.com/copernicus_services/water-bodies/water-bodies/script.js",
-      "type": "application/javascript",
-      "title": "Evalscript to generate Water Bodies imagery",
-      "sentinelhub:layer_name": "Water Bodies",
-      "sentinelhub:mosaicking_order": "mostRecent",
-      "sentinelhub:upsampling": "BICUBIC"
-    },
-    {
-      "rel": "processing-expression",
-      "href": "https://custom-scripts.sentinel-hub.com/copernicus_services/water-bodies/water-bodies-occurence/script.js",
-      "type": "application/javascript",
-      "title": "Evalscript to generate Water Bodies Occurrence imagery",
-      "sentinelhub:layer_name": "Water Bodies Occurrence",
-      "sentinelhub:mosaicking_order": "mostRecent",
-      "sentinelhub:upsampling": "BICUBIC"
-    },
-    {
-      "rel": "about",
-      "href": "https://collections.eurodatacube.com/water-bodies/readme.html#band-information",
-      "type": "text/html",
-      "title": "Nomenclature mapping - band values Water Bodies labels"
-    },
-    {
-      "rel": "license",
-      "href": "https://land.copernicus.eu/global/about",
-      "type": "text/html",
-      "title": "License"
-    },
-    {
-      "rel": "root",
-      "href": "https://fairicube.github.io/data-requests/catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
     },
@@ -199,8 +131,6 @@
   "assets": {
     "thumbnail": {
       "href": "https://collections.eurodatacube.com/water-bodies/water-bodies.png",
-      "type": "image/png",
-      "title": "Thumbnail",
       "roles": [
         "thumbnail"
       ]
