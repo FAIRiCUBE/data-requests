@@ -1,92 +1,203 @@
 {
   "type": "Feature",
   "stac_version": "2.2.0",
-  "id": "RIVER_AND_LAKE_ICE_EXTENT_SENTINEL1_SENTINEL2",
+  "id": "LANDSAT8-9_L1",
   "properties": {
-    "datasource_type": "byoc-65235036-9897-40d2-aed3-40ba038a1f68",
+    "license": "proprietary",
+    "Description": "",
     "providers": [
       {
         "name": "Sentinel Hub",
-        "description": "",
-        "roles": [
-          "processor"
-        ],
-        "url": "https://creodias.sentinel-hub.com"
+        "description": "Global since Feb 2013",
+        "url": "https://services-uswest2.sentinel-hub.com"
       }
     ],
-    "description": "The River and Lake Ice Extent S1+S2 (RLIE S1+S2) product is part of the Copernicus Land Monitoring Service (CLMS), \npan-European High Resolution Snow and Ice Monitoring [(HR-S&I)](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring) Ice product suite.The River and Lake Ice Extent (RLIE) products measure the presence of ice in rivers and lakes described by the EU-HYDRO network database, in particular the area of snow-free or snow-covered ice. \nThe RLIE S1+S2 product is computed from the combination of RLIE S1 and RLIE S2 products.The RLIE S2 product from a given day is gap-filled using the RLIE S1 information from the same day. Because the RLIE S1+S2 is only produced when RLIE S2 and RLIE S1 products are aquired on the same day, it is delivered in delayed-time for the entire EEA39 zone at a spatial resolution of 20 m x 20 m.\nMore information about the RLIE S1+S2 product methodology and workflow is outlined in the [product user manual](https://land.copernicus.eu/user-corner/technical-library/hrsi-ice-pum)\n",
-    "keywords": [
-      "hrsi",
-      "water",
-      "river",
-      "lake",
-      "ice",
-      "CLMS",
-      "derived data",
-      "open data"
-    ],
-    "title": "High-Resolution Snow & Ice Monitoring; River and Lake Ice Extent S1+S2",
-    "license": "proprietary",
-    "start_datetime": "2016-09-01T00:00:00Z",
-    "end_datetime": "2999-01-01T00:00:00Z",
+    "dataSource": "",
     "cube:dimensions": {
       "x": {
-        "type": "spatial",
         "axis": "x",
         "extent": [
-          -25,
-          45
-        ]
+          -180,
+          180
+        ],
+        "reference_system": {
+          "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+          "type": "GeodeticCRS",
+          "name": "AUTO 42001 (Universal Transverse Mercator)",
+          "datum": {
+            "type": "GeodeticReferenceFrame",
+            "name": "World Geodetic System 1984",
+            "ellipsoid": {
+              "name": "WGS 84",
+              "semi_major_axis": 6378137,
+              "inverse_flattening": 298.257223563
+            }
+          },
+          "coordinate_system": {
+            "subtype": "ellipsoidal",
+            "axis": [
+              {
+                "name": "Geodetic latitude",
+                "abbreviation": "Lat",
+                "direction": "north",
+                "unit": "degree"
+              },
+              {
+                "name": "Geodetic longitude",
+                "abbreviation": "Lon",
+                "direction": "east",
+                "unit": "degree"
+              }
+            ]
+          },
+          "area": "World",
+          "bbox": {
+            "south_latitude": -90,
+            "west_longitude": -180,
+            "north_latitude": 90,
+            "east_longitude": 180
+          },
+          "id": {
+            "authority": "OGC",
+            "version": "1.3",
+            "code": "Auto42001"
+          }
+        },
+        "type": "spatial"
       },
       "y": {
-        "type": "spatial",
         "axis": "y",
         "extent": [
-          26,
-          72
-        ]
+          -85,
+          85
+        ],
+        "reference_system": {
+          "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+          "type": "GeodeticCRS",
+          "name": "AUTO 42001 (Universal Transverse Mercator)",
+          "datum": {
+            "type": "GeodeticReferenceFrame",
+            "name": "World Geodetic System 1984",
+            "ellipsoid": {
+              "name": "WGS 84",
+              "semi_major_axis": 6378137,
+              "inverse_flattening": 298.257223563
+            }
+          },
+          "coordinate_system": {
+            "subtype": "ellipsoidal",
+            "axis": [
+              {
+                "name": "Geodetic latitude",
+                "abbreviation": "Lat",
+                "direction": "north",
+                "unit": "degree"
+              },
+              {
+                "name": "Geodetic longitude",
+                "abbreviation": "Lon",
+                "direction": "east",
+                "unit": "degree"
+              }
+            ]
+          },
+          "area": "World",
+          "bbox": {
+            "south_latitude": -90,
+            "west_longitude": -180,
+            "north_latitude": 90,
+            "east_longitude": 180
+          },
+          "id": {
+            "authority": "OGC",
+            "version": "1.3",
+            "code": "Auto42001"
+          }
+        },
+        "type": "spatial"
       },
-      "t": {
-        "type": "temporal",
+      "time": {
         "extent": [
-          "2016-09-01T00:00:00Z",
+          "2013-01-01T00:00:00Z",
           null
-        ]
+        ],
+        "type": "temporal",
+        "step": "P0Y0M5DT0H0M0S"
       },
       "bands": {
-        "type": "bands",
+        "name": "bands",
+        "extent": [
+          null,
+          null
+        ],
         "values": [
-          "RLIE",
-          "QC"
+          "B01",
+          "B02",
+          "B03",
+          "B04",
+          "B05",
+          "B06",
+          "B07",
+          "B08",
+          "B09",
+          "B10",
+          "B11",
+          "BQA",
+          "QA_RADSAT",
+          "VAA",
+          "VZA",
+          "SAA",
+          "SZA",
+          "dataMask"
         ]
       }
     },
-    "datetime": null
+    "datetime": null,
+    "raster:bands": [],
+    "title": "Landsat 8-9 L1",
+    "datasource_type": "landsat-ot-l1",
+    "description": "[Landsat 8-9 Level 1](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-landsat-archives-landsat-8-9-operational-land-imager-and) collection includes both \n[Landsat 8](https://www.usgs.gov/landsat-missions/landsat-8?qt-science_support_page_related_con=0#qt-science_support_page_related_con) and the most recently launched \n[Landsat 9](https://www.usgs.gov/landsat-missions/landsat-9) satellites (provided by NASA/USGS), both carrying the Operational Land Imager (OLI) and \nthe Thermal Infrared Sensor (TIRS) instruments, with 9 optical and 2 thermal bands. These two sensors provide seasonal coverage of the global landmass.\n[Landsat 8-9 Level 1 data](https://www.usgs.gov/core-science-systems/nli/landsat/landsat-collection-2-level-1-data?qt-science_support_page_related_con=1#qt-science_support_page_related_con) \nfrom the most recently released [collection 2](https://www.usgs.gov/faqs/what-updates-are-being-made-landsat-collection-2?qt-news_science_products=0#qt-news_science_products), \nprovides Top of Atmosphere Reflectance and Top of the Atmosphere Brightness Temperature products. Level 1 data are available since February 2013 for Landsat 8 and since January 2022 for Landsat 9.\n",
+    "keywords": [
+      "sentinel hub",
+      "xcube",
+      "raster",
+      "systematic",
+      "satellite imagery",
+      "natural resource",
+      "vegetation monitoring",
+      "LULC mapping",
+      "LULC change",
+      "surface temperature",
+      "open data",
+      "landsat"
+    ],
+    "use_case_S4E": [],
+    "use_case_WER": [],
+    "use_case_NHM": [],
+    "use_case_NILU": [],
+    "platform": [
+      "landsat-8",
+      "landsat-9"
+    ]
   },
   "geometry": {
     "type": "Polygon",
     "coordinates": [
       [
-        [
-          -25.0,
-          26.0
-        ],
-        [
-          -25.0,
-          72.0
-        ],
-        [
-          45.0,
-          72.0
-        ],
-        [
-          45.0,
-          26.0
-        ],
-        [
-          -25.0,
-          26.0
-        ]
+        -180,
+        -85
+      ],
+      [
+        -180,
+        85
+      ],
+      [
+        180,
+        85
+      ],
+      [
+        180,
+        -85
       ]
     ]
   },
@@ -94,48 +205,6 @@
     {
       "rel": "root",
       "href": "../catalog.json",
-      "type": "application/json",
-      "title": "data-access catalog"
-    },
-    {
-      "rel": "about",
-      "href": "https://collections.eurodatacube.com/hrsi-rlie-s1s2",
-      "type": "text/html",
-      "title": "Website describing the collection"
-    },
-    {
-      "rel": "about",
-      "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
-      "type": "text/html",
-      "title": "Details about running Evalscripts"
-    },
-    {
-      "rel": "processing-expression",
-      "href": "https://custom-scripts.sentinel-hub.com/copernicus_services/hrsi/hrsi-rlie-s1s2/script.js",
-      "type": "application/javascript",
-      "title": "Evalscript to generate RLIE S1+S2 imagery",
-      "sentinelhub:layer_name": "RLIE",
-      "sentinelhub:mosaicking_order": "mostRecent",
-      "sentinelhub:upsampling": "BICUBIC"
-    },
-    {
-      "rel": "processing-expression",
-      "href": "https://custom-scripts.sentinel-hub.com/copernicus_services/hrsi/hrsi-rlie-s1s2-quality/script.js",
-      "type": "application/javascript",
-      "title": "Evalscript to visualize the RLIE S1+S2 quality imagery",
-      "sentinelhub:layer_name": "QC",
-      "sentinelhub:mosaicking_order": "mostRecent",
-      "sentinelhub:upsampling": "BICUBIC"
-    },
-    {
-      "rel": "license",
-      "href": "https://land.copernicus.eu/terms-of-use",
-      "type": "text/html",
-      "title": "License"
-    },
-    {
-      "rel": "root",
-      "href": "https://fairicube.github.io/data-requests/catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
     },
@@ -148,21 +217,20 @@
   ],
   "assets": {
     "thumbnail": {
-      "href": "https://collections.eurodatacube.com/hrsi-rlie-s1s2/thumbnail.png",
-      "type": "image/png",
-      "title": "Thumbnail",
+      "href": "https://collections.eurodatacube.com/landsat-8-l1/landsat-8-l1.png",
       "roles": [
         "thumbnail"
       ]
     }
   },
   "bbox": [
-    -25,
-    26,
-    45,
-    72
+    -180,
+    -85,
+    180,
+    85
   ],
   "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
   ]
 }
