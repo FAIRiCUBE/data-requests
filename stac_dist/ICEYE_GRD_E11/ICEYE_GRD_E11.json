@@ -3,17 +3,56 @@
   "stac_version": "2.2.0",
   "id": "ICEYE_GRD_E11",
   "properties": {
-    "datasource_type": "byoc-0771d000-92ca-4f7d-9788-b56ca0411cf7",
+    "license": "",
+    "Description": "",
     "providers": [
       {
         "name": "Sentinel Hub",
         "description": "",
-        "roles": [
-          "processor"
-        ],
         "url": "https://services.sentinel-hub.com"
       }
     ],
+    "dataSource": "",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          2.769154472,
+          2.7987541
+        ],
+        "type": "spatial"
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          48.861336953,
+          48.881687237
+        ],
+        "type": "spatial"
+      },
+      "time": {
+        "extent": [
+          "2020-03-20T14:27:20Z",
+          "2020-03-20T14:27:21Z"
+        ],
+        "type": "temporal",
+        "step": ""
+      },
+      "bands": {
+        "name": "bands",
+        "extent": [
+          null,
+          null
+        ],
+        "values": [
+          "GRD"
+        ]
+      }
+    },
+    "datetime": null,
+    "raster:bands": [],
+    "title": "ICEYE_E11",
+    "datasource_type": "byoc-0771d000-92ca-4f7d-9788-b56ca0411cf7",
     "description": "Activity for Leisure industry reduced. Images from ICEYE",
     "keywords": [
       "open data",
@@ -21,67 +60,32 @@
       "raster",
       "race challenges"
     ],
-    "title": "ICEYE_E11",
-    "license": "",
-    "start_datetime": "2020-03-20T14:27:20Z",
-    "end_datetime": "2020-03-20T14:27:21Z",
-    "cube:dimensions": {
-      "x": {
-        "type": "spatial",
-        "axis": "x",
-        "extent": [
-          2.769154472,
-          2.7987541
-        ]
-      },
-      "y": {
-        "type": "spatial",
-        "axis": "y",
-        "extent": [
-          48.861336953,
-          48.881687237
-        ]
-      },
-      "t": {
-        "type": "temporal",
-        "extent": [
-          "2020-03-20T14:27:20Z",
-          "2020-03-20T14:27:21Z"
-        ]
-      },
-      "bands": {
-        "type": "bands",
-        "values": [
-          "GRD"
-        ]
-      }
-    },
-    "datetime": null
+    "use_case_S4E": [],
+    "use_case_WER": [],
+    "use_case_NHM": [],
+    "use_case_NILU": [],
+    "platform": [
+      "other"
+    ]
   },
   "geometry": {
     "type": "Polygon",
     "coordinates": [
       [
-        [
-          2.769154472,
-          48.861336953
-        ],
-        [
-          2.769154472,
-          48.881687237
-        ],
-        [
-          2.7987541,
-          48.881687237
-        ],
-        [
-          2.7987541,
-          48.861336953
-        ],
-        [
-          2.769154472,
-          48.861336953
-        ]
+        2.769154472,
+        48.861336953
+      ],
+      [
+        2.769154472,
+        48.881687237
+      ],
+      [
+        2.7987541,
+        48.881687237
+      ],
+      [
+        2.7987541,
+        48.861336953
       ]
     ]
   },
@@ -89,33 +93,6 @@
     {
       "rel": "root",
       "href": "../catalog.json",
-      "type": "application/json",
-      "title": "data-access catalog"
-    },
-    {
-      "rel": "about",
-      "href": "https://collections.eurodatacube.com/iceye_e11",
-      "type": "text/html",
-      "title": "Website describing the collection"
-    },
-    {
-      "rel": "about",
-      "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
-      "type": "text/html",
-      "title": "Details about running Evalscripts"
-    },
-    {
-      "rel": "processing-expression",
-      "href": "https://raw.githubusercontent.com/eurodatacube/public-collections/main/collections/iceye_e11/script.js",
-      "type": "application/javascript",
-      "title": "Evalscript to generate GRD ICEYE_E11 imagery",
-      "sentinelhub:layer_name": "GRD ICEYE_E11",
-      "sentinelhub:mosaicking_order": "mostRecent",
-      "sentinelhub:upsampling": "BICUBIC"
-    },
-    {
-      "rel": "root",
-      "href": "https://fairicube.github.io/data-requests/catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
     },
@@ -129,8 +106,6 @@
   "assets": {
     "thumbnail": {
       "href": "https://collections.eurodatacube.com/iceye_e11/iceye_e11.png",
-      "type": "image/png",
-      "title": "Thumbnail",
       "roles": [
         "thumbnail"
       ]
@@ -143,6 +118,7 @@
     48.881687237
   ],
   "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
   ]
 }
