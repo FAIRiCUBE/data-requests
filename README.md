@@ -47,4 +47,4 @@ In order to become visible to all, the new data set also needs to get its twin e
 
 [Here](encoding-examples/dominant_leaf_type-metadata.xml) is an example of a metadata record compliant with the OGC coverage standard.
 
-
+From coverage side, a reference to the catalog can be added to the coverage metadata by using [this schema](https://github.com/FAIRiCUBE/data-requests/blob/main/CoverageSchemas/MD-LinkSchema.xsd).
