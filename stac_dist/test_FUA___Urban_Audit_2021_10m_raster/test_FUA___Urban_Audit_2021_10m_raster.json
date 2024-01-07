@@ -42,6 +42,7 @@
     },
     "datetime": "2000-01-01T00:00:00Z",
     "raster:bands": [],
+    "description": "test description",
     "use_case_S4E": [],
     "use_case_WER": [],
     "use_case_NHM": [],
