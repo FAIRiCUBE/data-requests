@@ -7,7 +7,7 @@ In a nutshell, data needed by the Use Cases will be imported into the FAIRiCUBE 
 Contents of this space:
 
 - [How to Get Data Added](https://github.com/FAIRiCUBE/data-requests/wiki/How-to-Add-Data)
-- [Further details](https://github.com/FAIRiCUBE/data-requests/wiki) like finding data, datacube access how-to, and use case specific modeling and access
+- [Finding data ingested, datacube access how-to](https://github.com/FAIRiCUBE/data-requests/wiki), [use case specific modeling and access](https://github.com/FAIRiCUBE/data-requests/wiki/Data-Overview)
 
 As data ingest is tightly connected with metadata management, use of data, etc., consider also these related spaces:
 
