@@ -31,6 +31,8 @@ Of particular interest are the components:
 - nil values, as pairs of reason (some text) and a value (taken from the data type definition, see above)
 - unit of measure: OGC has no guidance on this; earlier UCUM was used, but it appears inconvenient. In Fairicube QUDT seems preferred - more to come once agreed, stay tuned.
 
+Importantly, datacubes (as data in general) fall into one of several different categories, as statistics teaches: numerical, ordinal, and categorial. SWE Common (upon which the coverage range type relies) supports that halfways, therefore an activity is planned to reflect these categories in a statistically correct way in the OGC/ISO coverage standards.
+
 In XML, the complete range type structure is as in the following example:
 
 ```
