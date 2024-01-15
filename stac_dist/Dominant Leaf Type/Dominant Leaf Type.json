@@ -1,0 +1,81 @@
+{
+  "type": "Feature",
+  "stac_version": "2.2.0",
+  "id": "Dominant Leaf Type",
+  "properties": {
+    "description": "https://land.copernicus.eu/en/products/high-resolution-layer-dominant-leaf-type/dominant-leaf-type-2018",
+    "providers": [],
+    "dataSource": "",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [],
+        "reference_system": "4326",
+        "type": "spatial",
+        "step": "10 m"
+      },
+      "y": {
+        "axis": "y",
+        "extent": [],
+        "type": "spatial"
+      },
+      "time": {
+        "extent": [],
+        "type": "temporal",
+        "step": ""
+      }
+    },
+    "raster:bands": [],
+    "title": "Dominant Leaf Type 2018 (THIS IS A TEST)",
+    "datasource_type": "Raster",
+    "area_cover": "Oslo",
+    "use_case_S4E": [],
+    "use_case_WER": [],
+    "use_case_NHM": [],
+    "use_case_NILU": [],
+    "platform": [
+      "eox"
+    ]
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        null,
+        null
+      ],
+      [
+        null,
+        null
+      ],
+      [
+        null,
+        null
+      ],
+      [
+        null,
+        null
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
