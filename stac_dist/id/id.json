@@ -1,0 +1,77 @@
+{
+  "type": "Feature",
+  "stac_version": "2.2.0",
+  "id": "id",
+  "properties": {
+    "providers": [],
+    "dataSource": "",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [],
+        "type": "spatial"
+      },
+      "y": {
+        "axis": "y",
+        "extent": [],
+        "type": "spatial"
+      },
+      "time": {
+        "extent": [
+          "2024-01-08T15:29:50Z",
+          null
+        ],
+        "type": "temporal",
+        "step": "P0Y0M1DT0H0M0S"
+      }
+    },
+    "raster:bands": [],
+    "title": "title",
+    "platform": [
+      "other",
+      "rasdaman",
+      "eox"
+    ]
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        null,
+        null
+      ],
+      [
+        null,
+        null
+      ],
+      [
+        null,
+        null
+      ],
+      [
+        null,
+        null
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
