@@ -8,12 +8,18 @@
     "cube:dimensions": {
       "x": {
         "axis": "x",
-        "extent": [],
+        "extent": [
+          null,
+          null
+        ],
         "type": "spatial"
       },
       "y": {
         "axis": "y",
-        "extent": [],
+        "extent": [
+          null,
+          null
+        ],
         "type": "spatial"
       },
       "time": {
@@ -25,6 +31,7 @@
         "step": "P0Y0M1DT0H0M0S"
       }
     },
+    "datetime": null,
     "raster:bands": [],
     "title": "title",
     "platform": [
@@ -69,7 +76,12 @@
     }
   ],
   "assets": {},
-  "bbox": [],
+  "bbox": [
+    null,
+    null,
+    null,
+    null
+  ],
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
