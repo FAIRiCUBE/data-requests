@@ -3,6 +3,7 @@
   "stac_version": "2.2.0",
   "id": "id",
   "properties": {
+    "description": "new",
     "providers": [],
     "dataSource": "",
     "cube:dimensions": {
@@ -34,11 +35,7 @@
     "datetime": null,
     "raster:bands": [],
     "title": "title",
-    "platform": [
-      "other",
-      "rasdaman",
-      "eox"
-    ]
+    "platform": "rasdaman"
   },
   "geometry": {
     "type": "Polygon",
