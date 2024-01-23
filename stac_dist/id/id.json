@@ -3,7 +3,7 @@
   "stac_version": "2.2.0",
   "id": "id",
   "properties": {
-    "description": "",
+    "description": "new",
     "providers": [],
     "dataSource": "",
     "cube:dimensions": {
