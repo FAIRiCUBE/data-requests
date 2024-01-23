@@ -13,6 +13,7 @@
           null,
           null
         ],
+        "reference_system": "4326",
         "type": "spatial"
       },
       "y": {
