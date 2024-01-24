@@ -3,25 +3,36 @@
   "stac_version": "2.2.0",
   "id": "ssss",
   "properties": {
+    "description": "something",
     "providers": [],
     "dataSource": "",
     "cube:dimensions": {
       "x": {
         "axis": "x",
-        "extent": [],
+        "extent": [
+          null,
+          null
+        ],
         "type": "spatial"
       },
       "y": {
         "axis": "y",
-        "extent": [],
+        "extent": [
+          null,
+          null
+        ],
         "type": "spatial"
       },
       "time": {
-        "extent": [],
+        "extent": [
+          null,
+          "2999-01-01T00:00:00ZZ"
+        ],
         "type": "temporal",
         "step": ""
       }
     },
+    "datetime": null,
     "raster:bands": [],
     "title": "assss",
     "platform": "rasdaman"
@@ -62,7 +73,12 @@
     }
   ],
   "assets": {},
-  "bbox": [],
+  "bbox": [
+    null,
+    null,
+    null,
+    null
+  ],
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
