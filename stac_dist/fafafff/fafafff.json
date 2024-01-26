@@ -1,0 +1,70 @@
+{
+  "type": "Feature",
+  "stac_version": "2.2.0",
+  "id": "fafafff",
+  "properties": {
+    "providers": [],
+    "dataSource": "",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [],
+        "type": "spatial"
+      },
+      "y": {
+        "axis": "y",
+        "extent": [],
+        "type": "spatial"
+      },
+      "time": {
+        "extent": [],
+        "type": "temporal",
+        "step": ""
+      }
+    },
+    "raster:bands": [],
+    "title": "testttt",
+    "platform": "rasdaman"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        null,
+        null
+      ],
+      [
+        null,
+        null
+      ],
+      [
+        null,
+        null
+      ],
+      [
+        null,
+        null
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
