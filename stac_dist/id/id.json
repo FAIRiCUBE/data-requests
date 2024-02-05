@@ -10,8 +10,8 @@
       "x": {
         "axis": "x",
         "extent": [
-          null,
-          null
+          -180,
+          180
         ],
         "reference_system": "4326",
         "type": "spatial"
@@ -19,9 +19,10 @@
       "y": {
         "axis": "y",
         "extent": [
-          null,
-          null
+          -90,
+          90
         ],
+        "reference_system": "4326",
         "type": "spatial"
       },
       "time": {
@@ -31,6 +32,10 @@
         ],
         "type": "temporal",
         "step": "P0Y0M1DT0H0M0S"
+      },
+      "z": {
+        "values": "3,4,5,6,7,8",
+        "type": "spatial"
       }
     },
     "datetime": null,
@@ -42,20 +47,20 @@
     "type": "Polygon",
     "coordinates": [
       [
-        null,
-        null
+        -180,
+        -90
       ],
       [
-        null,
-        null
+        -180,
+        90
       ],
       [
-        null,
-        null
+        180,
+        90
       ],
       [
-        null,
-        null
+        180,
+        -90
       ]
     ]
   },
@@ -75,10 +80,10 @@
   ],
   "assets": {},
   "bbox": [
-    null,
-    null,
-    null,
-    null
+    -180,
+    -90,
+    180,
+    90
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
