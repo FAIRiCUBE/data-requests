@@ -41,7 +41,7 @@
     "datetime": null,
     "raster:bands": [],
     "title": "title",
-    "platform": "rasdaman"
+    "platform": "other"
   },
   "geometry": {
     "type": "Polygon",
