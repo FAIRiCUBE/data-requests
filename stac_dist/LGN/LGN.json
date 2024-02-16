@@ -3,6 +3,7 @@
   "stac_version": "2.2.0",
   "id": "LGN",
   "properties": {
+    "description": "test description of rasdaman request",
     "providers": [],
     "dataSource": "",
     "cube:dimensions": {
@@ -40,9 +41,14 @@
         "step": ""
       },
       "z": {
+        "extent": [
+          null,
+          null
+        ],
         "type": "spatial"
       }
     },
+    "datetime": null,
     "raster:bands": [],
     "title": "LGN test",
     "platform": "rasdaman"
