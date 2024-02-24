@@ -25,7 +25,8 @@
           625000
         ],
         "reference_system": "4326",
-        "type": "spatial"
+        "type": "spatial",
+        "step": "-5"
       },
       "time": {
         "extent": [],
@@ -49,7 +50,15 @@
       }
     },
     "datetime": null,
-    "raster:bands": [],
+    "raster:bands": [
+      {
+        "name": "Gray",
+        "unit": "10^0",
+        "data_type": "other",
+        "nodata": 0,
+        "definition": "http://www.opengis.net/def/dataType/OGC/0/unsignedByte"
+      }
+    ],
     "title": "LGN test",
     "platform": "rasdaman"
   },
