@@ -54,3 +54,44 @@ In XML, the complete range type structure is as in the following example:
     </swe:DataRecord>
 </gmlcov:rangeType>
 ```
+# FAIRiCUBE User Management
+
+(this will go on a separate page later)
+
+Once the F'Hub gets active it will offer a single entry to the data and services of the projcet. For their access control a common governance concept and its technical realization is needed, in particular in view of the two distinct, independent platform technology stacks of EOX and rasdaman.
+This section is a (currently) living document for the evolution of the high-level governance rules and their lower-level implementation.
+
+## Project Access Policy
+
+- Entities under discussion: Data(cubes) (local on the projet store ore remotely linked in), (python) processing code, ML models
+- Possible rights:
+  - write: create a new object or modify an existing one
+  - read: read out an object, ie: download it
+  - use: make use of an object, but without getting direct access to it (eg, for IP protection on python code and models)
+- Impact factors: project decisions, individual partner constraints (such as on federated data), 3rd party contributions (such as EEA data, models from HuggingFace, etc.)
+
+Governance adopted: TODO
+- ex: who has authority to manage access rights?
+- ex: what roles, what rights?
+
+## Implementation
+### EOX User Management
+- authentication: TODO
+- authorization: TODO
+
+### rasdaman User Management
+- authentication: The rasdaman platform comes with built-in user/password management, but can tap into remote identity providers.
+- authorization: Based on standard Role-based Access Control, rasdaman offers basic privileges over which roles can be created which can be assigned to named users. 
+
+### Integration Approach
+- system components requiring access protection: catalog, EOX data, rasdaman data
+- questions to be resolved:
+  - how to map the project governance model to the three components? Options:
+    - central identity manager (who will setup and maintain?)
+    - (simple) mapping to both models via a WebGUI? (who?)
+    - manual mapping (undesirable)
+  - implementation approach?
+ 
+
+
+
