@@ -54,6 +54,9 @@ In XML, the complete range type structure is as in the following example:
     </swe:DataRecord>
 </gmlcov:rangeType>
 ```
+
+Further, FC-specific metadata go into the metadata bag of the coverage. To this end, a separate schema has been developed with an FC schema location.
+
 # FAIRiCUBE User Management
 
 (this will go on a separate page later)
