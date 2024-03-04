@@ -31,7 +31,7 @@ Of particular interest are the components:
 - **nil values**, as pairs of reason (some text) and a value (taken from the data type definition, see above)
 - **unit of measure**: OGC has no guidance on this; earlier UCUM was used, but it appears inconvenient. In Fairicube QUDT seems preferred - more to come once agreed, stay tuned.
 
-Importantly, datacubes (as data in general) fall into one of several different categories, as statistics teaches: *numerical*, *ordinal*, and *categorial*. SWE Common (upon which the coverage range type relies) supports that halfways, therefore an activity is planned to reflect these categories in a statistically correct way in the OGC/ISO coverage standards.
+Importantly, datacubes (as data in general) fall into one of several different categories, as statistics teaches: *numerical*, *categorial* and  *ordinal* (not supported now),. SWE Common (upon which the coverage range type relies) supports that halfways, therefore an activity is planned to reflect these categories in a statistically correct way in the OGC/ISO coverage standards.
 
 In XML, the complete range type structure is as in the following example:
 
@@ -54,6 +54,71 @@ In XML, the complete range type structure is as in the following example:
     </swe:DataRecord>
 </gmlcov:rangeType>
 ```
+
+**How to do in ingredients file of wcst_import**
+
+- See official document of rasdaman enterprise [https://doc.rasdaman.org/05_geo-services-guide.html#slicer-section](https://doc.rasdaman.com/testing/05_geo-services-guide.html)
+- Setting `observationType`- Set the output type in GML format of a band in SWE standard. If omitted, then it set to numerical by default. Valid values are: `numeric` (in GML showed as `swe:Quantity`) and `categorial` (in GML showed as `swe:Category`).
+- Setting `definition` - Metadata definition of the band, typically it is a URL pointing to online registries, ontologies or dictionaries. If omitted, petascope sets the value to the URL corresponding to band’s data type.
+- `nilValue` - Metadata null value of the band; used in case band has only one null value. This setting and `nilValues` are exclusive, only one can be specified. If `default_null_values` setting is specified, then `nilValue*` settings are ignored.
+- `nilReason` - Metadata reason for the null value of the band;
+- `nilValues` - Array of null value objects (used in case the band has more than one null values) with each object contains:
+   - `value` - Metadata null value of the band
+   - `reason` - Metadata reason for the null value of the band
+   This setting and `nilValue` are exclusive, only one can be specified. If `default_null_values` setting is specified, then `nilValue*` settings are ignored.
+- `uomCode` - Set the Unit of measurement (uom) code of the band. Note: only valid for `swe:Quantity`.
+
+Examples of `general_coverage` recipe in wcst_import to import a 2D coverage with 2 bands in `swe:Quantity` and 1 band in `swe:Category`.
+
+```
+        "slicer": {
+          "type": "gdal",
+          "bands": [
+            {
+              "name": "red",
+              "identifier": "red",
+              "observationType": "numeric",
+              "nilValue": 25,
+              "nilReason": "I don't know",
+              "description": "Band 1 description"
+            }, {
+              "name": "green",
+              "identifier": "green",
+              "observationType": "categorial",
+              "definition": "Band 2 definition which is an attribute",
+              "nilValues": [
+                  {
+                    "reason": "This is an example of null values as a range",
+                    "value": "25:35"
+                  },
+                  
+                  {
+                    "reason": "This is an example of null values as a value",
+                    "value": "57"
+                  }
+              ]
+            }, {
+              "name": "blue",
+              "identifier": "blue"
+            }
+          ],
+          "axes": {
+            "j": {
+              "min": "${gdal:maxY}",
+              "max": "${gdal:minY}",
+              "resolution": "-1"
+            },
+            "i": {
+              "min": "${gdal:minX}",
+              "max": "${gdal:maxX}",
+              "resolution": "${gdal:resolutionX}"
+            }
+          }
+        }
+```
+
+
+
 
 Further, FC-specific metadata go into the metadata bag of the coverage. To this end, a separate schema has been developed with an FC schema location.
 
