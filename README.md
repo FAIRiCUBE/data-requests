@@ -79,7 +79,7 @@ Examples of `general_coverage` recipe in wcst_import to import a 2D coverage wit
               "identifier": "red",
               "observationType": "numeric",
               "nilValue": 25,
-              "nilReason": "I don't know",
+              "nilReason": "The reason for null values are because of some missing pixels",
               "description": "Band 1 description"
             }, {
               "name": "green",
