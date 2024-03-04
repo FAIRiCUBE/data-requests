@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "LANDSAT8-9_L1",
   "properties": {
     "datasource_type": "landsat-ot-l1",
@@ -804,7 +804,7 @@
     },
     {
       "rel": "root",
-      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
     },

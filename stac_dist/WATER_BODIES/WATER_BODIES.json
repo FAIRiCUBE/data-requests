@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "WATER_BODIES",
   "properties": {
     "datasource_type": "byoc-62bf6f6a-c584-48a8-a739-0bc60efee54a",
@@ -13,7 +13,7 @@
             0.000925925925926,
             0.000925925925926
           ],
-          "unit": "\u00b0"
+          "unit": "°"
         }
       },
       {
@@ -24,7 +24,7 @@
             0.000925925925926,
             0.000925925925926
           ],
-          "unit": "\u00b0"
+          "unit": "°"
         }
       },
       {
@@ -185,7 +185,7 @@
     },
     {
       "rel": "root",
-      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
     },

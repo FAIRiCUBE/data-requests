@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "SENTINEL3_OLCI_L1B",
   "properties": {
     "datasource_type": "sentinel-3-olci",
@@ -361,7 +361,7 @@
     },
     {
       "rel": "root",
-      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
     },

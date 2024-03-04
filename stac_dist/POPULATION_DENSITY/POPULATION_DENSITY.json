@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "POPULATION_DENSITY",
   "properties": {
     "datasource_type": "byoc-b468089b-2627-4787-b984-89c10434f6c6",
@@ -13,7 +13,7 @@
             0.009920634920333,
             0.009920634920333
           ],
-          "unit": "\u00b0"
+          "unit": "°"
         }
       }
     ],
@@ -138,7 +138,7 @@
     },
     {
       "rel": "root",
-      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
     },

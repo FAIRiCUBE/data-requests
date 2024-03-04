@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "E12C_MOTORWAY",
   "properties": {
     "datasource_type": "byoc-efb2b070-39d6-4cfc-842f-57f8f54f22a0",
@@ -115,7 +115,7 @@
     },
     {
       "rel": "root",
-      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
     },

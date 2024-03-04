@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "VEGETATION_PHENOLOGY_AND_PRODUCTIVITY_PARAMETERS_SEASON_2",
   "properties": {
     "datasource_type": "byoc-8c2bc96a-3c2c-482b-9394-031310171b33",
@@ -149,7 +149,7 @@
     ],
     "raster:bands": [
       {
-        "description": "Season amplitude (MAXV \u2013 MINV)",
+        "description": "Season amplitude (MAXV – MINV)",
         "name": "AMPL",
         "openeo:gsd": {
           "value": [
@@ -609,7 +609,7 @@
     },
     {
       "rel": "root",
-      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
     },

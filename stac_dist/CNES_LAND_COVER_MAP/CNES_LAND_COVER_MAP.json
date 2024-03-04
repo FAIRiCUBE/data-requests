@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "CNES_LAND_COVER_MAP",
   "properties": {
     "datasource_type": "byoc-9baa2732-6597-49d2-ae3b-68ba0a5386b2",
@@ -151,7 +151,7 @@
     },
     {
       "rel": "root",
-      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
     },

@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "MODIS",
   "properties": {
     "datasource_type": "modis",
@@ -162,7 +162,7 @@
             0.004960317460317,
             0.004960317460317
           ],
-          "unit": "\u00b0"
+          "unit": "°"
         },
         "data_type": "float32",
         "statistics": {
@@ -185,7 +185,7 @@
             0.004960317460317,
             0.004960317460317
           ],
-          "unit": "\u00b0"
+          "unit": "°"
         },
         "data_type": "float32",
         "statistics": {
@@ -208,7 +208,7 @@
             0.004960317460317,
             0.004960317460317
           ],
-          "unit": "\u00b0"
+          "unit": "°"
         },
         "data_type": "float32",
         "statistics": {
@@ -231,7 +231,7 @@
             0.004960317460317,
             0.004960317460317
           ],
-          "unit": "\u00b0"
+          "unit": "°"
         },
         "data_type": "float32",
         "statistics": {
@@ -253,7 +253,7 @@
             0.004960317460317,
             0.004960317460317
           ],
-          "unit": "\u00b0"
+          "unit": "°"
         },
         "data_type": "float32",
         "statistics": {
@@ -276,7 +276,7 @@
             0.004960317460317,
             0.004960317460317
           ],
-          "unit": "\u00b0"
+          "unit": "°"
         },
         "data_type": "float32",
         "statistics": {
@@ -299,7 +299,7 @@
             0.004960317460317,
             0.004960317460317
           ],
-          "unit": "\u00b0"
+          "unit": "°"
         },
         "data_type": "float32",
         "statistics": {
@@ -521,7 +521,7 @@
     },
     {
       "rel": "root",
-      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
     },

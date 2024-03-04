@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "GLOBAL_SURFACE_WATER",
   "properties": {
     "datasource_type": "byoc-9a525f12-33b6-424e-a0f2-d567eec0f277",
@@ -13,7 +13,7 @@
             0.000277777777778,
             0.000277777777778
           ],
-          "unit": "\u00b0"
+          "unit": "°"
         }
       },
       {
@@ -24,7 +24,7 @@
             0.000277777777778,
             0.000277777777778
           ],
-          "unit": "\u00b0"
+          "unit": "°"
         }
       },
       {
@@ -35,7 +35,7 @@
             0.000277777777778,
             0.000277777777778
           ],
-          "unit": "\u00b0"
+          "unit": "°"
         }
       },
       {
@@ -46,7 +46,7 @@
             0.000277777777778,
             0.000277777777778
           ],
-          "unit": "\u00b0"
+          "unit": "°"
         }
       },
       {
@@ -57,7 +57,7 @@
             0.000277777777778,
             0.000277777777778
           ],
-          "unit": "\u00b0"
+          "unit": "°"
         }
       },
       {
@@ -68,7 +68,7 @@
             0.000277777777778,
             0.000277777777778
           ],
-          "unit": "\u00b0"
+          "unit": "°"
         }
       },
       {
@@ -267,7 +267,7 @@
     },
     {
       "rel": "root",
-      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
     },

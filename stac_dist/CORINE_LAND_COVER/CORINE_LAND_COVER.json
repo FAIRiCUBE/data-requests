@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "CORINE_LAND_COVER",
   "properties": {
     "datasource_type": "byoc-cbdba844-f86d-41dc-95ad-b3f7f12535e9",
@@ -163,7 +163,7 @@
     },
     {
       "rel": "root",
-      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
     },
