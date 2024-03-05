@@ -17,5 +17,5 @@ As data ingest is tightly connected with metadata management, use of data, etc.,
 - [Fairicube Hub](https://github.com/FAIRiCUBE/FAIRiCUBE-Hub-issue-tracker): for general FAIRiCUBE topics
 
 A hitherto unsolved problem is the project's policy for data and processing access management. Prelimineries:
-- [FAIRiCUBE User Management](https://github.com/FAIRiCUBE/user-management)
+- [FAIRiCUBE User Management](https://github.com/FAIRiCUBE/wiki/user-management)
 
