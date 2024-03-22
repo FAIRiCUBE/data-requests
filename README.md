@@ -11,12 +11,13 @@ Contents of this space:
 - [Connecting catalog with datacubes](https://github.com/FAIRiCUBE/data-requests/wiki/Connection-Catalog-Datacubes)
 - [Finding data ingested, datacube access how-to](https://github.com/FAIRiCUBE/data-requests/wiki)
 - [Use case specific modeling and access](https://github.com/FAIRiCUBE/data-requests/wiki/Data-Overview)
+- [complete rasdaman documentation[(https://doc.rasdaman.com)
 
 As data ingest is tightly connected with metadata management, use of data, etc., consider also these related spaces:
 
 - [resource-metadata](https://github.com/FAIRiCUBE/resource-metadata): in addition to the issues providing metadata for resources, also used to discuss technical details on resource metadata
 - [Fairicube Hub](https://github.com/FAIRiCUBE/FAIRiCUBE-Hub-issue-tracker): for general FAIRiCUBE topics
 
-A hitherto unsolved problem is the project's policy for data and processing access management. Prelimineries:
+A hitherto unsolved problem is the project's policy for data and processing access management. Preliminaries:
 - [FAIRiCUBE User Management](https://github.com/FAIRiCUBE/data-requests/wiki/user-management)
 
