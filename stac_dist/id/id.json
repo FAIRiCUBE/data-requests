@@ -1,0 +1,114 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "id",
+  "properties": {
+    "description": "new",
+    "providers": [],
+    "dataSource": "",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -180,
+          180
+        ],
+        "reference_system": "4326",
+        "type": "spatial"
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          -90,
+          90
+        ],
+        "reference_system": "4326",
+        "type": "spatial"
+      },
+      "time": {
+        "extent": [],
+        "type": "temporal",
+        "values": [
+          "2024-01-01T15:50:46Z",
+          "2024-02-13T15:50:56Z",
+          "2024-03-20T15:51:03Z"
+        ],
+        "step": "P0Y0M1DT0H0M0S"
+      },
+      "z": {
+        "name": "z",
+        "extent": [
+          null,
+          null
+        ],
+        "values": []
+      },
+      "": {
+        "name": "",
+        "extent": [
+          null,
+          null
+        ],
+        "values": ""
+      }
+    },
+    "datetime": null,
+    "raster:bands": [],
+    "title": "title",
+    "start_datetime": "2024-01-01T15:50:46Z",
+    "end_datetime": "2024-03-20T15:51:03Z",
+    "platform": "eox"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180,
+          -90
+        ],
+        [
+          -180,
+          90
+        ],
+        [
+          180,
+          90
+        ],
+        [
+          180,
+          -90
+        ],
+        [
+          -180,
+          -90
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    -180,
+    -90,
+    180,
+    90
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
