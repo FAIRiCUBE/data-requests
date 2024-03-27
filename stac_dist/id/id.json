@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "id",
   "properties": {
     "description": "new",
@@ -34,6 +34,14 @@
         "step": "P0Y0M1DT0H0M0S"
       },
       "z": {
+        "values": []
+      },
+      "": {
+        "name": "",
+        "extent": [
+          null,
+          null
+        ],
         "values": ""
       }
     },
