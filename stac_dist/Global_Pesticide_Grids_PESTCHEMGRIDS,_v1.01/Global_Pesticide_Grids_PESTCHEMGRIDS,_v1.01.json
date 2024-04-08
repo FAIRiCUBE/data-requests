@@ -1,0 +1,107 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "properties": {
+    "license": "Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0).",
+    "description": null,
+    "area_cover": "World",
+    "crs": "EPSG:4326",
+    "providers": [
+      {
+        "organization": "SEDAC",
+        "organization_name": null,
+        "organization_email": null,
+        "ORCID_ID": null,
+        "project_purpose": null,
+        "doc_link": "Metadata \u00bb Global Pesticide Grids (PEST-CHEMGRIDS), v1.01: Global Agricultural Inputs, v1 | SEDAC (columbia.edu)",
+        "comments": "create account/regsiter, free "
+      }
+    ],
+    "dataSource": "grid",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -180,
+          180
+        ],
+        "reference_system": "EPSG:4326",
+        "type": "spatial"
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          -84,
+          56
+        ],
+        "reference_system": "EPSG:4326",
+        "type": "spatial"
+      },
+      "z": {
+        "axis": "z",
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "type": "spatial"
+      },
+      "time": {
+        "extent": [
+          "2015-01-01T00:00:00Z",
+          "2025-01-01T00:00:00Z"
+        ],
+        "type": "temporal"
+      }
+    },
+    "datetime": "2000-01-01T00:00:00Z",
+    "raster:bands": [
+      {
+        "band_name": null,
+        "nodata": null,
+        "data_type": null,
+        "definition": null,
+        "category_list": null,
+        "comment": null,
+        "interpolation": null
+      }
+    ],
+    "title": "Global Pesticide Grids (PEST-CHEMGRIDS), v1.01",
+    "personalData": null,
+    "Provenance_name": "https://sedac.ciesin.columbia.edu/data/set/ferman-v1-pest-chemgrids-v1-01",
+    "documentation": null,
+    "keywords": null,
+    "use_case_S4E": null,
+    "use_case_WER": null,
+    "use_case_NHM_2": null,
+    "use_case_NILU": null,
+    "use_case_NHM": 1,
+    "platform": "Rasdaman",
+    "ingestion_status": "on hold: NHM to provide details"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": []
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "id": "Global_Pesticide_Grids_PESTCHEMGRIDS,_v1.01"
+}
