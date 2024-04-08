@@ -1,0 +1,107 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "properties": {
+    "license": null,
+    "description": "Each colour is a landform feature (urban area, forests, etc)",
+    "area_cover": "EEA-38+UK",
+    "crs": "EPSG:3035",
+    "providers": [
+      {
+        "organization": "EEA",
+        "organization_name": null,
+        "organization_email": null,
+        "ORCID_ID": null,
+        "project_purpose": null,
+        "doc_link": "https://land.copernicus.eu/pan-european/corine-land-cover",
+        "comments": "The present 100m raster dataset is the 2018 CLC status layer modified for the purpose of consistent statistical analysis in the land cover change accounting system at EEA.\n\nCORINE Land Cover (CLC) data are produced from 1986 for European (EEA member or cooperating) countries. Altogether five mapping inventories were implemented in this period, producing five status layers (CLC1990, CLC2000, CLC2006, CLC2012, CLC2018) and four CLC-Change (CLCC) layers for the corresponding periods (1990-2000, 2000-2006, 2006-2012, 2012-2018). Pan-European CLC and CLCC data are available as vector and raster products."
+      }
+    ],
+    "dataSource": "grid",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -31.561261,
+          44.820775
+        ],
+        "reference_system": "EPSG:4326",
+        "type": "spatial"
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          27.405827,
+          71.409109
+        ],
+        "reference_system": "EPSG:4326",
+        "type": "spatial"
+      },
+      "z": {
+        "axis": "z",
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "type": "spatial"
+      },
+      "time": {
+        "extent": [
+          "1990-01-01T00:00:00Z",
+          "2018-01-01T00:00:00Z"
+        ],
+        "type": "temporal"
+      }
+    },
+    "datetime": "2000-01-01T00:00:00Z",
+    "raster:bands": [
+      {
+        "band_name": null,
+        "nodata": null,
+        "data_type": "int8",
+        "definition": "CLC code - each code represents a colour",
+        "category_list": "Multiple values",
+        "comment": null,
+        "interpolation": "Nearest\u200b"
+      }
+    ],
+    "title": "Corine Land Cover",
+    "personalData": null,
+    "Provenance_name": "EO-based, produced  by countries",
+    "documentation": null,
+    "keywords": null,
+    "use_case_S4E": 1,
+    "use_case_WER": 2,
+    "use_case_NHM_2": null,
+    "use_case_NILU": null,
+    "use_case_NHM": 1,
+    "platform": "Both",
+    "ingestion_status": "Completed, year as integer, (1990,2000,2006,2012,2018)"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": []
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "id": "corine_land_cover"
+}
