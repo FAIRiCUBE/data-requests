@@ -1,0 +1,107 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "properties": {
+    "license": null,
+    "description": "Type of water and wetness",
+    "area_cover": "EEA-38+UK",
+    "crs": "EPSG:3035",
+    "providers": [
+      {
+        "organization": "EEA",
+        "organization_name": null,
+        "organization_email": null,
+        "ORCID_ID": null,
+        "project_purpose": null,
+        "doc_link": "https://land.copernicus.eu/pan-european/high-resolution-layers/water-wetness",
+        "comments": "The Copernicus High Resolution Water and Wetness (WAW) 2018 layer is a thematic product showing the occurrence of water and wet surfaces over the period from 2012 to 2018 for the EEA38 area and the United Kingdom.\nTwo products are available:\n- The main Water and Wetness (WAW) product, with defined classes of (1) permanent water, (2) temporary water, (3) permanent wetness and (4) temporary wetness.\n- The additional expert product: Water and Wetness Probability Index (WWPI).\nThe products show the occurrence of water and indicate the degree of wetness in a physical sense, assessed independently of the actual vegetation cover and are thus not limited to a specific land cover class and their relative frequencies."
+      }
+    ],
+    "dataSource": "grid",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -10.6198,
+          44.8212
+        ],
+        "reference_system": "EPSG:4326",
+        "type": "spatial"
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          34.5619,
+          71.1855
+        ],
+        "reference_system": "EPSG:4326",
+        "type": "spatial"
+      },
+      "z": {
+        "axis": "z",
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "type": "spatial"
+      },
+      "time": {
+        "extent": [
+          "2015-01-01T00:00:00Z",
+          "2015-01-01T00:00:00Z"
+        ],
+        "type": "temporal"
+      }
+    },
+    "datetime": "2000-01-01T00:00:00Z",
+    "raster:bands": [
+      {
+        "band_name": "Water type",
+        "nodata": null,
+        "data_type": "int8",
+        "definition": "Type of water and wetness",
+        "category_list": "Dry, permanent water, temporary water, permanent wet, temporary wet, sea water, unclassifiable, outside area",
+        "comment": null,
+        "interpolation": null
+      }
+    ],
+    "title": "High Resolution Layer - Water & Wetness",
+    "personalData": null,
+    "Provenance_name": "EO-based",
+    "documentation": null,
+    "keywords": null,
+    "use_case_S4E": 1,
+    "use_case_WER": 2,
+    "use_case_NHM_2": null,
+    "use_case_NILU": null,
+    "use_case_NHM": 2,
+    "platform": "Both",
+    "ingestion_status": "Completed, year as integer, (2015,2018)"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": []
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "id": "water_and_wetness_virtual_coverage_index_2015"
+}
