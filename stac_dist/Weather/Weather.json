@@ -1,0 +1,107 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "properties": {
+    "license": null,
+    "description": null,
+    "area_cover": "Netherlands",
+    "crs": null,
+    "providers": [
+      {
+        "organization": "KNMI",
+        "organization_name": null,
+        "organization_email": null,
+        "ORCID_ID": null,
+        "project_purpose": null,
+        "doc_link": "knmi.nl",
+        "comments": "mostly free and open"
+      }
+    ],
+    "dataSource": "various",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "type": "spatial"
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "type": "spatial"
+      },
+      "z": {
+        "axis": "z",
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "type": "spatial"
+      },
+      "time": {
+        "extent": [
+          "2014-01-01T00:00:00Z",
+          "2022-01-01T00:00:00Z"
+        ],
+        "type": "temporal"
+      }
+    },
+    "datetime": "2000-01-01T00:00:00Z",
+    "raster:bands": [
+      {
+        "band_name": null,
+        "nodata": null,
+        "data_type": null,
+        "definition": null,
+        "category_list": null,
+        "comment": null,
+        "interpolation": null
+      }
+    ],
+    "title": "Weather",
+    "personalData": null,
+    "Provenance_name": "satellite, in-situ",
+    "documentation": null,
+    "keywords": null,
+    "use_case_S4E": null,
+    "use_case_WER": 1,
+    "use_case_NHM_2": null,
+    "use_case_NILU": null,
+    "use_case_NHM": null,
+    "platform": "Rasdaman",
+    "ingestion_status": "on hold: WER to provide details"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": []
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "id": "Weather"
+}
