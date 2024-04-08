@@ -1,0 +1,107 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "properties": {
+    "license": null,
+    "description": "Describes percent of tree coverage",
+    "area_cover": "EEA-38+UK",
+    "crs": "EPSG:3035",
+    "providers": [
+      {
+        "organization": "EEA",
+        "organization_name": null,
+        "organization_email": null,
+        "ORCID_ID": null,
+        "project_purpose": null,
+        "doc_link": "https://land.copernicus.eu/pan-european/high-resolution-layers/forests/tree-cover-density/status-maps",
+        "comments": "This metadata refers to the HRL Forest 2018 primary status layer Tree Cover Density (TCD). The TCD raster product provides information on the proportional crown coverage per pixel at 10m spatial resolution and ranges from 0% (all non-tree covered areas) to 100%, whereby Tree Cover Density is defined as the \"vertical projection of tree crowns to a horizontal earth\u2019s surface\u201c. The production of the High Resolution Forest layers was coordinated by the European Environment Agency (EEA) in the frame of the EU Copernicus programme."
+      }
+    ],
+    "dataSource": "grid",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -56.506,
+          72.907
+        ],
+        "reference_system": "EPSG:4326",
+        "type": "spatial"
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          24.284,
+          72.665
+        ],
+        "reference_system": "EPSG:4326",
+        "type": "spatial"
+      },
+      "z": {
+        "axis": "z",
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "type": "spatial"
+      },
+      "time": {
+        "extent": [
+          "2018-01-01T00:00:00Z",
+          "2018-01-01T00:00:00Z"
+        ],
+        "type": "temporal"
+      }
+    },
+    "datetime": "2000-01-01T00:00:00Z",
+    "raster:bands": [
+      {
+        "band_name": "Tree coverage density",
+        "nodata": null,
+        "data_type": "int8",
+        "definition": "Percentage values",
+        "category_list": "(0-100%)",
+        "comment": null,
+        "interpolation": null
+      }
+    ],
+    "title": "High Resolution Layer - Forest -tree cover",
+    "personalData": null,
+    "Provenance_name": "EO-based",
+    "documentation": null,
+    "keywords": null,
+    "use_case_S4E": 1,
+    "use_case_WER": 2,
+    "use_case_NHM_2": null,
+    "use_case_NILU": null,
+    "use_case_NHM": 2,
+    "platform": "Both",
+    "ingestion_status": "Completed, year as integer,(2012,2015,2018)"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": []
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "id": "tree_cover_density_virtual_coverage_index_2018"
+}
