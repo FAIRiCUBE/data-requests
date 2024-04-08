@@ -1,0 +1,107 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "properties": {
+    "license": null,
+    "description": null,
+    "area_cover": "21 EU nations",
+    "crs": null,
+    "providers": [
+      {
+        "organization": "EPISCOPE",
+        "organization_name": null,
+        "organization_email": null,
+        "ORCID_ID": null,
+        "project_purpose": null,
+        "doc_link": null,
+        "comments": "EPISCOPE material intensity contain masses and types of building materials for each building architype "
+      }
+    ],
+    "dataSource": "txt ",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "type": "spatial"
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "type": "spatial"
+      },
+      "z": {
+        "axis": "z",
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "type": "spatial"
+      },
+      "time": {
+        "extent": [
+          null,
+          null
+        ],
+        "type": "temporal"
+      }
+    },
+    "datetime": "2000-01-01T00:00:00Z",
+    "raster:bands": [
+      {
+        "band_name": null,
+        "nodata": null,
+        "data_type": null,
+        "definition": null,
+        "category_list": null,
+        "comment": null,
+        "interpolation": null
+      }
+    ],
+    "title": "EPISCOPE (material intensity)",
+    "personalData": null,
+    "Provenance_name": null,
+    "documentation": null,
+    "keywords": null,
+    "use_case_S4E": " ",
+    "use_case_WER": null,
+    "use_case_NHM_2": null,
+    "use_case_NILU": 1,
+    "use_case_NHM": null,
+    "platform": "Eox",
+    "ingestion_status": null
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": []
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "id": "EPISCOPE_material_intensity"
+}
