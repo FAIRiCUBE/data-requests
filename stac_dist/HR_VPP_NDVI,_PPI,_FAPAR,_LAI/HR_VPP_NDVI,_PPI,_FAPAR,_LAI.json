@@ -1,23 +1,19 @@
 {
   "type": "Feature",
   "stac_version": "1.0.0",
+  "id": "HR_VPP_NDVI,_PPI,_FAPAR,_LAI",
   "properties": {
     "license": null,
     "description": null,
-    "area_cover": "Europe",
-    "crs": "EPSG:3035 ",
     "providers": [
       {
         "organization": "CLMS",
-        "organization_name": null,
-        "organization_email": null,
-        "ORCID_ID": null,
-        "project_purpose": null,
-        "doc_link": "https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-vegetation-phenology-and-productivity",
-        "comments": "free and open"
+        "description": "free and open",
+        "url": "https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-vegetation-phenology-and-productivity",
+        "project_purpose": null
       }
     ],
-    "dataSource": "grid",
+    "dataSource": "",
     "cube:dimensions": {
       "x": {
         "axis": "x",
@@ -26,7 +22,9 @@
           45
         ],
         "reference_system": "EPSG:4326",
-        "type": "spatial"
+        "type": "spatial",
+        "unit_of_measure": "m",
+        "step": "10"
       },
       "y": {
         "axis": "y",
@@ -35,31 +33,32 @@
           72
         ],
         "reference_system": "EPSG:4326",
-        "type": "spatial"
-      },
-      "z": {
-        "axis": "z",
-        "extent": [
-          null,
-          null
-        ],
-        "reference_system": null,
-        "type": "spatial"
+        "type": "spatial",
+        "unit_of_measure": "m",
+        "step": "10"
       },
       "time": {
         "extent": [
           "2017-01-01T00:00:00Z",
           "2023-01-01T00:00:00Z"
         ],
-        "type": "temporal"
+        "type": "temporal",
+        "step": ""
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "type": "spatial"
       }
     },
     "datetime": "2000-01-01T00:00:00Z",
     "raster:bands": [
       {
-        "band_name": null,
-        "nodata": null,
         "data_type": null,
+        "nodata": null,
         "definition": null,
         "category_list": null,
         "comment": null,
@@ -67,21 +66,51 @@
       }
     ],
     "title": "HR VPP (NDVI, PPI, FAPAR, LAI)",
+    "datasource_type": "grid",
+    "keywords": null,
+    "area_cover": "Europe",
+    "documentation": null,
+    "crs": "EPSG:3035 ",
+    "start_datetime": "2017-01-01T00:00:00Z",
+    "end_datetime": "2023-01-01T00:00:00Z",
     "personalData": null,
     "Provenance_name": "Sentinel 1, 2",
-    "documentation": null,
-    "keywords": null,
+    "modification": null,
+    "provision": null,
     "use_case_S4E": 2,
     "use_case_WER": 2,
-    "use_case_NHM_2": null,
-    "use_case_NILU": null,
     "use_case_NHM": null,
-    "platform": "Both",
-    "ingestion_status": "on hold: Currently not needed"
+    "use_case_NILU": null,
+    "use_case_NHM_2": null,
+    "ingestion_status": "on hold: Currently not needed",
+    "platform": "Both"
   },
   "geometry": {
     "type": "Polygon",
-    "coordinates": []
+    "coordinates": [
+      [
+        [
+          0.25,
+          26
+        ],
+        [
+          0.25,
+          72
+        ],
+        [
+          45,
+          72
+        ],
+        [
+          45,
+          26
+        ],
+        [
+          0.25,
+          26
+        ]
+      ]
+    ]
   },
   "links": [
     {
@@ -95,13 +124,36 @@
       "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
+    },
+    {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?&SERVICE=WCS&VERSION=2.1.0&REQUEST=DescribeCoverage&COVERAGEID=HR_VPP_NDVI,_PPI,_FAPAR,_LAI&outputType=GeneralGridCoverage",
+      "rel": "about",
+      "type": "text/xml",
+      "title": "Link to the rasdaman coverage description in XML"
+    },
+    {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman-dashboard/?layers=HR_VPP_NDVI,_PPI,_FAPAR,_LAI",
+      "rel": "service",
+      "type": "text/html",
+      "title": "Link to the rasdaman web application to Access, process gridded data"
     }
   ],
-  "assets": {},
-  "bbox": [],
+  "assets": {
+    "thumbnail_rasdaman": {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?service=WMS&version=1.3.0&request=GetMap&layers=HR_VPP_NDVI,_PPI,_FAPAR,_LAI&bbox=26,0.25,72,45&time=\"2017-01-01T00:00:00Z\"&width=800&height=600&crs=EPSG:4326&format=image/png&transparent=true&styles=",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    0.25,
+    26,
+    45,
+    72
+  ],
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ],
-  "id": "HR_VPP_NDVI,_PPI,_FAPAR,_LAI"
+  ]
 }
