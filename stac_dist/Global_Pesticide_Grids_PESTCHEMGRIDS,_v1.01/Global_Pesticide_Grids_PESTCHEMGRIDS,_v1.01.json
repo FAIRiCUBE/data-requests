@@ -1,20 +1,18 @@
 {
   "type": "Feature",
   "stac_version": "1.0.0",
+  "id": "Global_Pesticide_Grids_PESTCHEMGRIDS,_v1.01",
   "properties": {
-    "license": "Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0).",
+    "license": "CC-BY-4.0",
     "description": "contains 20 of the most-used pesticide active ingredients on 6 dominant crops and 4 aggregated crop classes at 5 arc-minute resolution (about 10 km at the equator), estimated in year 2015, and then projected to 2020 and 2025.",
-    "area_cover": "World",
-    "crs": "EPSG:4326",
     "providers": [
       {
-        "organization": "SEDAC",
         "organization_name": null,
+        "organization": "SEDAC",
+        "comments": "create account/regsiter, free ",
+        "doc_link": "",
         "organization_email": null,
-        "orcid_id": null,
-        "project_purpose": null,
-        "doc_link": "Metadata \u00bb Global Pesticide Grids (PEST-CHEMGRIDS), v1.01: Global Agricultural Inputs, v1 | SEDAC (columbia.edu)",
-        "comments": "create account/regsiter, free "
+        "project_purpose": null
       }
     ],
     "dataSource": "NASA SEDAC (socioeconomic data and applications center)",
@@ -43,26 +41,23 @@
         "interpolation": null,
         "step": 5
       },
-      "z": {
-        "axis": "z",
-        "extent": [
-          null,
-          null
-        ],
-        "reference_system": null,
-        "type": "spatial",
-        "unit_of_measure": null,
-        "interpolation": null
-      },
       "time": {
         "extent": [
           "2015-01-01T00:00:00Z",
           "2025-01-01T00:00:00Z"
         ],
         "type": "temporal",
-        "unit_of_measure": "y",
+        "step": "P5Y0M0DT0H0M0S"
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "unit_of_measure": null,
         "interpolation": null,
-        "step": "P5Y"
+        "type": "spatial"
       }
     },
     "datetime": "2000-01-01T00:00:00Z",
@@ -70,8 +65,8 @@
       {
         "band_name": null,
         "unit": null,
-        "nodata": null,
         "data_type": null,
+        "nodata": null,
         "definition": null,
         "description": null,
         "category_list": null,
@@ -81,22 +76,51 @@
     ],
     "title": "Global Pesticide Grids (PEST-CHEMGRIDS), v1.01",
     "datasource_type": "grid",
+    "keywords": null,
+    "area_cover": "World",
+    "documentation": null,
+    "crs": "EPSG:4326",
+    "start_datetime": "2015-01-01T00:00:00Z",
+    "end_datetime": "2025-01-01T00:00:00Z",
     "personalData": null,
     "Provenance_name": "https://sedac.ciesin.columbia.edu/data/set/ferman-v1-pest-chemgrids-v1-01",
     "preprocessing": null,
-    "documentation": null,
-    "keywords": null,
+    "modification": null,
+    "provision": null,
     "use_case_S4E": null,
     "use_case_WER": null,
-    "use_case_NHM_2": null,
-    "use_case_NILU": null,
     "use_case_NHM": 1,
-    "platform": "Rasdaman",
-    "ingestion_status": "on hold: NHM to provide details"
+    "use_case_NILU": null,
+    "use_case_NHM_2": null,
+    "ingestion_status": "on hold: NHM to provide details",
+    "platform": "Rasdaman"
   },
   "geometry": {
     "type": "Polygon",
-    "coordinates": []
+    "coordinates": [
+      [
+        [
+          -180,
+          -84
+        ],
+        [
+          -180,
+          56
+        ],
+        [
+          180,
+          56
+        ],
+        [
+          180,
+          -84
+        ],
+        [
+          -180,
+          -84
+        ]
+      ]
+    ]
   },
   "links": [
     {
@@ -110,13 +134,36 @@
       "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
+    },
+    {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?&SERVICE=WCS&VERSION=2.1.0&REQUEST=DescribeCoverage&COVERAGEID=Global_Pesticide_Grids_PESTCHEMGRIDS,_v1.01&outputType=GeneralGridCoverage",
+      "rel": "about",
+      "type": "text/xml",
+      "title": "Link to the rasdaman coverage description in XML"
+    },
+    {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman-dashboard/?layers=Global_Pesticide_Grids_PESTCHEMGRIDS,_v1.01",
+      "rel": "service",
+      "type": "text/html",
+      "title": "Link to the rasdaman web application to Access, process gridded data"
     }
   ],
-  "assets": {},
-  "bbox": [],
+  "assets": {
+    "thumbnail_rasdaman": {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?service=WMS&version=1.3.0&request=GetMap&layers=Global_Pesticide_Grids_PESTCHEMGRIDS,_v1.01&bbox=-84,-180,56,180&time=\"2015-01-01T00:00:00Z\"&width=800&height=600&crs=EPSG:4326&format=image/png&transparent=true&styles=",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    -180,
+    -84,
+    180,
+    56
+  ],
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ],
-  "id": "Global_Pesticide_Grids_PESTCHEMGRIDS,_v1.01"
+  ]
 }
