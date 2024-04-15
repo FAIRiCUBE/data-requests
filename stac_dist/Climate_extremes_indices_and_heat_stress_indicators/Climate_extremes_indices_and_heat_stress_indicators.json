@@ -1,0 +1,122 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "properties": {
+    "license": null,
+    "description": null,
+    "area_cover": "World",
+    "crs": "EPSG:4326",
+    "providers": [
+      {
+        "organization": "C3S",
+        "organization_name": null,
+        "organization_email": null,
+        "orcid_id": null,
+        "project_purpose": null,
+        "doc_link": null,
+        "comments": null
+      }
+    ],
+    "dataSource": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/sis-extreme-indices-cmip6?tab=overview",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -180,
+          180
+        ],
+        "reference_system": "EPSG:4326",
+        "type": "spatial",
+        "unit_of_measure": "deg",
+        "interpolation": null,
+        "step": 0.5
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          -90,
+          90
+        ],
+        "reference_system": "EPSG:4326",
+        "type": "spatial",
+        "unit_of_measure": "deg",
+        "interpolation": null,
+        "step": 0.5
+      },
+      "z": {
+        "axis": "z",
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "type": "spatial",
+        "unit_of_measure": null,
+        "interpolation": null
+      },
+      "time": {
+        "extent": [
+          "1850-01-01T00:00:00Z",
+          "2300-01-01T00:00:00Z"
+        ],
+        "type": "temporal",
+        "unit_of_measure": "d",
+        "interpolation": null,
+        "step": "P1D"
+      }
+    },
+    "datetime": "2000-01-01T00:00:00Z",
+    "raster:bands": [
+      {
+        "band_name": null,
+        "unit": null,
+        "nodata": null,
+        "data_type": null,
+        "definition": null,
+        "description": null,
+        "category_list": null,
+        "comment": null,
+        "interpolation": null
+      }
+    ],
+    "title": "Climate extremes indices and heat stress indicators",
+    "datasource_type": "grid",
+    "personalData": null,
+    "Provenance_name": null,
+    "preprocessing": null,
+    "documentation": null,
+    "keywords": null,
+    "use_case_S4E": 1,
+    "use_case_WER": 2,
+    "use_case_NHM_2": null,
+    "use_case_NILU": null,
+    "use_case_NHM": 1,
+    "platform": "Both",
+    "ingestion_status": "on hold: for clarification amongst UC partners about direct CDS access vs datacubes"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": []
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "id": "Climate_extremes_indices_and_heat_stress_indicators"
+}
