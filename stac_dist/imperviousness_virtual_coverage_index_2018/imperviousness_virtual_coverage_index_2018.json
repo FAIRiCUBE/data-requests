@@ -1,0 +1,122 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "properties": {
+    "license": null,
+    "description": "This dataset describes the imperviousness density of land, which provides data on sealing density from 0 - 100 %",
+    "area_cover": "EEA-38+UK",
+    "crs": "EPSG:3035",
+    "providers": [
+      {
+        "organization": "EEA",
+        "organization_name": null,
+        "organization_email": null,
+        "orcid_id": null,
+        "project_purpose": null,
+        "doc_link": "https://land.copernicus.eu/pan-european/high-resolution-layers/imperviousness/status-maps",
+        "comments": "The high resolution imperviousness products capture the percentage and change of soil sealing. Built-up areas are characterized by the substitution of the original (semi-) natural land cover or water surface with an artificial, often impervious cover. These artificial surfaces are usually maintained over long periods of time. A series of high resolution imperviousness datasets (for the 2006, 2009, 2012, 2015 and 2018 reference years) with all artificially sealed areas was produced using automatic derivation based on calibrated Normalized Difference Vegetation Index (NDVI). This series of imperviousness layers constitutes the main status layers. They are per-pixel estimates of impermeable cover of soil (soil sealing) and are mapped as the degree of imperviousness (0-100%). Imperviousness change layers were produced as a difference between the reference years (2006-2009, 2009-2012, 2012-2015, 2015-2018 and additionally 2006-2012, to fully match the CORINE Land Cover production cycle) and are presented 1) as degree of imperviousness change (-100% -- +100%), in 20m and 100m pixel size, and 2) a classified (categorical) 20m change product."
+      }
+    ],
+    "dataSource": "https://land.copernicus.eu/pan-european/high-resolution-layers/imperviousness/status-maps",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -31.285,
+          44.807
+        ],
+        "reference_system": "EPSG:4326",
+        "type": "spatial",
+        "unit_of_measure": "m",
+        "interpolation": null,
+        "step": 10
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          27.642,
+          71.165
+        ],
+        "reference_system": "EPSG:4326",
+        "type": "spatial",
+        "unit_of_measure": "m",
+        "interpolation": null,
+        "step": 10
+      },
+      "z": {
+        "axis": "z",
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "type": "spatial",
+        "unit_of_measure": null,
+        "interpolation": null
+      },
+      "time": {
+        "extent": [
+          "2018-01-01T00:00:00Z",
+          "2018-01-01T00:00:00Z"
+        ],
+        "type": "temporal",
+        "unit_of_measure": "y",
+        "interpolation": null,
+        "regular": false
+      }
+    },
+    "datetime": "2000-01-01T00:00:00Z",
+    "raster:bands": [
+      {
+        "band_name": "percentage of imperviousness density",
+        "unit": "percent",
+        "nodata": null,
+        "data_type": "int8",
+        "definition": "Imperviousness Density Percentage",
+        "description": "Captures the density of areas sealed artificially from rainwater flow",
+        "category_list": "(0-100%)",
+        "comment": null,
+        "interpolation": null
+      }
+    ],
+    "title": "High Resolution Layer - Imperviousness",
+    "datasource_type": "grid",
+    "personalData": null,
+    "Provenance_name": "EO-based",
+    "preprocessing": null,
+    "documentation": null,
+    "keywords": null,
+    "use_case_S4E": 1,
+    "use_case_WER": 2,
+    "use_case_NHM_2": null,
+    "use_case_NILU": null,
+    "use_case_NHM": 2,
+    "platform": "Both",
+    "ingestion_status": "Completed, year as integer, (2006,2009,2012,2015,2018)"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": []
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "id": "imperviousness_virtual_coverage_index_2018"
+}
