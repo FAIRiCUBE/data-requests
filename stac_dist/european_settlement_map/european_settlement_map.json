@@ -1,0 +1,120 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "properties": {
+    "license": null,
+    "description": null,
+    "area_cover": "EEA-38+UK",
+    "crs": null,
+    "providers": [
+      {
+        "organization": "JRC",
+        "organization_name": null,
+        "organization_email": null,
+        "orcid_id": null,
+        "project_purpose": null,
+        "doc_link": "https://land.copernicus.eu/pan-european/GHSL/european-settlement-map",
+        "comments": null
+      }
+    ],
+    "dataSource": " https://ghsl.jrc.ec.europa.eu/download.php",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "type": "spatial",
+        "unit_of_measure": null,
+        "interpolation": null
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "type": "spatial",
+        "unit_of_measure": null,
+        "interpolation": null
+      },
+      "z": {
+        "axis": "z",
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "type": "spatial",
+        "unit_of_measure": null,
+        "interpolation": null
+      },
+      "time": {
+        "extent": [
+          "2012-01-01T00:00:00Z",
+          "2015-01-01T00:00:00Z"
+        ],
+        "type": "temporal",
+        "unit_of_measure": "y",
+        "interpolation": null,
+        "step": "P3Y"
+      }
+    },
+    "datetime": "2000-01-01T00:00:00Z",
+    "raster:bands": [
+      {
+        "band_name": null,
+        "unit": null,
+        "nodata": null,
+        "data_type": null,
+        "definition": null,
+        "description": null,
+        "category_list": null,
+        "comment": null,
+        "interpolation": null
+      }
+    ],
+    "title": "European Settlement Map",
+    "datasource_type": "grid",
+    "personalData": null,
+    "Provenance_name": "EO-based",
+    "preprocessing": null,
+    "documentation": null,
+    "keywords": null,
+    "use_case_S4E": 1,
+    "use_case_WER": null,
+    "use_case_NHM_2": null,
+    "use_case_NILU": null,
+    "use_case_NHM": 1,
+    "platform": "Both",
+    "ingestion_status": "not ingested: no longer offered by CLMS"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": []
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "id": "european_settlement_map"
+}
