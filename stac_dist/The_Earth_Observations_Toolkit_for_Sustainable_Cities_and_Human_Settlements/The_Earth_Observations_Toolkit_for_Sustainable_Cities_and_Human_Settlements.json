@@ -1,0 +1,119 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "properties": {
+    "license": null,
+    "description": null,
+    "area_cover": "World",
+    "crs": null,
+    "providers": [
+      {
+        "organization": "UN-Habitat",
+        "organization_name": null,
+        "organization_email": null,
+        "orcid_id": null,
+        "project_purpose": null,
+        "doc_link": null,
+        "comments": null
+      }
+    ],
+    "dataSource": "The Earth Observations Toolkit for Sustainable Cities and Human Settlements (unhabitat.org)",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -180,
+          180
+        ],
+        "reference_system": "EPSG:4326",
+        "type": "spatial",
+        "unit_of_measure": null,
+        "interpolation": null
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          -90,
+          90
+        ],
+        "reference_system": "EPSG:4326",
+        "type": "spatial",
+        "unit_of_measure": null,
+        "interpolation": null
+      },
+      "z": {
+        "axis": "z",
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "type": "spatial",
+        "unit_of_measure": null,
+        "interpolation": null
+      },
+      "time": {
+        "extent": [
+          null,
+          null
+        ],
+        "type": "temporal",
+        "unit_of_measure": null,
+        "interpolation": null
+      }
+    },
+    "datetime": "2000-01-01T00:00:00Z",
+    "raster:bands": [
+      {
+        "band_name": null,
+        "unit": null,
+        "nodata": null,
+        "data_type": null,
+        "definition": null,
+        "description": null,
+        "category_list": null,
+        "comment": null,
+        "interpolation": null
+      }
+    ],
+    "title": "The Earth Observations Toolkit for Sustainable Cities and Human Settlements",
+    "datasource_type": null,
+    "personalData": null,
+    "Provenance_name": null,
+    "preprocessing": null,
+    "documentation": null,
+    "keywords": null,
+    "use_case_S4E": null,
+    "use_case_WER": null,
+    "use_case_NHM_2": null,
+    "use_case_NILU": 2,
+    "use_case_NHM": null,
+    "platform": "Eox",
+    "ingestion_status": "on hold: NILU to provide details"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": []
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "id": "The_Earth_Observations_Toolkit_for_Sustainable_Cities_and_Human_Settlements"
+}
