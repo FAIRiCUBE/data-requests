@@ -87,7 +87,7 @@
     "resolution": "",
     "personalData": null,
     "Provenance_name": "Urban Atlas vector product",
-    "preprocessing": "rasterization",
+    "preprocessing": "rasterization with ArcGis Tool FeatureToRaster. The polygon that overlaps the center of the cell yields the attribute to assign to the cell.",
     "modification": null,
     "provision": null,
     "use_case_S4E": 1,
