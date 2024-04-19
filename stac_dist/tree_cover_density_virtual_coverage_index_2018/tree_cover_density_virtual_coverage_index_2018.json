@@ -1,20 +1,18 @@
 {
   "type": "Feature",
   "stac_version": "1.0.0",
+  "id": "tree_cover_density_virtual_coverage_index_2018",
   "properties": {
-    "license": null,
+    "license": "other",
     "description": "Denotes the percentage of tree coverage density over a region from 0 - 100%",
-    "area_cover": "EEA-38+UK",
-    "crs": "EPSG:3035",
     "providers": [
       {
-        "organization": "EEA",
         "organization_name": null,
-        "organization_email": null,
-        "orcid_id": null,
-        "project_purpose": null,
+        "organization": "EEA",
+        "comments": "This metadata refers to the HRL Forest 2018 primary status layer Tree Cover Density (TCD). The TCD raster product provides information on the proportional crown coverage per pixel at 10m spatial resolution and ranges from 0% (all non-tree covered areas) to 100%, whereby Tree Cover Density is defined as the \"vertical projection of tree crowns to a horizontal earth\u2019s surface\u201c. The production of the High Resolution Forest layers was coordinated by the European Environment Agency (EEA) in the frame of the EU Copernicus programme.",
         "doc_link": "https://land.copernicus.eu/pan-european/high-resolution-layers/forests/tree-cover-density/status-maps",
-        "comments": "This metadata refers to the HRL Forest 2018 primary status layer Tree Cover Density (TCD). The TCD raster product provides information on the proportional crown coverage per pixel at 10m spatial resolution and ranges from 0% (all non-tree covered areas) to 100%, whereby Tree Cover Density is defined as the \"vertical projection of tree crowns to a horizontal earth\u2019s surface\u201c. The production of the High Resolution Forest layers was coordinated by the European Environment Agency (EEA) in the frame of the EU Copernicus programme."
+        "organization_email": null,
+        "project_purpose": null
       }
     ],
     "dataSource": "https://land.copernicus.eu/pan-european/high-resolution-layers/forests/tree-cover-density/status-maps",
@@ -43,26 +41,23 @@
         "interpolation": null,
         "step": 10
       },
-      "z": {
-        "axis": "z",
-        "extent": [
-          null,
-          null
-        ],
-        "reference_system": null,
-        "type": "spatial",
-        "unit_of_measure": null,
-        "interpolation": null
-      },
       "time": {
         "extent": [
           "2018-01-01T00:00:00Z",
           "2018-01-01T00:00:00Z"
         ],
         "type": "temporal",
-        "unit_of_measure": "y",
+        "step": ""
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "unit_of_measure": null,
         "interpolation": null,
-        "regular": false
+        "type": "spatial"
       }
     },
     "datetime": "2000-01-01T00:00:00Z",
@@ -70,8 +65,8 @@
       {
         "band_name": "Tree coverage density",
         "unit": "percent",
-        "nodata": null,
         "data_type": "int8",
+        "nodata": null,
         "definition": "Percentage values",
         "description": "Describes percent of tree coverage",
         "category_list": "(0-100%)",
@@ -81,22 +76,51 @@
     ],
     "title": "High Resolution Layer - Forest -tree cover",
     "datasource_type": "grid",
+    "keywords": null,
+    "area_cover": "EEA-38+UK",
+    "documentation": null,
+    "crs": "EPSG:3035",
+    "start_datetime": "2018-01-01T00:00:00Z",
+    "end_datetime": "2018-01-01T00:00:00Z",
     "personalData": null,
     "Provenance_name": "EO-based",
     "preprocessing": null,
-    "documentation": null,
-    "keywords": null,
+    "modification": null,
+    "provision": null,
     "use_case_S4E": 1,
     "use_case_WER": 2,
-    "use_case_NHM_2": null,
-    "use_case_NILU": null,
     "use_case_NHM": 2,
-    "platform": "Both",
-    "ingestion_status": "Completed, year as integer,(2012,2015,2018)"
+    "use_case_NILU": null,
+    "use_case_NHM_2": null,
+    "ingestion_status": "Completed, year as integer,(2012,2015,2018)",
+    "platform": "Both"
   },
   "geometry": {
     "type": "Polygon",
-    "coordinates": []
+    "coordinates": [
+      [
+        [
+          -56.506,
+          24.284
+        ],
+        [
+          -56.506,
+          72.665
+        ],
+        [
+          72.907,
+          72.665
+        ],
+        [
+          72.907,
+          24.284
+        ],
+        [
+          -56.506,
+          24.284
+        ]
+      ]
+    ]
   },
   "links": [
     {
@@ -110,13 +134,36 @@
       "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
+    },
+    {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?&SERVICE=WCS&VERSION=2.1.0&REQUEST=DescribeCoverage&COVERAGEID=tree_cover_density_virtual_coverage_index_2018&outputType=GeneralGridCoverage",
+      "rel": "about",
+      "type": "text/xml",
+      "title": "Link to the rasdaman coverage description in XML"
+    },
+    {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman-dashboard/?layers=tree_cover_density_virtual_coverage_index_2018",
+      "rel": "service",
+      "type": "text/html",
+      "title": "Link to the rasdaman web application to Access, process gridded data"
     }
   ],
-  "assets": {},
-  "bbox": [],
+  "assets": {
+    "thumbnail_rasdaman": {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?service=WMS&version=1.3.0&request=GetMap&layers=tree_cover_density_virtual_coverage_index_2018&bbox=24.284,-56.506,72.665,72.907&time=\"2018-01-01T00:00:00Z\"&width=800&height=600&crs=EPSG:4326&format=image/png&transparent=true&styles=",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    -56.506,
+    24.284,
+    72.907,
+    72.665
+  ],
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ],
-  "id": "tree_cover_density_virtual_coverage_index_2018"
+  ]
 }
