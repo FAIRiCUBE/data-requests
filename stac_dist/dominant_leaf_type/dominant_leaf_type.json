@@ -1,0 +1,122 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "properties": {
+    "license": null,
+    "description": "Denotes the leaf type dominant in a region - broadleaf or coniferous",
+    "area_cover": "EEA-38+UK",
+    "crs": "EPSG:3035",
+    "providers": [
+      {
+        "organization": "EEA",
+        "organization_name": null,
+        "organization_email": null,
+        "orcid_id": null,
+        "project_purpose": null,
+        "doc_link": "https://land.copernicus.eu/pan-european/high-resolution-layers/forests/dominant-leaf-type/status-maps",
+        "comments": "https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search#/metadata/7b28d3c1-b363-4579-9141-bdd09d073fd8"
+      }
+    ],
+    "dataSource": "https://land.copernicus.eu/pan-european/high-resolution-layers/forests/dominant-leaf-type/status-maps",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -10.6198,
+          44.8212
+        ],
+        "reference_system": "EPSG:4326",
+        "type": "spatial",
+        "unit_of_measure": "m",
+        "interpolation": null,
+        "step": 20
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          34.5619,
+          71.1855
+        ],
+        "reference_system": "EPSG:4326",
+        "type": "spatial",
+        "unit_of_measure": "m",
+        "interpolation": null,
+        "step": 20
+      },
+      "z": {
+        "axis": "z",
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "type": "spatial",
+        "unit_of_measure": null,
+        "interpolation": null
+      },
+      "time": {
+        "extent": [
+          "2012-01-01T00:00:00Z",
+          "2015-01-01T00:00:00Z"
+        ],
+        "type": "temporal",
+        "unit_of_measure": "y",
+        "interpolation": null,
+        "regular": false
+      }
+    },
+    "datetime": "2000-01-01T00:00:00Z",
+    "raster:bands": [
+      {
+        "band_name": "Leaf type",
+        "unit": "categorial value",
+        "nodata": null,
+        "data_type": "int8",
+        "definition": "Type of leaf",
+        "description": "Describes the leaf type that is dominant in a region",
+        "category_list": "Non forest, broadleaf, coniferous, outside area",
+        "comment": null,
+        "interpolation": null
+      }
+    ],
+    "title": "High Resolution Layer - Forest -Dominant Leaf Type",
+    "datasource_type": "grid",
+    "personalData": null,
+    "Provenance_name": "EO-based",
+    "preprocessing": null,
+    "documentation": null,
+    "keywords": null,
+    "use_case_S4E": 1,
+    "use_case_WER": 2,
+    "use_case_NHM_2": null,
+    "use_case_NILU": null,
+    "use_case_NHM": 2,
+    "platform": "Both",
+    "ingestion_status": "Completed, year as integer, (2012,2015,2018)"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": []
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "id": "dominant_leaf_type"
+}
