@@ -1,4 +1,5 @@
 pystac
+pytest
 gql
 shapely
 stactools
