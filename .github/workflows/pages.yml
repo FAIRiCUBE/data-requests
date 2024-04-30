@@ -2,9 +2,11 @@
 name: Deploy static content to Pages
 
 on:
-  pull_request:
-    branches:
-      - main
+  workflow_run:
+    workflows: ["tests"]
+    branches: [main]
+    types:
+      - completed
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -22,22 +24,9 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: install dependencies
-        run: |
-          pip install -r ./stac/stac-generator/requirements.txt
-      - name: validate stac items
-
-        run: |
-          pytest --verbosity=1  ./stac/stac-generator/test/validator.py
 
   # Single deploy job since we're just deploying
   deploy:
-    needs: test
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

@@ -1,0 +1,23 @@
+name: Validate generated stac item in the PR
+
+on:
+  pull_request:
+    branches:
+      - main
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: install dependencies
+        run: |
+          pip install -r ./stac/stac-generator/requirements.txt
+      - name: validate stac items
+
+        run: |
+          pytest --verbosity=1  ./stac/stac-generator/test/validator.py
