@@ -32,6 +32,8 @@ def test_items(dir):
         stac_item = pystac.Item.from_file(os.path.join(dir, item))
         validate_item(stac_item)
 
+
+
 # Mandatory Columns (additions in bold)
 # ID [Column C]
 # Description [D]

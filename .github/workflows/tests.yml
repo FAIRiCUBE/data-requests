@@ -20,6 +20,4 @@ jobs:
       - name: validate stac items
 
         run: |
-          python3 ./stac/stac-generator/test/validator.py
-
-
+          pytest --verbosity=1  ./stac/stac-generator/test/validator.py
