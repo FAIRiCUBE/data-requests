@@ -11,7 +11,7 @@ For CIS encodings, the following requirements classes are of relevance:
 - Basic Types and Simple Components Schemas: `XML Schema elements and types defined in the “basic_types.xsd” and “simple_components.xsd” schema files implement all classes defined respectively in the “Basic Types” and “Simple Components” UML packages.`
 
 From the Basic Types and Simple Components, we rely on the Quantity and Category Elements. 
-While the Count Element would also be applicable, for the moment we handle Counts as Quantities.
+While the Count Element would also be applicable, for the moment we will handle Counts as Quantities.
 
 ## SWE:DataRecord
 SWE:DataRecord, derived from the SWE Common AbstractDataComponent, can be used to group multiple components via the `field` attribute. 
@@ -19,5 +19,17 @@ Each field describes one band of the described Coverage.
 
 ![grafik](https://github.com/FAIRiCUBE/data-requests/assets/11915304/f943b189-cc85-4ccf-a39e-d85cad4a3e6f)
 
+Depending on the nature of the data provided in each band, the correct Simple Component must be provided in the corresponding DataRecord.field.
 
+## SWE:SimpleComponent
+All SWE:SimpleComponent types are derived from the SWE:AbstractDataComponent. 
+This is where the `definition` attribute is specified.
+
+Requirement - http://www.opengis.net/spec/SWE/2.0/req/xsd-simple-components/definition-resolvable
+`Req 62. The “definition” attribute shall contain a URI that can be resolved to the complete human readable definition of the property that is represented by the data component.`
+
+Additional information on the definition attribute is provided in clause 7.2.2 as follows:
+`The “definition” attribute identifies the property (often an observed property in our context) that the data component represents by using a scoped  ame. It should map to a controlled term defined in an (web accessible) dictionary, registry or ontology. Such terms provide the formal textual  efinition agreed upon by one or more communities, eventually illustrated by pictures and diagrams as well as additional semantic information such as relationships to units and other concepts, ontological mappings, etc. `
+
+As Observed Property registers covering FAIRiCUBE requirements have not been identified, a simple solution would be the use of the [QUDT Quantity Kind Vocabulary](http://qudt.org/2.1/vocab/quantitykind), e.g. [velocity](https://qudt.org/vocab/quantitykind/Velocity) or [radiance](https://qudt.org/vocab/quantitykind/Radiance)
 
