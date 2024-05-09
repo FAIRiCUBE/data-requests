@@ -40,20 +40,30 @@ Additional information on the definition attribute is provided in clause 7.2.2 a
 As Observed Property registers covering FAIRiCUBE requirements have not been identified, alternative solutions may be required. A simple solution would be the use of the [QUDT Quantity Kind Vocabulary](http://qudt.org/2.1/vocab/quantitykind), e.g. [velocity](https://qudt.org/vocab/quantitykind/Velocity) or [radiance](https://qudt.org/vocab/quantitykind/Radiance) in order to provide basic information on the property being conveyed. When re-providing data from Copernicus Services, a reference to the page describing this dataset can be used, e.g. [High Resolution Layer Dominant Leaf Type](https://land.copernicus.eu/en/products/high-resolution-layer-dominant-leaf-type)
 If a reference to an Observed Property register is available, this should be used.
 
+When working from a data request, the `Definition` field in the Bands section provides the required content.
+If this is missing, and there is only one band, the text from the dataset `Documentation Link` or `Data Source` may be used.
+
 ### label
 The `label` element is a short descriptive human readable label describing what property the component represents.
+
+When working from a data request, the `cell components` field in the Bands section provides the required content.
+If this is missing, and there is only one band, the text from the dataset `Title` may be used.
 
 ### description
 The `description` element is a longer more descriptive human readable description describing what property the component represents.
 
+When working from a data request, the `Description` field in the Bands section provides the required content.
+If this is missing, and there is only one band, the text from the dataset Description may be used.
+
 ### nilValues
 The `nilValues` element is defined on the SWE:AbstractSimpleComponentType. If nil values are used in the coverage, they must be provided here, together with a reason. The swe:NilValuesType must be used.
 
-### extension
-The `extension` element is a container for future extensions. This extension point can be used to add new extended properties to an existing class.
+When working from a data request, the `Null values` field in the Bands section provides the required content.
 
 ## SWE:Quantity
-The SWE:Quantity type adds a mandatory `uom` element of type swe:UnitReference
+The SWE:Quantity type adds a mandatory `Unit of Measure` element of type swe:UnitReference
+
+When working from a data request, the `Null values` field in the Bands section provides the required content.
 
 Requirement - http://www.opengis.net/spec/SWE/2.0/req/xsd-simple-components/ucum-code-used
 Req 64. The UCUM code for a unit of measure shall be used as the value of the “code” XML attribute whenever it can be constructed using the UCUM 1.8 specification. Otherwise the “href” XML attribute shall be used to reference an external unit definition.
@@ -83,7 +93,9 @@ The following shows an example of a Quantity rangeType taken from the Demography
 ## SWE:Category
 The SWE:Category type adds a `codeSpace` element of type swe:UnitReference. This element utilizes xlink:href to reference an external dictionary, taxonomy or ontology representing the code space. This element is implicitely mandatory, as Req 25 stipulates the alternative provision of a `constraint` with a list of allowed values; as the constraint alternative does not allow for additional semantics on the individual entries, the `codeSpace` approach is prefered.
 
-However, the `codeSpace` approach requires the availability of a URI that resolves to information on the categorization used in the data, often not the case. While a machine readable approach would be preferable, in lieu of identified standards in this area, a simple GitHub page can suffice.
+However, the `codeSpace` approach requires the availability of a URI that resolves to information on the categorization used in the data, often not the case. While a machine readable approach would be preferable, in lieu of identified standards in this area, a simple [GitHub page](https://github.com/FAIRiCUBE/data-requests/blob/main/CoverageEncoding/CategoryInformation.md) can suffice.
+
+When working from a data request, the `Category List` field in the Bands section provides the required content.
 
 The following shows an example of a Category rangeType taken from the DominantLeafType dataset
 
