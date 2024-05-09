@@ -60,13 +60,32 @@ Req 64. The UCUM code for a unit of measure shall be used as the value of the â€
 
 Note: UCUM 1.8 has been deprecated, current version is [UCUM 2.1](https://ucum.org/ucum). Thus, we will use UCUM 2.1 in FAIRiCUBE.
 
+The following shows an example of a Quantity rangeType taken from the Demography dataset. Note that ideally we would use the swe:Count type for this purpose.
+
+```<cis11:RangeType>
+	<swe:DataRecord>
+		<swe:field name="Population_total">
+			<swe:Quantity definition="https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution/geostat">
+				<swe:label>Population total</swe:label>
+				<swe:description>The 2021 census contained a major innovation with the presentation of key census topics on an EU-wide 1 kmÂ² grid.</swe:description>
+				<swe:nilValues>
+					<swe:NilValues>
+						<swe:nilValue reason="">65535</swe:nilValue>
+					</swe:NilValues>
+				</swe:nilValues>
+				<swe:uom code="{tot}"/>
+			</swe:Quantity>
+		</swe:field>
+	</swe:DataRecord>
+</cis11:RangeType>
+```
+
 ## SWE:Category
 The SWE:Category type adds a `codeSpace` element of type swe:UnitReference. This element utilizes xlink:href to reference an external dictionary, taxonomy or ontology representing the code space. This element is implicitely mandatory, as Req 25 stipulates the alternative provision of a `constraint` with a list of allowed values; as the constraint alternative does not allow for additional semantics on the individual entries, the `codeSpace` approach is prefered.
 
 However, the `codeSpace` approach requires the availability of a URI that resolves to information on the categorization used in the data, often not the case. While a machine readable approach would be preferable, in lieu of identified standards in this area, a simple GitHub page can suffice.
 
 The following shows an example of a Category rangeType taken from the DominantLeafType dataset
-
 
 ```<cis11:RangeType>
 	<swe:DataRecord>
