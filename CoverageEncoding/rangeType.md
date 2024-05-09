@@ -51,4 +51,10 @@ The `nilValues` element is defined on the SWE:AbstractSimpleComponentType. If ni
 ### extension
 The `extension` element is a container for future extensions. This extension point can be used to add new extended properties to an existing class.
 
-## swe:Quantity                                                                                                                                   
+## swe:Quantity
+The SWE:Quantity type adds a mandatory `uom` element of type swe:UnitReference
+
+Requirement - http://www.opengis.net/spec/SWE/2.0/req/xsd-simple-components/ucum-code-used
+Req 64. The UCUM code for a unit of measure shall be used as the value of the “code” XML attribute whenever it can be constructed using the UCUM 1.8 specification. Otherwise the “href” XML attribute shall be used to reference an external unit definition.
+
+Note: UCUM 1.8 has been deprecated, curent version is [UCUM 2.1](https://ucum.org/ucum)
