@@ -50,3 +50,5 @@ The `nilValues` element is defined on the SWE:AbstractSimpleComponentType. If ni
 
 ### extension
 The `extension` element is a container for future extensions. This extension point can be used to add new extended properties to an existing class.
+
+## swe:Quantity                                                                                                                                   
