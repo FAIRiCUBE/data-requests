@@ -5,7 +5,7 @@ To date, this element has often been filled with erroneous values, not taking re
 In order to ensure correct provision of CIS encoded data, we will describe the requirements here, together with examples.
 
 ## SWE Common
-The OGC Sensor Web Enablement Suite aims to cover requirements pertaining to measured or observed data. 
+The OGC Sensor Web Enablement Suite (SWE) aims to cover requirements pertaining to measured or observed data. 
 For CIS encodings, the following requirements classes are of relevance:
 - Record Components Package: `The “DataRecord” class is modeled on the definition of ‘Record’ from ISO 11404. In this definition, a record is a composite data type composed of one to many fields, each of which having its own name and type definition.`
 - Basic Types and Simple Components Schemas: `XML Schema elements and types defined in the “basic_types.xsd” and “simple_components.xsd” schema files implement all classes defined respectively in the “Basic Types” and “Simple Components” UML packages.`
@@ -51,10 +51,16 @@ The `nilValues` element is defined on the SWE:AbstractSimpleComponentType. If ni
 ### extension
 The `extension` element is a container for future extensions. This extension point can be used to add new extended properties to an existing class.
 
-## swe:Quantity
+## SWE:Quantity
 The SWE:Quantity type adds a mandatory `uom` element of type swe:UnitReference
 
 Requirement - http://www.opengis.net/spec/SWE/2.0/req/xsd-simple-components/ucum-code-used
 Req 64. The UCUM code for a unit of measure shall be used as the value of the “code” XML attribute whenever it can be constructed using the UCUM 1.8 specification. Otherwise the “href” XML attribute shall be used to reference an external unit definition.
 
-Note: UCUM 1.8 has been deprecated, curent version is [UCUM 2.1](https://ucum.org/ucum)
+Note: UCUM 1.8 has been deprecated, current version is [UCUM 2.1](https://ucum.org/ucum). Thus, we will use UCUM 2.1 in FAIRiCUBE.
+
+## SWE:Category
+The SWE:Category type adds a `codeSpace` element of type swe:UnitReference. This element utilizes xlink:href to reference an external dictionary, taxonomy or ontology representing the code space. This element is implicitely mandatory, as Req 25 stipulates the alternative provision of a `constraint` with a list of allowed values; as the constraint alternative does not allow for additional semantics on the individual entries, the `codeSpace` approach is prefered.
+
+However, the `codeSpace` approach requires the availability of a URI that resolves to information on the categorization used in the data, often not the case. While a machine readable approach would be preferable, in lieu of identified standards in this area, a simple GitHub page can suffice.
+
