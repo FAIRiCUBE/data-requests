@@ -26,6 +26,8 @@ Depending on the nature of the data provided in each band, the correct Simple Co
 ## SWE:SimpleComponent Elements
 All SWE:SimpleComponent types are derived from the SWE:AbstractSimpleComponent. Elements defined for SWE:AbstractSimpleComponent apply to all SWE:SimpleComponent types, thus are described jointly in this section.
 
+![grafik](https://github.com/FAIRiCUBE/data-requests/assets/11915304/04029405-8c1d-4b67-a210-7ce1288423c4)
+
 ### definition 
 `definition` is a mandatory attribute of the SWE:SimpleComponent types.
 
