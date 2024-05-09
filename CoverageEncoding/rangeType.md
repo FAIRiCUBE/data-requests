@@ -23,9 +23,11 @@ The name attribute of the swe:field must be provided, whereby Req 39 stipulates 
 
 Depending on the nature of the data provided in each band, the correct Simple Component must be provided in the corresponding DataRecord.field.
 
-## SWE:SimpleComponent
-All SWE:SimpleComponent types are derived from the SWE:AbstractDataComponent. 
-This is where the `definition` attribute is specified.
+## SWE:SimpleComponent Elements
+All SWE:SimpleComponent types are derived from the SWE:AbstractSimpleComponent. Elements defined for SWE:AbstractSimpleComponent apply to all SWE:SimpleComponent types, thus are described jointly in this section.
+
+### definition 
+`definition` is a mandatory attribute of the SWE:SimpleComponent types.
 
 Requirement - http://www.opengis.net/spec/SWE/2.0/req/xsd-simple-components/definition-resolvable
 `Req 62. The “definition” attribute shall contain a URI that can be resolved to the complete human readable definition of the property that is represented by the data component.`
@@ -33,5 +35,16 @@ Requirement - http://www.opengis.net/spec/SWE/2.0/req/xsd-simple-components/defi
 Additional information on the definition attribute is provided in clause 7.2.2 as follows:
 `The “definition” attribute identifies the property (often an observed property in our context) that the data component represents by using a scoped  ame. It should map to a controlled term defined in an (web accessible) dictionary, registry or ontology. Such terms provide the formal textual  efinition agreed upon by one or more communities, eventually illustrated by pictures and diagrams as well as additional semantic information such as relationships to units and other concepts, ontological mappings, etc. `
 
-As Observed Property registers covering FAIRiCUBE requirements have not been identified, a simple solution would be the use of the [QUDT Quantity Kind Vocabulary](http://qudt.org/2.1/vocab/quantitykind), e.g. [velocity](https://qudt.org/vocab/quantitykind/Velocity) or [radiance](https://qudt.org/vocab/quantitykind/Radiance)
+As Observed Property registers covering FAIRiCUBE requirements have not been identified, a simple solution would be the use of the [QUDT Quantity Kind Vocabulary](http://qudt.org/2.1/vocab/quantitykind), e.g. [velocity](https://qudt.org/vocab/quantitykind/Velocity) or [radiance](https://qudt.org/vocab/quantitykind/Radiance). If a reference to an Observed Property register is available, this should be used.
 
+### label
+The `label` element is a short descriptive human readable label describing what property the component represents.
+
+### description
+The `description` element is a longer more descriptive human readable description describing what property the component represents.
+
+### nilValues
+The `nilValues` element is defined on the SWE:AbstractSimpleComponentType. If nil values are used in the coverage, they must be provided here, together with a reason. The swe:NilValuesType must be used.
+
+### extension
+The `extension` element is a container for future extensions. This extension point can be used to add new extended properties to an existing class.
