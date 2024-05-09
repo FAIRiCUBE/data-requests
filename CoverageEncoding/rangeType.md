@@ -37,7 +37,8 @@ Requirement - http://www.opengis.net/spec/SWE/2.0/req/xsd-simple-components/defi
 Additional information on the definition attribute is provided in clause 7.2.2 as follows:
 `The “definition” attribute identifies the property (often an observed property in our context) that the data component represents by using a scoped  ame. It should map to a controlled term defined in an (web accessible) dictionary, registry or ontology. Such terms provide the formal textual  efinition agreed upon by one or more communities, eventually illustrated by pictures and diagrams as well as additional semantic information such as relationships to units and other concepts, ontological mappings, etc. `
 
-As Observed Property registers covering FAIRiCUBE requirements have not been identified, a simple solution would be the use of the [QUDT Quantity Kind Vocabulary](http://qudt.org/2.1/vocab/quantitykind), e.g. [velocity](https://qudt.org/vocab/quantitykind/Velocity) or [radiance](https://qudt.org/vocab/quantitykind/Radiance). If a reference to an Observed Property register is available, this should be used.
+As Observed Property registers covering FAIRiCUBE requirements have not been identified, alternative solutions may be required. A simple solution would be the use of the [QUDT Quantity Kind Vocabulary](http://qudt.org/2.1/vocab/quantitykind), e.g. [velocity](https://qudt.org/vocab/quantitykind/Velocity) or [radiance](https://qudt.org/vocab/quantitykind/Radiance) in order to provide basic information on the property being conveyed. When re-providing data from Copernicus Services, a reference to the page describing this dataset can be used, e.g. [High Resolution Layer Dominant Leaf Type](https://land.copernicus.eu/en/products/high-resolution-layer-dominant-leaf-type)
+If a reference to an Observed Property register is available, this should be used.
 
 ### label
 The `label` element is a short descriptive human readable label describing what property the component represents.
@@ -63,4 +64,26 @@ Note: UCUM 1.8 has been deprecated, current version is [UCUM 2.1](https://ucum.o
 The SWE:Category type adds a `codeSpace` element of type swe:UnitReference. This element utilizes xlink:href to reference an external dictionary, taxonomy or ontology representing the code space. This element is implicitely mandatory, as Req 25 stipulates the alternative provision of a `constraint` with a list of allowed values; as the constraint alternative does not allow for additional semantics on the individual entries, the `codeSpace` approach is prefered.
 
 However, the `codeSpace` approach requires the availability of a URI that resolves to information on the categorization used in the data, often not the case. While a machine readable approach would be preferable, in lieu of identified standards in this area, a simple GitHub page can suffice.
+
+The following shows an example of a Category rangeType taken from the DominantLeafType dataset
+
+
+```<cis11:RangeType>
+	<swe:DataRecord>
+		<swe:field name="DominantLeafType">
+			<swe:Category definition="https://land.copernicus.eu/en/products/high-resolution-layer-dominant-leaf-type">
+				<swe:label>Dominant Leaf Type</swe:label>
+				<swe:description>The HRL Forest 2018 primary status layer Dominant Leaf Type (DLT) has been created in frame of the tender “EEA/IDM/R0/18/009 - High Resolution land cover characteristics for the 2018 reference year” as part of the EEA Copernicus Land Monitoring Service (CLMS, https://land.copernicus.eu). The DLT raster product provides a basic land cover classification with 3 thematic classes (all non-tree covered areas / broadleaved / coniferous) at 10m spatial resolution and covers the full of EEA39 area. More about the High Resolution Layers and CLMS datasets can be found at https://land.copernicus.eu/pan-european.</swe:description>
+				<swe:nilValues>
+					<swe:NilValues>
+						<swe:nilValue reason="no data">240</swe:nilValue>
+						<swe:nilValue reason="outside area">255</swe:nilValue>
+					</swe:NilValues>
+				</swe:nilValues>
+				<swe:codeSpace xlink:href="https://github.com/FAIRiCUBE/data-requests/blob/main/CoverageEncoding/CategoryInformation.md/"/>
+			</swe:Category>
+		</swe:field>
+	</swe:DataRecord>
+</cis11:RangeType>
+```
 
