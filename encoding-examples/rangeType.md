@@ -19,6 +19,8 @@ Each field describes one band of the described Coverage.
 
 ![grafik](https://github.com/FAIRiCUBE/data-requests/assets/11915304/f943b189-cc85-4ccf-a39e-d85cad4a3e6f)
 
+The name attribute of the swe:field must be provided, whereby Req 39 stipulates that `Each “field” attribute in a given instance of the “DataRecord” class shall be identified by a name that is unique to this instance.`
+
 Depending on the nature of the data provided in each band, the correct Simple Component must be provided in the corresponding DataRecord.field.
 
 ## SWE:SimpleComponent
