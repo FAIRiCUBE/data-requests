@@ -1,0 +1,110 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "2m_Temperature_ERA5_reanalysis",
+  "properties": {
+    "license": "CC-BY-SA-4.0",
+    "description": "Reanalysis model including datasets for global climate and weather for the past 8 decades. The dataset requested here is the Temperature at 2 m from the surface for the year 2023 and the month of January.  \n ",
+    "providers": [],
+    "dataSource": "Copernicus Climate Change Service ",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -180,
+          180
+        ],
+        "reference_system": 4326,
+        "type": "spatial"
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          -90,
+          90
+        ],
+        "reference_system": 4326,
+        "type": "spatial"
+      },
+      "time": {
+        "extent": [
+          "2023-01-01T01:01Z",
+          "2023-01-01T12:00Z"
+        ],
+        "type": "temporal",
+        "step": ""
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "type": "spatial"
+      }
+    },
+    "raster:bands": [],
+    "title": "ERA5 monthly averaged Temperature (2m) data on single levels for January 2023",
+    "area_cover": "Global availability",
+    "documentation": "https://doi.org/10.1002/qj.3803",
+    "start_datetime": "2023-01-01T01:01Z",
+    "end_datetime": "2023-01-01T12:00Z",
+    "Provenance_name": "Copernicus Climate Change Service",
+    "models": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=overview",
+    "quality_control": "checked, see link: https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=eqc",
+    "apis": "import cdsapi  c = cdsapi.Client()  c.retrieve(     'reanalysis-era5-single-levels-monthly-means',     {         'format': 'netcdf',         'product_type': 'monthly_averaged_reanalysis',         'variable': '2m_temperature',         'year': '2023',         'month': '01',         'time': '00:00',     },     'download.nc')",
+    "use_case_NHM": "1",
+    "platform": "Eox"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180,
+          -90
+        ],
+        [
+          -180,
+          90
+        ],
+        [
+          180,
+          90
+        ],
+        [
+          180,
+          -90
+        ],
+        [
+          -180,
+          -90
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    -180,
+    -90,
+    180,
+    90
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
