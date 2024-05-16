@@ -45,6 +45,7 @@
     "datetime": null,
     "raster:bands": [],
     "title": "ERA5 monthly averaged Temperature (2m) data on single levels for January 2023",
+    "keywords": "2m Temperature ERA5",
     "area_cover": "Global availability",
     "documentation": "https://doi.org/10.1002/qj.3803",
     "start_datetime": "2023-01-01T01:01Z",
