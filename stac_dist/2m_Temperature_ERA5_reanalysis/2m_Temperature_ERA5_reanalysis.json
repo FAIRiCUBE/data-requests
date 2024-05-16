@@ -42,6 +42,7 @@
         "type": "spatial"
       }
     },
+    "datetime": null,
     "raster:bands": [],
     "title": "ERA5 monthly averaged Temperature (2m) data on single levels for January 2023",
     "area_cover": "Global availability",
@@ -52,6 +53,8 @@
     "models": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=overview",
     "quality_control": "checked, see link: https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=eqc",
     "apis": "import cdsapi  c = cdsapi.Client()  c.retrieve(     'reanalysis-era5-single-levels-monthly-means',     {         'format': 'netcdf',         'product_type': 'monthly_averaged_reanalysis',         'variable': '2m_temperature',         'year': '2023',         'month': '01',         'time': '00:00',     },     'download.nc')",
+    "modification": null,
+    "provision": null,
     "use_case_NHM": "1",
     "platform": "Eox"
   },
