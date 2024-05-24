@@ -1,0 +1,120 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "ERA5_global_climate_data",
+  "properties": {
+    "license": "other",
+    "description": "ERA5 is the fifth generation ECMWF atmospheric reanalysis of the global climate covering the period from January 1940 to present. ERA5 is produced by the Copernicus Climate Change Service (C3S) at ECMWF.",
+    "providers": [],
+    "dataSource": "Google Cloud Storage",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -180,
+          180
+        ],
+        "reference_system": "4326",
+        "type": "spatial",
+        "unit_of_measure": "degree",
+        "step": "0.25"
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          -90,
+          90
+        ],
+        "reference_system": "4326",
+        "type": "spatial",
+        "unit_of_measure": "degree",
+        "step": "0.25"
+      },
+      "time": {
+        "extent": [
+          "1959-01-01T00:00Z",
+          "2023-05-01T00:00Z"
+        ],
+        "type": "temporal",
+        "step": "T1H"
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "type": "spatial"
+      }
+    },
+    "raster:bands": [],
+    "title": "ERA5 global climate data",
+    "datasource_type": "grid",
+    "keywords": "10m_u_component_of_wind, 10m_v_component_of_wind, 2m_temperature, angle_of_sub_gridscale_orography, anisotropy_of_sub_gridscale_orography, geopotential, geopotential_at_surface, high_vegetation_cover, lake_cover, lake_depth, land_sea_mask, low_vegetation_cover, mean_sea_level_pressure, sea_ice_cover, sea_surface_temperature, slope_of_sub_gridscale_orography, soil_type, specific_humidity, standard_deviation_of_filtered_subgrid_orography, standard_deviation_of_orography, surface_pressure, temperature, toa_incident_solar_radiation, total_cloud_cover, total_column_water_vapour, total_precipitation, type_of_high_vegetation, type_of_low_vegetation, u_component_of_wind, v_component_of_wind, vertical_velocity",
+    "area_cover": "global",
+    "documentation": "https://confluence.ecmwf.int/display/CKB/ERA5%3A+data+documentation",
+    "crs": "4326",
+    "start_datetime": "1959-01-01T00:00Z",
+    "end_datetime": "2023-05-01T00:00Z",
+    "Provenance_name": "ECMWF provided through Climate Data Store",
+    "source_data": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels?tab=overview",
+    "quality_control": "The CDS datasets are assessed by the Evaluation and Quality Control (EQC) function of C3S independently of the data supplier. EQC encompasses a framework of processes aimed to assure technical and scientific quality harmonized across all dataset types available through the CDS. During the EQC process, the documentation provided with the dataset is scrutinized and data are checked for usability and reliability. Link: https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels?tab=eqc",
+    "apis": "Google Cloud Storage API. Example endpoint: gs://gcp-public-data-arco-era5/ar/1959-2022-full_37-1h-0p25deg-chunk-1.zarr-v2/",
+    "access_control": "public",
+    "modification": "2023-11-11T00:00Z",
+    "use_case_S4E": "1",
+    "use_case_NHM": "1",
+    "platform": "Eox"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180,
+          -90
+        ],
+        [
+          -180,
+          90
+        ],
+        [
+          180,
+          90
+        ],
+        [
+          180,
+          -90
+        ],
+        [
+          -180,
+          -90
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    -180,
+    -90,
+    180,
+    90
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
