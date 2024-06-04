@@ -11,7 +11,7 @@ For CIS encodings, the following requirements classes are of relevance:
 - Basic Types and Simple Components Schemas: `XML Schema elements and types defined in the “basic_types.xsd” and “simple_components.xsd” schema files implement all classes defined respectively in the “Basic Types” and “Simple Components” UML packages.`
 
 From the Basic Types and Simple Components, we rely on the Quantity and Category Elements. 
-While the Count Element would also be applicable, for the moment we will handle Counts as Quantities.
+While the Count Element would also be applicable, for the moment we will handle Counts as Quantities with a uom of "1" for "unitless".
 
 ## SWE:DataRecord
 SWE:DataRecord, derived from the SWE Common AbstractDataComponent, can be used to group multiple components via the `field` attribute. 
