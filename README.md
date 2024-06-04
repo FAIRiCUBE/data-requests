@@ -8,6 +8,7 @@ Contents of this space:
 
 - [How to Get Data Added](https://github.com/FAIRiCUBE/data-requests/wiki/How-to-Add-Data)
 - [Choosing the right pixel type](https://github.com/FAIRiCUBE/data-requests/wiki/Choosing-the-Right-Pixel-Type)
+- [Details on the Coverage range type, as inherited from SWE Common](https://github.com/FAIRiCUBE/data-requests/blob/main/CoverageEncoding/rangeType.md)
 - [Connecting catalog with datacubes](https://github.com/FAIRiCUBE/data-requests/wiki/Connection-Catalog-Datacubes)
 - [Finding data ingested, datacube access how-to](https://github.com/FAIRiCUBE/data-requests/wiki)
 - [Use case specific modeling and access](https://github.com/FAIRiCUBE/data-requests/wiki/Data-Overview)
