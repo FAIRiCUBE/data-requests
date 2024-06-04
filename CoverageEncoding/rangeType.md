@@ -72,7 +72,8 @@ Note: UCUM 1.8 has been deprecated, current version is [UCUM 2.1](https://ucum.o
 
 The following shows an example of a Quantity rangeType taken from the Demography dataset. Note that ideally we would use the swe:Count type for this purpose.
 
-```<cis11:RangeType>
+```
+<cis11:RangeType>
 	<swe:DataRecord>
 		<swe:field name="Population_total">
 			<swe:Quantity definition="https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution/geostat">
@@ -83,7 +84,7 @@ The following shows an example of a Quantity rangeType taken from the Demography
 						<swe:nilValue reason="">65535</swe:nilValue>
 					</swe:NilValues>
 				</swe:nilValues>
-				<swe:uom code="{tot}"/>
+				<swe:uom code="1"/>
 			</swe:Quantity>
 		</swe:field>
 	</swe:DataRecord>
@@ -99,7 +100,8 @@ When working from a data request, the `Category List` field in the Bands section
 
 The following shows an example of a Category rangeType taken from the DominantLeafType dataset
 
-```<cis11:RangeType>
+```
+<cis11:RangeType>
 	<swe:DataRecord>
 		<swe:field name="DominantLeafType">
 			<swe:Category definition="https://land.copernicus.eu/en/products/high-resolution-layer-dominant-leaf-type">
