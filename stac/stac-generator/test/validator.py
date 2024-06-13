@@ -1,6 +1,8 @@
 import pystac
 import pytest
 import os
+import json
+
 from typing import Any
 
 
@@ -49,10 +51,10 @@ def validate_item(item: pystac.item.Item):
         assert isinstance(float(y["step"]), float), "y step must be float"
 
         # Units of Measurement
-        assert "unit_of_measure" in x.keys(), "No unit in x dimensions"
-        assert isinstance(x["unit_of_measure"], str), "x dimension unit_of_measure must be a string"
-        assert "unit_of_measure" in y.keys(), "No unit in y dimensions"
-        assert isinstance(y["unit_of_measure"], str), "y dimension unit_of_measure must be a string"
+        assert "unit" in x.keys(), "No unit in x dimensions"
+        assert isinstance(x["unit"], str), "x dimension unit must be a string"
+        assert "unit" in y.keys(), "No unit in y dimensions"
+        assert isinstance(y["unit"], str), "y dimension unit must be a string"
 
         # Horizontal CRS
         assert "reference_system" in x.keys(), "No reference_system in x dimensions"
@@ -63,7 +65,7 @@ def validate_item(item: pystac.item.Item):
         # Temporal
         assert "t" in item.properties["cube:dimensions"].keys() or "time" in item.properties["cube:dimensions"].keys()
         time = dict()
-        if "t" in item.properties["cube:dimensions"].keys():
+        if "t" in item.properties["cube:dimensions"].keys() or "time" in item.properties["cube:dimensions"].keys():
             time = item.properties["cube:dimensions"]["t"]
         else:
             time = item.properties["cube:dimensions"]["time"]
@@ -75,7 +77,7 @@ def validate_item(item: pystac.item.Item):
             assert "step" in time.keys(), "No step in time dimensions"
             assert isinstance(time["step"], str), "time's step must be a string"
             # Unit of measure
-            assert isinstance(time["unit_of_measure"], str), "time's unit_of_measure must be a string"
+            assert isinstance(time["unit"], str), "time's unit must be a string"
 
 
         # Range Data validation
@@ -141,7 +143,10 @@ def test_items(dir):
             'catalog.json') and f.endswith('.json')]
 
     for item in items:
-        stac_item = pystac.Item.from_file(os.path.join(dir, item))
+        item_path = os.path.join(dir, item)
+
+        stac_item = pystac.Item.from_file(item_path)
+
         validate_item(stac_item)
 
 
