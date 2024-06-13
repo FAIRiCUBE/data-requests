@@ -16,6 +16,8 @@ Contents of this space:
 
 As data ingest is tightly connected with metadata management, use of data, etc., consider also these related spaces:
 
+- [metadata-editor WebGUI](https://catalog-editor.eoxhub.fairicube.eu/): to provide and edit metadata to be shown in the [data catalog (STAC-fastapi)](https://catalog.eoxhub.fairicube.eu/?.language=en)
+
 - [resource-metadata](https://github.com/FAIRiCUBE/resource-metadata): in addition to the issues providing metadata for resources, also used to discuss technical details on resource metadata
 - [Fairicube Hub](https://github.com/FAIRiCUBE/FAIRiCUBE-Hub-issue-tracker): for general FAIRiCUBE topics
 
