@@ -23,4 +23,4 @@ jobs:
       - name: validate stac items
 
         run: |
-          pytest --verbosity=1  ./stac/stac-generator/test/validator.py
+          pytest --tb=no  ./stac/stac-generator/test/validator.py
