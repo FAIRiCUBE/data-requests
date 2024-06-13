@@ -8,12 +8,15 @@ Contents of this space:
 
 - [How to Get Data Added](https://github.com/FAIRiCUBE/data-requests/wiki/How-to-Add-Data)
 - [Choosing the right pixel type](https://github.com/FAIRiCUBE/data-requests/wiki/Choosing-the-Right-Pixel-Type)
+- [Details on the Coverage range type, as inherited from SWE Common](https://github.com/FAIRiCUBE/data-requests/blob/main/CoverageEncoding/rangeType.md)
 - [Connecting catalog with datacubes](https://github.com/FAIRiCUBE/data-requests/wiki/Connection-Catalog-Datacubes)
 - [Finding data ingested, datacube access how-to](https://github.com/FAIRiCUBE/data-requests/wiki)
 - [Use case specific modeling and access](https://github.com/FAIRiCUBE/data-requests/wiki/Data-Overview)
 - [complete rasdaman documentation](https://doc.rasdaman.com)
 
 As data ingest is tightly connected with metadata management, use of data, etc., consider also these related spaces:
+
+- [metadata-editor WebGUI](https://catalog-editor.eoxhub.fairicube.eu/): to provide and edit metadata to be shown in the [data catalog (STAC-fastapi)](https://catalog.eoxhub.fairicube.eu/?.language=en)
 
 - [resource-metadata](https://github.com/FAIRiCUBE/resource-metadata): in addition to the issues providing metadata for resources, also used to discuss technical details on resource metadata
 - [Fairicube Hub](https://github.com/FAIRiCUBE/FAIRiCUBE-Hub-issue-tracker): for general FAIRiCUBE topics
