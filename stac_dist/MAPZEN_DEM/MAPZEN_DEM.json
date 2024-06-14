@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "MAPZEN_DEM",
   "properties": {
     "datasource_type": "dem",
@@ -13,7 +13,7 @@
             0.000277777777778,
             0.000277777777778
           ],
-          "unit": "\u00b0"
+          "unit": "°"
         },
         "data_type": "float32",
         "statistics": {
@@ -199,7 +199,7 @@
     },
     {
       "rel": "root",
-      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
     },

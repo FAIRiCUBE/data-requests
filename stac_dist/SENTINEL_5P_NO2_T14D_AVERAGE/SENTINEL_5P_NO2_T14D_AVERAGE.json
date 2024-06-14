@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "SENTINEL_5P_NO2_T14D_AVERAGE",
   "properties": {
     "datasource_type": "byoc-972e67a7-2ca8-4bf6-964a-11fe772e3ac2",
@@ -14,7 +14,7 @@
         "url": "https://services.sentinel-hub.com"
       }
     ],
-    "description": "The data comes from the Copernicus Sentinel-5P satellite and shows the averaged nitrogen dioxide concentrations across the globe \u2013 using a 14-day moving average. Concentrations of short-lived pollutants, such as nitrogen dioxide, are indicators of changes in economic slowdowns and are comparable to changes in emissions. Using a 14 day average eliminates some effects which are caused by short term weather changes and cloud cover. The average gives an overview over the whole time period and therefore reflects trends better than shorter time periods.",
+    "description": "The data comes from the Copernicus Sentinel-5P satellite and shows the averaged nitrogen dioxide concentrations across the globe – using a 14-day moving average. Concentrations of short-lived pollutants, such as nitrogen dioxide, are indicators of changes in economic slowdowns and are comparable to changes in emissions. Using a 14 day average eliminates some effects which are caused by short term weather changes and cloud cover. The average gives an overview over the whole time period and therefore reflects trends better than shorter time periods.",
     "keywords": [
       "open data",
       "sentinel hub",
@@ -116,7 +116,7 @@
     },
     {
       "rel": "root",
-      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
     },

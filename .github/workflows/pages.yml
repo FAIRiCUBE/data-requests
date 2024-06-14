@@ -2,12 +2,9 @@
 name: Deploy static content to Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches:
       - main
-  issues:
-    types: [opened, labeled, unlabeled, edited]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -25,6 +22,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+
   # Single deploy job since we're just deploying
   deploy:
     environment:
@@ -59,4 +57,3 @@ jobs:
           PASSWORD: ${{ secrets.PASSWORD }}
         run: |
           python3 ./stac/stac-generator/update_items.py
-

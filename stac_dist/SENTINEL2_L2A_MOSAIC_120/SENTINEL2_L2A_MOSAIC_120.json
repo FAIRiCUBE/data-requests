@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "SENTINEL2_L2A_MOSAIC_120",
   "properties": {
     "datasource_type": "byoc-484d8dbb-9e3e-41f2-b96b-35189d3ae37f",
@@ -428,7 +428,7 @@
     },
     {
       "rel": "root",
-      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
     },

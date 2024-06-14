@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "ALOS_PALSAR2_L2_1_10M",
   "properties": {
     "datasource_type": "byoc-5014c166-c13e-4bcf-b7cf-52d0312c54b8",
@@ -127,7 +127,7 @@
     },
     {
       "rel": "root",
-      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
     },

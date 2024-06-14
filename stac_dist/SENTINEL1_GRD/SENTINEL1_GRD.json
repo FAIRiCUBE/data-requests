@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "SENTINEL1_GRD",
   "properties": {
     "datasource_type": "sentinel-1-grd",
@@ -200,8 +200,8 @@
         "openeo:gsd": {
           "value": [
             [
-              9.259259e-05,
-              9.259259e-05
+              0.00009259259,
+              0.00009259259
             ],
             [
               0.00023148147,
@@ -212,7 +212,7 @@
               0.00037037037
             ]
           ],
-          "unit": "\u00b0"
+          "unit": "°"
         },
         "data_type": "float32",
         "statistics": {
@@ -230,8 +230,8 @@
         "openeo:gsd": {
           "value": [
             [
-              9.259259e-05,
-              9.259259e-05
+              0.00009259259,
+              0.00009259259
             ],
             [
               0.00023148147,
@@ -242,7 +242,7 @@
               0.00037037037
             ]
           ],
-          "unit": "\u00b0"
+          "unit": "°"
         },
         "data_type": "float32",
         "statistics": {
@@ -260,8 +260,8 @@
         "openeo:gsd": {
           "value": [
             [
-              9.259259e-05,
-              9.259259e-05
+              0.00009259259,
+              0.00009259259
             ],
             [
               0.00023148147,
@@ -272,7 +272,7 @@
               0.00037037037
             ]
           ],
-          "unit": "\u00b0"
+          "unit": "°"
         },
         "data_type": "float32",
         "statistics": {
@@ -290,8 +290,8 @@
         "openeo:gsd": {
           "value": [
             [
-              9.259259e-05,
-              9.259259e-05
+              0.00009259259,
+              0.00009259259
             ],
             [
               0.00023148147,
@@ -302,7 +302,7 @@
               0.00037037037
             ]
           ],
-          "unit": "\u00b0"
+          "unit": "°"
         },
         "data_type": "float32",
         "statistics": {
@@ -494,7 +494,7 @@
     },
     {
       "rel": "root",
-      "href": "https://fairicube.github.io/data-requests/catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
     },
