@@ -1,0 +1,191 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "id": "SPARTACUS_v2.1",
+    "properties": {
+      "license": "CC-BY-4.0",
+      "description": "The gridded data set describes the spatial distribution of observed air temperature (minimum temperature (TN) and maximum temperature (TX)), precipitation (RR) and absolute sunshine duration (SA) from day to day since 1961 in kilometer resolution over Austria. In addition to the original daily resolution, [monthly](https://data.hub.geosphere.at/dataset/spartacus-v2-1m-1km), [seasonal](https://data.hub.geosphere.at/dataset/spartacus-v2-1q-1km) and [annual](https://data.hub.geosphere.at/dataset/spartacus-v2-1y-1km) aggregates are available. The data set is operationally expanded on a daily basis.",
+      "providers": [
+        {
+          "organization": "GeoSphere Austria",
+          "doc_link": "https://data.hub.geosphere.at/dataset/spartacus-v2-1d-1km",
+          "organization_email": "kontakt@geosphere.at"
+        }
+      ],
+      "cube:dimensions": {
+        "x": {
+          "axis": "x",
+          "extent": [
+            112500,
+            695500
+          ],
+          "reference_system": "3416",
+          "type": "spatial",
+          "unit_of_measure": "m",
+          "step": "1000"
+        },
+        "y": {
+          "axis": "y",
+          "extent": [
+            258500,
+            586500
+          ],
+          "reference_system": "3416",
+          "type": "spatial",
+          "unit_of_measure": "m",
+          "step": "1000"
+        },
+        "time": {
+          "extent": [
+            "19961-01-01T00:00Z",
+            "2999-01-01T00:00:00Z"
+          ],
+          "type": "temporal",
+          "step": "P1DT0H"
+        },
+        "z": {
+          "extent": [
+            null,
+            null
+          ],
+          "type": "spatial"
+        }
+      },
+      "raster:bands": [
+        {
+          "band_name": "RR",
+          "unit": "kg m-2",
+          "data_type": "float32",
+          "nodata": -999,
+          "definition": "daily precipitation",
+          "description": "daily sum (derived from daily sums measured between 07:00 CET of the respective day and 07:00 CET of the following day)"
+        },
+        {
+          "band_name": "TX",
+          "unit": "degree_Celsius",
+          "data_type": "float32",
+          "nodata": -999,
+          "definition": "daily maximum of air temperature",
+          "description": "daily maximum (derived from daily maxima measured between 19:00 CET of the previous day and 19:00 CET of the respective day",
+          "comment": "only available in the daily data"
+        },
+        {
+          "band_name": "TN",
+          "unit": "degree_Celsius",
+          "data_type": "float32",
+          "nodata": -999,
+          "definition": "daily minimum of air temperature",
+          "description": "daily minimum (derived from daily minima measured between 19:00 CET of the previous day and 19:00 CET of the respective day",
+          "comment": "only available in the daily data"
+        },
+        {
+          "band_name": "TM",
+          "unit": "degree_Celsius",
+          "data_type": "float32",
+          "nodata": -999,
+          "definition": "aggregated mean of air temperature",
+          "description": "aggregated mean (derived from daily minima and maxima measured between 19:00 CET of the previous day and 19:00 CET of the respective day)",
+          "comment": "only available for aggregated products (monthly, yearly, seasonal)"
+        },
+        {
+          "band_name": "SA",
+          "unit": "s",
+          "data_type": "float32",
+          "nodata": -999,
+          "definition": "daily duration of sunshine",
+          "description": "daily sum (derived from daily sums measured between 00:00 CET and 24:00 CET of the respective day)"
+        }
+      ],
+      "title": "SPARTACUS v2.1 - Spatial Reanalysis Dataset for Climate in Austria",
+      "datasource_type": "gridded data",
+      "keywords": "precipitation, temperature, sunshine duration, ",
+      "area_cover": "Austria",
+      "crs": "EPSG:3416",
+      "start_datetime": "19961-01-01T00:00Z",
+      "end_datetime": "2999-01-01T00:00:00Z",
+      "personalData": "no",
+      "metada_standards": "no",
+      "apis": "https://dataset.api.hub.geosphere.at/v1/docs/index.html",
+      "access_control": "open data",
+      "use_case_S4E": "1",
+      "use_case_NHM": "1",
+      "platform": "Eox"
+    },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            9.393909734939921,
+            46.161328568692404
+          ],
+          [
+            9.393909734939921,
+            49.112000163568425
+          ],
+          [
+            17.38218004543295,
+            49.112000163568425
+          ],
+          [
+            17.38218004543295,
+            46.161328568692404
+          ],
+          [
+            9.393909734939921,
+            46.161328568692404
+          ]
+        ]
+      ]
+    },
+    "links": [
+      {
+        "rel": "root",
+        "href": "../catalog.json",
+        "type": "application/json",
+        "title": "data-access catalog"
+      },
+      {
+        "rel": "parent",
+        "href": "../catalog.json",
+        "type": "application/json",
+        "title": "data-access catalog"
+      }
+    ],
+    "assets": {
+      "SPARTACUS v1.2 daily data": {
+        "href": "https://dataset.api.hub.geosphere.at/v1/grid/historical/spartacus-v1-1d-1km",
+        "roles": [
+          "data"
+        ]
+      },
+      "SPARTACUS v1.2 monthly data": {
+        "href": "https://dataset.api.hub.geosphere.at/v1/grid/historical/spartacus-v1-1m-1km",
+        "roles": [
+          "data"
+        ]
+      },
+      "SPARTACUS v1.2 yearly data": {
+        "href": "https://dataset.api.hub.geosphere.at/v1/grid/historical/spartacus-v1-1y-1km",
+        "roles": [
+          "data"
+        ]
+      },
+      "SPARTACUS v1.2 seasonal data": {
+        "href": "https://dataset.api.hub.geosphere.at/v1/grid/historical/spartacus-v1-1s-1km",
+        "roles": [
+          "data"
+        ]
+      }
+    },
+    "bbox": [
+      9.393909734939921,
+      46.161328568692404,
+      17.38218004543295,
+      49.112000163568425
+    ],
+    "stac_extensions": [
+      "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+      "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+    ]
+  }
