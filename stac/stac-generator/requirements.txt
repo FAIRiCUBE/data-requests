@@ -1,5 +1,5 @@
 pystac
-gql
+pytest
 shapely
 stactools
 requests-toolbelt
