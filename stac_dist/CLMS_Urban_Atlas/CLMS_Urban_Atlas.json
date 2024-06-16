@@ -9,7 +9,7 @@
       {
         "organization_name": null,
         "organization": "EEA",
-        "comments": "The Urban Atlas provides pan-European comparable land cover and land use data for Functional Urban Areas (FUA). Urban Atlas 2006 data contain 319 FUAs with more than 100,000 inhabitants as defined by the Urban Audit. The Urban Atlas 2012 data set contains 785 FUAs with more than 50,000 inhabitants, covering EU28 + EFTA countries + West Balkans + Turkey. The nomenclature includes 17 urban classes with MMU 0.25 ha (minor nomenclature changes compared to Urban Atlas 2006) and 10 Rural Classes with MMU 1ha. The data also contain population estimates for each polygon. The Urban Atlas 2018 coverage increased to 788 FUAs covering EU27 + EFTA countries + West Balkans + Turkey + UK. The nomenclature of the Land Cover/Land Use product is the same as for the 2012 version. It includes 17 urban classes with MMU 0.25 ha and 10 Rural Classes with MMU 1ha.The EEA indicator \u201cVegetation productivity\u201d shows a varying impact of the nr of frost days on productivity variations, depending on climatic zone and land cover combinations.",
+        "comments": "The Urban Atlas provides pan-European comparable land cover and land use data for Functional Urban Areas (FUA). Urban Atlas 2006 data contain 319 FUAs with more than 100,000 inhabitants as defined by the Urban Audit. The Urban Atlas 2012 data set contains 785 FUAs with more than 50,000 inhabitants, covering EU28 + EFTA countries + West Balkans + Turkey. The nomenclature includes 17 urban classes with MMU 0.25 ha (minor nomenclature changes compared to Urban Atlas 2006) and 10 Rural Classes with MMU 1ha. The data also contain population estimates for each polygon. The Urban Atlas 2018 coverage increased to 788 FUAs covering EU27 + EFTA countries + West Balkans + Turkey + UK. The nomenclature of the Land Cover/Land Use product is the same as for the 2012 version. It includes 17 urban classes with MMU 0.25 ha and 10 Rural Classes with MMU 1ha.The EEA indicator “Vegetation productivity” shows a varying impact of the nr of frost days on productivity variations, depending on climatic zone and land cover combinations.",
         "doc_link": "https://land.copernicus.eu/local/urban-atlas",
         "organization_email": null,
         "project_purpose": null
@@ -25,9 +25,9 @@
         ],
         "reference_system": "EPSG:3035",
         "type": "spatial",
-        "unit_of_measure": "m",
         "interpolation": null,
-        "step": "10"
+        "step": "10",
+        "unit": "m"
       },
       "y": {
         "axis": "y",
@@ -37,9 +37,9 @@
         ],
         "reference_system": "EPSG:3035",
         "type": "spatial",
-        "unit_of_measure": "m",
         "interpolation": null,
-        "step": "10"
+        "step": "10",
+        "unit": "m"
       },
       "time": {
         "extent": [
