@@ -1,8 +1,10 @@
 # Specification for provision of rangeType information
 
-OGC CIS uses [SWE Common](https://portal.ogc.org/files/?artifact_id=41157) DataRecord types for the provision of rangeType (description of what the numbers provided in the coverage range actually mean)
-To date, this element has often been filled with erroneous values, not taking requirements from the SWE Common specification into account.
-In order to ensure correct provision of CIS encoded data, we will describe the requirements here, together with examples.
+OGC CIS uses [SWE Common](https://portal.ogc.org/files/?artifact_id=41157) DataRecord types for the provision of rangeType (description of what the numbers provided in the coverage range actually mean).
+To date, it is not always entirely clear how to use this DataRecord element in a coverage context, one reason being the known complexity of SWE; also, in a coverage context not all sensor acquisition information may be of equal relevance.
+In order to clarify and exemplify use of SWE Common in CIS encoded data, we will describe the requirements here, together with examples.
+
+A challenge in this context is that many of the detail metadata are not readily available in machine-readable format. In FAIRiCUBE, and likely in many EO data services, data sources used typically require human interpretation of descriptions written in HTML, PDF, or similar, with varying mileage of completeness and conciseness. As both FAIRiCUBE platforms, EOxHub and rasdaman, support the OGC coverage standards, goal is to achieve the same level of (SWE and other) metadata on both. This exercise is considered useful for establishing general best practices useful in other projects, too.  
 
 ## SWE Common
 The OGC Sensor Web Enablement Suite (SWE) aims to cover requirements pertaining to measured or observed data. 
