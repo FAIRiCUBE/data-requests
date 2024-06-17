@@ -16,7 +16,7 @@
         ],
         "reference_system": "4326",
         "type": "spatial",
-        "unit_of_measure": "degree",
+        "unit": "degree",
         "step": "0.25"
       },
       "y": {
@@ -27,7 +27,7 @@
         ],
         "reference_system": "4326",
         "type": "spatial",
-        "unit_of_measure": "degree",
+        "unit": "degree",
         "step": "0.25"
       },
       "time": {
