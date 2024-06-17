@@ -65,7 +65,7 @@ def validate_item(item: pystac.item.Item):
         # Temporal
         assert "t" in item.properties["cube:dimensions"].keys() or "time" in item.properties["cube:dimensions"].keys()
         time = dict()
-        if "t" in item.properties["cube:dimensions"].keys() or "time" in item.properties["cube:dimensions"].keys():
+        if "t" in item.properties["cube:dimensions"].keys():
             time = item.properties["cube:dimensions"]["t"]
         else:
             time = item.properties["cube:dimensions"]["time"]
