@@ -41,7 +41,7 @@
           "2024-05-01T00:00Z"
         ],
         "type": "temporal",
-        "step": "P1M"
+        "step": "P0Y1M0DT0H0M0S"
       },
       "z": {
         "extent": [
@@ -51,6 +51,7 @@
         "type": "spatial"
       }
     },
+    "datetime": null,
     "raster:bands": [
       {
         "band_name": "u10",
@@ -462,6 +463,8 @@
     "provenance_name": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-land-monthly-means",
     "source_data": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-land-monthly-means?tab=form",
     "models": "https://confluence.ecmwf.int/display/CKB/ERA5-Land%3A+data+documentation#heading-LandSurfaceModel",
+    "modification": null,
+    "provision": null,
     "ingestion_status": "complete",
     "platform": "Rasdaman"
   },
