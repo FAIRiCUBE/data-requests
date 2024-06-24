@@ -41,7 +41,8 @@
           "2024-05-01T00:00Z"
         ],
         "type": "temporal",
-        "step": "P0Y1M0DT0H0M0S"
+        "step": "P0Y1M0DT0H0M0S",
+        "unit": "day"
       },
       "z": {
         "extent": [
