@@ -106,6 +106,7 @@
         "band_name": "evaporation_from_the_top_of_canopy",
         "unit": "m[H2O]",
         "data_type": "int16",
+        "nodata": -32767,
         "definition": "https://apps.ecmwf.int/codes/grib/param-db/228100",
         "description": "The amount of evaporation from the canopy interception reservoir at the top of the canopy. This variable is accumulated from the beginning of the forecast time to the end of the forecast step."
       },
