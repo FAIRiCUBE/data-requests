@@ -43,13 +43,6 @@
         "type": "temporal",
         "step": "P0Y1M0DT0H0M0S",
         "unit": "month"
-      },
-      "z": {
-        "extent": [
-          null,
-          null
-        ],
-        "type": "spatial"
       }
     },
     "datetime": null,
