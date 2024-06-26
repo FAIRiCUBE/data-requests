@@ -177,7 +177,7 @@
       },
       {
         "band_name": "leaf_area_index_high_vegetation",
-        "unit": "1",
+        "unit": "m2/m2",
         "data_type": "int16",
         "nodata": -32767,
         "definition": "https://apps.ecmwf.int/codes/grib/param-db/67",
@@ -185,7 +185,7 @@
       },
       {
         "band_name": "leaf_area_index_low_vegetation",
-        "unit": "1",
+        "unit": "m2/m2",
         "data_type": "int16",
         "nodata": -32767,
         "definition": "https://apps.ecmwf.int/codes/grib/param-db/66",
@@ -417,7 +417,7 @@
       },
       {
         "band_name": "volumetric_soil_water_layer_1",
-        "unit": "1",
+        "unit": "m3/m3",
         "data_type": "int16",
         "nodata": -32767,
         "definition": "https://apps.ecmwf.int/codes/grib/param-db/39",
@@ -425,7 +425,7 @@
       },
       {
         "band_name": "volumetric_soil_water_layer_2",
-        "unit": "1",
+        "unit": "m3/m3",
         "data_type": "int16",
         "nodata": -32767,
         "definition": "https://apps.ecmwf.int/codes/grib/param-db/40",
@@ -433,7 +433,7 @@
       },
       {
         "band_name": "volumetric_soil_water_layer_3",
-        "unit": "1",
+        "unit": "m3/m3",
         "data_type": "int16",
         "nodata": -32767,
         "definition": "https://apps.ecmwf.int/codes/grib/param-db/41",
@@ -441,7 +441,7 @@
       },
       {
         "band_name": "volumetric_soil_water_layer_4",
-        "unit": "1",
+        "unit": "m3/m3",
         "data_type": "int16",
         "nodata": -32767,
         "definition": "https://apps.ecmwf.int/codes/grib/param-db/42",
