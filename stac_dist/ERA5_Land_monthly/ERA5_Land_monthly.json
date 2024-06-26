@@ -518,7 +518,7 @@
   ],
   "assets": {
     "thumbnail_rasdaman": {
-      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?service=WMS&version=1.3.0&request=GetMap&layers=ERA5_Land_monthly&bbox=-90,180,90,180&time=\"1950-01-01T00:00Z\"&width=800&height=600&crs=EPSG:4326&format=image/png&transparent=true&styles=",
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?service=WMS&version=1.3.0&request=GetMap&layers=ERA5_Land_monthly&bbox=-90,-180,90,180&time=\"1950-01-01T00:00Z\"&width=800&height=600&crs=EPSG:4326&format=image/png&transparent=true&styles=",
       "roles": [
         "thumbnail"
       ]
