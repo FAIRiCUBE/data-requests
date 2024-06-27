@@ -3,6 +3,7 @@
   "stac_version": "1.0.0",
   "id": "test_item_dont_merge",
   "properties": {
+    "description": "testing item",
     "providers": [],
     "cube:dimensions": {
       "x": {
@@ -39,10 +40,13 @@
         "type": "spatial"
       }
     },
+    "datetime": null,
     "raster:bands": [],
     "title": "test item",
     "start_datetime": "1900-01-01T00:00:00Z",
     "end_datetime": "2999-01-01T00:00:00Z",
+    "modification": null,
+    "provision": null,
     "platform": "Eox"
   },
   "geometry": {
