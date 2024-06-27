@@ -1,9 +1,9 @@
 {
   "type": "Feature",
-  "stac_version": "2.2.0",
+  "stac_version": "1.0.0",
   "id": "eu_demography",
   "properties": {
-    "description": "European Demography on a 1km grid\n2018 - eu_demography_2018_index\n2021 - eu_demography_2021_index\nvirtual coverage - eu_demography_virtual_coverage_index",
+    "description": "European Demography on a 1km grid\n2018 - eu_demography_2018_index\n2021 - eu_demography_2021_index\nVirtual Coverage - eu_demography_virtual_coverage_index",
     "providers": [],
     "dataSource": "",
     "cube:dimensions": {
@@ -15,7 +15,6 @@
         ],
         "reference_system": "3035",
         "type": "spatial",
-        "unit_of_measure": "meter",
         "step": "1000"
       },
       "y": {
@@ -26,7 +25,6 @@
         ],
         "reference_system": "3035",
         "type": "spatial",
-        "unit_of_measure": "meter",
         "step": "1000"
       },
       "time": {
@@ -35,9 +33,15 @@
           "2020-12-31T23:59:59Z"
         ],
         "type": "temporal",
-        "step": "P3Y"
+        "step": "P3Y0M0DT0H0M0S"
       },
-      "z": {}
+      "z": {
+        "name": "z",
+        "extent": [
+          null,
+          null
+        ]
+      }
     },
     "datetime": "2021-02-17T15:13:53Z",
     "raster:bands": [],
@@ -47,7 +51,8 @@
     "start_datetime": "2018-01-01T00:00Z",
     "end_datetime": "2020-12-31T23:59:59Z",
     "personalData": "https://ec.europa.eu/eurostat/web/main/about/policies/copyright",
-    "Provenance_name": "https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/population-distribution-demography/geostat",
+    "modification": null,
+    "provision": null,
     "use_case_NHM": "two",
     "platform": "rasdaman"
   },
@@ -90,18 +95,6 @@
       "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
-    },
-    {
-      "href": "https://fairicube.rasdaman.com/rasdaman/ows?&SERVICE=WCS&VERSION=2.1.0&REQUEST=DescribeCoverage&COVERAGEID=eu_demography&outputType=GeneralGridCoverage",
-      "rel": "about",
-      "type": "text/xml",
-      "title": "Link to the coverage description in XML"
-    },
-    {
-      "href": "https://fairicube.rasdaman.com/rasdaman-dashboard/?layers=eu_demography",
-      "rel": "service",
-      "type": "text/html",
-      "title": "Link to the web application to Access, process gridded data"
     }
   ],
   "assets": {
