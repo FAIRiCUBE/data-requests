@@ -1,0 +1,100 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "test_item_dont_merge",
+  "properties": {
+    "providers": [],
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -180,
+          180
+        ],
+        "reference_system": 4326,
+        "type": "spatial"
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          -90,
+          90
+        ],
+        "reference_system": 4326,
+        "type": "spatial"
+      },
+      "time": {
+        "extent": [
+          "1900-01-01T00:00:00Z",
+          "2999-01-01T00:00:00Z"
+        ],
+        "type": "temporal",
+        "step": ""
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "type": "spatial"
+      }
+    },
+    "raster:bands": [],
+    "title": "test item",
+    "start_datetime": "1900-01-01T00:00:00Z",
+    "end_datetime": "2999-01-01T00:00:00Z",
+    "platform": "Eox"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180,
+          -90
+        ],
+        [
+          -180,
+          90
+        ],
+        [
+          180,
+          90
+        ],
+        [
+          180,
+          -90
+        ],
+        [
+          -180,
+          -90
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    -180,
+    -90,
+    180,
+    90
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
