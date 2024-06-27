@@ -3,7 +3,7 @@
   "stac_version": "1.0.0",
   "id": "eu_demography",
   "properties": {
-    "description": "European Demography on a 1km grid\n2018 - eu_demography_2018_index\n2021 - eu_demography_2021_index\nVirtual Coverage - eu_demography_virtual_coverage_index",
+    "description": "European Demography on a 1km grid\n2018 - eu_demography_2018_index\n2021 - eu_demography_2021_index\nvirtual coverage - eu_demography_virtual_coverage_index",
     "providers": [],
     "dataSource": "",
     "cube:dimensions": {
