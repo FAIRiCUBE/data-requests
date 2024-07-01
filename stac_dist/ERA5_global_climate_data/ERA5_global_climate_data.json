@@ -50,7 +50,7 @@
           "2023-05-01T00:00Z"
         ],
         "type": "temporal",
-        "step": "T1H",
+        "step": "",
         "unit": "hours"
       },
       "z": {
@@ -62,7 +62,15 @@
       }
     },
     "datetime": null,
-    "raster:bands": [],
+    "raster:bands": [
+      {
+        "band_name": "2m_temperature",
+        "unit": "K",
+        "definition": "2 metre temperature",
+        "description": "This parameter is the temperature of air at 2m above the surface of land, sea or in-land waters.",
+        "comment": "source: https://codes.ecmwf.int/grib/param-db/167"
+      }
+    ],
     "title": "ERA5 global climate data",
     "datasource_type": "grid",
     "keywords": "10m_u_component_of_wind, 10m_v_component_of_wind, 2m_temperature, angle_of_sub_gridscale_orography, anisotropy_of_sub_gridscale_orography, geopotential, geopotential_at_surface, high_vegetation_cover, lake_cover, lake_depth, land_sea_mask, low_vegetation_cover, mean_sea_level_pressure, sea_ice_cover, sea_surface_temperature, slope_of_sub_gridscale_orography, soil_type, specific_humidity, standard_deviation_of_filtered_subgrid_orography, standard_deviation_of_orography, surface_pressure, temperature, toa_incident_solar_radiation, total_cloud_cover, total_column_water_vapour, total_precipitation, type_of_high_vegetation, type_of_low_vegetation, u_component_of_wind, v_component_of_wind, vertical_velocity",
@@ -71,9 +79,9 @@
     "crs": "4326",
     "start_datetime": "1959-01-01T00:00Z",
     "end_datetime": "2023-05-01T00:00Z",
-    "source_data": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels?tab=overview",
+    "source_data": "gs://gcp-public-data-arco-era5/ar/1959-2022-full_37-1h-0p25deg-chunk-1.zarr-v2/",
     "quality_control": "The CDS datasets are assessed by the Evaluation and Quality Control (EQC) function of C3S independently of the data supplier. EQC encompasses a framework of processes aimed to assure technical and scientific quality harmonized across all dataset types available through the CDS. During the EQC process, the documentation provided with the dataset is scrutinized and data are checked for usability and reliability. Link: https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels?tab=eqc",
-    "apis": "Google Cloud Storage API. Example endpoint: gs://gcp-public-data-arco-era5/ar/1959-2022-full_37-1h-0p25deg-chunk-1.zarr-v2/",
+    "apis": "Google Cloud Storage API. Notebook example related to ERA5 Data: https://github.com/google-research/arco-era5/blob/main/docs/0-Surface-Reanalysis-Walkthrough.ipynb",
     "access_control": "public",
     "modification": "2023-11-11T00:00Z",
     "provision": null,
