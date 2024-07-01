@@ -67,6 +67,7 @@
         "band_name": "2m_temperature",
         "unit": "K",
         "data_type": "float16",
+        "nodata": "No",
         "definition": "2 metre temperature",
         "description": "This parameter is the temperature of air at 2m above the surface of land, sea or in-land waters.",
         "comment": "source: https://codes.ecmwf.int/grib/param-db/167"
