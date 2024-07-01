@@ -5,8 +5,22 @@
   "properties": {
     "license": "other",
     "description": "ERA5 is the fifth generation ECMWF atmospheric reanalysis of the global climate covering the period from January 1940 to present. ERA5 is produced by the Copernicus Climate Change Service (C3S) at ECMWF.",
-    "providers": [],
-    "dataSource": "Google Cloud Storage",
+    "providers": [
+      {
+        "organization_name": "ECMWF",
+        "organization": "ECMWF",
+        "comments": "License: Lincence to use Copernicus Products https://cds.climate.copernicus.eu/cdsapp/#!/terms/licence-to-use-copernicus-products\nDOI: 10.24381/cds.bd0915c6",
+        "doc_link": "https://confluence.ecmwf.int/display/CKB/ERA5%3A+data+documentation",
+        "roles": "producer"
+      },
+      {
+        "organization": "Google Cloud ",
+        "comments": "cloud-optimized version of the dataset hosted on Google Cloud Storage",
+        "doc_link": "https://cloud.google.com/storage/docs/public-datasets/era5",
+        "roles": "host"
+      }
+    ],
+    "dataSource": "Climate Data Store",
     "cube:dimensions": {
       "x": {
         "axis": "x",
@@ -36,7 +50,8 @@
           "2023-05-01T00:00Z"
         ],
         "type": "temporal",
-        "step": "T1H"
+        "step": "T1H",
+        "unit": "hours"
       },
       "z": {
         "extent": [
@@ -46,6 +61,7 @@
         "type": "spatial"
       }
     },
+    "datetime": null,
     "raster:bands": [],
     "title": "ERA5 global climate data",
     "datasource_type": "grid",
@@ -55,12 +71,12 @@
     "crs": "4326",
     "start_datetime": "1959-01-01T00:00Z",
     "end_datetime": "2023-05-01T00:00Z",
-    "Provenance_name": "ECMWF provided through Climate Data Store",
     "source_data": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels?tab=overview",
     "quality_control": "The CDS datasets are assessed by the Evaluation and Quality Control (EQC) function of C3S independently of the data supplier. EQC encompasses a framework of processes aimed to assure technical and scientific quality harmonized across all dataset types available through the CDS. During the EQC process, the documentation provided with the dataset is scrutinized and data are checked for usability and reliability. Link: https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels?tab=eqc",
     "apis": "Google Cloud Storage API. Example endpoint: gs://gcp-public-data-arco-era5/ar/1959-2022-full_37-1h-0p25deg-chunk-1.zarr-v2/",
     "access_control": "public",
     "modification": "2023-11-11T00:00Z",
+    "provision": null,
     "use_case_S4E": "1",
     "use_case_NHM": "1",
     "platform": "Eox"
