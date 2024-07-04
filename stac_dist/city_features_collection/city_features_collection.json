@@ -24,8 +24,9 @@
         ],
         "reference_system": "EPSG:4326",
         "type": "spatial",
+        "unit": "degree",
         "interpolation": "one value per city",
-        "step": "irregular"
+        "step": "1"
       },
       "y": {
         "axis": "y",
@@ -35,8 +36,9 @@
         ],
         "reference_system": "EPSG:4326",
         "type": "spatial",
+        "unit": "degree",
         "interpolation": "one value per city",
-        "step": "irregular"
+        "step": "1"
       },
       "time": {
         "extent": [
