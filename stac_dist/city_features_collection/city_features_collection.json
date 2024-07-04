@@ -46,7 +46,8 @@
           "2018-12-31T00:00Z"
         ],
         "type": "temporal",
-        "step": "P1Y0M0DT0H0M0S"
+        "step": "P1Y0M0DT0H0M0S",
+        "unit": "year"
       },
       "z": {
         "extent": [
