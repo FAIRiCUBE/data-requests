@@ -70,6 +70,7 @@
       {
         "band_name": "environmental_zone",
         "unit": "categorical",
+        "data_type": "other",
         "nodata": -999,
         "definition": "Environmental zone to which the city belongs",
         "description": "Environmental zone to which the city belongs",
