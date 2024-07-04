@@ -24,7 +24,8 @@
         ],
         "reference_system": "EPSG:4326",
         "type": "spatial",
-        "interpolation": "one value per city"
+        "interpolation": "one value per city",
+        "step": "irregular"
       },
       "y": {
         "axis": "y",
@@ -34,7 +35,8 @@
         ],
         "reference_system": "EPSG:4326",
         "type": "spatial",
-        "interpolation": "one value per city"
+        "interpolation": "one value per city",
+        "step": "irregular"
       },
       "time": {
         "extent": [
@@ -53,11 +55,29 @@
       }
     },
     "datetime": "2024-04-15T13:38:32Z",
-    "raster:bands": [],
+    "raster:bands": [
+      {
+        "band_name": "city area ha",
+        "unit": "ha",
+        "data_type": "int16",
+        "nodata": -999,
+        "definition": "Area in hectares of the core city",
+        "description": "Area in hectares of the core city. Core city boundary is defined by Urban Audit"
+      },
+      {
+        "band_name": "environmental_zone",
+        "unit": "categorical",
+        "nodata": -999,
+        "definition": "Environmental zone to which the city belongs",
+        "description": "Environmental zone to which the city belongs",
+        "category_list": "ALN BOR NEM ATN ALS CON ATC PAN LUS ANA MDM MDN MDS MAC ARC",
+        "comment": "Codelist: https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/data/city_features_collection/codelist_environmental_zones.csv"
+      }
+    ],
     "title": "City features collection",
     "datasource_type": "geojson",
     "keywords": "eu cities, urban atlas, land, climate, socioeconomic, estat",
-    "documentation": "codebook: data/city_features_collection/city_features_collection_codebook.csv",
+    "documentation": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/data/city_features_collection/city_features_collection_codebook.csv",
     "crs": "EPSG:4326",
     "start_datetime": "2024-04-18T00:00Z",
     "end_datetime": "2018-12-31T00:00Z",
