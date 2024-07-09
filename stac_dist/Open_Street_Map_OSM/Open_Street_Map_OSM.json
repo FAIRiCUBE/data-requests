@@ -1,0 +1,166 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "Open_Street_Map_OSM",
+  "properties": {
+    "license": null,
+    "description": null,
+    "providers": [
+      {
+        "organization_name": null,
+        "organization": "OSM",
+        "comments": "OSM provides 2D-level data for buildings",
+        "doc_link": null,
+        "organization_email": null,
+        "project_purpose": null
+      }
+    ],
+    "dataSource": "www.openstreetmap.org",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -180,
+          180
+        ],
+        "reference_system": "EPSG:4326",
+        "type": "spatial",
+        "unit_of_measure": "",
+        "interpolation": ""
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          -90,
+          90
+        ],
+        "reference_system": "EPSG:4326",
+        "type": "spatial",
+        "unit_of_measure": "",
+        "interpolation": ""
+      },
+      "time": {
+        "extent": [
+          "1900-01-01T00:00:00Z",
+          "2999-01-01T00:00:00Z"
+        ],
+        "type": "temporal",
+        "step": "P0Y0M0DT0H0M0S"
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "unit_of_measure": null,
+        "interpolation": null,
+        "type": "spatial"
+      }
+    },
+    "datetime": "Z",
+    "raster:bands": [
+      {
+        "band_name": null,
+        "unit": null,
+        "data_type": "other",
+        "definition": "",
+        "description": null,
+        "category_list": null,
+        "comment": null,
+        "interpolation": null
+      }
+    ],
+    "title": "Open Street Map (OSM)",
+    "datasource_type": "vector",
+    "keywords": null,
+    "area_cover": "World",
+    "documentation": null,
+    "crs": "",
+    "start_datetime": "1900-01-01T00:00:00Z",
+    "end_datetime": "2999-01-01T00:00:00Z",
+    "personalData": null,
+    "Provenance_name": null,
+    "preprocessing": null,
+    "modification": null,
+    "provision": null,
+    "use_case_S4E": 2,
+    "use_case_WER": 2,
+    "use_case_NHM": 1,
+    "use_case_NILU": 1,
+    "use_case_NHM_2": "x",
+    "ingestion_status": "UCs need it only as backdrop, therefore no ingestion necessary",
+    "platform": "Both"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180,
+          -90
+        ],
+        [
+          -180,
+          90
+        ],
+        [
+          180,
+          90
+        ],
+        [
+          180,
+          -90
+        ],
+        [
+          -180,
+          -90
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?&SERVICE=WCS&VERSION=2.1.0&REQUEST=DescribeCoverage&COVERAGEID=Open_Street_Map_OSM&outputType=GeneralGridCoverage",
+      "rel": "about",
+      "type": "text/xml",
+      "title": "Link to the rasdaman coverage description in XML"
+    },
+    {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman-dashboard/?layers=Open_Street_Map_OSM",
+      "rel": "service",
+      "type": "text/html",
+      "title": "Link to the rasdaman web application to Access, process gridded data"
+    }
+  ],
+  "assets": {
+    "thumbnail_rasdaman": {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?service=WMS&version=1.3.0&request=GetMap&layers=Open_Street_Map_OSM&bbox=-90,-180,90,180&time=\"1900-01-01T00:00:00Z\"&width=800&height=600&crs=EPSG:4326&format=image/png&transparent=true&styles=",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    -180,
+    -90,
+    180,
+    90
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
