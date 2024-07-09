@@ -1,0 +1,122 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "properties": {
+    "license": null,
+    "description": null,
+    "area_cover": "EEA-38+UK",
+    "crs": "EPSG:3035",
+    "providers": [
+      {
+        "organization": "EEA",
+        "organization_name": null,
+        "organization_email": null,
+        "orcid_id": null,
+        "project_purpose": null,
+        "doc_link": "https://land.copernicus.eu/local/urban-atlas",
+        "comments": "The Urban Atlas is composed of a suite of products that encompasses, amongst others, a Street Tree Layer produced within the level 1 urban mask for each FUA (all classes starting with code \u201c1\u201d)."
+      }
+    ],
+    "dataSource": "https://land.copernicus.eu/local/urban-atlas",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -22.378923,
+          42.33137
+        ],
+        "reference_system": "EPSG:4326",
+        "type": "spatial",
+        "unit_of_measure": "m",
+        "interpolation": null,
+        "step": 10
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          27.920351,
+          70.248796
+        ],
+        "reference_system": "EPSG:4326",
+        "type": "spatial",
+        "unit_of_measure": "m",
+        "interpolation": null,
+        "step": 10
+      },
+      "z": {
+        "axis": "z",
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "type": "spatial",
+        "unit_of_measure": null,
+        "interpolation": null
+      },
+      "time": {
+        "extent": [
+          "2012-01-01T00:00:00Z",
+          "2018-01-01T00:00:00Z"
+        ],
+        "type": "temporal",
+        "unit_of_measure": "y",
+        "interpolation": null,
+        "step": "P6Y"
+      }
+    },
+    "datetime": "2000-01-01T00:00:00Z",
+    "raster:bands": [
+      {
+        "band_name": null,
+        "unit": null,
+        "nodata": null,
+        "data_type": null,
+        "definition": null,
+        "description": null,
+        "category_list": null,
+        "comment": null,
+        "interpolation": null
+      }
+    ],
+    "title": "CLMS Urban Atlas Street Tree Layer",
+    "datasource_type": "vector",
+    "personalData": null,
+    "Provenance_name": "EO-based",
+    "preprocessing": null,
+    "documentation": null,
+    "keywords": null,
+    "use_case_S4E": 1,
+    "use_case_WER": 2,
+    "use_case_NHM_2": null,
+    "use_case_NILU": null,
+    "use_case_NHM": null,
+    "platform": "Eox",
+    "ingestion_status": "Contact S4E to get access"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": []
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "id": "CLMS_Urban_Atlas_Street_Tree_Layer"
+}
