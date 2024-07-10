@@ -4,7 +4,7 @@
   "id": "corine_land_cover",
   "properties": {
     "license": null,
-    "description": "it consists of an inventory of land cover in 44 cases.",
+    "description": "It consists of an inventory of land cover in 44 cases.",
     "providers": [
       {
         "organization_name": null,
