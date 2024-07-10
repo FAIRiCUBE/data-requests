@@ -5,6 +5,7 @@
   "properties": {
     "description": "testing item",
     "providers": [],
+    "dataSource": "edits",
     "cube:dimensions": {
       "x": {
         "axis": "x",
