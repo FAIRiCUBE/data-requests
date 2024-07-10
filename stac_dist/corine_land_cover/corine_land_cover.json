@@ -4,7 +4,7 @@
   "id": "corine_land_cover",
   "properties": {
     "license": null,
-    "description": "It consists of an inventory of land cover in 44 cases.",
+    "description": "it consists of an inventory of land cover in 44 cases.",
     "providers": [
       {
         "organization_name": null,
@@ -25,7 +25,6 @@
         ],
         "reference_system": "EPSG:4326",
         "type": "spatial",
-        "unit_of_measure": "m",
         "interpolation": null,
         "step": 100
       },
@@ -37,7 +36,6 @@
         ],
         "reference_system": "EPSG:4326",
         "type": "spatial",
-        "unit_of_measure": "m",
         "interpolation": null,
         "step": 100
       },
@@ -55,7 +53,6 @@
           null
         ],
         "reference_system": null,
-        "unit_of_measure": null,
         "interpolation": null,
         "type": "spatial"
       }
@@ -83,7 +80,6 @@
     "start_datetime": "1990-01-01T00:00:00Z",
     "end_datetime": "2018-01-01T00:00:00Z",
     "personalData": null,
-    "Provenance_name": "EO-based, produced  by countries",
     "preprocessing": null,
     "modification": null,
     "provision": null,
