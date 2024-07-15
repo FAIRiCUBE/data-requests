@@ -79,6 +79,306 @@
         "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
         "comment": "Band 2",
         "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 3",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 4",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 5",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 6",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 7",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 8",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 9",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 10",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 11",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 12",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 13",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 14",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 15",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 16",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 17",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 18",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 19",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 20",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 21",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 22",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 23",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 24",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 25",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 26",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 27",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 28",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 29",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 30",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 31",
+        "interpolation": "SUM"
+      },
+      {
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 32",
+        "interpolation": "SUM"
       }
     ],
     "title": "Vienna_Land_Use",
