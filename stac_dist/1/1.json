@@ -3,47 +3,52 @@
   "stac_version": "1.0.0",
   "id": "1",
   "properties": {
-    "license": "other",
-    "description": "Real-life mapping from 2007 Vienna\nThis database depicts the actual land use of Vienna in a generalised form. The database is an aerial image interpretation with the addition of additional factual data. There are 32 usage categories from the areas of housing, green areas, traffic, etc. \n",
+    "license": "CC-BY-4.0",
+    "description": "land use mapping 2024 Vienna\nThis database depicts the actual land use of Vienna in a generalised form. The database is an aerial image interpretation with the addition of additional factual data. There are 32 usage categories from the areas of housing, green areas, traffic, etc. \n",
     "providers": [
       {
         "organization_name": "Stadt Wien",
         "organization": "Stadt Wien",
         "doc_link": "https://data.europa.eu/data/datasets/2f5baa1f-208c-42c2-8d04-9ea74aa1b229?locale=en",
         "organization_email": "open@post.wien.gv.at",
-        "ORCID_ID": " 2f5baa1f-208c-42c2-8d04-9ea74aa1b229",
+        "ORCID_ID": "",
         "roles": "licensor"
       }
     ],
-    "dataSource": "data.gv.at",
+    "dataSource": "Open data Austria (data.gv.at)",
     "cube:dimensions": {
       "x": {
         "axis": "x",
         "extent": [
-          16.18218,
-          16.577511
+          331000,
+          354000
         ],
+        "reference_system": "EPSG:31256",
         "type": "spatial",
-        "interpolation": "NN",
+        "unit": "meter",
+        "interpolation": "sum land use area cover per 100m x 100m cell",
         "step": "100"
       },
       "y": {
         "axis": "y",
         "extent": [
-          48.117668,
-          48.322571
+          -11200,
+          18800
         ],
+        "reference_system": "EPSG:31256",
         "type": "spatial",
-        "interpolation": "NN",
+        "unit": "meter",
+        "interpolation": "sum land use area cover per 100m x 100m cell",
         "step": "100"
       },
       "time": {
         "extent": [
-          "2007-01-01T00:00Z",
-          "2999-01-01T00:00:00Z"
+          "2024-01-01T00:00Z",
+          "2024-12-31T00:00Z"
         ],
         "type": "temporal",
-        "step": ""
+        "step": "P1Y",
+        "unit": "year"
       },
       "z": {
         "extent": [
@@ -53,27 +58,37 @@
         "type": "spatial"
       }
     },
-    "datetime": null,
+    "datetime": "2024-07-15T16:16:26Z",
     "raster:bands": [
       {
-        "band_name": "d",
-        "unit": "category",
-        "data_type": "int16",
-        "nodata": 0,
-        "definition": "locker bebautes Wohn(misch)gebiet\n",
-        "comment": "Band 1"
+        "band_name": "land use area [% cell cover]] ",
+        "unit": "%",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "low density built-up residential (mixed) area\n",
+        "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
+        "comment": "Band 1",
+        "interpolation": "SUM"
       }
     ],
     "title": "Vienna_Land_Use",
-    "datasource_type": "GML ",
-    "keywords": "land use",
+    "datasource_type": "WFS (GML) ",
+    "keywords": "Loosely built-up residential (mixed) area ,Medium-density residential (mixed) area ,dense residential (mixed) area ,large-volume, more solid residential (mixed) construction ,Office and administrative district ,solitary commercial structures ,Commercial, core and mixed areas ,Mixed use low density ,Industry, manufacturing, wholesale incl. warehousing ,Culture, leisure, trade fair ,Health and care ,Education ,Sports and baths (indoor) ,Military facilities ,Sewage treatment plant, landfill ,Energy supply and broadcasting facilities ,Water supply ,Transformation area, construction site, material handling ,Road space favoured ,Road space uncovered ,Car parks and multi-storey car parks ,Railway stations and railway facilities ,Transport and logistics incl. storage ,Park, green areas ,Sports and bathing (outdoor), camping ,Cemetery ,Field ,Vineyard ,Horticulture, orchards ,Forest ,Meadow ,Waters incl. stream bed",
     "area_cover": "415km2",
-    "crs": "GK-M34 (EPSG:31256)",
-    "start_datetime": "2007-01-01T00:00Z",
-    "end_datetime": "2999-01-01T00:00:00Z",
+    "crs": "EPSG:31256",
+    "start_datetime": "2024-01-01T00:00Z",
+    "end_datetime": "2024-12-31T00:00Z",
+    "provenance_name": "data.gv.at ",
+    "preprocessing": "Union of landuse vector dataset with 100m grid and export of every land use class as single raster band",
+    "source_data": "https://data.wien.gv.at/daten/geo?version=1.1.0&service=WFS&request=GetCapabilities",
+    "models": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/notebooks/dev/f06_pre_processing/Vienna_land_use.ipynb",
+    "quality_control": "",
+    "apis": "AWS-S3 API",
+    "access_control": "fairicube account required ",
     "modification": null,
     "provision": null,
     "use_case_S4E": "1",
+    "use_case_NHM_2": "1",
     "platform": "Eox"
   },
   "geometry": {
@@ -81,24 +96,24 @@
     "coordinates": [
       [
         [
-          16.18218,
-          48.117668
+          20.527587778333267,
+          44.951075003750404
         ],
         [
-          16.18218,
-          48.322571
+          20.527587778333267,
+          45.2313494572559
         ],
         [
-          16.577511,
-          48.322571
+          20.839371582277582,
+          45.2313494572559
         ],
         [
-          16.577511,
-          48.117668
+          20.839371582277582,
+          44.951075003750404
         ],
         [
-          16.18218,
-          48.117668
+          20.527587778333267,
+          44.951075003750404
         ]
       ]
     ]
@@ -117,12 +132,19 @@
       "title": "data-access catalog"
     }
   ],
-  "assets": {},
+  "assets": {
+    "r01_landuse": {
+      "href": "https://fairicube.s3.eu-central-1.amazonaws.com/vienna_data/100m/",
+      "roles": [
+        "data"
+      ]
+    }
+  },
   "bbox": [
-    16.18218,
-    48.117668,
-    16.577511,
-    48.322571
+    20.527587778333267,
+    44.951075003750404,
+    20.839371582277582,
+    45.2313494572559
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
