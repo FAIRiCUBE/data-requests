@@ -38,7 +38,7 @@
           "2023-12-31T00:00Z"
         ],
         "type": "temporal",
-        "step": "P1Y",
+        "step": "P1Y0M0DT0H0M0S",
         "interpolation": "average"
       },
       "z": {
@@ -53,6 +53,8 @@
     "raster:bands": [
       {
         "band_name": "hight [meter] above sea level NN ",
+        "unit": "meter",
+        "data_type": "float32",
         "nodata": -3.40282e+38,
         "definition": "average elevation inside 100x100m cell  [meter] above sea level NN ",
         "description": "average elevation inside 100x100m cell  [meter] above sea level NN ",
@@ -67,7 +69,6 @@
     "crs": "EPSG:31256",
     "start_datetime": "2015-01-20T00:00Z",
     "end_datetime": "2023-12-31T00:00Z",
-    "unit_of_measure": "meter",
     "resolution": "100",
     "provenance_name": "data.gv.at ",
     "preprocessing": "Clipped to city border of Vienna",
