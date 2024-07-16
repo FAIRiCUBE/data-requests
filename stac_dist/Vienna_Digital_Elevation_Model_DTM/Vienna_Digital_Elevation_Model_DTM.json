@@ -39,6 +39,7 @@
         ],
         "type": "temporal",
         "step": "P1Y0M0DT0H0M0S",
+        "unit": "year",
         "interpolation": "average"
       },
       "z": {
