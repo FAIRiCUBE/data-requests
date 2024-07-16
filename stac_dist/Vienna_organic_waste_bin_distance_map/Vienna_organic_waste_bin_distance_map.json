@@ -39,16 +39,10 @@
           "1900-01-01T00:00:00Z",
           "2999-01-01T00:00:00Z"
         ],
-        "step": "P1Y",
+        "step": "P1Y0M0DT0H0M0S",
         "unit": "year"
       },
-      "z": {
-        "extent": [
-          null,
-          null
-        ],
-        "type": "spatial"
-      }
+      "z": {}
     },
     "datetime": "2024-07-16T17:01:55Z",
     "raster:bands": [
