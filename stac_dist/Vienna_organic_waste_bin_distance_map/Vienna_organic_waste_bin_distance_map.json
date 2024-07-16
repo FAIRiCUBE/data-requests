@@ -1,0 +1,134 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "Vienna_organic_waste_bin_distance_map",
+  "properties": {
+    "license": "CC-BY-NC-4.0",
+    "description": "Map which shows for every 100m cell the normalized distance in meter to the next organic waste bin",
+    "providers": [],
+    "dataSource": "Open data Austria (data.gv.at)",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          331000,
+          354000
+        ],
+        "reference_system": "EPSG:31256",
+        "type": "spatial",
+        "unit": "meter",
+        "interpolation": "distance",
+        "step": "100"
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          -11200,
+          18800
+        ],
+        "reference_system": "EPSG:31256",
+        "type": "spatial",
+        "unit": "meter",
+        "interpolation": "distance",
+        "step": "100"
+      },
+      "time": {
+        "extent": [],
+        "type": "temporal",
+        "values": [
+          "1900-01-01T00:00:00Z",
+          "2999-01-01T00:00:00Z"
+        ],
+        "step": "P1Y",
+        "unit": "year"
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "type": "spatial"
+      }
+    },
+    "datetime": "2024-07-16T17:01:55Z",
+    "raster:bands": [
+      {
+        "band_name": "normalized distance to next bin",
+        "unit": "meter",
+        "data_type": "float32",
+        "nodata": "-",
+        "definition": "normalized \n Distance to next c organic waste bin\n(avg inside 100m cell)",
+        "description": "normalized \n Distance to next c organic waste bin\n(avg inside 100m cell)",
+        "comment": "Band 1",
+        "interpolation": "AVG"
+      }
+    ],
+    "title": "Organic waste bin distance map of Vienna",
+    "datasource_type": "POINT",
+    "keywords": "organic waste, bins, distance map",
+    "area_cover": "415km2",
+    "crs": "EPSG:31256",
+    "start_datetime": "1900-01-01T00:00:00Z",
+    "end_datetime": "2999-01-01T00:00:00Z",
+    "provenance_name": " data.gv.at",
+    "preprocessing": "",
+    "models": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/notebooks/dev/f06_pre_processing/Vienna_distance_raster_from_points_data.ipynb",
+    "modification": "2024-07-16T17:01:59Z",
+    "provision": "2024-07-16T17:01:58Z",
+    "use_case_S4E": "1",
+    "use_case_NHM_2": "1",
+    "platform": "Eox"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          20.527587778333267,
+          44.951075003750404
+        ],
+        [
+          20.527587778333267,
+          45.2313494572559
+        ],
+        [
+          20.839371582277582,
+          45.2313494572559
+        ],
+        [
+          20.839371582277582,
+          44.951075003750404
+        ],
+        [
+          20.527587778333267,
+          44.951075003750404
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    20.527587778333267,
+    44.951075003750404,
+    20.839371582277582,
+    45.2313494572559
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
