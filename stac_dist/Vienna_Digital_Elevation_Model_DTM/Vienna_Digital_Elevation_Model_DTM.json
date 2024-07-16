@@ -1,0 +1,135 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "Vienna_Digital_Elevation_Model_DTM",
+  "properties": {
+    "license": "CC-BY-NC-ND-4.0",
+    "description": "Digital terrain model from Airborne Laserscan data. Elevations of the terrain in the grid of 100 m x 100m.",
+    "providers": [],
+    "dataSource": "data.gv.at",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          331000,
+          354000
+        ],
+        "reference_system": "EPSG:31256",
+        "type": "spatial",
+        "unit": "meter",
+        "interpolation": "average",
+        "step": "100"
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          -11200,
+          18800
+        ],
+        "reference_system": "EPSG:31256",
+        "type": "spatial",
+        "unit": "meter",
+        "interpolation": "average",
+        "step": "100"
+      },
+      "time": {
+        "extent": [
+          "2015-01-20T00:00Z",
+          "2023-12-31T00:00Z"
+        ],
+        "type": "temporal",
+        "step": "P1Y",
+        "interpolation": "average"
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "type": "spatial"
+      }
+    },
+    "datetime": "2024-07-16T11:00:51Z",
+    "raster:bands": [
+      {
+        "band_name": "hight [meter] above sea level NN ",
+        "nodata": -3.40282e+38,
+        "definition": "average elevation inside 100x100m cell  [meter] above sea level NN ",
+        "description": "average elevation inside 100x100m cell  [meter] above sea level NN ",
+        "comment": "Band 1",
+        "interpolation": "AVG"
+      }
+    ],
+    "title": "Digital terrain model (DTM) Austria",
+    "datasource_type": "GeoTIFF",
+    "keywords": "Digital Elevation Modell (DEM) , Digital Terrain Model (DTM)",
+    "area_cover": "415km2",
+    "crs": "EPSG:31256",
+    "start_datetime": "2015-01-20T00:00Z",
+    "end_datetime": "2023-12-31T00:00Z",
+    "unit_of_measure": "meter",
+    "resolution": "100",
+    "provenance_name": "data.gv.at ",
+    "preprocessing": "Clipped to city border of Vienna",
+    "source_data": "https://www.data.gv.at/katalog/dataset/b5de6975-417b-4320-afdb-eb2a9e2a1dbf#additional-info",
+    "apis": "AWS-S3 API",
+    "access_control": "fairicube account required ",
+    "modification": "2024-07-16T11:00:56Z",
+    "provision": "2024-07-16T11:00:54Z",
+    "use_case_S4E": "1",
+    "use_case_NHM_2": "1",
+    "platform": "Eox"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          20.527587778333267,
+          44.951075003750404
+        ],
+        [
+          20.527587778333267,
+          45.2313494572559
+        ],
+        [
+          20.839371582277582,
+          45.2313494572559
+        ],
+        [
+          20.839371582277582,
+          44.951075003750404
+        ],
+        [
+          20.527587778333267,
+          44.951075003750404
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    20.527587778333267,
+    44.951075003750404,
+    20.839371582277582,
+    45.2313494572559
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
