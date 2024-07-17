@@ -45,7 +45,7 @@
           "2024-01-31T00:00Z"
         ],
         "type": "temporal",
-        "step": "P1Y",
+        "step": "P1Y0M0DT0H0M0S",
         "unit": "year"
       },
       "z": {
@@ -128,7 +128,7 @@
     }
   ],
   "assets": {
-    "../rxxx": {
+    "../r07_water/r07_Wien_water_areas_grid100m_1_1.tif": {
       "href": "https://fairicube.s3.eu-central-1.amazonaws.com/vienna_data/100m/",
       "roles": [
         "data"
