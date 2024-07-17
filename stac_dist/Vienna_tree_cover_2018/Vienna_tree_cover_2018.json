@@ -1,0 +1,154 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "Vienna_tree_cover_2018",
+  "properties": {
+    "license": "CC-BY-4.0",
+    "description": "Vienna tree cover density 2018 (100m)\nProvides at pan-European level in the spatial resolution of100 m the level of tree cover density in a range from 0% to100% for the 2018 reference year.",
+    "providers": [
+      {
+        "organization_name": "European Environment Agency",
+        "organization": "European Environment Agency",
+        "doc_link": "https://sdi.eea.europa.eu/catalogue/copernicus/all/catalog.search#/metadata/c7bf34ea-755c-4dbd-85b6-4efc5fd302a2",
+        "organization_email": "copernicus@eea.europa.eu",
+        "roles": "licensor",
+        "project_purpose": "https://land.copernicus.eu"
+      }
+    ],
+    "dataSource": "copernicus.eu",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          331000,
+          354000
+        ],
+        "reference_system": "EPSG:31256",
+        "type": "spatial",
+        "unit": "meter",
+        "interpolation": "average",
+        "step": "100"
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          -11200,
+          18800
+        ],
+        "reference_system": "EPSG:31256",
+        "type": "spatial",
+        "unit": "meter",
+        "interpolation": "average",
+        "step": "100"
+      },
+      "time": {
+        "extent": [
+          "2017-01-01T00:00Z",
+          "2019-12-31T00:00Z"
+        ],
+        "type": "temporal",
+        "step": "P3Y",
+        "unit": "year"
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "type": "spatial"
+      }
+    },
+    "datetime": "2024-07-17T09:52:11Z",
+    "raster:bands": [
+      {
+        "band_name": "Tree Cover Density (TCD).[%]",
+        "unit": "%",
+        "data_type": "cfloat32",
+        "nodata": -9,
+        "definition": "Tree Cover Density (TCD).[%]",
+        "description": "Tree Cover Density (TCD).[%]",
+        "comment": "Band 1",
+        "interpolation": "NN"
+      }
+    ],
+    "title": "Vienna tree cover density 2018 (100m)",
+    "datasource_type": "GeoTIFF",
+    "area_cover": "415km2",
+    "crs": "EPSG:31256",
+    "start_datetime": "2017-01-01T00:00Z",
+    "end_datetime": "2019-12-31T00:00Z",
+    "preprocessing": "Re-projection from 3035 to 31256 (NN) and clipped to Vienna border and pixel shift to rounded 100m coordiantes",
+    "source_data": "https://land.copernicus.eu/en/products/high-resolution-layer-tree-cover-density/tree-cover-density-2018#Download",
+    "apis": "AWS-S3 API",
+    "modification": "2024-07-17T09:52:18Z",
+    "provision": "2024-07-17T09:52:16Z",
+    "use_case_S4E": "1",
+    "use_case_NHM_2": "1",
+    "platform": "Eox"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          20.527587778333267,
+          44.951075003750404
+        ],
+        [
+          20.527587778333267,
+          45.2313494572559
+        ],
+        [
+          20.839371582277582,
+          45.2313494572559
+        ],
+        [
+          20.839371582277582,
+          44.951075003750404
+        ],
+        [
+          20.527587778333267,
+          44.951075003750404
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {
+    "../r05_treecover/r05_treecover2018_100m_b1_COG_1_1.tif": {
+      "href": "https://fairicube.s3.eu-central-1.amazonaws.com/vienna_data/100m/",
+      "roles": [
+        "data"
+      ]
+    },
+    "tree cover": {
+      "href": "https://sdi.eea.europa.eu/public/catalogue-graphic-overview/c7bf34ea-755c-4dbd-85b6-4efc5fd302a2.png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    20.527587778333267,
+    44.951075003750404,
+    20.839371582277582,
+    45.2313494572559
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
