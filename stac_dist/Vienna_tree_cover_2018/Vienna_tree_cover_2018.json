@@ -81,6 +81,7 @@
     "preprocessing": "Re-projection from 3035 to 31256 (NN) and clipped to Vienna border and pixel shift to rounded 100m coordiantes",
     "source_data": "https://land.copernicus.eu/en/products/high-resolution-layer-tree-cover-density/tree-cover-density-2018#Download",
     "apis": "AWS-S3 API",
+    "access_control": "fairicube account required ",
     "modification": "2024-07-17T09:52:18Z",
     "provision": "2024-07-17T09:52:16Z",
     "use_case_S4E": "1",
