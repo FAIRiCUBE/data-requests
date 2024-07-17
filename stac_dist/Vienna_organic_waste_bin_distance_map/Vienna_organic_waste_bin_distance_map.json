@@ -42,7 +42,13 @@
         "step": "P1Y0M0DT0H0M0S",
         "unit": "year"
       },
-      "z": {}
+      "z": {
+        "name": "z",
+        "extent": [
+          null,
+          null
+        ]
+      }
     },
     "datetime": "2024-07-16T17:01:55Z",
     "raster:bands": [
@@ -50,7 +56,7 @@
         "band_name": "normalized distance to next bin",
         "unit": "meter",
         "data_type": "float32",
-        "nodata": "-",
+        "nodata": -9,
         "definition": "normalized \n Distance to next c organic waste bin\n(avg inside 100m cell)",
         "description": "normalized \n Distance to next c organic waste bin\n(avg inside 100m cell)",
         "comment": "Band 1",
