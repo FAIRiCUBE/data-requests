@@ -43,7 +43,7 @@
           "2024-12-31T00:00Z"
         ],
         "type": "temporal",
-        "step": "P1Y",
+        "step": "P1Y0M0DT0H0M0S",
         "unit": "year"
       },
       "z": {
@@ -54,6 +54,7 @@
         "type": "spatial"
       }
     },
+    "datetime": "2024-07-17T11:28:01Z",
     "raster:bands": [
       {
         "band_name": "district id",
@@ -74,7 +75,15 @@
     "end_datetime": "2024-12-31T00:00Z",
     "personalData": "",
     "provenance_name": "data.gv.at ",
-    "preprocessing": "The origanal vector dataset was transformed to a raster using gdal function:",
+    "preprocessing": "The origanal vector dataset was transformed to a raster using gdal function: processing.run(\"gdal:rasterize\", {'INPUT':'N:/C2205_FAIRiCUBE/f02_data/d050_data_WIEN/Vienna_gridded_data_collection/100m_GRID/vector_files/Bezirke_100m.shp','FIELD':'BEZNR','BURN':0,'USE_Z':False,'UNITS':1,'WIDTH':100,'HEIGHT':100,'EXTENT':'-11200.000000000,18800.000000000,331000.000000000,354000.000000000 []','NODATA':0,'OPTIONS':'COMPRESS=DEFLATE|PREDICTOR=2|ZLEVEL=9','DATA_TYPE':5,'INIT':None,'INVERT':False,'EXTRA':'','OUTPUT':'N:/C2205_FAIRiCUBE/f02_data/d050_data_WIEN/Vienna_gridded_data_collection/100m_GRID/r00_Wien_Bezirke_100m.tif'})",
+    "apis": "AWS-S3 API",
+    "access_control": "fairicube account required ",
+    "modification": "2024-07-17T11:28:04Z",
+    "provision": "2024-07-17T11:28:02Z",
+    "use_case_S4E": "1",
+    "use_case_WER": "2",
+    "use_case_NHM": "2",
+    "use_case_NHM_2": "1",
     "platform": "Eox"
   },
   "geometry": {
