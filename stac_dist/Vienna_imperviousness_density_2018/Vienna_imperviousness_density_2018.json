@@ -15,7 +15,7 @@
         "project_purpose": "https://land.copernicus.eu"
       }
     ],
-    "dataSource": "opernicus.eu",
+    "dataSource": "copernicus.eu",
     "cube:dimensions": {
       "x": {
         "axis": "x",
@@ -47,7 +47,7 @@
           "2019-12-31T00:00Z"
         ],
         "type": "temporal",
-        "step": "P1Y",
+        "step": "P3Y0M0DT0H0M0S",
         "unit": "year"
       },
       "z": {
@@ -66,7 +66,8 @@
         "data_type": "cfloat32",
         "nodata": -9,
         "definition": "Sealing density in the range from 0% to 100% for the 2018 reference year inside the 100x100meter grid cell. ",
-        "description": "Band 1",
+        "description": "Sealing density in the range from 0% to 100% for the 2018 reference year inside the 100x100meter grid cell. ",
+        "comment": "Band 1",
         "interpolation": "NN"
       }
     ],
@@ -78,7 +79,7 @@
     "start_datetime": "2017-01-01T00:00Z",
     "end_datetime": "2019-12-31T00:00Z",
     "preprocessing": "Re-projection from 3035 to 31256 (NN) and clipped to Vienna border and pixel shift to rounded 100m coordiantes",
-    "source_data": "https://land.copernicus.eu/en/products/high-resolution-layer-imperviousness/imperviousness-density-2018",
+    "source_data": "https://land.copernicus.eu/en/products/high-resolution-layer-imperviousness/imperviousness-density-2018#Download",
     "apis": "AWS-S3 API",
     "access_control": "fairicube account required ",
     "modification": "2024-07-17T09:30:11Z",
@@ -128,7 +129,20 @@
       "title": "data-access catalog"
     }
   ],
-  "assets": {},
+  "assets": {
+    "../r04_imp/r04_imp2018_100m_b1_1_1.tif": {
+      "href": "https://fairicube.s3.eu-central-1.amazonaws.com/vienna_data/100m/",
+      "roles": [
+        "data"
+      ]
+    },
+    "imp": {
+      "href": "https://sdi.eea.europa.eu/public/catalogue-graphic-overview/524fa72f-61d7-4364-801e-3e271d7b10bc.png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
   "bbox": [
     20.527587778333267,
     44.951075003750404,
