@@ -71,6 +71,7 @@
     ],
     "title": "Vienna water areas [100m]",
     "datasource_type": "GML ",
+    "keywords": "urban waters, water, water surface,",
     "area_cover": "415km2",
     "crs": "EPSG:31256",
     "start_datetime": "2024-01-01T00:00Z",
