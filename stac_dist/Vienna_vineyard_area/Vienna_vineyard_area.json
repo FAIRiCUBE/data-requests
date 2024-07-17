@@ -45,7 +45,7 @@
           "2024-12-31T00:00Z"
         ],
         "type": "temporal",
-        "step": "P1Y",
+        "step": "P1Y0M0DT0H0M0S",
         "unit": "year"
       },
       "z": {
@@ -62,6 +62,7 @@
         "band_name": "vineyard area [% cell cover] ",
         "unit": "%",
         "data_type": "float32",
+        "nodata": -9,
         "definition": "vineyard area [% cell cover] ",
         "description": "vineyard area [% cell cover] ",
         "comment": "Band 1",
