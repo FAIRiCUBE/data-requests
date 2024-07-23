@@ -3,7 +3,7 @@
   "stac_version": "1.0.0",
   "id": "test_item_dont_merge",
   "properties": {
-    "description": "testing item",
+    "description": "testing items",
     "providers": [],
     "dataSource": "edits",
     "cube:dimensions": {
@@ -31,7 +31,7 @@
           "2999-01-01T00:00:00Z"
         ],
         "type": "temporal",
-        "step": "P1Y",
+        "step": "P1Y0M0DT0H0M0S",
         "unit": ""
       },
       "z": {
