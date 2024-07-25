@@ -65,7 +65,7 @@ def validate_item(item: pystac.item.Item):
         # Temporal
         assert "t" in item.properties["cube:dimensions"].keys() or "time" in item.properties["cube:dimensions"].keys()
         time = dict()
-        if "t" in item.properties["cube:dimensions"].keys() or "time" in item.properties["cube:dimensions"].keys():
+        if "t" in item.properties["cube:dimensions"].keys():
             time = item.properties["cube:dimensions"]["t"]
         else:
             time = item.properties["cube:dimensions"]["time"]
@@ -73,20 +73,21 @@ def validate_item(item: pystac.item.Item):
         # Time (Begin/End)
         assert "extent" in time.keys() or "values" in time.keys()
         # Resolution of Time Axis (Interval)
-        if "values" in time.keys():
+        if "extent" in time.keys():
             assert "step" in time.keys(), "No step in time dimensions"
             assert isinstance(time["step"], str), "time's step must be a string"
-            # Unit of measure
-            assert isinstance(time["unit"], str), "time's unit must be a string"
+        # Unit of measure
+        assert "unit" in time.keys(), "No unit in time dimensions"
+        assert isinstance(time["unit"], str), "time's unit must be a string"
 
 
         # Range Data validation
         assert "raster:bands" in item.properties.keys() or "bands" in item.properties.keys()
-
         #TODO figure out a way to validate edc items , the ones with "bands"
 
         if "raster:bands" in item.properties.keys():
             bands = item.properties["raster:bands"]
+            assert len(bands) > 0, "bands list must not be empty"
             for band in bands:
                 # Range Data Type
                 assert "data_type" in band.keys(), "No data_type in band"
