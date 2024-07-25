@@ -1,0 +1,158 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "global_pesticide_grids_apr_l",
+  "properties": {
+    "license": "CC-BY-SA-4.0",
+    "description": "The Global Pesticide Grids (PEST-CHEMGRIDS), Version 1.01 contains 20 of the most-used pesticide active ingredients on 6 dominant crops and 4 aggregated crop classes at 5 arc-minute resolution (about 10 km at the equator), estimated in year 2015, and then projected to 2020 and 2025. To estimate the global application rates of specific active ingredients, spatial statistical methods were used to re-analyze the U.S. Geological Survey Pesticide National Synthesis Project (USGS/PNSP) and the Food and Agriculture Organization Corporate Statistical Database (FAOSTAT) pesticide databases, along with other public inventories including globally gridded data of soil physical properties, hydro-climatic variables, agricultural quantities, and socioeconomic indices.",
+    "providers": [
+      {
+        "organization_name": "NASA SEDAC (socioeconomic data and applications center)",
+        "organization": "SEDAC",
+        "comments": "For download create account/regsiter (free)",
+        "doc_link": "https://sedac.ciesin.columbia.edu/data/set/ferman-v1-pest-chemgrids-v1-01/docs"
+      }
+    ],
+    "dataSource": "NASA SEDAC (socioeconomic data and applications center): https://sedac.ciesin.columbia.edu/data/set/ferman-v1-pest-chemgrids-v1-01",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -178.91666666666666,
+          179.9166666666674
+        ],
+        "reference_system": "4326",
+        "type": "spatial",
+        "unit": "degree",
+        "step": 0.0833333333333335
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          -56.04249827067084,
+          84.04083506266277
+        ],
+        "reference_system": "4326",
+        "type": "spatial",
+        "unit": "degree",
+        "step": -0.0833333333333335
+      },
+      "time": {
+        "extent": [],
+        "type": "temporal",
+        "values": [
+          "2015-01-01T00:00Z",
+          "2020-01-01T00:00Z",
+          "2025-01-01T00:00Z"
+        ],
+        "step": "P1Y",
+        "unit": "day"
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": "-0.0833333333333335",
+        "type": "spatial"
+      }
+    },
+    "raster:bands": [
+      {
+        "band_name": "Alfalfa_2_4_d",
+        "unit": "kg/(ha\u22c5a)",
+        "data_type": "float32",
+        "nodata": -2,
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "description": "Low estimate of application of 2,4-d to crops of Alfalfa in kilograms per hectare per year"
+      }
+    ],
+    "title": "Global Pesticide Grids (PEST-CHEMGRIDS) Application rate, Low estimates",
+    "datasource_type": "grid",
+    "keywords": "agriculture, land use, health, sustainability, pesticides, environmental modeling, chemical contamination",
+    "area_cover": "global",
+    "documentation": "https://sedac.ciesin.columbia.edu/data/set/ferman-v1-pest-chemgrids-v1-01/docs",
+    "crs": "4326",
+    "start_datetime": "2015-01-01T00:00Z",
+    "end_datetime": "2025-01-01T00:00Z",
+    "personalData": "none",
+    "provenance_name": "https://sedac.ciesin.columbia.edu/data/set/ferman-v1-pest-chemgrids-v1-01",
+    "preprocessing": "To estimate the global application rates of specific active ingredients, spatial statistical methods were used to re-analyze the U.S. Geological Survey Pesticide National Synthesis Project (USGS/PNSP) and the Food and Agriculture Organization Corporate Statistical Database (FAOSTAT) pesticide databases, along with other public inventories including globally gridded data of soil physical properties, hydro-climatic variables, agricultural quantities, and socioeconomic indices.",
+    "source_data": "https://sedac.ciesin.columbia.edu/downloads/data/ferman-v1/ferman-v1-pest-chemgrids-v1-01/ferman-v1-pest-chemgrids-v1-01-geotiff.zip",
+    "data_quality": "See global_pesticide_grids_qi datacube",
+    "apis": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
+    "use_case_NHM": "1",
+    "platform": "Rasdaman"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -178.91666666666666,
+          -56.04249827067084
+        ],
+        [
+          -178.91666666666666,
+          84.04083506266277
+        ],
+        [
+          179.9166666666674,
+          84.04083506266277
+        ],
+        [
+          179.9166666666674,
+          -56.04249827067084
+        ],
+        [
+          -178.91666666666666,
+          -56.04249827067084
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?&SERVICE=WCS&VERSION=2.1.0&REQUEST=DescribeCoverage&COVERAGEID=global_pesticide_grids_apr_l&outputType=GeneralGridCoverage",
+      "rel": "about",
+      "type": "text/xml",
+      "title": "Link to the rasdaman coverage description in XML"
+    },
+    {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman-dashboard/?layers=global_pesticide_grids_apr_l",
+      "rel": "service",
+      "type": "text/html",
+      "title": "Link to the rasdaman web application to Access, process gridded data"
+    }
+  ],
+  "assets": {
+    "thumbnail_rasdaman": {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?service=WMS&version=1.3.0&request=GetMap&layers=global_pesticide_grids_apr_l&bbox=-56.04249827067084,-178.91666666666666,84.04083506266277,179.9166666666674&time=\"2015-01-01T00:00Z\"&width=800&height=600&crs=EPSG:4326&format=image/png&transparent=true&styles=",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    -178.91666666666666,
+    -56.04249827067084,
+    179.9166666666674,
+    84.04083506266277
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
