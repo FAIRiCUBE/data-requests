@@ -41,8 +41,7 @@
         "extent": [],
         "type": "temporal",
         "values": [
-          "2018-01-01T00:00Z",
-          "2999-01-01T00:00:00Z"
+          "2018-01-01T00:00Z"
         ],
         "step": "P3Y",
         "unit": "day"
@@ -72,8 +71,8 @@
     "area_cover": "EEA39",
     "documentation": "European Union's Copernicus Land Monitoring Service information; Source dataset DOI links: https://doi.org/10.2909/3bf542bd-eebd-4d73-b53c-a0243f2ed862",
     "crs": "3035",
-    "start_datetime": "2018-01-01T00:00Z",
-    "end_datetime": "2999-01-01T00:00:00Z",
+    "start_datetime": "2017-01-01T00:00:00.000Z",
+    "end_datetime": "2019-12-31T23:59:59.999Z",
     "personalData": "none",
     "provenance_name": "https://land.copernicus.eu/en/products/high-resolution-layer-imperviousness",
     "apis": "OGC WCS, WCPS, WSM, WMTS, OAPI-Coverages",
@@ -130,7 +129,7 @@
       "title": "Link to the rasdaman coverage description in XML"
     },
     {
-      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman-dashboard/?layers=imperviousness_10m",
+      "href": "https://fairicube.rasdaman.com/rasdaman-dashboard/?layers=imperviousness_10m",
       "rel": "service",
       "type": "text/html",
       "title": "Link to the rasdaman web application to Access, process gridded data"
