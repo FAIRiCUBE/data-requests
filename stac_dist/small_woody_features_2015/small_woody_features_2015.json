@@ -1,0 +1,157 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "small_woody_features_2015",
+  "properties": {
+    "license": "other",
+    "description": "Provides at pan-European level information on information on linear structures such as hedgerows, as well as patches of woody features at 5m resolution.",
+    "providers": [
+      {
+        "organization": "European Environment Agency",
+        "doc_link": "https://land.copernicus.eu/",
+        "organization_email": "copernicus@eea.europa.eu",
+        "roles": "host"
+      }
+    ],
+    "dataSource": "https://land.copernicus.eu/en/products/high-resolution-layer-small-woody-features",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          942975,
+          7316685
+        ],
+        "reference_system": "3035",
+        "type": "spatial",
+        "unit": "metre",
+        "step": 5
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          941555,
+          5403015
+        ],
+        "reference_system": "3035",
+        "type": "spatial",
+        "unit": "metre",
+        "step": -5
+      },
+      "time": {
+        "extent": [],
+        "type": "temporal",
+        "values": [
+          "2015-01-01T00:00Z",
+          "2999-01-01T00:00:00Z"
+        ],
+        "step": "P2Y",
+        "unit": "day"
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "type": "spatial"
+      }
+    },
+    "raster:bands": [
+      {
+        "band_name": "swf",
+        "unit": "1",
+        "data_type": "uint8",
+        "nodata": 255,
+        "definition": "https://land.copernicus.eu/en/technical-library/high-resolution-layer-small-woody-features-2015-product-specifications/@@download/file",
+        "description": "small woody features map of Europe; raster coding (thematic pixel values): 0: Non SWF area; 1: SWF area (Linear or patchy structures of trees, hedges, bushes and scrub); 3: Additional woody features; 254: unclassifiable (no satellite image available, or clouds, shadows, or snow); 255: outside area",
+        "category_list": "0, 1, 3, 254, 255"
+      }
+    ],
+    "title": "High Resolution Layer Small Woody Features 2015",
+    "datasource_type": "grid",
+    "keywords": "land cover, urban area, sealing, built environment, land use, soil surface sealing, landscape alteration",
+    "area_cover": "EEA39",
+    "documentation": "European Union's Copernicus Land Monitoring Service information; Source dataset DOI links: https://doi.org/10.2909/4e92b07d-48b0-4a53-9db2-fd8d07070cc1",
+    "crs": "3035",
+    "start_datetime": "2015-01-01T00:00Z",
+    "end_datetime": "2999-01-01T00:00:00Z",
+    "personalData": "none",
+    "provenance_name": "https://land.copernicus.eu/en/products/high-resolution-layer-small-woody-features",
+    "apis": "OGC WCS, WCPS, WSM, WMTS, OAPI-Coverages",
+    "use_case_S4E": "1",
+    "use_case_WER": "2",
+    "use_case_NHM": "2",
+    "ingestion_status": "Completed",
+    "platform": "Rasdaman"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -54.76025068736593,
+          24.798036826553517
+        ],
+        [
+          -54.76025068736593,
+          59.04085474153828
+        ],
+        [
+          70.59236500856936,
+          59.04085474153828
+        ],
+        [
+          70.59236500856936,
+          24.798036826553517
+        ],
+        [
+          -54.76025068736593,
+          24.798036826553517
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?&SERVICE=WCS&VERSION=2.1.0&REQUEST=DescribeCoverage&COVERAGEID=small_woody_features_2015&outputType=GeneralGridCoverage",
+      "rel": "about",
+      "type": "text/xml",
+      "title": "Link to the rasdaman coverage description in XML"
+    },
+    {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman-dashboard/?layers=small_woody_features_2015",
+      "rel": "service",
+      "type": "text/html",
+      "title": "Link to the rasdaman web application to Access, process gridded data"
+    }
+  ],
+  "assets": {
+    "thumbnail_rasdaman": {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?service=WMS&version=1.3.0&request=GetMap&layers=small_woody_features_2015&bbox=24.798036826553517,-54.76025068736593,59.04085474153828,70.59236500856936&time=\"2015-01-01T00:00Z\"&width=800&height=600&crs=EPSG:4326&format=image/png&transparent=true&styles=",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    -54.76025068736593,
+    24.798036826553517,
+    70.59236500856936,
+    59.04085474153828
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
