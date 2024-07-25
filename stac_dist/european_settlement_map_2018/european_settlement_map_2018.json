@@ -40,8 +40,7 @@
         "extent": [],
         "type": "temporal",
         "values": [
-          "2018-01-01T00:00Z",
-          "2999-01-01T00:00:00Z"
+          "2018-01-01T00:00Z"
         ],
         "step": "P1Y",
         "unit": "day"
@@ -72,7 +71,7 @@
     "documentation": "Corbane, Christina; Szabo, Filip (2022): ESM R2020 - European Settlement Map from Copernicus Very High Resolution data for reference year 2018. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/192530fc-3d09-4740-8c1d-d1e601cdfdcc",
     "crs": "3035",
     "start_datetime": "2018-01-01T00:00Z",
-    "end_datetime": "2999-01-01T00:00:00Z",
+    "end_datetime": "2018-12-31T23:59:59.999Z",
     "personalData": "none",
     "provenance_name": "https://data.jrc.ec.europa.eu/dataset/192530fc-3d09-4740-8c1d-d1e601cdfdcc",
     "preprocessing": "ESM 2018 exploits the Copernicus VHR_IMAGE_2018 dataset made of satellite images Pleiades 1A & 1B, SuperView-1, Kompsat-3/3A and PlanetScope with backup missions of Spot-6/7, TripleSat and Deimos-2 ranging from 2017 to 2019.",
@@ -129,10 +128,10 @@
       "title": "Link to the rasdaman coverage description in XML"
     },
     {
-      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman-dashboard/?layers=european_settlement_map_2018",
+      "href": "https://fairicube.rasdaman.com/rasdaman-dashboard/?layers=european_settlement_map_2018",
       "rel": "service",
       "type": "text/html",
-      "title": "Link to the rasdaman web application to Access, process gridded data"
+      "title": "Link to the rasdaman web application to access and process gridded data"
     }
   ],
   "assets": {
