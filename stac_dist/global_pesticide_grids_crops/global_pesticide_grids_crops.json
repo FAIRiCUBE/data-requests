@@ -7,15 +7,15 @@
     "description": "The Global Pesticide Grids (PEST-CHEMGRIDS), Version 1.01 contains 20 of the most-used pesticide active ingredients on 6 dominant crops and 4 aggregated crop classes at 5 arc-minute resolution (about 10 km at the equator), estimated in year 2015, and then projected to 2020 and 2025. To estimate the global application rates of specific active ingredients, spatial statistical methods were used to re-analyze the U.S. Geological Survey Pesticide National Synthesis Project (USGS/PNSP) and the Food and Agriculture Organization Corporate Statistical Database (FAOSTAT) pesticide databases, along with other public inventories including globally gridded data of soil physical properties, hydro-climatic variables, agricultural quantities, and socioeconomic indices.",
     "providers": [
       {
-        "organization_name": "NASA SEDAC (socioeconomic data and applications center)",
-        "organization": "SEDAC",
+        "organization_name": "NASA Socioeconomic Data and Applications Center (SEDAC)",
+        "organization": "NASA Socioeconomic Data and Applications Center (SEDAC)",
         "comments": "For download create account/regsiter (free)",
         "doc_link": "https://sedac.ciesin.columbia.edu/data/set/ferman-v1-pest-chemgrids-v1-01/docs",
         "organization_email": "ciesin.info@ciesin.columbia.edu",
         "project_purpose": "To provide a global gridded data set of commonly-used agricultural pesticides crucial to assess human and ecosystem exposure to potential toxicants for environmental modeling, assessment of agricultural chemical contamination and risk analysis, and other related research at global, regional, national, and local levels."
       }
     ],
-    "dataSource": "NASA SEDAC (socioeconomic data and applications center): https://sedac.ciesin.columbia.edu/data/set/ferman-v1-pest-chemgrids-v1-01",
+    "dataSource": "NASA Socioeconomic Data and Applications Center (SEDAC): https://doi.org/10.7927/weq9-pv30",
     "cube:dimensions": {
       "x": {
         "axis": "x",
