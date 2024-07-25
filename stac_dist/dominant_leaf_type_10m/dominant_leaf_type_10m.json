@@ -42,8 +42,7 @@
         "extent": [],
         "type": "temporal",
         "values": [
-          "2018-01-01T00:00Z",
-          "2999-01-01T00:00:00Z"
+          "2018-03-01T00:00Z"
         ],
         "step": "P8M",
         "unit": "day"
@@ -73,7 +72,7 @@
     "area_cover": "EEA-38+UK",
     "crs": "3035",
     "start_datetime": "2018-01-01T00:00Z",
-    "end_datetime": "2999-01-01T00:00:00Z",
+    "end_datetime": "2018-10-31T23:59:59.999Z",
     "provenance_name": "https://land.copernicus.eu/en/products/high-resolution-layer-dominant-leaf-type",
     "source_data": "https://land.copernicus.eu/en/products/high-resolution-layer-dominant-leaf-type/dominant-leaf-type-2018",
     "apis": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
@@ -129,15 +128,15 @@
       "title": "Link to the rasdaman coverage description in XML"
     },
     {
-      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman-dashboard/?layers=dominant_leaf_type_10m",
+      "href": "https://fairicube.rasdaman.com/rasdaman-dashboard/?layers=dominant_leaf_type_10m",
       "rel": "service",
       "type": "text/html",
-      "title": "Link to the rasdaman web application to Access, process gridded data"
+      "title": "Link to the rasdaman web application to access and process gridded data"
     }
   ],
   "assets": {
     "thumbnail_rasdaman": {
-      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?service=WMS&version=1.3.0&request=GetMap&layers=dominant_leaf_type_10m&bbox=24.2841770079211,-56.5051419017044,58.95275109308057,72.90613675900907&time=\"2018-01-01T00:00Z\"&width=800&height=600&crs=EPSG:4326&format=image/png&transparent=true&styles=",
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?service=WMS&version=1.3.0&request=GetMap&layers=dominant_leaf_type_10m&bbox=24.2841770079211,-56.5051419017044,58.95275109308057,72.90613675900907&time=\"2018-03-01T00:00Z\"&width=800&height=600&crs=EPSG:4326&format=image/png&transparent=true&styles=",
       "roles": [
         "thumbnail"
       ]
