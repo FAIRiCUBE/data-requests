@@ -130,10 +130,10 @@
       "title": "Link to the rasdaman coverage description in XML"
     },
     {
-      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman-dashboard/?layers=dominant_leaf_type_20m",
+      "href": "https://fairicube.rasdaman.com/rasdaman-dashboard/?layers=dominant_leaf_type_20m",
       "rel": "service",
       "type": "text/html",
-      "title": "Link to the rasdaman web application to Access, process gridded data"
+      "title": "Link to the rasdaman web application to access and process gridded data"
     }
   ],
   "assets": {
