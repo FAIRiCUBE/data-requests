@@ -142,10 +142,10 @@
       "title": "Link to the rasdaman coverage description in XML"
     },
     {
-      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman-dashboard/?layers=eu_demography",
+      "href": "https://fairicube.rasdaman.com/rasdaman-dashboard/?layers=eu_demography",
       "rel": "service",
       "type": "text/html",
-      "title": "Link to the rasdaman web application to Access, process gridded data"
+      "title": "Link to the rasdaman web application to access and process gridded data"
     }
   ],
   "assets": {
