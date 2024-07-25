@@ -4,7 +4,7 @@
   "id": "dominant_leaf_type_20m",
   "properties": {
     "license": "other",
-    "description": "Provides at pan-European level in the spatial resolution of 20 m information on the dominant leaf type (broadleaved or coniferous).",
+    "description": "The DLT raster product provides a basic land cover classification with 3 thematic classes (all non-tree covered areas, broadleaved and coniferous) at 20m spatial resolution and covers the full of EEA38 area and the United Kingdom.",
     "providers": [
       {
         "organization": "European Environment Agency",
