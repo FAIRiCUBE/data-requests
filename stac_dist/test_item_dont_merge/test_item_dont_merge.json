@@ -4,7 +4,7 @@
   "id": "test_item_dont_merge",
   "properties": {
     "keywords": [
-      null,
+      "Gray,landcover",
       "Gray",
       "landcover"
     ],
