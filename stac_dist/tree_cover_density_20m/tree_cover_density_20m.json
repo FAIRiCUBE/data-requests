@@ -72,8 +72,8 @@
     "area_cover": "EEA39",
     "documentation": "European Union's Copernicus Land Monitoring Service information; Source dataset DOI links: https://doi.org/10.2909/91687ef2-f907-4f84-81f7-c9c81980c306, https://doi.org/10.2909/8bfbda74-7b62-4659-96dd-86600ea425a2",
     "crs": "3035",
-    "start_datetime": "2012-01-01T00:00Z",
-    "end_datetime": "2015-01-01T00:00Z",
+    "start_datetime": "2011-01-01T00:00:00.000Z",
+    "end_datetime": "2016-12-31T23:59:59.999Z",
     "personalData": "none",
     "provenance_name": "https://land.copernicus.eu/en/products/high-resolution-layer-tree-cover-density",
     "apis": "OGC WCS, WCPS, WSM, WMTS, OAPI-Coverages",
@@ -130,7 +130,7 @@
       "title": "Link to the rasdaman coverage description in XML"
     },
     {
-      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman-dashboard/?layers=tree_cover_density_20m",
+      "href": "https://fairicube.rasdaman.com/rasdaman-dashboard/?layers=tree_cover_density_20m",
       "rel": "service",
       "type": "text/html",
       "title": "Link to the rasdaman web application to Access, process gridded data"
