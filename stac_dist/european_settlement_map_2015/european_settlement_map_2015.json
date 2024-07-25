@@ -77,7 +77,7 @@
     "source_data": "https://human-settlement.emergency.copernicus.eu/download.php?ds=ESM",
     "apis": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
     "use_case_S4E": "1",
-    "use_case_NHM_2": "1",
+    "use_case_NHM": "1",
     "ingestion_status": "Completed",
     "platform": "Rasdaman"
   },
