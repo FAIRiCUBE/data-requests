@@ -78,7 +78,7 @@
     "source_data": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/ESM_BUILT_VHR2018_Europe_R2020/ESM_BUILT_VHR2018_Europe_R2020_3035_02/LATEST/Data/GeoTIFF/",
     "apis": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
     "use_case_S4E": "1",
-    "use_case_NHM_2": "1",
+    "use_case_NHM": "1",
     "platform": "Rasdaman"
   },
   "geometry": {
