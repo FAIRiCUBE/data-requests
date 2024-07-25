@@ -41,8 +41,7 @@
         "extent": [],
         "type": "temporal",
         "values": [
-          "2015-01-01T00:00Z",
-          "2999-01-01T00:00:00Z"
+          "2015-01-01T00:00Z"
         ],
         "step": "P2Y",
         "unit": "day"
@@ -72,8 +71,8 @@
     "area_cover": "EEA39",
     "documentation": "European Union's Copernicus Land Monitoring Service information; Source dataset DOI links: https://doi.org/10.2909/35a036bb-c027-401c-8625-2ecf722e8461",
     "crs": "3035",
-    "start_datetime": "2015-01-01T00:00Z",
-    "end_datetime": "2999-01-01T00:00:00Z",
+    "start_datetime": "2014-01-01T00:00:00.000Z",
+    "end_datetime": "2016-12-31T23:59:59.999Z",
     "personalData": "none",
     "provenance_name": "https://land.copernicus.eu/en/products/high-resolution-layer-grassland/grassland-2015",
     "data_quality": "",
@@ -130,7 +129,7 @@
       "title": "Link to the rasdaman coverage description in XML"
     },
     {
-      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman-dashboard/?layers=grassland_20m",
+      "href": "https://fairicube.rasdaman.com/rasdaman-dashboard/?layers=grassland_20m",
       "rel": "service",
       "type": "text/html",
       "title": "Link to the rasdaman web application to Access, process gridded data"
