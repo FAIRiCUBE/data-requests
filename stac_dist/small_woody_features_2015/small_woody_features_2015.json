@@ -41,8 +41,7 @@
         "extent": [],
         "type": "temporal",
         "values": [
-          "2015-01-01T00:00Z",
-          "2999-01-01T00:00:00Z"
+          "2015-01-01T00:00Z"
         ],
         "step": "P2Y",
         "unit": "day"
@@ -72,8 +71,8 @@
     "area_cover": "EEA39",
     "documentation": "European Union's Copernicus Land Monitoring Service information; Source dataset DOI links: https://doi.org/10.2909/4e92b07d-48b0-4a53-9db2-fd8d07070cc1",
     "crs": "3035",
-    "start_datetime": "2015-01-01T00:00Z",
-    "end_datetime": "2999-01-01T00:00:00Z",
+    "start_datetime": "2014-01-01T00:00:00.000Z",
+    "end_datetime": "2016-12-31T23:59:59.999Z",
     "personalData": "none",
     "provenance_name": "https://land.copernicus.eu/en/products/high-resolution-layer-small-woody-features",
     "apis": "OGC WCS, WCPS, WSM, WMTS, OAPI-Coverages",
@@ -130,7 +129,7 @@
       "title": "Link to the rasdaman coverage description in XML"
     },
     {
-      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman-dashboard/?layers=small_woody_features_2015",
+      "href": "https://fairicube.rasdaman.com/rasdaman-dashboard/?layers=small_woody_features_2015",
       "rel": "service",
       "type": "text/html",
       "title": "Link to the rasdaman web application to Access, process gridded data"
