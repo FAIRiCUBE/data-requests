@@ -1,7 +1,7 @@
 {
   "type": "Feature",
   "stac_version": "1.0.0",
-  "id": "1",
+  "id": "vienna_land_use",
   "properties": {
     "license": "CC-BY-4.0",
     "description": "land use mapping 2024 Vienna\nThis database depicts the actual land use of Vienna in a generalised form. The database is an aerial image interpretation with the addition of additional factual data. There are 32 usage categories from the areas of housing, green areas, traffic, etc. \n",
