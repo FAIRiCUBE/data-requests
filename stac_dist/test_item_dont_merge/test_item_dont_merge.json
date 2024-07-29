@@ -4,10 +4,7 @@
   "id": "test_item_dont_merge",
   "properties": {
     "keywords": [
-      "Gray",
-      "landcover",
-      " one",
-      " three"
+      ""
     ],
     "description": "testing items",
     "providers": [],
@@ -49,22 +46,7 @@
       }
     },
     "datetime": null,
-    "raster:bands": [
-      {
-        "band_name": "Gray",
-        "data_type": "int16",
-        "nodata": 45,
-        "definition": "ww",
-        "description": "www"
-      },
-      {
-        "band_name": "landcover",
-        "data_type": "int16",
-        "nodata": 45,
-        "definition": "qq",
-        "description": "ww"
-      }
-    ],
+    "raster:bands": [],
     "title": "test item",
     "start_datetime": "1900-01-01T00:00:00Z",
     "end_datetime": "2999-01-01T00:00:00Z",
