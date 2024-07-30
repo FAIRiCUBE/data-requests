@@ -65,7 +65,8 @@
         "description": "buildings footprint area inside cell [ha]",
         "comment": "Band 1",
         "interpolation": "SUM",
-        "data_type": "float32"
+        "data_type": "float32",
+        "nodata": -9,
       }
     ],
     "title": "Vienna building area [100m]",
