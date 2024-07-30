@@ -63,7 +63,8 @@
         "definition": "district id\nBEZNR\tNAMEG\n0\t(blank)\n1\tINNERE STADT\n2\tLEOPOLDSTADT\n3\tLANDSTRASSE\n4\tWIEDEN\n5\tMARGARETEN\n6\tMARIAHILF\n7\tNEUBAU\n8\tJOSEFSTADT\n9\tALSERGRUND\n10\tFAVORITEN\n11\tSIMMERING\n12\tMEIDLING\n13\tHIETZING\n14\tPENZING\n15\tRUDOLFSHEIM-F\u00dcNFHAUS\n16\tOTTAKRING\n17\tHERNALS\n18\tW\u00c4HRING\n19\tD\u00d6BLING\n20\tBRIGITTENAU\n21\tFLORIDSDORF\n22\tDONAUSTADT\n23\tLIESING\n",
         "description": "district id",
         "comment": "Band 1",
-        "interpolation": "NN"
+        "interpolation": "NN",
+        "data_type": "float32"
       }
     ],
     "title": "Vienna administration districts [100m]",
