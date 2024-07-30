@@ -62,7 +62,7 @@
     "datetime": "2024-07-15T16:16:26Z",
     "raster:bands": [
       {
-        "band_name": "land use area [% cell cover]] ",
+        "band_name": "land use area [% cell cover] ",
         "unit": "%",
         "data_type": "float32",
         "nodata": -9,
@@ -70,11 +70,6 @@
         "description": "Share of low density built-up residential (mixed) area inside 100x100meter cell",
         "comment": "Band 1",
         "interpolation": "SUM"
-      },
-      {
-        "data_type": "int16",
-        "definition": "Wohn(misch)gebiet mittlerer Dichte\n",
-        "comment": "Band 2"
       }
     ],
     "title": "Vienna_Land_Use",
