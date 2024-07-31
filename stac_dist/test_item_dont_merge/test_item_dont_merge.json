@@ -6,7 +6,7 @@
     "keywords": [
       "Gray"
     ],
-    "license": "proprietary",
+    "license": "0BSD",
     "description": "testing items",
     "providers": [],
     "dataSource": "edits",
@@ -101,12 +101,6 @@
       "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
-    },
-    {
-      "href": "https://www.google.com",
-      "rel": "license",
-      "type": "text/xml",
-      "title": "Link to the item's license."
     }
   ],
   "assets": {},
