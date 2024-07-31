@@ -4,8 +4,9 @@
   "id": "test_item_dont_merge",
   "properties": {
     "keywords": [
-      ""
+      "Gray"
     ],
+    "license": "proprietary",
     "description": "testing items",
     "providers": [],
     "dataSource": "edits",
@@ -46,7 +47,14 @@
       }
     },
     "datetime": null,
-    "raster:bands": [],
+    "raster:bands": [
+      {
+        "band_name": "Gray",
+        "data_type": "int8",
+        "definition": "f",
+        "description": "f"
+      }
+    ],
     "title": "test item",
     "start_datetime": "1900-01-01T00:00:00Z",
     "end_datetime": "2999-01-01T00:00:00Z",
@@ -93,6 +101,12 @@
       "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
+    },
+    {
+      "href": "https://www.google.com",
+      "rel": "license",
+      "type": "text/xml",
+      "title": "Link to the item's license."
     }
   ],
   "assets": {},
