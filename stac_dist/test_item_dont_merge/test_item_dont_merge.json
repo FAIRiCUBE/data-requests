@@ -35,7 +35,7 @@
           "2999-01-01T00:00:00Z"
         ],
         "type": "temporal",
-        "step": "P1Y0M0DT0H0M0S",
+        "step": "",
         "unit": ""
       },
       "z": {
@@ -103,6 +103,7 @@
       "title": "data-access catalog"
     },
     {
+      "href": "https://www.google.com",
       "rel": "license",
       "type": "text/xml",
       "title": "Link to the item's license."
