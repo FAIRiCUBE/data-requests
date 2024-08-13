@@ -29,15 +29,6 @@
         "reference_system": 4326,
         "type": "spatial"
       },
-      "time": {
-        "extent": [
-          "1900-01-01T00:00:00Z",
-          "2999-01-01T00:00:00Z"
-        ],
-        "type": "temporal",
-        "step": "",
-        "unit": ""
-      },
       "z": {
         "extent": [
           null,
@@ -46,7 +37,6 @@
         "type": "spatial"
       }
     },
-    "datetime": null,
     "raster:bands": [
       {
         "band_name": "Gray",
@@ -57,11 +47,10 @@
     ],
     "title": "test item",
     "datasource_type": "grid",
-    "start_datetime": "1900-01-01T00:00:00Z",
-    "end_datetime": "2999-01-01T00:00:00Z",
+    "datetime": null,
     "modification": null,
     "provision": null,
-    "platform": "Eox"
+    "platform": "Rasdaman"
   },
   "geometry": {
     "type": "Polygon",
@@ -108,9 +97,28 @@
       "rel": "license",
       "type": "text/xml",
       "title": "Link to the item's license."
+    },
+    {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?&SERVICE=WCS&VERSION=2.1.0&REQUEST=DescribeCoverage&COVERAGEID=test_item_dont_merge&outputType=GeneralGridCoverage",
+      "rel": "about",
+      "type": "text/xml",
+      "title": "Link to the rasdaman coverage description in XML"
+    },
+    {
+      "href": "https://fairicube.rasdaman.com/rasdaman-dashboard/?layers=test_item_dont_merge",
+      "rel": "service",
+      "type": "text/html",
+      "title": "Link to the rasdaman web application to Access, process gridded data"
     }
   ],
-  "assets": {},
+  "assets": {
+    "thumbnail_rasdaman": {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?service=WMS&version=1.3.0&request=GetMap&layers=test_item_dont_merge&bbox=-90,-180,90,180&width=800&height=600&crs=EPSG:4326&format=image/png&transparent=true&styles=",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
   "bbox": [
     -180,
     -90,
