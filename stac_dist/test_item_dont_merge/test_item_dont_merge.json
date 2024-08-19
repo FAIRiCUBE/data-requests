@@ -47,7 +47,7 @@
     ],
     "title": "test item",
     "datasource_type": "grid",
-    "datetime": null,
+    "datetime": "2024-08-19T16:29:57Z",
     "modification": null,
     "provision": null,
     "platform": "Rasdaman"
