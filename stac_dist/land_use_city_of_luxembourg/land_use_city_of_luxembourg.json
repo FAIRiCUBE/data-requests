@@ -3,7 +3,15 @@
   "stac_version": "1.0.0",
   "id": "land_use_city_of_luxembourg",
   "properties": {
-    "keywords": [],
+    "keywords": [
+      "landuse",
+      " flachennutzung",
+      " utilisation",
+      " nature",
+      " environment ",
+      "land use"
+    ],
+    "license": "CC0-1.0",
     "description": "Land Use of the city of Luxemborug in terms of functional dimension corresponds to the description of areas in terms of their socio-economic purpose",
     "providers": [
       {
@@ -48,18 +56,42 @@
         "type": "temporal",
         "values": [
           "2007-01-01T00:00Z",
-          "2999-01-01T00:00:00Z"
+          "2015-01-01T00:00Z",
+          "2018-01-01T00:00Z",
+          "2021-01-01T00:00Z"
         ],
-        "step": ""
+        "step": "",
+        "unit": "meters"
       }
     },
-    "raster:bands": [],
+    "raster:bands": [
+      {
+        "band_name": "land use",
+        "unit": "categorical",
+        "data_type": "int16",
+        "nodata": -999,
+        "definition": "Land Use classes of the city of Luxembourg",
+        "description": "Land Use classes of the city of Luxembourg",
+        "category_list": "111\t Residential \t; 112\tAgriculture facilities\t; 113\tIndustry & Commerce \t; 114\tUnused urban areas, brownfields\t; 115\tSocial, cultural, and other (e.g. indoor sports halls)\t; 131\tCemetery\t; 132\tPublic open spaces (e.g. square)\t; 133\tPark & public green (playground)\t; 134\tOther (green area not used for recreation e.g. roundabout) \t; 141\tGolf course \t; 142\tCamp ground \t; 143\tOther sport facilities (outdoor sports facilities)\t; 144\tOther recreation facilities (allotment gardens and picnic)\t; 151\tUtility (production, disposal facilities)\t; 152\tMining / extraction\t; 160\tConstruction site \t; 210\tArable land\t; 220\tGrassland \t; 231\tVineyard\t; 232\tFruit trees \t; 233\tOrchard \t; 234\tOther (greenhouses and tree plantations)\t; 311\tConiferous\t; 312\tMixed\t; 313\tDeciduous\t; 314\tYoung forest\t; 321\tDamaged forest\t; 323\tClear cuts (harvesting)\t; 331\tForest road\t; 410\tGravel\t; 420\tRocks\t; 430\tNatural grassland\t; 440\tHeathland\t; 450\tBushes\t; 460\tWetland\t; 511\tNatural\t; 512\tArtificial\t; 521\tNatural\t; 522\tArtificial\t; 611\tRural roads\t; 612\tMain roads\t; 620\tRailways\t; 631\tCommercial\t; 632\tSport & Leisure\t; 640\tWater traffic\t; 650\tParking lot\t;"
+      }
+    ],
     "title": "Land Use of the City of Luxembourg",
     "datasource_type": "raster",
     "area_cover": "5171.66 ha",
+    "documentation": "https://data.public.lu/fr/datasets/lis-l-land-use-2007-2015-2018/",
     "crs": "EPSG:2169",
     "start_datetime": "2007-01-01T00:00Z",
-    "end_datetime": "2999-01-01T00:00:00Z",
+    "end_datetime": "2021-01-01T00:00Z",
+    "personalData": "no personal data",
+    "provenance_name": "LIS-L Land Use 2007, 2015, 2018",
+    "preprocessing": "Rasterization from vector to raster and clipped to extent of city of Luxembourg",
+    "source_data": "https://data.public.lu/fr/datasets/lis-l-land-use-2007-2015-2018/",
+    "apis": "AWS-S3 API",
+    "access_control": "fairicube account required ",
+    "datetime": "2024-08-27T09:13Z",
+    "modification": null,
+    "provision": null,
+    "use_case_S4E": "1",
     "platform": "Eox"
   },
   "geometry": {
