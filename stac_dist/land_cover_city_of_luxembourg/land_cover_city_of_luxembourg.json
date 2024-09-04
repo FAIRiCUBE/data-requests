@@ -4,9 +4,6 @@
   "id": "land_cover_city_of_luxembourg",
   "properties": {
     "keywords": [
-      "land-cover",
-      " couverture",
-      " couverture-du-sol",
       "land cover"
     ],
     "license": "CC0-1.0",
@@ -86,6 +83,8 @@
     "apis": "AWS-S3 API",
     "access_control": "fairicube account required ",
     "datetime": "2024-09-02T16:29Z",
+    "modification": null,
+    "provision": null,
     "use_case_S4E": "1",
     "platform": "Eox"
   },
