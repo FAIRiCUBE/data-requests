@@ -46,6 +46,14 @@
           null
         ],
         "type": "spatial"
+      },
+      "time": {
+        "type": "temporal",
+        "values": [
+          {},
+          "2999-01-01T00:00:00Z"
+        ],
+        "step": ""
       }
     },
     "raster:bands": [
@@ -64,6 +72,8 @@
     "area_cover": "5171.66 ha",
     "documentation": "N/A",
     "crs": "2169",
+    "start_datetime": {},
+    "end_datetime": "2999-01-01T00:00:00Z",
     "personalData": "no personal data",
     "provenance_name": "Digital Cadastral Plan (PCN)",
     "preprocessing": "",
