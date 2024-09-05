@@ -55,7 +55,7 @@
           "2999-01-01T00:00:00Z"
         ],
         "step": "",
-        "unit": "meters"
+        "unit": "0"
       }
     },
     "raster:bands": [
