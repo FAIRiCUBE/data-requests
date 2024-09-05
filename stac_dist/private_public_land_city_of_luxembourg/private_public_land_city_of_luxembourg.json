@@ -1,0 +1,130 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "private_public_land_city_of_luxembourg",
+  "properties": {
+    "keywords": [
+      "buildings",
+      " cadastre",
+      " development",
+      " pcn",
+      " digital-cadastral-map",
+      " urban planning",
+      "private or public land "
+    ],
+    "license": "CC-BY-4.0",
+    "description": "This dataset depicts private and public land of the City of Luxembourg",
+    "providers": [
+      {
+        "organization_name": "FAIRiCUBE",
+        "organization": "FAIRiCUBE",
+        "organization_email": "info@space4environment.com",
+        "roles": "processor"
+      }
+    ],
+    "dataSource": "N/A",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [],
+        "reference_system": "2169",
+        "type": "spatial",
+        "unit": "private or public land",
+        "step": 10
+      },
+      "y": {
+        "axis": "y",
+        "extent": [],
+        "reference_system": "2169",
+        "type": "spatial",
+        "unit": "private or public land",
+        "step": 10
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "type": "spatial"
+      }
+    },
+    "raster:bands": [
+      {
+        "band_name": "private or public land ",
+        "unit": "categorical",
+        "data_type": "float32",
+        "nodata": -3.40282e+38,
+        "definition": "Public or private land according to the cadastre ",
+        "description": "Public or private land according to the cadastre ",
+        "category_list": "1 Public land; 2 Private Land"
+      }
+    ],
+    "title": "Private and Public Land of the City of Luxembourg",
+    "datasource_type": "raster",
+    "area_cover": "5171.66 ha",
+    "documentation": "N/A",
+    "crs": "2169",
+    "unit_of_measure": "",
+    "personalData": "no personal data",
+    "provenance_name": "Digital Cadastral Plan (PCN)",
+    "preprocessing": "",
+    "source_data": "https://data.public.lu/en/datasets/plan-cadastral-numerise-pcn/#",
+    "apis": "AWS-S3 API",
+    "access_control": "fairicube account required ",
+    "datetime": "2024-09-02T11:30Z",
+    "use_case_S4E": "1",
+    "platform": "Eox"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          6.069058507516138,
+          49.59025737126797
+        ],
+        [
+          6.069058507516138,
+          49.677685246874994
+        ],
+        [
+          6.203732162051925,
+          49.677685246874994
+        ],
+        [
+          6.203732162051925,
+          49.59025737126797
+        ],
+        [
+          6.069058507516138,
+          49.59025737126797
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    6.069058507516138,
+    49.59025737126797,
+    6.203732162051925,
+    49.677685246874994
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
