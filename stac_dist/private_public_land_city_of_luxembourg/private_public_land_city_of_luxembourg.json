@@ -4,12 +4,6 @@
   "id": "private_public_land_city_of_luxembourg",
   "properties": {
     "keywords": [
-      "buildings",
-      " cadastre",
-      " development",
-      " pcn",
-      " digital-cadastral-map",
-      " urban planning",
       "private or public land "
     ],
     "license": "CC-BY-4.0",
@@ -26,16 +20,22 @@
     "cube:dimensions": {
       "x": {
         "axis": "x",
-        "extent": [],
-        "reference_system": "2169",
+        "extent": [
+          -180,
+          180
+        ],
+        "reference_system": 4326,
         "type": "spatial",
         "unit": "private or public land",
         "step": 10
       },
       "y": {
         "axis": "y",
-        "extent": [],
-        "reference_system": "2169",
+        "extent": [
+          -90,
+          90
+        ],
+        "reference_system": 4326,
         "type": "spatial",
         "unit": "private or public land",
         "step": 10
@@ -60,11 +60,10 @@
       }
     ],
     "title": "Private and Public Land of the City of Luxembourg",
-    "datasource_type": "raster",
+    "datasource_type": "grid",
     "area_cover": "5171.66 ha",
     "documentation": "N/A",
     "crs": "2169",
-    "unit_of_measure": "",
     "personalData": "no personal data",
     "provenance_name": "Digital Cadastral Plan (PCN)",
     "preprocessing": "",
@@ -72,6 +71,8 @@
     "apis": "AWS-S3 API",
     "access_control": "fairicube account required ",
     "datetime": "2024-09-02T11:30Z",
+    "modification": null,
+    "provision": null,
     "use_case_S4E": "1",
     "platform": "Eox"
   },
@@ -80,24 +81,24 @@
     "coordinates": [
       [
         [
-          6.069058507516138,
-          49.59025737126797
+          -180,
+          -90
         ],
         [
-          6.069058507516138,
-          49.677685246874994
+          -180,
+          90
         ],
         [
-          6.203732162051925,
-          49.677685246874994
+          180,
+          90
         ],
         [
-          6.203732162051925,
-          49.59025737126797
+          180,
+          -90
         ],
         [
-          6.069058507516138,
-          49.59025737126797
+          -180,
+          -90
         ]
       ]
     ]
@@ -118,10 +119,10 @@
   ],
   "assets": {},
   "bbox": [
-    6.069058507516138,
-    49.59025737126797,
-    6.203732162051925,
-    49.677685246874994
+    -180,
+    -90,
+    180,
+    90
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
