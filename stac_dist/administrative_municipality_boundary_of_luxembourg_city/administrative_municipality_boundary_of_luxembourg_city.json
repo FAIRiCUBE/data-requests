@@ -4,10 +4,6 @@
   "id": "administrative_municipality_boundary_of_luxembourg_city",
   "properties": {
     "keywords": [
-      "cantons",
-      " judicial districts",
-      " electoral districts",
-      " cadastral sections",
       "commune"
     ],
     "license": "CC0-1.0",
@@ -69,6 +65,7 @@
         "data_type": "int32",
         "nodata": 0,
         "definition": "Communes of the city of Luxembourg ",
+        "description": "Communes of the city of Luxembourg ",
         "category_list": "id\tCODE_COMMU\tNOM_COMMUN\t 1\t35\tEich\t; 2\t54\tHamm\t; 3\t61\tHollerich\t; 4\t75\tLuxembourg\t; 5\t101\tRollingergrund\t;"
       }
     ],
@@ -86,6 +83,8 @@
     "apis": "AWS-S3 API",
     "access_control": "fairicube account required ",
     "datetime": "2024-07-25T16:42Z",
+    "modification": null,
+    "provision": null,
     "use_case_S4E": "1",
     "platform": "Eox"
   },
