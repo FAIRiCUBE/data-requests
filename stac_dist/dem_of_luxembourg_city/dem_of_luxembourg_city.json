@@ -4,10 +4,6 @@
   "id": "dem_of_luxembourg_city",
   "properties": {
     "keywords": [
-      "lidar",
-      " terrain",
-      " luref",
-      " topography",
       "DEM"
     ],
     "license": "CC0-1.0",
@@ -58,7 +54,7 @@
           "2999-01-01T00:00:00Z"
         ],
         "step": "",
-        "unit": "meters"
+        "unit": "N/A"
       }
     },
     "raster:bands": [
@@ -73,10 +69,10 @@
       }
     ],
     "title": "Digital Elevation Model of Luxembourg City ",
-    "datasource_type": "raster",
+    "datasource_type": "grid",
     "area_cover": "5171.66 ha",
     "documentation": "https://data.public.lu/en/datasets/lidar-2019-modele-numerique-de-terrain-mnt/",
-    "crs": "EPSG:2169",
+    "crs": "2169",
     "start_datetime": "2019-01-01T00:00Z",
     "end_datetime": "2999-01-01T00:00:00Z",
     "personalData": "no personal data",
@@ -86,6 +82,8 @@
     "apis": "AWS-S3 API",
     "access_control": "fairicube account required ",
     "datetime": "2024-07-29T16:23Z",
+    "modification": null,
+    "provision": null,
     "use_case_S4E": "1",
     "platform": "Eox"
   },
