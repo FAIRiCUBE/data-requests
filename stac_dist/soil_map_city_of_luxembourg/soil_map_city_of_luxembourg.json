@@ -1,0 +1,138 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "soil_map_city_of_luxembourg",
+  "properties": {
+    "keywords": [
+      "earth-observation-and-environment",
+      " observation-de-la-terre-et-environnement",
+      " soil",
+      " inspire",
+      " national",
+      " hvd",
+      "soil type"
+    ],
+    "license": "CC0-1.0",
+    "description": "Detailed soil map of the city of Luxembourg",
+    "providers": [],
+    "dataSource": "https://data.public.lu/fr/datasets/carte-des-sols-1-25000/",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          72850,
+          82570
+        ],
+        "reference_system": "2169",
+        "type": "spatial",
+        "unit": "soil type",
+        "step": 10
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          72850,
+          82570
+        ],
+        "reference_system": "2169",
+        "type": "spatial",
+        "unit": "soil type",
+        "step": 10
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "type": "spatial"
+      },
+      "time": {
+        "type": "temporal",
+        "values": [
+          "1999-01-01T00:00Z",
+          "2999-01-01T00:00:00Z"
+        ],
+        "step": "",
+        "unit": "0"
+      }
+    },
+    "raster:bands": [
+      {
+        "band_name": "soil type",
+        "unit": "categorical",
+        "data_type": "int16",
+        "nodata": -9,
+        "definition": "Soil types of the city of Luxembourg",
+        "description": "Soil types of the city of Luxembourg",
+        "category_list": "soilbodyla\tsoil_type_ wEda2m\t1 uAda\t2 wLca2\t3 j/wLba2m\t4 wEba2\t5 uADa2\t6 wSba2\t7 Edp1\t8 Ebp1\t9 i2EDay2\t10 Ldp1\t11 j/wSbaT\t12 jZbaP\t13 jLba\t14 i2EDBy2\t15 EIp1\t16 Eixy3(k)\t17 wScp1\t18 Ehxy2\t19 Lcay2\t20 GbbK4\t21 Ada1\t22 j-wSba1\t23 EDby\t24 LDa(m)1\t25 iEbbP\t26 EDBP\t27 EDByP\t28 j-wLba2\t29 j/Zba1\t30 ADa(m)1\t31 UFp1\t32 iEda2\t33 Eday2m\t34 j/wSbB2\t35 wSbp1\t36 j/wZba(r)2\t37 kEbB2\t38 Sdp1\t39 LDp1\t40 i2Eday2\t41 EIpy1\t42 iUbb2\t43 EDp1\t44 EbbP\t45 Abay2\t46 Adp1\t47 Sba1\t48 j/wPba2\t49 Pba1\t50 kEca2\t51 EIxy3\t52 J\t53 k2Eday3\t54 iUbbP\t55 Lday2\t56 wEba(m)2\t57 wSba1\t58 Lda1\t59 M\t60 EDa1\t61 j/wLDa2\t62 Ebby3\t63 D\t64 Edby2(k)\t65 Ehxy3\t66 i2Eday3\t67 EIxy\t68 j-wLca2\t69 Edpy2\t70 EDB\t71 Pba1m\t72 ADp1\t73 Eda2\t74 ADpy2\t75 wLca2m\t76 Lda(m)y2\t77 Ada(m)1\t78 Pbp1\t79 UbbP\t80 AIp1\t81 Zaf1\t82 Gbbk4\t83 kEda2\t84 iUbbT\t85 TR\t86 EDpy\t87 EcayP\t88 Etang\t89 uLDa2\t90 Zbp1\t91 Ehp1\t92 FE\t93 wPba(m)2\t94 jZba2(k)\t95 Ecp1\t96 j/Zba(r)1\t97 Zaa1\t98 j/wSbaP\t99 Sbp1\t100 SbaP\t101 EDBy\t102 j/Sba1\t103 j/wEba2m\t104 raAda2\t105 PDp1\t106 wEda(m)2\t107 Ebb3(k)\t108 Eday2\t109 EIx1\t110 wEDa(m)2\t111 ZBFP\t112 j-wSba2\t113 j/wSba1m\t114 j/wLDa\t115 ZDp1\t116 iUbb\t117 Eca1\t118 Lbay2\t119 jSba1\t120 Zba1\t121 Uhx1\t122 Aba1\t123 EdayP\t124 Scay2\t125 kEcb3\t126 uAda2\t127 kEcb3(k)\t128 Ehpy3\t129 wPba\t130 Pcpy2\t131 Edb3(k)\t132 Eday3m\t133 SDaP\t134 Ecay2\t135 jSbaP\t136 EDay2\t137 sLba2\t138 UIp1\t139 PbaP\t140 wEda2\t141 kEDb2\t142 ZB\t143 j/wZba2\t144 EDa(m)1\t145 iUbb3(k)\t146 Eday\t147 LDa(m)y2\t148 GcbK4\t149 Eday3\t150 Eday1\t151 AIpy2\t152 Ehx1\t153 EDay\t154 Acp1\t155 Lba1m\t156 UDp1\t157 EFp1\t158 Ehpy\t159 Aca(m)1\t160 Eda(m)y2\t161 Sbpy2\t162 Lda(m)1\t163 Sbay2\t164 j-wPba2\t165 EIpy2\t166 j/ZaaP\t167 jZBaP\t168 wSca2\t169 EDay3\t170 jSba2\t171 EIxy2\t172 iUbb2(k)\t173 LDay2\t174 EDpy2\t175 Ehxy2m\t176 SDa1\t177 Lbp1\t178 UDB1\t179 Sbaz2\t180 j/wSba2m\t181 Ehay2\t182 jSba2(k)\t183 jSbB3\t184 ADa1m\t185 jZbB2\t186 Ehpy2\t187 Uda1\t188 wEca2\t189 ZbaP\t190 j/wSba(r)2\t191 wLba2\t192 S\t193 Acay2\t194 Lca1\t195 raEda3\t196 jZba2\t197 j-wLba(m)2\t198 j-wSba(m)2\t199 wPba2\t200 kEdb2(k)\t201 raEda2\t202 Zba(r)1\t203 wLba1\t204 jSbB2\t205 Lba1\t206 EDBy2\t207 j/wSba2\t208 UDa1\t209 Sba(r)1\t210 SDp1\t211 Ubb1\t212 Lcp1\t213 j/wLba2\t214 j-wLbaP\t215 Eba1\t216 ZBaP\t217 EDay2(k)\t218"
+      }
+    ],
+    "title": "Soil Map of the City of Luxembourg",
+    "datasource_type": "grid",
+    "area_cover": "5171.66 ha",
+    "documentation": "https://data.public.lu/fr/datasets/carte-des-sols-1-25000/",
+    "crs": "2169",
+    "start_datetime": "1999-01-01T00:00Z",
+    "end_datetime": "2999-01-01T00:00:00Z",
+    "personalData": "no personal data",
+    "provenance_name": "Carte des sols 1:25'000",
+    "source_data": "https://data.public.lu/fr/datasets/carte-des-sols-1-25000/",
+    "apis": "AWS-S3 API",
+    "access_control": "fairicube account required ",
+    "datetime": "2024-08-30T00:00Z",
+    "use_case_S4E": "1",
+    "platform": "Eox"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          6.069058507516138,
+          49.59025737126797
+        ],
+        [
+          6.069058507516138,
+          49.677685246874994
+        ],
+        [
+          6.203732162051925,
+          49.677685246874994
+        ],
+        [
+          6.203732162051925,
+          49.59025737126797
+        ],
+        [
+          6.069058507516138,
+          49.59025737126797
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    6.069058507516138,
+    49.59025737126797,
+    6.203732162051925,
+    49.677685246874994
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
