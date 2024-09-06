@@ -1,0 +1,143 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "protected_areas_of_the_city_of_luxembourg",
+  "properties": {
+    "keywords": [
+      "biodiversity",
+      " Land use",
+      " Natural area",
+      " Natural areas protection",
+      " protected area",
+      " European",
+      "protected land"
+    ],
+    "license": "CC-BY-NC-4.0",
+    "description": "Collection of recent protected areas (status spring-2024) of the city of Luxembourg including\nZones de protection sp\u00e9ciale (Zones Oiseaux)\nZones sp\u00e9ciales de conservation (Zones Habitats)\nZones prot\u00e9g\u00e9es d'int\u00e9r\u00eat national (ZPIN)\n",
+    "providers": [
+      {
+        "organization_name": "FAIRiCUBE",
+        "organization": "FAIRiCUBE",
+        "organization_email": "info@space4environment.com",
+        "roles": "processor"
+      }
+    ],
+    "dataSource": "https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search#/metadata/616ef48f-7196-4e30-b201-6c97808fa68a",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          72850,
+          82570
+        ],
+        "reference_system": "2169",
+        "type": "spatial",
+        "unit": "protected land",
+        "step": 10
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          69590,
+          80030
+        ],
+        "reference_system": "2169",
+        "type": "spatial",
+        "unit": "protected land",
+        "step": 10
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "type": "spatial"
+      },
+      "time": {
+        "type": "temporal",
+        "extent": [
+          "2023-03-16T00:00Z",
+          "2024-03-15T00:00Z"
+        ],
+        "step": "P1Y0M0DT0H0M0S",
+        "unit": "y"
+      }
+    },
+    "raster:bands": [
+      {
+        "band_name": "protected land",
+        "unit": "categorical",
+        "data_type": "int16",
+        "nodata": -9,
+        "definition": "protected designated areas and their designation types",
+        "description": "protected designated areas and their designation types"
+      }
+    ],
+    "title": "Protected areas of Luxembourg city (excluding water protection zones)",
+    "datasource_type": "grid",
+    "area_cover": "5171.66 ha",
+    "documentation": "https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search#/metadata/616ef48f-7196-4e30-b201-6c97808fa68a",
+    "crs": "2169",
+    "start_datetime": "2023-03-16T00:00Z",
+    "end_datetime": "2024-03-15T00:00Z",
+    "provenance_name": " Nationally designated areas for public access (vector data) - May 2024",
+    "source_data": "https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search#/metadata/616ef48f-7196-4e30-b201-6c97808fa68a",
+    "apis": "AWS-S3 API",
+    "access_control": "fairicube account required ",
+    "datetime": "2024-09-05T11:02Z",
+    "use_case_S4E": "1",
+    "platform": "Eox"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          6.069104443926092,
+          49.56094657618465
+        ],
+        [
+          6.069104443926092,
+          49.65484833240523
+        ],
+        [
+          6.203715071874704,
+          49.65484833240523
+        ],
+        [
+          6.203715071874704,
+          49.56094657618465
+        ],
+        [
+          6.069104443926092,
+          49.56094657618465
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    6.069104443926092,
+    49.56094657618465,
+    6.203715071874704,
+    49.65484833240523
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
