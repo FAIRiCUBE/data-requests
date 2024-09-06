@@ -4,12 +4,6 @@
   "id": "protected_areas_of_the_city_of_luxembourg",
   "properties": {
     "keywords": [
-      "biodiversity",
-      " Land use",
-      " Natural area",
-      " Natural areas protection",
-      " protected area",
-      " European",
       "protected land"
     ],
     "license": "CC-BY-NC-4.0",
@@ -70,7 +64,8 @@
         "data_type": "int16",
         "nodata": -9,
         "definition": "protected designated areas and their designation types",
-        "description": "protected designated areas and their designation types"
+        "description": "protected designated areas and their designation types",
+        "category_list": "1 Protected Area"
       }
     ],
     "title": "Protected areas of Luxembourg city (excluding water protection zones)",
@@ -85,6 +80,8 @@
     "apis": "AWS-S3 API",
     "access_control": "fairicube account required ",
     "datetime": "2024-09-05T11:02Z",
+    "modification": null,
+    "provision": null,
     "use_case_S4E": "1",
     "platform": "Eox"
   },
