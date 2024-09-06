@@ -1,0 +1,137 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "shadow_index_city_of_luxembourg",
+  "properties": {
+    "keywords": [
+      "cadastre",
+      "shadow index"
+    ],
+    "license": "CC0-1.0",
+    "providers": [
+      {
+        "organization_name": "FAIRiCUBE",
+        "organization": "FAIRiCUBE",
+        "organization_email": "info@space4environment.com",
+        "roles": "processor"
+      }
+    ],
+    "dataSource": "https://data.public.lu/fr/datasets/lidar-2019-modele-numerique-de-terrain-mnt/",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          72850,
+          82570
+        ],
+        "reference_system": "2169",
+        "type": "spatial",
+        "unit": "shadow index",
+        "step": 10
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          69590,
+          80030
+        ],
+        "reference_system": "2169",
+        "type": "spatial",
+        "unit": "shadow index",
+        "step": 10
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "type": "spatial"
+      },
+      "time": {
+        "type": "temporal",
+        "values": [
+          {},
+          "2999-01-01T00:00:00Z"
+        ],
+        "step": ""
+      }
+    },
+    "raster:bands": [
+      {
+        "band_name": "shadow index",
+        "unit": "continuous",
+        "data_type": "float32",
+        "nodata": -99999,
+        "definition": "",
+        "description": "A standard hillshade model was used to calculate the shadow index. First a day of shadow was simulated for solar altitude for luxembourg city and secondly the data range was normalized linearly"
+      }
+    ],
+    "title": "Shadow Index of the City of Luxembourg",
+    "datasource_type": "grid",
+    "area_cover": "5171.66 ha",
+    "documentation": "https://data.public.lu/fr/datasets/lidar-2019-modele-numerique-de-terrain-mnt/",
+    "crs": "2169",
+    "start_datetime": {},
+    "end_datetime": "2999-01-01T00:00:00Z",
+    "personalData": "no personal data",
+    "provenance_name": "LiDAR 2019 - Digital Terrain Model (DTM)",
+    "source_data": "https://data.public.lu/fr/datasets/lidar-2019-modele-numerique-de-terrain-mnt/",
+    "apis": "AWS-S3 API",
+    "access_control": "fairicube account required ",
+    "datetime": "2024-09-03T00:00Z",
+    "use_case_S4E": "1",
+    "platform": "Eox"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          6.069104443926092,
+          49.56094657618465
+        ],
+        [
+          6.069104443926092,
+          49.65484833240523
+        ],
+        [
+          6.203715071874704,
+          49.65484833240523
+        ],
+        [
+          6.203715071874704,
+          49.56094657618465
+        ],
+        [
+          6.069104443926092,
+          49.56094657618465
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    6.069104443926092,
+    49.56094657618465,
+    6.203715071874704,
+    49.65484833240523
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
