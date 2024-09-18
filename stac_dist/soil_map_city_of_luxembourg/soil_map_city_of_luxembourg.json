@@ -70,6 +70,7 @@
     "end_datetime": "2999-01-01T00:00:00Z",
     "personalData": "no personal data",
     "provenance_name": "Carte des sols 1:25'000",
+    "preprocessing": "Rasterization from vector to raster and clipped to extent of city of Luxembourg",
     "source_data": "https://data.public.lu/fr/datasets/carte-des-sols-1-25000/",
     "apis": "AWS-S3 API",
     "access_control": "fairicube account required ",
