@@ -4,7 +4,7 @@
   "id": "wetness_index_city_of_luxembourg",
   "properties": {
     "keywords": [
-      " (Top) Definition Uses References Topographic wetness index"
+      "Topographic wetness index"
     ],
     "license": "CC0-1.0",
     "description": "Wetness Index of the City of Luxembourg",
@@ -46,13 +46,13 @@
           "2019-01-01T00:00Z",
           "2019-12-31T00:00Z"
         ],
-        "step": "P1Y",
+        "step": "P1Y0M0DT0H0M0S",
         "unit": "year"
       }
     },
     "raster:bands": [
       {
-        "band_name": " (Top) Definition Uses References Topographic wetness index",
+        "band_name": "Topographic wetness index",
         "unit": "continuous",
         "data_type": "float32",
         "nodata": -99999,
