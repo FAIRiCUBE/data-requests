@@ -4,8 +4,7 @@
   "id": "land_use_city_of_luxembourg",
   "properties": {
     "keywords": [
-      "land use 2007",
-      "land use 2015"
+      "land use 2007"
     ],
     "license": "CC0-1.0",
     "description": "Land Use of the city of Luxemborug. In terms of functional dimension corresponds to the description of areas in terms of their socio-economic purpose.",
@@ -69,10 +68,7 @@
         "definition": "Land Use classes of the city of Luxembourg",
         "description": "Land Use classes of the city of Luxembourg",
         "category_list": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/lookup_tables/land_use_07_15_18_21_10m_lut.csv",
-        "comment": "The lookup table with the category list is stored with the data."
-      },
-      {
-        "band_name": "land use 2015"
+        "comment": "The lookup table with the category list is stored with the data.\n\nBand 1: 2007(?)\n..."
       }
     ],
     "title": "Land Use of the City of Luxembourg",
