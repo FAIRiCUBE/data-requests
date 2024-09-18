@@ -4,12 +4,6 @@
   "id": "soil_map_city_of_luxembourg",
   "properties": {
     "keywords": [
-      "earth-observation-and-environment",
-      " observation-de-la-terre-et-environnement",
-      " soil",
-      " inspire",
-      " national",
-      " hvd",
       "soil type"
     ],
     "license": "CC0-1.0",
@@ -80,6 +74,8 @@
     "apis": "AWS-S3 API",
     "access_control": "fairicube account required ",
     "datetime": "2024-08-30T00:00Z",
+    "modification": null,
+    "provision": null,
     "use_case_S4E": "1",
     "platform": "Eox"
   },
