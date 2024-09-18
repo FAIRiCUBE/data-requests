@@ -16,7 +16,7 @@
         "roles": "processor"
       }
     ],
-    "dataSource": "N/A",
+    "dataSource": "Luxembourg Cadaster",
     "cube:dimensions": {
       "x": {
         "axis": "x",
