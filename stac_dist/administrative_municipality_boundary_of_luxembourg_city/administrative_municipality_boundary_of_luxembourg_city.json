@@ -7,7 +7,7 @@
       "commune"
     ],
     "license": "CC0-1.0",
-    "description": "Administrative Municipality Boundaries of the City of Luxembourg",
+    "description": "Administrative Municipality Boundaries of the City of Luxembourg and of the communes within the municipality.",
     "providers": [
       {
         "organization_name": "FAIRiCUBE",
@@ -62,11 +62,12 @@
       {
         "band_name": "commune",
         "unit": "categorical",
-        "data_type": "int32",
+        "data_type": "uint8",
         "nodata": 0,
         "definition": "Communes of the city of Luxembourg ",
         "description": "Communes of the city of Luxembourg ",
-        "category_list": "id\tCODE_COMMU\tNOM_COMMUN\t 1\t35\tEich\t; 2\t54\tHamm\t; 3\t61\tHollerich\t; 4\t75\tLuxembourg\t; 5\t101\tRollingergrund\t;"
+        "category_list": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/lookup_tables/admin_commune_2024_10m_lut.csv",
+        "comment": "The lookup table with the category list is stored in with the data"
       }
     ],
     "title": "Administrative Municipality Boundary of the City of Luxembourg",
@@ -129,7 +130,20 @@
       "title": "data-access catalog"
     }
   ],
-  "assets": {},
+  "assets": {
+    "Administrative Municipality Boundary - COG": {
+      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/admin_commune_2024_10m_b1.tif",
+      "roles": [
+        "data"
+      ]
+    },
+    "Administrative Municipality Boundary - Category list": {
+      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/lookup_tables/admin_commune_2024_10m_lut.csv",
+      "roles": [
+        "data"
+      ]
+    }
+  },
   "bbox": [
     6.069058507516138,
     49.59025737126797,
