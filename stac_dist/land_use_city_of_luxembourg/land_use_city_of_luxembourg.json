@@ -4,10 +4,11 @@
   "id": "land_use_city_of_luxembourg",
   "properties": {
     "keywords": [
-      "land use"
+      "land use 2007",
+      "land use 2015"
     ],
     "license": "CC0-1.0",
-    "description": "Land Use of the city of Luxemborug in terms of functional dimension corresponds to the description of areas in terms of their socio-economic purpose",
+    "description": "Land Use of the city of Luxemborug. In terms of functional dimension corresponds to the description of areas in terms of their socio-economic purpose.",
     "providers": [
       {
         "organization_name": "FAIRiCUBE",
@@ -61,13 +62,17 @@
     },
     "raster:bands": [
       {
-        "band_name": "land use",
+        "band_name": "land use 2007",
         "unit": "categorical",
         "data_type": "int16",
         "nodata": -999,
         "definition": "Land Use classes of the city of Luxembourg",
         "description": "Land Use classes of the city of Luxembourg",
-        "category_list": "111\t Residential \t; 112\tAgriculture facilities\t; 113\tIndustry & Commerce \t; 114\tUnused urban areas, brownfields\t; 115\tSocial, cultural, and other (e.g. indoor sports halls)\t; 131\tCemetery\t; 132\tPublic open spaces (e.g. square)\t; 133\tPark & public green (playground)\t; 134\tOther (green area not used for recreation e.g. roundabout) \t; 141\tGolf course \t; 142\tCamp ground \t; 143\tOther sport facilities (outdoor sports facilities)\t; 144\tOther recreation facilities (allotment gardens and picnic)\t; 151\tUtility (production, disposal facilities)\t; 152\tMining / extraction\t; 160\tConstruction site \t; 210\tArable land\t; 220\tGrassland \t; 231\tVineyard\t; 232\tFruit trees \t; 233\tOrchard \t; 234\tOther (greenhouses and tree plantations)\t; 311\tConiferous\t; 312\tMixed\t; 313\tDeciduous\t; 314\tYoung forest\t; 321\tDamaged forest\t; 323\tClear cuts (harvesting)\t; 331\tForest road\t; 410\tGravel\t; 420\tRocks\t; 430\tNatural grassland\t; 440\tHeathland\t; 450\tBushes\t; 460\tWetland\t; 511\tNatural\t; 512\tArtificial\t; 521\tNatural\t; 522\tArtificial\t; 611\tRural roads\t; 612\tMain roads\t; 620\tRailways\t; 631\tCommercial\t; 632\tSport & Leisure\t; 640\tWater traffic\t; 650\tParking lot\t;"
+        "category_list": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/lookup_tables/land_use_07_15_18_21_10m_lut.csv",
+        "comment": "The lookup table with the category list is stored with the data."
+      },
+      {
+        "band_name": "land use 2015"
       }
     ],
     "title": "Land Use of the City of Luxembourg",
@@ -130,7 +135,20 @@
       "title": "data-access catalog"
     }
   ],
-  "assets": {},
+  "assets": {
+    "Land use Luxembourg - COG": {
+      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/land_use_07_15_18_21_10m_b4.tif",
+      "roles": [
+        "data"
+      ]
+    },
+    "Land use Luxembourg - Category list": {
+      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/lookup_tables/land_use_07_15_18_21_10m_lut.csv",
+      "roles": [
+        "data"
+      ]
+    }
+  },
   "bbox": [
     6.069058507516138,
     49.59025737126797,
