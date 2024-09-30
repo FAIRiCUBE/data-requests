@@ -49,12 +49,12 @@
       },
       "time": {
         "type": "temporal",
-        "values": [
+        "extent": [
           "2019-01-01T00:00Z",
-          "2999-01-01T00:00:00Z"
+          "2019-12-31T00:00Z"
         ],
-        "step": "",
-        "unit": "0"
+        "step": "P1Y0M0DT0H0M0S",
+        "unit": "y"
       }
     },
     "raster:bands": [
@@ -73,9 +73,10 @@
     "documentation": "https://data.public.lu/fr/datasets/lidar-2019-modele-numerique-de-terrain-mnt/",
     "crs": "2169",
     "start_datetime": "2019-01-01T00:00Z",
-    "end_datetime": "2999-01-01T00:00:00Z",
+    "end_datetime": "2019-12-31T00:00Z",
     "personalData": "no personal data ",
     "provenance_name": "LiDAR 2019 - Digital Terrain Model (DTM)",
+    "preprocessing": "The aspect of the terrain was derived using the built-in Raster Terrain Analysis toolbox in QGIS. The Aspect algorithm was used, which computes the direction of the steepest slope at each cell in the input Digital Terrain Model (DTM). The algorithm calculates the orientation of the slope at each raster cell, outputting the compass direction that the slope faces, in degrees (0\u00b0-360\u00b0).  ",
     "source_data": "https://data.public.lu/fr/datasets/lidar-2019-modele-numerique-de-terrain-mnt/",
     "apis": "AWS-S3 API",
     "access_control": "fairicube account required ",
