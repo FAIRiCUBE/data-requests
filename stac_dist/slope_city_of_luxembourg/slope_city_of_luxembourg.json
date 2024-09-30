@@ -1,0 +1,118 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "slope_city_of_luxembourg",
+  "properties": {
+    "keywords": [
+      "slope"
+    ],
+    "description": "The slope is the angle of inclination of the terrain and is expressed in degrees.",
+    "providers": [],
+    "dataSource": "https://data.public.lu/fr/datasets/lidar-2019-modele-numerique-de-terrain-mnt/",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          72850,
+          82570
+        ],
+        "reference_system": "EPSG:2169",
+        "type": "spatial",
+        "unit": "degree",
+        "step": 10
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          69590,
+          80030
+        ],
+        "reference_system": "EPSG:2169",
+        "type": "spatial",
+        "unit": "degree",
+        "step": 10
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "type": "spatial"
+      },
+      "time": {
+        "type": "temporal",
+        "extent": [
+          "2019-01-01T00:00Z",
+          "2019-12-31T00:00Z"
+        ],
+        "step": "P1Y0M0DT0H0M0S",
+        "unit": "y"
+      }
+    },
+    "raster:bands": [
+      {
+        "band_name": "slope",
+        "unit": "continuous"
+      }
+    ],
+    "title": "Slope of the city of Luxembourg",
+    "datasource_type": "grid",
+    "area_cover": "5171.66 ha",
+    "crs": "EPSG:2169",
+    "start_datetime": "2019-01-01T00:00Z",
+    "end_datetime": "2019-12-31T00:00Z",
+    "platform": "Eox"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          6.069104443926092,
+          49.56094657618465
+        ],
+        [
+          6.069104443926092,
+          49.65484833240523
+        ],
+        [
+          6.203715071874704,
+          49.65484833240523
+        ],
+        [
+          6.203715071874704,
+          49.56094657618465
+        ],
+        [
+          6.069104443926092,
+          49.56094657618465
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    6.069104443926092,
+    49.56094657618465,
+    6.203715071874704,
+    49.65484833240523
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
