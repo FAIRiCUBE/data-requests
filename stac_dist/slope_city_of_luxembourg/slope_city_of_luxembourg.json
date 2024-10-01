@@ -4,16 +4,18 @@
   "id": "slope_city_of_luxembourg",
   "properties": {
     "keywords": [
-      "lidar",
-      " terrain",
-      " luref",
-      " topography",
-      " DEM",
       "slope"
     ],
     "license": "CC0-1.0",
     "description": "The slope is the angle of inclination of the terrain and is expressed in degrees.",
-    "providers": [],
+    "providers": [
+      {
+        "organization_name": "FAIRiCUBE",
+        "organization": "FAIRiCUBE",
+        "organization_email": "info@space4environment.com",
+        "roles": "processor"
+      }
+    ],
     "dataSource": "https://data.public.lu/fr/datasets/lidar-2019-modele-numerique-de-terrain-mnt/",
     "cube:dimensions": {
       "x": {
@@ -52,7 +54,8 @@
           "2019-12-31T00:00Z"
         ],
         "step": "P1Y0M0DT0H0M0S",
-        "unit": "y"
+        "unit": "y",
+        "interpolation": ""
       }
     },
     "raster:bands": [
