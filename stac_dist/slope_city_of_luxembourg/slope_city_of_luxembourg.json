@@ -4,6 +4,11 @@
   "id": "slope_city_of_luxembourg",
   "properties": {
     "keywords": [
+      "lidar",
+      " terrain",
+      " luref",
+      " topography",
+      " DEM",
       "slope"
     ],
     "license": "CC0-1.0",
@@ -24,7 +29,7 @@
           72850,
           82570
         ],
-        "reference_system": "EPSG:2169",
+        "reference_system": "2169",
         "type": "spatial",
         "unit": "degree",
         "step": 10
@@ -35,7 +40,7 @@
           69590,
           80030
         ],
-        "reference_system": "EPSG:2169",
+        "reference_system": "2169",
         "type": "spatial",
         "unit": "degree",
         "step": 10
