@@ -3,8 +3,16 @@
   "stac_version": "1.0.0",
   "id": "Vienna_building_volume",
   "properties": {
+    "keywords": [
+      "building",
+      " building volume",
+      " building height",
+      " urban areas",
+      " vienna",
+      "building volume indicator"
+    ],
     "license": "CC-BY-4.0",
-    "description": "Vienna building volume [100m]\n\nThe map shows the building volume (building footprint x avg. building hight) as a normalized indicator 0-1",
+    "description": "Vienna building volume [100m]\n\nThe map shows the building volume (building footprint x avg. building height) as a normalized indicator 0-1",
     "providers": [
       {
         "organization_name": "Stadt Wien",
@@ -25,7 +33,7 @@
         "type": "spatial",
         "unit": "meter",
         "interpolation": "",
-        "step": "100"
+        "step": 100
       },
       "y": {
         "axis": "y",
@@ -37,16 +45,7 @@
         "type": "spatial",
         "unit": "meter",
         "interpolation": "",
-        "step": "100"
-      },
-      "time": {
-        "extent": [
-          "2024-01-01T00:00Z",
-          "2024-12-31T00:00Z"
-        ],
-        "type": "temporal",
-        "step": "P1Y",
-        "unit": "year"
+        "step": 100
       },
       "z": {
         "extent": [
@@ -54,33 +53,41 @@
           null
         ],
         "type": "spatial"
+      },
+      "time": {
+        "type": "temporal",
+        "extent": [
+          "2024-01-01T00:00Z",
+          "2024-12-31T00:00Z"
+        ],
+        "step": "P1Y",
+        "unit": "year"
       }
     },
-    "datetime": "2024-07-17T10:39:35Z",
     "raster:bands": [
       {
-        "band_name": "building volumne indicator",
+        "band_name": "building volume indicator",
         "unit": "indicator",
         "data_type": "float32",
         "nodata": -9,
-        "definition": "building volumne indicator",
-        "description": "building volumne indicator",
+        "definition": "building volume indicator",
+        "description": "building volume indicator",
         "comment": "Band 1"
       }
     ],
     "title": "Vienna building volume [100m]",
     "datasource_type": "GML ",
-    "keywords": "building, building volume, building hight, urban areas ",
     "area_cover": "415km2",
     "crs": "EPSG:31256",
     "start_datetime": "2024-01-01T00:00Z",
     "end_datetime": "2024-12-31T00:00Z",
     "provenance_name": "data.gv.at ",
-    "preprocessing": " The map shows the building volume (building footprint x avg. building hight) as a normalized indicator 0-1",
+    "preprocessing": " The map shows the building volume (building footprint x avg. building height) as a normalized indicator 0-1",
     "source_data": "https://www.data.gv.at",
     "models": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/notebooks/dev/f06_pre_processing/Vienna_distance_raster_from_points_data.ipynb",
     "apis": "AWS-S3 API",
     "access_control": "fairicube account required ",
+    "datetime": "2024-07-17T10:39:35Z",
     "modification": "2024-07-17T10:39:39Z",
     "provision": "2024-07-17T10:39:37Z",
     "use_case_S4E": "1",
