@@ -3,6 +3,13 @@
   "stac_version": "1.0.0",
   "id": "Vienna_building_area",
   "properties": {
+    "keywords": [
+      "urban areas",
+      " buildings",
+      " building footprint",
+      " vienna",
+      "buildings footprint area inside cell [ha]"
+    ],
     "license": "CC-BY-NC-4.0",
     "description": "Vienna building area [100m]",
     "providers": [
@@ -25,7 +32,7 @@
         "type": "spatial",
         "unit": "meter",
         "interpolation": "sum building footprint area cover per 100m x 100m cell",
-        "step": "100"
+        "step": 100
       },
       "y": {
         "axis": "y",
@@ -37,16 +44,7 @@
         "type": "spatial",
         "unit": "meter",
         "interpolation": "sum building footprint area cover per 100m x 100m cell",
-        "step": "100"
-      },
-      "time": {
-        "extent": [
-          "2024-01-01T00:00Z",
-          "2024-12-31T00:00Z"
-        ],
-        "type": "temporal",
-        "step": "P1Y",
-        "unit": "year"
+        "step": 100
       },
       "z": {
         "extent": [
@@ -54,24 +52,31 @@
           null
         ],
         "type": "spatial"
+      },
+      "time": {
+        "type": "temporal",
+        "extent": [
+          "2024-01-01T00:00Z",
+          "2024-12-31T00:00Z"
+        ],
+        "step": "P1Y0M0DT0H0M0S",
+        "unit": "year"
       }
     },
-    "datetime": "2024-07-17T10:29:47Z",
     "raster:bands": [
       {
         "band_name": "buildings footprint area inside cell [ha]",
         "unit": "ha",
+        "data_type": "float32",
+        "nodata": -9,
         "definition": "buildings footprint area inside cell [ha]",
         "description": "buildings footprint area inside cell [ha]",
         "comment": "Band 1",
-        "interpolation": "SUM",
-        "data_type": "float32",
-        "nodata": -9
+        "interpolation": "SUM"
       }
     ],
     "title": "Vienna building area [100m]",
     "datasource_type": "GML ",
-    "keywords": "urban areas, buildings, building footprint",
     "area_cover": "415km2",
     "crs": "EPSG:31256",
     "start_datetime": "2024-01-01T00:00Z",
@@ -82,6 +87,7 @@
     "models": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/notebooks/dev/f06_pre_processing/Vienna_distance_raster_from_points_data.ipynb",
     "apis": "AWS-S3 API",
     "access_control": "fairicube account required ",
+    "datetime": "2024-07-17T10:29:47Z",
     "modification": "2024-07-17T10:29:51Z",
     "provision": "2024-07-17T10:29:49Z",
     "use_case_S4E": "1",
