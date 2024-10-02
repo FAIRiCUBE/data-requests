@@ -4,7 +4,7 @@
   "id": "land_use_city_of_luxembourg",
   "properties": {
     "keywords": [
-      "land use 2007"
+      "land use "
     ],
     "license": "CC0-1.0",
     "description": "Land Use of the city of Luxemborug. In terms of functional dimension corresponds to the description of areas in terms of their socio-economic purpose.",
@@ -61,14 +61,14 @@
     },
     "raster:bands": [
       {
-        "band_name": "land use 2007",
+        "band_name": "land use ",
         "unit": "categorical",
         "data_type": "int16",
         "nodata": -999,
         "definition": "Land Use classes of the city of Luxembourg",
         "description": "Land Use classes of the city of Luxembourg",
         "category_list": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/lookup_tables/land_use_07_15_18_21_10m_lut.csv",
-        "comment": "The lookup table with the category list is stored with the data.\n\nBand 1: 2007(?)\n..."
+        "comment": "The lookup table with the category list is stored with the data.\n\nEach band represents a different reference year:\nBand 1: 2007\nBand 2: 2015\nBand 3: 2018\nBand 4: 2021"
       }
     ],
     "title": "Land Use of the City of Luxembourg",
@@ -80,7 +80,7 @@
     "end_datetime": "2021-01-01T00:00Z",
     "personalData": "no personal data",
     "provenance_name": "LIS-L Land Use 2007, 2015, 2018",
-    "preprocessing": "Rasterization from vector to raster and clipped to extent of city of Luxembourg",
+    "preprocessing": "Rasterization, using nearest neighbour) from vector to raster and clipped to extent of city of Luxembourg",
     "source_data": "https://data.public.lu/fr/datasets/lis-l-land-use-2007-2015-2018/",
     "apis": "AWS-S3 API",
     "access_control": "fairicube account required ",
