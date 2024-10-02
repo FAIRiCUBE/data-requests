@@ -1,0 +1,153 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "CLMS_Urban_Atlas",
+  "properties": {
+    "license": "other",
+    "description": "Urban Atlas in gridded form.",
+    "providers": [
+      {
+        "organization_name": null,
+        "organization": "EEA",
+        "comments": "The Urban Atlas provides pan-European comparable land cover and land use data for Functional Urban Areas (FUA). Urban Atlas 2006 data contain 319 FUAs with more than 100,000 inhabitants as defined by the Urban Audit. The Urban Atlas 2012 data set contains 785 FUAs with more than 50,000 inhabitants, covering EU28 + EFTA countries + West Balkans + Turkey. The nomenclature includes 17 urban classes with MMU 0.25 ha (minor nomenclature changes compared to Urban Atlas 2006) and 10 Rural Classes with MMU 1ha. The data also contain population estimates for each polygon. The Urban Atlas 2018 coverage increased to 788 FUAs covering EU27 + EFTA countries + West Balkans + Turkey + UK. The nomenclature of the Land Cover/Land Use product is the same as for the 2012 version. It includes 17 urban classes with MMU 0.25 ha and 10 Rural Classes with MMU 1ha.The EEA indicator “Vegetation productivity” shows a varying impact of the nr of frost days on productivity variations, depending on climatic zone and land cover combinations.",
+        "doc_link": "https://land.copernicus.eu/local/urban-atlas",
+        "organization_email": null,
+        "project_purpose": null
+      }
+    ],
+    "dataSource": "https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search#/metadata/fb4dffa1-6ceb-4cc0-8372-1ed354c285e6",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -25.857,
+          43.853
+        ],
+        "reference_system": "EPSG:3035",
+        "type": "spatial",
+        "interpolation": null,
+        "step": "10",
+        "unit": "m"
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          27.9117,
+          70.312
+        ],
+        "reference_system": "EPSG:3035",
+        "type": "spatial",
+        "interpolation": null,
+        "step": "10",
+        "unit": "m"
+      },
+      "time": {
+        "extent": [
+          "2006-01-01T00:00:00Z",
+          "2018-01-01T00:00:00Z"
+        ],
+        "type": "temporal",
+        "step": "P6Y0M0DT0H0M0S"
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "unit_of_measure": null,
+        "interpolation": null,
+        "type": "spatial"
+      }
+    },
+    "datetime": "2000-01-01T00:00:00Z",
+    "raster:bands": [
+      {
+        "band_name": "categorical",
+        "unit": null,
+        "data_type": "int16",
+        "nodata": null,
+        "definition": null,
+        "description": null,
+        "category_list": "11100 Continuous Urban Fabric (S.L. &amp;gt; 80%) 11210 Discontinuous Dense Urban Fabric (S.L. : 50% - 80%) 11220 Discontinuous Medium Density Urban Fabric (S.L. : 30% - 50%) 11230 Discontinuous Low Density Urban Fabric (S.L. : 10% - 30%) 11240 Discontinuous Very Low Density Urban Fabric (S.L. &amp;lt; 10%) 11300 Isolated Structures 12100 Industrial, commercial, public, military and private units 12210 Fast transit roads and associated land 12220 Other roads and associated land 12230 Railways and associated land 12300 Port areas 12400 Airports 13100 Mineral extraction and dump sites 13300 Construction sites 13400 Land without current use 14100 Green urban areas 14200 Sports and leisure facilities 21000 Arable land (annual crops) 22000 Permanent crops (vineyards, fruit trees, olive groves) 23000 Pastures 24000 Complex and mixed cultivation patterns 25000 Orchards at the fringe of urban classes 31000 Forests 32000 Herbaceous vegetation associations (natural grassland, moors...) 33000 Open spaces with little or no vegetations (beaches, dunes, bare rocks, glaciers) 40000 Wetland 50000 Water bodies",
+        "comment": null,
+        "interpolation": null
+      }
+    ],
+    "title": "CLMS Urban Atlas gridded",
+    "datasource_type": "raster",
+    "keywords": "urban",
+    "area_cover": "EEA38+UK",
+    "documentation": "https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search#/metadata/fb4dffa1-6ceb-4cc0-8372-1ed354c285e6",
+    "crs": "EPSG:3035",
+    "start_datetime": "2006-01-01T00:00:00Z",
+    "end_datetime": "2018-01-01T00:00:00Z",
+    "re_projection_crs": "",
+    "unit_of_measure": "",
+    "resolution": "",
+    "personalData": null,
+    "Provenance_name": "Urban Atlas vector product",
+    "preprocessing": "rasterization with ArcGis Tool FeatureToRaster. The polygon that overlaps the center of the cell yields the attribute to assign to the cell.",
+    "modification": null,
+    "provision": null,
+    "use_case_S4E": 1,
+    "use_case_WER": 2,
+    "use_case_NHM": null,
+    "use_case_NILU": 2,
+    "use_case_NHM_2": null,
+    "ingestion_status": "Contact S4E to get access",
+    "platform": "Eox"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -29.0872431221431,
+          12.993696422216487
+        ],
+        [
+          -29.0872431221431,
+          12.99436189517529
+        ],
+        [
+          -29.086540089541263,
+          12.99436189517529
+        ],
+        [
+          -29.086540089541263,
+          12.993696422216487
+        ],
+        [
+          -29.0872431221431,
+          12.993696422216487
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    -29.0872431221431,
+    12.993696422216487,
+    -29.086540089541263,
+    12.99436189517529
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
