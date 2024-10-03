@@ -3,8 +3,14 @@
   "stac_version": "1.0.0",
   "id": "Vienna_protected_area",
   "properties": {
+    "keywords": [
+      "protected areas",
+      " environment",
+      " urban green",
+      "land use protected area [% cell cover] "
+    ],
     "license": "CC-BY-ND-4.0",
-    "description": "Protected areas inside Vienna [100m]\nThe dataset is a collection of the following protecteded datasets:\n-Landschaftsschutzgebiete\n-Biotoptypenkartierung\n-Nationalparks\n-Gesch\u00fctzte\u00a0Landschaftsteile\n-Gesch\u00fctzte\u00a0Biotope\n\nThe single protection dataset were merged and a mask protected dataset  was produced. Then the cover of protection inside 100x100 meter cells were calculated and exportet as a 100m raster.\n",
+    "description": "Protected areas inside Vienna [100m]\nThe dataset is a collection of the following protecteded datasets:\n-Landschaftsschutzgebiete\n-Biotoptypenkartierung\n-Nationalparks\n-Gesch\u00fctzte\u00a0Landschaftsteile\n-Gesch\u00fctzte\u00a0Biotope\n\nThe different datasets were merged into one single mask. Then the cover of protected area inside 100x100 meter cells was calculated and exported as a 100m raster.\n",
     "providers": [
       {
         "organization_name": "Stadt Wien",
@@ -25,7 +31,7 @@
         "type": "spatial",
         "unit": "meter",
         "interpolation": "sum protected area cover per 100m x 100m cell",
-        "step": "100"
+        "step": 100
       },
       "y": {
         "axis": "y",
@@ -37,16 +43,7 @@
         "type": "spatial",
         "unit": "meter",
         "interpolation": "sum protected area cover per 100m x 100m cell",
-        "step": "100"
-      },
-      "time": {
-        "extent": [
-          "2024-01-01T00:00Z",
-          "2024-12-31T00:00Z"
-        ],
-        "type": "temporal",
-        "step": "P1Y",
-        "unit": "year"
+        "step": 100
       },
       "z": {
         "extent": [
@@ -54,9 +51,17 @@
           null
         ],
         "type": "spatial"
+      },
+      "time": {
+        "type": "temporal",
+        "extent": [
+          "2024-01-01T00:00Z",
+          "2024-12-31T00:00Z"
+        ],
+        "step": "P1Y0M0DT0H0M0S",
+        "unit": "year"
       }
     },
-    "datetime": "2024-07-17T10:10:51Z",
     "raster:bands": [
       {
         "band_name": "land use protected area [% cell cover] ",
@@ -71,18 +76,18 @@
     ],
     "title": "Protected areas inside Vienna [100m]",
     "datasource_type": "GML ",
-    "keywords": "protected areas, environment, urban green",
     "area_cover": "415km2",
     "crs": "EPSG:31256",
     "start_datetime": "2024-01-01T00:00Z",
     "end_datetime": "2024-12-31T00:00Z",
     "personalData": "",
-    "provenance_name": " data.gv.at",
+    "provenance_name": "Open data Austria (data.gv.at)",
     "preprocessing": "The dataset is a collection of the following protecteded datasets: -Landschaftsschutzgebiete -Biotoptypenkartierung -Nationalparks -Gesch\u00fctzte\u00a0Landschaftsteile -Gesch\u00fctzte\u00a0Biotope  The single protection dataset were merged and a mask protected dataset  was produced. Then the cover of protection inside 100x100 meter cells were calculated and exportet as a 100m raster.",
     "source_data": "https://www.data.gv.at/katalog/dataset/a1347e6c-db7d-423d-9b62-de7717129f5b#additional-info",
     "models": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/notebooks/dev/f06_pre_processing/Vienna_protected_areas_100m.ipynb",
     "apis": "AWS-S3 API",
     "access_control": "fairicube account required ",
+    "datetime": "2024-07-17T10:10:51Z",
     "modification": "2024-07-17T10:10:56Z",
     "provision": "2024-07-17T10:10:54Z",
     "use_case_S4E": "1",
