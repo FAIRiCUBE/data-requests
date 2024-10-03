@@ -3,6 +3,12 @@
   "stac_version": "1.0.0",
   "id": "Vienna_organic_waste_bin_distance_map",
   "properties": {
+    "keywords": [
+      "organic waste",
+      " bins",
+      " distance map",
+      "normalized distance to next bin"
+    ],
     "license": "CC-BY-NC-4.0",
     "description": "Map which shows for every 100m cell the normalized distance in meter to the next organic waste bin",
     "providers": [
@@ -25,7 +31,7 @@
         "type": "spatial",
         "unit": "meter",
         "interpolation": "distance",
-        "step": "100"
+        "step": 100
       },
       "y": {
         "axis": "y",
@@ -37,27 +43,25 @@
         "type": "spatial",
         "unit": "meter",
         "interpolation": "distance",
-        "step": "100"
-      },
-      "time": {
-        "extent": [],
-        "type": "temporal",
-        "values": [
-          "1900-01-01T00:00:00Z",
-          "2999-01-01T00:00:00Z"
-        ],
-        "step": "P1Y0M0DT0H0M0S",
-        "unit": "year"
+        "step": 100
       },
       "z": {
-        "name": "z",
         "extent": [
           null,
           null
-        ]
+        ],
+        "type": "spatial"
+      },
+      "time": {
+        "type": "temporal",
+        "extent": [
+          "2024-01-01T00:00Z",
+          "2024-12-31T00:00Z"
+        ],
+        "step": "P1Y0M0DT0H0M0S",
+        "unit": "year"
       }
     },
-    "datetime": "2024-07-16T17:01:55Z",
     "raster:bands": [
       {
         "band_name": "normalized distance to next bin",
@@ -72,16 +76,16 @@
     ],
     "title": "Organic waste bin distance map of Vienna",
     "datasource_type": "POINT",
-    "keywords": "organic waste, bins, distance map",
     "area_cover": "415km2",
     "crs": "EPSG:31256",
-    "start_datetime": "1900-01-01T00:00:00Z",
-    "end_datetime": "2999-01-01T00:00:00Z",
+    "start_datetime": "2024-01-01T00:00Z",
+    "end_datetime": "2024-12-31T00:00Z",
     "provenance_name": " data.gv.at",
     "preprocessing": "",
     "models": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/notebooks/dev/f06_pre_processing/Vienna_distance_raster_from_points_data.ipynb",
     "apis": "AWS-S3 API",
     "access_control": "fairicube account required ",
+    "datetime": "2024-07-16T17:01:55Z",
     "modification": "2024-07-16T17:01:59Z",
     "provision": "2024-07-16T17:01:58Z",
     "use_case_S4E": "1",
