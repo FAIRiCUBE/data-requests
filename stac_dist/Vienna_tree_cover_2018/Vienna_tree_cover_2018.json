@@ -3,8 +3,16 @@
   "stac_version": "1.0.0",
   "id": "Vienna_tree_cover_2018",
   "properties": {
+    "keywords": [
+      "Tree cover",
+      " forest",
+      " urban green",
+      " tree cover density",
+      " vienna",
+      "Tree Cover Density (TCD).[%]"
+    ],
     "license": "CC-BY-4.0",
-    "description": "Vienna tree cover density 2018 (100m)\nProvides at pan-European level in the spatial resolution of100 m the level of tree cover density in a range from 0% to100% for the 2018 reference year.",
+    "description": "Vienna tree cover density 2018 (100m)\nProvides at pan-European level in the spatial resolution of 100 m the level of tree cover density in a range from 0% to100% for the 2018 reference year.",
     "providers": [
       {
         "organization_name": "European Environment Agency",
@@ -27,7 +35,7 @@
         "type": "spatial",
         "unit": "meter",
         "interpolation": "average",
-        "step": "100"
+        "step": 100
       },
       "y": {
         "axis": "y",
@@ -39,16 +47,7 @@
         "type": "spatial",
         "unit": "meter",
         "interpolation": "average",
-        "step": "100"
-      },
-      "time": {
-        "extent": [
-          "2017-01-01T00:00Z",
-          "2019-12-31T00:00Z"
-        ],
-        "type": "temporal",
-        "step": "P3Y0M0DT0H0M0S",
-        "unit": "year"
+        "step": 100
       },
       "z": {
         "extent": [
@@ -56,9 +55,17 @@
           null
         ],
         "type": "spatial"
+      },
+      "time": {
+        "type": "temporal",
+        "extent": [
+          "2017-01-01T00:00Z",
+          "2019-12-31T00:00Z"
+        ],
+        "step": "P3Y0M0DT0H0M0S",
+        "unit": "year"
       }
     },
-    "datetime": "2024-07-17T09:52:11Z",
     "raster:bands": [
       {
         "band_name": "Tree Cover Density (TCD).[%]",
@@ -73,7 +80,6 @@
     ],
     "title": "Vienna tree cover density 2018 (100m)",
     "datasource_type": "GeoTIFF",
-    "keywords": "Tree cover, forest, urban green, tree cover density,",
     "area_cover": "415km2",
     "crs": "EPSG:31256",
     "start_datetime": "2017-01-01T00:00Z",
@@ -82,6 +88,7 @@
     "source_data": "https://land.copernicus.eu/en/products/high-resolution-layer-tree-cover-density/tree-cover-density-2018#Download",
     "apis": "AWS-S3 API",
     "access_control": "fairicube account required ",
+    "datetime": "2024-07-17T09:52:11Z",
     "modification": "2024-07-17T09:52:18Z",
     "provision": "2024-07-17T09:52:16Z",
     "use_case_S4E": "1",
