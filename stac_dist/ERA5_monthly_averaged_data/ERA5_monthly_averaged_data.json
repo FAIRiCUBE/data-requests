@@ -98,6 +98,13 @@
       "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
+    },
+    {
+      "href": "https://raw.githubusercontent.com/FAIRiCUBE/Processes/refs/heads/main/ERA5_monthly_averaged_data/script.py",
+      "roles": [
+        "processing-expression"
+      ],
+      "title": "ERA5 monthly means"
     }
   ],
   "assets": {},
