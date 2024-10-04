@@ -1,0 +1,119 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "ERA5_monthly_averaged_data",
+  "properties": {
+    "keywords": [],
+    "license": "CC-BY-4.0",
+    "description": "Reanalysis model for the global climate and weather for the past 8 decades. Data is available from 1940 onwards. \nIt includes datasets for: temperature and pressure, wind, mean rates, radiation and heat, clouds, lakes, evaporation and runoff, precipitation and rain, snow, soil, vertical integrals, vegetation and ocean waves. ",
+    "providers": [],
+    "dataSource": "Copernicus Climate Change Service ",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -180,
+          180
+        ],
+        "reference_system": "3035",
+        "type": "spatial"
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          -90,
+          90
+        ],
+        "reference_system": "3035",
+        "type": "spatial"
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": "3035",
+        "type": "spatial"
+      },
+      "time": {
+        "type": "temporal",
+        "extent": [
+          "1940-01-01T12:55:40Z",
+          "2023-12-01T12:55:40Z"
+        ],
+        "step": ""
+      }
+    },
+    "raster:bands": [],
+    "title": "ERA5 monthly averaged data on single levels from 1940 to present (reanalysis)",
+    "area_cover": "Global availability, but API request made for Europe.",
+    "documentation": "https://doi.org/10.1002/qj.3803",
+    "crs": "3035",
+    "start_datetime": "1940-01-01T12:55:40Z",
+    "end_datetime": "2023-12-01T12:55:40Z",
+    "models": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=overview",
+    "quality_control": "checked, see link: https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=eqc",
+    "datetime": null,
+    "modification": null,
+    "provision": null,
+    "use_case_NHM_2": "1",
+    "platform": "Eox"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -29.088598170384085,
+          12.992020531726936
+        ],
+        [
+          -29.088598170384085,
+          12.99512751563393
+        ],
+        [
+          -29.085072497975485,
+          12.99512751563393
+        ],
+        [
+          -29.085072497975485,
+          12.992020531726936
+        ],
+        [
+          -29.088598170384085,
+          12.992020531726936
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "href": "https://raw.githubusercontent.com/FAIRiCUBE/Processes/refs/heads/main/ERA5_monthly_averaged_data/script.py",
+      "rel": "processing-expression",
+      "title": "ERA5 monthly means"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    -29.088598170384085,
+    12.992020531726936,
+    -29.085072497975485,
+    12.99512751563393
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
