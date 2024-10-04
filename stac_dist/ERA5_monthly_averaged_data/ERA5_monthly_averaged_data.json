@@ -101,9 +101,7 @@
     },
     {
       "href": "https://raw.githubusercontent.com/FAIRiCUBE/Processes/refs/heads/main/ERA5_monthly_averaged_data/script.py",
-      "roles": [
-        "processing-expression"
-      ],
+      "rel": "processing-expression",
       "title": "ERA5 monthly means"
     }
   ],
