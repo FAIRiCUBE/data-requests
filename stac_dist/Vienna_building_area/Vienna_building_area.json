@@ -4,10 +4,6 @@
   "id": "Vienna_building_area",
   "properties": {
     "keywords": [
-      "urban areas",
-      " buildings",
-      " building footprint",
-      " vienna",
       "buildings footprint area inside cell [ha]"
     ],
     "license": "CC-BY-NC-4.0",
@@ -136,8 +132,14 @@
     }
   ],
   "assets": {
-    "../r08_buildings/r08_Wien_buildings_area_ha_100m_b1_1_1.tif": {
-      "href": "https://fairicube.s3.eu-central-1.amazonaws.com/vienna_data/100m/",
+    "file on s3": {
+      "href": "https://fairicube.s3.eu-central-1.amazonaws.com/vienna_data/100m/r08_buildings/r08_Wien_buildings_area_ha_100m_b1_1_1.tif",
+      "roles": [
+        "data"
+      ]
+    },
+    "rasdaman datacube": {
+      "href": "https://fairicube.rasdaman.com/rasdaman/ows?&SERVICE=WCS&VERSION=2.1.0&REQUEST=DescribeCoverage&COVERAGEID=Vienna_building_area&outputType=GeneralGridCoverage",
       "roles": [
         "data"
       ]
