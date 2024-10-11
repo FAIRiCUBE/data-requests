@@ -4,22 +4,19 @@
   "id": "Vienna_tree_cover_2018",
   "properties": {
     "keywords": [
-      "Tree cover",
-      " forest",
-      " urban green",
-      " tree cover density",
-      " vienna",
       "Tree Cover Density (TCD).[%]"
     ],
     "license": "CC-BY-4.0",
-    "description": "Vienna tree cover density 2018 (100m)\nProvides at pan-European level in the spatial resolution of 100 m the level of tree cover density in a range from 0% to100% for the 2018 reference year.",
+    "description": "Tree cover density 2018 (100m) in EPSG:31256 in Vienna. Reprojected from the CLMS Product Tree Cover Density 2018.\nIndicates the tree cover density in a range from 0% to100% for the 2018 reference year.",
     "providers": [
       {
         "organization_name": "European Environment Agency",
         "organization": "European Environment Agency",
+        "comments": "",
         "doc_link": "https://sdi.eea.europa.eu/catalogue/copernicus/all/catalog.search#/metadata/c7bf34ea-755c-4dbd-85b6-4efc5fd302a2",
         "organization_email": "copernicus@eea.europa.eu",
-        "roles": "licensor",
+        "ORCID_ID": "",
+        "roles": "producer",
         "project_purpose": "https://land.copernicus.eu"
       }
     ],
@@ -54,6 +51,10 @@
           null,
           null
         ],
+        "reference_system": "",
+        "unit": "",
+        "interpolation": "",
+        "step": "",
         "type": "spatial"
       },
       "time": {
@@ -63,7 +64,8 @@
           "2019-12-31T00:00Z"
         ],
         "step": "P3Y0M0DT0H0M0S",
-        "unit": "year"
+        "unit": "year",
+        "interpolation": ""
       }
     },
     "raster:bands": [
@@ -74,6 +76,7 @@
         "nodata": -9,
         "definition": "Tree Cover Density (TCD).[%]",
         "description": "Tree Cover Density (TCD).[%]",
+        "category_list": "",
         "comment": "Band 1",
         "interpolation": "NN"
       }
@@ -81,18 +84,30 @@
     "title": "Vienna tree cover density 2018 (100m)",
     "datasource_type": "GeoTIFF",
     "area_cover": "415km2",
+    "documentation": "",
     "crs": "EPSG:31256",
     "start_datetime": "2017-01-01T00:00Z",
     "end_datetime": "2019-12-31T00:00Z",
+    "re_projection_crs": "",
+    "unit_of_measure": "",
+    "resolution": "",
+    "personalData": "",
+    "provenance_name": "CLMS Tree cover density 2018",
     "preprocessing": "Re-projection from 3035 to 31256 (NN) and clipped to Vienna border and pixel shift to rounded 100m coordiantes",
     "source_data": "https://land.copernicus.eu/en/products/high-resolution-layer-tree-cover-density/tree-cover-density-2018#Download",
+    "models": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/notebooks/dev/f06_pre_processing/Vienna_protected_areas_100m.ipynb",
+    "data_quality": "",
+    "quality_control": "",
+    "metada_standards": "",
     "apis": "AWS-S3 API",
+    "distributions": "",
     "access_control": "fairicube account required ",
     "datetime": "2024-07-17T09:52:11Z",
     "modification": "2024-07-17T09:52:18Z",
     "provision": "2024-07-17T09:52:16Z",
     "use_case_S4E": "1",
     "use_case_NHM_2": "1",
+    "ingestion_status": "",
     "platform": "Eox"
   },
   "geometry": {
@@ -137,7 +152,7 @@
     }
   ],
   "assets": {
-    "../r05_treecover/r05_treecover2018_100m_b1_COG_1_1.tif": {
+    "file on s3../r05_treecover/r05_treecover2018_100m_b1_COG_1_1.tif": {
       "href": "https://fairicube.s3.eu-central-1.amazonaws.com/vienna_data/100m/",
       "roles": [
         "data"
