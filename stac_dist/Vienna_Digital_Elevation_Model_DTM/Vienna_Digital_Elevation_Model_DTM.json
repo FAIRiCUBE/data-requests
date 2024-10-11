@@ -3,9 +3,23 @@
   "stac_version": "1.0.0",
   "id": "Vienna_Digital_Elevation_Model_DTM",
   "properties": {
+    "keywords": [
+      "Digital Elevation Modell (DEM) ",
+      " Digital Terrain Model (DTM)",
+      " vienna",
+      "elevation"
+    ],
     "license": "CC-BY-NC-ND-4.0",
     "description": "Digital terrain model from Airborne Laserscan data. Elevations of the terrain in the grid of 100 m x 100m.",
-    "providers": [],
+    "providers": [
+      {
+        "organization_name": "Stadt Wien",
+        "organization": "Stadt Wien",
+        "doc_link": "https://www.data.gv.at/",
+        "organization_email": "open@post.wien.gv.at",
+        "roles": "licensor"
+      }
+    ],
     "dataSource": "data.gv.at",
     "cube:dimensions": {
       "x": {
@@ -18,7 +32,7 @@
         "type": "spatial",
         "unit": "meter",
         "interpolation": "average",
-        "step": "100"
+        "step": 100
       },
       "y": {
         "axis": "y",
@@ -30,17 +44,7 @@
         "type": "spatial",
         "unit": "meter",
         "interpolation": "average",
-        "step": "100"
-      },
-      "time": {
-        "extent": [
-          "2015-01-20T00:00Z",
-          "2023-12-31T00:00Z"
-        ],
-        "type": "temporal",
-        "step": "P1Y0M0DT0H0M0S",
-        "unit": "year",
-        "interpolation": "average"
+        "step": 100
       },
       "z": {
         "extent": [
@@ -48,12 +52,21 @@
           null
         ],
         "type": "spatial"
+      },
+      "time": {
+        "type": "temporal",
+        "extent": [
+          "2015-01-20T00:00Z",
+          "2023-12-31T00:00Z"
+        ],
+        "step": "P1Y0M0DT0H0M0S",
+        "unit": "year",
+        "interpolation": "average"
       }
     },
-    "datetime": "2024-07-16T11:00:51Z",
     "raster:bands": [
       {
-        "band_name": "hight [meter] above sea level NN ",
+        "band_name": "elevation",
         "unit": "meter",
         "data_type": "float32",
         "nodata": -3.40282e+38,
@@ -65,7 +78,6 @@
     ],
     "title": "Digital terrain model (DTM) Austria",
     "datasource_type": "GeoTIFF",
-    "keywords": "Digital Elevation Modell (DEM) , Digital Terrain Model (DTM)",
     "area_cover": "415km2",
     "crs": "EPSG:31256",
     "start_datetime": "2015-01-20T00:00Z",
@@ -76,6 +88,7 @@
     "source_data": "https://www.data.gv.at/katalog/dataset/b5de6975-417b-4320-afdb-eb2a9e2a1dbf#additional-info",
     "apis": "AWS-S3 API",
     "access_control": "fairicube account required ",
+    "datetime": "2024-07-16T11:00:51Z",
     "modification": "2024-07-16T11:00:56Z",
     "provision": "2024-07-16T11:00:54Z",
     "use_case_S4E": "1",
