@@ -4,11 +4,7 @@
   "id": "Vienna_water_area",
   "properties": {
     "keywords": [
-      "urban waters",
-      " water",
-      " water surface",
-      " vienna",
-      "water area [% cell cover]"
+      "water_area_share"
     ],
     "license": "CC-BY-4.0",
     "description": "Vienna water areas [100m]\nThe layer shows the cover of surface water inside 100m gridcells.\n",
@@ -65,7 +61,7 @@
     },
     "raster:bands": [
       {
-        "band_name": "water area [% cell cover]",
+        "band_name": "water_area_share",
         "unit": "%",
         "data_type": "float32",
         "nodata": -9,
@@ -136,8 +132,8 @@
     }
   ],
   "assets": {
-    "../r07_water/r07_Wien_water_areas_grid100m_1_1.tif": {
-      "href": "https://fairicube.s3.eu-central-1.amazonaws.com/vienna_data/100m/",
+    "file on s3": {
+      "href": "https://fairicube.s3.eu-central-1.amazonaws.com/vienna_data/100m/r07_water/r07_Wien_water_areas_grid100m_1_1.tif",
       "roles": [
         "data"
       ]
