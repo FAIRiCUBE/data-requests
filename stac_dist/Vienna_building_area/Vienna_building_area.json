@@ -4,7 +4,7 @@
   "id": "Vienna_building_area",
   "properties": {
     "keywords": [
-      "buildings footprint area inside cell [ha]"
+      "builtup_area"
     ],
     "license": "CC-BY-NC-4.0",
     "description": "Vienna building area [100m]",
@@ -61,7 +61,7 @@
     },
     "raster:bands": [
       {
-        "band_name": "buildings footprint area inside cell [ha]",
+        "band_name": "builtup_area",
         "unit": "ha",
         "data_type": "float32",
         "nodata": -9,
