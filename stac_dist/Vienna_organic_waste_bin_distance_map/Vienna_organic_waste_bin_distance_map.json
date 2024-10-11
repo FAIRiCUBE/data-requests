@@ -7,7 +7,8 @@
       "organic waste",
       " bins",
       " distance map",
-      "normalized distance to next bin"
+      "normalized distance to next bin; vienna",
+      "bin_distance"
     ],
     "license": "CC-BY-NC-4.0",
     "description": "Map which shows for every 100m cell the normalized distance in meter to the next organic waste bin",
@@ -15,8 +16,12 @@
       {
         "organization_name": "Stadt Wien",
         "organization": "Stadt Wien",
+        "comments": "",
+        "doc_link": "",
         "organization_email": "open@post.wien.gv.at",
-        "roles": "licensor"
+        "ORCID_ID": "",
+        "roles": "licensor",
+        "project_purpose": ""
       }
     ],
     "dataSource": "Open data Austria (data.gv.at)",
@@ -50,6 +55,10 @@
           null,
           null
         ],
+        "reference_system": "",
+        "unit": "",
+        "interpolation": "",
+        "step": "",
         "type": "spatial"
       },
       "time": {
@@ -59,17 +68,19 @@
           "2024-12-31T00:00Z"
         ],
         "step": "P1Y0M0DT0H0M0S",
-        "unit": "year"
+        "unit": "year",
+        "interpolation": ""
       }
     },
     "raster:bands": [
       {
-        "band_name": "normalized distance to next bin",
+        "band_name": "bin_distance",
         "unit": "meter",
         "data_type": "float32",
         "nodata": -9,
-        "definition": "normalized \n Distance to next c organic waste bin\n(avg inside 100m cell)",
-        "description": "normalized \n Distance to next c organic waste bin\n(avg inside 100m cell)",
+        "definition": "normalized distance to next organic waste bin (average inside 100m cell)",
+        "description": "normalized distance to next organic waste bin (average inside 100m cell)",
+        "category_list": "",
         "comment": "Band 1",
         "interpolation": "AVG"
       }
@@ -77,19 +88,30 @@
     "title": "Organic waste bin distance map of Vienna",
     "datasource_type": "POINT",
     "area_cover": "415km2",
+    "documentation": "",
     "crs": "EPSG:31256",
     "start_datetime": "2024-01-01T00:00Z",
     "end_datetime": "2024-12-31T00:00Z",
+    "re_projection_crs": "",
+    "unit_of_measure": "",
+    "resolution": "",
+    "personalData": "",
     "provenance_name": " data.gv.at",
     "preprocessing": "",
+    "source_data": "https://www.data.gv.at/katalog/de/dataset/stadt-wien_altstoffsammelstellenstandortewien",
     "models": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/notebooks/dev/f06_pre_processing/Vienna_distance_raster_from_points_data.ipynb",
+    "data_quality": "",
+    "quality_control": "",
+    "metada_standards": "",
     "apis": "AWS-S3 API",
+    "distributions": "",
     "access_control": "fairicube account required ",
     "datetime": "2024-07-16T17:01:55Z",
     "modification": "2024-07-16T17:01:59Z",
     "provision": "2024-07-16T17:01:58Z",
     "use_case_S4E": "1",
     "use_case_NHM_2": "1",
+    "ingestion_status": "",
     "platform": "Eox"
   },
   "geometry": {
@@ -134,8 +156,8 @@
     }
   ],
   "assets": {
-    "../r03_biotones/r03_biotonnen_distance_100m_b1_1_1.tif": {
-      "href": "https://fairicube.s3.eu-central-1.amazonaws.com/vienna_data/100m/",
+    "file on s3": {
+      "href": "https://fairicube.s3.eu-central-1.amazonaws.com/vienna_data/100m/r03_biotones/r03_biotonnen_distance_100m_b1_1_1.tif",
       "roles": [
         "data"
       ]
