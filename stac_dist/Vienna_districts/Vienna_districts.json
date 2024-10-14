@@ -1,0 +1,156 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "Vienna_districts",
+  "properties": {
+    "keywords": [
+      "administration",
+      " district",
+      " ",
+      "district id"
+    ],
+    "license": "CC-BY-4.0",
+    "description": "Vienna administration districts [100m]\n\nThe raster shows the district number:\nBEZNR\tNAMEG\n0\t(blank)\n1\tINNERE STADT\n2\tLEOPOLDSTADT\n3\tLANDSTRASSE\n4\tWIEDEN\n5\tMARGARETEN\n6\tMARIAHILF\n7\tNEUBAU\n8\tJOSEFSTADT\n9\tALSERGRUND\n10\tFAVORITEN\n11\tSIMMERING\n12\tMEIDLING\n13\tHIETZING\n14\tPENZING\n15\tRUDOLFSHEIM-F\u00dcNFHAUS\n16\tOTTAKRING\n17\tHERNALS\n18\tW\u00c4HRING\n19\tD\u00d6BLING\n20\tBRIGITTENAU\n21\tFLORIDSDORF\n22\tDONAUSTADT\n23\tLIESING\n",
+    "providers": [
+      {
+        "organization_name": "Stadt Wien",
+        "organization": "Stadt Wien",
+        "doc_link": "https://www.data.gv.at/katalog/dataset/2ee6b8bf-6292-413c-bb8b-bd22dbb2ad4b",
+        "organization_email": "open@post.wien.gv.at",
+        "roles": "licensor"
+      }
+    ],
+    "dataSource": "data.gv.at",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          331000,
+          354000
+        ],
+        "reference_system": "EPSG:31256",
+        "type": "spatial",
+        "unit": "meter",
+        "step": 100
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          -11200,
+          18800
+        ],
+        "reference_system": "EPSG:31256",
+        "type": "spatial",
+        "unit": "meter",
+        "step": 100
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "type": "spatial"
+      },
+      "time": {
+        "type": "temporal",
+        "extent": [
+          "2024-01-01T00:00Z",
+          "2024-12-31T00:00Z"
+        ],
+        "step": "P1Y0M0DT0H0M0S",
+        "unit": "year"
+      }
+    },
+    "raster:bands": [
+      {
+        "band_name": "district id",
+        "unit": "ID",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "district id\nBEZNR\tNAMEG\n0\t(blank)\n1\tINNERE STADT\n2\tLEOPOLDSTADT\n3\tLANDSTRASSE\n4\tWIEDEN\n5\tMARGARETEN\n6\tMARIAHILF\n7\tNEUBAU\n8\tJOSEFSTADT\n9\tALSERGRUND\n10\tFAVORITEN\n11\tSIMMERING\n12\tMEIDLING\n13\tHIETZING\n14\tPENZING\n15\tRUDOLFSHEIM-F\u00dcNFHAUS\n16\tOTTAKRING\n17\tHERNALS\n18\tW\u00c4HRING\n19\tD\u00d6BLING\n20\tBRIGITTENAU\n21\tFLORIDSDORF\n22\tDONAUSTADT\n23\tLIESING\n",
+        "description": "district id",
+        "category_list": "0\t(blank) 1\tINNERE STADT 2\tLEOPOLDSTADT 3\tLANDSTRASSE 4\tWIEDEN 5\tMARGARETEN 6\tMARIAHILF 7\tNEUBAU 8\tJOSEFSTADT 9\tALSERGRUND 10\tFAVORITEN 11\tSIMMERING 12\tMEIDLING 13\tHIETZING 14\tPENZING 15\tRUDOLFSHEIM-F\u00dcNFHAUS 16\tOTTAKRING 17\tHERNALS 18\tW\u00c4HRING 19\tD\u00d6BLING 20\tBRIGITTENAU 21\tFLORIDSDORF 22\tDONAUSTADT 23\tLIESING",
+        "comment": "Band 1",
+        "interpolation": "NN"
+      }
+    ],
+    "title": "Vienna administration districts [100m]",
+    "datasource_type": "WFS (GML) ",
+    "area_cover": "415km2",
+    "crs": "EPSG:31256",
+    "start_datetime": "2024-01-01T00:00Z",
+    "end_datetime": "2024-12-31T00:00Z",
+    "personalData": "",
+    "provenance_name": "data.gv.at ",
+    "preprocessing": "The origanal vector dataset was transformed to a raster using gdal function: processing.run(\"gdal:rasterize\", {'INPUT':'N:/C2205_FAIRiCUBE/f02_data/d050_data_WIEN/Vienna_gridded_data_collection/100m_GRID/vector_files/Bezirke_100m.shp','FIELD':'BEZNR','BURN':0,'USE_Z':False,'UNITS':1,'WIDTH':100,'HEIGHT':100,'EXTENT':'-11200.000000000,18800.000000000,331000.000000000,354000.000000000 []','NODATA':0,'OPTIONS':'COMPRESS=DEFLATE|PREDICTOR=2|ZLEVEL=9','DATA_TYPE':5,'INIT':None,'INVERT':False,'EXTRA':'','OUTPUT':'N:/C2205_FAIRiCUBE/f02_data/d050_data_WIEN/Vienna_gridded_data_collection/100m_GRID/r00_Wien_Bezirke_100m.tif'})",
+    "apis": "AWS-S3 API",
+    "access_control": "fairicube account required ",
+    "datetime": "2024-07-17T11:28:01Z",
+    "modification": "2024-07-17T11:28:04Z",
+    "provision": "2024-07-17T11:28:02Z",
+    "use_case_S4E": "1",
+    "use_case_WER": "2",
+    "use_case_NHM": "2",
+    "use_case_NHM_2": "1",
+    "platform": "Eox"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          20.527587778333267,
+          44.951075003750404
+        ],
+        [
+          20.527587778333267,
+          45.2313494572559
+        ],
+        [
+          20.839371582277582,
+          45.2313494572559
+        ],
+        [
+          20.839371582277582,
+          44.951075003750404
+        ],
+        [
+          20.527587778333267,
+          44.951075003750404
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {
+    "../r00_Wien_Bezirke_100m_1_1.tif": {
+      "href": "https://fairicube.s3.eu-central-1.amazonaws.com/vienna_data/100m/",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "bbox": [
+    20.527587778333267,
+    44.951075003750404,
+    20.839371582277582,
+    45.2313494572559
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
