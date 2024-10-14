@@ -1,0 +1,175 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "LGN",
+  "properties": {
+    "license": "CC-BY-SA-4.0",
+    "description": "LGN is a raster database with a resolution of 25 meter. From LGN2018 onwards, the spatial resolution has been refined to 5m. The LGN database has been produced by Wageningen Environmental Research since the late 1980s and meets the demand for up-to-date and accurate data on land use \nin the Netherlands. It also provides opportunities to track changes in land cover and land use over time.",
+    "providers": [
+      {
+        "organization_name": null,
+        "organization": "WENR",
+        "comments": "download via email; preprocessing by WENR to unify land use categories (which change over years)",
+        "doc_link": "https://lgn.nl/, https://www.wur.nl/en/Research-Results/Research-Institutes/Environmental-Research/Facilities-Tools/Kaarten-en-GIS-bestanden/Land-use-database-of-the-Netherlands/What-is-the-LGN-database.htm",
+        "organization_email": null,
+        "project_purpose": null
+      }
+    ],
+    "dataSource": "https://lgn.nl/bestanden , https://filesender.surf.nl/?s=download&token=30548341-64c3-48a9-9a74-dec69dd3aa91",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          0,
+          280000
+        ],
+        "reference_system": "28992",
+        "type": "spatial",
+        "unit": "metre",
+        "interpolation": "Nearest\u200b",
+        "step": 5
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          300000,
+          625000
+        ],
+        "reference_system": "28992",
+        "type": "spatial",
+        "unit": "metre",
+        "interpolation": "Nearest\u200b",
+        "step": 5
+      },
+      "time": {
+        "extent": [],
+        "type": "temporal",
+        "values": [
+          "2012-01-01T00:00Z",
+          "2018-01-01T00:00Z",
+          "2019-01-01T00:00Z",
+          "2020-01-01T00:00Z",
+          "2021-01-01T00:00Z",
+          "2022-01-01T00:00Z"
+        ],
+        "step": "",
+        "unit": "day",
+        "interpolation": null
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "interpolation": null,
+        "type": "spatial"
+      }
+    },
+    "datetime": "2000-01-01T00:00:00Z",
+    "raster:bands": [
+      {
+        "band_name": "landuse",
+        "unit": "1",
+        "data_type": "int",
+        "nodata": 0,
+        "definition": "https://lgn.nl/documentatie/wijzigingen-per-versie",
+        "description": "Categorial data distinguishing 48 land use classes",
+        "category_list": null,
+        "comment": "",
+        "interpolation": null
+      }
+    ],
+    "title": "National Land Use Database (LGN) in the Netherlands",
+    "datasource_type": "grid",
+    "keywords": "National Land Use, landuse, LGN, Netherlands",
+    "area_cover": "Netherlands",
+    "documentation": "https://doi.org/10.4121/688363cc-8c79-439f-bb0e-fe5d0deb3161, https://data.4tu.nl/datasets/2e472483-255b-4468-b5a2-beb413746b48/1, https://data.4tu.nl/datasets/8738f896-f49e-4ae7-8671-50ef893a2cee/1, https://data.4tu.nl/datasets/e2971c99-f4f2-4786-b7ba-2d16a24bcd83/1",
+    "crs": "28992",
+    "start_datetime": "2012-01-01T00:00Z",
+    "end_datetime": "2022-01-01T00:00Z",
+    "personalData": null,
+    "provenance_name": "https://lgn.nl/bestanden",
+    "preprocessing": "https://lgn.nl/documentatie",
+    "modification": null,
+    "provision": null,
+    "use_case_S4E": null,
+    "use_case_WER": 1,
+    "use_case_NHM": null,
+    "use_case_NILU": null,
+    "use_case_NHM_2": null,
+    "ingestion_status": "completed, year as timestamp, (2012,2019,2022,2021,2022)",
+    "platform": "Rasdaman"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          3.0464264025399874,
+          50.66919756175071
+        ],
+        [
+          3.0464264025399874,
+          53.59620050977796
+        ],
+        [
+          7.275203768012878,
+          53.59620050977796
+        ],
+        [
+          7.275203768012878,
+          50.66919756175071
+        ],
+        [
+          3.0464264025399874,
+          50.66919756175071
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?&SERVICE=WCS&VERSION=2.1.0&REQUEST=DescribeCoverage&COVERAGEID=LGN&outputType=GeneralGridCoverage",
+      "rel": "about",
+      "type": "text/xml",
+      "title": "Link to the rasdaman coverage description in XML"
+    },
+    {
+      "href": "https://fairicube.rasdaman.com/rasdaman-dashboard/?layers=LGN",
+      "rel": "service",
+      "type": "text/html",
+      "title": "Link to the rasdaman web application to Access, process gridded data"
+    }
+  ],
+  "assets": {
+    "thumbnail_rasdaman": {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?service=WMS&version=1.3.0&request=GetMap&layers=LGN&bbox=50.66919756175071,3.0464264025399874,53.59620050977796,7.275203768012878&time=\"2012-01-01T00:00Z\"&width=800&height=600&crs=EPSG:4326&format=image/png&transparent=true&styles=",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    3.0464264025399874,
+    50.66919756175071,
+    7.275203768012878,
+    53.59620050977796
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
