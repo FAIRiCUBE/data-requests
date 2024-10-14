@@ -14,6 +14,8 @@ Contents of this space:
 - [Use case specific modeling and access](https://github.com/FAIRiCUBE/data-requests/wiki/Data-Overview)
 - [complete rasdaman documentation](https://doc.rasdaman.com)
 
+See also the [list of requirements agreed with the Use Cases](https://github.com/FAIRiCUBE/data-requests/wiki/Requirements)
+
 As data ingest is tightly connected with metadata management, use of data, etc., consider also these related spaces:
 
 - [metadata-editor WebGUI](https://catalog-editor.eoxhub.fairicube.eu/): to provide and edit metadata to be shown in the [data catalog (STAC-fastapi)](https://catalog.eoxhub.fairicube.eu/?.language=en)
