@@ -3,14 +3,9 @@
   "stac_version": "1.0.0",
   "id": "ADC_Crop_Parcels_Field_ID",
   "properties": {
-    "keywords": [
-      "agriculture",
-      " agricultural parcels",
-      " arable land",
-      " agrodatacube"
-    ],
+    "keywords": [],
     "license": "CC-BY-NC-4.0",
-    "description": "AgroDataCube provides a collection of open and derived data for use in agri-food applications. It is provided by Wageningen Environmental Research, part of Wageningen University and Research. \nADC- Crop Parcels Field ID - unique identificator of crop parcels.",
+    "description": "AgroDataCube provides a collection of open and derived data for use in agri-food applications. It is provided by Wageningen Environmental Research, part of Wageningen University and Research. \nADC - Crop Parcels Field ID - unique identificator of crop parcels.",
     "providers": [],
     "dataSource": "https://filesender.surf.nl/?s=download&token=799ac743-ded2-4b8e-b30a-0b53b94bbab2",
     "cube:dimensions": {
@@ -62,7 +57,7 @@
         "description": "Unique identificator of crop parcels"
       }
     ],
-    "title": "ADC- Crop Parcels Field ID",
+    "title": "ADC - Crop Parcels Field ID",
     "datasource_type": "Raster",
     "area_cover": "Central Netherlands",
     "documentation": "https://doi.org/10.18174/455759",
@@ -75,6 +70,7 @@
     "modification": null,
     "provision": null,
     "use_case_WER": "1",
+    "ingestion_status": "completed",
     "platform": "Both"
   },
   "geometry": {
