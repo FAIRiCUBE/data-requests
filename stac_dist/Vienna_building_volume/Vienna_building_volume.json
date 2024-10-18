@@ -26,8 +26,8 @@
       "x": {
         "axis": "x",
         "extent": [
-          331000,
-          354000
+          -11200,
+          18800
         ],
         "reference_system": "EPSG:31256",
         "type": "spatial",
@@ -38,8 +38,8 @@
       "y": {
         "axis": "y",
         "extent": [
-          -11200,
-          18800
+          331000,
+          354000
         ],
         "reference_system": "EPSG:31256",
         "type": "spatial",
