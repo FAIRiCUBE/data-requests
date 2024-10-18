@@ -62,6 +62,7 @@
     "modification": null,
     "provision": null,
     "use_case_WER": "1",
+    "ingestion_status": "completted",
     "platform": "Both"
   },
   "geometry": {
