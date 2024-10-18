@@ -3,12 +3,7 @@
   "stac_version": "1.0.0",
   "id": "ADC_arable_land_markers_no_ndvi",
   "properties": {
-    "keywords": [
-      "agriculture",
-      " NDVI",
-      " arable land",
-      " agrodatacube"
-    ],
+    "keywords": [],
     "license": "CC-BY-NC-4.0",
     "description": "AgroDataCube provides a collection of open and derived data for use in agri-food applications. It is provided by Wageningen Environmental Research, part of Wageningen University and Research. \nArable Land Markers No NDVI.",
     "providers": [],
@@ -49,7 +44,7 @@
           "2018-01-01T12:00Z",
           "2020-01-01T12:00Z"
         ],
-        "step": "P1Y",
+        "step": "P1Y0M0DT0H0M0S",
         "unit": "years"
       }
     },
@@ -71,7 +66,11 @@
     "end_datetime": "2020-01-01T12:00Z",
     "provenance_name": "https://agrodatacube.wur.nl/",
     "source_data": "https://documenter.getpostman.com/view/3284162/TVeqd7aa",
+    "datetime": null,
+    "modification": null,
+    "provision": null,
     "use_case_WER": "1",
+    "ingestion_status": "completted",
     "platform": "Both"
   },
   "geometry": {
