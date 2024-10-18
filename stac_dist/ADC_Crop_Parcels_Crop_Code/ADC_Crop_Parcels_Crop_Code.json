@@ -3,12 +3,7 @@
   "stac_version": "1.0.0",
   "id": "ADC_Crop_Parcels_Crop_Code",
   "properties": {
-    "keywords": [
-      "agriculture",
-      " crop type",
-      " arable land",
-      " agrodatacube"
-    ],
+    "keywords": [],
     "license": "CC-BY-NC-4.0",
     "description": "AgroDataCube provides a collection of open and derived data for use in agri-food applications. It is provided by Wageningen Environmental Research, part of Wageningen University and Research. \nCrop Parcels - Crop Code - crop type at given year.",
     "providers": [],
@@ -16,7 +11,10 @@
     "cube:dimensions": {
       "x": {
         "axis": "x",
-        "extent": [],
+        "extent": [
+          136000,
+          223870
+        ],
         "reference_system": "28992",
         "type": "spatial",
         "unit": "meters",
@@ -24,7 +22,10 @@
       },
       "y": {
         "axis": "y",
-        "extent": [],
+        "extent": [
+          428495,
+          535555
+        ],
         "reference_system": "28992",
         "type": "spatial",
         "unit": "meters",
@@ -43,7 +44,7 @@
           "2014-01-01T12:00Z",
           "2022-01-01T12:00Z"
         ],
-        "step": "P1Y",
+        "step": "P1Y0M0DT0H0M0S",
         "unit": "year"
       }
     },
@@ -57,6 +58,9 @@
     "end_datetime": "2022-01-01T12:00Z",
     "provenance_name": "https://agrodatacube.wur.nl/",
     "source_data": "https://documenter.getpostman.com/view/3284162/TVeqd7aa",
+    "datetime": null,
+    "modification": null,
+    "provision": null,
     "use_case_WER": "1",
     "platform": "Both"
   },
