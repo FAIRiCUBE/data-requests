@@ -1,0 +1,148 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "ADC_Grassland_Markers_NDVI_Spring",
+  "properties": {
+    "keywords": [
+      "agriculture",
+      " NDVI",
+      " agricultural grassland",
+      " agrodatacube"
+    ],
+    "license": "CC-BY-NC-4.0",
+    "description": "AgroDataCube provides a collection of open and derived data for use in agri-food applications. It is provided by Wageningen Environmental Research, part of Wageningen University and Research. \nADC - Grassland Markers NDVI Spring - agricultural grassland field conditions at spring.",
+    "providers": [],
+    "dataSource": "https://filesender.surf.nl/?s=download&token=96695229-4e93-4d40-b1d7-d66329acb7cd",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          136000,
+          223870
+        ],
+        "reference_system": "28992",
+        "type": "spatial",
+        "unit": "meters",
+        "step": 10
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          428495,
+          535555
+        ],
+        "reference_system": "28992",
+        "type": "spatial",
+        "unit": "meters",
+        "step": 10
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "type": "spatial"
+      },
+      "time": {
+        "type": "temporal",
+        "extent": [
+          "2018-01-01T12:00Z",
+          "2022-01-01T12:00Z"
+        ],
+        "step": "P1Y",
+        "unit": "year"
+      }
+    },
+    "raster:bands": [
+      {
+        "data_type": "float32",
+        "nodata": -999,
+        "definition": "https://documenter.getpostman.com/view/3284162/TVeqd7aa",
+        "description": "Agricultural grassland field conditions at spring. Values 0-1, higher value corresponds to higher greeness in termas of NDVI.",
+        "category_list": "0-1"
+      }
+    ],
+    "title": "ADC - Grassland Markers NDVI Spring",
+    "datasource_type": "Raster",
+    "area_cover": "Central Netherlands",
+    "documentation": "https://doi.org/10.18174/455759",
+    "crs": "28992",
+    "start_datetime": "2018-01-01T12:00Z",
+    "end_datetime": "2022-01-01T12:00Z",
+    "provenance_name": "https://agrodatacube.wur.nl/",
+    "source_data": "https://documenter.getpostman.com/view/3284162/TVeqd7aa",
+    "use_case_WER": "1",
+    "platform": "Both"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          5.105442156813408,
+          51.8407808425126
+        ],
+        [
+          5.105442156813408,
+          52.80691561255643
+        ],
+        [
+          6.408453362667011,
+          52.80691561255643
+        ],
+        [
+          6.408453362667011,
+          51.8407808425126
+        ],
+        [
+          5.105442156813408,
+          51.8407808425126
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?&SERVICE=WCS&VERSION=2.1.0&REQUEST=DescribeCoverage&COVERAGEID=ADC_Grassland_Markers_NDVI_Spring&outputType=GeneralGridCoverage",
+      "rel": "about",
+      "type": "text/xml",
+      "title": "Link to the rasdaman coverage description in XML"
+    },
+    {
+      "href": "https://fairicube.rasdaman.com/rasdaman-dashboard/?layers=ADC_Grassland_Markers_NDVI_Spring",
+      "rel": "service",
+      "type": "text/html",
+      "title": "Link to the rasdaman web application to Access, process gridded data"
+    }
+  ],
+  "assets": {
+    "thumbnail_rasdaman": {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?service=WMS&version=1.3.0&request=GetMap&layers=ADC_Grassland_Markers_NDVI_Spring&bbox=51.8407808425126,5.105442156813408,52.80691561255643,6.408453362667011&width=800&height=600&crs=EPSG:4326&format=image/png&transparent=true&styles=time=\"2018-01-01T12:00Z\"",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    5.105442156813408,
+    51.8407808425126,
+    6.408453362667011,
+    52.80691561255643
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
