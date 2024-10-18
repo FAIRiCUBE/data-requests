@@ -1,0 +1,148 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "LGN_Monitoring",
+  "properties": {
+    "keywords": [
+      "land use",
+      " Netherlands",
+      " monitoring"
+    ],
+    "license": "CC-BY-SA-4.0",
+    "description": "National Land Use Database Netherlands. Land use classes aggregated to so called monitoring categories being used for monitoring of changes and other more general approaches.",
+    "providers": [],
+    "dataSource": "https://filesender.surf.nl/?s=download&token=b7ffa4d3-f9cb-4614-83c8-a9f4779a0456",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          136000,
+          223870
+        ],
+        "reference_system": "28992",
+        "type": "spatial",
+        "unit": "meters",
+        "step": 10
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          428495,
+          535555
+        ],
+        "reference_system": "28992",
+        "type": "spatial",
+        "unit": "meters",
+        "step": 10
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "type": "spatial"
+      },
+      "time": {
+        "type": "temporal",
+        "values": [
+          "2012-01-01T12:00Z",
+          "2018-01-01T12:00Z",
+          "2022-01-01T12:00Z"
+        ],
+        "step": "",
+        "unit": "year"
+      }
+    },
+    "raster:bands": [
+      {
+        "data_type": "uint16",
+        "nodata": 65535,
+        "definition": "https://lgn.nl/",
+        "description": "Land use classes aggregated to so called monitoring categories being used for monitoring of changes and other more general approaches.",
+        "category_list": "7,9,11,16,18,25,30"
+      }
+    ],
+    "title": "LGN Monitoring",
+    "datasource_type": "Raster",
+    "area_cover": "Central Netherlands",
+    "documentation": "https://lgn.nl/documentatie",
+    "crs": "28992",
+    "start_datetime": "2012-01-01T12:00Z",
+    "end_datetime": "2022-01-01T12:00Z",
+    "provenance_name": "https://lgn.nl/",
+    "source_data": "https://lgn.nl/bestanden",
+    "use_case_WER": "1",
+    "platform": "Both"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          5.105442156813408,
+          51.8407808425126
+        ],
+        [
+          5.105442156813408,
+          52.80691561255643
+        ],
+        [
+          6.408453362667011,
+          52.80691561255643
+        ],
+        [
+          6.408453362667011,
+          51.8407808425126
+        ],
+        [
+          5.105442156813408,
+          51.8407808425126
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?&SERVICE=WCS&VERSION=2.1.0&REQUEST=DescribeCoverage&COVERAGEID=LGN_Monitoring&outputType=GeneralGridCoverage",
+      "rel": "about",
+      "type": "text/xml",
+      "title": "Link to the rasdaman coverage description in XML"
+    },
+    {
+      "href": "https://fairicube.rasdaman.com/rasdaman-dashboard/?layers=LGN_Monitoring",
+      "rel": "service",
+      "type": "text/html",
+      "title": "Link to the rasdaman web application to Access, process gridded data"
+    }
+  ],
+  "assets": {
+    "thumbnail_rasdaman": {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?service=WMS&version=1.3.0&request=GetMap&layers=LGN_Monitoring&bbox=51.8407808425126,5.105442156813408,52.80691561255643,6.408453362667011&width=800&height=600&crs=EPSG:4326&format=image/png&transparent=true&styles=time=\"2012-01-01T12:00Z\"",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    5.105442156813408,
+    51.8407808425126,
+    6.408453362667011,
+    52.80691561255643
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
