@@ -3,7 +3,12 @@
   "stac_version": "1.0.0",
   "id": "ADC_Crop_Parcels_Field_ID",
   "properties": {
-    "keywords": [],
+    "keywords": [
+      "agriculture",
+      " agricultural parcels",
+      " arable land",
+      " agrodatacube"
+    ],
     "license": "CC-BY-NC-4.0",
     "description": "AgroDataCube provides a collection of open and derived data for use in agri-food applications. It is provided by Wageningen Environmental Research, part of Wageningen University and Research. \nADC- Crop Parcels Field ID - unique identificator of crop parcels.",
     "providers": [],
