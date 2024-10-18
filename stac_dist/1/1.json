@@ -20,26 +20,26 @@
       "x": {
         "axis": "x",
         "extent": [
-          331000,
-          354000
-        ],
-        "reference_system": "EPSG:31256",
-        "type": "spatial",
-        "unit": "meter",
-        "interpolation": "sum land use area cover per 100m x 100m cell",
-        "step": "100"
-      },
-      "y": {
-        "axis": "y",
-        "extent": [
           -11200,
           18800
         ],
         "reference_system": "EPSG:31256",
         "type": "spatial",
         "unit": "meter",
-        "interpolation": "sum land use area cover per 100m x 100m cell",
-        "step": "100"
+        "interpolation": "",
+        "step": 100
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          331000,
+          354000
+        ],
+        "reference_system": "EPSG:31256",
+        "type": "spatial",
+        "unit": "meter",
+        "interpolation": "",
+        "step": 100
       },
       "time": {
         "extent": [
@@ -134,8 +134,8 @@
     }
   ],
   "assets": {
-    "r01_landuse": {
-      "href": "https://fairicube.s3.eu-central-1.amazonaws.com/vienna_data/100m/",
+    "data on fairicube S3 Bucket": {
+      "href": "https://fairicube.s3.eu-central-1.amazonaws.com/vienna_data/100m/r01_real_land_use2020_100m_b32_1_1.tif",
       "roles": [
         "data"
       ]
