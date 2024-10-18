@@ -3,12 +3,7 @@
   "stac_version": "1.0.0",
   "id": "ADC_Crop_Rotation_Index",
   "properties": {
-    "keywords": [
-      "agriculture",
-      " crop rotation",
-      " arable land",
-      " agrodatacube"
-    ],
+    "keywords": [],
     "license": "CC-BY-NC-4.0",
     "description": "AgroDataCube provides a collection of open and derived data for use in agri-food applications. It is provided by Wageningen Environmental Research, part of Wageningen University and Research. \nThe crop rotation index is an indicator for the extent diverse crops have been planted and the soil has been managed with care during the past 6 years.",
     "providers": [],
@@ -49,7 +44,7 @@
           "2014-01-01T12:00Z",
           "2022-01-01T12:00Z"
         ],
-        "step": "P1Y",
+        "step": "P1Y0M0DT0H0M0S",
         "unit": "year"
       }
     },
@@ -72,7 +67,11 @@
     "end_datetime": "2022-01-01T12:00Z",
     "provenance_name": "https://agrodatacube.wur.nl/",
     "source_data": "https://documenter.getpostman.com/view/3284162/TVeqd7aa",
+    "datetime": null,
+    "modification": null,
+    "provision": null,
     "use_case_WER": "1",
+    "ingestion_status": "completed",
     "platform": "Both"
   },
   "geometry": {
