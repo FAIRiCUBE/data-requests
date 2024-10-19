@@ -3,7 +3,13 @@
   "stac_version": "1.0.0",
   "id": "ADC_Crop_Parcels_Crop_Code",
   "properties": {
-    "keywords": [],
+    "keywords": [
+      "agriculture",
+      " crop type",
+      " arable land",
+      " agrodatacube",
+      "adc"
+    ],
     "license": "CC-BY-NC-4.0",
     "description": "AgroDataCube provides a collection of open and derived data for use in agri-food applications. It is provided by Wageningen Environmental Research, part of Wageningen University and Research. \nCrop Parcels - Crop Code - crop type at given year.",
     "providers": [],
@@ -48,7 +54,16 @@
         "unit": "year"
       }
     },
-    "raster:bands": [],
+    "raster:bands": [
+      {
+        "band_name": "adc",
+        "unit": "1",
+        "data_type": "int16",
+        "nodata": 65535,
+        "definition": "https://documenter.getpostman.com/view/3284162/TVeqd7aa",
+        "description": "Crop Parcels - Crop Code - crop type at given year."
+      }
+    ],
     "title": "ADC - Crop Parcels - Crop Code",
     "datasource_type": "Raster",
     "area_cover": "Central Netherlands",
@@ -62,7 +77,7 @@
     "modification": null,
     "provision": null,
     "use_case_WER": "1",
-    "ingestion_status": "completted",
+    "ingestion_status": "completed",
     "platform": "Both"
   },
   "geometry": {
