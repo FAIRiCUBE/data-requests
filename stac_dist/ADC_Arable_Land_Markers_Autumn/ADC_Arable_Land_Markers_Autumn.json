@@ -3,7 +3,12 @@
   "stac_version": "1.0.0",
   "id": "ADC_Arable_Land_Markers_Autumn",
   "properties": {
-    "keywords": [],
+    "keywords": [
+      "agriculture",
+      " field conditions",
+      " arable land",
+      " agrodatacube"
+    ],
     "license": "CC-BY-NC-4.0",
     "description": "AgroDataCube provides a collection of open and derived data for use in agri-food applications. It is provided by Wageningen Environmental Research, part of Wageningen University and Research. \nArable Land Markers Autumn - autumn field conditions on arable land.",
     "providers": [],
@@ -71,7 +76,7 @@
     "modification": null,
     "provision": null,
     "use_case_WER": "1",
-    "ingestion_status": "completted",
+    "ingestion_status": "completed",
     "platform": "Both"
   },
   "geometry": {
