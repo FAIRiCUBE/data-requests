@@ -4,10 +4,7 @@
   "id": "ADC_Grassland_Markers_NDVI_Spring",
   "properties": {
     "keywords": [
-      "agriculture",
-      " NDVI",
-      " agricultural grassland",
-      " agrodatacube"
+      "adc"
     ],
     "license": "CC-BY-NC-4.0",
     "description": "AgroDataCube provides a collection of open and derived data for use in agri-food applications. It is provided by Wageningen Environmental Research, part of Wageningen University and Research. \nADC - Grassland Markers NDVI Spring - agricultural grassland field conditions at spring.",
@@ -49,17 +46,19 @@
           "2018-01-01T12:00Z",
           "2022-01-01T12:00Z"
         ],
-        "step": "P1Y",
+        "step": "P1Y0M0DT0H0M0S",
         "unit": "year"
       }
     },
     "raster:bands": [
       {
+        "band_name": "adc",
+        "unit": "1",
         "data_type": "float32",
         "nodata": -999,
         "definition": "https://documenter.getpostman.com/view/3284162/TVeqd7aa",
-        "description": "Agricultural grassland field conditions at spring. Values 0-1, higher value corresponds to higher greeness in termas of NDVI.",
-        "category_list": "0-1"
+        "description": "Agricultural grassland field conditions at spring. Values 0-1, higher value corresponds to higher vegetation in terms of NDVI.",
+        "category_list": ""
       }
     ],
     "title": "ADC - Grassland Markers NDVI Spring",
@@ -71,7 +70,11 @@
     "end_datetime": "2022-01-01T12:00Z",
     "provenance_name": "https://agrodatacube.wur.nl/",
     "source_data": "https://documenter.getpostman.com/view/3284162/TVeqd7aa",
+    "datetime": null,
+    "modification": null,
+    "provision": null,
     "use_case_WER": "1",
+    "ingestion_status": "completed",
     "platform": "Both"
   },
   "geometry": {
