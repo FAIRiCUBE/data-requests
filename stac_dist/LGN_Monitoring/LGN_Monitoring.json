@@ -3,11 +3,7 @@
   "stac_version": "1.0.0",
   "id": "LGN_Monitoring",
   "properties": {
-    "keywords": [
-      "land use",
-      " Netherlands",
-      " monitoring"
-    ],
+    "keywords": [],
     "license": "CC-BY-SA-4.0",
     "description": "National Land Use Database Netherlands. Land use classes aggregated to so called monitoring categories being used for monitoring of changes and other more general approaches.",
     "providers": [],
@@ -71,7 +67,11 @@
     "end_datetime": "2022-01-01T12:00Z",
     "provenance_name": "https://lgn.nl/",
     "source_data": "https://lgn.nl/bestanden",
+    "datetime": null,
+    "modification": null,
+    "provision": null,
     "use_case_WER": "1",
+    "ingestion_status": "completed",
     "platform": "Both"
   },
   "geometry": {
