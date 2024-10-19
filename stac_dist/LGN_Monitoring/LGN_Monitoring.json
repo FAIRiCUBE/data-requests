@@ -3,7 +3,12 @@
   "stac_version": "1.0.0",
   "id": "LGN_Monitoring",
   "properties": {
-    "keywords": [],
+    "keywords": [
+      "land use",
+      " Netherlands",
+      " monitoring",
+      "lgn"
+    ],
     "license": "CC-BY-SA-4.0",
     "description": "National Land Use Database Netherlands. Land use classes aggregated to so called monitoring categories being used for monitoring of changes and other more general approaches.",
     "providers": [],
@@ -51,6 +56,8 @@
     },
     "raster:bands": [
       {
+        "band_name": "lgn",
+        "unit": "1",
         "data_type": "uint16",
         "nodata": 65535,
         "definition": "https://lgn.nl/",
