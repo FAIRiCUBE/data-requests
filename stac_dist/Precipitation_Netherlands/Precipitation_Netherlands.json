@@ -4,9 +4,7 @@
   "id": "Precipitation_Netherlands",
   "properties": {
     "keywords": [
-      "climate",
-      " precipitation",
-      " KNMI"
+      "precipitation"
     ],
     "license": "CC0-1.0",
     "description": "Data from the Royal Dutch Weather Institute (KNMI), measured daily at different weather stations across the Netherlands. Monthly total precipitation per grid cell was calculated based on the distance to each weather station.",
@@ -48,16 +46,18 @@
           "2014-01-01T12:00Z",
           "2022-01-12T12:00Z"
         ],
-        "step": "P1M",
+        "step": "P0Y1M0DT0H0M0S",
         "unit": "month"
       }
     },
     "raster:bands": [
       {
+        "band_name": "precipitation",
+        "unit": "mm/month",
         "data_type": "float32",
         "nodata": -9999,
         "definition": "https://www.daggegevens.knmi.nl/",
-        "description": "Monthly total precipitation in mm (seperate layer for each month )."
+        "description": "Monthly total precipitation in mm."
       }
     ],
     "title": "Precipitation Netherlands",
@@ -67,7 +67,11 @@
     "start_datetime": "2014-01-01T12:00Z",
     "end_datetime": "2022-01-12T12:00Z",
     "provenance_name": "https://www.daggegevens.knmi.nl/",
+    "datetime": null,
+    "modification": null,
+    "provision": null,
     "use_case_WER": "1",
+    "ingestion_status": "completed",
     "platform": "Both"
   },
   "geometry": {
