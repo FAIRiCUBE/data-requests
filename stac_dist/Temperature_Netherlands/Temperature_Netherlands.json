@@ -3,7 +3,12 @@
   "stac_version": "1.0.0",
   "id": "Temperature_Netherlands",
   "properties": {
-    "keywords": [],
+    "keywords": [
+      "climate",
+      " temperature",
+      " KNMI",
+      "temperature"
+    ],
     "license": "CC0-1.0",
     "description": "Data from the Royal Dutch Weather Institute (KNMI), measured daily at different weather stations across the Netherlands. Monthly average air temperature per grid cell calculated based on the distance to each weather station. ",
     "providers": [],
@@ -50,6 +55,8 @@
     },
     "raster:bands": [
       {
+        "band_name": "temperature",
+        "unit": "C",
         "data_type": "float32",
         "nodata": -9999,
         "definition": "https://www.daggegevens.knmi.nl/",
