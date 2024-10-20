@@ -1,0 +1,122 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "properties": {
+    "license": null,
+    "description": null,
+    "area_cover": "EEA-38+UK",
+    "crs": "EPSG:3035",
+    "providers": [
+      {
+        "organization": "EEA",
+        "organization_name": null,
+        "organization_email": null,
+        "orcid_id": null,
+        "project_purpose": null,
+        "doc_link": "https://land.copernicus.eu/local/riparian-zones",
+        "comments": "Three complementary product groups provide detailed information on the state and characteristics of riparian zones across the EEA member and cooperating countries + UK, for supporting biodiversity monitoring and mapping and assessment of ecosystems and their services. The Land Cover / Land Use product covers 805,177 km2 of land surface across Europe in a variable buffer zone of selected rivers (Strahler levels 2-9 derived from EU-Hydro) for two reference years: 2012 and 2018. The Land Cover/Land Use (LC/LU) classification is extracted from VHR satellite data and other available data. This is a unique product with a high level of detail (Minimum Mapping Unit (MMU) is 0.5 ha). The classification provides 55 distinct thematic classes and the class definitions follow a pre-defined nomenclature based on the Mapping and Assessment of Ecosystems and their Services typology of ecosystems and are further harmonised with Corine Land Cover and adapted to the specific characteristics of riparian zones. It offers two types of products: status maps for the two reference years and one change product."
+      }
+    ],
+    "dataSource": "https://land.copernicus.eu/local/riparian-zones",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -31.233429,
+          44.819104
+        ],
+        "reference_system": "EPSG:4326",
+        "type": "spatial",
+        "unit_of_measure": "m",
+        "interpolation": null,
+        "step": 10
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          27.735635,
+          71.141304
+        ],
+        "reference_system": "EPSG:4326",
+        "type": "spatial",
+        "unit_of_measure": "m",
+        "interpolation": null,
+        "step": 10
+      },
+      "z": {
+        "axis": "z",
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "type": "spatial",
+        "unit_of_measure": null,
+        "interpolation": null
+      },
+      "time": {
+        "extent": [
+          "2012-01-01T00:00:00Z",
+          "2018-01-01T00:00:00Z"
+        ],
+        "type": "temporal",
+        "unit_of_measure": "y",
+        "interpolation": null,
+        "step": "P6Y"
+      }
+    },
+    "datetime": "2000-01-01T00:00:00Z",
+    "raster:bands": [
+      {
+        "band_name": null,
+        "unit": null,
+        "nodata": null,
+        "data_type": null,
+        "definition": null,
+        "description": null,
+        "category_list": null,
+        "comment": null,
+        "interpolation": null
+      }
+    ],
+    "title": "Riparian Zones Land Cover and Land Use",
+    "datasource_type": "vector",
+    "personalData": null,
+    "Provenance_name": "EO-based",
+    "preprocessing": null,
+    "documentation": null,
+    "keywords": null,
+    "use_case_S4E": 1,
+    "use_case_WER": null,
+    "use_case_NHM_2": null,
+    "use_case_NILU": null,
+    "use_case_NHM": null,
+    "platform": "Eox",
+    "ingestion_status": null
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": []
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "id": "Riparian_Zones_Land_Cover_and_Land_Use"
+}
