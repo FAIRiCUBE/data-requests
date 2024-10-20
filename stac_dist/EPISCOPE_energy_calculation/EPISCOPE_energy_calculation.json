@@ -1,0 +1,119 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "properties": {
+    "license": null,
+    "description": null,
+    "area_cover": "21 EU nations",
+    "crs": null,
+    "providers": [
+      {
+        "organization": "EPISCOPE",
+        "organization_name": null,
+        "organization_email": null,
+        "orcid_id": null,
+        "project_purpose": null,
+        "doc_link": "https://episcope.eu/fileadmin/tabula/public/docs/report/TABULA_CommonCalculationMethod.pdf",
+        "comments": "EPISCOPE energy calculation presents simplified energy calculation for certain building architypes"
+      }
+    ],
+    "dataSource": "https://episcope.eu/fileadmin/tabula/public/calc/tabula-calculator.xlsx",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "type": "spatial",
+        "unit_of_measure": null,
+        "interpolation": null
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "type": "spatial",
+        "unit_of_measure": null,
+        "interpolation": null
+      },
+      "z": {
+        "axis": "z",
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "type": "spatial",
+        "unit_of_measure": null,
+        "interpolation": null
+      },
+      "time": {
+        "extent": [
+          null,
+          null
+        ],
+        "type": "temporal",
+        "unit_of_measure": null,
+        "interpolation": null
+      }
+    },
+    "datetime": "2000-01-01T00:00:00Z",
+    "raster:bands": [
+      {
+        "band_name": null,
+        "unit": null,
+        "nodata": null,
+        "data_type": null,
+        "definition": null,
+        "description": null,
+        "category_list": null,
+        "comment": null,
+        "interpolation": null
+      }
+    ],
+    "title": "EPISCOPE (energy calculation)",
+    "datasource_type": "xlsx files",
+    "personalData": null,
+    "Provenance_name": null,
+    "preprocessing": null,
+    "documentation": null,
+    "keywords": null,
+    "use_case_S4E": " ",
+    "use_case_WER": null,
+    "use_case_NHM_2": null,
+    "use_case_NILU": 1,
+    "use_case_NHM": null,
+    "platform": "Eox",
+    "ingestion_status": null
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": []
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "id": "EPISCOPE_energy_calculation"
+}
