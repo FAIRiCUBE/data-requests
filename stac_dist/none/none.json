@@ -3,9 +3,7 @@
   "stac_version": "1.0.0",
   "id": "none",
   "properties": {
-    "keywords": [
-      "objects height"
-    ],
+    "keywords": [],
     "license": "CC-BY-1.0",
     "description": "Object height (e.g. trees, buildings) in centimeters.\nSource originally from ahn.nl, but processed at WENR from absolute height to relative heights of objects in raster format.",
     "providers": [],
@@ -46,6 +44,9 @@
     "datasource_type": "Raster",
     "area_cover": "Central Netherlands",
     "crs": "28992",
+    "datetime": null,
+    "modification": null,
+    "provision": null,
     "use_case_WER": "1",
     "platform": "Both"
   },
@@ -91,15 +92,21 @@
     },
     {
       "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?&SERVICE=WCS&VERSION=2.1.0&REQUEST=DescribeCoverage&COVERAGEID=none&outputType=GeneralGridCoverage",
-      "rel": "about",
+      "rel": "item",
       "type": "text/xml",
-      "title": "Link to the rasdaman coverage description in XML"
+      "title": "Link to the description of this coverage object within the WCS Service"
     },
     {
       "href": "https://fairicube.rasdaman.com/rasdaman-dashboard/?layers=none",
-      "rel": "service",
+      "rel": "alternate",
       "type": "text/html",
-      "title": "Link to the rasdaman web application to Access, process gridded data"
+      "title": "Link to the rasdaman dashboard to Access, process gridded data"
+    },
+    {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?&SERVICE=WCS&VERSION=2.1.0&REQUEST=GetCapabilities",
+      "rel": "collection",
+      "type": "text/xml",
+      "title": "Link to the main WCS service URI providing this data"
     }
   ],
   "assets": {
