@@ -93,6 +93,24 @@
       "title": "data-access catalog"
     },
     {
+      "example:container": false,
+      "example:language": "Python",
+      "type": "text/x-python",
+      "title": "the code to subset",
+      "description": "sdfsdfsdfsdfsdfdsf",
+      "href": "https://raw.githubusercontent.com/FAIRiCUBE/Processes/refs/heads/main/ERA5_monthly_averaged_data/script.py",
+      "rel": "example"
+    },
+    {
+      "example:container": true,
+      "example:language": "HTML",
+      "type": "text/html",
+      "title": "how to subset a tiff",
+      "description": "sdfsdfsdfsdfsdfdsf",
+      "href": "https://www.nv5geospatialsoftware.com/docs/READ_TIFF.html",
+      "rel": "example"
+    },
+    {
       "href": "https://www.google.com",
       "rel": "license",
       "type": "text/xml",
