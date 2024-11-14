@@ -152,7 +152,7 @@
     }
   ],
   "assets": {
-    "COG file_on_fairicube_S3_Bucket": {
+    "COG_file_on_fairicube_S3_Bucket": {
       "href": "https://fairicube.s3.eu-central-1.amazonaws.com/vienna_data/100m/r04_imp/r04_imp2018_100m_b1_1_1.tif",
       "roles": [
         "data"
