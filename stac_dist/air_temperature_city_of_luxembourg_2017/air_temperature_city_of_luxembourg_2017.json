@@ -4,7 +4,9 @@
   "id": "air_temperature_city_of_luxembourg_2017",
   "properties": {
     "keywords": [
-      "climate",
+      "urban climate",
+      " luxembourg",
+      " air temperature",
       "band_1",
       "band_2",
       "band_3",
@@ -19,16 +21,30 @@
       "band_12"
     ],
     "license": "CC-BY-4.0",
-    "description": "Near-surface air temperature for every month (mean per month) for the year 2017 ",
+    "description": "Near-surface air temperature for every month (mean per month) for the year 2017. Derived from UrbClim: Climate variables for cities in Europe from 2008 to 2017 (ECMWF)",
     "providers": [
       {
-        "organization_name": "FAIRiCUBE",
-        "organization": "FAIRiCUBE",
+        "organization_name": "space4environment",
+        "organization": "space4environment",
+        "comments": "",
+        "doc_link": "",
         "organization_email": "info@space4environment.com",
-        "roles": "processor"
+        "ORCID_ID": "",
+        "roles": "processor",
+        "project_purpose": "Urban adaptation to climate change"
+      },
+      {
+        "organization_name": "ECMWF",
+        "organization": "ECMWF",
+        "comments": "",
+        "doc_link": "https://confluence.ecmwf.int/display/CKB/Climate+variables+for+cities+in+Europe+from+2008+to+2017+documentation#heading-4Exampledata",
+        "organization_email": "",
+        "ORCID_ID": "",
+        "roles": "producer",
+        "project_purpose": ""
       }
     ],
-    "dataSource": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/sis-urban-climate-cities?tab=form",
+    "dataSource": "https://cds.climate.copernicus.eu/stac-browser/collections/sis-urban-climate-cities?.language=en",
     "cube:dimensions": {
       "x": {
         "axis": "x",
@@ -39,6 +55,7 @@
         "reference_system": "2169",
         "type": "spatial",
         "unit": "K",
+        "interpolation": "",
         "step": 10
       },
       "y": {
@@ -50,6 +67,7 @@
         "reference_system": "2169",
         "type": "spatial",
         "unit": "K",
+        "interpolation": "",
         "step": 10
       },
       "z": {
@@ -57,6 +75,10 @@
           null,
           null
         ],
+        "reference_system": "",
+        "unit": "",
+        "interpolation": "",
+        "step": "",
         "type": "spatial"
       },
       "time": {
@@ -65,8 +87,9 @@
           "2017-01-01T00:00Z",
           "2017-12-31T00:00Z"
         ],
-        "step": "P0Y12M0DT0H0M0S",
-        "unit": "m"
+        "step": "P0Y1M0DT0H0M0S",
+        "unit": "month",
+        "interpolation": ""
       }
     },
     "raster:bands": [
@@ -76,7 +99,10 @@
         "data_type": "float32",
         "nodata": -9999,
         "definition": "January 2017 Average Monthly Air Temperature ",
-        "description": "January 2017 Average Monthly Air Temperature "
+        "description": "January 2017 Average Monthly Air Temperature ",
+        "category_list": "",
+        "comment": "",
+        "interpolation": ""
       },
       {
         "band_name": "band_2",
@@ -84,7 +110,10 @@
         "data_type": "float32",
         "nodata": -9999,
         "definition": "February 2017 Average Monthly Air Temperature ",
-        "description": "February 2017 Average Monthly Air Temperature "
+        "description": "February 2017 Average Monthly Air Temperature ",
+        "category_list": "",
+        "comment": "",
+        "interpolation": ""
       },
       {
         "band_name": "band_3",
@@ -92,7 +121,10 @@
         "data_type": "float32",
         "nodata": -9999,
         "definition": "March 2017 Average Monthly Air Temperature ",
-        "description": "March 2017 Average Monthly Air Temperature "
+        "description": "March 2017 Average Monthly Air Temperature ",
+        "category_list": "",
+        "comment": "",
+        "interpolation": ""
       },
       {
         "band_name": "band_4",
@@ -100,7 +132,10 @@
         "data_type": "float32",
         "nodata": -9999,
         "definition": "April 2017 Average Monthly Air Temperature ",
-        "description": "April 2017 Average Monthly Air Temperature "
+        "description": "April 2017 Average Monthly Air Temperature ",
+        "category_list": "",
+        "comment": "",
+        "interpolation": ""
       },
       {
         "band_name": "band_5",
@@ -108,7 +143,10 @@
         "data_type": "cint32",
         "nodata": -9999,
         "definition": "Mai 2017 Average Monthly Air Temperature ",
-        "description": "Mai 2017 Average Monthly Air Temperature "
+        "description": "Mai 2017 Average Monthly Air Temperature ",
+        "category_list": "",
+        "comment": "",
+        "interpolation": ""
       },
       {
         "band_name": "band_6",
@@ -116,7 +154,10 @@
         "data_type": "float32",
         "nodata": -9999,
         "definition": "June 2017 Average Monthly Air Temperature ",
-        "description": "June 2017 Average Monthly Air Temperature "
+        "description": "June 2017 Average Monthly Air Temperature ",
+        "category_list": "",
+        "comment": "",
+        "interpolation": ""
       },
       {
         "band_name": "band_7",
@@ -124,7 +165,10 @@
         "data_type": "float32",
         "nodata": -9999,
         "definition": "Juli 2017 Average Monthly Air Temperature ",
-        "description": "Juli 2017 Average Monthly Air Temperature "
+        "description": "Juli 2017 Average Monthly Air Temperature ",
+        "category_list": "",
+        "comment": "",
+        "interpolation": ""
       },
       {
         "band_name": "band_8",
@@ -132,7 +176,10 @@
         "data_type": "float32",
         "nodata": -9999,
         "definition": "August 2017 Average Monthly Air Temperature ",
-        "description": "August 2017 Average Monthly Air Temperature "
+        "description": "August 2017 Average Monthly Air Temperature ",
+        "category_list": "",
+        "comment": "",
+        "interpolation": ""
       },
       {
         "band_name": "band_9",
@@ -140,7 +187,10 @@
         "data_type": "float32",
         "nodata": -9999,
         "definition": "September 2017 Average Monthly Air Temperature ",
-        "description": "September 2017 Average Monthly Air Temperature "
+        "description": "September 2017 Average Monthly Air Temperature ",
+        "category_list": "",
+        "comment": "",
+        "interpolation": ""
       },
       {
         "band_name": "band_10",
@@ -148,7 +198,10 @@
         "data_type": "cint32",
         "nodata": -9999,
         "definition": "October 2017 Average Monthly Air Temperature ",
-        "description": "October 2017 Average Monthly Air Temperature "
+        "description": "October 2017 Average Monthly Air Temperature ",
+        "category_list": "",
+        "comment": "",
+        "interpolation": ""
       },
       {
         "band_name": "band_11",
@@ -156,7 +209,10 @@
         "data_type": "float32",
         "nodata": -9999,
         "definition": "November 2017 Average Monthly Air Temperature ",
-        "description": "November 2017 Average Monthly Air Temperature "
+        "description": "November 2017 Average Monthly Air Temperature ",
+        "category_list": "",
+        "comment": "",
+        "interpolation": ""
       },
       {
         "band_name": "band_12",
@@ -164,23 +220,37 @@
         "data_type": "float32",
         "nodata": -9999,
         "definition": "December 2017 Average Monthly Air Temperature ",
-        "description": "December 2017 Average Monthly Air Temperature "
+        "description": "December 2017 Average Monthly Air Temperature ",
+        "category_list": "",
+        "comment": "",
+        "interpolation": ""
       }
     ],
-    "title": "Average Monthly Air Temperature of the City of Luxembourg 2017",
+    "title": "Average Monthly Air Temperature of the City of Luxembourg 2017 derived from UrbClim",
     "datasource_type": "grid",
     "area_cover": "5171.66 ha",
     "documentation": "https://confluence.ecmwf.int/display/CKB/Climate+variables+for+cities+in+Europe+from+2008+to+2017+documentation#ClimatevariablesforcitiesinEuropefrom2008to2017documentation-_bookmark13Timeformat",
     "crs": "2169",
     "start_datetime": "2017-01-01T00:00Z",
     "end_datetime": "2017-12-31T00:00Z",
+    "re_projection_crs": "",
+    "unit_of_measure": "",
+    "resolution": "",
     "personalData": "no personal data",
     "provenance_name": "Climate variables for cities in Europe from 2008 to 2017",
-    "source_data": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/sis-urban-climate-cities?tab=form",
-    "apis": "AWS-S3 API",
+    "preprocessing": "",
+    "source_data": "https://cds.climate.copernicus.eu/stac-browser/collections/sis-urban-climate-cities?.language=en",
+    "models": "",
+    "data_quality": "",
+    "quality_control": "",
+    "metada_standards": "",
+    "distributions": "",
     "access_control": "fairicube account required ",
     "datetime": "2024-09-05T00:00Z",
+    "modification": null,
+    "provision": null,
     "use_case_S4E": "1",
+    "ingestion_status": "",
     "platform": "Eox"
   },
   "geometry": {
@@ -222,9 +292,31 @@
       "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
+    },
+    {
+      "example:container": false,
+      "example:language": "Python",
+      "type": "text/x-python",
+      "title": "AWS S3 bucket API",
+      "description": "The script shows how to open a gridded dataset stored on an S3 Bucket as an xarray DataSet",
+      "href": "https://github.com/FAIRiCUBE/common-code/blob/main/access_data_apis/access_s3_bucket.py",
+      "rel": "example"
     }
   ],
-  "assets": {},
+  "assets": {
+    "Monthly mean air temperature Luxembourg 2017": {
+      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/air_temperature_2017_month_mean_10m_b12.tif",
+      "roles": [
+        "data"
+      ]
+    },
+    "Monthly mean air temperature Luxembourg 2017 - COG for Web visualization": {
+      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/air_temperature_2017_month_mean_10m_b12_COG.tif",
+      "roles": [
+        "data"
+      ]
+    }
+  },
   "bbox": [
     6.069104443926092,
     49.56094657618465,
