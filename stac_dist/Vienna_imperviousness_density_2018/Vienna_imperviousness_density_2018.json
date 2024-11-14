@@ -152,13 +152,13 @@
     }
   ],
   "assets": {
-    "COG file on fairicube S3 Bucket": {
+    "COG file_on_fairicube_S3_Bucket": {
       "href": "https://fairicube.s3.eu-central-1.amazonaws.com/vienna_data/100m/r04_imp/r04_imp2018_100m_b1_1_1.tif",
       "roles": [
         "data"
       ]
     },
-    "original CLMS thumbnail": {
+    "original_CLMS_thumbnail": {
       "href": "https://sdi.eea.europa.eu/public/catalogue-graphic-overview/524fa72f-61d7-4364-801e-3e271d7b10bc.png",
       "roles": [
         "thumbnail"
