@@ -7,6 +7,7 @@
       "urban climate",
       " luxembourg",
       " air temperature",
+      " cds",
       "band_1",
       "band_2",
       "band_3",
@@ -234,7 +235,6 @@
     "start_datetime": "2017-01-01T00:00Z",
     "end_datetime": "2017-12-31T00:00Z",
     "re_projection_crs": "",
-    "unit_of_measure": "",
     "resolution": "",
     "personalData": "no personal data",
     "provenance_name": "Climate variables for cities in Europe from 2008 to 2017",
@@ -304,13 +304,13 @@
     }
   ],
   "assets": {
-    "Monthly mean air temperature Luxembourg 2017": {
+    "air_temperature_2017_month_mean_10m_b12": {
       "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/air_temperature_2017_month_mean_10m_b12.tif",
       "roles": [
         "data"
       ]
     },
-    "Monthly mean air temperature Luxembourg 2017 - COG for Web visualization": {
+    "air_temperature_2017_month_mean_10m_b12_viz": {
       "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/air_temperature_2017_month_mean_10m_b12_COG.tif",
       "roles": [
         "data"
