@@ -135,10 +135,11 @@
         "data"
       ]
     },
-    "twi_2019_10m_b1_viz": {
+    "twi_2019_10m_b1_overview": {
       "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/twi_2019_10m_b1_COG.tif",
       "roles": [
-        "data"
+        "data",
+        "overview"
       ]
     }
   },
