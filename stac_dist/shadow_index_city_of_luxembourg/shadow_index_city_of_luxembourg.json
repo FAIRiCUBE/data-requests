@@ -9,16 +9,27 @@
       " luref",
       " topography",
       " DEM",
-      "shadow index"
+      "shadow index",
+      " luxembourg"
     ],
     "license": "CC0-1.0",
     "description": "The shadow index quantifies the extent of shaded areas. ",
     "providers": [
       {
-        "organization_name": "FAIRiCUBE",
-        "organization": "FAIRiCUBE",
+        "organization_name": "space4environment",
+        "organization": "space4environment",
+        "comments": "",
+        "doc_link": "",
         "organization_email": "info@space4environment.com",
-        "roles": "processor"
+        "ORCID_ID": "",
+        "roles": "processor",
+        "project_purpose": "Urban adaptation to climate change"
+      },
+      {
+        "organization_name": "Administration du cadastre et de la topographie",
+        "organization": "Administration du cadastre et de la topographie",
+        "doc_link": "https://data.public.lu/fr/datasets/lidar-2019-modele-numerique-de-terrain-mnt/",
+        "roles": "producer"
       }
     ],
     "dataSource": "https://data.public.lu/fr/datasets/lidar-2019-modele-numerique-de-terrain-mnt/",
@@ -31,7 +42,8 @@
         ],
         "reference_system": "2169",
         "type": "spatial",
-        "unit": "shadow index",
+        "unit": "meter",
+        "interpolation": "",
         "step": 10
       },
       "y": {
@@ -42,7 +54,8 @@
         ],
         "reference_system": "2169",
         "type": "spatial",
-        "unit": "shadow index",
+        "unit": "meter",
+        "interpolation": "",
         "step": 10
       },
       "z": {
@@ -50,6 +63,10 @@
           null,
           null
         ],
+        "reference_system": "",
+        "unit": "",
+        "interpolation": "",
+        "step": "",
         "type": "spatial"
       },
       "time": {
@@ -59,7 +76,8 @@
           "2019-12-31T00:00Z"
         ],
         "step": "P1Y0M0DT0H0M0S",
-        "unit": "y"
+        "unit": "y",
+        "interpolation": ""
       }
     },
     "raster:bands": [
@@ -69,7 +87,10 @@
         "data_type": "float32",
         "nodata": -99999,
         "definition": "The shadow index (SI) is the ratio of observed radiance to its normalization value and corresponds to the damping factor of radiation",
-        "description": "The shadow index (SI) is the ratio of observed radiance to its normalization value and corresponds to the damping factor of radiation"
+        "description": "The shadow index (SI) is the ratio of observed radiance to its normalization value and corresponds to the damping factor of radiation",
+        "category_list": "",
+        "comment": "",
+        "interpolation": ""
       }
     ],
     "title": "Shadow Index of the City of Luxembourg",
@@ -79,16 +100,24 @@
     "crs": "2169",
     "start_datetime": "2019-01-01T00:00Z",
     "end_datetime": "2019-12-31T00:00Z",
+    "re_projection_crs": "",
+    "unit_of_measure": "",
+    "resolution": "",
     "personalData": "no personal data",
     "provenance_name": "LiDAR 2019 - Digital Terrain Model (DTM)",
     "preprocessing": "A standard hillshade model was calculated using the Module Analytical Hillshading from SAGA-GIS (v2.2.0). This was used to calculate the shadow index. First a day of shadow was simulated for solar altitude for luxembourg city and secondly the data range was normalized linearly",
     "source_data": "https://data.public.lu/fr/datasets/lidar-2019-modele-numerique-de-terrain-mnt/",
-    "apis": "AWS-S3 API",
+    "models": "",
+    "data_quality": "",
+    "quality_control": "",
+    "metada_standards": "",
+    "distributions": "",
     "access_control": "fairicube account required ",
     "datetime": "2024-09-03T00:00Z",
     "modification": null,
     "provision": null,
     "use_case_S4E": "1",
+    "ingestion_status": "",
     "platform": "Eox"
   },
   "geometry": {
@@ -130,9 +159,37 @@
       "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
+    },
+    {
+      "example:container": false,
+      "example:language": "Python",
+      "type": "text/x-python",
+      "title": "AWS S3 Bucket API",
+      "description": "The script shows how to open a gridded dataset stored on an S3 Bucket as an xarray DataSet",
+      "href": "https://github.com/FAIRiCUBE/common-code/blob/main/access_data_apis/access_s3_bucket.py",
+      "rel": "example"
     }
   ],
-  "assets": {},
+  "assets": {
+    "shadow_2019_10m_b1": {
+      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/shadow_2019_10m_b1.tif",
+      "roles": [
+        "data"
+      ]
+    },
+    "shadow_2019_10m_b1_COG_overview": {
+      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/shadow_2019_10m_b1_COG.tif",
+      "roles": [
+        "data"
+      ]
+    },
+    "shadow_2019_10m_b1_thumbnail": {
+      "href": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/images/thumbnails/shadow_2019_10m_b1.png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
   "bbox": [
     6.069104443926092,
     49.56094657618465,
