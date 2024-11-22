@@ -1,0 +1,169 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "eu_demography",
+  "properties": {
+    "license": "CC-BY-4.0",
+    "description": "Count of persons at their usual place of residence per square km",
+    "providers": [
+      {
+        "organization_name": "EC Eurostat",
+        "organization": "EC Eurostat",
+        "doc_link": "https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution/geostat",
+        "project_purpose": "data provider (population at LAU level); data hosting."
+      },
+      {
+        "organization_name": "EC Joint Research Centre",
+        "organization": "EC Joint Research Centre",
+        "doc_link": "https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution/geostat",
+        "project_purpose": "methodological development; implementation."
+      }
+    ],
+    "dataSource": "https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution/geostat",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          943000,
+          6505000
+        ],
+        "reference_system": "3035",
+        "type": "spatial",
+        "unit": "metre",
+        "step": 1000
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          941000,
+          5416000
+        ],
+        "reference_system": "3035",
+        "type": "spatial",
+        "unit": "metre",
+        "step": -1000
+      },
+      "time": {
+        "extent": [],
+        "type": "temporal",
+        "values": [
+          "2006-01-01T00:00Z",
+          "2011-01-01T00:00Z",
+          "2018-01-01T00:00Z",
+          "2021-01-01T00:00Z"
+        ],
+        "step": "P3Y0M0DT0H0M0S",
+        "unit": "day"
+      },
+      "z": {
+        "name": "z",
+        "extent": [
+          null,
+          null
+        ]
+      }
+    },
+    "datetime": "2021-02-17T15:13:53Z",
+    "raster:bands": [
+      {
+        "band_name": "tot_p",
+        "unit": "1/km2",
+        "data_type": "uint16",
+        "nodata": 65535,
+        "definition": "https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution/geostat",
+        "description": "Count of persons at their usual place of residence per square km",
+        "interpolation": ""
+      }
+    ],
+    "title": "European population density grid",
+    "datasource_type": "grid",
+    "keywords": "population, census, population distribution, demography, society",
+    "area_cover": "EU-27 + EFTA countries + Western Balkans + UK (38 countries)",
+    "documentation": "Batista e Silva F, Dijkstra L, Poelman H (2021) The JRC-GEOSTAT 2018 population grid. JRC Technical Report.",
+    "crs": "3035",
+    "start_datetime": "2006-01-01T00:00Z",
+    "end_datetime": "2021-01-01T00:00Z",
+    "personalData": "https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution#GEOSTAT%202006%20grid%20dataset",
+    "provenance_name": "https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution/geostat",
+    "preprocessing": "Rasterization of CSV data: https://github.com/FAIRiCUBE/data-requests-issue-archive/issues/22#issuecomment-2244327198",
+    "source_data": "https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution/geostat",
+    "apis": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
+    "modification": null,
+    "provision": null,
+    "use_case_NHM": "two",
+    "use_case_NHM_2": "2",
+    "ingestion_status": "Completed: Version 2021 (16 June 2024), Version 2018 (13 April 2021), Version 2011 (1 February 2016), Version 2006 (23 January 2012)",
+    "platform": "Rasdaman"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -54.93364845606195,
+          24.793476862997526
+        ],
+        [
+          -54.93364845606195,
+          64.35121892200097
+        ],
+        [
+          59.905765217086646,
+          64.35121892200097
+        ],
+        [
+          59.905765217086646,
+          24.793476862997526
+        ],
+        [
+          -54.93364845606195,
+          24.793476862997526
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?&SERVICE=WCS&VERSION=2.1.0&REQUEST=DescribeCoverage&COVERAGEID=eu_demography&outputType=GeneralGridCoverage",
+      "rel": "about",
+      "type": "text/xml",
+      "title": "Link to the rasdaman coverage description in XML"
+    },
+    {
+      "href": "https://fairicube.rasdaman.com/rasdaman-dashboard/?layers=eu_demography",
+      "rel": "service",
+      "type": "text/html",
+      "title": "Link to the rasdaman web application to access and process gridded data"
+    }
+  ],
+  "assets": {
+    "thumbnail_rasdaman": {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?service=WMS&version=1.3.0&request=GetMap&layers=eu_demography&bbox=24.793476862997526,-54.93364845606195,64.35121892200097,59.905765217086646&time=\"2006-01-01T00:00Z\"&width=800&height=600&crs=EPSG:4326&format=image/png&transparent=true&styles=",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    -54.93364845606195,
+    24.793476862997526,
+    59.905765217086646,
+    64.35121892200097
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
