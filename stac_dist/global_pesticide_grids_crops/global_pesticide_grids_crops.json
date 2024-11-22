@@ -1,0 +1,229 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "global_pesticide_grids_crops",
+  "properties": {
+    "license": "CC-BY-SA-4.0",
+    "description": "The Global Pesticide Grids (PEST-CHEMGRIDS), Version 1.01 contains 20 of the most-used pesticide active ingredients on 6 dominant crops and 4 aggregated crop classes at 5 arc-minute resolution (about 10 km at the equator), estimated in year 2015, and then projected to 2020 and 2025. To estimate the global application rates of specific active ingredients, spatial statistical methods were used to re-analyze the U.S. Geological Survey Pesticide National Synthesis Project (USGS/PNSP) and the Food and Agriculture Organization Corporate Statistical Database (FAOSTAT) pesticide databases, along with other public inventories including globally gridded data of soil physical properties, hydro-climatic variables, agricultural quantities, and socioeconomic indices.",
+    "providers": [
+      {
+        "organization_name": "NASA Socioeconomic Data and Applications Center (SEDAC)",
+        "organization": "NASA Socioeconomic Data and Applications Center (SEDAC)",
+        "comments": "For download create account/regsiter (free)",
+        "doc_link": "https://sedac.ciesin.columbia.edu/data/set/ferman-v1-pest-chemgrids-v1-01/docs",
+        "organization_email": "ciesin.info@ciesin.columbia.edu",
+        "project_purpose": "To provide a global gridded data set of commonly-used agricultural pesticides crucial to assess human and ecosystem exposure to potential toxicants for environmental modeling, assessment of agricultural chemical contamination and risk analysis, and other related research at global, regional, national, and local levels."
+      }
+    ],
+    "dataSource": "NASA Socioeconomic Data and Applications Center (SEDAC): https://doi.org/10.7927/weq9-pv30",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -180.04167631396157,
+          180.04167631394103
+        ],
+        "reference_system": "4326",
+        "type": "spatial",
+        "unit": "degree",
+        "step": 0.0833526279231256
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          -90.0416859657249,
+          90.04168596571463
+        ],
+        "reference_system": "4326",
+        "type": "spatial",
+        "unit": "degree",
+        "step": -0.08337193144974052
+      },
+      "time": {
+        "extent": [],
+        "type": "temporal",
+        "values": [
+          "2015-01-01T00:00:00Z"
+        ],
+        "step": "P1Y",
+        "unit": "day"
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "type": "spatial"
+      }
+    },
+    "raster:bands": [
+      {
+        "band_name": "Alfalfa",
+        "data_type": "float32",
+        "description": "Harvest area of crop Alfalfa in hectares (ha)",
+        "unit": "ha",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": 0.01
+      },
+      {
+        "band_name": "Corn",
+        "data_type": "float32",
+        "description": "Harvest area of crop Corn in hectares (ha)",
+        "unit": "ha",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": 0.01
+      },
+      {
+        "band_name": "Cotton",
+        "data_type": "float32",
+        "description": "Harvest area of crop Cotton in hectares (ha)",
+        "unit": "ha",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": 0.01
+      },
+      {
+        "band_name": "OrcGra",
+        "data_type": "float32",
+        "description": "Harvest area of crop OrcGra in hectares (ha)",
+        "unit": "ha",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": 0.01
+      },
+      {
+        "band_name": "Other",
+        "data_type": "float32",
+        "description": "Harvest area of crop Other in hectares (ha)",
+        "unit": "ha",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": 0.01
+      },
+      {
+        "band_name": "PasHay",
+        "data_type": "float32",
+        "description": "Harvest area of crop PasHay in hectares (ha)",
+        "unit": "ha",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": 0.01
+      },
+      {
+        "band_name": "Rice",
+        "data_type": "float32",
+        "description": "Harvest area of crop Rice in hectares (ha)",
+        "unit": "ha",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": 0.01
+      },
+      {
+        "band_name": "Soybean",
+        "data_type": "float32",
+        "description": "Harvest area of crop Soybean in hectares (ha)",
+        "unit": "ha",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": 0.01
+      },
+      {
+        "band_name": "VegFru",
+        "data_type": "float32",
+        "description": "Harvest area of crop VegFru in hectares (ha)",
+        "unit": "ha",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": 0.01
+      },
+      {
+        "band_name": "Wheat",
+        "data_type": "float32",
+        "description": "Harvest area of crop Wheat in hectares (ha)",
+        "unit": "ha",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": 0.01
+      }
+    ],
+    "title": "Global Pesticide Grids (PEST-CHEMGRIDS) Crops map",
+    "datasource_type": "grid",
+    "keywords": "agriculture, land use, health, sustainability, pesticides, environmental modeling, chemical contamination",
+    "area_cover": "global",
+    "documentation": "https://sedac.ciesin.columbia.edu/data/set/ferman-v1-pest-chemgrids-v1-01/docs",
+    "crs": "4326",
+    "start_datetime": "2015-01-01T00:00:00Z",
+    "end_datetime": "2015-01-01T00:00:00Z",
+    "personalData": "none",
+    "provenance_name": "https://sedac.ciesin.columbia.edu/data/set/ferman-v1-pest-chemgrids-v1-01",
+    "preprocessing": "To estimate the global application rates of specific active ingredients, spatial statistical methods were used to re-analyze the U.S. Geological Survey Pesticide National Synthesis Project (USGS/PNSP) and the Food and Agriculture Organization Corporate Statistical Database (FAOSTAT) pesticide databases, along with other public inventories including globally gridded data of soil physical properties, hydro-climatic variables, agricultural quantities, and socioeconomic indices.",
+    "source_data": "https://sedac.ciesin.columbia.edu/downloads/data/ferman-v1/ferman-v1-pest-chemgrids-v1-01/ferman-v1-pest-chemgrids-v1-01-geotiff.zip",
+    "data_quality": "See global_pesticide_grids_qi datacube",
+    "apis": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
+    "use_case_NHM": "1",
+    "platform": "Rasdaman"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.04167631396157,
+          -90.04168596572491
+        ],
+        [
+          -180.04167631396157,
+          90.04168596571463
+        ],
+        [
+          180.04167631394103,
+          90.04168596571463
+        ],
+        [
+          180.04167631394103,
+          -90.04168596572491
+        ],
+        [
+          -180.04167631396157,
+          -90.04168596572491
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?&SERVICE=WCS&VERSION=2.1.0&REQUEST=DescribeCoverage&COVERAGEID=global_pesticide_grids_crops&outputType=GeneralGridCoverage",
+      "rel": "about",
+      "type": "text/xml",
+      "title": "Link to the rasdaman coverage description in XML"
+    },
+    {
+      "href": "https://fairicube.rasdaman.com/rasdaman-dashboard/?layers=global_pesticide_grids_crops",
+      "rel": "service",
+      "type": "text/html",
+      "title": "Link to the rasdaman web application to Access, process gridded data"
+    }
+  ],
+  "assets": {
+    "thumbnail_rasdaman": {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?service=WMS&version=1.3.0&request=GetMap&layers=global_pesticide_grids_crops&bbox=-90.04168596572491,-180.04167631396157,90.04168596571463,180.04167631394103&width=800&height=600&crs=EPSG:4326&format=image/png&transparent=true&styles=",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    -180.04167631396157,
+    -90.04168596572491,
+    180.04167631394103,
+    90.04168596571463
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
