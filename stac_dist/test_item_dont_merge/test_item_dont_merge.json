@@ -93,6 +93,13 @@
       "title": "data-access catalog"
     },
     {
+      "example:container": true,
+      "title": "overview_1",
+      "description": "Link to the data visualization interactive web map.",
+      "href": "https://vis.fairicube.eu/=data?https://www.x.com",
+      "rel": "example"
+    },
+    {
       "example:container": false,
       "example:language": "Python",
       "type": "text/x-python",
@@ -117,7 +124,20 @@
       "title": "Link to the item's license."
     }
   ],
-  "assets": {},
+  "assets": {
+    "overview_1": {
+      "href": "https://www.x.com",
+      "roles": [
+        "overview"
+      ]
+    },
+    "metadata": {
+      "href": "https://raw.githubusercontent.com/FAIRiCUBE/Processes/refs/heads/main/ERA5_monthly_averaged_data/script.py",
+      "roles": [
+        "metadata"
+      ]
+    }
+  },
   "bbox": [
     -180,
     0,
@@ -126,6 +146,7 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/example-links/v0.0.1/schema.json"
   ]
 }
