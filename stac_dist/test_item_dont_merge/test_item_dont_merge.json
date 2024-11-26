@@ -128,13 +128,17 @@
     "overview_1": {
       "href": "https://www.x.com",
       "roles": [
-        "overview"
+        [
+          "overview"
+        ]
       ]
     },
     "metadata": {
       "href": "https://raw.githubusercontent.com/FAIRiCUBE/Processes/refs/heads/main/ERA5_monthly_averaged_data/script.py",
       "roles": [
-        "metadata"
+        [
+          "metadata"
+        ]
       ]
     }
   },
