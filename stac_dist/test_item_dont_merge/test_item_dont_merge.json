@@ -111,27 +111,13 @@
       "rel": "example"
     },
     {
-      "example:container": true,
-      "title": "overview_1",
-      "description": "Link to the data visualization interactive web map.",
-      "href": "https://vis.fairicube.eu/=data?https://raw.githubusercontent.com/FAIRiCUBE/Processes/refs/heads/main/ERA5_monthly_averaged_data/script.py",
-      "rel": "example"
-    },
-    {
       "href": "https://www.google.com",
       "rel": "license",
       "type": "text/xml",
       "title": "Link to the item's license."
     }
   ],
-  "assets": {
-    "overview_1": {
-      "href": "https://raw.githubusercontent.com/FAIRiCUBE/Processes/refs/heads/main/ERA5_monthly_averaged_data/script.py",
-      "roles": [
-        "overview"
-      ]
-    }
-  },
+  "assets": {},
   "bbox": [
     -180,
     0,
