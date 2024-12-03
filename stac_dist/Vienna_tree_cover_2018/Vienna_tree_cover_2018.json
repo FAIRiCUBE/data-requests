@@ -161,13 +161,19 @@
     }
   ],
   "assets": {
-    "COG file on fairicube S3 Bucket": {
+    "r05_treecover2018_100m_b1_COG_1_1": {
       "href": "https://fairicube.s3.eu-central-1.amazonaws.com/vienna_data/100m/r05_treecover/r05_treecover2018_100m_b1_COG_1_1.tif",
       "roles": [
         "data"
       ]
     },
-    "tree cover": {
+    "r05_treecover2018_100m_b1_COG_1_1_overview": {
+      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/vienna/r05_treecover2018_100m_b1_COG_1_1_overview.tif",
+      "roles": [
+        "overview"
+      ]
+    },
+    "tree_cover_thumbnail": {
       "href": "https://sdi.eea.europa.eu/public/catalogue-graphic-overview/c7bf34ea-755c-4dbd-85b6-4efc5fd302a2.png",
       "roles": [
         "thumbnail"
