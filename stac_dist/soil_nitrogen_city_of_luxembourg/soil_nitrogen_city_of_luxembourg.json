@@ -1,0 +1,134 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "soil_nitrogen_city_of_luxembourg",
+  "properties": {
+    "keywords": [
+      "Nitrogen",
+      "soil nitrogen "
+    ],
+    "license": "CC-BY-4.0",
+    "description": "Soil Nitrogen of Luxembourg based on the soil point data from the LUCAS 2009/2012 soil surveys.",
+    "providers": [
+      {
+        "organization_name": "FAIRiCUBE",
+        "organization": "space4environment",
+        "organization_email": "info@space4environment.com",
+        "roles": "processor",
+        "project_purpose": "Urban adaptation to climate change"
+      },
+      {
+        "organization_name": "JOINT RESEARCH CENTRE European Soil Data Centre (ESDAC)",
+        "organization": "JOINT RESEARCH CENTRE European Soil Data Centre (ESDAC)",
+        "doc_link": "https://esdac.jrc.ec.europa.eu/content/chemical-properties-european-scale-based-lucas-topsoil-data#tabs-0-description=0",
+        "roles": "producer"
+      }
+    ],
+    "dataSource": "https://esdac.jrc.ec.europa.eu/content/chemical-properties-european-scale-based-lucas-topsoil-data#tabs-0-description=0",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          72850,
+          82570
+        ],
+        "reference_system": "2169",
+        "type": "spatial",
+        "unit": "degree",
+        "step": 10
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          69590,
+          80030
+        ],
+        "reference_system": "2169",
+        "type": "spatial",
+        "unit": "degree",
+        "step": 10
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "type": "spatial"
+      }
+    },
+    "raster:bands": [
+      {
+        "band_name": "soil nitrogen ",
+        "unit": "g/kg",
+        "data_type": "float32",
+        "nodata": -99999,
+        "definition": "Soil nitrogen has been measured based on the ISO standard procedures",
+        "description": "Soil nitrogen has been measured based on the ISO standard procedures"
+      }
+    ],
+    "title": " Soil Nitrogen properties of the city of Luxembourg",
+    "datasource_type": "grid",
+    "area_cover": "5171.66 ha",
+    "documentation": "https://www.sciencedirect.com/science/article/pii/S0016706119304768",
+    "crs": "EPSG:2169",
+    "personalData": "no personal data",
+    "provenance_name": "Maps of Soil Chemical properties at European scale based on LUCAS 2009/2012 topsoil data",
+    "source_data": "https://www.sciencedirect.com/science/article/pii/S0016706119304768",
+    "access_control": "fairicube account required ",
+    "datetime": "2024-09-18T13:52Z",
+    "use_case_S4E": "1",
+    "platform": "Eox"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          6.069104443926092,
+          49.56094657618465
+        ],
+        [
+          6.069104443926092,
+          49.65484833240523
+        ],
+        [
+          6.203715071874704,
+          49.65484833240523
+        ],
+        [
+          6.203715071874704,
+          49.56094657618465
+        ],
+        [
+          6.069104443926092,
+          49.56094657618465
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    6.069104443926092,
+    49.56094657618465,
+    6.203715071874704,
+    49.65484833240523
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
