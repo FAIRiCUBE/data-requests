@@ -136,10 +136,16 @@
     }
   ],
   "assets": {
-    "../r09_build_volume/r09_Wien_build_volume_i_grid100m_1_1.tif": {
-      "href": "https://fairicube.s3.eu-central-1.amazonaws.com/vienna_data/100m/",
+    "r09_Wien_build_volume_i_grid100m_1_1": {
+      "href": "https://fairicube.s3.eu-central-1.amazonaws.com/vienna_data/100m/r09_build_volume/r09_Wien_build_volume_i_grid100m_1_1.tif",
       "roles": [
         "data"
+      ]
+    },
+    "r09_Wien_build_volume_i_grid100m_1_1_overview": {
+      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/vienna/r09_Wien_build_volume_i_grid100m_1_1_overview.tif",
+      "roles": [
+        "overview"
       ]
     }
   },
