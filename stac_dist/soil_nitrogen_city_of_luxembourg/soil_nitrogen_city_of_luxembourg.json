@@ -4,7 +4,6 @@
   "id": "soil_nitrogen_city_of_luxembourg",
   "properties": {
     "keywords": [
-      "Nitrogen",
       "soil nitrogen "
     ],
     "license": "CC-BY-4.0",
@@ -34,7 +33,7 @@
         ],
         "reference_system": "2169",
         "type": "spatial",
-        "unit": "degree",
+        "unit": "pH",
         "step": 10
       },
       "y": {
@@ -45,7 +44,7 @@
         ],
         "reference_system": "2169",
         "type": "spatial",
-        "unit": "degree",
+        "unit": "pH",
         "step": 10
       },
       "z": {
@@ -54,6 +53,15 @@
           null
         ],
         "type": "spatial"
+      },
+      "time": {
+        "type": "temporal",
+        "extent": [
+          "2009-01-01T00:00Z",
+          "2012-12-31T00:00Z"
+        ],
+        "step": "P3Y",
+        "unit": "years"
       }
     },
     "raster:bands": [
@@ -71,11 +79,15 @@
     "area_cover": "5171.66 ha",
     "documentation": "https://www.sciencedirect.com/science/article/pii/S0016706119304768",
     "crs": "EPSG:2169",
+    "start_datetime": "2009-01-01T00:00Z",
+    "end_datetime": "2012-12-31T00:00Z",
     "personalData": "no personal data",
     "provenance_name": "Maps of Soil Chemical properties at European scale based on LUCAS 2009/2012 topsoil data",
     "source_data": "https://www.sciencedirect.com/science/article/pii/S0016706119304768",
     "access_control": "fairicube account required ",
     "datetime": "2024-09-18T13:52Z",
+    "modification": null,
+    "provision": null,
     "use_case_S4E": "1",
     "platform": "Eox"
   },
