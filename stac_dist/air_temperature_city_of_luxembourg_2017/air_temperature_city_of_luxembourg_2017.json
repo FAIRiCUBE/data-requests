@@ -308,7 +308,7 @@
   ],
   "assets": {
     "air_temperature_2017_month_mean_10m_b12_thumbnail": {
-      "href": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/images/thumbnails/airtemp062017.png",
+      "href": "https://raw.githubusercontent.com/FAIRiCUBE/uc1-urban-climate/blob/master/images/thumbnails/airtemp062017.png",
       "roles": [
         "thumbnail"
       ]
