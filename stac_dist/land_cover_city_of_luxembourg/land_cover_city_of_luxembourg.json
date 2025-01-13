@@ -80,7 +80,6 @@
     "provenance_name": "LIS-L Land Cover",
     "preprocessing": "Rasterization from vector to raster and clipped to extent of city of Lux ",
     "source_data": "https://data.public.lu/en/datasets/lis-l-land-cover/",
-    "apis": "AWS-S3 API",
     "access_control": "fairicube account required ",
     "datetime": "2024-09-02T16:29Z",
     "modification": null,
@@ -129,7 +128,20 @@
       "title": "data-access catalog"
     }
   ],
-  "assets": {},
+  "assets": {
+    "land_cover_2021_10m_b1": {
+      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/land_cover_2021_10m_b1.tif",
+      "roles": [
+        "data"
+      ]
+    },
+    "land_cover_2021_10m_lookup_table": {
+      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/lookup_tables/land_cover_2021_10m_lut.csv",
+      "roles": [
+        "metadata"
+      ]
+    }
+  },
   "bbox": [
     6.069104443926092,
     49.56094657618465,
