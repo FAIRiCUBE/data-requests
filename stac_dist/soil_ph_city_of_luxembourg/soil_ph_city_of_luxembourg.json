@@ -129,9 +129,35 @@
       "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
+    },
+    {
+      "example:container": true,
+      "title": "pH_CaCl_10m_b1_COG_overview",
+      "description": "Link to the data visualization interactive web map.",
+      "href": "https://vis.fairicube.eu/=data?https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/pH_CaCl_10m_b1_COG.tif",
+      "rel": "example"
     }
   ],
-  "assets": {},
+  "assets": {
+    "pH_CaCl_10m_b1_thumbnail": {
+      "href": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/images/thumbnails/soil_acidity.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "pH_CaCl_10m_b1_COG_overview": {
+      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/pH_CaCl_10m_b1_COG.tif",
+      "roles": [
+        "overview"
+      ]
+    },
+    "pH_CaCl_10m_b1": {
+      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/pH_CaCl_10m_b1.tif",
+      "roles": [
+        "data"
+      ]
+    }
+  },
   "bbox": [
     6.069104443926092,
     49.56094657618465,
@@ -140,6 +166,7 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/example-links/v0.0.1/schema.json"
   ]
 }
