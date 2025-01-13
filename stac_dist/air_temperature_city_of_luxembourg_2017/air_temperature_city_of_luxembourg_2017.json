@@ -4,10 +4,6 @@
   "id": "air_temperature_city_of_luxembourg_2017",
   "properties": {
     "keywords": [
-      "urban climate",
-      " luxembourg",
-      " air temperature",
-      " cds",
       "band_1",
       "band_2",
       "band_3",
@@ -301,19 +297,34 @@
       "description": "The script shows how to open a gridded dataset stored on an S3 Bucket as an xarray DataSet",
       "href": "https://github.com/FAIRiCUBE/common-code/blob/main/access_data_apis/access_s3_bucket.py",
       "rel": "example"
+    },
+    {
+      "example:container": true,
+      "title": "air_temperature_2017_month_mean_10m_b12_viz",
+      "description": "Link to the data visualization interactive web map.",
+      "href": "https://vis.fairicube.eu/=data?https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/air_temperature_2017_month_mean_10m_b12_COG.tif",
+      "rel": "example"
     }
   ],
   "assets": {
+    "air_temperature_2017_month_mean_10m_b12_thumbnail": {
+      "href": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/images/thumbnails/airtemp062017.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
     "air_temperature_2017_month_mean_10m_b12": {
       "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/air_temperature_2017_month_mean_10m_b12.tif",
       "roles": [
-        "data"
+        [
+          "data"
+        ]
       ]
     },
     "air_temperature_2017_month_mean_10m_b12_viz": {
       "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/air_temperature_2017_month_mean_10m_b12_COG.tif",
       "roles": [
-        "data"
+        "overview"
       ]
     }
   },
@@ -325,6 +336,7 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/example-links/v0.0.1/schema.json"
   ]
 }
