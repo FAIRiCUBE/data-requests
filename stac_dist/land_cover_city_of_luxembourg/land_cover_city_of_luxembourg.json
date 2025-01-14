@@ -13,7 +13,9 @@
         "organization_name": "FAIRiCUBE",
         "organization": "FAIRiCUBE",
         "organization_email": "info@space4environment.com",
-        "roles": "processor"
+        "roles": [
+          "processor"
+        ]
       }
     ],
     "dataSource": "https://data.public.lu/fr/datasets/lis-l-land-cover/",

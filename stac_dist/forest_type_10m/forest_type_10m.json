@@ -10,7 +10,9 @@
         "organization": "European Environment Agency",
         "doc_link": "https://land.copernicus.eu/",
         "organization_email": "copernicus@eea.europa.eu",
-        "roles": "host"
+        "roles": [
+          "host"
+        ]
       }
     ],
     "dataSource": "https://land.copernicus.eu/en/products/high-resolution-layer-forest-type",

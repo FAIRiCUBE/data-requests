@@ -10,7 +10,9 @@
         "organization_name": "Stadt Wien",
         "name": "Stadt Wien",
         "organization_email": "open@post.wien.gv.at",
-        "roles": "licensor"
+        "roles": [
+          "licensor"
+        ]
       }
     ],
     "dataSource": "Open data Austria (data.gv.at)",

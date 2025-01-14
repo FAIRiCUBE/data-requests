@@ -10,7 +10,9 @@
         "name": "FAIRiCUBE - Use Case 1",
         "comments": "Use Case 1 team processed and consolidated data from different data sources into this unique dataset.",
         "doc_link": "https://github.com/FAIRiCUBE/uc1-urban-climate",
-        "roles": "processor",
+        "roles": [
+          "processor"
+        ],
         "project_purpose": "Urban adaptation to climate change"
       }
     ],

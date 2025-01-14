@@ -14,7 +14,9 @@
         "name": "Ministre de l\u2019Environnement, du Climat et de la Biodiversit\u00e9 & Minist\u00e8re du Logement et de l\u2019Am\u00e9nagement du territoire - D\u00e9partement de l\u2019am\u00e9nagement du territoire",
         "doc_link": "https://data.public.lu/fr/datasets/lis-l-land-use-2007-2015-2018/",
         "organization_email": "Patrick.Grivet@mev.etat.lu; Tom.Fourmann@mat.etat.lu; Marco.Tholl@mat.etat.lu",
-        "roles": "licensor"
+        "roles": [
+          "licensor"
+        ]
       }
     ],
     "dataSource": "https://geocatalogue.geoportail.lu",

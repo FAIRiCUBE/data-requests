@@ -17,7 +17,9 @@
         "name": "Stadt Wien",
         "doc_link": "https://www.data.gv.at/katalog/dataset/2ee6b8bf-6292-413c-bb8b-bd22dbb2ad4b",
         "organization_email": "open@post.wien.gv.at",
-        "roles": "licensor"
+        "roles": [
+          "licensor"
+        ]
       }
     ],
     "dataSource": "data.gv.at",

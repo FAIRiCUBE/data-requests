@@ -13,14 +13,18 @@
         "organization_name": "FAIRiCUBE",
         "organization": "space4environment",
         "organization_email": "info@space4environment.com",
-        "roles": "processor",
+        "roles": [
+          "processor"
+        ],
         "project_purpose": "Urban adaptation to climate change"
       },
       {
         "organization_name": "JOINT RESEARCH CENTRE European Soil Data Centre (ESDAC)",
         "organization": "JOINT RESEARCH CENTRE European Soil Data Centre (ESDAC)",
         "doc_link": "https://esdac.jrc.ec.europa.eu/content/chemical-properties-european-scale-based-lucas-topsoil-data#tabs-0-description=0",
-        "roles": "producer"
+        "roles": [
+          "producer"
+        ]
       }
     ],
     "dataSource": "https://esdac.jrc.ec.europa.eu/content/chemical-properties-european-scale-based-lucas-topsoil-data#tabs-0-description=0",

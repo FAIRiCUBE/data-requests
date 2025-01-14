@@ -27,7 +27,9 @@
         "doc_link": "",
         "organization_email": "info@space4environment.com",
         "ORCID_ID": "",
-        "roles": "processor",
+        "roles": [
+          "processor"
+        ],
         "project_purpose": "Urban adaptation to climate change"
       },
       {
@@ -37,7 +39,9 @@
         "doc_link": "https://confluence.ecmwf.int/display/CKB/Climate+variables+for+cities+in+Europe+from+2008+to+2017+documentation#heading-4Exampledata",
         "organization_email": "",
         "ORCID_ID": "",
-        "roles": "producer",
+        "roles": [
+          "producer"
+        ],
         "project_purpose": ""
       }
     ],

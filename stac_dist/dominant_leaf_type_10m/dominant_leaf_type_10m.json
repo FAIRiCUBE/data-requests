@@ -11,7 +11,9 @@
         "comments": "The production of the high resolution forest layers was coordinated by the European Environment Agency (EEA) in the frame of the EU Copernicus programme.",
         "doc_link": "https://land.copernicus.eu/",
         "organization_email": "copernicus@eea.europa.eu",
-        "roles": "host"
+        "roles": [
+          "host"
+        ]
       }
     ],
     "dataSource": "https://land.copernicus.eu/pan-european/high-resolution-layers/forests/dominant-leaf-type/status-maps",
