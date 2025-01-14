@@ -7,7 +7,7 @@
     "description": "The DLT raster product provides a basic land cover classification with 3 thematic classes (all non-tree covered areas, broadleaved and coniferous) at 20m spatial resolution and covers the full of EEA38 area and the United Kingdom.",
     "providers": [
       {
-        "organization": "European Environment Agency",
+        "name": "European Environment Agency",
         "comments": "The production of the high resolution forest layers was coordinated by the European Environment Agency (EEA) in the frame of the EU Copernicus programme.",
         "doc_link": "https://land.copernicus.eu/",
         "organization_email": "copernicus@eea.europa.eu",

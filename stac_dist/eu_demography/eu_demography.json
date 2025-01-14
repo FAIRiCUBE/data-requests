@@ -8,13 +8,13 @@
     "providers": [
       {
         "organization_name": "EC Eurostat",
-        "organization": "EC Eurostat",
+        "name": "EC Eurostat",
         "doc_link": "https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution/geostat",
         "project_purpose": "data provider (population at LAU level); data hosting."
       },
       {
         "organization_name": "EC Joint Research Centre",
-        "organization": "EC Joint Research Centre",
+        "name": "EC Joint Research Centre",
         "doc_link": "https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution/geostat",
         "project_purpose": "methodological development; implementation."
       }

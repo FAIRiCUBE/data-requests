@@ -7,7 +7,7 @@
     "description": "Provides at pan-European level in the spatial resolution of 20 m a forest classification with three thematic classes (all non-forest areas / broadleaved forest / coniferous forest).",
     "providers": [
       {
-        "organization": "European Environment Agency",
+        "name": "European Environment Agency",
         "doc_link": "https://land.copernicus.eu/",
         "organization_email": "European Environment Agency",
         "roles": [

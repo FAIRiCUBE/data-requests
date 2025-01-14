@@ -7,7 +7,7 @@
     "description": "Provides at pan-European level in the spatial resolution of 10 m the occurrence of water and wet surfaces over the period from 2009 to 2015.",
     "providers": [
       {
-        "organization": "European Environment Agency",
+        "name": "European Environment Agency",
         "doc_link": "https://land.copernicus.eu/",
         "organization_email": "copernicus@eea.europa.eu",
         "roles": [

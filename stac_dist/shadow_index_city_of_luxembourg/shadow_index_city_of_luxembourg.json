@@ -17,7 +17,7 @@
     "providers": [
       {
         "organization_name": "space4environment",
-        "organization": "space4environment",
+        "name": "space4environment",
         "comments": "",
         "doc_link": "",
         "organization_email": "info@space4environment.com",
@@ -29,7 +29,7 @@
       },
       {
         "organization_name": "Administration du cadastre et de la topographie",
-        "organization": "Administration du cadastre et de la topographie",
+        "name": "Administration du cadastre et de la topographie",
         "doc_link": "https://data.public.lu/fr/datasets/lidar-2019-modele-numerique-de-terrain-mnt/",
         "roles": [
           "producer"

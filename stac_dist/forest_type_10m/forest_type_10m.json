@@ -7,7 +7,7 @@
     "description": "The High Resolution Layer Forest 2018 status layer Forest Type provides a forest classification with 3 thematic classes (all non-forest areas / broadleaved forest / coniferous forest) at 10m spatial resolution and with a Minimum Mapping Unit (MMU) of 0.5 ha. This raster layer is largely following the FAO (Food and Agriculture Organisation of the United Nations) forest definition with tree covered areas in agricultural and urban context excluded and covers the full of EEA38 area and the United Kingdom.",
     "providers": [
       {
-        "organization": "European Environment Agency",
+        "name": "European Environment Agency",
         "doc_link": "https://land.copernicus.eu/",
         "organization_email": "copernicus@eea.europa.eu",
         "roles": [

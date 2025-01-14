@@ -7,7 +7,7 @@
     "description": "Provides at pan-European level in the spatial resolution of 20 m a basic land cover classification with two thematic classes (grassland / non-grassland).",
     "providers": [
       {
-        "organization": "European Environment Agency",
+        "name": "European Environment Agency",
         "doc_link": "https://land.copernicus.eu/",
         "organization_email": "copernicus@eea.europa.eu",
         "roles": [

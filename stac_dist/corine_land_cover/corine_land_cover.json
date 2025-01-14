@@ -8,7 +8,7 @@
     "providers": [
       {
         "organization_name": null,
-        "organization": "EEA",
+        "name": "EEA",
         "comments": "The present 100m raster dataset is the 2018 CLC status layer modified for the purpose of consistent statistical analysis in the land cover change accounting system at EEA.\n\nCORINE Land Cover (CLC) data are produced from 1986 for European (EEA member or cooperating) countries. Altogether five mapping inventories were implemented in this period, producing five status layers (CLC1990, CLC2000, CLC2006, CLC2012, CLC2018) and four CLC-Change (CLCC) layers for the corresponding periods (1990-2000, 2000-2006, 2006-2012, 2012-2018). Pan-European CLC and CLCC data are available as vector and raster products.",
         "doc_link": "https://land.copernicus.eu/pan-european/corine-land-cover",
         "organization_email": null,

@@ -8,7 +8,7 @@
     "providers": [
       {
         "organization_name": "NASA Socioeconomic Data and Applications Center (SEDAC)",
-        "organization": "NASA Socioeconomic Data and Applications Center (SEDAC)",
+        "name": "NASA Socioeconomic Data and Applications Center (SEDAC)",
         "comments": "For download create account/regsiter (free)",
         "doc_link": "https://sedac.ciesin.columbia.edu/data/set/ferman-v1-pest-chemgrids-v1-01/docs",
         "organization_email": "ciesin.info@ciesin.columbia.edu",

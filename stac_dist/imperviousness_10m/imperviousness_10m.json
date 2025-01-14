@@ -7,7 +7,7 @@
     "description": "Provides at pan-European level in the spatial resolution of 10 m the sealing density in the range from 0% to 100%.",
     "providers": [
       {
-        "organization": "Environment",
+        "name": "Environment",
         "doc_link": "https://land.copernicus.eu/",
         "organization_email": "copernicus@eea.europa.eu",
         "roles": [

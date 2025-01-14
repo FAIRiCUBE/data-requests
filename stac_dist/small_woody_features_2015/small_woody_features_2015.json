@@ -7,7 +7,7 @@
     "description": "Provides at pan-European level information on information on linear structures such as hedgerows, as well as patches of woody features at 5m resolution.",
     "providers": [
       {
-        "organization": "European Environment Agency",
+        "name": "European Environment Agency",
         "doc_link": "https://land.copernicus.eu/",
         "organization_email": "copernicus@eea.europa.eu",
         "roles": [

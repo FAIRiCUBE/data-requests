@@ -11,7 +11,7 @@
     "providers": [
       {
         "organization_name": "FAIRiCUBE",
-        "organization": "space4environment",
+        "name": "space4environment",
         "organization_email": "info@space4environment.com",
         "roles": [
           "processor"
@@ -20,7 +20,7 @@
       },
       {
         "organization_name": "JOINT RESEARCH CENTRE European Soil Data Centre (ESDAC)",
-        "organization": "JOINT RESEARCH CENTRE European Soil Data Centre (ESDAC)",
+        "name": "JOINT RESEARCH CENTRE European Soil Data Centre (ESDAC)",
         "doc_link": "https://esdac.jrc.ec.europa.eu/content/chemical-properties-european-scale-based-lucas-topsoil-data#tabs-0-description=0",
         "roles": [
           "producer"
