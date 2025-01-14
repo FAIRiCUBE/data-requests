@@ -13,7 +13,7 @@
     "providers": [
       {
         "organization_name": "European Environment Agency",
-        "organization": "European Environment Agency",
+        "name": "European Environment Agency",
         "comments": "",
         "doc_link": "https://sdi.eea.europa.eu/catalogue/copernicus/all/catalog.search#/metadata/c7bf34ea-755c-4dbd-85b6-4efc5fd302a2",
         "organization_email": "copernicus@eea.europa.eu",

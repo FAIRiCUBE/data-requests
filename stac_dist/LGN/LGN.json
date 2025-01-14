@@ -8,7 +8,7 @@
     "providers": [
       {
         "organization_name": null,
-        "organization": "WENR",
+        "name": "WENR",
         "comments": "download via email; preprocessing by WENR to unify land use categories (which change over years)",
         "doc_link": "https://lgn.nl/, https://www.wur.nl/en/Research-Results/Research-Institutes/Environmental-Research/Facilities-Tools/Kaarten-en-GIS-bestanden/Land-use-database-of-the-Netherlands/What-is-the-LGN-database.htm",
         "organization_email": null,

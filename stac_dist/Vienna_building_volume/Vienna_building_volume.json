@@ -16,7 +16,7 @@
     "providers": [
       {
         "organization_name": "Stadt Wien",
-        "organization": "Stadt Wien",
+        "name": "Stadt Wien",
         "organization_email": "open@post.wien.gv.at",
         "roles": "licensor"
       }
