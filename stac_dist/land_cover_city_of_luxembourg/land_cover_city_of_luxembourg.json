@@ -140,6 +140,12 @@
       "roles": [
         "metadata"
       ]
+    },
+    "land_cover_2021_10m_thumbnail": {
+      "href": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/images/thumbnails/landcover_thumbnail.png?raw=true",
+      "roles": [
+        "metadata"
+      ]
     }
   },
   "bbox": [
