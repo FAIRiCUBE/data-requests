@@ -1,0 +1,148 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "protected_areas_of_the_city_of_luxembourg",
+  "properties": {
+    "keywords": [
+      "protected land"
+    ],
+    "license": "CC-BY-NC-4.0",
+    "description": "Collection of recent protected areas (status spring-2024) of the city of Luxembourg including\nZones de protection sp\u00e9ciale (Zones Oiseaux)\nZones sp\u00e9ciales de conservation (Zones Habitats)\nZones prot\u00e9g\u00e9es d'int\u00e9r\u00eat national (ZPIN)\n",
+    "providers": [
+      {
+        "organization_name": "FAIRiCUBE",
+        "organization": "FAIRiCUBE",
+        "organization_email": "info@space4environment.com",
+        "roles": "processor"
+      }
+    ],
+    "dataSource": "https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search#/metadata/616ef48f-7196-4e30-b201-6c97808fa68a",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          72850,
+          82570
+        ],
+        "reference_system": "2169",
+        "type": "spatial",
+        "unit": "categorical",
+        "step": 10
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          69590,
+          80030
+        ],
+        "reference_system": "2169",
+        "type": "spatial",
+        "unit": "categorical",
+        "step": 10
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "type": "spatial"
+      },
+      "time": {
+        "type": "temporal",
+        "values": [
+          "2024-01-01T00:00Z",
+          "2999-01-01T00:00:00Z"
+        ],
+        "step": "",
+        "unit": "year"
+      }
+    },
+    "raster:bands": [
+      {
+        "band_name": "protected land",
+        "unit": "categorical",
+        "data_type": "int16",
+        "nodata": -9,
+        "definition": "protected designated areas and their designation types",
+        "description": "protected designated areas and their designation types",
+        "category_list": "1 Protected Area"
+      }
+    ],
+    "title": "Protected areas of Luxembourg city (excluding water protection zones)",
+    "datasource_type": "grid",
+    "area_cover": "5171.66 ha",
+    "documentation": "https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search#/metadata/616ef48f-7196-4e30-b201-6c97808fa68a",
+    "crs": "2169",
+    "start_datetime": "2024-01-01T00:00Z",
+    "end_datetime": "2999-01-01T00:00:00Z",
+    "provenance_name": " Nationally designated areas for public access (vector data) - May 2024",
+    "preprocessing": "vector to raster conversion",
+    "source_data": "https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search#/metadata/616ef48f-7196-4e30-b201-6c97808fa68a",
+    "apis": "AWS-S3 API",
+    "access_control": "fairicube account required ",
+    "datetime": "2024-09-05T11:02Z",
+    "modification": null,
+    "provision": null,
+    "use_case_S4E": "1",
+    "platform": "Eox"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          6.069104443926092,
+          49.56094657618465
+        ],
+        [
+          6.069104443926092,
+          49.65484833240523
+        ],
+        [
+          6.203715071874704,
+          49.65484833240523
+        ],
+        [
+          6.203715071874704,
+          49.56094657618465
+        ],
+        [
+          6.069104443926092,
+          49.56094657618465
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {
+    "protected_areas_2023_10m_b1.tif": {
+      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "bbox": [
+    6.069104443926092,
+    49.56094657618465,
+    6.203715071874704,
+    49.65484833240523
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
