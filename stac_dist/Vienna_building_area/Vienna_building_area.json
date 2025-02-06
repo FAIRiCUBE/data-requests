@@ -11,9 +11,10 @@
     "providers": [
       {
         "organization_name": "Stadt Wien",
-        "organization": "Stadt Wien",
         "organization_email": "open@post.wien.gv.at",
-        "roles": "licensor"
+        "roles": [
+          "licensor"
+        ]
       }
     ],
     "dataSource": "Open data Austria (data.gv.at)",
@@ -21,8 +22,8 @@
       "x": {
         "axis": "x",
         "extent": [
-          331000,
-          354000
+          -11200,
+          18800
         ],
         "reference_system": "EPSG:31256",
         "type": "spatial",
@@ -33,8 +34,8 @@
       "y": {
         "axis": "y",
         "extent": [
-          -11200,
-          18800
+          331000,
+          354000
         ],
         "reference_system": "EPSG:31256",
         "type": "spatial",
@@ -81,7 +82,6 @@
     "preprocessing": "The original bulding footprint dataset was masked, next the building cover per 100m gridcell was calculatedc and a raster was produced",
     "source_data": "https://www.wien.gv.at/stadtentwicklung/stadtvermessung/geodaten/viewer/geodatendownload.html",
     "models": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/notebooks/dev/f06_pre_processing/Vienna_distance_raster_from_points_data.ipynb",
-    "apis": "AWS-S3 API",
     "access_control": "fairicube account required ",
     "datetime": "2024-07-17T10:29:47Z",
     "modification": "2024-07-17T10:29:51Z",
@@ -95,24 +95,24 @@
     "coordinates": [
       [
         [
-          20.527587778333267,
-          44.951075003750404
+          16.18109409638113,
+          48.11720087650675
         ],
         [
-          20.527587778333267,
-          45.2313494572559
+          16.18109409638113,
+          48.32420866274977
         ],
         [
-          20.839371582277582,
-          45.2313494572559
+          16.58564092856156,
+          48.32420866274977
         ],
         [
-          20.839371582277582,
-          44.951075003750404
+          16.58564092856156,
+          48.11720087650675
         ],
         [
-          20.527587778333267,
-          44.951075003750404
+          16.18109409638113,
+          48.11720087650675
         ]
       ]
     ]
@@ -132,24 +132,28 @@
     }
   ],
   "assets": {
-    "file on s3": {
+    "file_on_s3": {
       "href": "https://fairicube.s3.eu-central-1.amazonaws.com/vienna_data/100m/r08_buildings/r08_Wien_buildings_area_ha_100m_b1_1_1.tif",
       "roles": [
-        "data"
+        [
+          "data"
+        ]
       ]
     },
-    "rasdaman datacube": {
+    "rasdaman_datacube": {
       "href": "https://fairicube.rasdaman.com/rasdaman/ows?&SERVICE=WCS&VERSION=2.1.0&REQUEST=DescribeCoverage&COVERAGEID=Vienna_building_area&outputType=GeneralGridCoverage",
       "roles": [
-        "data"
+        [
+          "data"
+        ]
       ]
     }
   },
   "bbox": [
-    20.527587778333267,
-    44.951075003750404,
-    20.839371582277582,
-    45.2313494572559
+    16.18109409638113,
+    48.11720087650675,
+    16.58564092856156,
+    48.32420866274977
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
