@@ -4,7 +4,6 @@
   "id": "high_invasive_probability_area_of_luxembourg",
   "properties": {
     "keywords": [
-      "not published",
       "High Invasive Species Potential Area"
     ],
     "license": "CC-BY-4.0",
@@ -15,7 +14,9 @@
         "doc_link": "",
         "organization_email": "info@space4environment.com",
         "roles": [
-          "processor"
+          [
+            "processor"
+          ]
         ]
       }
     ],
@@ -56,7 +57,7 @@
           "2021-01-01T00:00Z",
           "2021-12-31T00:00Z"
         ],
-        "step": "P1Y",
+        "step": "P1Y0M0DT0H0M0S",
         "unit": "y"
       }
     },
@@ -66,8 +67,8 @@
         "unit": "categorical",
         "data_type": "int8",
         "nodata": 0,
-        "definition": "Land use classes from the 2021 dataset with a high likelihood of neophyte invasion due to low human management of these sites were selected. In areas with a greater invasion risk, some classes were buffered by 10 meters. These classes included: 511 (Natural Running water), 512 (Artificial Running water), 521 (Natural Standing water), 522 (Artificial Standing water), 611 (Rural roads), 612 (Main roads) and 620 (Railways). The remaining classes that were not buffered included: 134 (Other green area), 152 (Mining/ extraction), 160 (Construction sites), 311 (Coniferous forest), 312 (Mixed forest), 313 (Deciduous forest), 314 (Young forest), 321 (Damaged forest), 323 (Clear cuts), 450 (Bushes), 460 (Wetland), 631 (Commercial Air traffic) and 650 (Parking lot)",
-        "description": "Land use classes from the 2021 dataset with a high likelihood of neophyte invasion due to low human management of these sites were selected. In areas with a greater invasion risk, some classes were buffered by 10 meters. These classes included: 511 (Natural Running water), 512 (Artificial Running water), 521 (Natural Standing water), 522 (Artificial Standing water), 611 (Rural roads), 612 (Main roads) and 620 (Railways). The remaining classes that were not buffered included: 134 (Other green area), 152 (Mining/ extraction), 160 (Construction sites), 311 (Coniferous forest), 312 (Mixed forest), 313 (Deciduous forest), 314 (Young forest), 321 (Damaged forest), 323 (Clear cuts), 450 (Bushes), 460 (Wetland), 631 (Commercial Air traffic) and 650 (Parking lot)"
+        "definition": "Land use classes from the 2021 dataset with a high likelihood of neophyte invasion due to low human management of these sites were selected. In areas with a greater invasion risk, classes were buffered by 10 meters. These classes included: 511 (Natural Running water), 512 (Artificial Running water), 521 (Natural Standing water), 522 (Artificial Standing water), 611 (Rural roads), 612 (Main roads) and 620 (Railways). ",
+        "description": "Land use classes from the 2021 dataset with a high likelihood of neophyte invasion due to low human management of these sites were selected. In areas with a greater invasion risk, classes were buffered by 10 meters. These classes included: 511 (Natural Running water), 512 (Artificial Running water), 521 (Natural Standing water), 522 (Artificial Standing water), 611 (Rural roads), 612 (Main roads) and 620 (Railways). "
       }
     ],
     "title": "High Invasive Probability Area of the City of Luxembourg",
@@ -83,6 +84,8 @@
     "source_data": "https://data.public.lu/fr/datasets/lis-l-land-use-2007-2015-2018/",
     "access_control": "fairicube account required ",
     "datetime": "2025-02-10T09:23Z",
+    "modification": null,
+    "provision": null,
     "use_case_S4E": "1",
     "platform": "Eox"
   },
