@@ -14,9 +14,7 @@
         "doc_link": "",
         "organization_email": "info@space4environment.com",
         "roles": [
-          [
-            "processor"
-          ]
+          "producer"
         ]
       }
     ],
@@ -30,7 +28,7 @@
         ],
         "reference_system": "2169",
         "type": "spatial",
-        "unit": "land use",
+        "unit": "categorical",
         "step": 10
       },
       "y": {
@@ -41,7 +39,7 @@
         ],
         "reference_system": "2169",
         "type": "spatial",
-        "unit": "land use",
+        "unit": "categorical",
         "step": 10
       },
       "z": {
@@ -68,7 +66,8 @@
         "data_type": "int8",
         "nodata": 0,
         "definition": "Land use classes from the 2021 dataset with a high likelihood of neophyte invasion due to low human management of these sites were selected. In areas with a greater invasion risk, classes were buffered by 10 meters. These classes included: 511 (Natural Running water), 512 (Artificial Running water), 521 (Natural Standing water), 522 (Artificial Standing water), 611 (Rural roads), 612 (Main roads) and 620 (Railways). ",
-        "description": "Land use classes from the 2021 dataset with a high likelihood of neophyte invasion due to low human management of these sites were selected. In areas with a greater invasion risk, classes were buffered by 10 meters. These classes included: 511 (Natural Running water), 512 (Artificial Running water), 521 (Natural Standing water), 522 (Artificial Standing water), 611 (Rural roads), 612 (Main roads) and 620 (Railways). "
+        "description": "Land use classes from the 2021 dataset with a high likelihood of neophyte invasion due to low human management of these sites were selected. In areas with a greater invasion risk, classes were buffered by 10 meters. These classes included: 511 (Natural Running water), 512 (Artificial Running water), 521 (Natural Standing water), 522 (Artificial Standing water), 611 (Rural roads), 612 (Main roads) and 620 (Railways). ",
+        "category_list": "1: high likelihood of neophyte invasion"
       }
     ],
     "title": "High Invasive Probability Area of the City of Luxembourg",
