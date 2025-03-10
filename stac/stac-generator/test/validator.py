@@ -19,6 +19,11 @@ def validate_item(item: pystac.item.Item):
     if not item_is_EDC:
         # validate Data Source
         assert "dataSource" in properties.keys(), "No dataSource in the stac item"
+        #TODO: remove the fixer:
+        metadata_standard = properties.pop("metada_standards")
+        if metadata_standard is not None:
+            properties["metadata_standards"] = metadata_standard
+
         assert isinstance(properties["dataSource"], str), "dataSource must be a string"
         assert len(properties["dataSource"]) > 0, "dataSource string must not be empty"
 

@@ -101,7 +101,7 @@
     "models": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/notebooks/dev/f06_pre_processing/Vienna_protected_areas_100m.ipynb",
     "data_quality": "",
     "quality_control": "",
-    "metada_standards": "",
+    "metadata_standards": "",
     "distributions": "",
     "access_control": "fairicube account required ",
     "datetime": "2024-07-17T09:52:11Z",

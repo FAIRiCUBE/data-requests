@@ -100,7 +100,7 @@
     "models": "",
     "data_quality": "",
     "quality_control": "",
-    "metada_standards": "",
+    "metadata_standards": "",
     "apis": "AWS-S3 API",
     "distributions": "",
     "access_control": "fairicube account required ",
