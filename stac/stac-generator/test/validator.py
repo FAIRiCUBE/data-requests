@@ -20,8 +20,9 @@ def validate_item(item: pystac.item.Item):
         # validate Data Source
         assert "dataSource" in properties.keys(), "No dataSource in the stac item"
         #TODO: remove the fixer:
-        metadata_standard = properties.pop("metada_standards")
-        if metadata_standard is not None:
+
+        if "metada_standards" in properties.keys():
+            metadata_standard = properties.pop("metada_standards")
             properties["metadata_standards"] = metadata_standard
 
         assert isinstance(properties["dataSource"], str), "dataSource must be a string"
