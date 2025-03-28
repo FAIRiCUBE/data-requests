@@ -72,7 +72,7 @@
     "keywords": "forest management, landscape alteration, land use, land cover",
     "area_cover": "EEA39",
     "documentation": "European Union's Copernicus Land Monitoring Service information; Source dataset DOI links: https://doi.org/10.2909/59b0620c-7bb4-4c82-b3ce-f16715573137",
-    "crs": "3035",
+    "proj:code": "EPSG:3035",
     "start_datetime": "2018-03-01T00:00Z",
     "end_datetime": "2018-10-31T23:59:59.999Z",
     "personalData": "none",
@@ -153,6 +153,7 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
   ]
 }

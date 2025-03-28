@@ -75,7 +75,7 @@
     "datasource_type": "grid",
     "area_cover": "5171.66 ha",
     "documentation": "https://data.public.lu/en/datasets/lis-l-land-cover/",
-    "crs": "2169",
+    "proj:code": "EPSG:2169",
     "start_datetime": "2015-01-01T00:00Z",
     "end_datetime": "2021-01-01T00:00Z",
     "personalData": "no personal data",
@@ -158,7 +158,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/prov/v1.0.0/schema.json"
+    "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
   ],
   "wasDerivedFrom": "https://data.public.lu/en/datasets/lis-l-land-cover/"
 }

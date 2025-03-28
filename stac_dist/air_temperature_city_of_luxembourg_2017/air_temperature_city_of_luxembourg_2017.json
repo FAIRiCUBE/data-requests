@@ -231,7 +231,7 @@
     "datasource_type": "grid",
     "area_cover": "5171.66 ha",
     "documentation": "https://confluence.ecmwf.int/display/CKB/Climate+variables+for+cities+in+Europe+from+2008+to+2017+documentation#ClimatevariablesforcitiesinEuropefrom2008to2017documentation-_bookmark13Timeformat",
-    "crs": "2169",
+    "proj:code": "EPSG:2169",
     "start_datetime": "2017-01-01T00:00Z",
     "end_datetime": "2017-12-31T00:00Z",
     "re_projection_crs": "",
@@ -340,7 +340,8 @@
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/example-links/v0.0.1/schema.json",
-    "https://stac-extensions.github.io/prov/v1.0.0/schema.json"
+    "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
   ],
   "wasDerivedFrom": "https://cds.climate.copernicus.eu/stac-browser/collections/sis-urban-climate-cities?.language=en",
   "wasGeneratedBy": ""

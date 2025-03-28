@@ -80,7 +80,7 @@
     "keywords": "population, census, population distribution, demography, society",
     "area_cover": "EU-27 + EFTA countries + Western Balkans + UK (38 countries)",
     "documentation": "Batista e Silva F, Dijkstra L, Poelman H (2021) The JRC-GEOSTAT 2018 population grid. JRC Technical Report.",
-    "crs": "3035",
+    "proj:code": "EPSG:3035",
     "start_datetime": "2006-01-01T00:00Z",
     "end_datetime": "2021-01-01T00:00Z",
     "personalData": "https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution#GEOSTAT%202006%20grid%20dataset",
@@ -164,7 +164,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/prov/v1.0.0/schema.json"
+    "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
   ],
   "wasDerivedFrom": "https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution/geostat"
 }

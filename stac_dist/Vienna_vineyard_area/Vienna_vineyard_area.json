@@ -75,7 +75,7 @@
     "datasource_type": "WFS (GML) ",
     "keywords": "vineyards",
     "area_cover": "415km2",
-    "crs": "EPSG:31256",
+    "proj:code": "EPSG:EPSG:31256",
     "start_datetime": "2024-01-01T00:00Z",
     "end_datetime": "2024-12-31T00:00Z",
     "provenance_name": "data.gv.at ",
@@ -146,7 +146,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/prov/v1.0.0/schema.json"
+    "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
   ],
   "wasDerivedFrom": "https://www.data.gv.at",
   "wasGeneratedBy": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/notebooks/dev/f06_pre_processing/Vienna_land_use.ipynb"

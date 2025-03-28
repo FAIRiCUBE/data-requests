@@ -7,7 +7,6 @@
     "description": "Provides at pan-European level in the spatial resolution of 10 m a basic land cover classification with two thematic classes (grassland / non-grassland).",
     "providers": [
       {
-
         "name": "European Environment Agency",
         "doc_link": "https://land.copernicus.eu/",
         "organization_email": "copernicus@eea.europa.eu",
@@ -73,7 +72,7 @@
     "keywords": "forest management, land cover, landscape alteration, land use, grassland",
     "area_cover": "EEA39",
     "documentation": "European Union's Copernicus Land Monitoring Service information; Source dataset DOI links: https://doi.org/10.2909/35a036bb-c027-401c-8625-2ecf722e8461",
-    "crs": "3035",
+    "proj:code": "EPSG:3035",
     "start_datetime": "2018-03-01T00:00Z",
     "end_datetime": "2018-10-31T23:59:59.999Z",
     "personalData": "none",
@@ -154,6 +153,7 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
   ]
 }
