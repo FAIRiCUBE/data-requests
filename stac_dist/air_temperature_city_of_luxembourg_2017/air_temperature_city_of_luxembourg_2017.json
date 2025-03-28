@@ -239,8 +239,6 @@
     "personalData": "no personal data",
     "provenance_name": "Climate variables for cities in Europe from 2008 to 2017",
     "preprocessing": "",
-    "source_data": "https://cds.climate.copernicus.eu/stac-browser/collections/sis-urban-climate-cities?.language=en",
-    "models": "",
     "data_quality": "",
     "quality_control": "",
     "metadata_standards": "",
@@ -341,6 +339,9 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/example-links/v0.0.1/schema.json"
-  ]
+    "https://stac-extensions.github.io/example-links/v0.0.1/schema.json",
+    "https://stac-extensions.github.io/prov/v1.0.0/schema.json"
+  ],
+  "wasDerivedFrom": "https://cds.climate.copernicus.eu/stac-browser/collections/sis-urban-climate-cities?.language=en",
+  "wasGeneratedBy": ""
 }

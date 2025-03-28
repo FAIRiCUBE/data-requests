@@ -74,7 +74,6 @@
     "personalData": "none",
     "provenance_name": "https://www.eea.europa.eu/en/datahub/datahubitem-view/42783031-34d5-4b38-b9ba-a0783723053c",
     "preprocessing": "The ESM_2015 product exploits the Copernicus VHR_IMAGE_2015 dataset made of satellite images Pleiades, Deimos-02, WorldView-2, WorldView-3, GeoEye-01 and Spot 6/7 ranging from 2014 to 2016.",
-    "source_data": "https://human-settlement.emergency.copernicus.eu/download.php?ds=ESM",
     "apis": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
     "use_case_S4E": "1",
     "use_case_NHM": "1",
@@ -150,6 +149,8 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ]
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/prov/v1.0.0/schema.json"
+  ],
+  "wasDerivedFrom": "https://human-settlement.emergency.copernicus.eu/download.php?ds=ESM"
 }

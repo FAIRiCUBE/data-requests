@@ -77,7 +77,6 @@
     "start_datetime": "2012-01-01T00:00Z",
     "end_datetime": "2015-01-01T00:00Z",
     "provenance_name": "https://land.copernicus.eu/en/products/high-resolution-layer-dominant-leaf-type",
-    "source_data": "https://land.copernicus.eu/en/products/high-resolution-layer-dominant-leaf-type/dominant-leaf-type-2012, https://land.copernicus.eu/en/products/high-resolution-layer-dominant-leaf-type/dominant-leaf-type-2015",
     "apis": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
     "use_case_S4E": "1",
     "use_case_WER": "2",
@@ -154,6 +153,8 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ]
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/prov/v1.0.0/schema.json"
+  ],
+  "wasDerivedFrom": "https://land.copernicus.eu/en/products/high-resolution-layer-dominant-leaf-type/dominant-leaf-type-2012, https://land.copernicus.eu/en/products/high-resolution-layer-dominant-leaf-type/dominant-leaf-type-2015"
 }

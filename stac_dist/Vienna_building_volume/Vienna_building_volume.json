@@ -85,8 +85,6 @@
     "end_datetime": "2024-12-31T00:00Z",
     "provenance_name": "data.gv.at ",
     "preprocessing": " The map shows the building volume (building footprint x avg. building height) as a normalized indicator 0-1",
-    "source_data": "https://www.data.gv.at",
-    "models": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/notebooks/dev/f06_pre_processing/Vienna_distance_raster_from_points_data.ipynb",
     "apis": "AWS-S3 API",
     "access_control": "fairicube account required ",
     "datetime": "2024-07-17T10:39:35Z",
@@ -159,6 +157,9 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ]
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/prov/v1.0.0/schema.json"
+  ],
+  "wasDerivedFrom": "https://www.data.gv.at",
+  "wasGeneratedBy": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/notebooks/dev/f06_pre_processing/Vienna_distance_raster_from_points_data.ipynb"
 }

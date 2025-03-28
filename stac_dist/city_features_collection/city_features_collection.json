@@ -89,7 +89,6 @@
     "end_datetime": "2024-04-18T00:00Z",
     "personalData": "no personal data",
     "preprocessing": "Refer to the codebook for a complete description.",
-    "source_data": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/data/city_features_collection",
     "apis": "No API. The dataset can be downloaded from Github or Zenodo, or the github repository (including example Notebooks) can be cloned",
     "access_control": "no access control",
     "modification": null,
@@ -147,6 +146,8 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ]
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/prov/v1.0.0/schema.json"
+  ],
+  "wasDerivedFrom": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/data/city_features_collection"
 }

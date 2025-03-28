@@ -89,7 +89,6 @@
     "personalData": null,
     "provenance_name": "European Union's Copernicus Land Monitoring Service",
     "preprocessing": null,
-    "source_data": "https://land.copernicus.eu/en/products/corine-land-cover",
     "apis": "OGC WCS, WCPS, WMS, WMTS",
     "modification": null,
     "provision": null,
@@ -170,6 +169,8 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ]
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/prov/v1.0.0/schema.json"
+  ],
+  "wasDerivedFrom": "https://land.copernicus.eu/en/products/corine-land-cover"
 }

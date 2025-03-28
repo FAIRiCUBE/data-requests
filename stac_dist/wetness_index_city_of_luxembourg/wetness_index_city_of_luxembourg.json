@@ -70,7 +70,6 @@
     "personalData": "no personal data",
     "provenance_name": "LiDAR 2019 - Digital Terrain Model (DTM)",
     "preprocessing": "Calculation of TWI based on the Digital Terrain Model (DTM)",
-    "source_data": "https://data.public.lu/fr/datasets/lidar-2019-modele-numerique-de-terrain-mnt/",
     "access_control": "fairicube account required ",
     "datetime": "2019-01-01T00:00Z",
     "modification": null,
@@ -151,6 +150,8 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ]
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/prov/v1.0.0/schema.json"
+  ],
+  "wasDerivedFrom": "https://data.public.lu/fr/datasets/lidar-2019-modele-numerique-de-terrain-mnt/"
 }

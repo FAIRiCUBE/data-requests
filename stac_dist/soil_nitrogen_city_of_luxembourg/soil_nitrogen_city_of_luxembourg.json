@@ -87,7 +87,6 @@
     "end_datetime": "2012-12-31T00:00Z",
     "personalData": "no personal data",
     "provenance_name": "Maps of Soil Chemical properties at European scale based on LUCAS 2009/2012 topsoil data",
-    "source_data": "https://www.sciencedirect.com/science/article/pii/S0016706119304768",
     "access_control": "fairicube account required ",
     "datetime": "2024-09-18T13:52Z",
     "modification": null,
@@ -172,6 +171,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/example-links/v0.0.1/schema.json"
-  ]
+    "https://stac-extensions.github.io/example-links/v0.0.1/schema.json",
+    "https://stac-extensions.github.io/prov/v1.0.0/schema.json"
+  ],
+  "wasDerivedFrom": "https://www.sciencedirect.com/science/article/pii/S0016706119304768"
 }
