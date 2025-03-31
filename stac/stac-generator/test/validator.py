@@ -69,7 +69,6 @@ def validate_item(item: pystac.item.Item):
         assert isinstance(y["reference_system"], str), "x dimension reference_system must be a string"
 
         # Temporal
-        assert "t" in item.properties["cube:dimensions"].keys() or "time" in item.properties["cube:dimensions"].keys()
         time = dict()
         if "t" in item.properties["cube:dimensions"].keys():
             time = item.properties["cube:dimensions"]["t"]
