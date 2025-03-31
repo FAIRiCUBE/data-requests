@@ -6,17 +6,7 @@
     "keywords": [],
     "license": "CC-BY-1.0",
     "description": "Object height (e.g. trees, buildings) in centimeters.\nSource originally from ahn.nl, but processed at WENR from absolute height to relative heights of objects in raster format.",
-    "providers": [
-      {
-        "organization_name": "EOX IT Services",
-        "name": "Musab Abdalla",
-        "doc_link": "https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-vegetation-phenology-and-productivity",
-        "organization_email": "baloolamu@gmail.com",
-        "roles": [
-          "host"
-        ]
-      }
-    ],
+    "providers": [],
     "dataSource": "ahn.nl originally, but processed at WENR from absolute height to relative heights of objects",
     "cube:dimensions": {
       "x": {
@@ -124,12 +114,6 @@
       "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?service=WMS&version=1.3.0&request=GetMap&layers=none&bbox=51.8407808425126,5.105442156813408,52.80691561255643,6.408453362667011&width=800&height=600&crs=EPSG:4326&format=image/png&transparent=true&styles=",
       "roles": [
         "thumbnail"
-      ]
-    },
-    "MA": {
-      "href": "https://www.x.com",
-      "roles": [
-        "data"
       ]
     }
   },
