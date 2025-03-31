@@ -69,21 +69,22 @@ def validate_item(item: pystac.item.Item):
         assert isinstance(y["reference_system"], str), "x dimension reference_system must be a string"
 
         # Temporal
-        time = dict()
-        if "t" in item.properties["cube:dimensions"].keys():
-            time = item.properties["cube:dimensions"]["t"]
-        else:
-            time = item.properties["cube:dimensions"]["time"]
+        if "t" in item.properties["cube:dimensions"].keys() or "time" in item.properties["cube:dimensions"].keys():
+            time = dict()
+            if "t" in item.properties["cube:dimensions"].keys():
+                time = item.properties["cube:dimensions"]["t"]
+            else:
+                time = item.properties["cube:dimensions"]["time"]
 
-        # Time (Begin/End)
-        assert "extent" in time.keys() or "values" in time.keys()
-        # Resolution of Time Axis (Interval)
-        if "extent" in time.keys():
-            assert "step" in time.keys(), "No step in time dimensions"
-            assert isinstance(time["step"], str), "time's step must be a string"
-        # Unit of measure
-        assert "unit" in time.keys(), "No unit in time dimensions"
-        assert isinstance(time["unit"], str), "time's unit must be a string"
+            # Time (Begin/End)
+            assert "extent" in time.keys() or "values" in time.keys()
+            # Resolution of Time Axis (Interval)
+            if "extent" in time.keys():
+                assert "step" in time.keys(), "No step in time dimensions"
+                assert isinstance(time["step"], str), "time's step must be a string"
+            # Unit of measure
+            assert "unit" in time.keys(), "No unit in time dimensions"
+            assert isinstance(time["unit"], str), "time's unit must be a string"
 
 
         # Range Data validation
