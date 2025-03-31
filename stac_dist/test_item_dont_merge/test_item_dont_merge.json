@@ -8,7 +8,16 @@
     ],
     "license": "proprietary",
     "description": "testing items",
-    "providers": [],
+    "providers": [
+      {
+        "organization_name": "EOX IT Services",
+        "name": "name",
+        "organization_email": "bas@mail.com",
+        "roles": [
+          "producer"
+        ]
+      }
+    ],
     "dataSource": "edits",
     "cube:dimensions": {
       "x": {
@@ -128,13 +137,17 @@
     "metadata_1": {
       "href": "https://www.x.com",
       "roles": [
-        "metadata"
+        [
+          "metadata"
+        ]
       ]
     },
     "overview_1": {
       "href": "https://data.sustainability.nilu.no/fairicube/r05_treecover2018_100m_b1_COG.tif",
       "roles": [
-        "overview"
+        [
+          "overview"
+        ]
       ]
     }
   },
