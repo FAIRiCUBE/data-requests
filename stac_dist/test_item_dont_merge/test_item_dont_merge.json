@@ -14,8 +14,11 @@
         "name": "name",
         "organization_email": "bas@mail.com",
         "roles": [
-          "producer"
-        ]
+          [
+            "producer"
+          ]
+        ],
+        "project_purpose": "k"
       }
     ],
     "dataSource": "edits",
@@ -133,24 +136,7 @@
       "title": "Link to the item's license."
     }
   ],
-  "assets": {
-    "metadata_1": {
-      "href": "https://www.x.com",
-      "roles": [
-        [
-          "metadata"
-        ]
-      ]
-    },
-    "overview_1": {
-      "href": "https://data.sustainability.nilu.no/fairicube/r05_treecover2018_100m_b1_COG.tif",
-      "roles": [
-        [
-          "overview"
-        ]
-      ]
-    }
-  },
+  "assets": {},
   "bbox": [
     -180,
     0,
