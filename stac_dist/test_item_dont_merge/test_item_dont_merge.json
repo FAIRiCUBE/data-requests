@@ -14,7 +14,9 @@
         "name": "name",
         "organization_email": "bas@mail.com",
         "roles": [
-          "producer"
+          [
+            "producer"
+          ]
         ],
         "project_purpose": "k"
       }
@@ -129,13 +131,25 @@
       "rel": "example"
     },
     {
+      "example:container": true,
+      "title": "Fa",
+      "description": "Link to the data visualization interactive web map.",
+      "href": "https://vis.fairicube.eu/=data?https://www.x.com",
+      "rel": "example"
+    },
+    {
       "href": "https://www.google.com",
       "rel": "license",
       "type": "text/xml",
       "title": "Link to the item's license."
     }
   ],
-  "assets": {},
+  "assets": {
+    "Fa": {
+      "href": "https://www.x.com",
+      "roles": "overview"
+    }
+  },
   "bbox": [
     -180,
     0,
