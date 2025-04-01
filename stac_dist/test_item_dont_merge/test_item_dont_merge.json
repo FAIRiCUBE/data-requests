@@ -13,11 +13,7 @@
         "organization_name": "EOX IT Services",
         "name": "name",
         "organization_email": "bas@mail.com",
-        "roles": [
-          [
-            "producer"
-          ]
-        ],
+        "roles": "producer",
         "project_purpose": "k"
       }
     ],
@@ -59,6 +55,7 @@
     ],
     "title": "test item",
     "datasource_type": "grid",
+    "proj:code": "EPSG:undefined",
     "datetime": "2024-08-19T16:29:57Z",
     "modification": null,
     "provision": null,
@@ -146,6 +143,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/example-links/v0.0.1/schema.json"
+    "https://stac-extensions.github.io/example-links/v0.0.1/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
   ]
 }
