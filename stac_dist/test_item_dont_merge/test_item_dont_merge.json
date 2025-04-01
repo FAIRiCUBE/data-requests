@@ -13,7 +13,9 @@
         "organization_name": "EOX IT Services",
         "name": "name",
         "organization_email": "bas@mail.com",
-        "roles": "producer",
+        "roles": [
+          "producer"
+        ],
         "project_purpose": "k"
       }
     ],
@@ -55,7 +57,7 @@
     ],
     "title": "test item",
     "datasource_type": "grid",
-    "proj:code": "EPSG:undefined",
+    "proj:code": "EPSG:6452",
     "datetime": "2024-08-19T16:29:57Z",
     "modification": null,
     "provision": null,
