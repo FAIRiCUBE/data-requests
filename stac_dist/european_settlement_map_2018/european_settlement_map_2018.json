@@ -137,10 +137,6 @@
       "rel": "service",
       "type": "text/html",
       "title": "Link to the rasdaman web application to access and process gridded data"
-    },
-    {
-      "href": "",
-      "rel": "cite-as"
     }
   ],
   "assets": {

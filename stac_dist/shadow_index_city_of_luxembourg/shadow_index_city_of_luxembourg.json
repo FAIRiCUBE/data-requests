@@ -168,10 +168,6 @@
       "rel": "example"
     },
     {
-      "href": "",
-      "rel": "cite-as"
-    },
-    {
       "href": "https://data.public.lu/fr/datasets/lidar-2019-modele-numerique-de-terrain-mnt/",
       "rel": "cite-as"
     }

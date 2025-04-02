@@ -304,14 +304,6 @@
       "description": "Link to the data visualization interactive web map.",
       "href": "https://vis.fairicube.eu/=data?https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/air_temperature_2017_month_mean_10m_b12_COG.tif",
       "rel": "example"
-    },
-    {
-      "href": "",
-      "rel": "cite-as"
-    },
-    {
-      "href": "https://confluence.ecmwf.int/display/CKB/Climate+variables+for+cities+in+Europe+from+2008+to+2017+documentation#heading-4Exampledata",
-      "rel": "cite-as"
     }
   ],
   "assets": {
