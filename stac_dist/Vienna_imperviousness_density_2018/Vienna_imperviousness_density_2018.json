@@ -1,0 +1,184 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "Vienna_imperviousness_density_2018",
+  "properties": {
+    "keywords": [
+      "sealing_degree"
+    ],
+    "license": "CC-BY-4.0",
+    "description": "Imperviousness density (2018) in EPSG:31256 in Vienna. Reprojected from the CLMS Product Imperviousness 2018. \nIndicates the sealing density in the range from 0% to 100% for the 2018 reference year.",
+    "dataSource": "copernicus.eu",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -11200,
+          18800
+        ],
+        "reference_system": "EPSG:31256",
+        "type": "spatial",
+        "unit": "meter",
+        "interpolation": "average",
+        "step": 100
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          331000,
+          354000
+        ],
+        "reference_system": "EPSG:31256",
+        "type": "spatial",
+        "unit": "meter",
+        "interpolation": "average",
+        "step": 100
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": "",
+        "unit": "",
+        "interpolation": "",
+        "step": "",
+        "type": "spatial"
+      },
+      "time": {
+        "type": "temporal",
+        "extent": [
+          "2017-01-01T00:00Z",
+          "2019-12-31T00:00Z"
+        ],
+        "step": "P3Y0M0DT0H0M0S",
+        "unit": "year",
+        "interpolation": ""
+      }
+    },
+    "raster:bands": [
+      {
+        "band_name": "sealing_degree",
+        "unit": "% fo 1ha cell",
+        "data_type": "cfloat32",
+        "nodata": -9,
+        "definition": "Sealing density in the range from 0% to 100% for the 2018 reference year inside the 100x100meter grid cell. ",
+        "description": "Sealing density in the range from 0% to 100% for the 2018 reference year inside the 100x100meter grid cell. ",
+        "category_list": "",
+        "comment": "Band 1",
+        "interpolation": "NN"
+      }
+    ],
+    "title": "Vienna imperviousness density 2018 [100m]",
+    "datasource_type": "GeoTIFF",
+    "area_cover": "415km2",
+    "documentation": "",
+    "proj:code": "EPSG:EPSG:31256",
+    "start_datetime": "2017-01-01T00:00Z",
+    "end_datetime": "2019-12-31T00:00Z",
+    "resolution": "",
+    "personalData": "",
+    "provenance_name": "CLMS Imperviousness 2018",
+    "preprocessing": "Re-projection from 3035 to 31256 (NN) and clipped to Vienna border and pixel shift to rounded 100m coordiantes",
+    "data_quality": "",
+    "quality_control": "",
+    "metadata_standards": "",
+    "apis": "AWS-S3 API",
+    "distributions": "",
+    "access_control": "fairicube account required ",
+    "datetime": "2024-07-17T09:30:04Z",
+    "modification": "2024-07-17T09:30:11Z",
+    "provision": "2024-07-17T09:30:08Z",
+    "use_case_S4E": "1",
+    "use_case_NHM_2": "1",
+    "ingestion_status": "",
+    "platform": "Eox",
+    "contacts": [
+      {
+        "name": "European Environment Agency",
+        "organization": "European Environment Agency",
+        "emails": [
+          {
+            "value": "copernicus@eea.europa.eu",
+            "role": "work"
+          }
+        ],
+        "project_purpose": "https://land.copernicus.eu"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          16.181717423880905,
+          48.11736579972476
+        ],
+        [
+          16.585640928561524,
+          48.11736579972476
+        ],
+        [
+          16.585640928561524,
+          48.324042510805384
+        ],
+        [
+          16.181717423880905,
+          48.324042510805384
+        ],
+        [
+          16.181717423880905,
+          48.11736579972476
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "href": "https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search#/metadata/524fa72f-61d7-4364-801e-3e271d7b10bc/formatters/xsl-view?root=div&view=advanced",
+      "rel": "cite-as"
+    }
+  ],
+  "assets": {
+    "COG_file_on_fairicube_S3_Bucket": {
+      "href": "https://fairicube.s3.eu-central-1.amazonaws.com/vienna_data/100m/r04_imp/r04_imp2018_100m_b1_1_1.tif",
+      "roles": [
+        "data"
+      ]
+    },
+    "original_CLMS_thumbnail": {
+      "href": "https://sdi.eea.europa.eu/public/catalogue-graphic-overview/524fa72f-61d7-4364-801e-3e271d7b10bc.png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    16.181717423880905,
+    48.11736579972476,
+    16.585640928561524,
+    48.324042510805384
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
+  ],
+  "wasDerivedFrom": "https://land.copernicus.eu/en/products/high-resolution-layer-imperviousness/imperviousness-density-2018#Download",
+  "wasGeneratedBy": ""
+}
