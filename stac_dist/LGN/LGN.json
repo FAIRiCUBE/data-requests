@@ -5,16 +5,6 @@
   "properties": {
     "license": "CC-BY-SA-4.0",
     "description": "LGN is a raster database with a resolution of 25 meter. From LGN2018 onwards, the spatial resolution has been refined to 5m. The LGN database has been produced by Wageningen Environmental Research since the late 1980s and meets the demand for up-to-date and accurate data on land use \nin the Netherlands. It also provides opportunities to track changes in land cover and land use over time.",
-    "providers": [
-      {
-        "organization_name": null,
-        "name": "WENR",
-        "comments": "download via email; preprocessing by WENR to unify land use categories (which change over years)",
-        "doc_link": "https://lgn.nl/, https://www.wur.nl/en/Research-Results/Research-Institutes/Environmental-Research/Facilities-Tools/Kaarten-en-GIS-bestanden/Land-use-database-of-the-Netherlands/What-is-the-LGN-database.htm",
-        "organization_email": null,
-        "project_purpose": null
-      }
-    ],
     "dataSource": "https://lgn.nl/bestanden , https://filesender.surf.nl/?s=download&token=30548341-64c3-48a9-9a74-dec69dd3aa91",
     "cube:dimensions": {
       "x": {
@@ -99,7 +89,14 @@
     "use_case_NILU": null,
     "use_case_NHM_2": null,
     "ingestion_status": "completed, year as timestamp, (2012,2019,2022,2021,2022)",
-    "platform": "Rasdaman"
+    "platform": "Rasdaman",
+    "contacts": [
+      {
+        "name": "WENR",
+        "organization": "WENR",
+        "project_purpose": null
+      }
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -152,6 +149,10 @@
       "rel": "service",
       "type": "text/html",
       "title": "Link to the rasdaman web application to Access, process gridded data"
+    },
+    {
+      "href": "https://lgn.nl/, https://www.wur.nl/en/Research-Results/Research-Institutes/Environmental-Research/Facilities-Tools/Kaarten-en-GIS-bestanden/Land-use-database-of-the-Netherlands/What-is-the-LGN-database.htm",
+      "rel": "cite-as"
     }
   ],
   "assets": {
@@ -171,6 +172,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
   ]
 }

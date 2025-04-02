@@ -11,17 +11,6 @@
     ],
     "license": "CC-BY-4.0",
     "description": "Vienna administration districts [100m]\n\nThe raster shows the district number:\nBEZNR\tNAMEG\n0\t(blank)\n1\tINNERE STADT\n2\tLEOPOLDSTADT\n3\tLANDSTRASSE\n4\tWIEDEN\n5\tMARGARETEN\n6\tMARIAHILF\n7\tNEUBAU\n8\tJOSEFSTADT\n9\tALSERGRUND\n10\tFAVORITEN\n11\tSIMMERING\n12\tMEIDLING\n13\tHIETZING\n14\tPENZING\n15\tRUDOLFSHEIM-F\u00dcNFHAUS\n16\tOTTAKRING\n17\tHERNALS\n18\tW\u00c4HRING\n19\tD\u00d6BLING\n20\tBRIGITTENAU\n21\tFLORIDSDORF\n22\tDONAUSTADT\n23\tLIESING\n",
-    "providers": [
-      {
-        "organization_name": "Stadt Wien",
-        "name": "Stadt Wien",
-        "doc_link": "https://www.data.gv.at/katalog/dataset/2ee6b8bf-6292-413c-bb8b-bd22dbb2ad4b",
-        "organization_email": "open@post.wien.gv.at",
-        "roles": [
-          "licensor"
-        ]
-      }
-    ],
     "dataSource": "data.gv.at",
     "cube:dimensions": {
       "x": {
@@ -94,7 +83,20 @@
     "use_case_WER": "2",
     "use_case_NHM": "2",
     "use_case_NHM_2": "1",
-    "platform": "Eox"
+    "platform": "Eox",
+    "contacts": [
+      {
+        "name": "Stadt Wien",
+        "organization": "Stadt Wien",
+        "emails": [
+          {
+            "value": "open@post.wien.gv.at",
+            "role": "work"
+          }
+        ],
+        "project_purpose": null
+      }
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -135,6 +137,10 @@
       "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
+    },
+    {
+      "href": "https://www.data.gv.at/katalog/dataset/2ee6b8bf-6292-413c-bb8b-bd22dbb2ad4b",
+      "rel": "cite-as"
     }
   ],
   "assets": {
@@ -154,6 +160,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
   ]
 }

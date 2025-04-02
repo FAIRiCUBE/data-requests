@@ -5,17 +5,6 @@
   "properties": {
     "license": "CC-BY-4.0",
     "description": "A collection of features for ~700 European cities, for the reference year 2018. The features are divided in three main thematic areas: land, climate and socioeconomic characteristics. In the current version it contains the following features:\n\n- environmental zone\n- city area ha\n- dem mean\n- imd percent 2018\n- treecover percent 2018\u00b4\n- Urban Atlas 2018 class 11100\n- Urban Atlas 2018 class 11210\n- Urban Atlas 2018 class 11220\n- Urban Atlas 2018 class 11230\n- Urban Atlas 2018 class 11240\n- Urban Atlas 2018 class 11300\n- Urban Atlas 2018 class 12100\n- Urban Atlas 2018 class 12210\n- Urban Atlas 2018 class 12220\n- Urban Atlas 2018 class 12230\n- Urban Atlas 2018 class 12300\n- Urban Atlas 2018 class 12400\n- Urban Atlas 2018 class 13100\n- Urban Atlas 2018 class 13300\n- Urban Atlas 2018 class 13400\n- Urban Atlas 2018 class 14100\n- Urban Atlas 2018 class 14200\n- Urban Atlas 2018 class 21000\n- Urban Atlas 2018 class 22000\n- Urban Atlas 2018 class 23000\n- Urban Atlas 2018 class 24000\n- Urban Atlas 2018 class 25000\n- Urban Atlas 2018 class 31000\n- Urban Atlas 2018 class 32000\n- Urban Atlas 2018 class 33000\n- Urban Atlas 2018 class 40000\n- Urban Atlas 2018 class 50000\n- urban blue percent\n- urban green percent\n- avg 2m temp kelvin 2018\n- number of summer days 2018\n- number of tropical nights 2018\n- utci heat nights 2018\n- coastal city\n- ESTAT de1001v 2018\n- ESTAT de1028v 2018\n- ESTAT de1055v 2018\n- ESTAT ec1174v 2018\n- ESTAT ec1010v 2018\n- ESTAT ec1020i 2018\n- ESTAT ec3040v 2018\n- ESTAT sa2013v 2018\n- ESTAT de1028i 2018\n- ESTAT de1055i 2018",
-    "providers": [
-      {
-        "name": "FAIRiCUBE - Use Case 1",
-        "comments": "Use Case 1 team processed and consolidated data from different data sources into this unique dataset.",
-        "doc_link": "https://github.com/FAIRiCUBE/uc1-urban-climate",
-        "roles": [
-          "processor"
-        ],
-        "project_purpose": "Urban adaptation to climate change"
-      }
-    ],
     "dataSource": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/data/city_features_collection/city_features_collection_v0.1.geojson",
     "cube:dimensions": {
       "x": {
@@ -94,7 +83,14 @@
     "modification": null,
     "provision": "2024-04-15T13:38:52Z",
     "use_case_S4E": "1",
-    "platform": "Eox"
+    "platform": "Eox",
+    "contacts": [
+      {
+        "name": "FAIRiCUBE - Use Case 1",
+        "organization": "FAIRiCUBE - Use Case 1",
+        "project_purpose": "Urban adaptation to climate change"
+      }
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -135,6 +131,10 @@
       "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
+    },
+    {
+      "href": "https://github.com/FAIRiCUBE/uc1-urban-climate",
+      "rel": "cite-as"
     }
   ],
   "assets": {},
@@ -148,7 +148,8 @@
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
   ],
   "wasDerivedFrom": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/data/city_features_collection"
 }

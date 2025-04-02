@@ -29,16 +29,15 @@ def validate_item(item: pystac.item.Item):
         assert len(properties["dataSource"]) > 0, "dataSource string must not be empty"
 
         # validate Owner/Organisation
-        assert "providers" in properties, "No providers in the stac item"
-        assert isinstance(properties["providers"], list), "providers must be a list"
-        for provider in properties["providers"]:
-            assert "organization" in provider.keys() or "name" in provider.keys()
-            if "organization" in provider.keys():
-                assert isinstance(provider["organization"], str), "provider's organization must be a string"
-                assert len(provider["organization"]) > 0, " provider's organization must not be empty"
-            if "name" in provider.keys():
-                assert isinstance(provider["name"], str), "provider name must be a string"
-                assert len(provider["name"]) > 0, "provider name string must not be empty"
+        assert "contacts" in properties, "No contacts in the stac item"
+        assert isinstance(properties["contacts"], list), "contacts must be a list"
+        for contact in properties["contacts"]:
+            if "organization" in contact.keys():
+                assert isinstance(contact["organization"], str), "contact's organization must be a string"
+                assert len(contact["organization"]) > 0, " contact's organization must not be empty"
+            if "name" in contact.keys():
+                assert isinstance(contact["name"], str), "contact name must be a string"
+                assert len(contact["name"]) > 0, "contact name string must not be empty"
 
         # validate Horizontal section
         assert isinstance(item.bbox, list), "bbox must be a list"

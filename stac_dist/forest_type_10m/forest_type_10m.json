@@ -5,16 +5,6 @@
   "properties": {
     "license": "other",
     "description": "The High Resolution Layer Forest 2018 status layer Forest Type provides a forest classification with 3 thematic classes (all non-forest areas / broadleaved forest / coniferous forest) at 10m spatial resolution and with a Minimum Mapping Unit (MMU) of 0.5 ha. This raster layer is largely following the FAO (Food and Agriculture Organisation of the United Nations) forest definition with tree covered areas in agricultural and urban context excluded and covers the full of EEA38 area and the United Kingdom.",
-    "providers": [
-      {
-        "name": "European Environment Agency",
-        "doc_link": "https://land.copernicus.eu/",
-        "organization_email": "copernicus@eea.europa.eu",
-        "roles": [
-          "host"
-        ]
-      }
-    ],
     "dataSource": "https://land.copernicus.eu/en/products/high-resolution-layer-forest-type",
     "cube:dimensions": {
       "x": {
@@ -82,7 +72,20 @@
     "use_case_WER": "2",
     "use_case_NHM": "2",
     "ingestion_status": "Completed",
-    "platform": "Rasdaman"
+    "platform": "Rasdaman",
+    "contacts": [
+      {
+        "name": "European Environment Agency",
+        "organization": "European Environment Agency",
+        "emails": [
+          {
+            "value": "copernicus@eea.europa.eu",
+            "role": "work"
+          }
+        ],
+        "project_purpose": null
+      }
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -135,6 +138,10 @@
       "rel": "service",
       "type": "text/html",
       "title": "Link to the rasdaman web application to access and process gridded data"
+    },
+    {
+      "href": "https://land.copernicus.eu/",
+      "rel": "cite-as"
     }
   ],
   "assets": {
@@ -154,6 +161,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
   ]
 }

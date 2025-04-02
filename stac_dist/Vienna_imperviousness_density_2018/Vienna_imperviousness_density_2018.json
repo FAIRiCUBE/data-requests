@@ -8,20 +8,6 @@
     ],
     "license": "CC-BY-4.0",
     "description": "Imperviousness density (2018) in EPSG:31256 in Vienna. Reprojected from the CLMS Product Imperviousness 2018. \nIndicates the sealing density in the range from 0% to 100% for the 2018 reference year.",
-    "providers": [
-      {
-        "organization_name": "European Environment Agency",
-        "name": "European Environment Agency",
-        "comments": "",
-        "doc_link": "https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search#/metadata/524fa72f-61d7-4364-801e-3e271d7b10bc/formatters/xsl-view?root=div&view=advanced",
-        "organization_email": "copernicus@eea.europa.eu",
-        "ORCID_ID": "",
-        "roles": [
-          "producer"
-        ],
-        "project_purpose": "https://land.copernicus.eu"
-      }
-    ],
     "dataSource": "copernicus.eu",
     "cube:dimensions": {
       "x": {
@@ -108,7 +94,20 @@
     "use_case_S4E": "1",
     "use_case_NHM_2": "1",
     "ingestion_status": "",
-    "platform": "Eox"
+    "platform": "Eox",
+    "contacts": [
+      {
+        "name": "European Environment Agency",
+        "organization": "European Environment Agency",
+        "emails": [
+          {
+            "value": "copernicus@eea.europa.eu",
+            "role": "work"
+          }
+        ],
+        "project_purpose": "https://land.copernicus.eu"
+      }
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -149,6 +148,10 @@
       "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
+    },
+    {
+      "href": "https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search#/metadata/524fa72f-61d7-4364-801e-3e271d7b10bc/formatters/xsl-view?root=div&view=advanced",
+      "rel": "cite-as"
     }
   ],
   "assets": {
@@ -175,7 +178,8 @@
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
   ],
   "wasDerivedFrom": "https://land.copernicus.eu/en/products/high-resolution-layer-imperviousness/imperviousness-density-2018#Download",
   "wasGeneratedBy": ""

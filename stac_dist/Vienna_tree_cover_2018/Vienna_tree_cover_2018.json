@@ -10,20 +10,6 @@
     ],
     "license": "CC-BY-4.0",
     "description": "Tree cover density 2018 (100m) in EPSG:31256 in Vienna. Reprojected from the CLMS Product Tree Cover Density 2018.\nIndicates the tree cover density in a range from 0% to100% for the 2018 reference year.",
-    "providers": [
-      {
-        "organization_name": "European Environment Agency",
-        "name": "European Environment Agency",
-        "comments": "",
-        "doc_link": "https://sdi.eea.europa.eu/catalogue/copernicus/all/catalog.search#/metadata/c7bf34ea-755c-4dbd-85b6-4efc5fd302a2",
-        "organization_email": "copernicus@eea.europa.eu",
-        "ORCID_ID": "",
-        "roles": [
-          "producer"
-        ],
-        "project_purpose": "https://land.copernicus.eu"
-      }
-    ],
     "dataSource": "copernicus.eu",
     "cube:dimensions": {
       "x": {
@@ -108,7 +94,20 @@
     "use_case_S4E": "1",
     "use_case_NHM_2": "1",
     "ingestion_status": "",
-    "platform": "Eox"
+    "platform": "Eox",
+    "contacts": [
+      {
+        "name": "European Environment Agency",
+        "organization": "European Environment Agency",
+        "emails": [
+          {
+            "value": "copernicus@eea.europa.eu",
+            "role": "work"
+          }
+        ],
+        "project_purpose": "https://land.copernicus.eu"
+      }
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -158,6 +157,10 @@
       "description": "The script shows how to open a gridded dataset stored on an S3 Bucket as an xarray DataSet",
       "href": "https://github.com/FAIRiCUBE/common-code/blob/main/access_data_apis/access_s3_bucket.py",
       "rel": "example"
+    },
+    {
+      "href": "https://sdi.eea.europa.eu/catalogue/copernicus/all/catalog.search#/metadata/c7bf34ea-755c-4dbd-85b6-4efc5fd302a2",
+      "rel": "cite-as"
     }
   ],
   "assets": {
@@ -190,7 +193,8 @@
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
   ],
   "wasDerivedFrom": "https://land.copernicus.eu/en/products/high-resolution-layer-tree-cover-density/tree-cover-density-2018#Download",
   "wasGeneratedBy": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/notebooks/dev/f06_pre_processing/Vienna_protected_areas_100m.ipynb"

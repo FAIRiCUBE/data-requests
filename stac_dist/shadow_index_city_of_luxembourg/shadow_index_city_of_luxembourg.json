@@ -14,28 +14,6 @@
     ],
     "license": "CC0-1.0",
     "description": "The shadow index quantifies the extent of shaded areas. ",
-    "providers": [
-      {
-        "organization_name": "space4environment",
-        "name": "space4environment",
-        "comments": "",
-        "doc_link": "",
-        "organization_email": "info@space4environment.com",
-        "ORCID_ID": "",
-        "roles": [
-          "processor"
-        ],
-        "project_purpose": "Urban adaptation to climate change"
-      },
-      {
-        "organization_name": "Administration du cadastre et de la topographie",
-        "name": "Administration du cadastre et de la topographie",
-        "doc_link": "https://data.public.lu/fr/datasets/lidar-2019-modele-numerique-de-terrain-mnt/",
-        "roles": [
-          "producer"
-        ]
-      }
-    ],
     "dataSource": "https://data.public.lu/fr/datasets/lidar-2019-modele-numerique-de-terrain-mnt/",
     "cube:dimensions": {
       "x": {
@@ -120,7 +98,25 @@
     "provision": null,
     "use_case_S4E": "1",
     "ingestion_status": "",
-    "platform": "Eox"
+    "platform": "Eox",
+    "contacts": [
+      {
+        "name": "space4environment",
+        "organization": "space4environment",
+        "emails": [
+          {
+            "value": "info@space4environment.com",
+            "role": "work"
+          }
+        ],
+        "project_purpose": "Urban adaptation to climate change"
+      },
+      {
+        "name": "Administration du cadastre et de la topographie",
+        "organization": "Administration du cadastre et de la topographie",
+        "project_purpose": null
+      }
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -170,6 +166,14 @@
       "description": "The script shows how to open a gridded dataset stored on an S3 Bucket as an xarray DataSet",
       "href": "https://github.com/FAIRiCUBE/common-code/blob/main/access_data_apis/access_s3_bucket.py",
       "rel": "example"
+    },
+    {
+      "href": "",
+      "rel": "cite-as"
+    },
+    {
+      "href": "https://data.public.lu/fr/datasets/lidar-2019-modele-numerique-de-terrain-mnt/",
+      "rel": "cite-as"
     }
   ],
   "assets": {
@@ -202,7 +206,8 @@
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
   ],
   "wasDerivedFrom": "https://data.public.lu/fr/datasets/lidar-2019-modele-numerique-de-terrain-mnt/",
   "wasGeneratedBy": ""

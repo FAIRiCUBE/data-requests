@@ -5,16 +5,6 @@
   "properties": {
     "license": null,
     "description": null,
-    "providers": [
-      {
-        "organization_name": null,
-        "organization": "OSM",
-        "comments": "OSM provides 2D-level data for buildings",
-        "doc_link": null,
-        "organization_email": null,
-        "project_purpose": null
-      }
-    ],
     "dataSource": "www.openstreetmap.org",
     "cube:dimensions": {
       "x": {
@@ -90,7 +80,12 @@
     "use_case_NILU": 1,
     "use_case_NHM_2": "x",
     "ingestion_status": "UCs need it only as backdrop, therefore no ingestion necessary",
-    "platform": "Both"
+    "platform": "Both",
+    "contacts": [
+      {
+        "project_purpose": null
+      }
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -161,6 +156,7 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
   ]
 }

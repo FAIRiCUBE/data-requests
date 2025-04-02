@@ -5,13 +5,6 @@
   "properties": {
     "license": "CC-BY-NC-SA-4.0",
     "description": "The European Settlement Map is a spatial raster dataset that is mapping human settlements in Europe, based on Copernicus Very High Resolution optical coverage for reference year 2018. ESM 2018 exploits the Copernicus VHR_IMAGE_2018 dataset made of satellite images Pleiades 1A & 1B, SuperView-1, Kompsat-3/3A and PlanetScope with backup missions of Spot-6/7, TripleSat and Deimos-2 ranging from 2017 to 2019. It classifies the residential and non-residential buildings at a spatial resolution of 2 meters.",
-    "providers": [
-      {
-        "name": "European Commission, Joint Research Centre",
-        "doc_link": "",
-        "organization_email": "jrc-ghsl-data@ec.europa.eu"
-      }
-    ],
     "dataSource": "https://data.jrc.ec.europa.eu/dataset/192530fc-3d09-4740-8c1d-d1e601cdfdcc",
     "cube:dimensions": {
       "x": {
@@ -78,7 +71,20 @@
     "apis": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
     "use_case_S4E": "1",
     "use_case_NHM": "1",
-    "platform": "Rasdaman"
+    "platform": "Rasdaman",
+    "contacts": [
+      {
+        "name": "European Commission, Joint Research Centre",
+        "organization": "European Commission, Joint Research Centre",
+        "emails": [
+          {
+            "value": "jrc-ghsl-data@ec.europa.eu",
+            "role": "work"
+          }
+        ],
+        "project_purpose": null
+      }
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -131,6 +137,10 @@
       "rel": "service",
       "type": "text/html",
       "title": "Link to the rasdaman web application to access and process gridded data"
+    },
+    {
+      "href": "",
+      "rel": "cite-as"
     }
   ],
   "assets": {
@@ -151,7 +161,8 @@
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
   ],
   "wasDerivedFrom": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/ESM_BUILT_VHR2018_Europe_R2020/ESM_BUILT_VHR2018_Europe_R2020_3035_02/LATEST/Data/GeoTIFF/"
 }
