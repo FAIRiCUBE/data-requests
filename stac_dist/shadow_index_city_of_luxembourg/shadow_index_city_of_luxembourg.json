@@ -105,7 +105,7 @@
     "start_datetime": "2019-01-01T00:00Z",
     "end_datetime": "2019-12-31T00:00Z",
     "re_projection_crs": "",
-    "unit_of_measure": "",
+    "unit": "",
     "resolution": "",
     "personalData": "no personal data",
     "provenance_name": "LiDAR 2019 - Digital Terrain Model (DTM)",
