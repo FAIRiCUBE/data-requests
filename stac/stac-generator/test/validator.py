@@ -19,20 +19,25 @@ def validate_item(item: pystac.item.Item):
     if not item_is_EDC:
         # validate Data Source
         assert "dataSource" in properties.keys(), "No dataSource in the stac item"
+        #TODO: remove the fixer:
+
+        if "metada_standards" in properties.keys():
+            metadata_standard = properties.pop("metada_standards")
+            properties["metadata_standards"] = metadata_standard
+
         assert isinstance(properties["dataSource"], str), "dataSource must be a string"
         assert len(properties["dataSource"]) > 0, "dataSource string must not be empty"
 
         # validate Owner/Organisation
-        assert "providers" in properties, "No dataSource in the stac item"
-        assert isinstance(properties["providers"], list), "providers must be a list"
-        for provider in properties["providers"]:
-            assert "organization" in provider.keys() or "name" in provider.keys()
-            if "organization" in provider.keys():
-                assert isinstance(provider["organization"], str), "provider's organization must be a string"
-                assert len(provider["organization"]) > 0, " provider's organization must not be empty"
-            if "name" in provider.keys():
-                assert isinstance(provider["name"], str), "provider name must be a string"
-                assert len(provider["name"]) > 0, "provider name string must not be empty"
+        if  "contacts" in properties:
+            assert isinstance(properties["contacts"], list), "contacts must be a list"
+            for contact in properties["contacts"]:
+                if "organization" in contact.keys():
+                    assert isinstance(contact["organization"], str), "contact's organization must be a string"
+                    assert len(contact["organization"]) > 0, " contact's organization must not be empty"
+                if "name" in contact.keys():
+                    assert isinstance(contact["name"], str), "contact name must be a string"
+                    assert len(contact["name"]) > 0, "contact name string must not be empty"
 
         # validate Horizontal section
         assert isinstance(item.bbox, list), "bbox must be a list"
@@ -45,10 +50,11 @@ def validate_item(item: pystac.item.Item):
         assert "y" in item.properties["cube:dimensions"].keys(), "No y dimension in the stac item"
         x = item.properties["cube:dimensions"]["x"]
         y = item.properties["cube:dimensions"]["y"]
-        assert "step" in x.keys() and x["step"] is not None, "No step in the x  dimension"
-        assert isinstance(float(x["step"]), float), "x step must be float"
-        assert "step" in y.keys()and y["step"] is not None, "No step in the x  dimension"
-        assert isinstance(float(y["step"]), float), "y step must be float"
+        if "step" in x.keys() and x["step"] is not None:
+            assert isinstance(float(x["step"]), float), "x step must be float"
+
+        if "step" in y.keys()and y["step"] is not None:
+            assert isinstance(float(y["step"]), float), "y step must be float"
 
         # Units of Measurement
         assert "unit" in x.keys(), "No unit in x dimensions"
@@ -63,22 +69,22 @@ def validate_item(item: pystac.item.Item):
         assert isinstance(y["reference_system"], str), "x dimension reference_system must be a string"
 
         # Temporal
-        assert "t" in item.properties["cube:dimensions"].keys() or "time" in item.properties["cube:dimensions"].keys()
-        time = dict()
-        if "t" in item.properties["cube:dimensions"].keys():
-            time = item.properties["cube:dimensions"]["t"]
-        else:
-            time = item.properties["cube:dimensions"]["time"]
+        if "t" in item.properties["cube:dimensions"].keys() or "time" in item.properties["cube:dimensions"].keys():
+            time = dict()
+            if "t" in item.properties["cube:dimensions"].keys():
+                time = item.properties["cube:dimensions"]["t"]
+            else:
+                time = item.properties["cube:dimensions"]["time"]
 
-        # Time (Begin/End)
-        assert "extent" in time.keys() or "values" in time.keys()
-        # Resolution of Time Axis (Interval)
-        if "extent" in time.keys():
-            assert "step" in time.keys(), "No step in time dimensions"
-            assert isinstance(time["step"], str), "time's step must be a string"
-        # Unit of measure
-        assert "unit" in time.keys(), "No unit in time dimensions"
-        assert isinstance(time["unit"], str), "time's unit must be a string"
+            # Time (Begin/End)
+            assert "extent" in time.keys() or "values" in time.keys()
+            # Resolution of Time Axis (Interval)
+            if "extent" in time.keys():
+                assert "step" in time.keys(), "No step in time dimensions"
+                assert isinstance(time["step"], str), "time's step must be a string"
+            # Unit of measure
+            assert "unit" in time.keys(), "No unit in time dimensions"
+            assert isinstance(time["unit"], str), "time's unit must be a string"
 
 
         # Range Data validation
