@@ -50,10 +50,11 @@ def validate_item(item: pystac.item.Item):
         assert "y" in item.properties["cube:dimensions"].keys(), "No y dimension in the stac item"
         x = item.properties["cube:dimensions"]["x"]
         y = item.properties["cube:dimensions"]["y"]
-        assert "step" in x.keys() and x["step"] is not None, "No step in the x  dimension"
-        assert isinstance(float(x["step"]), float), "x step must be float"
-        assert "step" in y.keys()and y["step"] is not None, "No step in the x  dimension"
-        assert isinstance(float(y["step"]), float), "y step must be float"
+        if "step" in x.keys() and x["step"] is not None:
+            assert isinstance(float(x["step"]), float), "x step must be float"
+
+        if "step" in y.keys()and y["step"] is not None:
+            assert isinstance(float(y["step"]), float), "y step must be float"
 
         # Units of Measurement
         assert "unit" in x.keys(), "No unit in x dimensions"
