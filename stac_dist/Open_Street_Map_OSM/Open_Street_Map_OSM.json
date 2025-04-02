@@ -48,7 +48,7 @@
         "type": "spatial"
       }
     },
-    "datetime": "Z",
+    "datetime": "1900-01-01T00:00:00Z",
     "raster:bands": [
       {
         "band_name": null,
