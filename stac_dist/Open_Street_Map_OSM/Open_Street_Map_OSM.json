@@ -15,7 +15,7 @@
         ],
         "reference_system": "EPSG:4326",
         "type": "spatial",
-        "unit_of_measure": "",
+        "unit": "degree",
         "interpolation": ""
       },
       "y": {
@@ -26,7 +26,7 @@
         ],
         "reference_system": "EPSG:4326",
         "type": "spatial",
-        "unit_of_measure": "",
+        "unit": "degree",
         "interpolation": ""
       },
       "time": {
@@ -43,7 +43,7 @@
           null
         ],
         "reference_system": null,
-        "unit_of_measure": null,
+        "unit": null,
         "interpolation": null,
         "type": "spatial"
       }
