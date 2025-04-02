@@ -8,15 +8,6 @@
     ],
     "license": "CC0-1.0",
     "description": "Land Use in terms of functional dimension corresponds to the description of areas in terms of their socio-economic purpose",
-    "providers": [
-      {
-        "organization_name": "Ministre de l\u2019Environnement, du Climat et de la Biodiversit\u00e9 & Minist\u00e8re du Logement et de l\u2019Am\u00e9nagement du territoire - D\u00e9partement de l\u2019am\u00e9nagement du territoire",
-        "organization": "Ministre de l\u2019Environnement, du Climat et de la Biodiversit\u00e9 & Minist\u00e8re du Logement et de l\u2019Am\u00e9nagement du territoire - D\u00e9partement de l\u2019am\u00e9nagement du territoire",
-        "doc_link": "https://data.public.lu/fr/datasets/lis-l-land-use-2007-2015-2018/",
-        "organization_email": "Patrick.Grivet@mev.etat.lu; Tom.Fourmann@mat.etat.lu; Marco.Tholl@mat.etat.lu",
-        "roles": "licensor"
-      }
-    ],
     "dataSource": "https://geocatalogue.geoportail.lu",
     "cube:dimensions": {
       "x": {
@@ -78,7 +69,7 @@
     "title": "Land Use Luxembourg",
     "datasource_type": "vector",
     "area_cover": "2586ha",
-    "crs": "EPSG:2169",
+    "proj:code": "EPSG:EPSG:2169",
     "start_datetime": "2007-01-01T00:00Z",
     "end_datetime": "2021-01-01T00:00Z",
     "personalData": "no personal data",
@@ -86,7 +77,20 @@
     "modification": null,
     "provision": null,
     "use_case_S4E": "1",
-    "platform": "Eox"
+    "platform": "Eox",
+    "contacts": [
+      {
+        "name": "Ministre de l\u2019Environnement, du Climat et de la Biodiversit\u00e9 & Minist\u00e8re du Logement et de l\u2019Am\u00e9nagement du territoire - D\u00e9partement de l\u2019am\u00e9nagement du territoire",
+        "organization": "Ministre de l\u2019Environnement, du Climat et de la Biodiversit\u00e9 & Minist\u00e8re du Logement et de l\u2019Am\u00e9nagement du territoire - D\u00e9partement de l\u2019am\u00e9nagement du territoire",
+        "emails": [
+          {
+            "value": "Patrick.Grivet@mev.etat.lu; Tom.Fourmann@mat.etat.lu; Marco.Tholl@mat.etat.lu",
+            "role": "work"
+          }
+        ],
+        "project_purpose": null
+      }
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -127,6 +131,10 @@
       "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
+    },
+    {
+      "href": "https://data.public.lu/fr/datasets/lis-l-land-use-2007-2015-2018/",
+      "rel": "cite-as"
     }
   ],
   "assets": {},
@@ -138,6 +146,8 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
   ]
 }
