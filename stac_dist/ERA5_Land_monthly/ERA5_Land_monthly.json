@@ -5,12 +5,6 @@
   "properties": {
     "license": "other",
     "description": "ERA5-Land is a reanalysis dataset providing a consistent view of the evolution of land variables over several decades at an enhanced resolution compared to ERA5. ERA5-Land has been produced by replaying the land component of the ECMWF ERA5 climate reanalysis. Reanalysis combines model data with observations from across the world into a globally complete and consistent dataset using the laws of physics. Reanalysis produces data that goes several decades back in time, providing an accurate description of the climate of the past.\n\nERA5-Land provides a consistent view of the water and energy cycles at surface level during several decades. It contains a detailed record from 1950 onwards, with a temporal resolution of 1 hour. The native spatial resolution of the ERA5-Land reanalysis dataset is 9km on a reduced Gaussian grid (TCo1279). The data in the CDS has been regridded to a regular lat-lon grid of 0.1x0.1 degrees.\n\nThe data presented here is a post-processed subset of the full ERA5-Land dataset. Monthly-mean averages have been pre-calculated to facilitate many applications requiring easy and fast access to the data, when sub-monthly fields are not required.",
-    "providers": [
-      {
-        "organization": "ECMWF",
-        "doc_link": "https://confluence.ecmwf.int/display/CKB/ERA5-Land%3A+data+documentation"
-      }
-    ],
     "dataSource": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-land-monthly-means",
     "cube:dimensions": {
       "x": {
@@ -452,16 +446,21 @@
     "keywords": "era5, land, global, gridded, monthly, u10, v10, d2m, t2m, evaporation_from_bare_soil, evaporation_from_open_water_surfaces_excluding_oceans, evaporation_from_the_top_of_canopy, evaporation_from_vegetation_transpiration, forecast_albedo, lake_bottom_temperature, lake_ice_depth, lake_ice_temperature, lake_mix_layer_depth, lake_mix_layer_temperature, lake_shape_factor, lake_total_layer_temperature, leaf_area_index_high_vegetation, leaf_area_index_low_vegetation, potential_evaporation, runoff, skin_reservoir_content, skin_temperature, snow_albedo, snow_cover, snow_density, snow_depth, snow_depth_water_equivalent, snow_evaporation, snowfall, snowmelt, soil_temperature_level_1, soil_temperature_level_2, soil_temperature_level_3, soil_temperature_level_4, sub_surface_runoff, surface_latent_heat_flux, surface_net_solar_radiation, surface_net_thermal_radiation, surface_pressure, surface_runoff, surface_sensible_heat_flux, surface_downwelling_shortwave_flux_in_air, surface_solar_radiation_downwards, temperature_of_snow_layer, total_evaporation, total_precipitation, volumetric_soil_water_layer_1, volumetric_soil_water_layer_2, volumetric_soil_water_layer_3, volumetric_soil_water_layer_4",
     "area_cover": "global",
     "documentation": "https://confluence.ecmwf.int/display/CKB/ERA5-Land%3A+data+documentation#heading-Referencearticles",
-    "crs": "4326",
+    "proj:code": "EPSG:4326",
     "start_datetime": "1950-01-01T00:00Z",
     "end_datetime": "2024-05-01T00:00Z",
     "provenance_name": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-land-monthly-means",
-    "source_data": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-land-monthly-means?tab=form",
-    "models": "https://confluence.ecmwf.int/display/CKB/ERA5-Land%3A+data+documentation#heading-LandSurfaceModel",
     "modification": null,
     "provision": null,
     "ingestion_status": "complete",
-    "platform": "Rasdaman"
+    "platform": "Rasdaman",
+    "contacts": [
+      {
+        "name": "ECMWF",
+        "organization": "ECMWF",
+        "project_purpose": null
+      }
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -514,6 +513,10 @@
       "rel": "service",
       "type": "text/html",
       "title": "Link to the rasdaman web application to Access, process gridded data"
+    },
+    {
+      "href": "https://confluence.ecmwf.int/display/CKB/ERA5-Land%3A+data+documentation",
+      "rel": "cite-as"
     }
   ],
   "assets": {
@@ -532,6 +535,11 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ]
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
+  ],
+  "wasDerivedFrom": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-land-monthly-means?tab=form",
+  "wasGeneratedBy": "https://confluence.ecmwf.int/display/CKB/ERA5-Land%3A+data+documentation#heading-LandSurfaceModel"
 }

@@ -1,0 +1,276 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "maxent_suitability_maps",
+  "properties": {
+    "keywords": [
+      "suitability index"
+    ],
+    "license": "CC-BY-SA-4.0",
+    "description": "This is the collection of suitability maps generated with MaxEnt using species occurrence data and environmental variables. Each species was treated separately. Species occurrence data was retrieved from GBIF and mnhm.mdata.lu\n\nArea of Interest: Luxembourg City (LU).\n\nSpecies included: \n- Reynoutria japonica (GBIF DOI: 10.15468/dl.sqknbh)\n- Heracleum mantegazzianum (GBIF DOI: 10.15468/dl.hr5dat)\n- Impatiens glandulifera (GBIF DOI: 10.15468/dl.szd56t)\n- Prunus laurocerasus (GBIF DOI: 10.15468/dl.uqg68p)\n- Robinia pseudoacacia (GBIF DOI: 10.15468/dl.h8ssyx)\n- Solidago canadensis (GBIF DOI: 10.15468/dl.z4hqqz)\n\nEnvironmental variables:\n- Shadow index (https://catalog.eoxhub.fairicube.eu/collections/index/items/shadow_index_city_of_luxembourg?.language=en)\n- Topographic wetness index (https://catalog.eoxhub.fairicube.eu/collections/index/items/wetness_index_city_of_luxembourg?.language=en)\n- Average monthly air temperature for 2017 (https://catalog.eoxhub.fairicube.eu/collections/index/items/air_temperature_city_of_luxembourg_2017?.language=en)\n- Soil acidity (https://catalog.eoxhub.fairicube.eu/collections/index/items/soil_ph_city_of_luxembourg?.language=en)\n- Soil Nitrogen (https://catalog.eoxhub.fairicube.eu/collections/index/items/soil_nitrogen_city_of_luxembourg?.language=en)\n- Land cover (https://catalog.eoxhub.fairicube.eu/collections/index/items/land_cover_city_of_luxembourg?.language=en)\n",
+    "dataSource": "FAIRiCUBE",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          72850,
+          82570
+        ],
+        "reference_system": "2169",
+        "type": "spatial",
+        "unit": "meter",
+        "step": 10
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          69590,
+          82570
+        ],
+        "reference_system": "2169",
+        "type": "spatial",
+        "unit": "meter",
+        "step": 10
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "type": "spatial"
+      }
+    },
+    "raster:bands": [
+      {
+        "band_name": "suitability index",
+        "data_type": "float32",
+        "nodata": -1,
+        "definition": "The suitability index takes values between 0 and 1, and indicates the suitability of the cell for the species.",
+        "description": "The suitability index takes values between 0 and 1, and indicates the suitability of the cell for the species."
+      }
+    ],
+    "title": "MaxEnt suitability maps",
+    "datasource_type": "GeoTIFF",
+    "crs": "EPSG:2169",
+    "datetime": "2025-03-28T10:38:47Z",
+    "modification": "2025-03-28T10:38:58Z",
+    "provision": "2025-03-28T10:38:56Z",
+    "use_case_S4E": "1",
+    "platform": "Eox",
+    "contacts": [
+      {
+        "name": "space4environment",
+        "organization": "space4environment",
+        "emails": [
+          {
+            "value": "ricci@space4environment.com",
+            "role": "work"
+          }
+        ],
+        "project_purpose": "Urban adaptation to climate change"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          6.069058507516138,
+          49.56094657618465
+        ],
+        [
+          6.069058507516138,
+          49.677685246874994
+        ],
+        [
+          6.203732162051925,
+          49.677685246874994
+        ],
+        [
+          6.203732162051925,
+          49.56094657618465
+        ],
+        [
+          6.069058507516138,
+          49.56094657618465
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "example:container": false,
+      "example:language": "Python",
+      "type": "text/x-python",
+      "title": "Script to generate the suitability maps",
+      "description": "The script implements MaxEnt species distribution model and generates the suitability map based on species occurrence data and environmental variables.",
+      "href": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/processing/sdm/MaxentModel-Final.py",
+      "rel": "example"
+    },
+    {
+      "example:container": true,
+      "title": "fallopia_japonica_maxent_overview",
+      "description": "Link to the data visualization interactive web map.",
+      "href": "https://vis.fairicube.eu/=data?https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/suitability_maps/fallopia_japonica_maxent_overview.tif",
+      "rel": "example"
+    },
+    {
+      "example:container": true,
+      "title": "heracleum_mantegazzianum_maxent_overview",
+      "description": "Link to the data visualization interactive web map.",
+      "href": "https://vis.fairicube.eu/=data?https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/suitability_maps/heracleum_mantegazzianum_maxent_overview.tif",
+      "rel": "example"
+    },
+    {
+      "example:container": true,
+      "title": "impatiens_glandulifera_maxent_overview",
+      "description": "Link to the data visualization interactive web map.",
+      "href": "https://vis.fairicube.eu/=data?https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/suitability_maps/impatiens_glandulifera_maxent_overview.tif",
+      "rel": "example"
+    },
+    {
+      "example:container": true,
+      "title": "prunus_laurocerasus_maxent_overview",
+      "description": "Link to the data visualization interactive web map.",
+      "href": "https://vis.fairicube.eu/=data?https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/suitability_maps/prunus_laurocerasus_maxent_overview.tif",
+      "rel": "example"
+    },
+    {
+      "example:container": true,
+      "title": "solidago_canadensis_maxent_overview",
+      "description": "Link to the data visualization interactive web map.",
+      "href": "https://vis.fairicube.eu/=data?https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/suitability_maps/solidago_canadensis_maxent_overview.tif",
+      "rel": "example"
+    },
+    {
+      "example:container": true,
+      "title": "robinia_pseudoacacia_maxent_overview",
+      "description": "Link to the data visualization interactive web map.",
+      "href": "https://vis.fairicube.eu/=data?https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/suitability_maps/robinia_pseudoacacia_maxent_overview.tif",
+      "rel": "example"
+    }
+  ],
+  "assets": {
+    "fallopia_japonica_maxent": {
+      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/suitability_maps/fallopia_japonica_maxent.tif",
+      "roles": [
+        [
+          "data"
+        ]
+      ]
+    },
+    "heracleum_mantegazzianum_maxent": {
+      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/suitability_maps/heracleum_mantegazzianum_maxent.tif",
+      "roles": [
+        [
+          "data"
+        ]
+      ]
+    },
+    "impatiens_glandulifera_maxent": {
+      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/suitability_maps/impatiens_glandulifera_maxent.tif",
+      "roles": [
+        [
+          "data"
+        ]
+      ]
+    },
+    "prunus_laurocerasus_maxent": {
+      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/suitability_maps/prunus_laurocerasus_maxent.tif",
+      "roles": [
+        [
+          "data"
+        ]
+      ]
+    },
+    "solidago_canadensis_maxent": {
+      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/suitability_maps/solidago_canadensis_maxent.tif",
+      "roles": [
+        [
+          "data"
+        ]
+      ]
+    },
+    "robinia_pseudoacacia_maxent": {
+      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/suitability_maps/robinia_pseudoacacia_maxent.tif",
+      "roles": [
+        [
+          "data"
+        ]
+      ]
+    },
+    "fallopia_japonica_maxent_overview": {
+      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/suitability_maps/fallopia_japonica_maxent_overview.tif",
+      "roles": [
+        [
+          "overview"
+        ]
+      ]
+    },
+    "heracleum_mantegazzianum_maxent_overview": {
+      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/suitability_maps/heracleum_mantegazzianum_maxent_overview.tif",
+      "roles": [
+        [
+          "overview"
+        ]
+      ]
+    },
+    "impatiens_glandulifera_maxent_overview": {
+      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/suitability_maps/impatiens_glandulifera_maxent_overview.tif",
+      "roles": [
+        [
+          "overview"
+        ]
+      ]
+    },
+    "prunus_laurocerasus_maxent_overview": {
+      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/suitability_maps/prunus_laurocerasus_maxent_overview.tif",
+      "roles": [
+        [
+          "overview"
+        ]
+      ]
+    },
+    "solidago_canadensis_maxent_overview": {
+      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/suitability_maps/solidago_canadensis_maxent_overview.tif",
+      "roles": [
+        [
+          "overview"
+        ]
+      ]
+    },
+    "robinia_pseudoacacia_maxent_overview": {
+      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/suitability_maps/robinia_pseudoacacia_maxent_overview.tif",
+      "roles": [
+        [
+          "overview"
+        ]
+      ]
+    }
+  },
+  "bbox": [
+    6.069058507516138,
+    49.56094657618465,
+    6.203732162051925,
+    49.677685246874994
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/example-links/v0.0.1/schema.json",
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
+  ]
+}
