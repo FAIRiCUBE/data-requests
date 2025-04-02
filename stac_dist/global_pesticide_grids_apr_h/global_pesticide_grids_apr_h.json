@@ -1,0 +1,1760 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "global_pesticide_grids_apr_h",
+  "properties": {
+    "license": "CC-BY-SA-4.0",
+    "description": "The Global Pesticide Grids (PEST-CHEMGRIDS), Version 1.01 contains 20 of the most-used pesticide active ingredients on 6 dominant crops and 4 aggregated crop classes at 5 arc-minute resolution (about 10 km at the equator), estimated in year 2015, and then projected to 2020 and 2025. To estimate the global application rates of specific active ingredients, spatial statistical methods were used to re-analyze the U.S. Geological Survey Pesticide National Synthesis Project (USGS/PNSP) and the Food and Agriculture Organization Corporate Statistical Database (FAOSTAT) pesticide databases, along with other public inventories including globally gridded data of soil physical properties, hydro-climatic variables, agricultural quantities, and socioeconomic indices.",
+    "dataSource": "NASA Socioeconomic Data and Applications Center (SEDAC): https://doi.org/10.7927/weq9-pv30",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -178.91666666666666,
+          179.9166666666674
+        ],
+        "reference_system": "4326",
+        "type": "spatial",
+        "unit": "degree",
+        "step": 0.0833333333333335
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          -56.04249827067084,
+          84.04083506266277
+        ],
+        "reference_system": "4326",
+        "type": "spatial",
+        "unit": "degree",
+        "step": -0.0833333333333335
+      },
+      "time": {
+        "extent": [],
+        "type": "temporal",
+        "values": [
+          "2015-01-01T00:00Z",
+          "2020-01-01T00:00Z",
+          "2025-01-01T00:00Z"
+        ],
+        "step": "P1Y",
+        "unit": "day"
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "type": "spatial"
+      }
+    },
+    "raster:bands": [
+      {
+        "band_name": "Alfalfa_2_4_d",
+        "data_type": "float32",
+        "description": "High estimate of application of 2,4-d to crops of Alfalfa in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Alfalfa_2_4_db",
+        "data_type": "float32",
+        "description": "High estimate of application of 2,4-db to crops of Alfalfa in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Alfalfa_Bromoxynil",
+        "data_type": "float32",
+        "description": "High estimate of application of Bromoxynil to crops of Alfalfa in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Alfalfa_Carbaryl",
+        "data_type": "float32",
+        "description": "High estimate of application of Carbaryl to crops of Alfalfa in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Alfalfa_Chlorpyrifos",
+        "data_type": "float32",
+        "description": "High estimate of application of Chlorpyrifos to crops of Alfalfa in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Alfalfa_Clethodim",
+        "data_type": "float32",
+        "description": "High estimate of application of Clethodim to crops of Alfalfa in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Alfalfa_Cyhalothrin_lambda",
+        "data_type": "float32",
+        "description": "High estimate of application of Cyhalothrin-lambda to crops of Alfalfa in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Alfalfa_Dimethoate",
+        "data_type": "float32",
+        "description": "High estimate of application of Dimethoate to crops of Alfalfa in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Alfalfa_Diuron",
+        "data_type": "float32",
+        "description": "High estimate of application of Diuron to crops of Alfalfa in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Alfalfa_Eptc",
+        "data_type": "float32",
+        "description": "High estimate of application of Eptc to crops of Alfalfa in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Alfalfa_Glyphosate",
+        "data_type": "float32",
+        "description": "High estimate of application of Glyphosate to crops of Alfalfa in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Alfalfa_Hexazinone",
+        "data_type": "float32",
+        "description": "High estimate of application of Hexazinone to crops of Alfalfa in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Alfalfa_Indoxacarb",
+        "data_type": "float32",
+        "description": "High estimate of application of Indoxacarb to crops of Alfalfa in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Alfalfa_Malathion",
+        "data_type": "float32",
+        "description": "High estimate of application of Malathion to crops of Alfalfa in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Alfalfa_Metribuzin",
+        "data_type": "float32",
+        "description": "High estimate of application of Metribuzin to crops of Alfalfa in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Alfalfa_Paraquat",
+        "data_type": "float32",
+        "description": "High estimate of application of Paraquat to crops of Alfalfa in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Alfalfa_Pendimethalin",
+        "data_type": "float32",
+        "description": "High estimate of application of Pendimethalin to crops of Alfalfa in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Alfalfa_Phosmet",
+        "data_type": "float32",
+        "description": "High estimate of application of Phosmet to crops of Alfalfa in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Alfalfa_Sethoxydim",
+        "data_type": "float32",
+        "description": "High estimate of application of Sethoxydim to crops of Alfalfa in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Alfalfa_Trifluralin",
+        "data_type": "float32",
+        "description": "High estimate of application of Trifluralin to crops of Alfalfa in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Corn_2_4_d",
+        "data_type": "float32",
+        "description": "High estimate of application of 2,4-d to crops of Corn in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Corn_Acetochlor",
+        "data_type": "float32",
+        "description": "High estimate of application of Acetochlor to crops of Corn in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Corn_Alachlor",
+        "data_type": "float32",
+        "description": "High estimate of application of Alachlor to crops of Corn in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Corn_Atrazine",
+        "data_type": "float32",
+        "description": "High estimate of application of Atrazine to crops of Corn in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Corn_Azoxystrobin",
+        "data_type": "float32",
+        "description": "High estimate of application of Azoxystrobin to crops of Corn in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Corn_Chlorpyrifos",
+        "data_type": "float32",
+        "description": "High estimate of application of Chlorpyrifos to crops of Corn in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Corn_Clopyralid",
+        "data_type": "float32",
+        "description": "High estimate of application of Clopyralid to crops of Corn in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Corn_Dicamba",
+        "data_type": "float32",
+        "description": "High estimate of application of Dicamba to crops of Corn in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Corn_Dimethenamid_p",
+        "data_type": "float32",
+        "description": "High estimate of application of Dimethenamid(-p) to crops of Corn in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Corn_Glufosinate",
+        "data_type": "float32",
+        "description": "High estimate of application of Glufosinate to crops of Corn in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Corn_Glyphosate",
+        "data_type": "float32",
+        "description": "High estimate of application of Glyphosate to crops of Corn in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Corn_Isoxaflutole",
+        "data_type": "float32",
+        "description": "High estimate of application of Isoxaflutole to crops of Corn in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Corn_Mesotrione",
+        "data_type": "float32",
+        "description": "High estimate of application of Mesotrione to crops of Corn in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Corn_Metolachlor_s",
+        "data_type": "float32",
+        "description": "High estimate of application of Metolachlor(-s) to crops of Corn in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Corn_Paraquat",
+        "data_type": "float32",
+        "description": "High estimate of application of Paraquat to crops of Corn in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Corn_Pendimethalin",
+        "data_type": "float32",
+        "description": "High estimate of application of Pendimethalin to crops of Corn in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Corn_Propargite",
+        "data_type": "float32",
+        "description": "High estimate of application of Propargite to crops of Corn in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Corn_Pyraclostrobin",
+        "data_type": "float32",
+        "description": "High estimate of application of Pyraclostrobin to crops of Corn in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Corn_Simazine",
+        "data_type": "float32",
+        "description": "High estimate of application of Simazine to crops of Corn in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Corn_Terbufos",
+        "data_type": "float32",
+        "description": "High estimate of application of Terbufos to crops of Corn in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Cotton_2_4_d",
+        "data_type": "float32",
+        "description": "High estimate of application of 2,4-d to crops of Cotton in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Cotton_Acephate",
+        "data_type": "float32",
+        "description": "High estimate of application of Acephate to crops of Cotton in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Cotton_Acetochlor",
+        "data_type": "float32",
+        "description": "High estimate of application of Acetochlor to crops of Cotton in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Cotton_Bifenthrin",
+        "data_type": "float32",
+        "description": "High estimate of application of Bifenthrin to crops of Cotton in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Cotton_Chlorpyrifos",
+        "data_type": "float32",
+        "description": "High estimate of application of Chlorpyrifos to crops of Cotton in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Cotton_Dicamba",
+        "data_type": "float32",
+        "description": "High estimate of application of Dicamba to crops of Cotton in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Cotton_Dichloropropene",
+        "data_type": "float32",
+        "description": "High estimate of application of Dichloropropene to crops of Cotton in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Cotton_Dicrotophos",
+        "data_type": "float32",
+        "description": "High estimate of application of Dicrotophos to crops of Cotton in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Cotton_Diuron",
+        "data_type": "float32",
+        "description": "High estimate of application of Diuron to crops of Cotton in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Cotton_Fluometuron",
+        "data_type": "float32",
+        "description": "High estimate of application of Fluometuron to crops of Cotton in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Cotton_Fomesafen",
+        "data_type": "float32",
+        "description": "High estimate of application of Fomesafen to crops of Cotton in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Cotton_Glufosinate",
+        "data_type": "float32",
+        "description": "High estimate of application of Glufosinate to crops of Cotton in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Cotton_Glyphosate",
+        "data_type": "float32",
+        "description": "High estimate of application of Glyphosate to crops of Cotton in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Cotton_Imidacloprid",
+        "data_type": "float32",
+        "description": "High estimate of application of Imidacloprid to crops of Cotton in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Cotton_Metolachlor_s",
+        "data_type": "float32",
+        "description": "High estimate of application of Metolachlor(-s) to crops of Cotton in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Cotton_Msma",
+        "data_type": "float32",
+        "description": "High estimate of application of Msma to crops of Cotton in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Cotton_Paraquat",
+        "data_type": "float32",
+        "description": "High estimate of application of Paraquat to crops of Cotton in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Cotton_Pendimethalin",
+        "data_type": "float32",
+        "description": "High estimate of application of Pendimethalin to crops of Cotton in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Cotton_Prometryn",
+        "data_type": "float32",
+        "description": "High estimate of application of Prometryn to crops of Cotton in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Cotton_Trifluralin",
+        "data_type": "float32",
+        "description": "High estimate of application of Trifluralin to crops of Cotton in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "OrcGra_2_4_d",
+        "data_type": "float32",
+        "description": "High estimate of application of 2,4-d to crops of OrcGra in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "OrcGra_Calcium_polysulfide",
+        "data_type": "float32",
+        "description": "High estimate of application of Calcium polysulfide to crops of OrcGra in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "OrcGra_Captan",
+        "data_type": "float32",
+        "description": "High estimate of application of Captan to crops of OrcGra in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "OrcGra_Chloropicrin",
+        "data_type": "float32",
+        "description": "High estimate of application of Chloropicrin to crops of OrcGra in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "OrcGra_Chlorothalonil",
+        "data_type": "float32",
+        "description": "High estimate of application of Chlorothalonil to crops of OrcGra in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "OrcGra_Chlorpyrifos",
+        "data_type": "float32",
+        "description": "High estimate of application of Chlorpyrifos to crops of OrcGra in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "OrcGra_Copper_hydroxide",
+        "data_type": "float32",
+        "description": "High estimate of application of Copper hydroxide to crops of OrcGra in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "OrcGra_Copper_sulfate",
+        "data_type": "float32",
+        "description": "High estimate of application of Copper sulfate to crops of OrcGra in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "OrcGra_Copper_sulfate_tribasic",
+        "data_type": "float32",
+        "description": "High estimate of application of Copper sulfate tribasic to crops of OrcGra in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "OrcGra_Dichloropropene",
+        "data_type": "float32",
+        "description": "High estimate of application of Dichloropropene to crops of OrcGra in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "OrcGra_Diuron",
+        "data_type": "float32",
+        "description": "High estimate of application of Diuron to crops of OrcGra in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "OrcGra_Glufosinate",
+        "data_type": "float32",
+        "description": "High estimate of application of Glufosinate to crops of OrcGra in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "OrcGra_Glyphosate",
+        "data_type": "float32",
+        "description": "High estimate of application of Glyphosate to crops of OrcGra in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "OrcGra_Mancozeb",
+        "data_type": "float32",
+        "description": "High estimate of application of Mancozeb to crops of OrcGra in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "OrcGra_Methyl_bromide",
+        "data_type": "float32",
+        "description": "High estimate of application of Methyl bromide to crops of OrcGra in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "OrcGra_Oxyfluorfen",
+        "data_type": "float32",
+        "description": "High estimate of application of Oxyfluorfen to crops of OrcGra in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "OrcGra_Paraquat",
+        "data_type": "float32",
+        "description": "High estimate of application of Paraquat to crops of OrcGra in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "OrcGra_Pendimethalin",
+        "data_type": "float32",
+        "description": "High estimate of application of Pendimethalin to crops of OrcGra in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "OrcGra_Petroleum_oil",
+        "data_type": "float32",
+        "description": "High estimate of application of Petroleum oil to crops of OrcGra in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "OrcGra_Ziram",
+        "data_type": "float32",
+        "description": "High estimate of application of Ziram to crops of OrcGra in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Other_2_4_d",
+        "data_type": "float32",
+        "description": "High estimate of application of 2,4-d to crops of Other in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Other_Acetochlor",
+        "data_type": "float32",
+        "description": "High estimate of application of Acetochlor to crops of Other in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Other_Atrazine",
+        "data_type": "float32",
+        "description": "High estimate of application of Atrazine to crops of Other in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Other_Bacillus_amyloliquifacien",
+        "data_type": "float32",
+        "description": "High estimate of application of Bacillus amyloliquifacien to crops of Other in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Other_Bromoxynil",
+        "data_type": "float32",
+        "description": "High estimate of application of Bromoxynil to crops of Other in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Other_Chloropicrin",
+        "data_type": "float32",
+        "description": "High estimate of application of Chloropicrin to crops of Other in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Other_Chlorothalonil",
+        "data_type": "float32",
+        "description": "High estimate of application of Chlorothalonil to crops of Other in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Other_Chlorpyrifos",
+        "data_type": "float32",
+        "description": "High estimate of application of Chlorpyrifos to crops of Other in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Other_Dicamba",
+        "data_type": "float32",
+        "description": "High estimate of application of Dicamba to crops of Other in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Other_Dichloropropene",
+        "data_type": "float32",
+        "description": "High estimate of application of Dichloropropene to crops of Other in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Other_Dimethenamid_p",
+        "data_type": "float32",
+        "description": "High estimate of application of Dimethenamid(-p) to crops of Other in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Other_Flutolanil",
+        "data_type": "float32",
+        "description": "High estimate of application of Flutolanil to crops of Other in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Other_Glyphosate",
+        "data_type": "float32",
+        "description": "High estimate of application of Glyphosate to crops of Other in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Other_Metam",
+        "data_type": "float32",
+        "description": "High estimate of application of Metam to crops of Other in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Other_Metolachlor_s",
+        "data_type": "float32",
+        "description": "High estimate of application of Metolachlor(-s) to crops of Other in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Other_Metribuzin",
+        "data_type": "float32",
+        "description": "High estimate of application of Metribuzin to crops of Other in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Other_Paraquat",
+        "data_type": "float32",
+        "description": "High estimate of application of Paraquat to crops of Other in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Other_Pendimethalin",
+        "data_type": "float32",
+        "description": "High estimate of application of Pendimethalin to crops of Other in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Other_Phorate",
+        "data_type": "float32",
+        "description": "High estimate of application of Phorate to crops of Other in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Other_Propazine",
+        "data_type": "float32",
+        "description": "High estimate of application of Propazine to crops of Other in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "PasHay_2_4_d",
+        "data_type": "float32",
+        "description": "High estimate of application of 2,4-d to crops of PasHay in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "PasHay_2_4_db",
+        "data_type": "float32",
+        "description": "High estimate of application of 2,4-db to crops of PasHay in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "PasHay_Aminopyralid",
+        "data_type": "float32",
+        "description": "High estimate of application of Aminopyralid to crops of PasHay in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "PasHay_Atrazine",
+        "data_type": "float32",
+        "description": "High estimate of application of Atrazine to crops of PasHay in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "PasHay_Clethodim",
+        "data_type": "float32",
+        "description": "High estimate of application of Clethodim to crops of PasHay in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "PasHay_Clopyralid",
+        "data_type": "float32",
+        "description": "High estimate of application of Clopyralid to crops of PasHay in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "PasHay_Dicamba",
+        "data_type": "float32",
+        "description": "High estimate of application of Dicamba to crops of PasHay in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "PasHay_Dichlorprop",
+        "data_type": "float32",
+        "description": "High estimate of application of Dichlorprop to crops of PasHay in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "PasHay_Diuron",
+        "data_type": "float32",
+        "description": "High estimate of application of Diuron to crops of PasHay in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "PasHay_Fluroxypyr",
+        "data_type": "float32",
+        "description": "High estimate of application of Fluroxypyr to crops of PasHay in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "PasHay_Glufosinate",
+        "data_type": "float32",
+        "description": "High estimate of application of Glufosinate to crops of PasHay in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "PasHay_Glyphosate",
+        "data_type": "float32",
+        "description": "High estimate of application of Glyphosate to crops of PasHay in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "PasHay_Imazapyr",
+        "data_type": "float32",
+        "description": "High estimate of application of Imazapyr to crops of PasHay in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "PasHay_Mcpa",
+        "data_type": "float32",
+        "description": "High estimate of application of Mcpa to crops of PasHay in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "PasHay_Metolachlor_s",
+        "data_type": "float32",
+        "description": "High estimate of application of Metolachlor(-s) to crops of PasHay in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "PasHay_Metribuzin",
+        "data_type": "float32",
+        "description": "High estimate of application of Metribuzin to crops of PasHay in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "PasHay_Metsulfuron",
+        "data_type": "float32",
+        "description": "High estimate of application of Metsulfuron to crops of PasHay in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "PasHay_Paraquat",
+        "data_type": "float32",
+        "description": "High estimate of application of Paraquat to crops of PasHay in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "PasHay_Picloram",
+        "data_type": "float32",
+        "description": "High estimate of application of Picloram to crops of PasHay in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "PasHay_Triclopyr",
+        "data_type": "float32",
+        "description": "High estimate of application of Triclopyr to crops of PasHay in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Rice_2_4_d",
+        "data_type": "float32",
+        "description": "High estimate of application of 2,4-d to crops of Rice in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Rice_Acifluorfen",
+        "data_type": "float32",
+        "description": "High estimate of application of Acifluorfen to crops of Rice in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Rice_Azoxystrobin",
+        "data_type": "float32",
+        "description": "High estimate of application of Azoxystrobin to crops of Rice in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Rice_Bentazone",
+        "data_type": "float32",
+        "description": "High estimate of application of Bentazone to crops of Rice in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Rice_Clomazone",
+        "data_type": "float32",
+        "description": "High estimate of application of Clomazone to crops of Rice in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Rice_Clothianidin",
+        "data_type": "float32",
+        "description": "High estimate of application of Clothianidin to crops of Rice in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Rice_Copper_sulfate",
+        "data_type": "float32",
+        "description": "High estimate of application of Copper sulfate to crops of Rice in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Rice_Cyhalofop",
+        "data_type": "float32",
+        "description": "High estimate of application of Cyhalofop to crops of Rice in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Rice_Cyhalothrin_lambda",
+        "data_type": "float32",
+        "description": "High estimate of application of Cyhalothrin-lambda to crops of Rice in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Rice_Glyphosate",
+        "data_type": "float32",
+        "description": "High estimate of application of Glyphosate to crops of Rice in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Rice_Halosulfuron",
+        "data_type": "float32",
+        "description": "High estimate of application of Halosulfuron to crops of Rice in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Rice_Imazethapyr",
+        "data_type": "float32",
+        "description": "High estimate of application of Imazethapyr to crops of Rice in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Rice_Pendimethalin",
+        "data_type": "float32",
+        "description": "High estimate of application of Pendimethalin to crops of Rice in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Rice_Propanil",
+        "data_type": "float32",
+        "description": "High estimate of application of Propanil to crops of Rice in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Rice_Propiconazole",
+        "data_type": "float32",
+        "description": "High estimate of application of Propiconazole to crops of Rice in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Rice_Quinclorac",
+        "data_type": "float32",
+        "description": "High estimate of application of Quinclorac to crops of Rice in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Rice_Saflufenacil",
+        "data_type": "float32",
+        "description": "High estimate of application of Saflufenacil to crops of Rice in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Rice_Thiobencarb",
+        "data_type": "float32",
+        "description": "High estimate of application of Thiobencarb to crops of Rice in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Rice_Triclopyr",
+        "data_type": "float32",
+        "description": "High estimate of application of Triclopyr to crops of Rice in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Rice_Trifloxystrobin",
+        "data_type": "float32",
+        "description": "High estimate of application of Trifloxystrobin to crops of Rice in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Soybean_2_4_d",
+        "data_type": "float32",
+        "description": "High estimate of application of 2,4-d to crops of Soybean in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Soybean_Acephate",
+        "data_type": "float32",
+        "description": "High estimate of application of Acephate to crops of Soybean in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Soybean_Acetochlor",
+        "data_type": "float32",
+        "description": "High estimate of application of Acetochlor to crops of Soybean in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Soybean_Acifluorfen",
+        "data_type": "float32",
+        "description": "High estimate of application of Acifluorfen to crops of Soybean in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Soybean_Chlorpyrifos",
+        "data_type": "float32",
+        "description": "High estimate of application of Chlorpyrifos to crops of Soybean in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Soybean_Clethodim",
+        "data_type": "float32",
+        "description": "High estimate of application of Clethodim to crops of Soybean in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Soybean_Dicamba",
+        "data_type": "float32",
+        "description": "High estimate of application of Dicamba to crops of Soybean in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Soybean_Dimethenamid_p",
+        "data_type": "float32",
+        "description": "High estimate of application of Dimethenamid(-p) to crops of Soybean in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Soybean_Flumioxazin",
+        "data_type": "float32",
+        "description": "High estimate of application of Flumioxazin to crops of Soybean in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Soybean_Fomesafen",
+        "data_type": "float32",
+        "description": "High estimate of application of Fomesafen to crops of Soybean in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Soybean_Glufosinate",
+        "data_type": "float32",
+        "description": "High estimate of application of Glufosinate to crops of Soybean in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Soybean_Glyphosate",
+        "data_type": "float32",
+        "description": "High estimate of application of Glyphosate to crops of Soybean in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Soybean_Metolachlor_s",
+        "data_type": "float32",
+        "description": "High estimate of application of Metolachlor(-s) to crops of Soybean in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Soybean_Metribuzin",
+        "data_type": "float32",
+        "description": "High estimate of application of Metribuzin to crops of Soybean in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Soybean_Paraquat",
+        "data_type": "float32",
+        "description": "High estimate of application of Paraquat to crops of Soybean in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Soybean_Pendimethalin",
+        "data_type": "float32",
+        "description": "High estimate of application of Pendimethalin to crops of Soybean in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Soybean_Pyraclostrobin",
+        "data_type": "float32",
+        "description": "High estimate of application of Pyraclostrobin to crops of Soybean in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Soybean_Pyroxasulfone",
+        "data_type": "float32",
+        "description": "High estimate of application of Pyroxasulfone to crops of Soybean in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Soybean_Sulfentrazone",
+        "data_type": "float32",
+        "description": "High estimate of application of Sulfentrazone to crops of Soybean in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Soybean_Trifluralin",
+        "data_type": "float32",
+        "description": "High estimate of application of Trifluralin to crops of Soybean in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "VegFru_Bacillus_amyloliquifacien",
+        "data_type": "float32",
+        "description": "High estimate of application of Bacillus amyloliquifacien to crops of VegFru in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "VegFru_Bensulide",
+        "data_type": "float32",
+        "description": "High estimate of application of Bensulide to crops of VegFru in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "VegFru_Bentazone",
+        "data_type": "float32",
+        "description": "High estimate of application of Bentazone to crops of VegFru in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "VegFru_Captan",
+        "data_type": "float32",
+        "description": "High estimate of application of Captan to crops of VegFru in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "VegFru_Chloropicrin",
+        "data_type": "float32",
+        "description": "High estimate of application of Chloropicrin to crops of VegFru in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "VegFru_Chlorothalonil",
+        "data_type": "float32",
+        "description": "High estimate of application of Chlorothalonil to crops of VegFru in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "VegFru_Copper_hydroxide",
+        "data_type": "float32",
+        "description": "High estimate of application of Copper hydroxide to crops of VegFru in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "VegFru_Dichloropropene",
+        "data_type": "float32",
+        "description": "High estimate of application of Dichloropropene to crops of VegFru in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "VegFru_Eptc",
+        "data_type": "float32",
+        "description": "High estimate of application of Eptc to crops of VegFru in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "VegFru_Ethalfluralin",
+        "data_type": "float32",
+        "description": "High estimate of application of Ethalfluralin to crops of VegFru in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "VegFru_Ethoprophos",
+        "data_type": "float32",
+        "description": "High estimate of application of Ethoprophos to crops of VegFru in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "VegFru_Glyphosate",
+        "data_type": "float32",
+        "description": "High estimate of application of Glyphosate to crops of VegFru in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "VegFru_Mancozeb",
+        "data_type": "float32",
+        "description": "High estimate of application of Mancozeb to crops of VegFru in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "VegFru_Metam",
+        "data_type": "float32",
+        "description": "High estimate of application of Metam to crops of VegFru in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "VegFru_Metam_potassium",
+        "data_type": "float32",
+        "description": "High estimate of application of Metam potassium to crops of VegFru in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "VegFru_Methyl_bromide",
+        "data_type": "float32",
+        "description": "High estimate of application of Methyl bromide to crops of VegFru in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "VegFru_Metolachlor_s",
+        "data_type": "float32",
+        "description": "High estimate of application of Metolachlor(-s) to crops of VegFru in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "VegFru_Pendimethalin",
+        "data_type": "float32",
+        "description": "High estimate of application of Pendimethalin to crops of VegFru in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "VegFru_Petroleum_oil",
+        "data_type": "float32",
+        "description": "High estimate of application of Petroleum oil to crops of VegFru in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "VegFru_Thiophanate_methyl",
+        "data_type": "float32",
+        "description": "High estimate of application of Thiophanate-methyl to crops of VegFru in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Wheat_2_4_d",
+        "data_type": "float32",
+        "description": "High estimate of application of 2,4-d to crops of Wheat in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Wheat_Atrazine",
+        "data_type": "float32",
+        "description": "High estimate of application of Atrazine to crops of Wheat in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Wheat_Azoxystrobin",
+        "data_type": "float32",
+        "description": "High estimate of application of Azoxystrobin to crops of Wheat in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Wheat_Bromoxynil",
+        "data_type": "float32",
+        "description": "High estimate of application of Bromoxynil to crops of Wheat in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Wheat_Chlorpyrifos",
+        "data_type": "float32",
+        "description": "High estimate of application of Chlorpyrifos to crops of Wheat in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Wheat_Clopyralid",
+        "data_type": "float32",
+        "description": "High estimate of application of Clopyralid to crops of Wheat in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Wheat_Dicamba",
+        "data_type": "float32",
+        "description": "High estimate of application of Dicamba to crops of Wheat in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Wheat_Dimethoate",
+        "data_type": "float32",
+        "description": "High estimate of application of Dimethoate to crops of Wheat in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Wheat_Fluroxypyr",
+        "data_type": "float32",
+        "description": "High estimate of application of Fluroxypyr to crops of Wheat in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Wheat_Glyphosate",
+        "data_type": "float32",
+        "description": "High estimate of application of Glyphosate to crops of Wheat in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Wheat_Mcpa",
+        "data_type": "float32",
+        "description": "High estimate of application of Mcpa to crops of Wheat in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Wheat_Metconazole",
+        "data_type": "float32",
+        "description": "High estimate of application of Metconazole to crops of Wheat in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Wheat_Paraquat",
+        "data_type": "float32",
+        "description": "High estimate of application of Paraquat to crops of Wheat in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Wheat_Pinoxaden",
+        "data_type": "float32",
+        "description": "High estimate of application of Pinoxaden to crops of Wheat in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Wheat_Propiconazole",
+        "data_type": "float32",
+        "description": "High estimate of application of Propiconazole to crops of Wheat in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Wheat_Prothioconazole",
+        "data_type": "float32",
+        "description": "High estimate of application of Prothioconazole to crops of Wheat in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Wheat_Pyraclostrobin",
+        "data_type": "float32",
+        "description": "High estimate of application of Pyraclostrobin to crops of Wheat in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Wheat_Tebuconazole",
+        "data_type": "float32",
+        "description": "High estimate of application of Tebuconazole to crops of Wheat in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Wheat_Thiophanate_methyl",
+        "data_type": "float32",
+        "description": "High estimate of application of Thiophanate-methyl to crops of Wheat in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      },
+      {
+        "band_name": "Wheat_Tri_allate",
+        "data_type": "float32",
+        "description": "High estimate of application of Tri-allate to crops of Wheat in kilograms per hectare per year",
+        "unit": "kg/(ha\u22c5a)",
+        "definition": "https://doi.org/10.1038/s41597-019-0169-4",
+        "nodata": -2
+      }
+    ],
+    "title": "Global Pesticide Grids (PEST-CHEMGRIDS) Application rate, High estimates",
+    "datasource_type": "grid",
+    "keywords": "agriculture, land use, health, sustainability, pesticides, environmental modeling, chemical contamination",
+    "area_cover": "global",
+    "documentation": "https://sedac.ciesin.columbia.edu/data/set/ferman-v1-pest-chemgrids-v1-01/docs",
+    "proj:code": "EPSG:4326",
+    "start_datetime": "2015-01-01T00:00Z",
+    "end_datetime": "2025-01-01T00:00Z",
+    "provenance_name": "https://sedac.ciesin.columbia.edu/data/set/ferman-v1-pest-chemgrids-v1-01",
+    "preprocessing": "To estimate the global application rates of specific active ingredients, spatial statistical methods were used to re-analyze the U.S. Geological Survey Pesticide National Synthesis Project (USGS/PNSP) and the Food and Agriculture Organization Corporate Statistical Database (FAOSTAT) pesticide databases, along with other public inventories including globally gridded data of soil physical properties, hydro-climatic variables, agricultural quantities, and socioeconomic indices.",
+    "data_quality": "See global_pesticide_grids_qi datacube",
+    "apis": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
+    "use_case_NHM": "1",
+    "platform": "Rasdaman",
+    "contacts": [
+      {
+        "name": "NASA Socioeconomic Data and Applications Center (SEDAC)",
+        "organization": "NASA Socioeconomic Data and Applications Center (SEDAC)",
+        "emails": [
+          {
+            "value": "ciesin.info@ciesin.columbia.edu",
+            "role": "work"
+          }
+        ],
+        "project_purpose": "To provide a global gridded data set of commonly-used agricultural pesticides crucial to assess human and ecosystem exposure to potential toxicants for environmental modeling, assessment of agricultural chemical contamination and risk analysis, and other related research at global, regional, national, and local levels."
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -178.91666666666666,
+          -56.04249827067084
+        ],
+        [
+          -178.91666666666666,
+          84.04083506266277
+        ],
+        [
+          179.9166666666674,
+          84.04083506266277
+        ],
+        [
+          179.9166666666674,
+          -56.04249827067084
+        ],
+        [
+          -178.91666666666666,
+          -56.04249827067084
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?&SERVICE=WCS&VERSION=2.1.0&REQUEST=DescribeCoverage&COVERAGEID=global_pesticide_grids_apr_h&outputType=GeneralGridCoverage",
+      "rel": "about",
+      "type": "text/xml",
+      "title": "Link to the rasdaman coverage description in XML"
+    },
+    {
+      "href": "https://fairicube.rasdaman.com/rasdaman-dashboard/?layers=global_pesticide_grids_apr_h",
+      "rel": "service",
+      "type": "text/html",
+      "title": "Link to the rasdaman web application to access and process gridded data"
+    },
+    {
+      "href": "https://sedac.ciesin.columbia.edu/data/set/ferman-v1-pest-chemgrids-v1-01/docs",
+      "rel": "cite-as"
+    }
+  ],
+  "assets": {
+    "thumbnail_rasdaman": {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?service=WMS&version=1.3.0&request=GetMap&layers=global_pesticide_grids_apr_h&bbox=-56.04249827067084,-178.91666666666666,84.04083506266277,179.9166666666674&time=\"2015-01-01T00:00Z\"&width=800&height=600&crs=EPSG:4326&format=image/png&transparent=true&styles=",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    -178.91666666666666,
+    -56.04249827067084,
+    179.9166666666674,
+    84.04083506266277
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
+  ],
+  "wasDerivedFrom": "https://sedac.ciesin.columbia.edu/downloads/data/ferman-v1/ferman-v1-pest-chemgrids-v1-01/ferman-v1-pest-chemgrids-v1-01-geotiff.zip"
+}
