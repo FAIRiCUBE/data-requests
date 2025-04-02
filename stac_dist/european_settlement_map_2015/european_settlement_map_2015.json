@@ -1,0 +1,165 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "european_settlement_map_2015",
+  "properties": {
+    "license": "CC-BY-NC-SA-4.0",
+    "description": "The European Settlement Map is a spatial raster dataset that is mapping human settlements in Europe based on Copernicus Very High Resolution optical coverage for reference year 2015 (VHR_IMAGE_2015). It follows-up on the previous ESM_2012 derived from 2.5 m resolution SPOT-5/6 images acquired in the context of the pan-European GMES/Copernicus (Core_003) dataset for the reference year 2012. The ESM_2015 product exploits the Copernicus VHR_IMAGE_2015 dataset made of satellite images Pleiades, Deimos-02, WorldView-2, WorldView-3, GeoEye-01 and Spot 6/7 ranging from 2014 to 2016.",
+    "dataSource": "https://www.eea.europa.eu/en/datahub/datahubitem-view/42783031-34d5-4b38-b9ba-a0783723053c",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          844000,
+          7344000
+        ],
+        "reference_system": "3035",
+        "type": "spatial",
+        "unit": "metre",
+        "step": 2
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          842000,
+          5442000
+        ],
+        "reference_system": "3035",
+        "type": "spatial",
+        "unit": "metre",
+        "step": -2
+      },
+      "time": {
+        "extent": [],
+        "type": "temporal",
+        "values": [
+          "2015-01-01T00:00Z"
+        ],
+        "step": "P2Y",
+        "unit": "day"
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "type": "spatial"
+      }
+    },
+    "raster:bands": [
+      {
+        "band_name": "esm",
+        "unit": "1",
+        "data_type": "uint8",
+        "nodata": 0,
+        "definition": "https://human-settlement.emergency.copernicus.eu/esm_R2019.php",
+        "description": "raster coding (thematic pixel values): 0: no data; 1: land; 2: water; 255: built-up area",
+        "category_list": "1, 2, 255"
+      }
+    ],
+    "title": "European Settlement Map 2015",
+    "datasource_type": "grid",
+    "keywords": "land use, land cover, human settlement, urban area, green space, building typology, built-up areas, copernicus, esm, ghsl, pan-european, remote sensing, classification",
+    "area_cover": "EEA39",
+    "documentation": "Corbane, Christina; Sabo, Filip (2019): ESM R2019 - European Settlement Map from Copernicus Very High Resolution data for reference year 2015. European Commission, Joint Research Centre (JRC) [Dataset] doi: 10.2905/8BD2B792-CC33-4C11-AFD1-B8DD60B44F3B PID: http://data.europa.eu/89h/8bd2b792-cc33-4c11-afd1-b8dd60b44f3b",
+    "proj:code": "EPSG:3035",
+    "start_datetime": "2014-01-01T00:00Z",
+    "end_datetime": "2016-12-31T23:59:59Z",
+    "personalData": "none",
+    "provenance_name": "https://www.eea.europa.eu/en/datahub/datahubitem-view/42783031-34d5-4b38-b9ba-a0783723053c",
+    "preprocessing": "The ESM_2015 product exploits the Copernicus VHR_IMAGE_2015 dataset made of satellite images Pleiades, Deimos-02, WorldView-2, WorldView-3, GeoEye-01 and Spot 6/7 ranging from 2014 to 2016.",
+    "apis": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
+    "use_case_S4E": "1",
+    "use_case_NHM": "1",
+    "ingestion_status": "Completed",
+    "platform": "Rasdaman",
+    "contacts": [
+      {
+        "name": "European Environment Agency",
+        "organization": "European Environment Agency",
+        "emails": [
+          {
+            "value": "mailto:sdi@eea.europa.eu",
+            "role": "work"
+          }
+        ],
+        "project_purpose": null
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -56.2783261509524,
+          23.580535569341674
+        ],
+        [
+          -56.2783261509524,
+          59.05367788941702
+        ],
+        [
+          71.4525090831956,
+          59.05367788941702
+        ],
+        [
+          71.4525090831956,
+          23.580535569341674
+        ],
+        [
+          -56.2783261509524,
+          23.580535569341674
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?&SERVICE=WCS&VERSION=2.1.0&REQUEST=DescribeCoverage&COVERAGEID=european_settlement_map_2015&outputType=GeneralGridCoverage",
+      "rel": "about",
+      "type": "text/xml",
+      "title": "Link to the rasdaman coverage description in XML"
+    },
+    {
+      "href": "https://fairicube.rasdaman.com/rasdaman-dashboard/?layers=european_settlement_map_2015",
+      "rel": "service",
+      "type": "text/html",
+      "title": "Link to the rasdaman web application to access and process gridded data"
+    }
+  ],
+  "assets": {
+    "thumbnail_rasdaman": {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?service=WMS&version=1.3.0&request=GetMap&layers=european_settlement_map_2015&bbox=23.580535569341674,-56.2783261509524,59.05367788941702,71.4525090831956&time=\"2015-01-01T00:00Z\"&width=800&height=600&crs=EPSG:4326&format=image/png&transparent=true&styles=",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    -56.2783261509524,
+    23.580535569341674,
+    71.4525090831956,
+    59.05367788941702
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
+  ],
+  "wasDerivedFrom": "https://human-settlement.emergency.copernicus.eu/download.php?ds=ESM"
+}
