@@ -1,0 +1,170 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "forest_type_20m",
+  "properties": {
+    "license": "other",
+    "description": "Provides at pan-European level in the spatial resolution of 20 m a forest classification with three thematic classes (all non-forest areas / broadleaved forest / coniferous forest).",
+    "dataSource": "https://land.copernicus.eu/en/products/high-resolution-layer-forest-type",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          900000,
+          7400000
+        ],
+        "reference_system": "3035",
+        "type": "spatial",
+        "unit": "metre",
+        "step": 20
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          900000,
+          5500000
+        ],
+        "reference_system": "3035",
+        "type": "spatial",
+        "unit": "metre",
+        "step": -20
+      },
+      "time": {
+        "extent": [],
+        "type": "temporal",
+        "values": [
+          "2012-01-01T00:00Z",
+          "2015-01-01T00:00Z"
+        ],
+        "step": "P2Y",
+        "unit": "day"
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "type": "spatial"
+      }
+    },
+    "raster:bands": [
+      {
+        "band_name": "ft",
+        "unit": "1",
+        "data_type": "uint8",
+        "nodata": 250,
+        "definition": "https://land.copernicus.eu/en/technical-library/hrl-forest-2012-2015/@@download/file",
+        "description": "raster coding (thematic pixel values): 0: all non-forest areas; 1: broadleaved forest; 2: coniferous forest; 254: unclassifiable (no satellite image available, or clouds, shadows, or snow); 255: outside area",
+        "category_list": "0, 1, 2, 254, 255"
+      }
+    ],
+    "title": "High Resolution Layer - Forest Type 2012-2015",
+    "datasource_type": "grid",
+    "keywords": "forest management, landscape alteration, land use, land cover",
+    "area_cover": "EEA39",
+    "documentation": "European Union's Copernicus Land Monitoring Service information; Source dataset DOI links: https://doi.org/10.2909/5afeffa4-ccda-4ef9-a7ef-637cb7310f58, https://doi.org/10.2909/ab0e6d0b-699c-473d-bd5e-e5c634c8f99c",
+    "proj:code": "EPSG:3035",
+    "start_datetime": "2011-01-01T00:00Z",
+    "end_datetime": "2016-12-31T23:59:59.999Z",
+    "personalData": "none",
+    "provenance_name": "https://land.copernicus.eu/en/products/high-resolution-layer-forest-type",
+    "apis": "OGC WCS, WCPS, WSM, WMTS, OAPI-Coverages",
+    "use_case_S4E": "1",
+    "use_case_WER": "2",
+    "use_case_NHM": "2",
+    "ingestion_status": "Completed",
+    "platform": "Rasdaman",
+    "contacts": [
+      {
+        "name": "European Environment Agency",
+        "organization": "European Environment Agency",
+        "emails": [
+          {
+            "value": "European Environment Agency",
+            "role": "work"
+          }
+        ],
+        "project_purpose": null
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -56.5051419017044,
+          24.2841770079211
+        ],
+        [
+          -56.5051419017044,
+          58.95275109308057
+        ],
+        [
+          72.90613675900907,
+          58.95275109308057
+        ],
+        [
+          72.90613675900907,
+          24.2841770079211
+        ],
+        [
+          -56.5051419017044,
+          24.2841770079211
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?&SERVICE=WCS&VERSION=2.1.0&REQUEST=DescribeCoverage&COVERAGEID=forest_type_20m&outputType=GeneralGridCoverage",
+      "rel": "about",
+      "type": "text/xml",
+      "title": "Link to the rasdaman coverage description in XML"
+    },
+    {
+      "href": "https://fairicube.rasdaman.com/rasdaman-dashboard/?layers=forest_type_20m",
+      "rel": "service",
+      "type": "text/html",
+      "title": "Link to the rasdaman web application to access and process gridded data"
+    },
+    {
+      "href": "https://land.copernicus.eu/",
+      "rel": "cite-as"
+    }
+  ],
+  "assets": {
+    "thumbnail_rasdaman": {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?service=WMS&version=1.3.0&request=GetMap&layers=forest_type_20m&bbox=24.2841770079211,-56.5051419017044,58.95275109308057,72.90613675900907&time=\"2012-01-01T00:00Z\"&width=800&height=600&crs=EPSG:4326&format=image/png&transparent=true&styles=",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    -56.5051419017044,
+    24.2841770079211,
+    72.90613675900907,
+    58.95275109308057
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
+  ],
+  "wasDerivedFrom": ""
+}
