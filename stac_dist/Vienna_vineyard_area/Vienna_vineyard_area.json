@@ -5,14 +5,6 @@
   "properties": {
     "license": "CC-BY-4.0",
     "description": "Vienna vineyard area [100m]",
-    "providers": [
-      {
-        "organization_name": "Stadt Wien",
-        "organization": "Stadt Wien",
-        "organization_email": "open@post.wien.gv.at",
-        "roles": "licensor"
-      }
-    ],
     "dataSource": "Open data Austria (data.gv.at)",
     "cube:dimensions": {
       "x": {
@@ -73,20 +65,31 @@
     "datasource_type": "WFS (GML) ",
     "keywords": "vineyards",
     "area_cover": "415km2",
-    "crs": "EPSG:31256",
+    "proj:code": "EPSG:EPSG:31256",
     "start_datetime": "2024-01-01T00:00Z",
     "end_datetime": "2024-12-31T00:00Z",
     "provenance_name": "data.gv.at ",
     "preprocessing": "Vineyard land use were extracted from land use map and the vineyard cover for every 100m gridcell was calculated and exported as raster",
-    "source_data": "https://www.data.gv.at",
-    "models": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/notebooks/dev/f06_pre_processing/Vienna_land_use.ipynb",
     "apis": "AWS-S3 API",
     "access_control": "fairicube account required ",
     "modification": "2024-07-17T10:46:48Z",
     "provision": "2024-07-17T10:46:44Z",
     "use_case_S4E": "1",
     "use_case_NHM_2": "1",
-    "platform": "Eox"
+    "platform": "Eox",
+    "contacts": [
+      {
+        "name": "Stadt Wien",
+        "organization": "Stadt Wien",
+        "emails": [
+          {
+            "value": "open@post.wien.gv.at",
+            "role": "work"
+          }
+        ],
+        "project_purpose": null
+      }
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -145,6 +148,11 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ]
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
+  ],
+  "wasDerivedFrom": "https://www.data.gv.at",
+  "wasGeneratedBy": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/notebooks/dev/f06_pre_processing/Vienna_land_use.ipynb"
 }
