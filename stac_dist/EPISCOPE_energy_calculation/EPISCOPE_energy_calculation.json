@@ -1,20 +1,21 @@
 {
   "type": "Feature",
   "stac_version": "1.0.0",
+  "id": "EPISCOPE_energy_calculation",
   "properties": {
+    "keywords": [],
     "license": null,
     "description": null,
-    "area_cover": "21 EU nations",
-    "crs": null,
     "providers": [
       {
-        "organization": "EPISCOPE",
         "organization_name": null,
-        "organization_email": null,
-        "orcid_id": null,
-        "project_purpose": null,
+        "comments": "EPISCOPE energy calculation presents simplified energy calculation for certain building architypes",
         "doc_link": "https://episcope.eu/fileadmin/tabula/public/docs/report/TABULA_CommonCalculationMethod.pdf",
-        "comments": "EPISCOPE energy calculation presents simplified energy calculation for certain building architypes"
+        "organization_email": null,
+        "roles": [
+          null
+        ],
+        "project_purpose": null
       }
     ],
     "dataSource": "https://episcope.eu/fileadmin/tabula/public/calc/tabula-calculator.xlsx",
@@ -22,53 +23,48 @@
       "x": {
         "axis": "x",
         "extent": [
-          null,
-          null
+          -180,
+          180
         ],
-        "reference_system": null,
+        "reference_system": 4326,
         "type": "spatial",
-        "unit_of_measure": null,
         "interpolation": null
       },
       "y": {
         "axis": "y",
         "extent": [
-          null,
-          null
+          -90,
+          90
         ],
-        "reference_system": null,
+        "reference_system": 4326,
         "type": "spatial",
-        "unit_of_measure": null,
         "interpolation": null
       },
       "z": {
-        "axis": "z",
         "extent": [
           null,
           null
         ],
         "reference_system": null,
-        "type": "spatial",
-        "unit_of_measure": null,
-        "interpolation": null
+        "interpolation": null,
+        "type": "spatial"
       },
       "time": {
-        "extent": [
-          null,
-          null
-        ],
         "type": "temporal",
-        "unit_of_measure": null,
+        "extent": [
+          "1900-01-01T00:00:00Z",
+          "2999-01-01T00:00:00Z"
+        ],
+        "step": "",
         "interpolation": null
       }
     },
-    "datetime": "2000-01-01T00:00:00Z",
     "raster:bands": [
       {
         "band_name": null,
         "unit": null,
-        "nodata": null,
         "data_type": null,
+        "nodata": null,
         "definition": null,
         "description": null,
         "category_list": null,
@@ -78,22 +74,50 @@
     ],
     "title": "EPISCOPE (energy calculation)",
     "datasource_type": "xlsx files",
-    "personalData": null,
-    "Provenance_name": null,
-    "preprocessing": null,
+    "area_cover": "21 EU nations",
     "documentation": null,
-    "keywords": null,
+    "crs": null,
+    "start_datetime": "1900-01-01T00:00:00Z",
+    "end_datetime": "2999-01-01T00:00:00Z",
+    "personalData": null,
+    "preprocessing": null,
+    "datetime": "2000-01-01T00:00:00Z",
+    "modification": null,
+    "provision": null,
     "use_case_S4E": " ",
     "use_case_WER": null,
-    "use_case_NHM_2": null,
-    "use_case_NILU": 1,
     "use_case_NHM": null,
-    "platform": "Eox",
-    "ingestion_status": null
+    "use_case_NILU": 1,
+    "use_case_NHM_2": null,
+    "ingestion_status": null,
+    "platform": "Eox"
   },
   "geometry": {
     "type": "Polygon",
-    "coordinates": []
+    "coordinates": [
+      [
+        [
+          -180,
+          -90
+        ],
+        [
+          -180,
+          90
+        ],
+        [
+          180,
+          90
+        ],
+        [
+          180,
+          -90
+        ],
+        [
+          -180,
+          -90
+        ]
+      ]
+    ]
   },
   "links": [
     {
@@ -110,10 +134,14 @@
     }
   ],
   "assets": {},
-  "bbox": [],
+  "bbox": [
+    -180,
+    -90,
+    180,
+    90
+  ],
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ],
-  "id": "EPISCOPE_energy_calculation"
+  ]
 }
