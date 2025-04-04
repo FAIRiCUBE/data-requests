@@ -8,15 +8,15 @@
     ],
     "license": "proprietary",
     "description": "testing items",
-    "providers": [
+    "contacts": [
       {
-        "organization_name": "EOX IT Services",
+        "organization": "EOX IT Services",
         "name": "name",
-        "organization_email": "bas@mail.com",
-        "roles": [
-          [
-            "producer"
-          ]
+        "emails": [
+          {
+            "value": "bas@mail.com",
+            "role": "work"
+          }
         ],
         "project_purpose": "k"
       }
@@ -104,6 +104,11 @@
       "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
+    },
+    {
+      "title": "name",
+      "role": "cite-as",
+      "href": "https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-vegetation-phenology-and-productivity"
     },
     {
       "example:container": false,
