@@ -94,7 +94,9 @@
           }
         ]
       }
-    ]
+    ],
+    "wasDerivedFrom": "https://www.data.gv.at",
+    "wasGeneratedBy": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/notebooks/dev/f06_pre_processing/Vienna_distance_raster_from_points_data.ipynb"
   },
   "geometry": {
     "type": "Polygon",
@@ -163,7 +165,5 @@
     "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
-  ],
-  "wasDerivedFrom": "https://www.data.gv.at",
-  "wasGeneratedBy": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/notebooks/dev/f06_pre_processing/Vienna_distance_raster_from_points_data.ipynb"
+  ]
 }

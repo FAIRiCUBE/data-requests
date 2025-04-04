@@ -240,7 +240,9 @@
         "name": "ECMWF",
         "organization": "ECMWF"
       }
-    ]
+    ],
+    "wasDerivedFrom": "https://cds.climate.copernicus.eu/stac-browser/collections/sis-urban-climate-cities?.language=en",
+    "wasGeneratedBy": ""
   },
   "geometry": {
     "type": "Polygon",
@@ -339,7 +341,5 @@
     "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
-  ],
-  "wasDerivedFrom": "https://cds.climate.copernicus.eu/stac-browser/collections/sis-urban-climate-cities?.language=en",
-  "wasGeneratedBy": ""
+  ]
 }

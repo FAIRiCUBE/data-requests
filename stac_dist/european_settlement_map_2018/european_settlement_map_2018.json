@@ -83,7 +83,8 @@
           }
         ]
       }
-    ]
+    ],
+    "wasDerivedFrom": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/ESM_BUILT_VHR2018_Europe_R2020/ESM_BUILT_VHR2018_Europe_R2020_3035_02/LATEST/Data/GeoTIFF/"
   },
   "geometry": {
     "type": "Polygon",
@@ -158,6 +159,5 @@
     "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
-  ],
-  "wasDerivedFrom": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/ESM_BUILT_VHR2018_Europe_R2020/ESM_BUILT_VHR2018_Europe_R2020_3035_02/LATEST/Data/GeoTIFF/"
+  ]
 }

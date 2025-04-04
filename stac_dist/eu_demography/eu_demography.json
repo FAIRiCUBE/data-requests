@@ -90,7 +90,8 @@
         "organization": "EC Joint Research Centre",
         "project_purpose": "methodological development; implementation."
       }
-    ]
+    ],
+    "wasDerivedFrom": "https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution/geostat"
   },
   "geometry": {
     "type": "Polygon",
@@ -175,6 +176,5 @@
     "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
-  ],
-  "wasDerivedFrom": "https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution/geostat"
+  ]
 }

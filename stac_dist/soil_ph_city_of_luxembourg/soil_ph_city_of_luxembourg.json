@@ -89,7 +89,8 @@
         "name": "JOINT RESEARCH CENTRE European Soil Data Centre (ESDAC)",
         "organization": "JOINT RESEARCH CENTRE European Soil Data Centre (ESDAC)"
       }
-    ]
+    ],
+    "wasDerivedFrom": "https://esdac.jrc.ec.europa.eu/content/chemical-properties-european-scale-based-lucas-topsoil-data#tabs-0-description=0"
   },
   "geometry": {
     "type": "Polygon",
@@ -177,6 +178,5 @@
     "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
-  ],
-  "wasDerivedFrom": "https://esdac.jrc.ec.europa.eu/content/chemical-properties-european-scale-based-lucas-topsoil-data#tabs-0-description=0"
+  ]
 }

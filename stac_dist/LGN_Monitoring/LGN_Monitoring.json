@@ -78,7 +78,8 @@
     "provision": null,
     "use_case_WER": "1",
     "ingestion_status": "completed",
-    "platform": "Both"
+    "platform": "Both",
+    "wasDerivedFrom": "https://lgn.nl/bestanden"
   },
   "geometry": {
     "type": "Polygon",
@@ -152,6 +153,5 @@
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
-  ],
-  "wasDerivedFrom": "https://lgn.nl/bestanden"
+  ]
 }

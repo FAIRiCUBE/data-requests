@@ -459,7 +459,9 @@
         "name": "ECMWF",
         "organization": "ECMWF"
       }
-    ]
+    ],
+    "wasDerivedFrom": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-land-monthly-means?tab=form",
+    "wasGeneratedBy": "https://confluence.ecmwf.int/display/CKB/ERA5-Land%3A+data+documentation#heading-LandSurfaceModel"
   },
   "geometry": {
     "type": "Polygon",
@@ -539,7 +541,5 @@
     "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
-  ],
-  "wasDerivedFrom": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-land-monthly-means?tab=form",
-  "wasGeneratedBy": "https://confluence.ecmwf.int/display/CKB/ERA5-Land%3A+data+documentation#heading-LandSurfaceModel"
+  ]
 }

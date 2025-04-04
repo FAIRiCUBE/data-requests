@@ -84,7 +84,8 @@
           }
         ]
       }
-    ]
+    ],
+    "wasDerivedFrom": "https://human-settlement.emergency.copernicus.eu/download.php?ds=ESM"
   },
   "geometry": {
     "type": "Polygon",
@@ -159,6 +160,5 @@
     "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
-  ],
-  "wasDerivedFrom": "https://human-settlement.emergency.copernicus.eu/download.php?ds=ESM"
+  ]
 }
