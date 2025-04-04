@@ -5,16 +5,6 @@
   "properties": {
     "license": "CC-BY-4.0",
     "description": "Vienna vineyard area [100m]",
-    "providers": [
-      {
-        "organization_name": "Stadt Wien",
-        "name": "Stadt Wien",
-        "organization_email": "open@post.wien.gv.at",
-        "roles": [
-          "licensor"
-        ]
-      }
-    ],
     "dataSource": "Open data Austria (data.gv.at)",
     "cube:dimensions": {
       "x": {
@@ -86,7 +76,19 @@
     "provision": "2024-07-17T10:46:44Z",
     "use_case_S4E": "1",
     "use_case_NHM_2": "1",
-    "platform": "Eox"
+    "platform": "Eox",
+    "contacts": [
+      {
+        "name": "Stadt Wien",
+        "organization": "Stadt Wien",
+        "emails": [
+          {
+            "value": "open@post.wien.gv.at",
+            "role": "work"
+          }
+        ]
+      }
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -147,7 +149,8 @@
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
   ],
   "wasDerivedFrom": "https://www.data.gv.at",
   "wasGeneratedBy": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/notebooks/dev/f06_pre_processing/Vienna_land_use.ipynb"

@@ -19,32 +19,6 @@
     ],
     "license": "CC-BY-4.0",
     "description": "Near-surface air temperature for every month (mean per month) for the year 2017. Derived from UrbClim: Climate variables for cities in Europe from 2008 to 2017 (ECMWF)",
-    "providers": [
-      {
-        "organization_name": "space4environment",
-        "name": "space4environment",
-        "comments": "",
-        "doc_link": "",
-        "organization_email": "info@space4environment.com",
-        "ORCID_ID": "",
-        "roles": [
-          "processor"
-        ],
-        "project_purpose": "Urban adaptation to climate change"
-      },
-      {
-        "organization_name": "ECMWF",
-        "name": "ECMWF",
-        "comments": "",
-        "doc_link": "https://confluence.ecmwf.int/display/CKB/Climate+variables+for+cities+in+Europe+from+2008+to+2017+documentation#heading-4Exampledata",
-        "organization_email": "",
-        "ORCID_ID": "",
-        "roles": [
-          "producer"
-        ],
-        "project_purpose": ""
-      }
-    ],
     "dataSource": "https://cds.climate.copernicus.eu/stac-browser/collections/sis-urban-climate-cities?.language=en",
     "cube:dimensions": {
       "x": {
@@ -249,7 +223,24 @@
     "provision": null,
     "use_case_S4E": "1",
     "ingestion_status": "",
-    "platform": "Eox"
+    "platform": "Eox",
+    "contacts": [
+      {
+        "name": "space4environment",
+        "organization": "space4environment",
+        "emails": [
+          {
+            "value": "info@space4environment.com",
+            "role": "work"
+          }
+        ],
+        "project_purpose": "Urban adaptation to climate change"
+      },
+      {
+        "name": "ECMWF",
+        "organization": "ECMWF"
+      }
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -306,6 +297,11 @@
       "description": "Link to the data visualization interactive web map.",
       "href": "https://vis.fairicube.eu/=data?https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/air_temperature_2017_month_mean_10m_b12_COG.tif",
       "rel": "example"
+    },
+    {
+      "title": "ECMWF",
+      "href": "https://confluence.ecmwf.int/display/CKB/Climate+variables+for+cities+in+Europe+from+2008+to+2017+documentation#heading-4Exampledata",
+      "rel": "cite-as"
     }
   ],
   "assets": {
@@ -341,7 +337,8 @@
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/example-links/v0.0.1/schema.json",
     "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
   ],
   "wasDerivedFrom": "https://cds.climate.copernicus.eu/stac-browser/collections/sis-urban-climate-cities?.language=en",
   "wasGeneratedBy": ""

@@ -5,12 +5,6 @@
   "properties": {
     "license": "other",
     "description": "ERA5-Land is a reanalysis dataset providing a consistent view of the evolution of land variables over several decades at an enhanced resolution compared to ERA5. ERA5-Land has been produced by replaying the land component of the ECMWF ERA5 climate reanalysis. Reanalysis combines model data with observations from across the world into a globally complete and consistent dataset using the laws of physics. Reanalysis produces data that goes several decades back in time, providing an accurate description of the climate of the past.\n\nERA5-Land provides a consistent view of the water and energy cycles at surface level during several decades. It contains a detailed record from 1950 onwards, with a temporal resolution of 1 hour. The native spatial resolution of the ERA5-Land reanalysis dataset is 9km on a reduced Gaussian grid (TCo1279). The data in the CDS has been regridded to a regular lat-lon grid of 0.1x0.1 degrees.\n\nThe data presented here is a post-processed subset of the full ERA5-Land dataset. Monthly-mean averages have been pre-calculated to facilitate many applications requiring easy and fast access to the data, when sub-monthly fields are not required.",
-    "providers": [
-      {
-        "name": "ECMWF",
-        "doc_link": "https://confluence.ecmwf.int/display/CKB/ERA5-Land%3A+data+documentation"
-      }
-    ],
     "dataSource": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-land-monthly-means",
     "cube:dimensions": {
       "x": {
@@ -459,7 +453,13 @@
     "modification": null,
     "provision": null,
     "ingestion_status": "complete",
-    "platform": "Rasdaman"
+    "platform": "Rasdaman",
+    "contacts": [
+      {
+        "name": "ECMWF",
+        "organization": "ECMWF"
+      }
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -512,6 +512,11 @@
       "rel": "service",
       "type": "text/html",
       "title": "Link to the rasdaman web application to Access, process gridded data"
+    },
+    {
+      "title": "ECMWF",
+      "href": "https://confluence.ecmwf.int/display/CKB/ERA5-Land%3A+data+documentation",
+      "rel": "cite-as"
     }
   ],
   "assets": {
@@ -532,7 +537,8 @@
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
   ],
   "wasDerivedFrom": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-land-monthly-means?tab=form",
   "wasGeneratedBy": "https://confluence.ecmwf.int/display/CKB/ERA5-Land%3A+data+documentation#heading-LandSurfaceModel"

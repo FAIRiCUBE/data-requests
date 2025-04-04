@@ -8,19 +8,6 @@
     ],
     "license": "CC-BY-SA-4.0",
     "description": "This is the collection of suitability maps generated with MaxEnt using species occurrence data and environmental variables. Each species was treated separately. Species occurrence data was retrieved from GBIF and mnhm.mdata.lu\n\nArea of Interest: Luxembourg City (LU).\n\nSpecies included: \n- Reynoutria japonica (GBIF DOI: 10.15468/dl.sqknbh)\n- Heracleum mantegazzianum (GBIF DOI: 10.15468/dl.hr5dat)\n- Impatiens glandulifera (GBIF DOI: 10.15468/dl.szd56t)\n- Prunus laurocerasus (GBIF DOI: 10.15468/dl.uqg68p)\n- Robinia pseudoacacia (GBIF DOI: 10.15468/dl.h8ssyx)\n- Solidago canadensis (GBIF DOI: 10.15468/dl.z4hqqz)\n\nEnvironmental variables:\n- Shadow index (https://catalog.eoxhub.fairicube.eu/collections/index/items/shadow_index_city_of_luxembourg?.language=en)\n- Topographic wetness index (https://catalog.eoxhub.fairicube.eu/collections/index/items/wetness_index_city_of_luxembourg?.language=en)\n- Average monthly air temperature for 2017 (https://catalog.eoxhub.fairicube.eu/collections/index/items/air_temperature_city_of_luxembourg_2017?.language=en)\n- Soil acidity (https://catalog.eoxhub.fairicube.eu/collections/index/items/soil_ph_city_of_luxembourg?.language=en)\n- Soil Nitrogen (https://catalog.eoxhub.fairicube.eu/collections/index/items/soil_nitrogen_city_of_luxembourg?.language=en)\n- Land cover (https://catalog.eoxhub.fairicube.eu/collections/index/items/land_cover_city_of_luxembourg?.language=en)\n",
-    "providers": [
-      {
-        "organization_name": "space4environment",
-        "name": "space4environment",
-        "organization_email": "ricci@space4environment.com",
-        "roles": [
-          [
-            "producer"
-          ]
-        ],
-        "project_purpose": "Urban adaptation to climate change"
-      }
-    ],
     "dataSource": "FAIRiCUBE",
     "cube:dimensions": {
       "x": {
@@ -69,7 +56,20 @@
     "modification": "2025-03-28T10:38:58Z",
     "provision": "2025-03-28T10:38:56Z",
     "use_case_S4E": "1",
-    "platform": "Eox"
+    "platform": "Eox",
+    "contacts": [
+      {
+        "name": "space4environment",
+        "organization": "space4environment",
+        "emails": [
+          {
+            "value": "ricci@space4environment.com",
+            "role": "work"
+          }
+        ],
+        "project_purpose": "Urban adaptation to climate change"
+      }
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -270,6 +270,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/example-links/v0.0.1/schema.json"
+    "https://stac-extensions.github.io/example-links/v0.0.1/schema.json",
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
   ]
 }

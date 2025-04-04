@@ -5,20 +5,6 @@
   "properties": {
     "license": "CC-BY-4.0",
     "description": "Count of persons at their usual place of residence per square km",
-    "providers": [
-      {
-        "organization_name": "EC Eurostat",
-        "name": "EC Eurostat",
-        "doc_link": "https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution/geostat",
-        "project_purpose": "data provider (population at LAU level); data hosting."
-      },
-      {
-        "organization_name": "EC Joint Research Centre",
-        "name": "EC Joint Research Centre",
-        "doc_link": "https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution/geostat",
-        "project_purpose": "methodological development; implementation."
-      }
-    ],
     "dataSource": "https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution/geostat",
     "cube:dimensions": {
       "x": {
@@ -92,7 +78,19 @@
     "use_case_NHM": "two",
     "use_case_NHM_2": "2",
     "ingestion_status": "Completed: Version 2021 (16 June 2024), Version 2018 (13 April 2021), Version 2011 (1 February 2016), Version 2006 (23 January 2012)",
-    "platform": "Rasdaman"
+    "platform": "Rasdaman",
+    "contacts": [
+      {
+        "name": "EC Eurostat",
+        "organization": "EC Eurostat",
+        "project_purpose": "data provider (population at LAU level); data hosting."
+      },
+      {
+        "name": "EC Joint Research Centre",
+        "organization": "EC Joint Research Centre",
+        "project_purpose": "methodological development; implementation."
+      }
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -145,6 +143,16 @@
       "rel": "service",
       "type": "text/html",
       "title": "Link to the rasdaman web application to access and process gridded data"
+    },
+    {
+      "title": "EC Eurostat",
+      "href": "https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution/geostat",
+      "rel": "cite-as"
+    },
+    {
+      "title": "EC Joint Research Centre",
+      "href": "https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution/geostat",
+      "rel": "cite-as"
     }
   ],
   "assets": {
@@ -165,7 +173,8 @@
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
   ],
   "wasDerivedFrom": "https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution/geostat"
 }

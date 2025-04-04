@@ -8,16 +8,6 @@
     ],
     "license": "CC0-1.0",
     "description": "Land Cover (of the city of Luxembourg) corresponds to a physical description of space, the observed (bio)physical cover of the earth's surface . It is that which overlays or currently covers the ground",
-    "providers": [
-      {
-        "organization_name": "FAIRiCUBE",
-        "name": "FAIRiCUBE",
-        "organization_email": "info@space4environment.com",
-        "roles": [
-          "processor"
-        ]
-      }
-    ],
     "dataSource": "https://data.public.lu/fr/datasets/lis-l-land-cover/",
     "cube:dimensions": {
       "x": {
@@ -86,7 +76,19 @@
     "modification": null,
     "provision": null,
     "use_case_S4E": "1",
-    "platform": "Eox"
+    "platform": "Eox",
+    "contacts": [
+      {
+        "name": "FAIRiCUBE",
+        "organization": "FAIRiCUBE",
+        "emails": [
+          {
+            "value": "info@space4environment.com",
+            "role": "work"
+          }
+        ]
+      }
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -159,7 +161,8 @@
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
   ],
   "wasDerivedFrom": "https://data.public.lu/en/datasets/lis-l-land-cover/"
 }

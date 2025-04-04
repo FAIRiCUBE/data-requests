@@ -5,17 +5,6 @@
   "properties": {
     "license": "other",
     "description": "The DLT raster product provides a basic land cover classification with 3 thematic classes (all non-tree covered areas, broadleaved and coniferous) at 20m spatial resolution and covers the full of EEA38 area and the United Kingdom.",
-    "providers": [
-      {
-        "name": "European Environment Agency",
-        "comments": "The production of the high resolution forest layers was coordinated by the European Environment Agency (EEA) in the frame of the EU Copernicus programme.",
-        "doc_link": "https://land.copernicus.eu/",
-        "organization_email": "copernicus@eea.europa.eu",
-        "roles": [
-          "host"
-        ]
-      }
-    ],
     "dataSource": "https://land.copernicus.eu/pan-european/high-resolution-layers/forests/dominant-leaf-type/status-maps",
     "cube:dimensions": {
       "x": {
@@ -82,7 +71,20 @@
     "use_case_WER": "2",
     "use_case_NHM": "2",
     "ingestion_status": "Completed",
-    "platform": "Rasdaman"
+    "platform": "Rasdaman",
+    "contacts": [
+      {
+        "name": "European Environment Agency",
+        "organization": "European Environment Agency",
+        "emails": [
+          {
+            "value": "copernicus@eea.europa.eu",
+            "role": "work"
+          }
+        ],
+        "comments": "The production of the high resolution forest layers was coordinated by the European Environment Agency (EEA) in the frame of the EU Copernicus programme."
+      }
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -135,6 +137,11 @@
       "rel": "service",
       "type": "text/html",
       "title": "Link to the rasdaman web application to access and process gridded data"
+    },
+    {
+      "title": "European Environment Agency",
+      "href": "https://land.copernicus.eu/",
+      "rel": "cite-as"
     }
   ],
   "assets": {
@@ -155,7 +162,8 @@
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
   ],
   "wasDerivedFrom": "https://land.copernicus.eu/en/products/high-resolution-layer-dominant-leaf-type/dominant-leaf-type-2012, https://land.copernicus.eu/en/products/high-resolution-layer-dominant-leaf-type/dominant-leaf-type-2015"
 }

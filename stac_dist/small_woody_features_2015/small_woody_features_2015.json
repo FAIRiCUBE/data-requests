@@ -5,16 +5,6 @@
   "properties": {
     "license": "other",
     "description": "Provides at pan-European level information on information on linear structures such as hedgerows, as well as patches of woody features at 5m resolution.",
-    "providers": [
-      {
-        "name": "European Environment Agency",
-        "doc_link": "https://land.copernicus.eu/",
-        "organization_email": "copernicus@eea.europa.eu",
-        "roles": [
-          "host"
-        ]
-      }
-    ],
     "dataSource": "https://land.copernicus.eu/en/products/high-resolution-layer-small-woody-features",
     "cube:dimensions": {
       "x": {
@@ -82,7 +72,19 @@
     "use_case_WER": "2",
     "use_case_NHM": "2",
     "ingestion_status": "Completed",
-    "platform": "Rasdaman"
+    "platform": "Rasdaman",
+    "contacts": [
+      {
+        "name": "European Environment Agency",
+        "organization": "European Environment Agency",
+        "emails": [
+          {
+            "value": "copernicus@eea.europa.eu",
+            "role": "work"
+          }
+        ]
+      }
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -135,6 +137,11 @@
       "rel": "service",
       "type": "text/html",
       "title": "Link to the rasdaman web application to Access, process gridded data"
+    },
+    {
+      "title": "European Environment Agency",
+      "href": "https://land.copernicus.eu/",
+      "rel": "cite-as"
     }
   ],
   "assets": {
@@ -154,6 +161,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
   ]
 }

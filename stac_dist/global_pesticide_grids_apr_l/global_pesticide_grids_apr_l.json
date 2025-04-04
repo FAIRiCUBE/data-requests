@@ -5,16 +5,6 @@
   "properties": {
     "license": "CC-BY-SA-4.0",
     "description": "The Global Pesticide Grids (PEST-CHEMGRIDS), Version 1.01 contains 20 of the most-used pesticide active ingredients on 6 dominant crops and 4 aggregated crop classes at 5 arc-minute resolution (about 10 km at the equator), estimated in year 2015, and then projected to 2020 and 2025. To estimate the global application rates of specific active ingredients, spatial statistical methods were used to re-analyze the U.S. Geological Survey Pesticide National Synthesis Project (USGS/PNSP) and the Food and Agriculture Organization Corporate Statistical Database (FAOSTAT) pesticide databases, along with other public inventories including globally gridded data of soil physical properties, hydro-climatic variables, agricultural quantities, and socioeconomic indices.",
-    "providers": [
-      {
-        "organization_name": "NASA Socioeconomic Data and Applications Center (SEDAC)",
-        "name": "NASA Socioeconomic Data and Applications Center (SEDAC)",
-        "comments": "For download create account/regsiter (free)",
-        "doc_link": "https://sedac.ciesin.columbia.edu/data/set/ferman-v1-pest-chemgrids-v1-01/docs",
-        "organization_email": "ciesin.info@ciesin.columbia.edu",
-        "project_purpose": "To provide a global gridded data set of commonly-used agricultural pesticides crucial to assess human and ecosystem exposure to potential toxicants for environmental modeling, assessment of agricultural chemical contamination and risk analysis, and other related research at global, regional, national, and local levels."
-      }
-    ],
     "dataSource": "NASA Socioeconomic Data and Applications Center (SEDAC): https://doi.org/10.7927/weq9-pv30",
     "cube:dimensions": {
       "x": {
@@ -1674,7 +1664,21 @@
     "data_quality": "See global_pesticide_grids_qi datacube",
     "apis": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
     "use_case_NHM": "1",
-    "platform": "Rasdaman"
+    "platform": "Rasdaman",
+    "contacts": [
+      {
+        "name": "NASA Socioeconomic Data and Applications Center (SEDAC)",
+        "organization": "NASA Socioeconomic Data and Applications Center (SEDAC)",
+        "emails": [
+          {
+            "value": "ciesin.info@ciesin.columbia.edu",
+            "role": "work"
+          }
+        ],
+        "project_purpose": "To provide a global gridded data set of commonly-used agricultural pesticides crucial to assess human and ecosystem exposure to potential toxicants for environmental modeling, assessment of agricultural chemical contamination and risk analysis, and other related research at global, regional, national, and local levels.",
+        "comments": "For download create account/regsiter (free)"
+      }
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -1727,6 +1731,11 @@
       "rel": "service",
       "type": "text/html",
       "title": "Link to the rasdaman web application to access and process gridded data"
+    },
+    {
+      "title": "NASA Socioeconomic Data and Applications Center (SEDAC)",
+      "href": "https://sedac.ciesin.columbia.edu/data/set/ferman-v1-pest-chemgrids-v1-01/docs",
+      "rel": "cite-as"
     }
   ],
   "assets": {
@@ -1747,7 +1756,8 @@
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
   ],
   "wasDerivedFrom": "https://sedac.ciesin.columbia.edu/downloads/data/ferman-v1/ferman-v1-pest-chemgrids-v1-01/ferman-v1-pest-chemgrids-v1-01-geotiff.zip"
 }
