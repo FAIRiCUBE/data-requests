@@ -54,7 +54,17 @@
         "band_name": "Gray",
         "data_type": "int8",
         "definition": "f",
-        "description": "test editing"
+        "description": "test editing",
+        "classification:classes": [
+          {
+            "name": "cloud",
+            "value": "0"
+          },
+          {
+            "name": "forest",
+            "value": "1"
+          }
+        ]
       }
     ],
     "title": "test item",
@@ -166,6 +176,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/example-links/v0.0.1/schema.json",
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
   ]
 }
