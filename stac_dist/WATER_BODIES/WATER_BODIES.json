@@ -4,7 +4,7 @@
   "id": "WATER_BODIES",
   "properties": {
     "datasource_type": "byoc-62bf6f6a-c584-48a8-a739-0bc60efee54a",
-    "raster:bands": [
+    "bands": [
       {
         "description": "Main Water Bodies detection layer showing water pixels and non-water pixels",
         "name": "WB",
