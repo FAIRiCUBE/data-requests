@@ -50,7 +50,7 @@
       }
     },
     "datetime": "2021-02-17T15:13:53Z",
-    "raster:bands": [
+    "bands": [
       {
         "band_name": "tot_p",
         "unit": "1/km2",

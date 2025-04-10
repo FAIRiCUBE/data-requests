@@ -4,7 +4,7 @@
   "id": "SEA_ICE_INDEX",
   "properties": {
     "datasource_type": "byoc-10549890-13bb-4ec5-8ae0-df387bd0b785",
-    "raster:bands": [
+    "bands": [
       {
         "description": "percentage of ice cover for cells with more than 15 percent ice cover",
         "name": "concentration",

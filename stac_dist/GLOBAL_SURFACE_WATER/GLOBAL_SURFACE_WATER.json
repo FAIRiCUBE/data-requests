@@ -4,7 +4,7 @@
   "id": "GLOBAL_SURFACE_WATER",
   "properties": {
     "datasource_type": "byoc-9a525f12-33b6-424e-a0f2-d567eec0f277",
-    "raster:bands": [
+    "bands": [
       {
         "description": "Changes in water occurrence between two epochs, the first ranging from 1984 to 1999 and the second covering 2000 to 2021.",
         "name": "change",

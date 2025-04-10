@@ -49,7 +49,7 @@
       }
     },
     "datetime": "2024-07-17T10:46:42Z",
-    "raster:bands": [
+    "bands": [
       {
         "band_name": "vineyard area [% cell cover] ",
         "unit": "%",

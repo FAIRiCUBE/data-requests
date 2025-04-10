@@ -47,7 +47,7 @@
         "type": "spatial"
       }
     },
-    "raster:bands": [
+    "bands": [
       {
         "band_name": "tcd",
         "unit": "1",

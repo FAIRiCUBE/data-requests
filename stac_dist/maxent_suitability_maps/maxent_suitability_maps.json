@@ -40,7 +40,7 @@
         "type": "spatial"
       }
     },
-    "raster:bands": [
+    "bands": [
       {
         "band_name": "suitability index",
         "data_type": "float32",

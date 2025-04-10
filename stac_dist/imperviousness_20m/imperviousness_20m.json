@@ -51,7 +51,7 @@
         "type": "spatial"
       }
     },
-    "raster:bands": [
+    "bands": [
       {
         "band_name": "imperviousness",
         "unit": "1",

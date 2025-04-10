@@ -4,7 +4,7 @@
   "id": "MAPZEN_DEM",
   "properties": {
     "datasource_type": "dem",
-    "raster:bands": [
+    "bands": [
       {
         "description": "Heights in meters",
         "name": "DEM",

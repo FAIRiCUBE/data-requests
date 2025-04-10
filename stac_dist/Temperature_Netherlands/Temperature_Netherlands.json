@@ -53,7 +53,7 @@
         "unit": "month"
       }
     },
-    "raster:bands": [
+    "bands": [
       {
         "band_name": "temperature",
         "unit": "C",

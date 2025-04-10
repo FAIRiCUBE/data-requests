@@ -56,7 +56,7 @@
         "interpolation": ""
       }
     },
-    "raster:bands": [
+    "bands": [
       {
         "band_name": "sealing_degree",
         "unit": "% fo 1ha cell",

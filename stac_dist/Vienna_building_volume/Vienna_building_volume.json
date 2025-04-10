@@ -56,7 +56,7 @@
         "unit": "year"
       }
     },
-    "raster:bands": [
+    "bands": [
       {
         "band_name": "building volume indicator",
         "unit": "indicator",

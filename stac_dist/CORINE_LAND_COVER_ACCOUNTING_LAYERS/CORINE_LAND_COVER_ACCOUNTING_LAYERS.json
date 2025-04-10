@@ -4,7 +4,7 @@
   "id": "CORINE_LAND_COVER_ACCOUNTING_LAYERS",
   "properties": {
     "datasource_type": "byoc-4c5441a6-6040-4dc4-a392-c1317bbd1031",
-    "raster:bands": [
+    "bands": [
       {
         "description": "Corine Land Cover Accounting Layer",
         "name": "CLC_ACC",

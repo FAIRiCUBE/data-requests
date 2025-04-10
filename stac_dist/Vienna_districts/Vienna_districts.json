@@ -52,7 +52,7 @@
         "unit": "year"
       }
     },
-    "raster:bands": [
+    "bands": [
       {
         "band_name": "district id",
         "unit": "ID",

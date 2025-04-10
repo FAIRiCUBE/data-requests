@@ -40,7 +40,7 @@
       }
     },
     "datetime": null,
-    "raster:bands": [
+    "bands": [
       {
         "band_name": "u10",
         "unit": "m/s",

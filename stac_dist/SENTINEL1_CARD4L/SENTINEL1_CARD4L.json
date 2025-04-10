@@ -4,7 +4,7 @@
   "id": "SENTINEL1_CARD4L",
   "properties": {
     "datasource_type": "byoc-608bffb4-5012-4489-abec-71e134a7a609",
-    "raster:bands": [
+    "bands": [
       {
         "description": "Linear backscatter intensity in VV polarization.",
         "name": "VV",

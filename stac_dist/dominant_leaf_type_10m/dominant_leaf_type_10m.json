@@ -46,7 +46,7 @@
         "type": "spatial"
       }
     },
-    "raster:bands": [
+    "bands": [
       {
         "band_name": "dlt",
         "unit": "1",

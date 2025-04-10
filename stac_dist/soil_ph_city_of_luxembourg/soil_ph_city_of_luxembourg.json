@@ -49,7 +49,7 @@
         "unit": "year"
       }
     },
-    "raster:bands": [
+    "bands"
       {
         "band_name": "pH",
         "unit": "pH",

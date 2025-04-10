@@ -50,7 +50,7 @@
         "unit": "y"
       }
     },
-    "raster:bands": [
+    "bands": [
       {
         "band_name": "land cover",
         "unit": "categorical",

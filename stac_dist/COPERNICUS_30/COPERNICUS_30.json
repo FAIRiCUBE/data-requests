@@ -4,7 +4,7 @@
   "id": "COPERNICUS_30",
   "properties": {
     "datasource_type": "dem",
-    "raster:bands": [
+    "bands": [
       {
         "description": "Orthometric heights in meters",
         "name": "DEM",

@@ -58,7 +58,7 @@
         "interpolation": ""
       }
     },
-    "raster:bands": [
+    "bands": [
       {
         "band_name": "Tree Cover Density (TCD).[%]",
         "unit": "%",

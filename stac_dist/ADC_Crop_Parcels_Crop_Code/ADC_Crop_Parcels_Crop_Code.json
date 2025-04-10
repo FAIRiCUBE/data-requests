@@ -54,7 +54,7 @@
         "unit": "year"
       }
     },
-    "raster:bands": [
+    "bands": [
       {
         "band_name": "adc",
         "unit": "1",

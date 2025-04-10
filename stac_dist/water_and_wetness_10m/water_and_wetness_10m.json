@@ -46,7 +46,7 @@
         "type": "spatial"
       }
     },
-    "raster:bands": [
+    "bands": [
       {
         "band_name": "waw",
         "unit": "1",

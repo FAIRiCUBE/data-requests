@@ -46,7 +46,7 @@
         "type": "spatial"
       }
     },
-    "raster:bands": [
+    "bands": [
       {
         "band_name": "Alfalfa_2_4_db",
         "data_type": "float32",

@@ -50,7 +50,7 @@
         "unit": "month"
       }
     },
-    "raster:bands": [
+    "bands"
       {
         "band_name": "precipitation",
         "unit": "mm/month",

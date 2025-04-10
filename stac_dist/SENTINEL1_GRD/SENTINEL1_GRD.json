@@ -193,7 +193,7 @@
       "VH",
       "dataMask"
     ],
-    "raster:bands": [
+    "bands": [
       {
         "name": "VV",
         "description": "Single co-polarization, vertical transmit/vertical receive",

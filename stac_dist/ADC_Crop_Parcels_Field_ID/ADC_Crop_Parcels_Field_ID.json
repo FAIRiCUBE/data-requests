@@ -53,7 +53,7 @@
         "unit": "year"
       }
     },
-    "raster:bands": [
+    "bands": [
       {
         "unit": "1",
         "data_type": "uint16",

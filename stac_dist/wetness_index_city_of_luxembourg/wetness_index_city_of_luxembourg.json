@@ -50,7 +50,7 @@
         "unit": "year"
       }
     },
-    "raster:bands": [
+    "bands": [
       {
         "band_name": "Topographic wetness index",
         "unit": "continuous",

@@ -54,7 +54,7 @@
         "interpolation": "-"
       }
     },
-    "raster:bands": [
+    "bands": [
       {
         "band_name": "Land use",
         "unit": "categorical",
