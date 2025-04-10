@@ -46,7 +46,7 @@
         "type": "spatial"
       }
     },
-    "bands"
+     "bands":[
       {
         "band_name": "swf",
         "unit": "1",

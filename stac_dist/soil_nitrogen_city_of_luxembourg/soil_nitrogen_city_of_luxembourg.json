@@ -49,7 +49,7 @@
         "unit": "years"
       }
     },
-    "bands"
+     "bands":[
       {
         "band_name": "soil nitrogen ",
         "unit": "g/kg",

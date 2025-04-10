@@ -62,7 +62,7 @@
         "interpolation": ""
       }
     },
-    "bands"
+     "bands":[
       {
         "band_name": "shadow index",
         "unit": "continuous",
