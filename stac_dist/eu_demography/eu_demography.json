@@ -64,7 +64,7 @@
     "title": "European population density grid",
     "datasource_type": "grid",
     "keywords": "population, census, population distribution, demography, society",
-    "area_cover": "EU-27 + EFTA countries + Western Balkans + UK (38 countries)",
+    "region": "EU-27 + EFTA countries + Western Balkans + UK (38 countries)",
     "documentation": "Batista e Silva F, Dijkstra L, Poelman H (2021) The JRC-GEOSTAT 2018 population grid. JRC Technical Report.",
     "proj:code": "EPSG:3035",
     "start_datetime": "2006-01-01T00:00Z",

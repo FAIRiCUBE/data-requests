@@ -65,7 +65,7 @@
     ],
     "title": "ADC - Arable Land Markers No NDVI",
     "datasource_type": "Raster",
-    "area_cover": "Central Netherlands",
+    "region": "Central Netherlands",
     "documentation": "https://doi.org/10.18174/455759",
     "proj:code": "EPSG:28992",
     "start_datetime": "2018-01-01T12:00Z",

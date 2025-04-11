@@ -71,7 +71,7 @@
     ],
     "title": "Vienna imperviousness density 2018 [100m]",
     "datasource_type": "GeoTIFF",
-    "area_cover": "415km2",
+    "region": "415km2",
     "documentation": "",
     "proj:code": "EPSG:31256",
     "start_datetime": "2017-01-01T00:00Z",

@@ -61,7 +61,7 @@
     "title": "High Resolution Layer - Dominant Leaf Type 2012-2015",
     "datasource_type": "grid",
     "keywords": "leaf, land cover, forest, landscape alteration, land use, forest management",
-    "area_cover": "EEA-38+UK",
+    "region": "EEA-38+UK",
     "proj:code": "EPSG:3035",
     "start_datetime": "2012-01-01T00:00Z",
     "end_datetime": "2015-01-01T00:00Z",

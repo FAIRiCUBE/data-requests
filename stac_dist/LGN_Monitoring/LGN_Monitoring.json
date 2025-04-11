@@ -67,7 +67,7 @@
     ],
     "title": "LGN Monitoring",
     "datasource_type": "Raster",
-    "area_cover": "Central Netherlands",
+    "region": "Central Netherlands",
     "documentation": "https://lgn.nl/documentatie",
     "proj:code": "EPSG:28992",
     "start_datetime": "2012-01-01T12:00Z",

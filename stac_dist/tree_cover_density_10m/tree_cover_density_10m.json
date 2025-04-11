@@ -60,7 +60,7 @@
     "title": "High Resolution Layer - Tree Cover Density 2018",
     "datasource_type": "grid",
     "keywords": "land use, land cover, landscape alteration, tree, forest management",
-    "area_cover": "EEA39",
+    "region": "EEA39",
     "documentation": "European Union's Copernicus Land Monitoring Service information; Source dataset DOI links: https://doi.org/10.2909/486f77da-d605-423e-93a9-680760ab6791",
     "proj:code": "EPSG:3035",
     "start_datetime": "2018-03-01T00:00:00.000Z",

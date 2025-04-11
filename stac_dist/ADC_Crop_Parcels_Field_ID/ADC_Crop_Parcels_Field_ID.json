@@ -64,7 +64,7 @@
     ],
     "title": "ADC - Crop Parcels Field ID",
     "datasource_type": "Raster",
-    "area_cover": "Central Netherlands",
+    "region": "Central Netherlands",
     "documentation": "https://doi.org/10.18174/455759",
     "proj:code": "EPSG:28992",
     "start_datetime": "2014-01-01T12:00Z",

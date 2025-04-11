@@ -64,7 +64,7 @@
     "title": "Vienna vineyard area [100m]",
     "datasource_type": "WFS (GML) ",
     "keywords": "vineyards",
-    "area_cover": "415km2",
+    "region": "415km2",
     "proj:code": "EPSG:31256",
     "start_datetime": "2024-01-01T00:00Z",
     "end_datetime": "2024-12-31T00:00Z",

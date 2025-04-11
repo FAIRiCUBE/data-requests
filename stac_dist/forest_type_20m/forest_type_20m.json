@@ -61,7 +61,7 @@
     "title": "High Resolution Layer - Forest Type 2012-2015",
     "datasource_type": "grid",
     "keywords": "forest management, landscape alteration, land use, land cover",
-    "area_cover": "EEA39",
+    "region": "EEA39",
     "documentation": "European Union's Copernicus Land Monitoring Service information; Source dataset DOI links: https://doi.org/10.2909/5afeffa4-ccda-4ef9-a7ef-637cb7310f58, https://doi.org/10.2909/ab0e6d0b-699c-473d-bd5e-e5c634c8f99c",
     "proj:code": "EPSG:3035",
     "start_datetime": "2011-01-01T00:00Z",

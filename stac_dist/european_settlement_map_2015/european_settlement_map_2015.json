@@ -60,7 +60,7 @@
     "title": "European Settlement Map 2015",
     "datasource_type": "grid",
     "keywords": "land use, land cover, human settlement, urban area, green space, building typology, built-up areas, copernicus, esm, ghsl, pan-european, remote sensing, classification",
-    "area_cover": "EEA39",
+    "region": "EEA39",
     "documentation": "Corbane, Christina; Sabo, Filip (2019): ESM R2019 - European Settlement Map from Copernicus Very High Resolution data for reference year 2015. European Commission, Joint Research Centre (JRC) [Dataset] doi: 10.2905/8BD2B792-CC33-4C11-AFD1-B8DD60B44F3B PID: http://data.europa.eu/89h/8bd2b792-cc33-4c11-afd1-b8dd60b44f3b",
     "proj:code": "EPSG:3035",
     "start_datetime": "2014-01-01T00:00Z",

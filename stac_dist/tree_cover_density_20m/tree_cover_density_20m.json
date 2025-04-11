@@ -61,7 +61,7 @@
     "title": "High Resolution Layer - Tree Cover Density 2012-2015",
     "datasource_type": "grid",
     "keywords": "land use, land cover, landscape alteration, tree, forest management",
-    "area_cover": "EEA39",
+    "region": "EEA39",
     "documentation": "European Union's Copernicus Land Monitoring Service information; Source dataset DOI links: https://doi.org/10.2909/91687ef2-f907-4f84-81f7-c9c81980c306, https://doi.org/10.2909/8bfbda74-7b62-4659-96dd-86600ea425a2",
     "proj:code": "EPSG:3035",
     "start_datetime": "2011-01-01T00:00:00.000Z",

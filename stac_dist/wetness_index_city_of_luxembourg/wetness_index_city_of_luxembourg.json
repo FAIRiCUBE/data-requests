@@ -62,7 +62,7 @@
     ],
     "title": "Topographic Wetness Index of the City of Luxembourg",
     "datasource_type": "grid",
-    "area_cover": "5171.66 ha",
+    "region": "5171.66 ha",
     "documentation": "https://data.public.lu/fr/datasets/lidar-2019-modele-numerique-de-terrain-mnt/",
     "proj:code": "EPSG:2169",
     "start_datetime": "2019-01-01T00:00Z",

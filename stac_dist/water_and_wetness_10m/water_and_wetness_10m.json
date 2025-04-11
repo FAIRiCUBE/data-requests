@@ -61,7 +61,7 @@
     "title": "High Resolution Layer - Water and Wetness 2018",
     "datasource_type": "grid",
     "keywords": "forest management, landscape alteration, land use, water, land cover",
-    "area_cover": "EEA39",
+    "region": "EEA39",
     "documentation": "European Union's Copernicus Land Monitoring Service information; Source dataset DOI links: https://doi.org/10.2909/7992f641-bf77-47b7-b0c1-74fc832b78b1",
     "proj:code": "EPSG:3035",
     "start_datetime": "2012-01-01T00:00Z",

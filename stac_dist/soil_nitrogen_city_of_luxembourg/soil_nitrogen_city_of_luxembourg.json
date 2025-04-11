@@ -61,7 +61,7 @@
     ],
     "title": " Soil Nitrogen properties of the city of Luxembourg",
     "datasource_type": "vector",
-    "area_cover": "5171.66 ha",
+    "region": "5171.66 ha",
     "documentation": "https://www.sciencedirect.com/science/article/pii/S0016706119304768",
     "proj:code": "EPSG:2169",
     "start_datetime": "2009-01-01T00:00Z",
