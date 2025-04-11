@@ -1,0 +1,119 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "properties": {
+    "license": null,
+    "description": null,
+    "area_cover": "unclear",
+    "crs": "EPSG:4326",
+    "providers": [
+      {
+        "organization": "Taxodros",
+        "organization_name": "Gerhard B\u00e4chli",
+        "organization_email": null,
+        "orcid_id": null,
+        "project_purpose": null,
+        "doc_link": null,
+        "comments": null
+      }
+    ],
+    "dataSource": "TaxoDros Search by Country/Region (uzh.ch)",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "type": "spatial",
+        "unit_of_measure": null,
+        "interpolation": null
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "type": "spatial",
+        "unit_of_measure": null,
+        "interpolation": null
+      },
+      "z": {
+        "axis": "z",
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "type": "spatial",
+        "unit_of_measure": null,
+        "interpolation": null
+      },
+      "time": {
+        "extent": [
+          "1975-01-01T00:00:00Z",
+          "2023-01-01T00:00:00Z"
+        ],
+        "type": "temporal",
+        "unit_of_measure": null,
+        "interpolation": null
+      }
+    },
+    "datetime": "2000-01-01T00:00:00Z",
+    "raster:bands": [
+      {
+        "band_name": null,
+        "unit": null,
+        "nodata": null,
+        "data_type": null,
+        "definition": null,
+        "description": null,
+        "category_list": null,
+        "comment": null,
+        "interpolation": null
+      }
+    ],
+    "title": "Distribution data of Drosophila",
+    "datasource_type": "list",
+    "personalData": null,
+    "Provenance_name": "https://www.taxodros.uzh.ch/search/dist_sreg.php",
+    "preprocessing": null,
+    "documentation": null,
+    "keywords": null,
+    "use_case_S4E": null,
+    "use_case_WER": null,
+    "use_case_NHM_2": null,
+    "use_case_NILU": null,
+    "use_case_NHM": 1,
+    "platform": "Rasdaman",
+    "ingestion_status": "on hold: cube model + data needed from NHM"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": []
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "id": "Distribution_data_of_Drosophila"
+}
