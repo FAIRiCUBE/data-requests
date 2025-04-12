@@ -49,7 +49,7 @@
         "unit": "year"
       }
     },
-     "bands":[
+    "bands": [
       {
         "band_name": "pH",
         "unit": "pH",
@@ -71,7 +71,6 @@
     "datetime": "2024-09-18T13:52Z",
     "modification": null,
     "provision": null,
-    "use_case_S4E": "1",
     "platform": "Eox",
     "contacts": [
       {
@@ -90,7 +89,10 @@
         "organization": "JOINT RESEARCH CENTRE European Soil Data Centre (ESDAC)"
       }
     ],
-    "wasDerivedFrom": "https://esdac.jrc.ec.europa.eu/content/chemical-properties-european-scale-based-lucas-topsoil-data#tabs-0-description=0"
+    "wasDerivedFrom": "https://esdac.jrc.ec.europa.eu/content/chemical-properties-european-scale-based-lucas-topsoil-data#tabs-0-description=0",
+    "project:use_cases": [
+      "S4E"
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -172,11 +174,11 @@
     49.65484833240523
   ],
   "stac_extensions": [
-
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/example-links/v0.0.1/schema.json",
     "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
   ]
 }

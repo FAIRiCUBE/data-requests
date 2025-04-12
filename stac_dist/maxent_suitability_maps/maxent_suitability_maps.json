@@ -55,7 +55,6 @@
     "datetime": "2025-03-28T10:38:47Z",
     "modification": "2025-03-28T10:38:58Z",
     "provision": "2025-03-28T10:38:56Z",
-    "use_case_S4E": "1",
     "platform": "Eox",
     "contacts": [
       {
@@ -69,6 +68,9 @@
         ],
         "project_purpose": "Urban adaptation to climate change"
       }
+    ],
+    "project:use_cases": [
+      "S4E"
     ]
   },
   "geometry": {
@@ -244,9 +246,9 @@
     49.677685246874994
   ],
   "stac_extensions": [
-
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/example-links/v0.0.1/schema.json",
-    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
   ]
 }

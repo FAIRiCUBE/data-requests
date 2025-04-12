@@ -73,9 +73,11 @@
     "datetime": null,
     "modification": null,
     "provision": null,
-    "use_case_WER": "1",
     "ingestion_status": "completed",
-    "platform": "Both"
+    "platform": "Both",
+    "project:use_cases": [
+      "WER"
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -145,8 +147,8 @@
     52.80691561255643
   ],
   "stac_extensions": [
-
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
   ]
 }

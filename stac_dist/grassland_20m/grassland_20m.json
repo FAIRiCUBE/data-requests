@@ -69,9 +69,6 @@
     "provenance_name": "https://land.copernicus.eu/en/products/high-resolution-layer-grassland/grassland-2015",
     "data_quality": "",
     "apis": "OGC WCS, WCPS, WSM, WMTS, OAPI-Coverages",
-    "use_case_S4E": "1",
-    "use_case_WER": "2",
-    "use_case_NHM": "2",
     "platform": "Rasdaman",
     "contacts": [
       {
@@ -84,6 +81,11 @@
           }
         ]
       }
+    ],
+    "project:use_cases": [
+      "S4E",
+      "WER",
+      "NHM"
     ]
   },
   "geometry": {
@@ -159,9 +161,9 @@
     58.95275109308057
   ],
   "stac_extensions": [
-
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
   ]
 }

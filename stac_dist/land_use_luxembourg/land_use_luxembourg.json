@@ -76,7 +76,6 @@
     "datetime": null,
     "modification": null,
     "provision": null,
-    "use_case_S4E": "1",
     "platform": "Eox",
     "contacts": [
       {
@@ -89,6 +88,9 @@
           }
         ]
       }
+    ],
+    "project:use_cases": [
+      "S4E"
     ]
   },
   "geometry": {
@@ -145,9 +147,9 @@
     50.182280867669625
   ],
   "stac_extensions": [
-
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
   ]
 }

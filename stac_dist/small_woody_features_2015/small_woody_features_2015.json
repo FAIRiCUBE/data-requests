@@ -46,7 +46,7 @@
         "type": "spatial"
       }
     },
-     "bands":[
+    "bands": [
       {
         "band_name": "swf",
         "unit": "1",
@@ -68,9 +68,6 @@
     "personalData": "none",
     "provenance_name": "https://land.copernicus.eu/en/products/high-resolution-layer-small-woody-features",
     "apis": "OGC WCS, WCPS, WSM, WMTS, OAPI-Coverages",
-    "use_case_S4E": "1",
-    "use_case_WER": "2",
-    "use_case_NHM": "2",
     "ingestion_status": "Completed",
     "platform": "Rasdaman",
     "contacts": [
@@ -84,6 +81,11 @@
           }
         ]
       }
+    ],
+    "project:use_cases": [
+      "S4E",
+      "WER",
+      "NHM"
     ]
   },
   "geometry": {
@@ -159,9 +161,9 @@
     59.04085474153828
   ],
   "stac_extensions": [
-
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
   ]
 }

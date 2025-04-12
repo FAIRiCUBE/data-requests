@@ -67,9 +67,6 @@
     "end_datetime": "2015-01-01T00:00Z",
     "provenance_name": "https://land.copernicus.eu/en/products/high-resolution-layer-dominant-leaf-type",
     "apis": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
-    "use_case_S4E": "1",
-    "use_case_WER": "2",
-    "use_case_NHM": "2",
     "ingestion_status": "Completed",
     "platform": "Rasdaman",
     "contacts": [
@@ -85,7 +82,12 @@
         "comments": "The production of the high resolution forest layers was coordinated by the European Environment Agency (EEA) in the frame of the EU Copernicus programme."
       }
     ],
-    "wasDerivedFrom": "https://land.copernicus.eu/en/products/high-resolution-layer-dominant-leaf-type/dominant-leaf-type-2012, https://land.copernicus.eu/en/products/high-resolution-layer-dominant-leaf-type/dominant-leaf-type-2015"
+    "wasDerivedFrom": "https://land.copernicus.eu/en/products/high-resolution-layer-dominant-leaf-type/dominant-leaf-type-2012, https://land.copernicus.eu/en/products/high-resolution-layer-dominant-leaf-type/dominant-leaf-type-2015",
+    "project:use_cases": [
+      "S4E",
+      "WER",
+      "NHM"
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -160,10 +162,10 @@
     58.95275109308057
   ],
   "stac_extensions": [
-
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
   ]
 }

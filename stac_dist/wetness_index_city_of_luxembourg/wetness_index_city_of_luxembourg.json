@@ -74,9 +74,11 @@
     "datetime": "2019-01-01T00:00Z",
     "modification": null,
     "provision": null,
-    "use_case_S4E": "1",
     "platform": "Eox",
-    "wasDerivedFrom": "https://data.public.lu/fr/datasets/lidar-2019-modele-numerique-de-terrain-mnt/"
+    "wasDerivedFrom": "https://data.public.lu/fr/datasets/lidar-2019-modele-numerique-de-terrain-mnt/",
+    "project:use_cases": [
+      "S4E"
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -150,9 +152,9 @@
     49.677685246874994
   ],
   "stac_extensions": [
-
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
   ]
 }

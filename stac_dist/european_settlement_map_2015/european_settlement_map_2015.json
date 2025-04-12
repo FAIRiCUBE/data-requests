@@ -69,8 +69,6 @@
     "provenance_name": "https://www.eea.europa.eu/en/datahub/datahubitem-view/42783031-34d5-4b38-b9ba-a0783723053c",
     "preprocessing": "The ESM_2015 product exploits the Copernicus VHR_IMAGE_2015 dataset made of satellite images Pleiades, Deimos-02, WorldView-2, WorldView-3, GeoEye-01 and Spot 6/7 ranging from 2014 to 2016.",
     "apis": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
-    "use_case_S4E": "1",
-    "use_case_NHM": "1",
     "ingestion_status": "Completed",
     "platform": "Rasdaman",
     "contacts": [
@@ -85,7 +83,11 @@
         ]
       }
     ],
-    "wasDerivedFrom": "https://human-settlement.emergency.copernicus.eu/download.php?ds=ESM"
+    "wasDerivedFrom": "https://human-settlement.emergency.copernicus.eu/download.php?ds=ESM",
+    "project:use_cases": [
+      "S4E",
+      "NHM"
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -155,10 +157,10 @@
     59.05367788941702
   ],
   "stac_extensions": [
-
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
   ]
 }

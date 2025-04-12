@@ -69,8 +69,6 @@
     "provenance_name": "https://data.jrc.ec.europa.eu/dataset/192530fc-3d09-4740-8c1d-d1e601cdfdcc",
     "preprocessing": "ESM 2018 exploits the Copernicus VHR_IMAGE_2018 dataset made of satellite images Pleiades 1A & 1B, SuperView-1, Kompsat-3/3A and PlanetScope with backup missions of Spot-6/7, TripleSat and Deimos-2 ranging from 2017 to 2019.",
     "apis": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
-    "use_case_S4E": "1",
-    "use_case_NHM": "1",
     "platform": "Rasdaman",
     "contacts": [
       {
@@ -84,7 +82,11 @@
         ]
       }
     ],
-    "wasDerivedFrom": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/ESM_BUILT_VHR2018_Europe_R2020/ESM_BUILT_VHR2018_Europe_R2020_3035_02/LATEST/Data/GeoTIFF/"
+    "wasDerivedFrom": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/ESM_BUILT_VHR2018_Europe_R2020/ESM_BUILT_VHR2018_Europe_R2020_3035_02/LATEST/Data/GeoTIFF/",
+    "project:use_cases": [
+      "S4E",
+      "NHM"
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -154,10 +156,10 @@
     59.05367788941702
   ],
   "stac_extensions": [
-
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
   ]
 }

@@ -82,7 +82,6 @@
     "access_control": "no access control",
     "modification": null,
     "provision": "2024-04-15T13:38:52Z",
-    "use_case_S4E": "1",
     "platform": "Eox",
     "contacts": [
       {
@@ -92,7 +91,10 @@
         "comments": "Use Case 1 team processed and consolidated data from different data sources into this unique dataset."
       }
     ],
-    "wasDerivedFrom": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/data/city_features_collection"
+    "wasDerivedFrom": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/data/city_features_collection",
+    "project:use_cases": [
+      "S4E"
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -148,10 +150,10 @@
     65.564344
   ],
   "stac_extensions": [
-
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
   ]
 }

@@ -82,9 +82,6 @@
     "apis": "OGC WCS, WCPS, WMS, WMTS",
     "modification": null,
     "provision": null,
-    "use_case_S4E": 1,
-    "use_case_WER": 2,
-    "use_case_NHM": 1,
     "use_case_NILU": null,
     "use_case_NHM_2": null,
     "ingestion_status": "Completed, year as integer, (1990,2000,2006,2012,2018)",
@@ -96,7 +93,12 @@
         "comments": "The present 100m raster dataset is the 2018 CLC status layer modified for the purpose of consistent statistical analysis in the land cover change accounting system at EEA.\n\nCORINE Land Cover (CLC) data are produced from 1986 for European (EEA member or cooperating) countries. Altogether five mapping inventories were implemented in this period, producing five status layers (CLC1990, CLC2000, CLC2006, CLC2012, CLC2018) and four CLC-Change (CLCC) layers for the corresponding periods (1990-2000, 2000-2006, 2006-2012, 2012-2018). Pan-European CLC and CLCC data are available as vector and raster products."
       }
     ],
-    "wasDerivedFrom": "https://land.copernicus.eu/en/products/corine-land-cover"
+    "wasDerivedFrom": "https://land.copernicus.eu/en/products/corine-land-cover",
+    "project:use_cases": [
+      "S4E",
+      "WER",
+      "NHM"
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -171,10 +173,10 @@
     58.95275109308057
   ],
   "stac_extensions": [
-
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
   ]
 }

@@ -48,7 +48,7 @@
         "type": "spatial"
       }
     },
-     "bands":[
+    "bands": [
       {
         "band_name": "Alfalfa_2_4_d",
         "data_type": "float32",
@@ -1663,7 +1663,6 @@
     "preprocessing": "To estimate the global application rates of specific active ingredients, spatial statistical methods were used to re-analyze the U.S. Geological Survey Pesticide National Synthesis Project (USGS/PNSP) and the Food and Agriculture Organization Corporate Statistical Database (FAOSTAT) pesticide databases, along with other public inventories including globally gridded data of soil physical properties, hydro-climatic variables, agricultural quantities, and socioeconomic indices.",
     "data_quality": "See global_pesticide_grids_qi datacube",
     "apis": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
-    "use_case_NHM": "1",
     "platform": "Rasdaman",
     "contacts": [
       {
@@ -1679,7 +1678,10 @@
         "comments": "For download create account/regsiter (free)"
       }
     ],
-    "wasDerivedFrom": "https://sedac.ciesin.columbia.edu/downloads/data/ferman-v1/ferman-v1-pest-chemgrids-v1-01/ferman-v1-pest-chemgrids-v1-01-geotiff.zip"
+    "wasDerivedFrom": "https://sedac.ciesin.columbia.edu/downloads/data/ferman-v1/ferman-v1-pest-chemgrids-v1-01/ferman-v1-pest-chemgrids-v1-01-geotiff.zip",
+    "project:use_cases": [
+      "NHM"
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -1754,10 +1756,10 @@
     84.04083506266277
   ],
   "stac_extensions": [
-
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
   ]
 }

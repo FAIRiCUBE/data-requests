@@ -75,8 +75,6 @@
     "apis": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
     "modification": null,
     "provision": null,
-    "use_case_NHM": "two",
-    "use_case_NHM_2": "2",
     "ingestion_status": "Completed: Version 2021 (16 June 2024), Version 2018 (13 April 2021), Version 2011 (1 February 2016), Version 2006 (23 January 2012)",
     "platform": "Rasdaman",
     "contacts": [
@@ -91,7 +89,11 @@
         "project_purpose": "methodological development; implementation."
       }
     ],
-    "wasDerivedFrom": "https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution/geostat"
+    "wasDerivedFrom": "https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution/geostat",
+    "project:use_cases": [
+      "NHM",
+      "NHM_2"
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -171,10 +173,10 @@
     64.35121892200097
   ],
   "stac_extensions": [
-
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
   ]
 }

@@ -91,8 +91,6 @@
     "datetime": "2024-07-17T09:52:11Z",
     "modification": "2024-07-17T09:52:18Z",
     "provision": "2024-07-17T09:52:16Z",
-    "use_case_S4E": "1",
-    "use_case_NHM_2": "1",
     "ingestion_status": "",
     "platform": "Eox",
     "contacts": [
@@ -109,7 +107,11 @@
       }
     ],
     "wasDerivedFrom": "https://land.copernicus.eu/en/products/high-resolution-layer-tree-cover-density/tree-cover-density-2018#Download",
-    "wasGeneratedBy": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/notebooks/dev/f06_pre_processing/Vienna_protected_areas_100m.ipynb"
+    "wasGeneratedBy": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/notebooks/dev/f06_pre_processing/Vienna_protected_areas_100m.ipynb",
+    "project:use_cases": [
+      "S4E",
+      "NHM_2"
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -193,10 +195,10 @@
     48.32420866274977
   ],
   "stac_extensions": [
-
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
   ]
 }

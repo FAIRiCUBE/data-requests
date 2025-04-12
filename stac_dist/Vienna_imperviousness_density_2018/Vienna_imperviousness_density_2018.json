@@ -89,8 +89,6 @@
     "datetime": "2024-07-17T09:30:04Z",
     "modification": "2024-07-17T09:30:11Z",
     "provision": "2024-07-17T09:30:08Z",
-    "use_case_S4E": "1",
-    "use_case_NHM_2": "1",
     "ingestion_status": "",
     "platform": "Eox",
     "contacts": [
@@ -107,7 +105,11 @@
       }
     ],
     "wasDerivedFrom": "https://land.copernicus.eu/en/products/high-resolution-layer-imperviousness/imperviousness-density-2018#Download",
-    "wasGeneratedBy": ""
+    "wasGeneratedBy": "",
+    "project:use_cases": [
+      "S4E",
+      "NHM_2"
+    ]
   },
   "geometry": {
     "type": "Polygon",
@@ -176,10 +178,10 @@
     48.324042510805384
   ],
   "stac_extensions": [
-
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
   ]
 }

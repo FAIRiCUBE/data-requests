@@ -84,7 +84,6 @@
     "modification": null,
     "provision": null,
     "use_case_S4E": null,
-    "use_case_WER": 1,
     "use_case_NHM": null,
     "use_case_NILU": null,
     "use_case_NHM_2": null,
@@ -96,6 +95,9 @@
         "organization": "WENR",
         "comments": "download via email; preprocessing by WENR to unify land use categories (which change over years)"
       }
+    ],
+    "project:use_cases": [
+      "WER"
     ]
   },
   "geometry": {
@@ -171,9 +173,9 @@
     53.59620050977796
   ],
   "stac_extensions": [
-
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
   ]
 }
