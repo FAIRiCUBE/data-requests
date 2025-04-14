@@ -72,7 +72,7 @@
     "personalData": "https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution#GEOSTAT%202006%20grid%20dataset",
     "provenance_name": "https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution/geostat",
     "preprocessing": "Rasterization of CSV data: https://github.com/FAIRiCUBE/data-requests-issue-archive/issues/22#issuecomment-2244327198",
-    "apis": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
+    "API": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
     "modification": null,
     "provision": null,
     "ingestion_status": "Completed: Version 2021 (16 June 2024), Version 2018 (13 April 2021), Version 2011 (1 February 2016), Version 2006 (23 January 2012)",

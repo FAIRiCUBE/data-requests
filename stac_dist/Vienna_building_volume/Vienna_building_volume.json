@@ -75,7 +75,7 @@
     "end_datetime": "2024-12-31T00:00Z",
     "provenance_name": "data.gv.at ",
     "preprocessing": " The map shows the building volume (building footprint x avg. building height) as a normalized indicator 0-1",
-    "apis": "AWS-S3 API",
+    "API": "AWS-S3 API",
     "access_control": "fairicube account required ",
     "datetime": "2024-07-17T10:39:35Z",
     "modification": "2024-07-17T10:39:39Z",

@@ -67,7 +67,7 @@
     "end_datetime": "2015-12-31T23:59:59.999Z",
     "personalData": "none",
     "provenance_name": "https://land.copernicus.eu/en/products/high-resolution-layer-water-and-wetness",
-    "apis": "OGC WCS, WCPS, WSM, WMTS, OAPI-Coverages",
+    "API": "OGC WCS, WCPS, WSM, WMTS, OAPI-Coverages",
     "ingestion_status": "Completed",
     "platform": "Rasdaman",
     "contacts": [

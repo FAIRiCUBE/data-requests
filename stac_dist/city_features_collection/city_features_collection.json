@@ -78,7 +78,7 @@
     "end_datetime": "2024-04-18T00:00Z",
     "personalData": "no personal data",
     "preprocessing": "Refer to the codebook for a complete description.",
-    "apis": "No API. The dataset can be downloaded from Github or Zenodo, or the github repository (including example Notebooks) can be cloned",
+    "API": "No API. The dataset can be downloaded from Github or Zenodo, or the github repository (including example Notebooks) can be cloned",
     "access_control": "no access control",
     "modification": null,
     "provision": "2024-04-15T13:38:52Z",

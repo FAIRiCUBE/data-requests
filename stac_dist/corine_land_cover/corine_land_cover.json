@@ -79,7 +79,7 @@
     "personalData": null,
     "provenance_name": "European Union's Copernicus Land Monitoring Service",
     "preprocessing": null,
-    "apis": "OGC WCS, WCPS, WMS, WMTS",
+    "API": "OGC WCS, WCPS, WMS, WMTS",
     "modification": null,
     "provision": null,
     "use_case_NILU": null,

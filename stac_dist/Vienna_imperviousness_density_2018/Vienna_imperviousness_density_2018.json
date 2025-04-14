@@ -83,7 +83,7 @@
     "data_quality": "",
     "quality_control": "",
     "metadata_standards": "",
-    "apis": "AWS-S3 API",
+    "API": "AWS-S3 API",
     "distributions": "",
     "access_control": "fairicube account required ",
     "datetime": "2024-07-17T09:30:04Z",

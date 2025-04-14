@@ -74,7 +74,7 @@
     "personalData": "",
     "provenance_name": "data.gv.at ",
     "preprocessing": "The origanal vector dataset was transformed to a raster using gdal function: processing.run(\"gdal:rasterize\", {'INPUT':'N:/C2205_FAIRiCUBE/f02_data/d050_data_WIEN/Vienna_gridded_data_collection/100m_GRID/vector_files/Bezirke_100m.shp','FIELD':'BEZNR','BURN':0,'USE_Z':False,'UNITS':1,'WIDTH':100,'HEIGHT':100,'EXTENT':'-11200.000000000,18800.000000000,331000.000000000,354000.000000000 []','NODATA':0,'OPTIONS':'COMPRESS=DEFLATE|PREDICTOR=2|ZLEVEL=9','DATA_TYPE':5,'INIT':None,'INVERT':False,'EXTRA':'','OUTPUT':'N:/C2205_FAIRiCUBE/f02_data/d050_data_WIEN/Vienna_gridded_data_collection/100m_GRID/r00_Wien_Bezirke_100m.tif'})",
-    "apis": "AWS-S3 API",
+    "API": "AWS-S3 API",
     "access_control": "fairicube account required ",
     "datetime": "2024-07-17T11:28:01Z",
     "modification": "2024-07-17T11:28:04Z",

@@ -70,7 +70,7 @@
     "end_datetime": "2024-12-31T00:00Z",
     "provenance_name": "data.gv.at ",
     "preprocessing": "Vineyard land use were extracted from land use map and the vineyard cover for every 100m gridcell was calculated and exported as raster",
-    "apis": "AWS-S3 API",
+    "API": "AWS-S3 API",
     "access_control": "fairicube account required ",
     "modification": "2024-07-17T10:46:48Z",
     "provision": "2024-07-17T10:46:44Z",

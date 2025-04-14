@@ -68,7 +68,7 @@
     "personalData": "none",
     "provenance_name": "https://www.eea.europa.eu/en/datahub/datahubitem-view/42783031-34d5-4b38-b9ba-a0783723053c",
     "preprocessing": "The ESM_2015 product exploits the Copernicus VHR_IMAGE_2015 dataset made of satellite images Pleiades, Deimos-02, WorldView-2, WorldView-3, GeoEye-01 and Spot 6/7 ranging from 2014 to 2016.",
-    "apis": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
+    "API": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
     "ingestion_status": "Completed",
     "platform": "Rasdaman",
     "contacts": [

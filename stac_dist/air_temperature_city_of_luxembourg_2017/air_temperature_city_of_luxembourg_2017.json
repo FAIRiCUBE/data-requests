@@ -292,7 +292,7 @@
       "type": "text/x-python",
       "title": "AWS S3 bucket API",
       "description": "The script shows how to open a gridded dataset stored on an S3 Bucket as an xarray DataSet",
-      "href": "https://github.com/FAIRiCUBE/common-code/blob/main/access_data_apis/access_s3_bucket.py",
+      "href": "https://github.com/FAIRiCUBE/common-code/blob/main/access_data_API/access_s3_bucket.py",
       "rel": "example"
     },
     {

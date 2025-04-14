@@ -68,7 +68,7 @@
     "personalData": "none",
     "provenance_name": "https://land.copernicus.eu/en/products/high-resolution-layer-grassland/grassland-2015",
     "data_quality": "",
-    "apis": "OGC WCS, WCPS, WSM, WMTS, OAPI-Coverages",
+    "API": "OGC WCS, WCPS, WSM, WMTS, OAPI-Coverages",
     "platform": "Rasdaman",
     "contacts": [
       {
