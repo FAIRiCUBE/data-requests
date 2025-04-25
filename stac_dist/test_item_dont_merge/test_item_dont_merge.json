@@ -22,6 +22,11 @@
       }
     ],
     "dataSource": "edits",
+    "project:use_cases": [
+      "S4E",
+      "NILU",
+      "NHM_2"
+    ],
     "cube:dimensions": {
       "x": {
         "axis": "x",
@@ -73,7 +78,7 @@
     "datetime": "2024-08-19T16:29:57Z",
     "modification": null,
     "provision": null,
-    "platform": "Eox"
+    "project:platform": "Eox"
   },
   "geometry": {
     "type": "Polygon",
@@ -175,6 +180,7 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
     "https://stac-extensions.github.io/example-links/v0.0.1/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
