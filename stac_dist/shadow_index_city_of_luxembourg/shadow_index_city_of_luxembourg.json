@@ -105,8 +105,7 @@
             "value": "info@space4environment.com",
             "role": "work"
           }
-        ],
-        "project_purpose": "Urban adaptation to climate change"
+        ]
       },
       {
         "name": "Administration du cadastre et de la topographie",
@@ -117,7 +116,8 @@
     "wasGeneratedBy": "",
     "project:use_cases": [
       "S4E"
-    ]
+    ],
+    "project:purpose": "Urban adaptation to climate change"
   },
   "geometry": {
     "type": "Polygon",

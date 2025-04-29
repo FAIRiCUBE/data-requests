@@ -80,20 +80,19 @@
     "contacts": [
       {
         "name": "EC Eurostat",
-        "organization": "EC Eurostat",
-        "project_purpose": "data provider (population at LAU level); data hosting."
+        "organization": "EC Eurostat"
       },
       {
         "name": "EC Joint Research Centre",
-        "organization": "EC Joint Research Centre",
-        "project_purpose": "methodological development; implementation."
+        "organization": "EC Joint Research Centre"
       }
     ],
     "wasDerivedFrom": "https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution/geostat",
     "project:use_cases": [
       "NHM",
       "NHM_2"
-    ]
+    ],
+    "project:purpose": "data provider (population at LAU level); data hosting."
   },
   "geometry": {
     "type": "Polygon",

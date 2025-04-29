@@ -80,8 +80,6 @@
     "personalData": "",
     "provenance_name": "CLMS Imperviousness 2018",
     "preprocessing": "Re-projection from 3035 to 31256 (NN) and clipped to Vienna border and pixel shift to rounded 100m coordiantes",
-    "data_quality": "",
-    "quality_control": "",
     "metadata_standards": "",
     "API": "AWS-S3 API",
     "distributions": "",
@@ -100,8 +98,7 @@
             "value": "copernicus@eea.europa.eu",
             "role": "work"
           }
-        ],
-        "project_purpose": "https://land.copernicus.eu"
+        ]
       }
     ],
     "wasDerivedFrom": "https://land.copernicus.eu/en/products/high-resolution-layer-imperviousness/imperviousness-density-2018#Download",
@@ -109,7 +106,8 @@
     "project:use_cases": [
       "S4E",
       "NHM_2"
-    ]
+    ],
+    "project:purpose": "https://land.copernicus.eu"
   },
   "geometry": {
     "type": "Polygon",

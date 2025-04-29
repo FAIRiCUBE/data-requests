@@ -87,14 +87,14 @@
       {
         "name": "FAIRiCUBE - Use Case 1",
         "organization": "FAIRiCUBE - Use Case 1",
-        "project_purpose": "Urban adaptation to climate change",
         "comments": "Use Case 1 team processed and consolidated data from different data sources into this unique dataset."
       }
     ],
     "wasDerivedFrom": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/data/city_features_collection",
     "project:use_cases": [
       "S4E"
-    ]
+    ],
+    "project:purpose": "Urban adaptation to climate change"
   },
   "geometry": {
     "type": "Polygon",

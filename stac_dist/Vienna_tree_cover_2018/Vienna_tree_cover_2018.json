@@ -100,8 +100,7 @@
             "value": "copernicus@eea.europa.eu",
             "role": "work"
           }
-        ],
-        "project_purpose": "https://land.copernicus.eu"
+        ]
       }
     ],
     "wasDerivedFrom": "https://land.copernicus.eu/en/products/high-resolution-layer-tree-cover-density/tree-cover-density-2018#Download",
@@ -109,7 +108,8 @@
     "project:use_cases": [
       "S4E",
       "NHM_2"
-    ]
+    ],
+    "project:purpose": "https://land.copernicus.eu"
   },
   "geometry": {
     "type": "Polygon",

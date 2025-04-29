@@ -230,8 +230,7 @@
             "value": "info@space4environment.com",
             "role": "work"
           }
-        ],
-        "project_purpose": "Urban adaptation to climate change"
+        ]
       },
       {
         "name": "ECMWF",
@@ -242,7 +241,8 @@
     "wasGeneratedBy": "",
     "project:use_cases": [
       "S4E"
-    ]
+    ],
+    "project:purpose": "Urban adaptation to climate change"
   },
   "geometry": {
     "type": "Polygon",

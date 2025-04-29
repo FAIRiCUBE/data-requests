@@ -81,8 +81,7 @@
             "value": "info@space4environment.com",
             "role": "work"
           }
-        ],
-        "project_purpose": "Urban adaptation to climate change"
+        ]
       },
       {
         "name": "JOINT RESEARCH CENTRE European Soil Data Centre (ESDAC)",
@@ -92,7 +91,8 @@
     "wasDerivedFrom": "https://esdac.jrc.ec.europa.eu/content/chemical-properties-european-scale-based-lucas-topsoil-data#tabs-0-description=0",
     "project:use_cases": [
       "S4E"
-    ]
+    ],
+    "project:purpose": "Urban adaptation to climate change"
   },
   "geometry": {
     "type": "Polygon",

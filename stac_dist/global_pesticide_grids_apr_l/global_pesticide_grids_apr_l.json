@@ -1673,7 +1673,6 @@
             "role": "work"
           }
         ],
-        "project_purpose": "To provide a global gridded data set of commonly-used agricultural pesticides crucial to assess human and ecosystem exposure to potential toxicants for environmental modeling, assessment of agricultural chemical contamination and risk analysis, and other related research at global, regional, national, and local levels.",
         "comments": "For download create account/regsiter (free)"
       }
     ],
@@ -1681,7 +1680,8 @@
     "project:use_cases": [
       "NHM"
     ],
-    "validate:quality_measure": "See global_pesticide_grids_qi datacube"
+    "validate:quality_measure": "See global_pesticide_grids_qi datacube",
+    "project:purpose": "To provide a global gridded data set of commonly-used agricultural pesticides crucial to assess human and ecosystem exposure to potential toxicants for environmental modeling, assessment of agricultural chemical contamination and risk analysis, and other related research at global, regional, national, and local levels."
   },
   "geometry": {
     "type": "Polygon",

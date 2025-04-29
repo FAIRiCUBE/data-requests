@@ -82,8 +82,7 @@
             "value": "info@space4environment.com",
             "role": "work"
           }
-        ],
-        "project_purpose": "Urban adaptation to climate change"
+        ]
       },
       {
         "name": "JOINT RESEARCH CENTRE European Soil Data Centre (ESDAC)",
@@ -93,7 +92,8 @@
     "wasDerivedFrom": "https://www.sciencedirect.com/science/article/pii/S0016706119304768",
     "project:use_cases": [
       "S4E"
-    ]
+    ],
+    "project:purpose": "Urban adaptation to climate change"
   },
   "geometry": {
     "type": "Polygon",
