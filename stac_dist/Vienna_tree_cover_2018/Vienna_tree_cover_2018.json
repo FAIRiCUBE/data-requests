@@ -83,8 +83,6 @@
     "personalData": "",
     "provenance_name": "CLMS Tree cover density 2018",
     "preprocessing": "Re-projection from 3035 to 31256 (NN) and clipped to Vienna border and pixel shift to rounded 100m coordiantes",
-    "data_quality": "",
-    "quality_control": "",
     "metadata_standards": "",
     "distributions": "",
     "access_control": "fairicube account required ",
