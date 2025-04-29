@@ -70,7 +70,7 @@
     "preprocessing": "The ESM_2015 product exploits the Copernicus VHR_IMAGE_2015 dataset made of satellite images Pleiades, Deimos-02, WorldView-2, WorldView-3, GeoEye-01 and Spot 6/7 ranging from 2014 to 2016.",
     "API": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
     "ingestion_status": "Completed",
-    "platform": "Rasdaman",
+    "project:platform": "Rasdaman",
     "contacts": [
       {
         "name": "European Environment Agency",

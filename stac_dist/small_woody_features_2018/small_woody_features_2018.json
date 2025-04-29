@@ -69,7 +69,7 @@
     "provenance_name": "High Resolution Layer Small Woody Features",
     "API": "OGC WCS, WCPS, WSM, WMTS, OAPI-Coverages",
     "ingestion_status": "Completed",
-    "platform": "Rasdaman",
+    "project:platform": "Rasdaman",
     "contacts": [
       {
         "name": "European Environment Agency",

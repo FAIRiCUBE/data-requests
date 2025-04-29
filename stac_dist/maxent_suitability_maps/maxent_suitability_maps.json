@@ -55,7 +55,7 @@
     "datetime": "2025-03-28T10:38:47Z",
     "modification": "2025-03-28T10:38:58Z",
     "provision": "2025-03-28T10:38:56Z",
-    "platform": "Eox",
+    "project:platform": "Eox",
     "contacts": [
       {
         "name": "space4environment",

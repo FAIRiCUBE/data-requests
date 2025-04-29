@@ -82,7 +82,7 @@
     "access_control": "no access control",
     "modification": null,
     "provision": "2024-04-15T13:38:52Z",
-    "platform": "Eox",
+    "project:platform": "Eox",
     "contacts": [
       {
         "name": "FAIRiCUBE - Use Case 1",

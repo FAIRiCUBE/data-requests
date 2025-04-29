@@ -79,7 +79,7 @@
     "datetime": "2024-07-17T11:28:01Z",
     "modification": "2024-07-17T11:28:04Z",
     "provision": "2024-07-17T11:28:02Z",
-    "platform": "Eox",
+    "project:platform": "Eox",
     "contacts": [
       {
         "name": "Stadt Wien",

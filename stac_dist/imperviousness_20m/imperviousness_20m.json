@@ -74,7 +74,7 @@
     "provenance_name": "https://land.copernicus.eu/en/products/high-resolution-layer-imperviousness",
     "API": "OGC WCS, WCPS, WSM, WMTS, OAPI-Coverages",
     "ingestion_status": "Completed",
-    "platform": "Rasdaman",
+    "project:platform": "Rasdaman",
     "contacts": [
       {
         "name": "European Environment Agency",

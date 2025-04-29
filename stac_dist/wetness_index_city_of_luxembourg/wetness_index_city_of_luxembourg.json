@@ -74,7 +74,7 @@
     "datetime": "2019-01-01T00:00Z",
     "modification": null,
     "provision": null,
-    "platform": "Eox",
+    "project:platform": "Eox",
     "wasDerivedFrom": "https://data.public.lu/fr/datasets/lidar-2019-modele-numerique-de-terrain-mnt/",
     "project:use_cases": [
       "S4E"

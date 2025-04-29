@@ -97,7 +97,7 @@
     "modification": null,
     "provision": null,
     "ingestion_status": "",
-    "platform": "Eox",
+    "project:platform": "Eox",
     "contacts": [
       {
         "name": "space4environment",

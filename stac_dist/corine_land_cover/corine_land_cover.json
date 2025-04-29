@@ -85,7 +85,7 @@
     "use_case_NILU": null,
     "use_case_NHM_2": null,
     "ingestion_status": "Completed, year as integer, (1990,2000,2006,2012,2018)",
-    "platform": "Rasdaman",
+    "project:platform": "Rasdaman",
     "contacts": [
       {
         "name": "EEA",

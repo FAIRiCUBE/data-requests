@@ -75,7 +75,7 @@
     "datetime": "2024-09-02T16:29Z",
     "modification": null,
     "provision": null,
-    "platform": "Eox",
+    "project:platform": "Eox",
     "contacts": [
       {
         "name": "FAIRiCUBE",

@@ -1662,7 +1662,7 @@
     "preprocessing": "To estimate the global application rates of specific active ingredients, spatial statistical methods were used to re-analyze the U.S. Geological Survey Pesticide National Synthesis Project (USGS/PNSP) and the Food and Agriculture Organization Corporate Statistical Database (FAOSTAT) pesticide databases, along with other public inventories including globally gridded data of soil physical properties, hydro-climatic variables, agricultural quantities, and socioeconomic indices.",
     "data_quality": "See global_pesticide_grids_qi datacube",
     "API": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
-    "platform": "Rasdaman",
+    "project:platform": "Rasdaman",
     "contacts": [
       {
         "name": "NASA Socioeconomic Data and Applications Center (SEDAC)",

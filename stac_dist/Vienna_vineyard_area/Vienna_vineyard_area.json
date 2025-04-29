@@ -74,7 +74,7 @@
     "access_control": "fairicube account required ",
     "modification": "2024-07-17T10:46:48Z",
     "provision": "2024-07-17T10:46:44Z",
-    "platform": "Eox",
+    "project:platform": "Eox",
     "contacts": [
       {
         "name": "Stadt Wien",

@@ -72,7 +72,7 @@
     "datetime": "2024-09-18T13:52Z",
     "modification": null,
     "provision": null,
-    "platform": "Eox",
+    "project:platform": "Eox",
     "contacts": [
       {
         "name": "space4environment",

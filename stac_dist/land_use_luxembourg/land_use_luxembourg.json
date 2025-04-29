@@ -76,7 +76,7 @@
     "datetime": null,
     "modification": null,
     "provision": null,
-    "platform": "Eox",
+    "project:platform": "Eox",
     "contacts": [
       {
         "name": "Ministre de l\u2019Environnement, du Climat et de la Biodiversit\u00e9 & Minist\u00e8re du Logement et de l\u2019Am\u00e9nagement du territoire - D\u00e9partement de l\u2019am\u00e9nagement du territoire",

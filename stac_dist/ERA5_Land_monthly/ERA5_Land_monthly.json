@@ -453,7 +453,7 @@
     "modification": null,
     "provision": null,
     "ingestion_status": "complete",
-    "platform": "Rasdaman",
+    "project:platform": "Rasdaman",
     "contacts": [
       {
         "name": "ECMWF",

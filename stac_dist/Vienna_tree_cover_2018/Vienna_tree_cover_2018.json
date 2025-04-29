@@ -92,7 +92,7 @@
     "modification": "2024-07-17T09:52:18Z",
     "provision": "2024-07-17T09:52:16Z",
     "ingestion_status": "",
-    "platform": "Eox",
+    "project:platform": "Eox",
     "contacts": [
       {
         "name": "European Environment Agency",

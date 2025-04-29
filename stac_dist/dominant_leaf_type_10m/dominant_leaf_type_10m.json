@@ -66,7 +66,7 @@
     "end_datetime": "2018-10-31T23:59:59.999Z",
     "provenance_name": "https://land.copernicus.eu/en/products/high-resolution-layer-dominant-leaf-type",
     "API": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
-    "platform": "Rasdaman",
+    "project:platform": "Rasdaman",
     "contacts": [
       {
         "name": "European Environment Agency",

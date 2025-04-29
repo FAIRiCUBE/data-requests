@@ -70,7 +70,7 @@
     "provenance_name": "https://land.copernicus.eu/en/products/high-resolution-layer-water-and-wetness",
     "API": "OGC WCS, WCPS, WSM, WMTS, OAPI-Coverages",
     "ingestion_status": "Completed",
-    "platform": "Rasdaman",
+    "project:platform": "Rasdaman",
     "contacts": [
       {
         "name": "European Environment Agency",

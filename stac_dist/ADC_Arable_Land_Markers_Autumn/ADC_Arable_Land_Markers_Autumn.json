@@ -75,7 +75,7 @@
     "modification": null,
     "provision": null,
     "ingestion_status": "completed",
-    "platform": "Both",
+    "project:platform": "Both",
     "wasDerivedFrom": "https://documenter.getpostman.com/view/3284162/TVeqd7aa",
     "project:use_cases": [
       "WER"

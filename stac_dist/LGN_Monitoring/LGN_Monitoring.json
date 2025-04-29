@@ -77,7 +77,7 @@
     "modification": null,
     "provision": null,
     "ingestion_status": "completed",
-    "platform": "Both",
+    "project:platform": "Both",
     "wasDerivedFrom": "https://lgn.nl/bestanden",
     "project:use_cases": [
       "WER"

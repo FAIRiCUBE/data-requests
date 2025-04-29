@@ -76,7 +76,7 @@
     "modification": null,
     "provision": null,
     "ingestion_status": "Completed: Version 2021 (16 June 2024), Version 2018 (13 April 2021), Version 2011 (1 February 2016), Version 2006 (23 January 2012)",
-    "platform": "Rasdaman",
+    "project:platform": "Rasdaman",
     "contacts": [
       {
         "name": "EC Eurostat",
