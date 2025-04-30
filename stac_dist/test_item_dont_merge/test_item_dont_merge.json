@@ -17,8 +17,7 @@
             "value": "bas@mail.com",
             "role": "work"
           }
-        ],
-        "project_purpose": "k"
+        ]
       }
     ],
     "dataSource": "edits",
@@ -74,6 +73,7 @@
     ],
     "title": "test item",
     "datasource_type": "grid",
+    "project:purpose": "k",
     "proj:code": "EPSG:6452",
     "datetime": "2024-08-19T16:29:57Z",
     "modification": null,
