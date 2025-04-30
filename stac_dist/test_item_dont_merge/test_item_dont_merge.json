@@ -75,10 +75,10 @@
     "datasource_type": "grid",
     "project:purpose": "k",
     "proj:code": "EPSG:6452",
-    "validate:quality_measures": "https://google.com",
+    "validate:quality_measures": "user testing",
     "validate:workflow": {
       "rel": "related",
-      "href": "user testing"
+      "href": "https://google.com"
     },
     "datetime": "2024-08-19T16:29:57Z",
     "modification": null,
