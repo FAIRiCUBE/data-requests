@@ -189,6 +189,6 @@
     "https://stac-extensions.github.io/example-links/v0.0.1/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/classification/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+    "https://raw.githubusercontent.com/baloola/validate/refs/heads/main/json-schema/schema.json"
   ]
 }
