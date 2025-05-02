@@ -1,0 +1,128 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "osm_footprint_height",
+  "properties": {
+    "keywords": [
+      "open street map",
+      " building footprint",
+      "1"
+    ],
+    "license": "ODbL-1.0",
+    "description": "API to OpenStreetMap (OSM) data to extract building footprint and height for the UC4 energy performance estimation",
+    "providers": [],
+    "dataSource": "https://www.openstreetmap.org/#map=5/65.40/17.86",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          0,
+          0
+        ],
+        "reference_system": "4326",
+        "type": "spatial",
+        "unit": "degree",
+        "step": 0
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          0,
+          0
+        ],
+        "reference_system": "4326",
+        "type": "spatial",
+        "unit": "degree",
+        "step": 0
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": "4326",
+        "type": "spatial"
+      }
+    },
+    "raster:bands": [
+      {
+        "band_name": "1",
+        "unit": "degree",
+        "data_type": "int8",
+        "nodata": -999.25,
+        "definition": "not a number",
+        "description": "OSM data"
+      }
+    ],
+    "title": "OpenStreetMap (OSM) data",
+    "datasource_type": "API",
+    "crs": "4326",
+    "provenance_name": "OpenStreetMap",
+    "source_data": "https://www.openstreetmap.org/copyright",
+    "datetime": "2025-01-01T00:00Z",
+    "modification": "2025-01-01T00:00Z",
+    "provision": "2025-01-01T00:00Z",
+    "use_case_NILU": "1",
+    "platform": "Eox"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "example:container": true,
+      "title": "Python_API_package_for_OpenStreetMap",
+      "description": "Link to the data visualization interactive web map.",
+      "href": "https://vis.fairicube.eu/=data?https://osmnx.readthedocs.io/en/stable/",
+      "rel": "example"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/example-links/v0.0.1/schema.json"
+  ]
+}
