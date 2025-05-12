@@ -4,7 +4,7 @@
   "id": "QueryCubeTool",
   "properties": {
     "keywords": [],
-    "description": "Tool For Querying Point Data From Rasdaman",
+    "description": "NA",
     "contacts": [],
     "project:use_cases": [],
     "cube:dimensions": {
@@ -18,19 +18,16 @@
         "extent": [],
         "type": "spatial"
       },
-      "z": {
-        "extent": [
-          null,
-          null
-        ],
-        "type": "spatial"
-      }
+      "z": {}
     },
     "bands": [],
-    "title": "QueryCube",
-    "datasource_type": "Software",
+    "title": "NA",
+    "datasource_type": "",
     "area_cover": "Point Coordinates",
-    "project:purpose": "Tool For Querying Point Data From Rasdaman",
+    "project:purpose": "",
+    "datetime": null,
+    "modification": null,
+    "provision": null,
     "project:platform": "Rasdaman"
   },
   "geometry": {
