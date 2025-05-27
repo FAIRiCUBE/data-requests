@@ -47,9 +47,11 @@
       },
       "z": {
         "extent": [
-          null,
-          null
+          -180,
+          223870
         ],
+        "reference_system": "3855",
+        "unit": "meter",
         "type": "spatial"
       },
       "time": {
