@@ -51,6 +51,15 @@
           null
         ],
         "type": "spatial"
+      },
+      "time": {
+        "type": "temporal",
+        "extent": [
+          "2025-05-06T18:36:46Z",
+          "2025-05-27T18:36:53Z"
+        ],
+        "step": "P0Y0M0DT2H0M4S",
+        "unit": "minute"
       }
     },
     "bands": [
@@ -75,6 +84,8 @@
     "datasource_type": "grid",
     "project:purpose": "k",
     "proj:code": "EPSG:6452",
+    "start_datetime": "2025-05-06T18:36:46Z",
+    "end_datetime": "2025-05-27T18:36:53Z",
     "validate:quality_measures": "user testing",
     "validate:workflow": {
       "rel": "related",
