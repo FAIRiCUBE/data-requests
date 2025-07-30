@@ -85,7 +85,6 @@
     "use_case_NILU": null,
     "use_case_NHM_2": null,
     "ingestion_status": "Completed, year as integer, (1990,2000,2006,2012,2018)",
-    "project:platform": "Rasdaman",
     "contacts": [
       {
         "name": "EEA",
@@ -98,7 +97,8 @@
       "S4E",
       "WER",
       "NHM"
-    ]
+    ],
+    "processing:facility": "Rasdaman"
   },
   "geometry": {
     "type": "Polygon",
@@ -177,6 +177,7 @@
     "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
-    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
   ]
 }

@@ -71,10 +71,10 @@
     "modification": null,
     "provision": null,
     "ingestion_status": "completed",
-    "project:platform": "Both",
     "project:use_cases": [
       "WER"
-    ]
+    ],
+    "processing:facility": "Both"
   },
   "geometry": {
     "type": "Polygon",
@@ -146,6 +146,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
   ]
 }

@@ -55,7 +55,6 @@
     "datetime": "2025-03-28T10:38:47Z",
     "modification": "2025-03-28T10:38:58Z",
     "provision": "2025-03-28T10:38:56Z",
-    "project:platform": "Eox",
     "contacts": [
       {
         "name": "space4environment",
@@ -71,7 +70,8 @@
     "project:use_cases": [
       "S4E"
     ],
-    "project:purpose": "Urban adaptation to climate change"
+    "project:purpose": "Urban adaptation to climate change",
+    "processing:facility": "Eox"
   },
   "geometry": {
     "type": "Polygon",
@@ -249,6 +249,7 @@
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/example-links/v0.0.1/schema.json",
     "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
-    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
   ]
 }

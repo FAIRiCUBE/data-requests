@@ -80,7 +80,6 @@
     "datetime": "2024-07-17T10:39:35Z",
     "modification": "2024-07-17T10:39:39Z",
     "provision": "2024-07-17T10:39:37Z",
-    "project:platform": "Eox",
     "contacts": [
       {
         "name": "Stadt Wien",
@@ -98,7 +97,8 @@
     "project:use_cases": [
       "S4E",
       "NHM_2"
-    ]
+    ],
+    "processing:facility": "Eox"
   },
   "geometry": {
     "type": "Polygon",
@@ -166,6 +166,7 @@
     "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
-    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
   ]
 }

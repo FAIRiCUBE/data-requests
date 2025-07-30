@@ -1662,7 +1662,6 @@
     "provenance_name": "https://sedac.ciesin.columbia.edu/data/set/ferman-v1-pest-chemgrids-v1-01",
     "preprocessing": "To estimate the global application rates of specific active ingredients, spatial statistical methods were used to re-analyze the U.S. Geological Survey Pesticide National Synthesis Project (USGS/PNSP) and the Food and Agriculture Organization Corporate Statistical Database (FAOSTAT) pesticide databases, along with other public inventories including globally gridded data of soil physical properties, hydro-climatic variables, agricultural quantities, and socioeconomic indices.",
     "API": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
-    "project:platform": "Rasdaman",
     "contacts": [
       {
         "name": "NASA Socioeconomic Data and Applications Center (SEDAC)",
@@ -1681,7 +1680,8 @@
       "NHM"
     ],
     "validate:quality_measure": "See global_pesticide_grids_qi datacube",
-    "project:purpose": "To provide a global gridded data set of commonly-used agricultural pesticides crucial to assess human and ecosystem exposure to potential toxicants for environmental modeling, assessment of agricultural chemical contamination and risk analysis, and other related research at global, regional, national, and local levels."
+    "project:purpose": "To provide a global gridded data set of commonly-used agricultural pesticides crucial to assess human and ecosystem exposure to potential toxicants for environmental modeling, assessment of agricultural chemical contamination and risk analysis, and other related research at global, regional, national, and local levels.",
+    "processing:facility": "Rasdaman"
   },
   "geometry": {
     "type": "Polygon",
@@ -1761,6 +1761,7 @@
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
     "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
-    "https://raw.githubusercontent.com/baloola/validate/refs/heads/main/json-schema/schema.json"
+    "https://raw.githubusercontent.com/baloola/validate/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
   ]
 }

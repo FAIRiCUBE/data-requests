@@ -75,7 +75,6 @@
     "datetime": "2024-09-02T16:29Z",
     "modification": null,
     "provision": null,
-    "project:platform": "Eox",
     "contacts": [
       {
         "name": "FAIRiCUBE",
@@ -91,7 +90,8 @@
     "wasDerivedFrom": "https://data.public.lu/en/datasets/lis-l-land-cover/",
     "project:use_cases": [
       "S4E"
-    ]
+    ],
+    "processing:facility": "Eox"
   },
   "geometry": {
     "type": "Polygon",
@@ -165,6 +165,7 @@
     "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
-    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
   ]
 }

@@ -66,7 +66,6 @@
     "end_datetime": "2018-10-31T23:59:59.999Z",
     "provenance_name": "https://land.copernicus.eu/en/products/high-resolution-layer-dominant-leaf-type",
     "API": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
-    "project:platform": "Rasdaman",
     "contacts": [
       {
         "name": "European Environment Agency",
@@ -85,7 +84,8 @@
       "S4E",
       "WER",
       "NHM"
-    ]
+    ],
+    "processing:facility": "Rasdaman"
   },
   "geometry": {
     "type": "Polygon",
@@ -164,6 +164,7 @@
     "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
-    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
   ]
 }

@@ -77,11 +77,11 @@
     "modification": null,
     "provision": null,
     "ingestion_status": "completed",
-    "project:platform": "Both",
     "wasDerivedFrom": "https://lgn.nl/bestanden",
     "project:use_cases": [
       "WER"
-    ]
+    ],
+    "processing:facility": "Both"
   },
   "geometry": {
     "type": "Polygon",
@@ -154,6 +154,7 @@
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
   ]
 }

@@ -76,7 +76,6 @@
     "modification": null,
     "provision": null,
     "ingestion_status": "Completed: Version 2021 (16 June 2024), Version 2018 (13 April 2021), Version 2011 (1 February 2016), Version 2006 (23 January 2012)",
-    "project:platform": "Rasdaman",
     "contacts": [
       {
         "name": "EC Eurostat",
@@ -92,7 +91,8 @@
       "NHM",
       "NHM_2"
     ],
-    "project:purpose": "data provider (population at LAU level); data hosting."
+    "project:purpose": "data provider (population at LAU level); data hosting.",
+    "processing:facility": "Rasdaman"
   },
   "geometry": {
     "type": "Polygon",
@@ -176,6 +176,7 @@
     "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
-    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
   ]
 }

@@ -79,7 +79,6 @@
     "datetime": "2024-07-17T11:28:01Z",
     "modification": "2024-07-17T11:28:04Z",
     "provision": "2024-07-17T11:28:02Z",
-    "project:platform": "Eox",
     "contacts": [
       {
         "name": "Stadt Wien",
@@ -97,7 +96,8 @@
       "WER",
       "NHM",
       "NHM_2"
-    ]
+    ],
+    "processing:facility": "Eox"
   },
   "geometry": {
     "type": "Polygon",
@@ -163,6 +163,7 @@
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
-    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
   ]
 }

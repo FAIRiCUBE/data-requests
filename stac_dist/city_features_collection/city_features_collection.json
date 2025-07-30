@@ -82,7 +82,6 @@
     "access_control": "no access control",
     "modification": null,
     "provision": "2024-04-15T13:38:52Z",
-    "project:platform": "Eox",
     "contacts": [
       {
         "name": "FAIRiCUBE - Use Case 1",
@@ -94,7 +93,8 @@
     "project:use_cases": [
       "S4E"
     ],
-    "project:purpose": "Urban adaptation to climate change"
+    "project:purpose": "Urban adaptation to climate change",
+    "processing:facility": "Eox"
   },
   "geometry": {
     "type": "Polygon",
@@ -154,6 +154,7 @@
     "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
-    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
   ]
 }
