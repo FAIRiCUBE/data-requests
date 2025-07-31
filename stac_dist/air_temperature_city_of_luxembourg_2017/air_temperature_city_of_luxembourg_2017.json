@@ -212,7 +212,7 @@
     "resolution": "",
     "personalData": "no personal data",
     "provenance_name": "Climate variables for cities in Europe from 2008 to 2017",
-    "preprocessing": "",
+    "processing:lineage": "",
     "metadata_standards": "",
     "distributions": "",
     "access_control": "fairicube account required ",

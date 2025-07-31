@@ -87,7 +87,7 @@
     "resolution": "",
     "personalData": "no personal data",
     "provenance_name": "LiDAR 2019 - Digital Terrain Model (DTM)",
-    "preprocessing": "A standard hillshade model was calculated using the Module Analytical Hillshading from SAGA-GIS (v2.2.0). This was used to calculate the shadow index. First a day of shadow was simulated for solar altitude for luxembourg city and secondly the data range was normalized linearly",
+    "processing:lineage": "A standard hillshade model was calculated using the Module Analytical Hillshading from SAGA-GIS (v2.2.0). This was used to calculate the shadow index. First a day of shadow was simulated for solar altitude for luxembourg city and secondly the data range was normalized linearly",
     "metadata_standards": "",
     "distributions": "",
     "access_control": "fairicube account required ",

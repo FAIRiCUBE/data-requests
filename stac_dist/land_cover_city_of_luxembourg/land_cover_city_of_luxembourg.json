@@ -70,7 +70,7 @@
     "end_datetime": "2021-01-01T00:00Z",
     "personalData": "no personal data",
     "provenance_name": "LIS-L Land Cover",
-    "preprocessing": "Rasterization from vector to raster and clipped to extent of city of Lux ",
+    "processing:lineage": "Rasterization from vector to raster and clipped to extent of city of Lux ",
     "access_control": "fairicube account required ",
     "datetime": "2024-09-02T16:29Z",
     "modification": null,

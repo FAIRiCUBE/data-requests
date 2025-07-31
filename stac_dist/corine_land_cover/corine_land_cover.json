@@ -78,7 +78,7 @@
     "end_datetime": "2018-01-01T00:00Z",
     "personalData": null,
     "provenance_name": "European Union's Copernicus Land Monitoring Service",
-    "preprocessing": null,
+    "processing:lineage": null,
     "API": "OGC WCS, WCPS, WMS, WMTS",
     "modification": null,
     "provision": null,

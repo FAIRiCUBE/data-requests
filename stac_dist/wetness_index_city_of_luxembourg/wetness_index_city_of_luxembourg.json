@@ -69,7 +69,7 @@
     "end_datetime": "2019-12-31T00:00Z",
     "personalData": "no personal data",
     "provenance_name": "LiDAR 2019 - Digital Terrain Model (DTM)",
-    "preprocessing": "Calculation of TWI based on the Digital Terrain Model (DTM)",
+    "processing:lineage": "Calculation of TWI based on the Digital Terrain Model (DTM)",
     "access_control": "fairicube account required ",
     "datetime": "2019-01-01T00:00Z",
     "modification": null,
