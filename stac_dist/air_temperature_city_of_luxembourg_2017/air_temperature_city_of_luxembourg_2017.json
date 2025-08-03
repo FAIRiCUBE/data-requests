@@ -204,7 +204,6 @@
     "title": "Average Monthly Air Temperature of the City of Luxembourg 2017 derived from UrbClim",
     "datasource_type": "grid",
     "region": "5171.66 ha",
-    "documentation": "https://confluence.ecmwf.int/display/CKB/Climate+variables+for+cities+in+Europe+from+2008+to+2017+documentation#ClimatevariablesforcitiesinEuropefrom2008to2017documentation-_bookmark13Timeformat",
     "proj:code": "EPSG:2169",
     "start_datetime": "2017-01-01T00:00Z",
     "end_datetime": "2017-12-31T00:00Z",
@@ -304,6 +303,11 @@
       "title": "ECMWF",
       "href": "https://confluence.ecmwf.int/display/CKB/Climate+variables+for+cities+in+Europe+from+2008+to+2017+documentation#heading-4Exampledata",
       "rel": "cite-as"
+    },
+    {
+      "title": "Documents & Publications",
+      "href": "https://confluence.ecmwf.int/display/CKB/Climate+variables+for+cities+in+Europe+from+2008+to+2017+documentation#ClimatevariablesforcitiesinEuropefrom2008to2017documentation-_bookmark13Timeformat",
+      "rel": "processing"
     }
   ],
   "assets": {

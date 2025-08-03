@@ -74,7 +74,6 @@
     "title": "Vienna tree cover density 2018 (100m)",
     "datasource_type": "GeoTIFF",
     "region": "415km2",
-    "documentation": "",
     "proj:code": "EPSG:31256",
     "start_datetime": "2017-01-01T00:00Z",
     "end_datetime": "2019-12-31T00:00Z",
@@ -164,6 +163,11 @@
       "title": "European Environment Agency",
       "href": "https://sdi.eea.europa.eu/catalogue/copernicus/all/catalog.search#/metadata/c7bf34ea-755c-4dbd-85b6-4efc5fd302a2",
       "rel": "cite-as"
+    },
+    {
+      "title": "Documents & Publications",
+      "href": "",
+      "rel": "processing"
     }
   ],
   "assets": {

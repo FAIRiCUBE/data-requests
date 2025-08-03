@@ -1652,7 +1652,6 @@
     "datasource_type": "grid",
     "keywords": "agriculture, land use, health, sustainability, pesticides, environmental modeling, chemical contamination",
     "region": "global",
-    "documentation": "https://sedac.ciesin.columbia.edu/data/set/ferman-v1-pest-chemgrids-v1-01/docs",
     "proj:code": "EPSG:4326",
     "start_datetime": "2015-01-01T00:00:00Z",
     "end_datetime": "2015-01-01T00:00:00Z",
@@ -1736,6 +1735,11 @@
       "title": "NASA Socioeconomic Data and Applications Center (SEDAC)",
       "href": "https://sedac.ciesin.columbia.edu/data/set/ferman-v1-pest-chemgrids-v1-01/docs",
       "rel": "cite-as"
+    },
+    {
+      "title": "Documents & Publications",
+      "href": "https://sedac.ciesin.columbia.edu/data/set/ferman-v1-pest-chemgrids-v1-01/docs",
+      "rel": "processing"
     }
   ],
   "assets": {

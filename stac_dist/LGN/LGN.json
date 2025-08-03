@@ -74,7 +74,6 @@
     "datasource_type": "grid",
     "keywords": "National Land Use, landuse, LGN, Netherlands",
     "region": "Netherlands",
-    "documentation": "https://doi.org/10.4121/688363cc-8c79-439f-bb0e-fe5d0deb3161, https://data.4tu.nl/datasets/2e472483-255b-4468-b5a2-beb413746b48/1, https://data.4tu.nl/datasets/8738f896-f49e-4ae7-8671-50ef893a2cee/1, https://data.4tu.nl/datasets/e2971c99-f4f2-4786-b7ba-2d16a24bcd83/1",
     "proj:code": "EPSG:28992",
     "start_datetime": "2012-01-01T00:00Z",
     "end_datetime": "2022-01-01T00:00Z",
@@ -156,6 +155,11 @@
       "title": "WENR",
       "href": "https://lgn.nl/, https://www.wur.nl/en/Research-Results/Research-Institutes/Environmental-Research/Facilities-Tools/Kaarten-en-GIS-bestanden/Land-use-database-of-the-Netherlands/What-is-the-LGN-database.htm",
       "rel": "cite-as"
+    },
+    {
+      "title": "Documents & Publications",
+      "href": "https://doi.org/10.4121/688363cc-8c79-439f-bb0e-fe5d0deb3161, https://data.4tu.nl/datasets/2e472483-255b-4468-b5a2-beb413746b48/1, https://data.4tu.nl/datasets/8738f896-f49e-4ae7-8671-50ef893a2cee/1, https://data.4tu.nl/datasets/e2971c99-f4f2-4786-b7ba-2d16a24bcd83/1",
+      "rel": "processing"
     }
   ],
   "assets": {

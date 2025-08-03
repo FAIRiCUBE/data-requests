@@ -72,7 +72,6 @@
     "title": "City features collection",
     "datasource_type": "geojson",
     "keywords": "eu cities, urban atlas, land, climate, socioeconomic, estat",
-    "documentation": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/data/city_features_collection/city_features_collection_codebook.csv",
     "proj:code": "EPSG:4326",
     "start_datetime": "2018-12-31T00:00Z",
     "end_datetime": "2024-04-18T00:00Z",
@@ -140,6 +139,11 @@
       "title": "FAIRiCUBE - Use Case 1",
       "href": "https://github.com/FAIRiCUBE/uc1-urban-climate",
       "rel": "cite-as"
+    },
+    {
+      "title": "Documents & Publications",
+      "href": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/data/city_features_collection/city_features_collection_codebook.csv",
+      "rel": "processing"
     }
   ],
   "assets": {},

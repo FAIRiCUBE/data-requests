@@ -61,7 +61,6 @@
     "datasource_type": "grid",
     "keywords": "land cover, urban area, sealing, built environment, land use, soil surface sealing, landscape alteration",
     "region": "EEA39",
-    "documentation": "European Union's Copernicus Land Monitoring Service information; Source dataset DOI links: https://doi.org/10.2909/4e92b07d-48b0-4a53-9db2-fd8d07070cc1",
     "proj:code": "EPSG:3035",
     "start_datetime": "2014-01-01T00:00:00.000Z",
     "end_datetime": "2016-12-31T23:59:59.999Z",
@@ -144,6 +143,11 @@
       "title": "European Environment Agency",
       "href": "https://land.copernicus.eu/",
       "rel": "cite-as"
+    },
+    {
+      "title": "Documents & Publications",
+      "href": "European Union's Copernicus Land Monitoring Service information; Source dataset DOI links: https://doi.org/10.2909/4e92b07d-48b0-4a53-9db2-fd8d07070cc1",
+      "rel": "processing"
     }
   ],
   "assets": {

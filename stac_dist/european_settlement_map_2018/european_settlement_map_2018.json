@@ -61,7 +61,6 @@
     "datasource_type": "grid",
     "keywords": "land, land use, land cover, human settlement, urban area, green space, building typology, built-up areas, copernicus, esm, ghsl, pan-european, remote sensing, classification",
     "region": "EEA39",
-    "documentation": "Corbane, Christina; Szabo, Filip (2022): ESM R2020 - European Settlement Map from Copernicus Very High Resolution data for reference year 2018. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/192530fc-3d09-4740-8c1d-d1e601cdfdcc",
     "proj:code": "EPSG:3035",
     "start_datetime": "2018-01-01T00:00Z",
     "end_datetime": "2018-12-31T23:59:59.999Z",
@@ -139,6 +138,11 @@
       "rel": "service",
       "type": "text/html",
       "title": "Link to the rasdaman web application to access and process gridded data"
+    },
+    {
+      "title": "Documents & Publications",
+      "href": "Corbane, Christina; Szabo, Filip (2022): ESM R2020 - European Settlement Map from Copernicus Very High Resolution data for reference year 2018. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/192530fc-3d09-4740-8c1d-d1e601cdfdcc",
+      "rel": "processing"
     }
   ],
   "assets": {

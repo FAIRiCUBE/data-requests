@@ -61,7 +61,6 @@
     "datasource_type": "grid",
     "keywords": "forest management, land cover, landscape alteration, land use, grassland",
     "region": "EEA39",
-    "documentation": "European Union's Copernicus Land Monitoring Service information; Source dataset DOI links: https://doi.org/10.2909/35a036bb-c027-401c-8625-2ecf722e8461",
     "proj:code": "EPSG:3035",
     "start_datetime": "2018-03-01T00:00Z",
     "end_datetime": "2018-10-31T23:59:59.999Z",
@@ -144,6 +143,11 @@
       "title": "European Environment Agency",
       "href": "https://land.copernicus.eu/",
       "rel": "cite-as"
+    },
+    {
+      "title": "Documents & Publications",
+      "href": "European Union's Copernicus Land Monitoring Service information; Source dataset DOI links: https://doi.org/10.2909/35a036bb-c027-401c-8625-2ecf722e8461",
+      "rel": "processing"
     }
   ],
   "assets": {
