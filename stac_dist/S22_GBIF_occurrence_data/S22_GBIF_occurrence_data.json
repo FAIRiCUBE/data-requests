@@ -1,0 +1,110 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "S22_GBIF_occurrence_data",
+  "properties": {
+    "keywords": [
+      "GBIF",
+      " occurrence data",
+      " EUNIS",
+      " habitat"
+    ],
+    "license": "CC-BY-NC-4.0",
+    "description": "Complete dataset with cleaned and processed occurrence data of the diagnostic species of the habitat S22, downloaded from GBIF (API in R). ",
+    "providers": [],
+    "dataSource": "",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -24.435654,
+          65.110498
+        ],
+        "reference_system": "4326",
+        "type": "spatial",
+        "unit": "degree",
+        "step": 100
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          36.73523,
+          80.115589
+        ],
+        "reference_system": "4326",
+        "type": "spatial",
+        "unit": "degree",
+        "step": 100
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "type": "spatial"
+      }
+    },
+    "raster:bands": [],
+    "title": "GBIF occurrence data Habitat S22",
+    "datasource_type": "csv",
+    "area_cover": "Europe",
+    "provenance_name": "Global Biodiversity Information Facility (GBIF)",
+    "preprocessing": "Data request: occurrence data requested for Europe, period range: 1980-2024, between the months of January and September. Basis of records requested: human observations, material sample, material citation, preserved specimens. Data cleaning included: NAs and outliers cleaning. Data standard format DWCA.",
+    "source_data": "https://doi.org/10.15468/dl.pcb2f5, https://doi.org/10.15468/dl.fjpt7s, https://doi.org/10.15468/dl.et8s3p, https://doi.org/10.15468/dl.77nej7, https://doi.org/10.15468/dl.f2uzb6, https://doi.org/10.15468/dl.4xqbxx, https://doi.org/10.15468/dl.9f2jeu, https://doi.org/10.15468/dl.4cdnm2%20",
+    "models": "https://github.com/FAIRiCUBE/uc5-occurence-cubes/blob/main/Notebooks/GETDATA_GBIF.R",
+    "use_case_NHM": "1",
+    "platform": "Eox"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -24.435654,
+          36.73523
+        ],
+        [
+          -24.435654,
+          80.115589
+        ],
+        [
+          65.110498,
+          80.115589
+        ],
+        [
+          65.110498,
+          36.73523
+        ],
+        [
+          -24.435654,
+          36.73523
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    -24.435654,
+    36.73523,
+    65.110498,
+    80.115589
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
