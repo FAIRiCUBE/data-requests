@@ -1,0 +1,103 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "QueryCubeTool",
+  "properties": {
+    "keywords": [],
+    "description": "NA",
+    "contacts": [],
+    "project:use_cases": [],
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [],
+        "type": "spatial"
+      },
+      "y": {
+        "axis": "y",
+        "extent": [],
+        "type": "spatial"
+      },
+      "z": {}
+    },
+    "bands": [],
+    "title": "NA",
+    "datasource_type": "",
+    "area_cover": "Point Coordinates",
+    "project:purpose": "",
+    "datetime": null,
+    "modification": null,
+    "provision": null,
+    "project:platform": "Rasdaman"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          null,
+          null
+        ],
+        [
+          null,
+          null
+        ],
+        [
+          null,
+          null
+        ],
+        [
+          null,
+          null
+        ],
+        [
+          null,
+          null
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?&SERVICE=WCS&VERSION=2.1.0&REQUEST=DescribeCoverage&COVERAGEID=QueryCubeTool&outputType=GeneralGridCoverage",
+      "rel": "item",
+      "type": "text/xml",
+      "title": "Link to the description of this coverage object within the WCS Service"
+    },
+    {
+      "href": "https://fairicube.rasdaman.com/rasdaman-dashboard/?layers=QueryCubeTool",
+      "rel": "alternate",
+      "type": "text/html",
+      "title": "Link to the rasdaman dashboard to Access, process gridded data"
+    },
+    {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?&SERVICE=WCS&VERSION=2.1.0&REQUEST=GetCapabilities",
+      "rel": "collection",
+      "type": "text/xml",
+      "title": "Link to the main WCS service URI providing this data"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
+  ]
+}
