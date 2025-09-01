@@ -7,17 +7,20 @@
       "builtup_area"
     ],
     "license": "CC-BY-NC-4.0",
-    "description": "Vienna building area [100m]",
-    "providers": [
+    "description": "Vienna building area [100m].",
+    "contacts": [
       {
-        "organization_name": "Stadt Wien",
-        "organization_email": "open@post.wien.gv.at",
-        "roles": [
-          "licensor"
+        "organization": "Stadt Wien",
+        "emails": [
+          {
+            "value": "open@post.wien.gv.at",
+            "role": "work"
+          }
         ]
       }
     ],
     "dataSource": "Open data Austria (data.gv.at)",
+    "project:use_cases": [],
     "cube:dimensions": {
       "x": {
         "axis": "x",
@@ -60,7 +63,7 @@
         "unit": "year"
       }
     },
-    "raster:bands": [
+    "bands": [
       {
         "band_name": "builtup_area",
         "unit": "ha",
@@ -75,20 +78,17 @@
     "title": "Vienna building area [100m]",
     "datasource_type": "GML ",
     "area_cover": "415km2",
-    "crs": "EPSG:31256",
+    "proj:code": "EPSG:31256",
     "start_datetime": "2024-01-01T00:00Z",
     "end_datetime": "2024-12-31T00:00Z",
     "provenance_name": " data.gv.at",
     "preprocessing": "The original bulding footprint dataset was masked, next the building cover per 100m gridcell was calculatedc and a raster was produced",
-    "source_data": "https://www.wien.gv.at/stadtentwicklung/stadtvermessung/geodaten/viewer/geodatendownload.html",
-    "models": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/notebooks/dev/f06_pre_processing/Vienna_distance_raster_from_points_data.ipynb",
+    "wasGeneratedBy": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/notebooks/dev/f06_pre_processing/Vienna_distance_raster_from_points_data.ipynb",
     "access_control": "fairicube account required ",
     "datetime": "2024-07-17T10:29:47Z",
     "modification": "2024-07-17T10:29:51Z",
     "provision": "2024-07-17T10:29:49Z",
-    "use_case_S4E": "1",
-    "use_case_NHM_2": "1",
-    "platform": "Eox"
+    "project:platform": "Eox"
   },
   "geometry": {
     "type": "Polygon",
@@ -131,24 +131,7 @@
       "title": "data-access catalog"
     }
   ],
-  "assets": {
-    "file_on_s3": {
-      "href": "https://fairicube.s3.eu-central-1.amazonaws.com/vienna_data/100m/r08_buildings/r08_Wien_buildings_area_ha_100m_b1_1_1.tif",
-      "roles": [
-        [
-          "data"
-        ]
-      ]
-    },
-    "rasdaman_datacube": {
-      "href": "https://fairicube.rasdaman.com/rasdaman/ows?&SERVICE=WCS&VERSION=2.1.0&REQUEST=DescribeCoverage&COVERAGEID=Vienna_building_area&outputType=GeneralGridCoverage",
-      "roles": [
-        [
-          "data"
-        ]
-      ]
-    }
-  },
+  "assets": {},
   "bbox": [
     16.18109409638113,
     48.11720087650675,
@@ -156,7 +139,10 @@
     48.32420866274977
   ],
   "stac_extensions": [
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ]
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://raw.githubusercontent.com/ogcincubator/bblock-prov-schema/refs/heads/master/_sources/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "wasDerivedFrom": "https://www.wien.gv.at/stadtentwicklung/stadtvermessung/geodaten/viewer/geodatendownload.html"
 }
