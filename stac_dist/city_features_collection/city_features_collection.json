@@ -72,17 +72,15 @@
     "title": "City features collection",
     "datasource_type": "geojson",
     "keywords": "eu cities, urban atlas, land, climate, socioeconomic, estat",
-    "documentation": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/data/city_features_collection/city_features_collection_codebook.csv",
     "proj:code": "EPSG:4326",
     "start_datetime": "2018-12-31T00:00Z",
     "end_datetime": "2024-04-18T00:00Z",
     "personalData": "no personal data",
-    "preprocessing": "Refer to the codebook for a complete description.",
+    "processing:lineage": "Refer to the codebook for a complete description.",
     "API": "No API. The dataset can be downloaded from Github or Zenodo, or the github repository (including example Notebooks) can be cloned",
     "access_control": "no access control",
     "modification": null,
     "provision": "2024-04-15T13:38:52Z",
-    "project:platform": "Eox",
     "contacts": [
       {
         "name": "FAIRiCUBE - Use Case 1",
@@ -94,7 +92,8 @@
     "project:use_cases": [
       "S4E"
     ],
-    "project:purpose": "Urban adaptation to climate change"
+    "project:purpose": "Urban adaptation to climate change",
+    "processing:facility": "Eox"
   },
   "geometry": {
     "type": "Polygon",
@@ -140,6 +139,11 @@
       "title": "FAIRiCUBE - Use Case 1",
       "href": "https://github.com/FAIRiCUBE/uc1-urban-climate",
       "rel": "cite-as"
+    },
+    {
+      "title": "Documents & Publications",
+      "href": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/data/city_features_collection/city_features_collection_codebook.csv",
+      "rel": "processing"
     }
   ],
   "assets": {},
@@ -154,6 +158,7 @@
     "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
-    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
   ]
 }

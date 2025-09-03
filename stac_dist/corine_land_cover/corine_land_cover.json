@@ -72,20 +72,18 @@
     "datasource_type": "grid",
     "keywords": "land cover, landscape, landscape alteration, land, land use",
     "region": "EEA-38+UK",
-    "documentation": "Source dataset DOI links: https://doi.org/10.2909/c89324ef-7729-4477-9f1b-623f5f88eaa1, https://doi.org/10.2909/ddacbd5e-068f-4e52-a596-d606e8de7f40, https://doi.org/10.2909/08560441-2fd5-4eb9-bf4c-9ef16725726a, https://doi.org/10.2909/a84ae124-c5c5-4577-8e10-511bfe55cc0d, https://doi.org/10.2909/960998c1-1870-4e82-8051-6485205ebbac",
     "proj:code": "EPSG:3035",
     "start_datetime": "1990-01-01T00:00Z",
     "end_datetime": "2018-01-01T00:00Z",
     "personalData": null,
     "provenance_name": "European Union's Copernicus Land Monitoring Service",
-    "preprocessing": null,
+    "processing:lineage": null,
     "API": "OGC WCS, WCPS, WMS, WMTS",
     "modification": null,
     "provision": null,
     "use_case_NILU": null,
     "use_case_NHM_2": null,
     "ingestion_status": "Completed, year as integer, (1990,2000,2006,2012,2018)",
-    "project:platform": "Rasdaman",
     "contacts": [
       {
         "name": "EEA",
@@ -98,7 +96,8 @@
       "S4E",
       "WER",
       "NHM"
-    ]
+    ],
+    "processing:facility": "Rasdaman"
   },
   "geometry": {
     "type": "Polygon",
@@ -156,6 +155,11 @@
       "title": "EEA",
       "href": "https://land.copernicus.eu/pan-european/corine-land-cover",
       "rel": "cite-as"
+    },
+    {
+      "title": "Documents & Publications",
+      "href": "Source dataset DOI links: https://doi.org/10.2909/c89324ef-7729-4477-9f1b-623f5f88eaa1, https://doi.org/10.2909/ddacbd5e-068f-4e52-a596-d606e8de7f40, https://doi.org/10.2909/08560441-2fd5-4eb9-bf4c-9ef16725726a, https://doi.org/10.2909/a84ae124-c5c5-4577-8e10-511bfe55cc0d, https://doi.org/10.2909/960998c1-1870-4e82-8051-6485205ebbac",
+      "rel": "processing"
     }
   ],
   "assets": {
@@ -177,6 +181,7 @@
     "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
-    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
   ]
 }

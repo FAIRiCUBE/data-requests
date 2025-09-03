@@ -76,7 +76,6 @@
     "datetime": null,
     "modification": null,
     "provision": null,
-    "project:platform": "Eox",
     "contacts": [
       {
         "name": "Ministre de l\u2019Environnement, du Climat et de la Biodiversit\u00e9 & Minist\u00e8re du Logement et de l\u2019Am\u00e9nagement du territoire - D\u00e9partement de l\u2019am\u00e9nagement du territoire",
@@ -91,7 +90,8 @@
     ],
     "project:use_cases": [
       "S4E"
-    ]
+    ],
+    "processing:facility": "Eox"
   },
   "geometry": {
     "type": "Polygon",
@@ -150,6 +150,7 @@
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
-    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
   ]
 }

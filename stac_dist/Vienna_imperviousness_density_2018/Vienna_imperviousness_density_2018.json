@@ -72,14 +72,13 @@
     "title": "Vienna imperviousness density 2018 [100m]",
     "datasource_type": "GeoTIFF",
     "region": "415km2",
-    "documentation": "",
     "proj:code": "EPSG:31256",
     "start_datetime": "2017-01-01T00:00Z",
     "end_datetime": "2019-12-31T00:00Z",
     "resolution": "",
     "personalData": "",
     "provenance_name": "CLMS Imperviousness 2018",
-    "preprocessing": "Re-projection from 3035 to 31256 (NN) and clipped to Vienna border and pixel shift to rounded 100m coordiantes",
+    "processing:lineage": "Re-projection from 3035 to 31256 (NN) and clipped to Vienna border and pixel shift to rounded 100m coordiantes",
     "metadata_standards": "",
     "API": "AWS-S3 API",
     "distributions": "",
@@ -88,7 +87,6 @@
     "modification": "2024-07-17T09:30:11Z",
     "provision": "2024-07-17T09:30:08Z",
     "ingestion_status": "",
-    "project:platform": "Eox",
     "contacts": [
       {
         "name": "European Environment Agency",
@@ -107,7 +105,8 @@
       "S4E",
       "NHM_2"
     ],
-    "project:purpose": "https://land.copernicus.eu"
+    "project:purpose": "https://land.copernicus.eu",
+    "processing:facility": "Eox"
   },
   "geometry": {
     "type": "Polygon",
@@ -180,6 +179,7 @@
     "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
-    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
   ]
 }

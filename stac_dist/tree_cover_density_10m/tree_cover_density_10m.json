@@ -61,7 +61,6 @@
     "datasource_type": "grid",
     "keywords": "land use, land cover, landscape alteration, tree, forest management",
     "region": "EEA39",
-    "documentation": "European Union's Copernicus Land Monitoring Service information; Source dataset DOI links: https://doi.org/10.2909/486f77da-d605-423e-93a9-680760ab6791",
     "proj:code": "EPSG:3035",
     "start_datetime": "2018-03-01T00:00:00.000Z",
     "end_datetime": "2018-10-31T23:59:59.999Z",
@@ -69,7 +68,6 @@
     "provenance_name": "https://land.copernicus.eu/en/products/high-resolution-layer-tree-cover-density/tree-cover-density-2018",
     "API": "OGC WCS, WCPS, WSM, WMTS, OAPI-Coverages",
     "ingestion_status": "Completed",
-    "project:platform": "Rasdaman",
     "contacts": [
       {
         "name": "European Environment Agency",
@@ -86,7 +84,8 @@
       "S4E",
       "WER",
       "NHM"
-    ]
+    ],
+    "processing:facility": "Rasdaman"
   },
   "geometry": {
     "type": "Polygon",
@@ -144,6 +143,11 @@
       "title": "European Environment Agency",
       "href": "https://land.copernicus.eu/",
       "rel": "cite-as"
+    },
+    {
+      "title": "Documents & Publications",
+      "href": "European Union's Copernicus Land Monitoring Service information; Source dataset DOI links: https://doi.org/10.2909/486f77da-d605-423e-93a9-680760ab6791",
+      "rel": "processing"
     }
   ],
   "assets": {
@@ -164,6 +168,7 @@
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
-    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
   ]
 }

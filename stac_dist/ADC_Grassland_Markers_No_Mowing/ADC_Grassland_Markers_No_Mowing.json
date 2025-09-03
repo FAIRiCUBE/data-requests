@@ -64,7 +64,6 @@
     "title": "ADC - Grassland Markers No Mowing",
     "datasource_type": "Raster",
     "region": "Central Netherlands",
-    "documentation": "https://doi.org/10.18174/455759",
     "proj:code": "EPSG:28992",
     "start_datetime": "2018-01-01T12:00Z",
     "end_datetime": "2022-01-01T12:00Z",
@@ -73,11 +72,11 @@
     "modification": null,
     "provision": null,
     "ingestion_status": "completed",
-    "project:platform": "Both",
     "wasDerivedFrom": "https://documenter.getpostman.com/view/3284162/TVeqd7aa",
     "project:use_cases": [
       "WER"
-    ]
+    ],
+    "processing:facility": "Both"
   },
   "geometry": {
     "type": "Polygon",
@@ -130,6 +129,11 @@
       "rel": "service",
       "type": "text/html",
       "title": "Link to the rasdaman web application to Access, process gridded data"
+    },
+    {
+      "title": "Documents & Publications",
+      "href": "https://doi.org/10.18174/455759",
+      "rel": "processing"
     }
   ],
   "assets": {
@@ -150,6 +154,7 @@
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
   ]
 }

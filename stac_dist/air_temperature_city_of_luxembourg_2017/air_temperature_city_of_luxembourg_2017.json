@@ -204,7 +204,6 @@
     "title": "Average Monthly Air Temperature of the City of Luxembourg 2017 derived from UrbClim",
     "datasource_type": "grid",
     "region": "5171.66 ha",
-    "documentation": "https://confluence.ecmwf.int/display/CKB/Climate+variables+for+cities+in+Europe+from+2008+to+2017+documentation#ClimatevariablesforcitiesinEuropefrom2008to2017documentation-_bookmark13Timeformat",
     "proj:code": "EPSG:2169",
     "start_datetime": "2017-01-01T00:00Z",
     "end_datetime": "2017-12-31T00:00Z",
@@ -212,7 +211,7 @@
     "resolution": "",
     "personalData": "no personal data",
     "provenance_name": "Climate variables for cities in Europe from 2008 to 2017",
-    "preprocessing": "",
+    "processing:lineage": "",
     "metadata_standards": "",
     "distributions": "",
     "access_control": "fairicube account required ",
@@ -220,7 +219,6 @@
     "modification": null,
     "provision": null,
     "ingestion_status": "",
-    "project:platform": "Eox",
     "contacts": [
       {
         "name": "space4environment",
@@ -242,7 +240,8 @@
     "project:use_cases": [
       "S4E"
     ],
-    "project:purpose": "Urban adaptation to climate change"
+    "project:purpose": "Urban adaptation to climate change",
+    "processing:facility": "Eox"
   },
   "geometry": {
     "type": "Polygon",
@@ -304,6 +303,11 @@
       "title": "ECMWF",
       "href": "https://confluence.ecmwf.int/display/CKB/Climate+variables+for+cities+in+Europe+from+2008+to+2017+documentation#heading-4Exampledata",
       "rel": "cite-as"
+    },
+    {
+      "title": "Documents & Publications",
+      "href": "https://confluence.ecmwf.int/display/CKB/Climate+variables+for+cities+in+Europe+from+2008+to+2017+documentation#ClimatevariablesforcitiesinEuropefrom2008to2017documentation-_bookmark13Timeformat",
+      "rel": "processing"
     }
   ],
   "assets": {
@@ -338,6 +342,7 @@
     "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
-    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
   ]
 }

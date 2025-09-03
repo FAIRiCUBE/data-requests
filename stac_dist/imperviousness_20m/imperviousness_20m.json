@@ -66,7 +66,6 @@
     "datasource_type": "grid",
     "keywords": "sealing, soil surface sealing, urban area, landscape alteration, built environment, land use, land cover",
     "region": "EEA39",
-    "documentation": "European Union's Copernicus Land Monitoring Service information; Source dataset DOI links: https://doi.org/10.2909/532f0b73-66c3-46f6-b5a5-d1cccd140433, https://doi.org/10.2909/61a2a6c8-9f9a-407d-a01d-d2101e9dcd65, https://doi.org/10.2909/4023528f-430d-402b-be16-91b6a6487be6, https://doi.org/10.2909/8b83d30f-4731-4de3-bead-1c6432d9d30a",
     "proj:code": "EPSG:3035",
     "start_datetime": "2005-01-01T00:00:00.000Z",
     "end_datetime": "2016-12-31T23:59:59.999Z",
@@ -74,7 +73,6 @@
     "provenance_name": "https://land.copernicus.eu/en/products/high-resolution-layer-imperviousness",
     "API": "OGC WCS, WCPS, WSM, WMTS, OAPI-Coverages",
     "ingestion_status": "Completed",
-    "project:platform": "Rasdaman",
     "contacts": [
       {
         "name": "European Environment Agency",
@@ -91,7 +89,8 @@
       "S4E",
       "WER",
       "NHM"
-    ]
+    ],
+    "processing:facility": "Rasdaman"
   },
   "geometry": {
     "type": "Polygon",
@@ -149,6 +148,11 @@
       "title": "European Environment Agency",
       "href": "https://land.copernicus.eu/",
       "rel": "cite-as"
+    },
+    {
+      "title": "Documents & Publications",
+      "href": "European Union's Copernicus Land Monitoring Service information; Source dataset DOI links: https://doi.org/10.2909/532f0b73-66c3-46f6-b5a5-d1cccd140433, https://doi.org/10.2909/61a2a6c8-9f9a-407d-a01d-d2101e9dcd65, https://doi.org/10.2909/4023528f-430d-402b-be16-91b6a6487be6, https://doi.org/10.2909/8b83d30f-4731-4de3-bead-1c6432d9d30a",
+      "rel": "processing"
     }
   ],
   "assets": {
@@ -169,6 +173,7 @@
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
-    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
   ]
 }

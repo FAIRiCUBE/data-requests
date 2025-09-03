@@ -65,18 +65,16 @@
     "datasource_type": "grid",
     "keywords": "population, census, population distribution, demography, society",
     "region": "EU-27 + EFTA countries + Western Balkans + UK (38 countries)",
-    "documentation": "Batista e Silva F, Dijkstra L, Poelman H (2021) The JRC-GEOSTAT 2018 population grid. JRC Technical Report.",
     "proj:code": "EPSG:3035",
     "start_datetime": "2006-01-01T00:00Z",
     "end_datetime": "2021-01-01T00:00Z",
     "personalData": "https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution#GEOSTAT%202006%20grid%20dataset",
     "provenance_name": "https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution/geostat",
-    "preprocessing": "Rasterization of CSV data: https://github.com/FAIRiCUBE/data-requests-issue-archive/issues/22#issuecomment-2244327198",
+    "processing:lineage": "Rasterization of CSV data: https://github.com/FAIRiCUBE/data-requests-issue-archive/issues/22#issuecomment-2244327198",
     "API": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
     "modification": null,
     "provision": null,
     "ingestion_status": "Completed: Version 2021 (16 June 2024), Version 2018 (13 April 2021), Version 2011 (1 February 2016), Version 2006 (23 January 2012)",
-    "project:platform": "Rasdaman",
     "contacts": [
       {
         "name": "EC Eurostat",
@@ -92,7 +90,8 @@
       "NHM",
       "NHM_2"
     ],
-    "project:purpose": "data provider (population at LAU level); data hosting."
+    "project:purpose": "data provider (population at LAU level); data hosting.",
+    "processing:facility": "Rasdaman"
   },
   "geometry": {
     "type": "Polygon",
@@ -155,6 +154,11 @@
       "title": "EC Joint Research Centre",
       "href": "https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution/geostat",
       "rel": "cite-as"
+    },
+    {
+      "title": "Documents & Publications",
+      "href": "Batista e Silva F, Dijkstra L, Poelman H (2021) The JRC-GEOSTAT 2018 population grid. JRC Technical Report.",
+      "rel": "processing"
     }
   ],
   "assets": {
@@ -176,6 +180,7 @@
     "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
-    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json"
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
   ]
 }
