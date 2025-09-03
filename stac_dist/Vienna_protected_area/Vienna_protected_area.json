@@ -1,0 +1,172 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "Vienna_protected_area",
+  "properties": {
+    "keywords": [
+      "protected_area_share "
+    ],
+    "license": "CC-BY-ND-4.0",
+    "description": "Protected areas inside Vienna [100m]\nThe dataset is a collection of the following protecteded datasets:\n-Landschaftsschutzgebiete\n-Biotoptypenkartierung\n-Nationalparks\n-Gesch\u00fctzte\u00a0Landschaftsteile\n-Gesch\u00fctzte\u00a0Biotope\n\nThe different datasets were merged into one single mask. Then the cover of protected area inside 100x100 meter cells was calculated and exported as a 100m raster.\n",
+    "providers": [
+      {
+        "organization_name": "Stadt Wien",
+        "organization": "Stadt Wien",
+        "comments": "",
+        "doc_link": "",
+        "organization_email": "open@post.wien.gv.at",
+        "ORCID_ID": "",
+        "roles": "licensor",
+        "project_purpose": ""
+      }
+    ],
+    "dataSource": "Open data Austria (data.gv.at)",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          331000,
+          354000
+        ],
+        "reference_system": "EPSG:31256",
+        "type": "spatial",
+        "unit": "meter",
+        "interpolation": "sum protected area cover per 100m x 100m cell",
+        "step": 100
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          -11200,
+          18800
+        ],
+        "reference_system": "EPSG:31256",
+        "type": "spatial",
+        "unit": "meter",
+        "interpolation": "sum protected area cover per 100m x 100m cell",
+        "step": 100
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": "",
+        "unit": "",
+        "interpolation": "",
+        "step": "",
+        "type": "spatial"
+      },
+      "time": {
+        "type": "temporal",
+        "extent": [
+          "2024-01-01T00:00Z",
+          "2024-12-31T00:00Z"
+        ],
+        "step": "P1Y0M0DT0H0M0S",
+        "unit": "year",
+        "interpolation": ""
+      }
+    },
+    "raster:bands": [
+      {
+        "band_name": "protected_area_share ",
+        "unit": "%",
+        "data_type": "float64",
+        "nodata": -9,
+        "definition": "land use protected area [% cell cover] ",
+        "description": "land use protected area [% cell cover] ",
+        "category_list": "",
+        "comment": "Band 1",
+        "interpolation": "SUM"
+      }
+    ],
+    "title": "Protected areas inside Vienna [100m]",
+    "datasource_type": "GML ",
+    "area_cover": "415km2",
+    "documentation": "",
+    "crs": "EPSG:31256",
+    "start_datetime": "2024-01-01T00:00Z",
+    "end_datetime": "2024-12-31T00:00Z",
+    "re_projection_crs": "",
+    "unit_of_measure": "",
+    "resolution": "",
+    "personalData": "",
+    "provenance_name": "Open data Austria (data.gv.at)",
+    "preprocessing": "The dataset is a collection of the following protecteded datasets: -Landschaftsschutzgebiete -Biotoptypenkartierung -Nationalparks -Gesch\u00fctzte\u00a0Landschaftsteile -Gesch\u00fctzte\u00a0Biotope  The single protection dataset were merged and a mask protected dataset  was produced. Then the cover of protection inside 100x100 meter cells were calculated and exportet as a 100m raster.",
+    "source_data": "https://www.data.gv.at/katalog/dataset/a1347e6c-db7d-423d-9b62-de7717129f5b#additional-info",
+    "models": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/notebooks/dev/f06_pre_processing/Vienna_protected_areas_100m.ipynb",
+    "data_quality": "",
+    "quality_control": "",
+    "metada_standards": "",
+    "apis": "AWS-S3 API",
+    "distributions": "",
+    "access_control": "fairicube account required ",
+    "datetime": "2024-07-17T10:10:51Z",
+    "modification": "2024-07-17T10:10:56Z",
+    "provision": "2024-07-17T10:10:54Z",
+    "use_case_S4E": "1",
+    "use_case_NHM_2": "1",
+    "ingestion_status": "",
+    "platform": "Eox"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          20.527587778333267,
+          44.951075003750404
+        ],
+        [
+          20.527587778333267,
+          45.2313494572559
+        ],
+        [
+          20.839371582277582,
+          45.2313494572559
+        ],
+        [
+          20.839371582277582,
+          44.951075003750404
+        ],
+        [
+          20.527587778333267,
+          44.951075003750404
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {
+    "file on s3": {
+      "href": "https://fairicube.s3.eu-central-1.amazonaws.com/vienna_data/100m/r06_protected_area/r06_protected_area_100m_b1_1_1.tif",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "bbox": [
+    20.527587778333267,
+    44.951075003750404,
+    20.839371582277582,
+    45.2313494572559
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
