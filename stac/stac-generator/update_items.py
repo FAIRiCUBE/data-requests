@@ -7,7 +7,7 @@ username = os.environ["USERNAME"]
 password = os.environ["PASSWORD"]
 
 catalog_url = "https://fairicube.github.io/data-requests/catalog.json"
-post_url = "https://stacapi-write.eoxhub.fairicube.eu/collections/index/items"
+post_url = "https://stacapi-write.fairicube.hub-otc-sc.eox.at/collections/index/items"
 
 
 def delete_item(id):
