@@ -4,7 +4,7 @@
   "id": "POPULATION_DENSITY",
   "properties": {
     "datasource_type": "byoc-b468089b-2627-4787-b984-89c10434f6c6",
-    "raster:bands": [
+    "bands": [
       {
         "description": "Population density",
         "name": "populationDensity",
@@ -166,7 +166,7 @@
     89.99999999999991
   ],
   "stac_extensions": [
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
   ]
 }
