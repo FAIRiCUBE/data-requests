@@ -50,7 +50,7 @@
         "unit": "y"
       }
     },
-    "raster:bands": [
+    "bands": [
       {
         "band_name": "land cover",
         "unit": "categorical",
@@ -63,20 +63,17 @@
     ],
     "title": "Land Cover City of Luxembourg",
     "datasource_type": "grid",
-    "area_cover": "5171.66 ha",
-    "documentation": "https://data.public.lu/en/datasets/lis-l-land-cover/",
+    "region": "5171.66 ha",
     "proj:code": "EPSG:2169",
     "start_datetime": "2015-01-01T00:00Z",
     "end_datetime": "2021-01-01T00:00Z",
     "personalData": "no personal data",
     "provenance_name": "LIS-L Land Cover",
-    "preprocessing": "Rasterization from vector to raster and clipped to extent of city of Lux ",
+    "processing:lineage": "Rasterization from vector to raster and clipped to extent of city of Lux ",
     "access_control": "fairicube account required ",
     "datetime": "2024-09-02T16:29Z",
     "modification": null,
     "provision": null,
-    "use_case_S4E": "1",
-    "platform": "Eox",
     "contacts": [
       {
         "name": "FAIRiCUBE",
@@ -86,10 +83,14 @@
             "value": "info@space4environment.com",
             "role": "work"
           }
-        ],
-        "project_purpose": null
+        ]
       }
-    ]
+    ],
+    "wasDerivedFrom": "https://data.public.lu/en/datasets/lis-l-land-cover/",
+    "project:use_cases": [
+      "S4E"
+    ],
+    "processing:facility": "Eox"
   },
   "geometry": {
     "type": "Polygon",
@@ -130,6 +131,11 @@
       "href": "../catalog.json",
       "type": "application/json",
       "title": "data-access catalog"
+    },
+    {
+      "title": "Documents & Publications",
+      "href": "https://data.public.lu/en/datasets/lis-l-land-cover/",
+      "rel": "processing"
     }
   ],
   "assets": {
@@ -159,11 +165,11 @@
     49.65484833240523
   ],
   "stac_extensions": [
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
+    "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
-  ],
-  "wasDerivedFrom": "https://data.public.lu/en/datasets/lis-l-land-cover/"
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
+  ]
 }
