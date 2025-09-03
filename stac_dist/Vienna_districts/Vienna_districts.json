@@ -52,7 +52,7 @@
         "unit": "year"
       }
     },
-    "raster:bands": [
+    "bands": [
       {
         "band_name": "district id",
         "unit": "ID",
@@ -67,23 +67,18 @@
     ],
     "title": "Vienna administration districts [100m]",
     "datasource_type": "WFS (GML) ",
-    "area_cover": "415km2",
-    "proj:code": "EPSG:EPSG:31256",
+    "region": "415km2",
+    "proj:code": "EPSG:31256",
     "start_datetime": "2024-01-01T00:00Z",
     "end_datetime": "2024-12-31T00:00Z",
     "personalData": "",
     "provenance_name": "data.gv.at ",
-    "preprocessing": "The origanal vector dataset was transformed to a raster using gdal function: processing.run(\"gdal:rasterize\", {'INPUT':'N:/C2205_FAIRiCUBE/f02_data/d050_data_WIEN/Vienna_gridded_data_collection/100m_GRID/vector_files/Bezirke_100m.shp','FIELD':'BEZNR','BURN':0,'USE_Z':False,'UNITS':1,'WIDTH':100,'HEIGHT':100,'EXTENT':'-11200.000000000,18800.000000000,331000.000000000,354000.000000000 []','NODATA':0,'OPTIONS':'COMPRESS=DEFLATE|PREDICTOR=2|ZLEVEL=9','DATA_TYPE':5,'INIT':None,'INVERT':False,'EXTRA':'','OUTPUT':'N:/C2205_FAIRiCUBE/f02_data/d050_data_WIEN/Vienna_gridded_data_collection/100m_GRID/r00_Wien_Bezirke_100m.tif'})",
-    "apis": "AWS-S3 API",
+    "processing:lineage": "The origanal vector dataset was transformed to a raster using gdal function: processing.run(\"gdal:rasterize\", {'INPUT':'N:/C2205_FAIRiCUBE/f02_data/d050_data_WIEN/Vienna_gridded_data_collection/100m_GRID/vector_files/Bezirke_100m.shp','FIELD':'BEZNR','BURN':0,'USE_Z':False,'UNITS':1,'WIDTH':100,'HEIGHT':100,'EXTENT':'-11200.000000000,18800.000000000,331000.000000000,354000.000000000 []','NODATA':0,'OPTIONS':'COMPRESS=DEFLATE|PREDICTOR=2|ZLEVEL=9','DATA_TYPE':5,'INIT':None,'INVERT':False,'EXTRA':'','OUTPUT':'N:/C2205_FAIRiCUBE/f02_data/d050_data_WIEN/Vienna_gridded_data_collection/100m_GRID/r00_Wien_Bezirke_100m.tif'})",
+    "API": "AWS-S3 API",
     "access_control": "fairicube account required ",
     "datetime": "2024-07-17T11:28:01Z",
     "modification": "2024-07-17T11:28:04Z",
     "provision": "2024-07-17T11:28:02Z",
-    "use_case_S4E": "1",
-    "use_case_WER": "2",
-    "use_case_NHM": "2",
-    "use_case_NHM_2": "1",
-    "platform": "Eox",
     "contacts": [
       {
         "name": "Stadt Wien",
@@ -93,10 +88,16 @@
             "value": "open@post.wien.gv.at",
             "role": "work"
           }
-        ],
-        "project_purpose": null
+        ]
       }
-    ]
+    ],
+    "project:use_cases": [
+      "S4E",
+      "WER",
+      "NHM",
+      "NHM_2"
+    ],
+    "processing:facility": "Eox"
   },
   "geometry": {
     "type": "Polygon",
@@ -139,6 +140,7 @@
       "title": "data-access catalog"
     },
     {
+      "title": "Stadt Wien",
       "href": "https://www.data.gv.at/katalog/dataset/2ee6b8bf-6292-413c-bb8b-bd22dbb2ad4b",
       "rel": "cite-as"
     }
@@ -158,9 +160,10 @@
     45.2313494572559
   ],
   "stac_extensions": [
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
   ]
 }
