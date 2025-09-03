@@ -88,11 +88,11 @@ def validate_item(item: pystac.item.Item):
 
 
         # Range Data validation
-        assert "raster:bands" in item.properties.keys() or "bands" in item.properties.keys()
+        assert "bands" in item.properties.keys() or "bands" in item.properties.keys()
         #TODO figure out a way to validate edc items , the ones with "bands"
 
-        if "raster:bands" in item.properties.keys():
-            bands = item.properties["raster:bands"]
+        if "bands" in item.properties.keys():
+            bands = item.properties["bands"]
             assert len(bands) > 0, "bands list must not be empty"
             for band in bands:
                 # Range Data Type
