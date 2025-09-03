@@ -40,7 +40,7 @@
         "type": "spatial"
       }
     },
-    "raster:bands": [
+    "bands": [
       {
         "band_name": "suitability index",
         "data_type": "float32",
@@ -55,8 +55,6 @@
     "datetime": "2025-03-28T10:38:47Z",
     "modification": "2025-03-28T10:38:58Z",
     "provision": "2025-03-28T10:38:56Z",
-    "use_case_S4E": "1",
-    "platform": "Eox",
     "contacts": [
       {
         "name": "space4environment",
@@ -66,10 +64,14 @@
             "value": "ricci@space4environment.com",
             "role": "work"
           }
-        ],
-        "project_purpose": "Urban adaptation to climate change"
+        ]
       }
-    ]
+    ],
+    "project:use_cases": [
+      "S4E"
+    ],
+    "project:purpose": "Urban adaptation to climate change",
+    "processing:facility": "Eox"
   },
   "geometry": {
     "type": "Polygon",
@@ -167,97 +169,73 @@
     "fallopia_japonica_maxent": {
       "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/suitability_maps/fallopia_japonica_maxent.tif",
       "roles": [
-        [
-          "data"
-        ]
+        "data"
       ]
     },
     "heracleum_mantegazzianum_maxent": {
       "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/suitability_maps/heracleum_mantegazzianum_maxent.tif",
       "roles": [
-        [
-          "data"
-        ]
+        "data"
       ]
     },
     "impatiens_glandulifera_maxent": {
       "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/suitability_maps/impatiens_glandulifera_maxent.tif",
       "roles": [
-        [
-          "data"
-        ]
+        "data"
       ]
     },
     "prunus_laurocerasus_maxent": {
       "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/suitability_maps/prunus_laurocerasus_maxent.tif",
       "roles": [
-        [
-          "data"
-        ]
+        "data"
       ]
     },
     "solidago_canadensis_maxent": {
       "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/suitability_maps/solidago_canadensis_maxent.tif",
       "roles": [
-        [
-          "data"
-        ]
+        "data"
       ]
     },
     "robinia_pseudoacacia_maxent": {
       "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/suitability_maps/robinia_pseudoacacia_maxent.tif",
       "roles": [
-        [
-          "data"
-        ]
+        "data"
       ]
     },
     "fallopia_japonica_maxent_overview": {
       "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/suitability_maps/fallopia_japonica_maxent_overview.tif",
       "roles": [
-        [
-          "overview"
-        ]
+        "overview"
       ]
     },
     "heracleum_mantegazzianum_maxent_overview": {
       "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/suitability_maps/heracleum_mantegazzianum_maxent_overview.tif",
       "roles": [
-        [
-          "overview"
-        ]
+        "overview"
       ]
     },
     "impatiens_glandulifera_maxent_overview": {
       "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/suitability_maps/impatiens_glandulifera_maxent_overview.tif",
       "roles": [
-        [
-          "overview"
-        ]
+        "overview"
       ]
     },
     "prunus_laurocerasus_maxent_overview": {
       "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/suitability_maps/prunus_laurocerasus_maxent_overview.tif",
       "roles": [
-        [
-          "overview"
-        ]
+        "overview"
       ]
     },
     "solidago_canadensis_maxent_overview": {
       "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/suitability_maps/solidago_canadensis_maxent_overview.tif",
       "roles": [
-        [
-          "overview"
-        ]
+        "overview"
       ]
     },
     "robinia_pseudoacacia_maxent_overview": {
       "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/suitability_maps/robinia_pseudoacacia_maxent_overview.tif",
       "roles": [
-        [
-          "overview"
-        ]
+        "overview"
       ]
     }
   },
@@ -268,9 +246,10 @@
     49.677685246874994
   ],
   "stac_extensions": [
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/example-links/v0.0.1/schema.json",
-    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
   ]
 }
