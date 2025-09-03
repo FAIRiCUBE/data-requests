@@ -49,7 +49,7 @@
         "unit": "year"
       }
     },
-    "raster:bands": [
+    "bands": [
       {
         "band_name": "pH",
         "unit": "pH",
@@ -61,9 +61,8 @@
     ],
     "title": "Soil pH of the city of Luxembourg",
     "datasource_type": "vector",
-    "area_cover": "5171.66 ha",
-    "documentation": "chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://pdf.sciencedirectassets.com/271789/1-s2.0-S0016706119X00178/1-s2.0-S0016706119304768/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLWVhc3QtMSJHMEUCICaRK%2FosxepZecOX8cTxKVoldgugDrUASX87Ruiu2%2Fj1AiEAsqH%2F%2BEOKnWHhkhQNczcH5nOC4jr%2FIsopwrJNNVVA2vgquwUI0v%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAFGgwwNTkwMDM1NDY4NjUiDKB4iPd3an8xMyFd2SqPBUByRFWrWOgID1iKpVkA1WYb2YwXNqHUeoAU7L76on%2BCGnywjtsB7tqF90ZTNGPA%2Boy0Ve6%2BjpM3QzhcUF6XXoTgILec4b%2FqcQV6zdtCIX8eIzCr3bkBipQS0TZhezHrXe6vbIS5fi5%2FBC6Ciw2cGejXTUMXYJPvJRkvQPSAr%2B9L2BohYwxdCO%2BKS33u47eAzs%2ByjzjVV6c6w%2F6yQAw57CplTr8rwpvZrS9zdJY%2B84ox3mdvndIaDi27UioLPSgkz0%2BT74uil%2Fp48DrU5M9opirgsNIxd%2FqjjccjylM5z8Kjt8JBykzhZaCj12q1D3i4tmcW4IBV5j%2Bw2BoA%2FNzeZe1FdUM6%2F8u13ZEmRFpcYVFsMSuouOysR6IN1%2FpaeqG49X1qssf4kXn3B29CVtoatgN9sPE%2FhuvEd1yYZP4pEwYrPc51CYxrlB7eelprAOdD3TxatFwyg%2BejBLiivUib1mjSXWX78jpOxbTGbIUbkRB19zAvsbX0P8gLABrqRojJhST4HttjaxSQfkS9aQDRTpVYD45FTLZNb7chTh%2Bc2i75J9xHsPkeLShtEPxHyHsHFMYCYRSNP%2B05dH39xEaWD9XmT3vSbmHZUX4Fa312oBFBBe2EwLLK3FAA%2BUeDEiXQEexqvIvYNQTfhBa%2Fv%2FpnteMJtkMkCjQCdnM%2BUHNsjpI8ExxwGa9X4qByRH%2BDc0YSPnvKlyN0K2q573kHVQILXm6HBRy4ukFw6EtPV4wQUCZ1HyrPlbGtIn6qbgtKJauzL7YuGZZrBHM6tQc5w6F%2BOiU0TBK0LU03yFV2JGyBBCGaVTY%2Bcs6gWyoMqgDMT7Zoa%2B5o%2ByWAiO7PCl63L83encYlEJyNS3MyZW0HP0DJbdswuJW7ugY6sQGeqMS0rb0HIkAghJsfWMXKWbN6c2mRG40MoGu4sp9TOAgYHY03Jwt2Lzpu6TwwBkuxzGZMEaLk0EumniMg3VEvC30zXjwoocYDXHntJdi6ywuf6ePeGgo6FiZvNvZMUjBv9Yi9CvHkgHQQ7A2ADM92sbf56BvMY%2FcmfAu5Dxoy39nmKMNcqInSs99Z4vS2fNnaUI6a9vTSbNfJ7UVt5PHSAyQZWh9oRQpJludd5fuZxro%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241203T102018Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYSKKZWTZC%2F20241203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=0929c865ce74085ae1061c93a1eb8021e815439e44df87fef7e1a727e52b20fd&hash=af069d4b916b44865f5115472195ccf250b426afce235890c286cc665ccc842d&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0016706119304768&tid=spdf-d2d2b461-e180-496e-8fa2-f544dfc3591c&sid=2fb45f537a8c86405369a4058c72ae2ac551gxrqb&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=0a155e0105500b570056&rr=8ec2d2c52c8866c1&cc=lu&kca=eyJrZXkiOiJOYTZuZ1Y1alNaaWtnVW1uM3NvZzNRVS9MV1o2ODdLV2J3dHNpdkI4VGdMNmhTc2JPYS9WOHZnbENhUTk0cHd1SC9La3VSditTK0UxSjFpQU1uSEd5Vkt1bEhseTFoTHpFMnlXNk9ETVk4VG1Lb1hMZGMvb2lOLzNLY29lTEVGTU9KbXN4M2JiYmxLR3RibWZtSlRUblBIazBMdWVjeTM0VTFVamhjS1NTRHFEamczM3Z3PT0iLCJpdiI6IjEyYTQ1Mjk0YjQ3YjJiZTcyMjRkMDdiYTM5YjM1YmQzIn0=_1733221225410",
-    "proj:code": "EPSG:EPSG:2169",
+    "region": "5171.66 ha",
+    "proj:code": "EPSG:2169",
     "start_datetime": "2009-01-01T00:00Z",
     "end_datetime": "2012-12-31T00:00Z",
     "personalData": "no personal data",
@@ -71,8 +70,6 @@
     "datetime": "2024-09-18T13:52Z",
     "modification": null,
     "provision": null,
-    "use_case_S4E": "1",
-    "platform": "Eox",
     "contacts": [
       {
         "name": "space4environment",
@@ -82,15 +79,19 @@
             "value": "info@space4environment.com",
             "role": "work"
           }
-        ],
-        "project_purpose": "Urban adaptation to climate change"
+        ]
       },
       {
         "name": "JOINT RESEARCH CENTRE European Soil Data Centre (ESDAC)",
         "organization": "JOINT RESEARCH CENTRE European Soil Data Centre (ESDAC)"
       }
     ],
-    "wasDerivedFrom": "https://esdac.jrc.ec.europa.eu/content/chemical-properties-european-scale-based-lucas-topsoil-data#tabs-0-description=0"
+    "wasDerivedFrom": "https://esdac.jrc.ec.europa.eu/content/chemical-properties-european-scale-based-lucas-topsoil-data#tabs-0-description=0",
+    "project:use_cases": [
+      "S4E"
+    ],
+    "project:purpose": "Urban adaptation to climate change",
+    "processing:facility": "Eox"
   },
   "geometry": {
     "type": "Polygon",
@@ -143,6 +144,11 @@
       "title": "JOINT RESEARCH CENTRE European Soil Data Centre (ESDAC)",
       "href": "https://esdac.jrc.ec.europa.eu/content/chemical-properties-european-scale-based-lucas-topsoil-data#tabs-0-description=0",
       "rel": "cite-as"
+    },
+    {
+      "title": "Documents & Publications",
+      "href": "chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://pdf.sciencedirectassets.com/271789/1-s2.0-S0016706119X00178/1-s2.0-S0016706119304768/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLWVhc3QtMSJHMEUCICaRK%2FosxepZecOX8cTxKVoldgugDrUASX87Ruiu2%2Fj1AiEAsqH%2F%2BEOKnWHhkhQNczcH5nOC4jr%2FIsopwrJNNVVA2vgquwUI0v%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAFGgwwNTkwMDM1NDY4NjUiDKB4iPd3an8xMyFd2SqPBUByRFWrWOgID1iKpVkA1WYb2YwXNqHUeoAU7L76on%2BCGnywjtsB7tqF90ZTNGPA%2Boy0Ve6%2BjpM3QzhcUF6XXoTgILec4b%2FqcQV6zdtCIX8eIzCr3bkBipQS0TZhezHrXe6vbIS5fi5%2FBC6Ciw2cGejXTUMXYJPvJRkvQPSAr%2B9L2BohYwxdCO%2BKS33u47eAzs%2ByjzjVV6c6w%2F6yQAw57CplTr8rwpvZrS9zdJY%2B84ox3mdvndIaDi27UioLPSgkz0%2BT74uil%2Fp48DrU5M9opirgsNIxd%2FqjjccjylM5z8Kjt8JBykzhZaCj12q1D3i4tmcW4IBV5j%2Bw2BoA%2FNzeZe1FdUM6%2F8u13ZEmRFpcYVFsMSuouOysR6IN1%2FpaeqG49X1qssf4kXn3B29CVtoatgN9sPE%2FhuvEd1yYZP4pEwYrPc51CYxrlB7eelprAOdD3TxatFwyg%2BejBLiivUib1mjSXWX78jpOxbTGbIUbkRB19zAvsbX0P8gLABrqRojJhST4HttjaxSQfkS9aQDRTpVYD45FTLZNb7chTh%2Bc2i75J9xHsPkeLShtEPxHyHsHFMYCYRSNP%2B05dH39xEaWD9XmT3vSbmHZUX4Fa312oBFBBe2EwLLK3FAA%2BUeDEiXQEexqvIvYNQTfhBa%2Fv%2FpnteMJtkMkCjQCdnM%2BUHNsjpI8ExxwGa9X4qByRH%2BDc0YSPnvKlyN0K2q573kHVQILXm6HBRy4ukFw6EtPV4wQUCZ1HyrPlbGtIn6qbgtKJauzL7YuGZZrBHM6tQc5w6F%2BOiU0TBK0LU03yFV2JGyBBCGaVTY%2Bcs6gWyoMqgDMT7Zoa%2B5o%2ByWAiO7PCl63L83encYlEJyNS3MyZW0HP0DJbdswuJW7ugY6sQGeqMS0rb0HIkAghJsfWMXKWbN6c2mRG40MoGu4sp9TOAgYHY03Jwt2Lzpu6TwwBkuxzGZMEaLk0EumniMg3VEvC30zXjwoocYDXHntJdi6ywuf6ePeGgo6FiZvNvZMUjBv9Yi9CvHkgHQQ7A2ADM92sbf56BvMY%2FcmfAu5Dxoy39nmKMNcqInSs99Z4vS2fNnaUI6a9vTSbNfJ7UVt5PHSAyQZWh9oRQpJludd5fuZxro%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241203T102018Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYSKKZWTZC%2F20241203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=0929c865ce74085ae1061c93a1eb8021e815439e44df87fef7e1a727e52b20fd&hash=af069d4b916b44865f5115472195ccf250b426afce235890c286cc665ccc842d&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0016706119304768&tid=spdf-d2d2b461-e180-496e-8fa2-f544dfc3591c&sid=2fb45f537a8c86405369a4058c72ae2ac551gxrqb&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=0a155e0105500b570056&rr=8ec2d2c52c8866c1&cc=lu&kca=eyJrZXkiOiJOYTZuZ1Y1alNaaWtnVW1uM3NvZzNRVS9MV1o2ODdLV2J3dHNpdkI4VGdMNmhTc2JPYS9WOHZnbENhUTk0cHd1SC9La3VSditTK0UxSjFpQU1uSEd5Vkt1bEhseTFoTHpFMnlXNk9ETVk4VG1Lb1hMZGMvb2lOLzNLY29lTEVGTU9KbXN4M2JiYmxLR3RibWZtSlRUblBIazBMdWVjeTM0VTFVamhjS1NTRHFEamczM3Z3PT0iLCJpdiI6IjEyYTQ1Mjk0YjQ3YjJiZTcyMjRkMDdiYTM5YjM1YmQzIn0=_1733221225410",
+      "rel": "processing"
     }
   ],
   "assets": {
@@ -172,11 +178,12 @@
     49.65484833240523
   ],
   "stac_extensions": [
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/example-links/v0.0.1/schema.json",
     "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
   ]
 }

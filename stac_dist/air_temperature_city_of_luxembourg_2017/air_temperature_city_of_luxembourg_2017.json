@@ -67,7 +67,7 @@
         "interpolation": ""
       }
     },
-    "raster:bands": [
+    "bands": [
       {
         "band_name": "band_1",
         "unit": "continuous",
@@ -203,8 +203,7 @@
     ],
     "title": "Average Monthly Air Temperature of the City of Luxembourg 2017 derived from UrbClim",
     "datasource_type": "grid",
-    "area_cover": "5171.66 ha",
-    "documentation": "https://confluence.ecmwf.int/display/CKB/Climate+variables+for+cities+in+Europe+from+2008+to+2017+documentation#ClimatevariablesforcitiesinEuropefrom2008to2017documentation-_bookmark13Timeformat",
+    "region": "5171.66 ha",
     "proj:code": "EPSG:2169",
     "start_datetime": "2017-01-01T00:00Z",
     "end_datetime": "2017-12-31T00:00Z",
@@ -212,18 +211,14 @@
     "resolution": "",
     "personalData": "no personal data",
     "provenance_name": "Climate variables for cities in Europe from 2008 to 2017",
-    "preprocessing": "",
-    "data_quality": "",
-    "quality_control": "",
+    "processing:lineage": "",
     "metadata_standards": "",
     "distributions": "",
     "access_control": "fairicube account required ",
     "datetime": "2024-09-05T00:00Z",
     "modification": null,
     "provision": null,
-    "use_case_S4E": "1",
     "ingestion_status": "",
-    "platform": "Eox",
     "contacts": [
       {
         "name": "space4environment",
@@ -233,8 +228,7 @@
             "value": "info@space4environment.com",
             "role": "work"
           }
-        ],
-        "project_purpose": "Urban adaptation to climate change"
+        ]
       },
       {
         "name": "ECMWF",
@@ -242,7 +236,12 @@
       }
     ],
     "wasDerivedFrom": "https://cds.climate.copernicus.eu/stac-browser/collections/sis-urban-climate-cities?.language=en",
-    "wasGeneratedBy": ""
+    "wasGeneratedBy": "",
+    "project:use_cases": [
+      "S4E"
+    ],
+    "project:purpose": "Urban adaptation to climate change",
+    "processing:facility": "Eox"
   },
   "geometry": {
     "type": "Polygon",
@@ -290,7 +289,7 @@
       "type": "text/x-python",
       "title": "AWS S3 bucket API",
       "description": "The script shows how to open a gridded dataset stored on an S3 Bucket as an xarray DataSet",
-      "href": "https://github.com/FAIRiCUBE/common-code/blob/main/access_data_apis/access_s3_bucket.py",
+      "href": "https://github.com/FAIRiCUBE/common-code/blob/main/access_data_API/access_s3_bucket.py",
       "rel": "example"
     },
     {
@@ -304,6 +303,11 @@
       "title": "ECMWF",
       "href": "https://confluence.ecmwf.int/display/CKB/Climate+variables+for+cities+in+Europe+from+2008+to+2017+documentation#heading-4Exampledata",
       "rel": "cite-as"
+    },
+    {
+      "title": "Documents & Publications",
+      "href": "https://confluence.ecmwf.int/display/CKB/Climate+variables+for+cities+in+Europe+from+2008+to+2017+documentation#ClimatevariablesforcitiesinEuropefrom2008to2017documentation-_bookmark13Timeformat",
+      "rel": "processing"
     }
   ],
   "assets": {
@@ -333,11 +337,12 @@
     49.65484833240523
   ],
   "stac_extensions": [
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://stac-extensions.github.io/example-links/v0.0.1/schema.json",
     "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
   ]
 }

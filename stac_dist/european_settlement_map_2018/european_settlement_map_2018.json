@@ -46,7 +46,7 @@
         "type": "spatial"
       }
     },
-    "raster:bands": [
+    "bands": [
       {
         "band_name": "esm",
         "unit": "1",
@@ -60,18 +60,14 @@
     "title": "European Settlement Map 2018",
     "datasource_type": "grid",
     "keywords": "land, land use, land cover, human settlement, urban area, green space, building typology, built-up areas, copernicus, esm, ghsl, pan-european, remote sensing, classification",
-    "area_cover": "EEA39",
-    "documentation": "Corbane, Christina; Szabo, Filip (2022): ESM R2020 - European Settlement Map from Copernicus Very High Resolution data for reference year 2018. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/192530fc-3d09-4740-8c1d-d1e601cdfdcc",
+    "region": "EEA39",
     "proj:code": "EPSG:3035",
     "start_datetime": "2018-01-01T00:00Z",
     "end_datetime": "2018-12-31T23:59:59.999Z",
     "personalData": "none",
     "provenance_name": "https://data.jrc.ec.europa.eu/dataset/192530fc-3d09-4740-8c1d-d1e601cdfdcc",
-    "preprocessing": "ESM 2018 exploits the Copernicus VHR_IMAGE_2018 dataset made of satellite images Pleiades 1A & 1B, SuperView-1, Kompsat-3/3A and PlanetScope with backup missions of Spot-6/7, TripleSat and Deimos-2 ranging from 2017 to 2019.",
-    "apis": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
-    "use_case_S4E": "1",
-    "use_case_NHM": "1",
-    "platform": "Rasdaman",
+    "processing:lineage": "ESM 2018 exploits the Copernicus VHR_IMAGE_2018 dataset made of satellite images Pleiades 1A & 1B, SuperView-1, Kompsat-3/3A and PlanetScope with backup missions of Spot-6/7, TripleSat and Deimos-2 ranging from 2017 to 2019.",
+    "API": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
     "contacts": [
       {
         "name": "European Commission, Joint Research Centre",
@@ -84,7 +80,12 @@
         ]
       }
     ],
-    "wasDerivedFrom": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/ESM_BUILT_VHR2018_Europe_R2020/ESM_BUILT_VHR2018_Europe_R2020_3035_02/LATEST/Data/GeoTIFF/"
+    "wasDerivedFrom": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/ESM_BUILT_VHR2018_Europe_R2020/ESM_BUILT_VHR2018_Europe_R2020_3035_02/LATEST/Data/GeoTIFF/",
+    "project:use_cases": [
+      "S4E",
+      "NHM"
+    ],
+    "processing:facility": "Rasdaman"
   },
   "geometry": {
     "type": "Polygon",
@@ -137,6 +138,11 @@
       "rel": "service",
       "type": "text/html",
       "title": "Link to the rasdaman web application to access and process gridded data"
+    },
+    {
+      "title": "Documents & Publications",
+      "href": "Corbane, Christina; Szabo, Filip (2022): ESM R2020 - European Settlement Map from Copernicus Very High Resolution data for reference year 2018. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/192530fc-3d09-4740-8c1d-d1e601cdfdcc",
+      "rel": "processing"
     }
   ],
   "assets": {
@@ -154,10 +160,11 @@
     59.05367788941702
   ],
   "stac_extensions": [
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
     "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
   ]
 }
