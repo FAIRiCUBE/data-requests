@@ -56,7 +56,7 @@
         "unit": "year"
       }
     },
-    "raster:bands": [
+    "bands": [
       {
         "band_name": "building volume indicator",
         "unit": "indicator",
@@ -69,20 +69,17 @@
     ],
     "title": "Vienna building volume [100m]",
     "datasource_type": "GML ",
-    "area_cover": "415km2",
-    "proj:code": "EPSG:EPSG:31256",
+    "region": "415km2",
+    "proj:code": "EPSG:31256",
     "start_datetime": "2024-01-01T00:00Z",
     "end_datetime": "2024-12-31T00:00Z",
     "provenance_name": "data.gv.at ",
-    "preprocessing": " The map shows the building volume (building footprint x avg. building height) as a normalized indicator 0-1",
-    "apis": "AWS-S3 API",
+    "processing:lineage": " The map shows the building volume (building footprint x avg. building height) as a normalized indicator 0-1",
+    "API": "AWS-S3 API",
     "access_control": "fairicube account required ",
     "datetime": "2024-07-17T10:39:35Z",
     "modification": "2024-07-17T10:39:39Z",
     "provision": "2024-07-17T10:39:37Z",
-    "use_case_S4E": "1",
-    "use_case_NHM_2": "1",
-    "platform": "Eox",
     "contacts": [
       {
         "name": "Stadt Wien",
@@ -92,10 +89,16 @@
             "value": "open@post.wien.gv.at",
             "role": "work"
           }
-        ],
-        "project_purpose": null
+        ]
       }
-    ]
+    ],
+    "wasDerivedFrom": "https://www.data.gv.at",
+    "wasGeneratedBy": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/notebooks/dev/f06_pre_processing/Vienna_distance_raster_from_points_data.ipynb",
+    "project:use_cases": [
+      "S4E",
+      "NHM_2"
+    ],
+    "processing:facility": "Eox"
   },
   "geometry": {
     "type": "Polygon",
@@ -159,12 +162,11 @@
     48.324042510805384
   ],
   "stac_extensions": [
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
+    "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
-  ],
-  "wasDerivedFrom": "https://www.data.gv.at",
-  "wasGeneratedBy": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/notebooks/dev/f06_pre_processing/Vienna_distance_raster_from_points_data.ipynb"
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
+  ]
 }
