@@ -4,7 +4,7 @@
   "id": "SENTINEL2_L2A_MOSAIC_120",
   "properties": {
     "datasource_type": "byoc-484d8dbb-9e3e-41f2-b96b-35189d3ae37f",
-    "raster:bands": [
+    "bands": [
       {
         "description": "Coastal aerosol",
         "name": "B01",
@@ -456,7 +456,7 @@
     72
   ],
   "stac_extensions": [
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
   ]
 }
