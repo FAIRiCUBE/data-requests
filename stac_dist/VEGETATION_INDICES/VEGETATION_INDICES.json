@@ -147,7 +147,7 @@
       "http://www.opengis.net/def/crs/EPSG/0/32760",
       "http://www.opengis.net/def/crs/SR-ORG/0/98739"
     ],
-    "raster:bands": [
+    "bands": [
       {
         "description": "Leaf Area Index",
         "name": "LAI",
@@ -484,7 +484,7 @@
     72
   ],
   "stac_extensions": [
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
   ]
 }
