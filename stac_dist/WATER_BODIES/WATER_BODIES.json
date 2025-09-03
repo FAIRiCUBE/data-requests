@@ -4,7 +4,7 @@
   "id": "WATER_BODIES",
   "properties": {
     "datasource_type": "byoc-62bf6f6a-c584-48a8-a739-0bc60efee54a",
-    "raster:bands": [
+    "bands": [
       {
         "description": "Main Water Bodies detection layer showing water pixels and non-water pixels",
         "name": "WB",
@@ -213,7 +213,7 @@
     80
   ],
   "stac_extensions": [
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
   ]
 }
