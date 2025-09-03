@@ -48,7 +48,7 @@
         "type": "spatial"
       }
     },
-    "raster:bands": [
+    "bands": [
       {
         "band_name": "Alfalfa_2_4_d",
         "data_type": "float32",
@@ -1653,18 +1653,14 @@
     "title": "Global Pesticide Grids (PEST-CHEMGRIDS) Application rate, Low estimates",
     "datasource_type": "grid",
     "keywords": "agriculture, land use, health, sustainability, pesticides, environmental modeling, chemical contamination",
-    "area_cover": "global",
-    "documentation": "https://sedac.ciesin.columbia.edu/data/set/ferman-v1-pest-chemgrids-v1-01/docs",
+    "region": "global",
     "proj:code": "EPSG:4326",
     "start_datetime": "2015-01-01T00:00Z",
     "end_datetime": "2025-01-01T00:00Z",
     "personalData": "none",
     "provenance_name": "https://sedac.ciesin.columbia.edu/data/set/ferman-v1-pest-chemgrids-v1-01",
-    "preprocessing": "To estimate the global application rates of specific active ingredients, spatial statistical methods were used to re-analyze the U.S. Geological Survey Pesticide National Synthesis Project (USGS/PNSP) and the Food and Agriculture Organization Corporate Statistical Database (FAOSTAT) pesticide databases, along with other public inventories including globally gridded data of soil physical properties, hydro-climatic variables, agricultural quantities, and socioeconomic indices.",
-    "data_quality": "See global_pesticide_grids_qi datacube",
-    "apis": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
-    "use_case_NHM": "1",
-    "platform": "Rasdaman",
+    "processing:lineage": "To estimate the global application rates of specific active ingredients, spatial statistical methods were used to re-analyze the U.S. Geological Survey Pesticide National Synthesis Project (USGS/PNSP) and the Food and Agriculture Organization Corporate Statistical Database (FAOSTAT) pesticide databases, along with other public inventories including globally gridded data of soil physical properties, hydro-climatic variables, agricultural quantities, and socioeconomic indices.",
+    "API": "OGC WCS, WCPS, WMS, WMTS, OAPI-Coverages",
     "contacts": [
       {
         "name": "NASA Socioeconomic Data and Applications Center (SEDAC)",
@@ -1675,9 +1671,16 @@
             "role": "work"
           }
         ],
-        "project_purpose": "To provide a global gridded data set of commonly-used agricultural pesticides crucial to assess human and ecosystem exposure to potential toxicants for environmental modeling, assessment of agricultural chemical contamination and risk analysis, and other related research at global, regional, national, and local levels."
+        "comments": "For download create account/regsiter (free)"
       }
-    ]
+    ],
+    "wasDerivedFrom": "https://sedac.ciesin.columbia.edu/downloads/data/ferman-v1/ferman-v1-pest-chemgrids-v1-01/ferman-v1-pest-chemgrids-v1-01-geotiff.zip",
+    "project:use_cases": [
+      "NHM"
+    ],
+    "validate:quality_measure": "See global_pesticide_grids_qi datacube",
+    "project:purpose": "To provide a global gridded data set of commonly-used agricultural pesticides crucial to assess human and ecosystem exposure to potential toxicants for environmental modeling, assessment of agricultural chemical contamination and risk analysis, and other related research at global, regional, national, and local levels.",
+    "processing:facility": "Rasdaman"
   },
   "geometry": {
     "type": "Polygon",
@@ -1732,8 +1735,14 @@
       "title": "Link to the rasdaman web application to access and process gridded data"
     },
     {
+      "title": "NASA Socioeconomic Data and Applications Center (SEDAC)",
       "href": "https://sedac.ciesin.columbia.edu/data/set/ferman-v1-pest-chemgrids-v1-01/docs",
       "rel": "cite-as"
+    },
+    {
+      "title": "Documents & Publications",
+      "href": "https://sedac.ciesin.columbia.edu/data/set/ferman-v1-pest-chemgrids-v1-01/docs",
+      "rel": "processing"
     }
   ],
   "assets": {
@@ -1751,11 +1760,12 @@
     84.04083506266277
   ],
   "stac_extensions": [
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/prov/v1.0.0/schema.json",
+    "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
-  ],
-  "wasDerivedFrom": "https://sedac.ciesin.columbia.edu/downloads/data/ferman-v1/ferman-v1-pest-chemgrids-v1-01/ferman-v1-pest-chemgrids-v1-01-geotiff.zip"
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://raw.githubusercontent.com/baloola/validate/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
+  ]
 }
