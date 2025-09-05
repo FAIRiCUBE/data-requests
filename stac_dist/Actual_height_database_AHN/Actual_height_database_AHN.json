@@ -1,0 +1,167 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "Actual_height_database_AHN",
+  "properties": {
+    "license": null,
+    "description": "Object height (e.g. trees, buildings) in centimeters.",
+    "providers": [
+      {
+        "organization_name": null,
+        "organization": "AHN",
+        "comments": "free and open",
+        "doc_link": "https://www.ahn.nl/",
+        "organization_email": null,
+        "project_purpose": null
+      }
+    ],
+    "dataSource": "https://filesender.surf.nl/?s=download&token=35aac7a8-baa5-4e35-92d0-59edb13c3544",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          136000,
+          223870
+        ],
+        "reference_system": "28992",
+        "type": "spatial",
+        "unit_of_measure": "meters",
+        "interpolation": null
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          428495,
+          535555
+        ],
+        "reference_system": "28992",
+        "type": "spatial",
+        "unit_of_measure": "meters",
+        "interpolation": null
+      },
+      "time": {
+        "extent": [
+          "2018-01-01T00:00Z",
+          "2018-01-01T00:00Z"
+        ],
+        "type": "temporal",
+        "step": ""
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": null,
+        "unit_of_measure": null,
+        "interpolation": null,
+        "type": "spatial"
+      }
+    },
+    "datetime": "2000-01-01T00:00:00Z",
+    "raster:bands": [
+      {
+        "band_name": null,
+        "unit": null,
+        "data_type": null,
+        "nodata": null,
+        "definition": null,
+        "description": null,
+        "category_list": null,
+        "comment": null,
+        "interpolation": null
+      }
+    ],
+    "title": "Object Height Netherlands (OHN)",
+    "datasource_type": "vector",
+    "keywords": null,
+    "area_cover": "Netherlands",
+    "documentation": null,
+    "crs": null,
+    "start_datetime": "2018-01-01T00:00Z",
+    "end_datetime": "2018-01-01T00:00Z",
+    "personalData": null,
+    "Provenance_name": "airborne laser scanner",
+    "preprocessing": null,
+    "modification": null,
+    "provision": null,
+    "use_case_S4E": null,
+    "use_case_WER": 1,
+    "use_case_NHM": null,
+    "use_case_NILU": null,
+    "use_case_NHM_2": null,
+    "ingestion_status": "submitted, download link",
+    "platform": "Both"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          5.105442156813408,
+          51.8407808425126
+        ],
+        [
+          5.105442156813408,
+          52.80691561255643
+        ],
+        [
+          6.408453362667011,
+          52.80691561255643
+        ],
+        [
+          6.408453362667011,
+          51.8407808425126
+        ],
+        [
+          5.105442156813408,
+          51.8407808425126
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?&SERVICE=WCS&VERSION=2.1.0&REQUEST=DescribeCoverage&COVERAGEID=Actual_height_database_AHN&outputType=GeneralGridCoverage",
+      "rel": "about",
+      "type": "text/xml",
+      "title": "Link to the rasdaman coverage description in XML"
+    },
+    {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman-dashboard/?layers=Actual_height_database_AHN",
+      "rel": "service",
+      "type": "text/html",
+      "title": "Link to the rasdaman web application to Access, process gridded data"
+    }
+  ],
+  "assets": {
+    "thumbnail_rasdaman": {
+      "href": "https://catalog:JdpsUHpPoqXtbM3@fairicube.rasdaman.com/rasdaman/ows?service=WMS&version=1.3.0&request=GetMap&layers=Actual_height_database_AHN&bbox=51.8407808425126,5.105442156813408,52.80691561255643,6.408453362667011&time=\"2018-01-01T00:00Z\"&width=800&height=600&crs=EPSG:4326&format=image/png&transparent=true&styles=",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    5.105442156813408,
+    51.8407808425126,
+    6.408453362667011,
+    52.80691561255643
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
