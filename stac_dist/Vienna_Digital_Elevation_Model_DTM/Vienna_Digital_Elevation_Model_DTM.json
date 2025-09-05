@@ -1,0 +1,172 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "Vienna_Digital_Elevation_Model_DTM",
+  "properties": {
+    "keywords": [
+      "elevation"
+    ],
+    "license": "CC-BY-NC-ND-4.0",
+    "description": "Digital terrain model from Airborne Laserscan data. Elevations of the terrain in the grid of 100 m x 100m.",
+    "providers": [
+      {
+        "organization_name": "Stadt Wien",
+        "organization": "Stadt Wien",
+        "comments": "",
+        "doc_link": "https://www.data.gv.at/",
+        "organization_email": "open@post.wien.gv.at",
+        "ORCID_ID": "",
+        "roles": "licensor",
+        "project_purpose": ""
+      }
+    ],
+    "dataSource": "data.gv.at",
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -11200,
+          18800
+        ],
+        "reference_system": "EPSG:31256",
+        "type": "spatial",
+        "unit": "meter",
+        "interpolation": "average",
+        "step": 100
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          331000,
+          354000
+        ],
+        "reference_system": "EPSG:31256",
+        "type": "spatial",
+        "unit": "meter",
+        "interpolation": "average",
+        "step": 100
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "reference_system": "",
+        "unit": "",
+        "interpolation": "",
+        "step": "",
+        "type": "spatial"
+      },
+      "time": {
+        "type": "temporal",
+        "extent": [
+          "2015-01-20T00:00Z",
+          "2023-12-31T00:00Z"
+        ],
+        "step": "P1Y0M0DT0H0M0S",
+        "unit": "year",
+        "interpolation": "average"
+      }
+    },
+    "raster:bands": [
+      {
+        "band_name": "elevation",
+        "unit": "meter",
+        "data_type": "float32",
+        "nodata": -3.40282e+38,
+        "definition": "average elevation inside 100x100m cell  [meter] above sea level NN ",
+        "description": "average elevation inside 100x100m cell  [meter] above sea level NN ",
+        "category_list": "",
+        "comment": "Band 1",
+        "interpolation": "AVG"
+      }
+    ],
+    "title": "Digital terrain model (DTM) Austria",
+    "datasource_type": "GeoTIFF",
+    "area_cover": "415km2",
+    "documentation": "",
+    "crs": "EPSG:31256",
+    "start_datetime": "2015-01-20T00:00Z",
+    "end_datetime": "2023-12-31T00:00Z",
+    "re_projection_crs": "",
+    "unit_of_measure": "",
+    "resolution": "100",
+    "personalData": "",
+    "provenance_name": "data.gv.at ",
+    "preprocessing": "Clipped to city border of Vienna",
+    "source_data": "https://www.data.gv.at/katalog/dataset/b5de6975-417b-4320-afdb-eb2a9e2a1dbf#additional-info",
+    "models": "",
+    "data_quality": "",
+    "quality_control": "",
+    "metada_standards": "",
+    "apis": "AWS-S3 API",
+    "distributions": "",
+    "access_control": "fairicube account required ",
+    "datetime": "2024-07-16T11:00:51Z",
+    "modification": "2024-07-16T11:00:56Z",
+    "provision": "2024-07-16T11:00:54Z",
+    "use_case_S4E": "1",
+    "use_case_NHM_2": "1",
+    "ingestion_status": "",
+    "platform": "Eox"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          16.18109409638113,
+          48.11720087650675
+        ],
+        [
+          16.18109409638113,
+          48.32420866274977
+        ],
+        [
+          16.58564092856156,
+          48.32420866274977
+        ],
+        [
+          16.58564092856156,
+          48.11720087650675
+        ],
+        [
+          16.18109409638113,
+          48.11720087650675
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {
+    "file on s3": {
+      "href": "https://fairicube.s3.eu-central-1.amazonaws.com/vienna_data/100m/r02_dem_mean_100m_b1_1_1.tif",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "bbox": [
+    16.18109409638113,
+    48.11720087650675,
+    16.58564092856156,
+    48.32420866274977
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ]
+}
