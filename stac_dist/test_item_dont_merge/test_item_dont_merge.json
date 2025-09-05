@@ -1,0 +1,207 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "test_item_dont_merge",
+  "properties": {
+    "keywords": [
+      "Gray"
+    ],
+    "license": "proprietary",
+    "description": "testing an item",
+    "contacts": [
+      {
+        "organization": "EOX IT Services",
+        "name": "name",
+        "emails": [
+          {
+            "value": "bas@mail.com",
+            "role": "work"
+          }
+        ]
+      }
+    ],
+    "dataSource": "edits",
+    "project:use_cases": [
+      "S4E",
+      "NILU",
+      "NHM_2"
+    ],
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -180,
+          180
+        ],
+        "reference_system": 4326,
+        "type": "spatial"
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          0,
+          90
+        ],
+        "reference_system": 4326,
+        "type": "spatial"
+      },
+      "z": {
+        "extent": [
+          -180,
+          223870
+        ],
+        "reference_system": "3855",
+        "unit": "meter",
+        "type": "spatial"
+      },
+      "time": {
+        "type": "temporal",
+        "values": [
+          "2025-08-07T14:02:21Z",
+          "2999-01-01T00:00:00Z"
+        ],
+        "step": "",
+        "unit": "minute"
+      }
+    },
+    "bands": [
+      {
+        "band_name": "Gray",
+        "data_type": "int8",
+        "definition": "f",
+        "description": "test editing",
+        "classification:classes": [
+          {
+            "name": "cloud",
+            "value": "0"
+          },
+          {
+            "name": "forest",
+            "value": "1"
+          }
+        ]
+      }
+    ],
+    "title": "test item",
+    "datasource_type": "grid",
+    "project:purpose": "k",
+    "proj:code": "EPSG:6452",
+    "start_datetime": "2025-08-07T14:02:21Z",
+    "end_datetime": "2999-01-01T00:00:00Z",
+    "validate:quality_measures": "user testing",
+    "validate:workflow": {
+      "rel": "related",
+      "href": "https://google.com"
+    },
+    "datetime": "2024-08-19T16:29:57Z",
+    "modification": null,
+    "provision": null,
+    "project:platform": "Eox"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180,
+          0
+        ],
+        [
+          -180,
+          90
+        ],
+        [
+          180,
+          90
+        ],
+        [
+          180,
+          0
+        ],
+        [
+          -180,
+          0
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "title": "name",
+      "rel": "cite-as",
+      "href": "https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-vegetation-phenology-and-productivity"
+    },
+    {
+      "example:container": false,
+      "example:language": "Python",
+      "type": "text/x-python",
+      "title": "the code to subset",
+      "description": "sdfsdfsdfsdfsdfdsf",
+      "href": "https://raw.githubusercontent.com/FAIRiCUBE/Processes/refs/heads/main/ERA5_monthly_averaged_data/script.py",
+      "rel": "example"
+    },
+    {
+      "example:container": true,
+      "example:language": "HTML",
+      "type": "text/html",
+      "title": "how to subset a tiff",
+      "description": "sdfsdfsdfsdfsdfdsf",
+      "href": "https://www.nv5geospatialsoftware.com/docs/READ_TIFF.html",
+      "rel": "example"
+    },
+    {
+      "example:container": true,
+      "title": "overview_1",
+      "description": "Link to the data visualization interactive web map.",
+      "href": "https://vis.fairicube.eu/=data?https://data.sustainability.nilu.no/fairicube/r05_treecover2018_100m_b1_COG.tif",
+      "rel": "example"
+    },
+    {
+      "example:container": true,
+      "title": "Fa",
+      "description": "Link to the data visualization interactive web map.",
+      "href": "https://vis.fairicube.eu/=data?https://www.x.com",
+      "rel": "example"
+    },
+    {
+      "href": "https://www.google.com",
+      "rel": "license",
+      "type": "text/xml",
+      "title": "Link to the item's license."
+    }
+  ],
+  "assets": {
+    "Fa": {
+      "href": "https://www.x.com",
+      "roles": [
+        "overview"
+      ]
+    }
+  },
+  "bbox": [
+    -180,
+    0,
+    180,
+    90
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://stac-extensions.github.io/example-links/v0.0.1/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json",
+    "https://raw.githubusercontent.com/baloola/validate/refs/heads/main/json-schema/schema.json"
+  ]
+}
