@@ -318,7 +318,7 @@
       ]
     },
     "air_temperature_2017_month_mean_10m_b12": {
-      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/air_temperature_2017_month_mean_10m_b12.tif",
+      "href": "https://workspace-ui-public.fairicube.hub-otc-sc.eox.at/api/public/share/public-5aptq9mf-02/d012_luxembourg/air_temperature_2017_month_mean_10m_b12.tif",
       "roles": [
         "data"
       ]

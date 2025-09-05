@@ -140,13 +140,13 @@
   ],
   "assets": {
     "land_cover_2021_10m_b1": {
-      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/land_cover_2021_10m_b1.tif",
+      "href": "https://workspace-ui-public.fairicube.hub-otc-sc.eox.at/api/public/share/public-5aptq9mf-02/d012_luxembourg/land_cover_2021_10m_b1.tif",
       "roles": [
         "data"
       ]
     },
     "land_cover_2021_10m_lookup_table": {
-      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/d012_luxembourg/lookup_tables/land_cover_2021_10m_lut.csv",
+      "href": "https://workspace-ui-public.fairicube.hub-otc-sc.eox.at/api/public/share/public-5aptq9mf-02/d012_luxembourg/lookup_tables/land_cover_2021_10m_lut.csv",
       "roles": [
         "metadata"
       ]
