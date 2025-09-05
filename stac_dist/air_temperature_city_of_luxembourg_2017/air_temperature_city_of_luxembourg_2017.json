@@ -296,7 +296,7 @@
       "example:container": true,
       "title": "air_temperature_2017_month_mean_10m_b12_viz",
       "description": "Link to the data visualization interactive web map.",
-      "href": "https://vis.fairicube.eu/=data?https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/air_temperature_2017_month_mean_10m_b12_COG.tif",
+      "href": "https://vis.fairicube.eu/=data?https://workspace-ui-public.fairicube.hub-otc-sc.eox.at/api/public/share/public-5aptq9mf-02/web/luxembourg/air_temperature_2017_month_mean_10m_b12_COG.tif",
       "rel": "example"
     },
     {
@@ -324,7 +324,7 @@
       ]
     },
     "air_temperature_2017_month_mean_10m_b12_viz": {
-      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/air_temperature_2017_month_mean_10m_b12_COG.tif",
+      "href": "https://workspace-ui-public.fairicube.hub-otc-sc.eox.at/api/public/share/public-5aptq9mf-02/web/luxembourg/air_temperature_2017_month_mean_10m_b12_COG.tif",
       "roles": [
         "overview"
       ]

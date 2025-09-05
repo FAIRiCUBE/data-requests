@@ -138,7 +138,7 @@
       "example:container": true,
       "title": "soil_nitrat_10m_b1_COG_overview",
       "description": "Link to the data visualization interactive web map.",
-      "href": "https://vis.fairicube.eu/=data?https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/soil_nitrat_10m_b1_COG.tif",
+      "href": "https://vis.fairicube.eu/=data?https://workspace-ui-public.fairicube.hub-otc-sc.eox.at/api/public/share/public-5aptq9mf-02/web/luxembourg/soil_nitrat_10m_b1_COG.tif",
       "rel": "example"
     },
     {
@@ -166,7 +166,7 @@
       ]
     },
     "soil_nitrat_10m_b1_COG_overview": {
-      "href": "https://hub-fairicube0.s3.eu-central-1.amazonaws.com/data/web/luxembourg/soil_nitrat_10m_b1_COG.tif",
+      "href": "https://workspace-ui-public.fairicube.hub-otc-sc.eox.at/api/public/share/public-5aptq9mf-02/web/luxembourg/soil_nitrat_10m_b1_COG.tif",
       "roles": [
         "overview"
       ]
