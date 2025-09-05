@@ -18,7 +18,7 @@ See also the [list of requirements agreed with the Use Cases](https://github.com
 
 As data ingest is tightly connected with metadata management, use of data, etc., consider also these related spaces:
 
-- [metadata-editor WebGUI](https://catalog-editor.eoxhub.fairicube.eu/): to provide and edit metadata to be shown in the [data catalog (STAC-fastapi)](https://catalog.eoxhub.fairicube.eu/?.language=en)
+- [metadata-editor WebGUI](https://catalog-editor.fairicube.hub-otc-sc.eox.at/): to provide and edit metadata to be shown in the [data catalog (STAC-fastapi)](https://catalog.fairicube.hub-otc-sc.eox.at)
 
 - [resource-metadata](https://github.com/FAIRiCUBE/resource-metadata): in addition to the issues providing metadata for resources, also used to discuss technical details on resource metadata
 - [Fairicube Hub](https://github.com/FAIRiCUBE/FAIRiCUBE-Hub-issue-tracker): for general FAIRiCUBE topics
