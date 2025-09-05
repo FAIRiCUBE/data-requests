@@ -1,0 +1,148 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "Vienna_building_area",
+  "properties": {
+    "keywords": [
+      "builtup_area"
+    ],
+    "license": "CC-BY-NC-4.0",
+    "description": "Vienna building area [100m].",
+    "contacts": [
+      {
+        "organization": "Stadt Wien",
+        "emails": [
+          {
+            "value": "open@post.wien.gv.at",
+            "role": "work"
+          }
+        ]
+      }
+    ],
+    "dataSource": "Open data Austria (data.gv.at)",
+    "project:use_cases": [],
+    "cube:dimensions": {
+      "x": {
+        "axis": "x",
+        "extent": [
+          -11200,
+          18800
+        ],
+        "reference_system": "EPSG:31256",
+        "type": "spatial",
+        "unit": "meter",
+        "interpolation": "sum building footprint area cover per 100m x 100m cell",
+        "step": 100
+      },
+      "y": {
+        "axis": "y",
+        "extent": [
+          331000,
+          354000
+        ],
+        "reference_system": "EPSG:31256",
+        "type": "spatial",
+        "unit": "meter",
+        "interpolation": "sum building footprint area cover per 100m x 100m cell",
+        "step": 100
+      },
+      "z": {
+        "extent": [
+          null,
+          null
+        ],
+        "type": "spatial"
+      },
+      "time": {
+        "type": "temporal",
+        "extent": [
+          "2024-01-01T00:00Z",
+          "2024-12-31T00:00Z"
+        ],
+        "step": "P1Y0M0DT0H0M0S",
+        "unit": "year"
+      }
+    },
+    "bands": [
+      {
+        "band_name": "builtup_area",
+        "unit": "ha",
+        "data_type": "float32",
+        "nodata": -9,
+        "definition": "buildings footprint area inside cell [ha]",
+        "description": "buildings footprint area inside cell [ha]",
+        "comment": "Band 1",
+        "interpolation": "SUM"
+      }
+    ],
+    "title": "Vienna building area [100m]",
+    "datasource_type": "GML ",
+    "area_cover": "415km2",
+    "proj:code": "EPSG:31256",
+    "start_datetime": "2024-01-01T00:00Z",
+    "end_datetime": "2024-12-31T00:00Z",
+    "provenance_name": " data.gv.at",
+    "preprocessing": "The original bulding footprint dataset was masked, next the building cover per 100m gridcell was calculatedc and a raster was produced",
+    "wasGeneratedBy": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/notebooks/dev/f06_pre_processing/Vienna_distance_raster_from_points_data.ipynb",
+    "access_control": "fairicube account required ",
+    "datetime": "2024-07-17T10:29:47Z",
+    "modification": "2024-07-17T10:29:51Z",
+    "provision": "2024-07-17T10:29:49Z",
+    "project:platform": "Eox"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          16.18109409638113,
+          48.11720087650675
+        ],
+        [
+          16.18109409638113,
+          48.32420866274977
+        ],
+        [
+          16.58564092856156,
+          48.32420866274977
+        ],
+        [
+          16.58564092856156,
+          48.11720087650675
+        ],
+        [
+          16.18109409638113,
+          48.11720087650675
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "data-access catalog"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    16.18109409638113,
+    48.11720087650675,
+    16.58564092856156,
+    48.32420866274977
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+    "https://raw.githubusercontent.com/baloola/project/refs/heads/main/json-schema/schema.json",
+    "https://raw.githubusercontent.com/ogcincubator/bblock-prov-schema/refs/heads/master/_sources/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "wasDerivedFrom": "https://www.wien.gv.at/stadtentwicklung/stadtvermessung/geodaten/viewer/geodatendownload.html"
+}
