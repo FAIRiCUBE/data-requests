@@ -3,6 +3,7 @@ import pystac
 
 
 # update catalogs
+pystac.version.set_stac_version('1.0.0')
 
 directories = [
     os.path.join('stac_dist', f) for f in os.listdir(

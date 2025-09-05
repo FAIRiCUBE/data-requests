@@ -43,6 +43,7 @@ jobs:
         run: |
           python3 ./stac/stac-generator/stac-generator.py
           stac copy -t ABSOLUTE_PUBLISHED --publish-location "https://fairicube.github.io/data-requests" stac_dist/catalog.json out
+          python3 ./stac/stac-generator/version_downgrade.py
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
