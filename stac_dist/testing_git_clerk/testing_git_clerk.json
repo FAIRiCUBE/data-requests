@@ -1,0 +1,14 @@
+{
+  "id": "testing_git_clerk",
+  "properties": {
+    "title": "Ablation",
+    "license": "CC-BY-SA-4.0"
+  },
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "geometry": {},
+  "links": [],
+  "assets": {},
+  "bbox": [],
+  "stac_extensions": []
+}
